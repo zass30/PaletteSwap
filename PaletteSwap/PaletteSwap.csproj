@@ -81,6 +81,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\dicportrait0.png" />
+    <Content Include="Resources\dicstand0.png" />
     <Content Include="Resources\ssf2t016.png" />
     <Content Include="Resources\stand.png" />
   </ItemGroup>
