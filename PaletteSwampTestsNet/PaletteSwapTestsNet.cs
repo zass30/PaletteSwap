@@ -1,16 +1,18 @@
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
+using System.Drawing;
 
-namespace PaletteSwapTests
+namespace PaletteSwampTestsNet
 {
     [TestClass]
-    public class PaletteSwapTests
+    public class PaletteSwapTestsNet
     {
         [TestMethod]
         public void PaletteACTTest()
         {
             var pal = new Palette();
-            string sACT = new string("00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00");
+            string sACT = "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00";
             string result = pal.asACT();
             Assert.AreEqual(sACT, pal.asACT());
         }
@@ -19,7 +21,7 @@ namespace PaletteSwapTests
         public void PaletteMemTest()
         {
             var pal = new Palette();
-            string sMem = new string("0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000");
+            string sMem = "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000";
             string result = pal.asMem();
             Assert.AreEqual(sMem, result);
         }
@@ -53,9 +55,7 @@ namespace PaletteSwapTests
         [TestMethod]
         public void PaletteSwapTest()
         {
-           // var bmp = Palette.createBitmap();
- //           System.Drawing.Image foo = new Image();
-//            System.Drawing.Bitmap newbmp = new Bitmap(15, 1);
-        }        
+                        System.Drawing.Bitmap newbmp = new Bitmap(15, 1);
+        }
     }
 }

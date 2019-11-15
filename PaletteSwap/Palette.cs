@@ -11,6 +11,19 @@ namespace PaletteSwap
     {
         private Color[] colors;
 
+        // function that takes an image a, source, and a destination palette, and returns new image
+        // with swapped colors
+
+        public static Bitmap createBitmap(int x, int y)
+        {
+            return new Bitmap(x, y);
+        }
+
+        public static Bitmap PaletteSwap(Bitmap img, Palette p_src, Palette p_dest)
+        {
+            return img;
+        }
+
         public static Palette PaletteFromACT(string s)
         {
             var pal = new Palette();

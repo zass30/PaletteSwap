@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaletteSwap", "PaletteSwap\PaletteSwap.csproj", "{BE71B044-80D5-4279-ADC0-BB838DC993FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaletteSwapTests", "PaletteSwapTests\PaletteSwapTests.csproj", "{3FBC3D0A-4A18-4E88-9BB0-96CE4BCD4F99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaletteSwampTestsNet", "PaletteSwampTestsNet\PaletteSwampTestsNet.csproj", "{2094DD0F-B855-4ED8-882E-8183BCF2A905}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{BE71B044-80D5-4279-ADC0-BB838DC993FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE71B044-80D5-4279-ADC0-BB838DC993FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE71B044-80D5-4279-ADC0-BB838DC993FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FBC3D0A-4A18-4E88-9BB0-96CE4BCD4F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FBC3D0A-4A18-4E88-9BB0-96CE4BCD4F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FBC3D0A-4A18-4E88-9BB0-96CE4BCD4F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FBC3D0A-4A18-4E88-9BB0-96CE4BCD4F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2094DD0F-B855-4ED8-882E-8183BCF2A905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2094DD0F-B855-4ED8-882E-8183BCF2A905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2094DD0F-B855-4ED8-882E-8183BCF2A905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2094DD0F-B855-4ED8-882E-8183BCF2A905}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
