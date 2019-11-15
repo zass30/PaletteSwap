@@ -12,15 +12,44 @@ namespace PaletteSwap
 {
     public partial class Form1 : Form
     {
+        byte[] palette;
+        Dictionary<string, int> pal_dictionary;
+
         public Form1()
         {
             InitializeComponent();
+            palette = new byte[16*4];
+            pal_dictionary = new Dictionary<string, int>();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = @"..\..\Resources\dicstand0.png";
             pictureBox2.ImageLocation = @"..\..\Resources\dicportrait0.png";
+        }
+
+        private void load_palette()
+        {
+            Image Img = pictureBox1.Image;
+            Bitmap bmp = new Bitmap(Img);
+            for (int x = 0; x < bmp.Width; x++)
+            {
+                for (int y = 0; y < bmp.Height; y++)
+                {
+                    Color gotColor = bmp.GetPixel(x, y);
+                    string colstr = coltohex(gotColor) ;
+                    if (pal_dictionary.ContainsKey(colstr))
+                        pal_dictionary[colstr]++;
+                    else
+                        pal_dictionary[colstr] = 1;
+                }
+            }
+        }
+
+        private string coltohex(Color c)
+        {
+            string s = (c.G / 16).ToString("X1") + (c.B / 16).ToString("X1") + "0" + (c.R / 16).ToString("X1");
+            return s;
         }
 
         private void display_magnified_sprite()
@@ -57,6 +86,8 @@ namespace PaletteSwap
 
         private void button2_Click(object sender, EventArgs e)
         {
+            load_palette();
+
             Image Img = pictureBox1.Image;
             Bitmap bmp = new Bitmap(Img);
             for (int x = 0; x < bmp.Width; x++)
