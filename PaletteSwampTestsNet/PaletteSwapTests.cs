@@ -6,8 +6,11 @@ using System.Drawing;
 namespace PaletteSwampTestsNet
 {
     [TestClass]
-    public class PaletteSwapTestsNet
+    public class PaletteSwapTests
     {
+        static readonly string bis1ACT = "77 00 00 00 77 33 33 99 55 55 CC 77 88 EE BB BB FF EE AA 00 00 CC 44 00 FF BB 77 FF 88 44 DD 55 00 FF EE BB EE BB 77 AA 77 44 66 44 33";
+        static readonly string bis1Mem = "0007 7300 9503 C705 EB08 FE0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306";
+
         [TestMethod]
         public void PaletteACTTest()
         {
@@ -29,12 +32,12 @@ namespace PaletteSwampTestsNet
         [TestMethod]
         public void PaletteFromACTTest()
         {
-            string s = "77 00 00 00 77 33 33 99 55 55 CC 77 88 EE BB BB FF EE AA 00 00 CC 44 00 FF BB 77 FF 88 44 DD 55 00 FF EE BB EE BB 77 AA 77 44 66 44 33";
+            string s = bis1ACT;
             var pal = Palette.PaletteFromACT(s);
             string result = pal.asACT();
             Assert.AreEqual(s, result);
 
-            s = "0007 7300 9503 C705 EB08 FE0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306";
+            s = bis1Mem;
             result = pal.asMem();
             Assert.AreEqual(s, result);
         }
@@ -42,12 +45,12 @@ namespace PaletteSwampTestsNet
         [TestMethod]
         public void PaletteFromMemTest()
         {
-            string s = "0007 7300 9503 C705 EB08 FE0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306";
+            string s = bis1Mem;
             var pal = Palette.PaletteFromMem(s);
             string result = pal.asMem();
             Assert.AreEqual(s, result);
 
-            s = "77 00 00 00 77 33 33 99 55 55 CC 77 88 EE BB BB FF EE AA 00 00 CC 44 00 FF BB 77 FF 88 44 DD 55 00 FF EE BB EE BB 77 AA 77 44 66 44 33";
+            s = bis1ACT;
             result = pal.asACT();
             Assert.AreEqual(s, result);
         }
@@ -55,7 +58,7 @@ namespace PaletteSwampTestsNet
         [TestMethod]
         public void PaletteSwapTest()
         {
-                        System.Drawing.Bitmap newbmp = new Bitmap(15, 1);
+            Bitmap newbmp = new Bitmap(15, 1);
         }
     }
 }

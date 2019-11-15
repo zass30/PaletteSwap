@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaletteSwap", "PaletteSwap\PaletteSwap.csproj", "{BE71B044-80D5-4279-ADC0-BB838DC993FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaletteSwampTestsNet", "PaletteSwampTestsNet\PaletteSwampTestsNet.csproj", "{2094DD0F-B855-4ED8-882E-8183BCF2A905}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaletteSwampTests", "PaletteSwampTestsNet\PaletteSwampTests.csproj", "{2094DD0F-B855-4ED8-882E-8183BCF2A905}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
