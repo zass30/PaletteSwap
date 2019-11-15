@@ -20,11 +20,20 @@ namespace PaletteSwap
             InitializeComponent();
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
+            // set up palettes for all original colors? 
+            // load up a palette string from mem, or an ACT file
+            
+            // create an image? each color is 0-16? 0 is alpha, and 1-16 are the colors index?
+            // need a palette object, that can:
+            // export string as mem
+            // export as ACT
+            // index as hat, suit, pads, etc
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.ImageLocation = @"..\..\Resources\dicstand0.png";
+            pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
             pictureBox2.ImageLocation = @"..\..\Resources\dicportrait0.png";
         }
 
