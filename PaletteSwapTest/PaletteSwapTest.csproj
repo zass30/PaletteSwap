@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2094DD0F-B855-4ED8-882E-8183BCF2A905}</ProjectGuid>
+    <ProjectGuid>{F44CE279-FA4B-4157-85E2-29EA236A3973}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PaletteSwampTestsNet</RootNamespace>
-    <AssemblyName>PaletteSwampTestsNet</AssemblyName>
+    <RootNamespace>PaletteSwapTest</RootNamespace>
+    <AssemblyName>PaletteSwapTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,7 +50,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PaletteSwapTests.cs" />
+    <Compile Include="PaletteSwapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

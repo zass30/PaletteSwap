@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("PaletteSwampTestsNet")]
+[assembly: AssemblyTitle("PaletteSwapTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PaletteSwampTestsNet")]
+[assembly: AssemblyProduct("PaletteSwapTest")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("2094dd0f-b855-4ed8-882e-8183bcf2a905")]
+[assembly: Guid("f44ce279-fa4b-4157-85e2-29ea236a3973")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
