@@ -39,9 +39,6 @@ namespace PaletteSwap
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Bitmap imgsource = masterStand;
-            load_palette();
-            Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
             switch (comboBox1.SelectedIndex)
             {
@@ -73,7 +70,13 @@ namespace PaletteSwap
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
                     break;
             }
-            //= Palette.PaletteFromMem(Palette.bis3Mem);
+            swap_stand_bmp(pal_dest);
+        }
+
+        private void swap_stand_bmp( Palette pal_dest)
+        {
+            Bitmap imgsource = masterStand;
+            Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
             pictureBox1.Image = swappedBmp;
             display_magnified_sprite();
@@ -160,6 +163,18 @@ namespace PaletteSwap
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadACT_Click(object sender, EventArgs e)
+        {
+            string newACT = textBox1.Text;
+            Palette pal_dest = Palette.PaletteFromACT(newACT);
+            swap_stand_bmp(pal_dest);
         }
     }
 }
