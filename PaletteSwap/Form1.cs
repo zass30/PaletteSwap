@@ -36,7 +36,7 @@ namespace PaletteSwap
             // export as ACT
             // index as hat, suit, pads, etc
             pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
-            pictureBox2.ImageLocation = @"..\..\Resources\dicportrait0.png";
+            portraitBox.ImageLocation = @"..\..\Resources\dicportrait0.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
             comboBox1.SelectedIndex = 0;
         }
@@ -74,10 +74,10 @@ namespace PaletteSwap
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
                     break;
             }
-            swap_stand_bmp(pal_dest);
+            swap_stading_sprite(pal_dest);
         }
 
-        private void swap_stand_bmp( Palette pal_dest)
+        private void swap_stading_sprite( Palette pal_dest)
         {
             Bitmap imgsource = masterStand;
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
@@ -190,14 +190,14 @@ namespace PaletteSwap
             textBox1.Text = Palette.ACTtoText(reducedline);
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_stand_bmp(pal_dest);
+            swap_stading_sprite(pal_dest);
         }
 
         private void loadACT_Click(object sender, EventArgs e)
         {
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_stand_bmp(pal_dest);
+            swap_stading_sprite(pal_dest);
         }
     }
 }

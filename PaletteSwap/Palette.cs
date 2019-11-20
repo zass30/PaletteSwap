@@ -148,7 +148,6 @@ namespace PaletteSwap
                 return;
             }
 
-
             for (int x = 0; x < src_img.Width; x++)
             {
                 for (int y = 0; y < src_img.Height; y++)
