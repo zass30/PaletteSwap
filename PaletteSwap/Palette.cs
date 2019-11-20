@@ -130,5 +130,16 @@ namespace PaletteSwap
             return s;
         }
 
+        public static string ACTtoText(byte[] bytearray)
+        {
+            StringBuilder s = new StringBuilder();
+            foreach (byte b in bytearray)
+            {
+                s.Append(b.ToString("X2"));
+                s.Append(" ");
+            }
+            return s.ToString().Trim();
+        }
+
     }
 }

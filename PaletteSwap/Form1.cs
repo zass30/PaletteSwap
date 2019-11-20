@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace PaletteSwap
 {
@@ -20,6 +22,8 @@ namespace PaletteSwap
         public Form1()
         {
             InitializeComponent();
+            textBox1.DragDrop += new DragEventHandler(textBox1_DragDrop);
+            textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
             palcol_dict = new Dictionary<Color, int>();
@@ -168,6 +172,25 @@ namespace PaletteSwap
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.All;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            byte[] lineasbytes = File.ReadAllBytes(s[0]);
+            byte[] reducedline = lineasbytes.Take(16 * 3).Skip(3).ToArray();
+            textBox1.Text = Palette.ACTtoText(reducedline);
+            string newACT = textBox1.Text;
+            Palette pal_dest = Palette.PaletteFromACT(newACT);
+            swap_stand_bmp(pal_dest);
         }
 
         private void loadACT_Click(object sender, EventArgs e)

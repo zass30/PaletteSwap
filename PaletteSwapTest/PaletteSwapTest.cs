@@ -58,7 +58,7 @@ namespace PaletteSwapTestsNet
             Bitmap srcbmp = new Bitmap(15, 1);
             var pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             var pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
-            for (int i = 0; i<15; i++)
+            for (int i = 0; i < 15; i++)
             {
                 srcbmp.SetPixel(i, 0, pal_src.colors[i]);
             }
@@ -68,6 +68,16 @@ namespace PaletteSwapTestsNet
             {
                 Assert.AreEqual(pal_dest.colors[i], swappedbmp.GetPixel(i, 0));
             }
+        }
+
+        [TestMethod]
+        public void ACTtoTextTest()
+        {
+            byte[] b = {0x77, 0, 0, 0, 0x77, 0x33, 0x33,
+                0x99, 0x55, 0x55, 0xCC, 0x77, 0x88, 0xEE, 0xBB, 0xBB };
+            string expected = "77 00 00 00 77 33 33 99 55 55 CC 77 88 EE BB BB";
+            string result = Palette.ACTtoText(b);
+            Assert.AreEqual(expected, result);
         }
     }
 }

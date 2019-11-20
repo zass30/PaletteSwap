@@ -72,7 +72,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(688, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(633, 41);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 102);
             this.pictureBox2.TabIndex = 3;
@@ -107,6 +107,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.AllowDrop = true;
             this.textBox1.Location = new System.Drawing.Point(12, 330);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
