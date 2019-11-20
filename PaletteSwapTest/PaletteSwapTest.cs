@@ -3,14 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
 using System.Drawing;
 
-namespace PaletteSwampTestsNet
+namespace PaletteSwapTestsNet
 {
     [TestClass]
     public class PaletteSwapTests
     {
-        static readonly string bis1ACT = "77 00 00 00 77 33 33 99 55 55 CC 77 88 EE BB BB FF EE AA 00 00 CC 44 00 FF BB 77 FF 88 44 DD 55 00 FF EE BB EE BB 77 AA 77 44 66 44 33";
-        static readonly string bis1Mem = "0007 7300 9503 C705 EB08 FE0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306";
-
         [TestMethod]
         public void PaletteACTTest()
         {
@@ -32,12 +29,12 @@ namespace PaletteSwampTestsNet
         [TestMethod]
         public void PaletteFromACTTest()
         {
-            string s = bis1ACT;
+            string s = Palette.bis1ACT;
             var pal = Palette.PaletteFromACT(s);
             string result = pal.asACT();
             Assert.AreEqual(s, result);
 
-            s = bis1Mem;
+            s = Palette.bis1Mem;
             result = pal.asMem();
             Assert.AreEqual(s, result);
         }
@@ -45,12 +42,12 @@ namespace PaletteSwampTestsNet
         [TestMethod]
         public void PaletteFromMemTest()
         {
-            string s = bis1Mem;
+            string s = Palette.bis1Mem;
             var pal = Palette.PaletteFromMem(s);
             string result = pal.asMem();
             Assert.AreEqual(s, result);
 
-            s = bis1ACT;
+            s = Palette.bis1ACT;
             result = pal.asACT();
             Assert.AreEqual(s, result);
         }
@@ -58,7 +55,19 @@ namespace PaletteSwampTestsNet
         [TestMethod]
         public void PaletteSwapTest()
         {
-            Bitmap newbmp = new Bitmap(15, 1);
+            Bitmap srcbmp = new Bitmap(15, 1);
+            var pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
+            var pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
+            for (int i = 0; i<15; i++)
+            {
+                srcbmp.SetPixel(i, 0, pal_src.colors[i]);
+            }
+
+            var swappedbmp = Palette.PaletteSwap(srcbmp, pal_src, pal_dest);
+            for (int i = 0; i < 15; i++)
+            {
+                Assert.AreEqual(pal_dest.colors[i], swappedbmp.GetPixel(i, 0));
+            }
         }
     }
 }

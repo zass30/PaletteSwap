@@ -14,27 +14,38 @@ namespace PaletteSwap
     {
         byte[] palette;
         Dictionary<string, int> pal_dictionary;
+        Dictionary<Color, int> palcol_dict;
+        Bitmap masterStand;
 
         public Form1()
         {
             InitializeComponent();
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
+            palcol_dict = new Dictionary<Color, int>();
             // set up palettes for all original colors? 
             // load up a palette string from mem, or an ACT file
-            
+
             // create an image? each color is 0-16? 0 is alpha, and 1-16 are the colors index?
             // need a palette object, that can:
             // export string as mem
             // export as ACT
             // index as hat, suit, pads, etc
-
+            pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
+            pictureBox2.ImageLocation = @"..\..\Resources\dicportrait0.png";
+            masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
+            comboBox1.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
-            pictureBox2.ImageLocation = @"..\..\Resources\dicportrait0.png";
+            Bitmap imgsource = masterStand;
+            load_palette();
+            Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
+            Palette pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
+            Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
+            pictureBox1.Image = swappedBmp;
+            display_magnified_sprite();
         }
 
         private void load_palette()
@@ -51,6 +62,10 @@ namespace PaletteSwap
                         pal_dictionary[colstr]++;
                     else
                         pal_dictionary[colstr] = 1;
+                    if (palcol_dict.ContainsKey(gotColor))
+                        palcol_dict[gotColor]++;
+                    else
+                        palcol_dict[gotColor] = 1;
                 }
             }
         }
@@ -109,6 +124,11 @@ namespace PaletteSwap
             }
             pictureBox1.Image = bmp;
             display_magnified_sprite();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
