@@ -45,14 +45,11 @@ namespace PaletteSwap
 
         public static Color ColorSwap(Color c, Palette p_src, Palette p_dest)
         {
-            int x = 0;
-            if (c.R != 0)
-                x++;
             for (int i = 0; i < p_src.colors.Length; i++){
                 if (c == p_src.colors[i])
                     return p_dest.colors[i];
             }
-            return c; // if color not found (maybe a zero value), just return that.
+            return c;
         }
 
         public static Palette PaletteFromACT(string s)
@@ -138,27 +135,37 @@ namespace PaletteSwap
             return s.ToString().Trim();
         }
 
-        public static void overlayTransparency(Bitmap src_img, Bitmap dest_img)
+        public static Bitmap overlayTransparency(Bitmap src_img, Bitmap dest_img)
         {
             // take source file, and for each transparent pixel (0,0,0,0) in it, make the corresponding pixel in dest file 
             // transparent as well
             // check files same size
             if (src_img.Width != dest_img.Width || src_img.Height != dest_img.Height)
             {
-                return;
+//                return;
             }
+
+            var retimg = new Bitmap(src_img.Width, src_img.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
 
             for (int x = 0; x < src_img.Width; x++)
             {
                 for (int y = 0; y < src_img.Height; y++)
                 {
                     Color gotColor = src_img.GetPixel(x, y);
-                    if (gotColor == Color.FromArgb(0, 0, 0, 0))
+
+                    if (gotColor.A == 0)
                     {
-                        dest_img.SetPixel(x, y, gotColor);
+                        retimg.SetPixel(x, y, Color.FromArgb(0,0,0,0));
+                    }
+                    else
+                    {
+                        retimg.SetPixel(x, y, dest_img.GetPixel(x, y));
                     }
                 }
             }
+
+            return retimg;
+
         }
     }
 }

@@ -22,23 +22,23 @@ namespace PaletteSwap
         public Form1()
         {
             InitializeComponent();
-            textBox1.DragDrop += new DragEventHandler(textBox1_DragDrop);
-            textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
+            EnableDragAndDrop();
+
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
             palcol_dict = new Dictionary<Color, int>();
-            // set up palettes for all original colors? 
-            // load up a palette string from mem, or an ACT file
 
-            // create an image? each color is 0-16? 0 is alpha, and 1-16 are the colors index?
-            // need a palette object, that can:
-            // export string as mem
-            // export as ACT
-            // index as hat, suit, pads, etc
             pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
-            portraitBox.ImageLocation = @"..\..\Resources\dicportrait0.png";
+            portraitBox.ImageLocation = @"..\..\Resources\dicportrait1.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
             comboBox1.SelectedIndex = 0;
+        }
+
+        private void EnableDragAndDrop()
+        {
+            // drag and drop functionality
+            textBox1.DragDrop += new DragEventHandler(textBox1_DragDrop);
+            textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -74,21 +74,39 @@ namespace PaletteSwap
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
                     break;
             }
-            swap_stading_sprite(pal_dest);
+            swap_standing_sprite(pal_dest);
         }
 
-        private void swap_stading_sprite( Palette pal_dest)
+        private void swap_standing_sprite( Palette pal_dest)
         {
             Bitmap imgsource = masterStand;
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
             pictureBox1.Image = swappedBmp;
             display_magnified_sprite();
+            /*
+            var p_src = new Bitmap(@"..\..\Resources\dicportrait1.png");
+            var p_dest = new Bitmap(@"..\..\Resources\dicportrait3.png");
+
+
+            var newimg = Palette.overlayTransparency(p_src, p_dest);
+
+            try
+            {
+                p_src.Save(@"..\..\Resources\src.png");
+                newimg.Save(@"..\..\Resources\dest.png");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("There was a problem saving the file." +
+                    "Check the file permissions.");
+            } */
         }
 
-        private void load_palette()
+
+        private void LoadImageIntoPalette()
         {
-            Image Img = pictureBox1.Image;
+            Image Img = portraitBox.Image;
             Bitmap bmp = new Bitmap(Img);
             for (int x = 0; x < bmp.Width; x++)
             {
@@ -148,7 +166,7 @@ namespace PaletteSwap
 
         private void button2_Click(object sender, EventArgs e)
         {
-            load_palette();
+            LoadImageIntoPalette();
 
             Image Img = pictureBox1.Image;
             Bitmap bmp = new Bitmap(Img);
@@ -190,14 +208,14 @@ namespace PaletteSwap
             textBox1.Text = Palette.ACTtoText(reducedline);
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_stading_sprite(pal_dest);
+            swap_standing_sprite(pal_dest);
         }
 
         private void loadACT_Click(object sender, EventArgs e)
         {
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_stading_sprite(pal_dest);
+            swap_standing_sprite(pal_dest);
         }
     }
 }
