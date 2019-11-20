@@ -79,5 +79,10 @@ namespace PaletteSwapTestsNet
             string result = Palette.ACTtoText(b);
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void overlayTransparency()
+        {
+        }
     }
 }

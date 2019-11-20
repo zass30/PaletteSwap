@@ -74,9 +74,6 @@ namespace PaletteSwap
             string[] s_colors = s.Split(' ');
             for (int i = 0; i < pal.colors.Length; i++)
             {
-               /* string c = s_colors[i][2].ToString() + s_colors[i][2].ToString() + s_colors[i][3].ToString() + 
-                    s_colors[i][3].ToString() + s_colors[i][0].ToString() + s_colors[i][0].ToString() 
-                    + s_colors[i][1].ToString() + s_colors[i][1].ToString(); */
                 string c = "FF" + s_colors[i][3].ToString() +
                     s_colors[i][3].ToString() + s_colors[i][0].ToString() + s_colors[i][0].ToString()
                     + s_colors[i][1].ToString() + s_colors[i][1].ToString();
@@ -141,5 +138,28 @@ namespace PaletteSwap
             return s.ToString().Trim();
         }
 
+        public static void overlayTransparency(Bitmap src_img, Bitmap dest_img)
+        {
+            // take source file, and for each transparent pixel (0,0,0,0) in it, make the corresponding pixel in dest file 
+            // transparent as well
+            // check files same size
+            if (src_img.Width != dest_img.Width || src_img.Height != dest_img.Height)
+            {
+                return;
+            }
+
+
+            for (int x = 0; x < src_img.Width; x++)
+            {
+                for (int y = 0; y < src_img.Height; y++)
+                {
+                    Color gotColor = src_img.GetPixel(x, y);
+                    if (gotColor == Color.FromArgb(0, 0, 0, 0))
+                    {
+                        dest_img.SetPixel(x, y, gotColor);
+                    }
+                }
+            }
+        }
     }
 }
