@@ -42,7 +42,38 @@ namespace PaletteSwap
             Bitmap imgsource = masterStand;
             load_palette();
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
-            Palette pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
+            Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis0Mem);
+                    break;
+                case 1:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+                    break;
+                case 2:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
+                    break;
+                case 3:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
+                    break;
+                case 4:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
+                    break;
+                case 5:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis5Mem);
+                    break;
+                case 6:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis6Mem);
+                    break;
+                case 7:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis7Mem);
+                    break;
+                case 8:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
+                    break;
+            }
+            //= Palette.PaletteFromMem(Palette.bis3Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
             pictureBox1.Image = swappedBmp;
             display_magnified_sprite();
