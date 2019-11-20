@@ -74,16 +74,51 @@ namespace PaletteSwap
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
                     break;
             }
-            swap_stading_sprite(pal_dest);
+            swap_standing_sprite(pal_dest);
         }
 
-        private void swap_stading_sprite( Palette pal_dest)
+        private void swap_standing_sprite( Palette pal_dest)
         {
             Bitmap imgsource = masterStand;
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
             pictureBox1.Image = swappedBmp;
             display_magnified_sprite();
+
+            var p_src = new Bitmap(@"..\..\Resources\dicportrait1.png");
+ //           var poo = new Bitmap(p_src.Width, p_src.Height ,System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            var p_dest = new Bitmap(@"..\..\Resources\dicportrait0.png");
+   //         p_dest.PixelFormat = System.Drawing.Imaging.PixelFormat.Format32bppArgb;
+
+            //var p_src = new Bitmap(port1.Width, port1.Height);
+            //            var p_dest = new Bitmap(p_src.Width, p_src.Height);
+            /*for (int x = 0; x < p_dest.Width; x++)
+            {
+                for (int y = 0; y < p_dest.Height; y++)
+                {
+//                    p_src.SetPixel(x, y, Color.BurlyWood);
+                    p_dest.SetPixel(x, y, Color.CornflowerBlue);
+                }
+            }
+            for (int x = 0; x < p_dest.Width; x++)
+            {
+//                p_src.SetPixel(x, 25, Color.FromArgb(0,0,0,0));
+            }*/
+
+
+            var newimg = Palette.overlayTransparency(p_src, p_dest);
+
+            try
+            {
+                p_src.Save(@"..\..\Resources\src.png");
+                newimg.Save(@"..\..\Resources\dest.png");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("There was a problem saving the file." +
+                    "Check the file permissions.");
+            }
+            MessageBox.Show("saved");
         }
 
         private void load_palette()
@@ -190,14 +225,14 @@ namespace PaletteSwap
             textBox1.Text = Palette.ACTtoText(reducedline);
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_stading_sprite(pal_dest);
+            swap_standing_sprite(pal_dest);
         }
 
         private void loadACT_Click(object sender, EventArgs e)
         {
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_stading_sprite(pal_dest);
+            swap_standing_sprite(pal_dest);
         }
     }
 }
