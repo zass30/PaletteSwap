@@ -84,6 +84,8 @@
   <ItemGroup>
     <Content Include="Resources\dicportrait0.png" />
     <None Include="Resources\dicportrait1.png" />
+    <None Include="Resources\dicportrait2.png" />
+    <None Include="Resources\dicportrait3.png" />
     <Content Include="Resources\dicstand0.png" />
     <None Include="Resources\dicstand1.png" />
   </ItemGroup>
