@@ -87,15 +87,15 @@ namespace PaletteSwapTestsNet
             Bitmap destbmp = new Bitmap(20, 1);
             for (int i = 0; i < 20; i++)
             {
-                srcbmp.SetPixel(i, 0, Color.FromArgb(0, 25, 3, 5));
-                destbmp.SetPixel(i, 0, Color.FromArgb(0, 25, 3, 5));
+                srcbmp.SetPixel(i, 0, Color.FromArgb(255, 25, 3, 5));
+                destbmp.SetPixel(i, 0, Color.FromArgb(255, 25, 3, 5));
             }
-            srcbmp.SetPixel(5, 0, Color.FromArgb(255, 0, 0, 0));
-            srcbmp.SetPixel(10, 0, Color.FromArgb(255, 0, 0, 0));
-            Palette.overlayTransparency(srcbmp, destbmp);
-            Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), destbmp.GetPixel(5,0));
-            Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), destbmp.GetPixel(10, 0));
-            Assert.AreEqual(Color.FromArgb(0, 25, 3, 5), destbmp.GetPixel(17, 0));
+            srcbmp.SetPixel(5, 0, Color.FromArgb(0, 0, 0, 0));
+            srcbmp.SetPixel(10, 0, Color.FromArgb(0, 0, 0, 0));
+            var resultbmp = Palette.overlayTransparency(srcbmp, destbmp);
+            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(5,0));
+            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(10, 0));
+            Assert.AreEqual(Color.FromArgb(255, 25, 3, 5), resultbmp.GetPixel(17, 0));
         }
     }
 }
