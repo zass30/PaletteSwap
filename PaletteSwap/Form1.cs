@@ -29,7 +29,7 @@ namespace PaletteSwap
             palcol_dict = new Dictionary<Color, int>();
 
             pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
-            portraitBox.ImageLocation = @"..\..\Resources\dicportrait1.png";
+            portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
             comboBox1.SelectedIndex = 0;
         }
@@ -86,7 +86,7 @@ namespace PaletteSwap
             display_magnified_sprite();
             /*
             var p_src = new Bitmap(@"..\..\Resources\dicportrait1.png");
-            var p_dest = new Bitmap(@"..\..\Resources\dicportrait3.png");
+            var p_dest = new Bitmap(@"..\..\Resources\dicportrait4.png");
 
 
             var newimg = Palette.overlayTransparency(p_src, p_dest);

@@ -103,6 +103,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dicportrait4 {
+            get {
+                object obj = ResourceManager.GetObject("dicportrait4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dicstand0 {
             get {
                 object obj = ResourceManager.GetObject("dicstand0", resourceCulture);
