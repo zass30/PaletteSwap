@@ -241,5 +241,19 @@ namespace PaletteSwap
         {
 
         }
+
+        private void pal_square_click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            Color c = p.BackColor;
+            pal_val_R.Text = (c.R/17).ToString();
+            pal_val_G.Text = (c.G/17).ToString();
+            pal_val_B.Text = (c.B/17).ToString();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

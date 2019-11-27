@@ -54,6 +54,8 @@ namespace PaletteSwap
 
         public static Palette PaletteFromACT(string s)
         {
+//            if (s == "" || s == " ")
+//                return;
             var pal = new Palette();
             string[] s_colors = s.Split(' ');
             for (int i = 0; i < pal.colors.Length; i++)

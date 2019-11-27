@@ -56,6 +56,15 @@
             this.pal_sprite_cost4 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_cost5 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_stripe1 = new System.Windows.Forms.PictureBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.pal_val_R = new System.Windows.Forms.TextBox();
+            this.pal_val_G = new System.Windows.Forms.TextBox();
+            this.pal_val_B = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -74,6 +83,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -211,6 +223,7 @@
             this.pal_sprite_skin1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin1.TabIndex = 13;
             this.pal_sprite_skin1.TabStop = false;
+            this.pal_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin2
             // 
@@ -219,6 +232,7 @@
             this.pal_sprite_skin2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin2.TabIndex = 14;
             this.pal_sprite_skin2.TabStop = false;
+            this.pal_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin3
             // 
@@ -227,6 +241,7 @@
             this.pal_sprite_skin3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin3.TabIndex = 15;
             this.pal_sprite_skin3.TabStop = false;
+            this.pal_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin4
             // 
@@ -235,6 +250,7 @@
             this.pal_sprite_skin4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin4.TabIndex = 16;
             this.pal_sprite_skin4.TabStop = false;
+            this.pal_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads1
             // 
@@ -243,6 +259,7 @@
             this.pal_sprite_pads1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads1.TabIndex = 17;
             this.pal_sprite_pads1.TabStop = false;
+            this.pal_sprite_pads1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads2
             // 
@@ -251,6 +268,7 @@
             this.pal_sprite_pads2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads2.TabIndex = 18;
             this.pal_sprite_pads2.TabStop = false;
+            this.pal_sprite_pads2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads3
             // 
@@ -259,6 +277,7 @@
             this.pal_sprite_pads3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads3.TabIndex = 19;
             this.pal_sprite_pads3.TabStop = false;
+            this.pal_sprite_pads3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads4
             // 
@@ -267,6 +286,7 @@
             this.pal_sprite_pads4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads4.TabIndex = 20;
             this.pal_sprite_pads4.TabStop = false;
+            this.pal_sprite_pads4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads5
             // 
@@ -275,6 +295,7 @@
             this.pal_sprite_pads5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads5.TabIndex = 21;
             this.pal_sprite_pads5.TabStop = false;
+            this.pal_sprite_pads5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_cost1
             // 
@@ -283,6 +304,7 @@
             this.pal_sprite_cost1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_cost1.TabIndex = 22;
             this.pal_sprite_cost1.TabStop = false;
+            this.pal_sprite_cost1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_cost2
             // 
@@ -291,6 +313,7 @@
             this.pal_sprite_cost2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_cost2.TabIndex = 23;
             this.pal_sprite_cost2.TabStop = false;
+            this.pal_sprite_cost2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_cost3
             // 
@@ -299,6 +322,7 @@
             this.pal_sprite_cost3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_cost3.TabIndex = 24;
             this.pal_sprite_cost3.TabStop = false;
+            this.pal_sprite_cost3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_cost4
             // 
@@ -307,6 +331,7 @@
             this.pal_sprite_cost4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_cost4.TabIndex = 25;
             this.pal_sprite_cost4.TabStop = false;
+            this.pal_sprite_cost4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_cost5
             // 
@@ -315,6 +340,7 @@
             this.pal_sprite_cost5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_cost5.TabIndex = 26;
             this.pal_sprite_cost5.TabStop = false;
+            this.pal_sprite_cost5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_stripe1
             // 
@@ -323,12 +349,98 @@
             this.pal_sprite_stripe1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_stripe1.TabIndex = 27;
             this.pal_sprite_stripe1.TabStop = false;
+            this.pal_sprite_stripe1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.LargeChange = 2;
+            this.trackBar1.Location = new System.Drawing.Point(629, 175);
+            this.trackBar1.Maximum = 15;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 28;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.LargeChange = 2;
+            this.trackBar2.Location = new System.Drawing.Point(629, 226);
+            this.trackBar2.Maximum = 15;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(104, 45);
+            this.trackBar2.TabIndex = 29;
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.LargeChange = 2;
+            this.trackBar3.Location = new System.Drawing.Point(629, 278);
+            this.trackBar3.Maximum = 15;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(104, 45);
+            this.trackBar3.TabIndex = 30;
+            // 
+            // pal_val_R
+            // 
+            this.pal_val_R.Location = new System.Drawing.Point(739, 173);
+            this.pal_val_R.Name = "pal_val_R";
+            this.pal_val_R.Size = new System.Drawing.Size(37, 20);
+            this.pal_val_R.TabIndex = 31;
+            // 
+            // pal_val_G
+            // 
+            this.pal_val_G.Location = new System.Drawing.Point(739, 226);
+            this.pal_val_G.Name = "pal_val_G";
+            this.pal_val_G.Size = new System.Drawing.Size(37, 20);
+            this.pal_val_G.TabIndex = 32;
+            // 
+            // pal_val_B
+            // 
+            this.pal_val_B.Location = new System.Drawing.Point(739, 278);
+            this.pal_val_B.Name = "pal_val_B";
+            this.pal_val_B.Size = new System.Drawing.Size(37, 20);
+            this.pal_val_B.TabIndex = 33;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(605, 180);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(15, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "R";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(608, 233);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(15, 13);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "G";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(606, 285);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 13);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "B";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 660);
+            this.ClientSize = new System.Drawing.Size(1071, 748);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pal_val_B);
+            this.Controls.Add(this.pal_val_G);
+            this.Controls.Add(this.pal_val_R);
+            this.Controls.Add(this.trackBar3);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.pal_sprite_stripe1);
             this.Controls.Add(this.pal_sprite_cost5);
             this.Controls.Add(this.pal_sprite_cost4);
@@ -377,6 +489,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,6 +527,15 @@
         private System.Windows.Forms.PictureBox pal_sprite_cost4;
         private System.Windows.Forms.PictureBox pal_sprite_cost5;
         private System.Windows.Forms.PictureBox pal_sprite_stripe1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.TextBox pal_val_R;
+        private System.Windows.Forms.TextBox pal_val_G;
+        private System.Windows.Forms.TextBox pal_val_B;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
