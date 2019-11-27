@@ -83,6 +83,25 @@ namespace PaletteSwap
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
             pictureBox1.Image = swappedBmp;
+            pal_sprite_skin1.BackColor = pal_dest.colors[11];
+            pal_sprite_skin2.BackColor = pal_dest.colors[12];
+            pal_sprite_skin3.BackColor = pal_dest.colors[13];
+            pal_sprite_skin4.BackColor = pal_dest.colors[14];
+
+            pal_sprite_pads1.BackColor = pal_dest.colors[8];
+            pal_sprite_pads2.BackColor = pal_dest.colors[9];
+            pal_sprite_pads3.BackColor = pal_dest.colors[10];
+            pal_sprite_pads4.BackColor = pal_dest.colors[6];
+            pal_sprite_pads5.BackColor = pal_dest.colors[0];
+
+            pal_sprite_cost1.BackColor = pal_dest.colors[5];
+            pal_sprite_cost2.BackColor = pal_dest.colors[4];
+            pal_sprite_cost3.BackColor = pal_dest.colors[3];
+            pal_sprite_cost4.BackColor = pal_dest.colors[2];
+            pal_sprite_cost5.BackColor = pal_dest.colors[1];
+
+            pal_sprite_stripe1.BackColor = pal_dest.colors[7];
+
             display_magnified_sprite();
             /*
             var p_src = new Bitmap(@"..\..\Resources\dicportrait1.png");
@@ -216,6 +235,11 @@ namespace PaletteSwap
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
             swap_standing_sprite(pal_dest);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
