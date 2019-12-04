@@ -32,6 +32,8 @@ namespace PaletteSwap
             portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
             comboBox1.SelectedIndex = 0;
+            load_pallette();
+
         }
 
         private void EnableDragAndDrop()
@@ -41,7 +43,7 @@ namespace PaletteSwap
             textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void load_pallette()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
             switch (comboBox1.SelectedIndex)
@@ -75,6 +77,11 @@ namespace PaletteSwap
                     break;
             }
             swap_standing_sprite(pal_dest);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            load_pallette();
         }
 
         private void swap_standing_sprite( Palette pal_dest)
@@ -246,14 +253,92 @@ namespace PaletteSwap
         {
             PictureBox p = (PictureBox)sender;
             Color c = p.BackColor;
-            pal_val_R.Text = (c.R/17).ToString();
-            pal_val_G.Text = (c.G/17).ToString();
-            pal_val_B.Text = (c.B/17).ToString();
+            int r = c.R / 17;
+            int g = c.G / 17;
+            int b = c.B / 17;
+
+            pal_val_R.Text = r.ToString();
+            pal_val_G.Text = g.ToString();
+            pal_val_B.Text = b.ToString();
+
+            trackBarR.Value = r;
+            trackBarG.Value = g;
+            trackBarB.Value = b;
+
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void trackBarR_Scroll(object sender, EventArgs e)
+        {
+            pal_val_R.Text = "" + trackBarR.Value;
+        }
+
+        private void trackBarG_Scroll(object sender, EventArgs e)
+        {
+            pal_val_G.Text = "" + trackBarG.Value;
+        }
+
+        private void trackBarB_Scroll(object sender, EventArgs e)
+        {
+            pal_val_B.Text = "" + trackBarB.Value;
+        }
+
+        private int clamp(int i)
+        {
+            if (i < 0)
+                return 0;
+            if (i > 15)
+                return 15;
+            return i;
+        }
+
+        private void pal_val_R_TextChanged(object sender, EventArgs e)
+        {
+            int r = 0;
+            try
+            {
+                r = Int32.Parse(pal_val_R.Text);
+            }
+            catch (Exception)
+            {
+                // nothing
+            }
+            r = clamp(r);
+            trackBarR.Value = r;
+        }
+
+        private void pal_val_G_TextChanged(object sender, EventArgs e)
+        {
+            int g = 0;        
+            try
+            {
+                g = Int32.Parse(pal_val_G.Text);
+            }
+            catch (Exception)
+            {
+                // nothing
+            }
+            g = clamp(g);
+            trackBarG.Value = g;
+        }
+
+        private void pal_val_B_TextChanged(object sender, EventArgs e)
+        {
+            int b = 0;
+            try
+            {
+                b = Int32.Parse(pal_val_B.Text);
+            }
+            catch (Exception)
+            {
+                // nothing
+            }
+            b = clamp(b);
+            trackBarB.Value = b;
         }
     }
 }

@@ -56,9 +56,9 @@
             this.pal_sprite_cost4 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_cost5 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_stripe1 = new System.Windows.Forms.PictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.trackBarR = new System.Windows.Forms.TrackBar();
+            this.trackBarG = new System.Windows.Forms.TrackBar();
+            this.trackBarB = new System.Windows.Forms.TrackBar();
             this.pal_val_R = new System.Windows.Forms.TextBox();
             this.pal_val_G = new System.Windows.Forms.TextBox();
             this.pal_val_B = new System.Windows.Forms.TextBox();
@@ -83,9 +83,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -351,32 +351,35 @@
             this.pal_sprite_stripe1.TabStop = false;
             this.pal_sprite_stripe1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // trackBar1
+            // trackBarR
             // 
-            this.trackBar1.LargeChange = 2;
-            this.trackBar1.Location = new System.Drawing.Point(629, 175);
-            this.trackBar1.Maximum = 15;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 28;
+            this.trackBarR.LargeChange = 2;
+            this.trackBarR.Location = new System.Drawing.Point(629, 175);
+            this.trackBarR.Maximum = 15;
+            this.trackBarR.Name = "trackBarR";
+            this.trackBarR.Size = new System.Drawing.Size(104, 45);
+            this.trackBarR.TabIndex = 28;
+            this.trackBarR.Scroll += new System.EventHandler(this.trackBarR_Scroll);
             // 
-            // trackBar2
+            // trackBarG
             // 
-            this.trackBar2.LargeChange = 2;
-            this.trackBar2.Location = new System.Drawing.Point(629, 226);
-            this.trackBar2.Maximum = 15;
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(104, 45);
-            this.trackBar2.TabIndex = 29;
+            this.trackBarG.LargeChange = 2;
+            this.trackBarG.Location = new System.Drawing.Point(629, 226);
+            this.trackBarG.Maximum = 15;
+            this.trackBarG.Name = "trackBarG";
+            this.trackBarG.Size = new System.Drawing.Size(104, 45);
+            this.trackBarG.TabIndex = 29;
+            this.trackBarG.Scroll += new System.EventHandler(this.trackBarG_Scroll);
             // 
-            // trackBar3
+            // trackBarB
             // 
-            this.trackBar3.LargeChange = 2;
-            this.trackBar3.Location = new System.Drawing.Point(629, 278);
-            this.trackBar3.Maximum = 15;
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(104, 45);
-            this.trackBar3.TabIndex = 30;
+            this.trackBarB.LargeChange = 2;
+            this.trackBarB.Location = new System.Drawing.Point(629, 278);
+            this.trackBarB.Maximum = 15;
+            this.trackBarB.Name = "trackBarB";
+            this.trackBarB.Size = new System.Drawing.Size(104, 45);
+            this.trackBarB.TabIndex = 30;
+            this.trackBarB.Scroll += new System.EventHandler(this.trackBarB_Scroll);
             // 
             // pal_val_R
             // 
@@ -384,6 +387,7 @@
             this.pal_val_R.Name = "pal_val_R";
             this.pal_val_R.Size = new System.Drawing.Size(37, 20);
             this.pal_val_R.TabIndex = 31;
+            this.pal_val_R.TextChanged += new System.EventHandler(this.pal_val_R_TextChanged);
             // 
             // pal_val_G
             // 
@@ -391,6 +395,7 @@
             this.pal_val_G.Name = "pal_val_G";
             this.pal_val_G.Size = new System.Drawing.Size(37, 20);
             this.pal_val_G.TabIndex = 32;
+            this.pal_val_G.TextChanged += new System.EventHandler(this.pal_val_G_TextChanged);
             // 
             // pal_val_B
             // 
@@ -398,6 +403,7 @@
             this.pal_val_B.Name = "pal_val_B";
             this.pal_val_B.Size = new System.Drawing.Size(37, 20);
             this.pal_val_B.TabIndex = 33;
+            this.pal_val_B.TextChanged += new System.EventHandler(this.pal_val_B_TextChanged);
             // 
             // label6
             // 
@@ -438,9 +444,9 @@
             this.Controls.Add(this.pal_val_B);
             this.Controls.Add(this.pal_val_G);
             this.Controls.Add(this.pal_val_R);
-            this.Controls.Add(this.trackBar3);
-            this.Controls.Add(this.trackBar2);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.trackBarB);
+            this.Controls.Add(this.trackBarG);
+            this.Controls.Add(this.trackBarR);
             this.Controls.Add(this.pal_sprite_stripe1);
             this.Controls.Add(this.pal_sprite_cost5);
             this.Controls.Add(this.pal_sprite_cost4);
@@ -489,9 +495,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -527,9 +533,9 @@
         private System.Windows.Forms.PictureBox pal_sprite_cost4;
         private System.Windows.Forms.PictureBox pal_sprite_cost5;
         private System.Windows.Forms.PictureBox pal_sprite_stripe1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.TrackBar trackBarR;
+        private System.Windows.Forms.TrackBar trackBarG;
+        private System.Windows.Forms.TrackBar trackBarB;
         private System.Windows.Forms.TextBox pal_val_R;
         private System.Windows.Forms.TextBox pal_val_G;
         private System.Windows.Forms.TextBox pal_val_B;
