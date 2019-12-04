@@ -31,7 +31,8 @@ namespace PaletteSwap
 
             pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
             portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
-            masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");            
+            masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
+            standMasks = new Bitmap[15];
             for (int i = 0; i < 15; i++)
             {
                 standMasks[i] = new Bitmap(@"..\..\Resources\dicstandmask" + i + ".png");
