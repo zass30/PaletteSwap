@@ -139,4 +139,49 @@
   <data name="dicstand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dicstand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dicstandmask0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dicstandmask9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dicstandmask9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

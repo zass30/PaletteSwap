@@ -83,6 +83,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\dicportrait0.png" />
+    <None Include="Resources\dicstandmask14.png" />
+    <None Include="Resources\dicstandmask13.png" />
+    <None Include="Resources\dicstandmask12.png" />
+    <None Include="Resources\dicstandmask11.png" />
+    <None Include="Resources\dicstandmask10.png" />
+    <None Include="Resources\dicstandmask9.png" />
+    <None Include="Resources\dicstandmask8.png" />
+    <None Include="Resources\dicstandmask7.png" />
+    <None Include="Resources\dicstandmask6.png" />
+    <None Include="Resources\dicstandmask5.png" />
+    <None Include="Resources\dicstandmask4.png" />
+    <None Include="Resources\dicstandmask3.png" />
+    <None Include="Resources\dicstandmask2.png" />
+    <None Include="Resources\dicstandmask1.png" />
+    <None Include="Resources\dicstandmask0.png" />
     <None Include="Resources\dicportrait1.png" />
     <None Include="Resources\dicportrait2.png" />
     <None Include="Resources\dicportrait3.png" />

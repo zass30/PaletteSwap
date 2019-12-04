@@ -93,9 +93,53 @@ namespace PaletteSwapTestsNet
             srcbmp.SetPixel(5, 0, Color.FromArgb(0, 0, 0, 0));
             srcbmp.SetPixel(10, 0, Color.FromArgb(0, 0, 0, 0));
             var resultbmp = Palette.overlayTransparency(srcbmp, destbmp);
-            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(5,0));
+            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(5, 0));
             Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(10, 0));
             Assert.AreEqual(Color.FromArgb(255, 25, 3, 5), resultbmp.GetPixel(17, 0));
+        }
+
+        [TestMethod]
+        public void createColorMask()
+        {
+
+            Bitmap srcbmp = new Bitmap(20, 1);
+            for (int i = 0; i < 20; i++)
+            {
+                srcbmp.SetPixel(i, 0, Color.FromArgb(255, 0, 0, 255));
+            }
+            srcbmp.SetPixel(5, 0, Color.FromArgb(255, 255, 0, 255));
+            srcbmp.SetPixel(10, 0, Color.FromArgb(255, 255, 0, 255));
+
+            var resultbmp = Palette.createColorMask(srcbmp, Color.FromArgb(255, 255, 0, 255));
+
+            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(0, 0));
+            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(15, 0));
+            Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(19, 0));
+            Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(5, 0));
+            Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(10, 0));
+        }
+
+        [TestMethod]
+        public void overlayImage()
+        {
+
+            Bitmap foreground = new Bitmap(20, 1);
+            Bitmap background = new Bitmap(20, 1);
+            for (int i = 0; i < 20; i++)
+            {
+                background.SetPixel(i, 0, Color.FromArgb(255, 0, 0, 255));
+                foreground.SetPixel(i, 0, Color.FromArgb(0, 0, 0, 0));
+            }
+            foreground.SetPixel(5, 0, Color.FromArgb(255, 255, 0, 255));
+            foreground.SetPixel(10, 0, Color.FromArgb(255, 255, 0, 255));
+
+            var resultbmp = Palette.overlayImage(foreground, background);
+
+            Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), resultbmp.GetPixel(0, 0));
+            Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), resultbmp.GetPixel(15, 0));
+            Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), resultbmp.GetPixel(19, 0));
+            Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(5, 0));
+            Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(10, 0));
         }
     }
 }

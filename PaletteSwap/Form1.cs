@@ -18,6 +18,7 @@ namespace PaletteSwap
         Dictionary<string, int> pal_dictionary;
         Dictionary<Color, int> palcol_dict;
         Bitmap masterStand;
+        Bitmap[] standMasks;
 
         public Form1()
         {
@@ -30,9 +31,14 @@ namespace PaletteSwap
 
             pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
             portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
-            masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
+            masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");            
+            for (int i = 0; i < 15; i++)
+            {
+                standMasks[i] = new Bitmap(@"..\..\Resources\dicstandmask" + i + ".png");
+            }
             comboBox1.SelectedIndex = 0;
-            load_pallette();
+            loadPalette();
+//            createColorMasks();
 
         }
 
@@ -43,7 +49,7 @@ namespace PaletteSwap
             textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
         }
 
-        private void load_pallette()
+        private void loadPalette()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
             switch (comboBox1.SelectedIndex)
@@ -81,7 +87,7 @@ namespace PaletteSwap
 
         private void button1_Click(object sender, EventArgs e)
         {
-            load_pallette();
+            loadPalette();
         }
 
         private void swap_standing_sprite( Palette pal_dest)
@@ -110,7 +116,27 @@ namespace PaletteSwap
             pal_sprite_stripe1.BackColor = pal_dest.colors[7];
 
             display_magnified_sprite();
-            /*
+
+        }
+
+
+        private void createColorMasks()
+        {
+            var p_src = new Bitmap(@"..\..\Resources\dicstand1.png");
+            Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+
+            int i = 0;
+            foreach (Color c in pal_dest.colors)
+            {
+                var newmask = Palette.createColorMask(p_src, c);
+                newmask.Save(@"..\..\Resources\dicstandmask" + i + ".png");
+                i++;
+            }
+
+        }
+
+        private void overlayTransparency()
+        {
             var p_src = new Bitmap(@"..\..\Resources\dicportrait1.png");
             var p_dest = new Bitmap(@"..\..\Resources\dicportrait4.png");
 
@@ -126,9 +152,8 @@ namespace PaletteSwap
             {
                 MessageBox.Show("There was a problem saving the file." +
                     "Check the file permissions.");
-            } */
+            }
         }
-
 
         private void LoadImageIntoPalette()
         {

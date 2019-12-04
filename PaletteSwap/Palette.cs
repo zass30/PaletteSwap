@@ -137,14 +137,56 @@ namespace PaletteSwap
             return s.ToString().Trim();
         }
 
+        public static Bitmap overlayImage(Bitmap foreground, Bitmap background)
+        {
+            if (background.Width != foreground.Width || background.Height != foreground.Height)
+            {
+                throw new Exception("Incompatible bitmap sizes");
+            }
+            var retimg = new Bitmap(background.Width, background.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            for (int x = 0; x < background.Width; x++)
+            {
+                for (int y = 0; y < background.Height; y++)
+                {
+                    Color forecolor = foreground.GetPixel(x, y);
+                    if (forecolor.A == 255)
+                    {
+                        retimg.SetPixel(x, y, forecolor);
+                    }
+                    else
+                    {
+                        retimg.SetPixel(x, y, background.GetPixel(x, y));
+                    }
+                }
+            }
+
+            return retimg;
+        }
+
+        public static Bitmap createColorMask(Bitmap src_img, Color c)
+        {
+            var retimg = new Bitmap(src_img.Width, src_img.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            for (int x = 0; x < src_img.Width; x++)
+            {
+                for (int y = 0; y < src_img.Height; y++)
+                {
+                    Color gotColor = src_img.GetPixel(x, y);
+                    if (gotColor == c)
+                    {
+                        retimg.SetPixel(x, y, c);
+                    }
+                }
+            }
+        return retimg;
+        }
+
         public static Bitmap overlayTransparency(Bitmap src_img, Bitmap dest_img)
         {
-            // take source file, and for each transparent pixel (0,0,0,0) in it, make the corresponding pixel in dest file 
-            // transparent as well
-            // check files same size
+            // take source file, and for each transparent pixel (0,0,0,0) in it, 
+            // make the corresponding pixel in dest file transparent as well
             if (src_img.Width != dest_img.Width || src_img.Height != dest_img.Height)
             {
-//                return;
+                throw new Exception("Incompatible bitmap sizes");
             }
 
             var retimg = new Bitmap(src_img.Width, src_img.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
