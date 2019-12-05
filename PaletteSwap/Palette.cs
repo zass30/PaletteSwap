@@ -77,6 +77,12 @@ FF0F D90F 960E 750C 640A 5408 4306 7F09 5D09 3B09 0909 7C00 5B03 4A00 0900 0A00"
 
             var c = row1.Split(' ');
             face1 = Palette.MemFormatToColor(c[0]);
+            face2 = Palette.MemFormatToColor(c[1]);
+            face3 = Palette.MemFormatToColor(c[2]);
+            face4 = Palette.MemFormatToColor(c[3]);
+            face5 = Palette.MemFormatToColor(c[4]);
+            face6 = Palette.MemFormatToColor(c[5]);
+            face7 = Palette.MemFormatToColor(c[6]);
         }
 
         public string row1_()
