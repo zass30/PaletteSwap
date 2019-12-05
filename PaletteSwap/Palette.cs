@@ -7,6 +7,84 @@ using System.Drawing;
 
 namespace PaletteSwap
 {
+    // sprite
+    // set hat, skin, physcho, etc
+    // sprite->as mem
+    // sprint -> as mem row 0, row 1, etc
+    // sprite -> as act
+
+   // portrait
+   // set hat, skin, blood, etc
+   // portrait->as mem row 0, 1, etc
+
+    public class Portrait
+    {
+        public static readonly string bis1portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00 
+FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F FF0F CC0C 9909 7707 0A00
+FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00
+FF0F D90F 960E 750C 640A 5408 4306 7F09 5D09 3B09 0909 7C00 5B03 4A00 0900 0A00";
+
+        public string row1;
+        public string row2;
+        public string row3;
+        public string row4;
+
+        public Color face1;
+        public Color face2;
+        public Color face3;
+        public Color face4;
+        public Color face5;
+        public Color face6;
+        public Color face7;
+
+        public Color teeth1;
+        public Color teeth2;
+        public Color teeth3;
+        public Color teeth4;
+
+        public Color costume1;
+        public Color costume2;
+        public Color costume3;
+        public Color costume4;
+
+        public Color costumeloss1;
+        public Color costumeloss2;
+        public Color costumeloss3;
+        public Color costumeloss4;
+
+        public Color piping1;
+        public Color piping2;
+        public Color piping3;
+        public Color piping4;
+
+        public Color pipingloss1;
+        public Color pipingloss2;
+        public Color pipingloss3;
+        public Color pipingloss4;
+
+        public Color blood1;
+        public Color blood2;
+        public Color blood3;
+
+
+        public Portrait(string s)
+        {
+            var v = s.Split('\n');
+            this.row1 = v[0].Trim();
+            this.row2 = v[1].Trim();
+            this.row3 = v[2].Trim();
+            this.row4 = v[3].Trim();
+
+            var c = row1.Split(' ');
+            face1 = Palette.MemFormatToColor(c[0]);
+        }
+
+        public string row1_()
+        {
+            return Palette.ColorToMemFormat(face1) + " "; 
+        }
+    }
+
     public class Palette
     {
         public static readonly string bis0Mem = "0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005";
@@ -22,9 +100,39 @@ namespace PaletteSwap
 
         public Color[] colors;
 
+        public Palette()
+        {
+            colors = new Color[15];
+            for (int i = 0; i < colors.Length; i++)
+            {
+                colors[i] = Color.FromArgb(0, 0, 0, 0);
+            }
+        }
+
+        public string asACT()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < colors.Length; i++)
+            {
+                sb.Append(toACTFormat(colors[i]));
+                sb.Append(" ");
+            }
+            return sb.ToString().Trim();
+        }
+
+        public string asMem()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < colors.Length; i++)
+            {
+                sb.Append(ColorToMemFormat(colors[i]));
+                sb.Append(" ");
+            }
+            return sb.ToString().Trim();
+        }
+
         // function that takes an image a, source, and a destination palette, and returns new image
         // with swapped colors
-
         public static Bitmap PaletteSwap(Bitmap img, Palette p_src, Palette p_dest)
         {
             // foreach pixel in image
@@ -83,44 +191,23 @@ namespace PaletteSwap
             return pal;
         }
 
-        public Palette()
-        {
-            colors = new Color[15];
-            for (int i = 0; i < colors.Length; i++)
-            {
-                colors[i] = Color.FromArgb(0, 0, 0, 0);
-            }
-        }
-
-        public string asACT()
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < colors.Length; i++)
-            {
-                sb.Append(toACTFormat(colors[i]));
-                sb.Append(" ");
-            }
-            return sb.ToString().Trim();
-        }
-
-        public string asMem()
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < colors.Length; i++)
-            {
-                sb.Append(toMemFormat(colors[i]));
-                sb.Append(" ");
-            }
-            return sb.ToString().Trim();
-        }
-
-        private static string toMemFormat(Color c)
+        public static string ColorToMemFormat(Color c)
         {
             string s = (c.G / 16).ToString("X1") + (c.B / 16).ToString("X1") + "0" + (c.R / 16).ToString("X1");
             return s;
         }
 
-        private static string toACTFormat(Color c)
+        public static Color MemFormatToColor(string s)
+        {
+            string c = "FF" + s[3].ToString() +
+               s[3].ToString() + s[0].ToString() + s[0].ToString()
+               + s[1].ToString() + s[1].ToString();
+
+            var cint = int.Parse(c, System.Globalization.NumberStyles.HexNumber);
+            return Color.FromArgb(cint);
+        }
+
+        public static string toACTFormat(Color c)
         {
             string s = c.R.ToString("X2") + " " + c.G.ToString("X2") + " " + c.B.ToString("X2");
             return s;

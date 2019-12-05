@@ -81,7 +81,7 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void overlayTransparency()
+        public void overlayTransparencyTest()
         {
             Bitmap srcbmp = new Bitmap(20, 1);
             Bitmap destbmp = new Bitmap(20, 1);
@@ -99,7 +99,7 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void createColorMask()
+        public void createColorMaskTest()
         {
 
             Bitmap srcbmp = new Bitmap(20, 1);
@@ -120,7 +120,7 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void overlayImage()
+        public void overlayImageTest()
         {
 
             Bitmap foreground = new Bitmap(20, 1);
@@ -141,5 +141,63 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(5, 0));
             Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(10, 0));
         }
+
+        [TestMethod]
+        public void portraitNewTest()
+        {
+            string s = Portrait.bis1portrait;
+            var p = new Portrait(s);
+            Assert.AreEqual("FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00", p.row1);
+            Assert.AreEqual("FF0F D90F 960E 750C 640A 5408 4306 7F09 5D09 3B09 0909 7C00 5B03 4A00 0900 0A00", p.row4);
+        }
+
+        [TestMethod]
+        public void portraitColorsTest()
+        {
+            string s = Portrait.bis1portrait;
+            var p = new Portrait(s);
+            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), p.face1);
+        }
+
+        [TestMethod]
+        public void colorToMemFormatTest()
+        {
+            Color c = Color.FromArgb(255, 255, 255, 255);
+            var s = Palette.ColorToMemFormat(c);
+            Assert.AreEqual("FF0F", s);
+
+            c = Color.FromArgb(255, 0, 255, 255);
+            s = Palette.ColorToMemFormat(c);
+            Assert.AreEqual("FF00", s);
+
+            c = Color.FromArgb(255, 0, 0, 255);
+            s = Palette.ColorToMemFormat(c);
+            Assert.AreEqual("0F00", s);
+
+            c = Color.FromArgb(255, 0, 0, 0);
+            s = Palette.ColorToMemFormat(c);
+            Assert.AreEqual("0000", s);
+        }
+
+        [TestMethod]
+        public void MemFormatToColorTest()
+        {
+            var s = "FF0F";
+            var c = Palette.MemFormatToColor(s);
+            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), c);
+
+            s = "0000";
+            c = Palette.MemFormatToColor(s);
+            Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), c);
+
+            s = "FF00";
+            c = Palette.MemFormatToColor(s);
+            Assert.AreEqual(Color.FromArgb(255, 0, 255, 255), c);
+
+            s = "0F00";
+            c = Palette.MemFormatToColor(s);
+            Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), c);
+        }
     }
 }
+
