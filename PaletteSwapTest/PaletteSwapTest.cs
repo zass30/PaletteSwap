@@ -230,7 +230,8 @@ namespace PaletteSwapTestsNet
             expected = "7C00 5B03 4A00 0900";
             Assert.AreEqual(expected, p.costumelossrow());
 
-            Assert.AreEqual(s, p.portraitmem());
+            var r = p.portraitmem();
+            Assert.AreEqual(s, r);
         }
     }
 }
