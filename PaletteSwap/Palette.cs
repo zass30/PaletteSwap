@@ -19,7 +19,7 @@ namespace PaletteSwap
 
     public class Portrait
     {
-        public static readonly string bis1portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00 
+        public static readonly string bis0portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00 
 FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F FF0F CC0C 9909 7707 0A00
 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00
 FF0F D90F 960E 750C 640A 5408 4306 7F09 5D09 3B09 0909 7C00 5B03 4A00 0900 0A00";
@@ -75,20 +75,89 @@ FF0F D90F 960E 750C 640A 5408 4306 7F09 5D09 3B09 0909 7C00 5B03 4A00 0900 0A00"
             this.row3 = v[2].Trim();
             this.row4 = v[3].Trim();
 
-            var c = row1.Split(' ');
-            face1 = Palette.MemFormatToColor(c[0]);
-            face2 = Palette.MemFormatToColor(c[1]);
-            face3 = Palette.MemFormatToColor(c[2]);
-            face4 = Palette.MemFormatToColor(c[3]);
-            face5 = Palette.MemFormatToColor(c[4]);
-            face6 = Palette.MemFormatToColor(c[5]);
-            face7 = Palette.MemFormatToColor(c[6]);
+            var r1 = row1.Split(' ');
+            face1 = Palette.MemFormatToColor(r1[0]);
+            face2 = Palette.MemFormatToColor(r1[1]);
+            face3 = Palette.MemFormatToColor(r1[2]);
+            face4 = Palette.MemFormatToColor(r1[3]);
+            face5 = Palette.MemFormatToColor(r1[4]);
+            face6 = Palette.MemFormatToColor(r1[5]);
+            face7 = Palette.MemFormatToColor(r1[6]);
+            piping1 = Palette.MemFormatToColor(r1[7]);
+            piping2 = Palette.MemFormatToColor(r1[8]);
+            piping3 = Palette.MemFormatToColor(r1[9]);
+            piping4 = Palette.MemFormatToColor(r1[10]);
+            costume1 = Palette.MemFormatToColor(r1[11]);
+            costume2 = Palette.MemFormatToColor(r1[12]);
+            costume3 = Palette.MemFormatToColor(r1[13]);
+            costume4 = Palette.MemFormatToColor(r1[14]);
+
+            var r2 = row2.Split(' ');
+            teeth1 = Palette.MemFormatToColor(r2[11]);
+            teeth2 = Palette.MemFormatToColor(r2[12]);
+            teeth3 = Palette.MemFormatToColor(r2[13]);
+            teeth4 = Palette.MemFormatToColor(r2[14]);
+
+            var r3 = row3.Split(' ');
+            blood1 = Palette.MemFormatToColor(r3[7]);
+            blood2 = Palette.MemFormatToColor(r3[8]);
+            blood3 = Palette.MemFormatToColor(r3[9]);
+
+            var r4 = row4.Split(' ');
+            pipingloss1 = Palette.MemFormatToColor(r4[7]);
+            pipingloss2 = Palette.MemFormatToColor(r4[8]);
+            pipingloss3 = Palette.MemFormatToColor(r4[9]);
+            pipingloss4 = Palette.MemFormatToColor(r4[10]);
+            costumeloss1 = Palette.MemFormatToColor(r4[11]);
+            costumeloss2 = Palette.MemFormatToColor(r4[12]);
+            costumeloss3 = Palette.MemFormatToColor(r4[13]);
+            costumeloss4 = Palette.MemFormatToColor(r4[14]);
         }
 
-        public string row1_()
+        public string facerow()
         {
-            return Palette.ColorToMemFormat(face1) + " "; 
+            return String.Join(" ", new[] { face1, face2, face3, face4, face5, face6, face7}.Select(x => Palette.ColorToMemFormat(x)));
         }
+
+        public string costumerow()
+        {
+            return String.Join(" ", new[] { costume1, costume2, costume3, costume4}.Select(x => Palette.ColorToMemFormat(x)));
+        }
+
+        public string teethrow()
+        {
+            return String.Join(" ", new[] { teeth1, teeth2, teeth3, teeth4 }.Select(x => Palette.ColorToMemFormat(x)));
+        }
+
+        public string pipingrow()
+        {
+            return String.Join(" ", new[] { piping1, piping2, piping3, piping4 }.Select(x => Palette.ColorToMemFormat(x)));
+        }
+
+        public string bloodrow()
+        {
+            return String.Join(" ", new[] { blood1, blood2, blood3 }.Select(x => Palette.ColorToMemFormat(x)));
+        }
+
+        public string costumelossrow()
+        {
+            return String.Join(" ", new[] { costumeloss1, costumeloss2, costumeloss3, costumeloss4 }.Select(x => Palette.ColorToMemFormat(x)));
+        }
+
+        public string pipinglossrow()
+        {
+            return String.Join(" ", new[] { pipingloss1, pipingloss2, pipingloss3, pipingloss4 }.Select(x => Palette.ColorToMemFormat(x)));
+        }
+
+        public string portraitmem()
+        {
+            string s = facerow() + " " + pipingrow() + " " + costumerow() + " 0A00\r\n" +
+                facerow() + " " + pipingrow() + " " + teethrow() + " 0A00\r\n" +
+                facerow() + " " + bloodrow() + " 0008 " + teethrow() + " 0A00\r\n" +
+                facerow() + " " + pipinglossrow() + " " + costumelossrow() + " 0A00";
+            return s;
+        }
+
     }
 
     public class Palette
