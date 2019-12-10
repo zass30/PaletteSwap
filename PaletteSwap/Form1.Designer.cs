@@ -68,6 +68,7 @@
             this.portraitLossBox = new System.Windows.Forms.PictureBox();
             this.psychopunchBox = new System.Windows.Forms.PictureBox();
             this.psychoprepBox = new System.Windows.Forms.PictureBox();
+            this.crusherBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -92,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -106,6 +108,7 @@
             // 
             // spriteBox
             // 
+            this.spriteBox.BackColor = System.Drawing.Color.Black;
             this.spriteBox.Location = new System.Drawing.Point(9, 41);
             this.spriteBox.Name = "spriteBox";
             this.spriteBox.Size = new System.Drawing.Size(103, 91);
@@ -124,6 +127,7 @@
             // 
             // portraitBox
             // 
+            this.portraitBox.BackColor = System.Drawing.Color.Black;
             this.portraitBox.Location = new System.Drawing.Point(633, 41);
             this.portraitBox.Name = "portraitBox";
             this.portraitBox.Size = new System.Drawing.Size(96, 112);
@@ -449,6 +453,7 @@
             // 
             // psychopunchBox
             // 
+            this.psychopunchBox.BackColor = System.Drawing.Color.Black;
             this.psychopunchBox.Location = new System.Drawing.Point(9, 155);
             this.psychopunchBox.Name = "psychopunchBox";
             this.psychopunchBox.Size = new System.Drawing.Size(80, 84);
@@ -457,17 +462,28 @@
             // 
             // psychoprepBox
             // 
+            this.psychoprepBox.BackColor = System.Drawing.Color.Black;
             this.psychoprepBox.Location = new System.Drawing.Point(334, 418);
             this.psychoprepBox.Name = "psychoprepBox";
             this.psychoprepBox.Size = new System.Drawing.Size(149, 67);
             this.psychoprepBox.TabIndex = 39;
             this.psychoprepBox.TabStop = false;
             // 
+            // crusherBox1
+            // 
+            this.crusherBox1.BackColor = System.Drawing.Color.Black;
+            this.crusherBox1.Location = new System.Drawing.Point(518, 418);
+            this.crusherBox1.Name = "crusherBox1";
+            this.crusherBox1.Size = new System.Drawing.Size(168, 47);
+            this.crusherBox1.TabIndex = 40;
+            this.crusherBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 748);
+            this.Controls.Add(this.crusherBox1);
             this.Controls.Add(this.psychoprepBox);
             this.Controls.Add(this.psychopunchBox);
             this.Controls.Add(this.portraitLossBox);
@@ -534,6 +550,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -581,6 +598,7 @@
         private System.Windows.Forms.PictureBox portraitLossBox;
         private System.Windows.Forms.PictureBox psychopunchBox;
         private System.Windows.Forms.PictureBox psychoprepBox;
+        private System.Windows.Forms.PictureBox crusherBox1;
     }
 }
 
