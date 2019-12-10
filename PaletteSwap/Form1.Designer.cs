@@ -65,6 +65,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.portraitLossBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -86,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -120,7 +122,7 @@
             // 
             this.portraitBox.Location = new System.Drawing.Point(633, 41);
             this.portraitBox.Name = "portraitBox";
-            this.portraitBox.Size = new System.Drawing.Size(100, 102);
+            this.portraitBox.Size = new System.Drawing.Size(96, 112);
             this.portraitBox.TabIndex = 3;
             this.portraitBox.TabStop = false;
             // 
@@ -433,11 +435,20 @@
             this.label8.TabIndex = 36;
             this.label8.Text = "B";
             // 
+            // portraitLossBox
+            // 
+            this.portraitLossBox.Location = new System.Drawing.Point(753, 41);
+            this.portraitLossBox.Name = "portraitLossBox";
+            this.portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.portraitLossBox.TabIndex = 37;
+            this.portraitLossBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 748);
+            this.Controls.Add(this.portraitLossBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -498,6 +509,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -542,6 +554,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox portraitLossBox;
     }
 }
 
