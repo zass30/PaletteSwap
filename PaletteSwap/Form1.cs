@@ -29,7 +29,9 @@ namespace PaletteSwap
             pal_dictionary = new Dictionary<string, int>();
             palcol_dict = new Dictionary<Color, int>();
 
-            pictureBox1.ImageLocation = @"..\..\Resources\dicstand1.png";
+            spriteBox.ImageLocation = @"..\..\Resources\dicstand1.png";
+            psychopunchBox.ImageLocation = @"..\..\Resources\dicmp1.png";
+            psychoprepBox.ImageLocation = @"..\..\Resources\dicpsychoprep5.png";
             portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
             portraitLossBox.ImageLocation = @"..\..\Resources\dicportraitloss4.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
@@ -97,7 +99,7 @@ namespace PaletteSwap
             Bitmap imgsource = masterStand;
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
-            pictureBox1.Image = swappedBmp;
+            spriteBox.Image = swappedBmp;
             pal_sprite_skin1.BackColor = pal_dest.colors[11];
             pal_sprite_skin2.BackColor = pal_dest.colors[12];
             pal_sprite_skin3.BackColor = pal_dest.colors[13];
@@ -187,7 +189,7 @@ namespace PaletteSwap
 
         private void display_magnified_sprite()
         {
-            var bmp = magnify_sprite(pictureBox1.Image, 4);
+            var bmp = magnify_sprite(spriteBox.Image, 4);
             pictureBox3.Image = bmp;
         }
 
@@ -197,7 +199,7 @@ namespace PaletteSwap
             int newh = img.Height * factor;
             Bitmap newbmp = new Bitmap(neww, newh);
 
-            Image Img = pictureBox1.Image;
+            Image Img = spriteBox.Image;
             Bitmap bmp = new Bitmap(Img);
             for (int x = 0; x < bmp.Width; x++)
             {
@@ -221,7 +223,7 @@ namespace PaletteSwap
         {
             LoadImageIntoPalette();
 
-            Image Img = pictureBox1.Image;
+            Image Img = spriteBox.Image;
             Bitmap bmp = new Bitmap(Img);
             for (int x = 0; x < bmp.Width; x++)
             {
@@ -231,7 +233,7 @@ namespace PaletteSwap
                     bmp.SetPixel(x, y, Color.FromArgb(gotColor.A, gotColor.R, gotColor.B, gotColor.G));
                 }
             }
-            pictureBox1.Image = bmp;
+            spriteBox.Image = bmp;
             display_magnified_sprite();
         }
 

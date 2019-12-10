@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dicportraitloss4.png" />
+    <None Include="Resources\dicmp1.png" />
     <Content Include="Resources\dicportrait0.png" />
     <None Include="Resources\dicstandmask14.png" />
     <None Include="Resources\dicstandmask13.png" />
@@ -103,6 +104,7 @@
     <None Include="Resources\dicportrait2.png" />
     <None Include="Resources\dicportrait3.png" />
     <None Include="Resources\dicportrait4.png" />
+    <None Include="Resources\dicpsychoprep5.png" />
     <Content Include="Resources\dicstand0.png" />
     <None Include="Resources\dicstand1.png" />
   </ItemGroup>

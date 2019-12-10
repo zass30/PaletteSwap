@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.spriteBox = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.portraitBox = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -66,7 +66,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.portraitLossBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.psychopunchBox = new System.Windows.Forms.PictureBox();
+            this.psychoprepBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
@@ -88,6 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -100,13 +104,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
+            // spriteBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 91);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.spriteBox.Location = new System.Drawing.Point(9, 41);
+            this.spriteBox.Name = "spriteBox";
+            this.spriteBox.Size = new System.Drawing.Size(103, 91);
+            this.spriteBox.TabIndex = 1;
+            this.spriteBox.TabStop = false;
             // 
             // button2
             // 
@@ -443,11 +447,29 @@
             this.portraitLossBox.TabIndex = 37;
             this.portraitLossBox.TabStop = false;
             // 
+            // psychopunchBox
+            // 
+            this.psychopunchBox.Location = new System.Drawing.Point(9, 155);
+            this.psychopunchBox.Name = "psychopunchBox";
+            this.psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this.psychopunchBox.TabIndex = 38;
+            this.psychopunchBox.TabStop = false;
+            // 
+            // psychoprepBox
+            // 
+            this.psychoprepBox.Location = new System.Drawing.Point(334, 418);
+            this.psychoprepBox.Name = "psychoprepBox";
+            this.psychoprepBox.Size = new System.Drawing.Size(149, 67);
+            this.psychoprepBox.TabIndex = 39;
+            this.psychoprepBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 748);
+            this.Controls.Add(this.psychoprepBox);
+            this.Controls.Add(this.psychopunchBox);
             this.Controls.Add(this.portraitLossBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -484,11 +506,11 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.portraitBox);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.spriteBox);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
@@ -510,6 +532,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,7 +542,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox spriteBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox portraitBox;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -555,6 +579,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox portraitLossBox;
+        private System.Windows.Forms.PictureBox psychopunchBox;
+        private System.Windows.Forms.PictureBox psychoprepBox;
     }
 }
 
