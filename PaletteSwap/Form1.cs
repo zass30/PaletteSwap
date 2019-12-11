@@ -33,6 +33,7 @@ namespace PaletteSwap
             psychopunchBox.ImageLocation = @"..\..\Resources\dicmp1.png";
             psychoprepBox.ImageLocation = @"..\..\Resources\dicpsychoprep5.png";
             crusherBox1.ImageLocation = @"..\..\Resources\diccrusher1-5.png";
+            crusherBox2.ImageLocation = @"..\..\Resources\diccrusher2-5.png";
             portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
             portraitLossBox.ImageLocation = @"..\..\Resources\dicportraitloss4.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");

@@ -69,6 +69,7 @@
             this.psychopunchBox = new System.Windows.Forms.PictureBox();
             this.psychoprepBox = new System.Windows.Forms.PictureBox();
             this.crusherBox1 = new System.Windows.Forms.PictureBox();
+            this.crusherBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -94,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -472,17 +474,27 @@
             // crusherBox1
             // 
             this.crusherBox1.BackColor = System.Drawing.Color.Black;
-            this.crusherBox1.Location = new System.Drawing.Point(518, 418);
+            this.crusherBox1.Location = new System.Drawing.Point(334, 506);
             this.crusherBox1.Name = "crusherBox1";
             this.crusherBox1.Size = new System.Drawing.Size(168, 47);
             this.crusherBox1.TabIndex = 40;
             this.crusherBox1.TabStop = false;
+            // 
+            // crusherBox2
+            // 
+            this.crusherBox2.BackColor = System.Drawing.Color.Black;
+            this.crusherBox2.Location = new System.Drawing.Point(334, 573);
+            this.crusherBox2.Name = "crusherBox2";
+            this.crusherBox2.Size = new System.Drawing.Size(170, 46);
+            this.crusherBox2.TabIndex = 41;
+            this.crusherBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 748);
+            this.Controls.Add(this.crusherBox2);
             this.Controls.Add(this.crusherBox1);
             this.Controls.Add(this.psychoprepBox);
             this.Controls.Add(this.psychopunchBox);
@@ -551,6 +563,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -599,6 +612,7 @@
         private System.Windows.Forms.PictureBox psychopunchBox;
         private System.Windows.Forms.PictureBox psychoprepBox;
         private System.Windows.Forms.PictureBox crusherBox1;
+        private System.Windows.Forms.PictureBox crusherBox2;
     }
 }
 
