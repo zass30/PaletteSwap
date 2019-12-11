@@ -86,6 +86,7 @@
     <None Include="Resources\dicmp1.png" />
     <None Include="Resources\diccrusher1-5.png" />
     <None Include="Resources\diccrusher2-5.png" />
+    <None Include="Resources\dicmp5.png" />
     <Content Include="Resources\dicportrait0.png" />
     <None Include="Resources\dicstandmask14.png" />
     <None Include="Resources\dicstandmask13.png" />
@@ -107,6 +108,10 @@
     <None Include="Resources\dicportrait3.png" />
     <None Include="Resources\dicportrait4.png" />
     <None Include="Resources\dicpsychoprep5.png" />
+    <None Include="Resources\dicportraitloss1.png" />
+    <None Include="Resources\dicportraitloss5.png" />
+    <None Include="Resources\dicportraitwin0.png" />
+    <None Include="Resources\dicportraitwin5.png" />
     <Content Include="Resources\dicstand0.png" />
     <None Include="Resources\dicstand1.png" />
   </ItemGroup>

@@ -93,6 +93,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dicmp5 {
+            get {
+                object obj = ResourceManager.GetObject("dicmp5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dicportrait0 {
             get {
                 object obj = ResourceManager.GetObject("dicportrait0", resourceCulture);
@@ -143,9 +153,49 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dicportraitloss1 {
+            get {
+                object obj = ResourceManager.GetObject("dicportraitloss1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dicportraitloss4 {
             get {
                 object obj = ResourceManager.GetObject("dicportraitloss4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dicportraitloss5 {
+            get {
+                object obj = ResourceManager.GetObject("dicportraitloss5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dicportraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("dicportraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dicportraitwin5 {
+            get {
+                object obj = ResourceManager.GetObject("dicportraitwin5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

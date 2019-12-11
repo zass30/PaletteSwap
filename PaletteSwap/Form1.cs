@@ -30,12 +30,12 @@ namespace PaletteSwap
             palcol_dict = new Dictionary<Color, int>();
 
             spriteBox.ImageLocation = @"..\..\Resources\dicstand1.png";
-            psychopunchBox.ImageLocation = @"..\..\Resources\dicmp1.png";
+            psychopunchBox.ImageLocation = @"..\..\Resources\dicmp5.png";
             psychoprepBox.ImageLocation = @"..\..\Resources\dicpsychoprep5.png";
             crusherBox1.ImageLocation = @"..\..\Resources\diccrusher1-5.png";
             crusherBox2.ImageLocation = @"..\..\Resources\diccrusher2-5.png";
-            portraitBox.ImageLocation = @"..\..\Resources\dicportrait4.png";
-            portraitLossBox.ImageLocation = @"..\..\Resources\dicportraitloss4.png";
+            portraitBox.ImageLocation = @"..\..\Resources\dicportraitwin5.png";
+            portraitLossBox.ImageLocation = @"..\..\Resources\dicportraitloss5.png";
             masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
             standMasks = new Bitmap[15];
             for (int i = 0; i < 15; i++)
@@ -44,7 +44,8 @@ namespace PaletteSwap
             }
             comboBox1.SelectedIndex = 0;
             loadPalette();
-//            createColorMasks();
+            //            createColorMasks();
+            overlayTransparency();
 
         }
 
@@ -195,8 +196,8 @@ namespace PaletteSwap
 
         private void overlayTransparency()
         {
-            var p_src = new Bitmap(@"..\..\Resources\dicportrait1.png");
-            var p_dest = new Bitmap(@"..\..\Resources\dicportrait4.png");
+            var p_src = new Bitmap(@"..\..\Resources\dicmp1.png");
+            var p_dest = new Bitmap(@"..\..\Resources\dicmp5.png");
 
 
             var newimg = Palette.overlayTransparency(p_src, p_dest);
