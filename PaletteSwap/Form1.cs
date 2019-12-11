@@ -89,6 +89,49 @@ namespace PaletteSwap
                     break;
             }
             swap_standing_sprite(pal_dest);
+            Portrait p = new Portrait(Portrait.bis4portrait);
+            load_portrait_buttons(p);
+        }
+
+        private void load_portrait_buttons(Portrait p)
+        {
+            portrait_skin1.BackColor = p.face1;
+            portrait_skin2.BackColor = p.face2;
+            portrait_skin3.BackColor = p.face3;
+            portrait_skin4.BackColor = p.face4;
+            portrait_skin5.BackColor = p.face5;
+            portrait_skin6.BackColor = p.face6;
+            portrait_skin7.BackColor = p.face7;
+
+            portrait_teeth1.BackColor = p.teeth1;
+            portrait_teeth2.BackColor = p.teeth2;
+            portrait_teeth3.BackColor = p.teeth3;
+            portrait_teeth4.BackColor = p.teeth4;
+
+            portrait_costume1.BackColor = p.costume1;
+            portrait_costume2.BackColor = p.costume2;
+            portrait_costume3.BackColor = p.costume3;
+            portrait_costume4.BackColor = p.costume4;
+
+            portrait_costumeloss1.BackColor = p.costumeloss1;
+            portrait_costumeloss2.BackColor = p.costumeloss2;
+            portrait_costumeloss3.BackColor = p.costumeloss3;
+            portrait_costumeloss4.BackColor = p.costumeloss4;
+
+            portrait_piping1.BackColor = p.piping1;
+            portrait_piping2.BackColor = p.piping2;
+            portrait_piping3.BackColor = p.piping3;
+            portrait_piping4.BackColor = p.piping4;
+
+            portrait_pipingloss1.BackColor = p.pipingloss1;
+            portrait_pipingloss2.BackColor = p.pipingloss2;
+            portrait_pipingloss3.BackColor = p.pipingloss3;
+            portrait_pipingloss4.BackColor = p.pipingloss4;
+
+            portrait_blood1.BackColor = p.blood1;
+            portrait_blood2.BackColor = p.blood2;
+            portrait_blood3.BackColor = p.blood3;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -370,6 +413,21 @@ namespace PaletteSwap
             }
             b = clamp(b);
             trackBarB.Value = b;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
