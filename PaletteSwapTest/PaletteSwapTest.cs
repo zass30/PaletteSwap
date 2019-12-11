@@ -237,7 +237,7 @@ namespace PaletteSwapTestsNet
         [TestMethod]
         public void GenerateVictoryPortraitTest()
         {
-            Bitmap portrait_expected = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
+            Bitmap portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
             string s = Portrait.bis5portrait;
             var p = new Portrait(s);
             Bitmap portrait_result = p.GenerateVictoryPortrait();
@@ -247,8 +247,8 @@ namespace PaletteSwapTestsNet
         [TestMethod]
         public void areBitmapsSameTest()
         {
-            Bitmap a = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
-            Bitmap b = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
+            Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
+            Bitmap b = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
             Assert.IsTrue(Palette.areBitmapsSame(a,b));
             b.SetPixel(10, 10, Color.Chocolate);
             Assert.IsFalse(Palette.areBitmapsSame(a, b));

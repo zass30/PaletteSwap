@@ -30,19 +30,20 @@ namespace PaletteSwap
             pal_dictionary = new Dictionary<string, int>();
             palcol_dict = new Dictionary<Color, int>();
 
-            spriteBox.ImageLocation = @"..\..\Resources\dicstand1.png";
-            psychopunchBox.ImageLocation = @"..\..\Resources\dicmp5.png";
-            psychoprepBox.ImageLocation = @"..\..\Resources\dicpsychoprep5.png";
-            crusherBox1.ImageLocation = @"..\..\Resources\diccrusher1-5.png";
-            crusherBox2.ImageLocation = @"..\..\Resources\diccrusher2-5.png";
-            portraitBox.ImageLocation = @"..\..\Resources\dicportraitwin5.png";
-            portraitLossBox.ImageLocation = @"..\..\Resources\dicportraitloss5.png";
-            masterStand = new Bitmap(@"..\..\Resources\dicstand1.png");
-            standMasks = new Bitmap[15];
+            spriteBox.Image = Properties.Resources.dicstand1;
+            psychopunchBox.Image = Properties.Resources.dicmp5;
+            psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
+            crusherBox1.Image = Properties.Resources.diccrusher1_5;
+            crusherBox2.Image = Properties.Resources.diccrusher2_5;
+            portraitBox.Image = Properties.Resources.dicportraitwin5;
+            portraitLossBox.Image = Properties.Resources.dicportraitloss5;
+
+            masterStand = new Bitmap(Properties.Resources.dicstand1);
+/*            standMasks = new Bitmap[15];
             for (int i = 0; i < 15; i++)
             {
                 standMasks[i] = new Bitmap(@"..\..\Resources\masks\dicstandmask" + i + ".png");
-            }
+            }*/
             comboBox1.SelectedIndex = 5;
             loadPalette();
             //            createColorMasks();
