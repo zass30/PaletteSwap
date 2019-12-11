@@ -235,14 +235,13 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void winPortraitTest()
+        public void GenerateVictoryPortraitTest()
         {
             Bitmap portrait_expected = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
-            Bitmap portrait_expected2 = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
             string s = Portrait.bis5portrait;
             var p = new Portrait(s);
-            Bitmap portrait_result = p.winPortrait();
-            Assert.AreEqual(portrait_expected, portrait_expected2);
+            Bitmap portrait_result = p.GenerateVictoryPortrait();
+            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
         }
 
         [TestMethod]

@@ -104,7 +104,6 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color blood2;
         public Color blood3;
 
-
         public Portrait(string s)
         {
             var v = s.Split('\n');
@@ -149,7 +148,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             costumeloss1 = Palette.MemFormatToColor(r4[11]);
             costumeloss2 = Palette.MemFormatToColor(r4[12]);
             costumeloss3 = Palette.MemFormatToColor(r4[13]);
-            costumeloss4 = Palette.MemFormatToColor(r4[14]);
+            costumeloss4 = Palette.MemFormatToColor(r4[14]);            
         }
 
         public string facerow()
@@ -196,9 +195,9 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return s;
         }
 
-        public Bitmap winPortrait()
+        public Bitmap GenerateVictoryPortrait()
         {
-            Bitmap b = new Bitmap(1, 1);
+            Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
             return b;
         }
 
