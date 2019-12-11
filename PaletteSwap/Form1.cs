@@ -19,6 +19,7 @@ namespace PaletteSwap
         Dictionary<Color, int> palcol_dict;
         Bitmap masterStand;
         Bitmap[] standMasks;
+        ZoomForm z;
 
         public Form1()
         {
@@ -42,10 +43,11 @@ namespace PaletteSwap
             {
                 standMasks[i] = new Bitmap(@"..\..\Resources\dicstandmask" + i + ".png");
             }
-            comboBox1.SelectedIndex = 0;
+            comboBox1.SelectedIndex = 5;
             loadPalette();
             //            createColorMasks();
-            overlayTransparency();
+//            overlayTransparency();
+            z = new ZoomForm();
 
         }
 
@@ -58,7 +60,7 @@ namespace PaletteSwap
 
         private void loadPalette()
         {
-            Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+            Palette pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
             Portrait portrait_dest = new Portrait(Portrait.bis4portrait);
             switch (comboBox1.SelectedIndex)
             {
@@ -99,7 +101,7 @@ namespace PaletteSwap
                     portrait_dest = new Portrait(Portrait.bis8portrait);
                     break;
             }
-            swap_standing_sprite(pal_dest);
+            load_sprite_neutralpose(pal_dest);
             load_portrait_buttons(portrait_dest);
         }
 
@@ -149,7 +151,7 @@ namespace PaletteSwap
             loadPalette();
         }
 
-        private void swap_standing_sprite( Palette pal_dest)
+        private void load_sprite_neutralpose( Palette pal_dest)
         {
             Bitmap imgsource = masterStand;
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
@@ -173,9 +175,6 @@ namespace PaletteSwap
             pal_sprite_cost5.BackColor = pal_dest.colors[1];
 
             pal_sprite_stripe1.BackColor = pal_dest.colors[7];
-
-            display_magnified_sprite();
-
         }
 
 
@@ -242,20 +241,13 @@ namespace PaletteSwap
             return s;
         }
 
-        private void display_magnified_sprite()
-        {
-            var bmp = magnify_sprite(spriteBox.Image, 4);
-            zoomBox.Image = bmp;
-        }
-
         private Bitmap magnify_sprite(Image img, int factor)
         {
             int neww = img.Width * factor;
             int newh = img.Height * factor;
             Bitmap newbmp = new Bitmap(neww, newh);
 
-            Image Img = spriteBox.Image;
-            Bitmap bmp = new Bitmap(Img);
+            Bitmap bmp = new Bitmap(img);
             for (int x = 0; x < bmp.Width; x++)
             {
                 for (int y = 0; y < bmp.Height; y++)
@@ -289,7 +281,6 @@ namespace PaletteSwap
                 }
             }
             spriteBox.Image = bmp;
-            display_magnified_sprite();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -318,14 +309,14 @@ namespace PaletteSwap
             textBox1.Text = Palette.ACTtoText(reducedline);
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_standing_sprite(pal_dest);
+            load_sprite_neutralpose(pal_dest);
         }
 
         private void loadACT_Click(object sender, EventArgs e)
         {
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            swap_standing_sprite(pal_dest);
+            load_sprite_neutralpose(pal_dest);
         }
 
         private void pal_square_click(object sender, EventArgs e)
@@ -343,7 +334,16 @@ namespace PaletteSwap
             trackBarR.Value = r;
             trackBarG.Value = g;
             trackBarB.Value = b;
+        }
 
+        private void zoom(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            var bmp = magnify_sprite(p.Image, 6);
+            if (z.IsDisposed)
+                z = new ZoomForm();
+            z.Show();
+            z.displayZoomImage(bmp);
         }
 
         private void trackBarR_Scroll(object sender, EventArgs e)
