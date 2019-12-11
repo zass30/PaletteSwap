@@ -146,11 +146,6 @@ namespace PaletteSwap
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            loadPalette();
-        }
-
         private void load_sprite_neutralpose( Palette pal_dest)
         {
             Bitmap imgsource = masterStand;
@@ -285,12 +280,7 @@ namespace PaletteSwap
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            loadPalette();
         }
 
         private void textBox1_DragEnter(object sender, DragEventArgs e)
