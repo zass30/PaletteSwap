@@ -245,7 +245,7 @@ namespace PaletteSwap
         private void display_magnified_sprite()
         {
             var bmp = magnify_sprite(spriteBox.Image, 4);
-            pictureBox3.Image = bmp;
+            zoomBox.Image = bmp;
         }
 
         private Bitmap magnify_sprite(Image img, int factor)
@@ -328,11 +328,6 @@ namespace PaletteSwap
             swap_standing_sprite(pal_dest);
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pal_square_click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
@@ -348,11 +343,6 @@ namespace PaletteSwap
             trackBarR.Value = r;
             trackBarG.Value = g;
             trackBarB.Value = b;
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -423,21 +413,6 @@ namespace PaletteSwap
             }
             b = clamp(b);
             trackBarB.Value = b;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

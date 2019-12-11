@@ -32,7 +32,7 @@
             this.spriteBox = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.portraitBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.zoomBox = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -109,7 +109,7 @@
             this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).BeginInit();
@@ -203,14 +203,14 @@
             this.portraitBox.TabIndex = 3;
             this.portraitBox.TabStop = false;
             // 
-            // pictureBox3
+            // zoomBox
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(187, 41);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(412, 364);
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.zoomBox.BackColor = System.Drawing.Color.Black;
+            this.zoomBox.Location = new System.Drawing.Point(187, 41);
+            this.zoomBox.Name = "zoomBox";
+            this.zoomBox.Size = new System.Drawing.Size(412, 364);
+            this.zoomBox.TabIndex = 4;
+            this.zoomBox.TabStop = false;
             // 
             // comboBox1
             // 
@@ -275,7 +275,6 @@
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "pads";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -492,7 +491,6 @@
             this.label6.Size = new System.Drawing.Size(15, 13);
             this.label6.TabIndex = 34;
             this.label6.Text = "R";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -636,7 +634,6 @@
             this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 50;
             this.label10.Text = "teeth";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // portrait_teeth1
             // 
@@ -969,17 +966,16 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.zoomBox);
             this.Controls.Add(this.portraitBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.spriteBox);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "PaletteSwapper";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).EndInit();
@@ -1044,7 +1040,7 @@
         private System.Windows.Forms.PictureBox spriteBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox portraitBox;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox zoomBox;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
