@@ -58,39 +58,48 @@ namespace PaletteSwap
         private void loadPalette()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+            Portrait portrait_dest = new Portrait(Portrait.bis4portrait);
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
                     pal_dest = Palette.PaletteFromMem(Palette.bis0Mem);
+                    portrait_dest = new Portrait(Portrait.bis0portrait);
                     break;
                 case 1:
                     pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+                    portrait_dest = new Portrait(Portrait.bis1portrait);
                     break;
                 case 2:
                     pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
+                    portrait_dest = new Portrait(Portrait.bis2portrait);
                     break;
                 case 3:
                     pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
+                    portrait_dest = new Portrait(Portrait.bis3portrait);
                     break;
                 case 4:
                     pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
+                    portrait_dest = new Portrait(Portrait.bis4portrait);
                     break;
                 case 5:
                     pal_dest = Palette.PaletteFromMem(Palette.bis5Mem);
+                    portrait_dest = new Portrait(Portrait.bis5portrait);
                     break;
                 case 6:
                     pal_dest = Palette.PaletteFromMem(Palette.bis6Mem);
+                    portrait_dest = new Portrait(Portrait.bis6portrait);
                     break;
                 case 7:
                     pal_dest = Palette.PaletteFromMem(Palette.bis7Mem);
+                    portrait_dest = new Portrait(Portrait.bis7portrait);
                     break;
                 case 8:
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
+                    portrait_dest = new Portrait(Portrait.bis8portrait);
                     break;
             }
             swap_standing_sprite(pal_dest);
-            Portrait p = new Portrait(Portrait.bis4portrait);
-            load_portrait_buttons(p);
+            load_portrait_buttons(portrait_dest);
         }
 
         private void load_portrait_buttons(Portrait p)
