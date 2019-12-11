@@ -16,6 +16,8 @@ namespace PaletteSwap
    // portrait
    // set hat, skin, blood, etc
    // portrait->as mem row 0, 1, etc
+   // win portrait as bmp
+   // loss portrait as bmp
 
     public class Portrait
     {
@@ -194,6 +196,12 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return s;
         }
 
+        public Bitmap winPortrait()
+        {
+            Bitmap b = new Bitmap(1, 1);
+            return b;
+        }
+
     }
 
     public class Palette
@@ -333,6 +341,24 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
                 s.Append(" ");
             }
             return s.ToString().Trim();
+        }
+
+        public static Boolean areBitmapsSame(Bitmap a, Bitmap b)
+        {
+            if (a.Width != b.Width || a.Height != b.Height)
+                return false;
+            for (int x = 0; x < a.Width; x++)
+            {
+                for (int y = 0; y < a.Height; y++)
+                {
+                    {
+                        if (a.GetPixel(x, y) != b.GetPixel(x, y))
+                            return false;
+                    }
+                }
+            }
+            return true;
+
         }
 
         public static Bitmap overlayImage(Bitmap foreground, Bitmap background)

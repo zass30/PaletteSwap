@@ -233,6 +233,27 @@ namespace PaletteSwapTestsNet
             var r = p.portraitmem();
             Assert.AreEqual(s, r);
         }
+
+        [TestMethod]
+        public void winPortraitTest()
+        {
+            Bitmap portrait_expected = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
+            Bitmap portrait_expected2 = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
+            string s = Portrait.bis5portrait;
+            var p = new Portrait(s);
+            Bitmap portrait_result = p.winPortrait();
+            Assert.AreEqual(portrait_expected, portrait_expected2);
+        }
+
+        [TestMethod]
+        public void areBitmapsSameTest()
+        {
+            Bitmap a = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
+            Bitmap b = new Bitmap(@"..\..\..\PaletteSwap\Resources\dicportraitwin5.png");
+            Assert.IsTrue(Palette.areBitmapsSame(a,b));
+            b.SetPixel(10, 10, Color.Chocolate);
+            Assert.IsFalse(Palette.areBitmapsSame(a, b));
+        }
     }
 }
 

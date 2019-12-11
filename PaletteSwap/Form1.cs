@@ -41,7 +41,7 @@ namespace PaletteSwap
             standMasks = new Bitmap[15];
             for (int i = 0; i < 15; i++)
             {
-                standMasks[i] = new Bitmap(@"..\..\Resources\dicstandmask" + i + ".png");
+                standMasks[i] = new Bitmap(@"..\..\Resources\masks\dicstandmask" + i + ".png");
             }
             comboBox1.SelectedIndex = 5;
             loadPalette();
