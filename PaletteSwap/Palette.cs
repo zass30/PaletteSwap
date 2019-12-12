@@ -7,18 +7,6 @@ using System.Drawing;
 
 namespace PaletteSwap
 {
-    // sprite
-    // set hat, skin, physcho, etc
-    // sprite->as mem
-    // sprint -> as mem row 0, row 1, etc
-    // sprite -> as act
-
-   // portrait
-   // set hat, skin, blood, etc
-   // portrait->as mem row 0, 1, etc
-   // win portrait as bmp
-   // loss portrait as bmp
-
     public class Portrait
     {
         public static readonly string bis0portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00
@@ -151,6 +139,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             costumeloss4 = Palette.MemFormatToColor(r4[14]);            
         }
 
+        public Color[] colorsArray()
+        {
+            return new[]{ face1, face2, face3, face4, face5, face6, face7,
+                costume1, costume2, costume3, costume4,
+                costumeloss1, costumeloss2, costumeloss3, costumeloss4,
+                 teeth1, teeth2, teeth3, teeth4,
+                 piping1, piping2, piping3, piping4,
+                 pipingloss1, pipingloss2, pipingloss3, pipingloss4,
+                 blood1, blood2, blood3,
+            };
+        }
+
         public string facerow()
         {
             return String.Join(" ", new[] { face1, face2, face3, face4, face5, face6, face7}.Select(x => Palette.ColorToMemFormat(x)));
@@ -197,10 +197,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Bitmap GenerateVictoryPortrait()
         {
+            var orig = new Portrait(Portrait.bis5portrait);
+            var orig_colors = orig.colorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
-            return b;
+            var my_colors = this.colorsArray();
+            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            return ret;
         }
-
     }
 
     public class Palette
@@ -269,11 +272,40 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return swappedImg;
         }
 
+        public static Bitmap PaletteSwap(Bitmap img, Color[] p_src, Color[] p_dest)
+        {
+            // foreach pixel in image
+            // get "swap color"
+            // replace color 
+            Bitmap swappedImg = new Bitmap(img.Width, img.Height);
+            for (int x = 0; x < img.Width; x++)
+            {
+                for (int y = 0; y < img.Height; y++)
+                {
+                    Color gotColor = img.GetPixel(x, y);
+                    var swappedColor = ColorSwap(gotColor, p_src, p_dest);
+                    swappedImg.SetPixel(x, y, swappedColor);
+                }
+            }
+            return swappedImg;
+        }
+
+
         public static Color ColorSwap(Color c, Palette p_src, Palette p_dest)
         {
             for (int i = 0; i < p_src.colors.Length; i++){
                 if (c == p_src.colors[i])
                     return p_dest.colors[i];
+            }
+            return c;
+        }
+
+        public static Color ColorSwap(Color c, Color[] p_src, Color[] p_dest)
+        {
+            for (int i = 0; i < p_src.Length; i++)
+            {
+                if (c == p_src[i])
+                    return p_dest[i];
             }
             return c;
         }

@@ -70,6 +70,28 @@ namespace PaletteSwapTestsNet
             }
         }
 
+
+        [TestMethod]
+        public void PaletteSwapArrayTest()
+        {
+            Bitmap srcbmp = new Bitmap(30, 1);
+            var src = new Portrait(Portrait.bis0portrait);
+            var dest = new Portrait(Portrait.bis1portrait);
+            var src_colors = src.colorsArray();
+            var dest_colors = src.colorsArray();
+
+            for (int i = 0; i < 30; i++)
+            {
+                srcbmp.SetPixel(i, 0, src_colors[i]);
+            }
+
+            var swappedbmp = Palette.PaletteSwap(srcbmp, src_colors, dest_colors);
+            for (int i = 0; i < 30; i++)
+            {
+                Assert.AreEqual(dest_colors[i], swappedbmp.GetPixel(i, 0));
+            }
+        }
+
         [TestMethod]
         public void ACTtoTextTest()
         {
@@ -241,6 +263,12 @@ namespace PaletteSwapTestsNet
             string s = Portrait.bis5portrait;
             var p = new Portrait(s);
             Bitmap portrait_result = p.GenerateVictoryPortrait();
+            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+
+            portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin0);
+            s = Portrait.bis0portrait;
+            p = new Portrait(s);
+            portrait_result = p.GenerateVictoryPortrait();
             Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
         }
 

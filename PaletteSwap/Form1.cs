@@ -18,7 +18,7 @@ namespace PaletteSwap
         Dictionary<string, int> pal_dictionary;
         Dictionary<Color, int> palcol_dict;
         Bitmap masterStand;
-        Bitmap[] standMasks;
+//        Bitmap[] standMasks;
         ZoomForm z;
 
         public Form1()
