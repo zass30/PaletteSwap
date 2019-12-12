@@ -55,13 +55,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public string row3;
         public string row4;
 
-        public Color face1;
-        public Color face2;
-        public Color face3;
-        public Color face4;
-        public Color face5;
-        public Color face6;
-        public Color face7;
+        public Color skin1;
+        public Color skin2;
+        public Color skin3;
+        public Color skin4;
+        public Color skin5;
+        public Color skin6;
+        public Color skin7;
 
         public Color teeth1;
         public Color teeth2;
@@ -101,13 +101,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             this.row4 = v[3].Trim();
 
             var r1 = row1.Split(' ');
-            face1 = Palette.MemFormatToColor(r1[0]);
-            face2 = Palette.MemFormatToColor(r1[1]);
-            face3 = Palette.MemFormatToColor(r1[2]);
-            face4 = Palette.MemFormatToColor(r1[3]);
-            face5 = Palette.MemFormatToColor(r1[4]);
-            face6 = Palette.MemFormatToColor(r1[5]);
-            face7 = Palette.MemFormatToColor(r1[6]);
+            skin1 = Palette.MemFormatToColor(r1[0]);
+            skin2 = Palette.MemFormatToColor(r1[1]);
+            skin3 = Palette.MemFormatToColor(r1[2]);
+            skin4 = Palette.MemFormatToColor(r1[3]);
+            skin5 = Palette.MemFormatToColor(r1[4]);
+            skin6 = Palette.MemFormatToColor(r1[5]);
+            skin7 = Palette.MemFormatToColor(r1[6]);
             piping1 = Palette.MemFormatToColor(r1[7]);
             piping2 = Palette.MemFormatToColor(r1[8]);
             piping3 = Palette.MemFormatToColor(r1[9]);
@@ -141,7 +141,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Color[] VictoryColorsArray()
         {
-            return new[]{ face1, face2, face3, face4, face5, face6, face7,
+            return new[]{ skin1, skin2, skin3, skin4, skin5, skin6, skin7,
                 costume1, costume2, costume3, costume4,
                  teeth1, teeth2, teeth3, teeth4,
                  piping1, piping2, piping3, piping4,
@@ -150,7 +150,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Color[] LossTopColorsArray()
         {
-            return new[]{ face1, face2, face3, face4, face5, face6, face7,
+            return new[]{ skin1, skin2, skin3, skin4, skin5, skin6, skin7,
                  teeth1, teeth2, teeth3, teeth4,
                  pipingloss1, pipingloss2, pipingloss3, pipingloss4,
                  costumeloss1, costumeloss2, costumeloss3, costumeloss4,
@@ -160,7 +160,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Color[] LossBottomColorsArray()
         {
-            return new[]{ face1, face2, face3, face4, face5, face6, face7,
+            return new[]{ skin1, skin2, skin3, skin4, skin5, skin6, skin7,
                 costume1, costume2, costume3, costume4,
                  piping1, piping2, piping3, piping4,
             };
@@ -169,7 +169,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public string facerow()
         {
-            return String.Join(" ", new[] { face1, face2, face3, face4, face5, face6, face7}.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { skin1, skin2, skin3, skin4, skin5, skin6, skin7}.Select(x => Palette.ColorToMemFormat(x)));
         }
 
         public string costumerow()

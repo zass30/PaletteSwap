@@ -20,6 +20,8 @@ namespace PaletteSwap
         Bitmap masterStand;
 //        Bitmap[] standMasks;
         ZoomForm z;
+        PictureBox currentlySelectedColor;
+        Portrait currentPortrait;
 
         public Form1()
         {
@@ -62,72 +64,72 @@ namespace PaletteSwap
         private void loadPalette()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
-            Portrait portrait_dest = new Portrait(Portrait.bis4portrait);
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
                     pal_dest = Palette.PaletteFromMem(Palette.bis0Mem);
-                    portrait_dest = new Portrait(Portrait.bis0portrait);
+                    currentPortrait = new Portrait(Portrait.bis0portrait);
                     break;
                 case 1:
                     pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
-                    portrait_dest = new Portrait(Portrait.bis1portrait);
+                    currentPortrait = new Portrait(Portrait.bis1portrait);
                     break;
                 case 2:
                     pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
-                    portrait_dest = new Portrait(Portrait.bis2portrait);
+                    currentPortrait = new Portrait(Portrait.bis2portrait);
                     break;
                 case 3:
                     pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
-                    portrait_dest = new Portrait(Portrait.bis3portrait);
+                    currentPortrait = new Portrait(Portrait.bis3portrait);
                     break;
                 case 4:
                     pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
-                    portrait_dest = new Portrait(Portrait.bis4portrait);
+                    currentPortrait = new Portrait(Portrait.bis4portrait);
                     break;
                 case 5:
                     pal_dest = Palette.PaletteFromMem(Palette.bis5Mem);
-                    portrait_dest = new Portrait(Portrait.bis5portrait);
+                    currentPortrait = new Portrait(Portrait.bis5portrait);
                     break;
                 case 6:
                     pal_dest = Palette.PaletteFromMem(Palette.bis6Mem);
-                    portrait_dest = new Portrait(Portrait.bis6portrait);
+                    currentPortrait = new Portrait(Portrait.bis6portrait);
                     break;
                 case 7:
                     pal_dest = Palette.PaletteFromMem(Palette.bis7Mem);
-                    portrait_dest = new Portrait(Portrait.bis7portrait);
+                    currentPortrait = new Portrait(Portrait.bis7portrait);
                     break;
                 case 8:
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
-                    portrait_dest = new Portrait(Portrait.bis8portrait);
+                    currentPortrait = new Portrait(Portrait.bis8portrait);
                     break;
             }
             load_sprite_neutralpose(pal_dest);
-            load_portrait_buttons(portrait_dest);
-            load_portrait_victory(portrait_dest);
-            load_portrait_loss(portrait_dest);
+            load_portrait_buttons();
+            load_portrait_victory();
+            load_portrait_loss();
         }
 
-        private void load_portrait_victory(Portrait p)
+        private void load_portrait_victory()
         {
-            portraitBox.Image = p.GenerateVictoryPortrait();
+            portraitBox.Image = currentPortrait.GenerateVictoryPortrait();
         }
 
-        private void load_portrait_loss(Portrait p)
+        private void load_portrait_loss()
         {
-            portraitLossBox.Image = p.GenerateLossPortrait();
+            portraitLossBox.Image = currentPortrait.GenerateLossPortrait();
         }
 
 
-        private void load_portrait_buttons(Portrait p)
+        private void load_portrait_buttons()
         {
-            portrait_skin1.BackColor = p.face1;
-            portrait_skin2.BackColor = p.face2;
-            portrait_skin3.BackColor = p.face3;
-            portrait_skin4.BackColor = p.face4;
-            portrait_skin5.BackColor = p.face5;
-            portrait_skin6.BackColor = p.face6;
-            portrait_skin7.BackColor = p.face7;
+            var p = currentPortrait;
+            portrait_skin1.BackColor = p.skin1;
+            portrait_skin2.BackColor = p.skin2;
+            portrait_skin3.BackColor = p.skin3;
+            portrait_skin4.BackColor = p.skin4;
+            portrait_skin5.BackColor = p.skin5;
+            portrait_skin6.BackColor = p.skin6;
+            portrait_skin7.BackColor = p.skin7;
 
             portrait_teeth1.BackColor = p.teeth1;
             portrait_teeth2.BackColor = p.teeth2;
@@ -326,6 +328,7 @@ namespace PaletteSwap
         private void pal_square_click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
+            currentlySelectedColor = p;
             Color c = p.BackColor;
             int r = c.R / 17;
             int g = c.G / 17;
@@ -387,6 +390,10 @@ namespace PaletteSwap
             }
             r = clamp(r);
             trackBarR.Value = r;
+            var c = currentlySelectedColor.BackColor;
+            var newcolor = Color.FromArgb(c.A, r*17, c.G, c.B);
+            currentlySelectedColor.BackColor = newcolor;
+            updateColor(newcolor);
         }
 
         private void pal_val_G_TextChanged(object sender, EventArgs e)
@@ -402,6 +409,10 @@ namespace PaletteSwap
             }
             g = clamp(g);
             trackBarG.Value = g;
+            var c = currentlySelectedColor.BackColor;
+            var newcolor = Color.FromArgb(c.A, c.R, g*17, c.B);
+            currentlySelectedColor.BackColor = newcolor;
+            updateColor(newcolor);
         }
 
         private void pal_val_B_TextChanged(object sender, EventArgs e)
@@ -417,6 +428,118 @@ namespace PaletteSwap
             }
             b = clamp(b);
             trackBarB.Value = b;
+            var c = currentlySelectedColor.BackColor;
+            var newcolor = Color.FromArgb(c.A, c.R, c.G, b*17);
+            currentlySelectedColor.BackColor = newcolor;
+            updateColor(newcolor);
+        }
+
+        private void updateColor(Color c)
+        {
+            currentlySelectedColor.BackColor = c;
+            switch (currentlySelectedColor.Name)
+            {
+                case "portrait_skin1":
+                    currentPortrait.skin1 = c;
+                    break;
+                case "portrait_skin2":
+                    currentPortrait.skin2 = c;
+                    break;
+                case "portrait_skin3":
+                    currentPortrait.skin3 = c;
+                    break;
+                case "portrait_skin4":
+                    currentPortrait.skin4 = c;
+                    break;
+                case "portrait_skin5":
+                    currentPortrait.skin5 = c;
+                    break;
+                case "portrait_skin6":
+                    currentPortrait.skin6 = c;
+                    break;
+                case "portrait_skin7":
+                    currentPortrait.skin7 = c;
+                    break;
+
+                case "portrait_teeth1":
+                    currentPortrait.teeth1 = c;
+                    break;
+                case "portrait_teeth2":
+                    currentPortrait.teeth2 = c;
+                    break;
+                case "portrait_teeth3":
+                    currentPortrait.teeth3 = c;
+                    break;
+                case "portrait_teeth4":
+                    currentPortrait.teeth4 = c;
+                    break;
+
+                case "portrait_costume1":
+                    currentPortrait.costume1 = c;
+                    break;
+                case "portrait_costume2":
+                    currentPortrait.costume2 = c;
+                    break;
+                case "portrait_costume3":
+                    currentPortrait.costume3 = c;
+                    break;
+                case "portrait_costume4":
+                    currentPortrait.costume4 = c;
+                    break;
+
+                case "portrait_costumeloss1":
+                    currentPortrait.costumeloss1 = c;
+                    break;
+                case "portrait_costumeloss2":
+                    currentPortrait.costumeloss2 = c;
+                    break;
+                case "portrait_costumeloss3":
+                    currentPortrait.costumeloss3 = c;
+                    break;
+                case "portrait_costumeloss4":
+                    currentPortrait.costumeloss4 = c;
+                    break;
+
+                case "portrait_piping1":
+                    currentPortrait.piping1 = c;
+                    break;
+                case "portrait_piping2":
+                    currentPortrait.piping2 = c;
+                    break;
+                case "portrait_piping3":
+                    currentPortrait.piping3 = c;
+                    break;
+                case "portrait_piping4":
+                    currentPortrait.piping4 = c;
+                    break;
+
+                case "portrait_pipingloss1":
+                    currentPortrait.pipingloss1 = c;
+                    break;
+                case "portrait_pipingloss2":
+                    currentPortrait.pipingloss2 = c;
+                    break;
+                case "portrait_pipingloss3":
+                    currentPortrait.pipingloss3 = c;
+                    break;
+                case "portrait_pipingloss4":
+                    currentPortrait.pipingloss4 = c;
+                    break;
+
+                case "portrait_blood1":
+                    currentPortrait.blood1 = c;
+                    break;
+                case "portrait_blood2":
+                    currentPortrait.blood2 = c;
+                    break;
+                case "portrait_blood3":
+                    currentPortrait.blood3 = c;
+                    break;
+
+            }
+            load_portrait_victory();
+            load_portrait_loss();
+
         }
     }
 }

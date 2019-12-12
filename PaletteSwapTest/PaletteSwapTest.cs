@@ -179,13 +179,13 @@ namespace PaletteSwapTestsNet
         {
             string s = Portrait.bis0portrait;
             var p = new Portrait(s);
-            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), p.face1);
-            Assert.AreEqual(Color.FromArgb(255, 255, 221, 153), p.face2);
-            Assert.AreEqual(Color.FromArgb(255, 238, 153, 102), p.face3);
-            Assert.AreEqual(Color.FromArgb(255, 204, 119, 85), p.face4);
-            Assert.AreEqual(Color.FromArgb(255, 170, 102, 68), p.face5);
-            Assert.AreEqual(Color.FromArgb(255, 136, 85, 68), p.face6);
-            Assert.AreEqual(Color.FromArgb(255, 102, 68, 51), p.face7);
+            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), p.skin1);
+            Assert.AreEqual(Color.FromArgb(255, 255, 221, 153), p.skin2);
+            Assert.AreEqual(Color.FromArgb(255, 238, 153, 102), p.skin3);
+            Assert.AreEqual(Color.FromArgb(255, 204, 119, 85), p.skin4);
+            Assert.AreEqual(Color.FromArgb(255, 170, 102, 68), p.skin5);
+            Assert.AreEqual(Color.FromArgb(255, 136, 85, 68), p.skin6);
+            Assert.AreEqual(Color.FromArgb(255, 102, 68, 51), p.skin7);
             Assert.AreEqual(Color.FromArgb(255, 255, 0, 0), p.blood1);
             Assert.AreEqual(Color.FromArgb(255, 0, 136, 238), p.costume1);
             Assert.AreEqual(Color.FromArgb(255, 0, 119, 204), p.costumeloss1);
