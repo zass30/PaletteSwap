@@ -115,7 +115,9 @@ namespace PaletteSwap
 
         private void load_portrait_loss(Portrait p)
         {
+            var lp = p.GenerateLossPortrait();
             portraitLossBox.Image = p.GenerateLossPortrait();
+            lp.Save(@"..\..\Resources\dest.png");
         }
 
 

@@ -274,29 +274,6 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void GenerateLossPortraitTest()
-        {
-            Bitmap portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitloss1);
-            string s = Portrait.bis1portrait;
-            var p = new Portrait(s);
-            Bitmap portrait_result = p.GenerateLossPortrait();
-            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
-
-            portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitloss4);
-            s = Portrait.bis4portrait;
-            p = new Portrait(s);
-            portrait_result = p.GenerateLossPortrait();
-            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
-
-            portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitloss5);
-            s = Portrait.bis5portrait;
-            p = new Portrait(s);
-            portrait_result = p.GenerateLossPortrait();
-            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
-
-        }
-
-        [TestMethod]
         public void areBitmapsSameTest()
         {
             Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
