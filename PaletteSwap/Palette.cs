@@ -153,6 +153,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return new[]{ face1, face2, face3, face4, face5, face6, face7,
                  teeth1, teeth2, teeth3, teeth4,
                  pipingloss1, pipingloss2, pipingloss3, pipingloss4,
+                 costumeloss1, costumeloss2, costumeloss3, costumeloss4,
                  blood1, blood2, blood3,
             };
         }
