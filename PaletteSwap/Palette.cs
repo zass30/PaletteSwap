@@ -198,6 +198,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Bitmap GenerateVictoryPortrait()
         {
             var orig = new Portrait(Portrait.bis5portrait);
+            // change to only load victory colors
+            var orig_colors = orig.colorsArray();
+            Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
+            var my_colors = this.colorsArray();
+            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            return ret;
+        }
+
+        public Bitmap GenerateLossPortrait()
+        {
+            var orig = new Portrait(Portrait.bis5portrait);
+            // change to only load victory colors
             var orig_colors = orig.colorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
             var my_colors = this.colorsArray();
