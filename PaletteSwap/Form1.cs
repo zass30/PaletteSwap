@@ -105,12 +105,19 @@ namespace PaletteSwap
             load_sprite_neutralpose(pal_dest);
             load_portrait_buttons(portrait_dest);
             load_portrait_victory(portrait_dest);
+            load_portrait_loss(portrait_dest);
         }
 
         private void load_portrait_victory(Portrait p)
         {
             portraitBox.Image = p.GenerateVictoryPortrait();
         }
+
+        private void load_portrait_loss(Portrait p)
+        {
+            portraitLossBox.Image = p.GenerateLossPortrait();
+        }
+
 
         private void load_portrait_buttons(Portrait p)
         {

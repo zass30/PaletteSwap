@@ -77,8 +77,8 @@ namespace PaletteSwapTestsNet
             Bitmap srcbmp = new Bitmap(30, 1);
             var src = new Portrait(Portrait.bis0portrait);
             var dest = new Portrait(Portrait.bis1portrait);
-            var src_colors = src.colorsArray();
-            var dest_colors = src.colorsArray();
+            var src_colors = src.VictoryColorsArray();
+            var dest_colors = src.VictoryColorsArray();
 
             for (int i = 0; i < 30; i++)
             {
