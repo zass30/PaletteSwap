@@ -175,4 +175,10 @@
   <data name="dicportraitlosstop5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dicportraitlosstop5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sfxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roms\sfxe.03c;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sfxe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roms\sfxe.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

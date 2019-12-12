@@ -249,5 +249,25 @@ namespace PaletteSwap.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] sfxe {
+            get {
+                object obj = ResourceManager.GetObject("sfxe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] sfxe1 {
+            get {
+                object obj = ResourceManager.GetObject("sfxe1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
