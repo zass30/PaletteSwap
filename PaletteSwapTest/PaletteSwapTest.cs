@@ -254,6 +254,13 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual("8F07", Palette.ColorToMemFormat(p.psychopunch4));
             Assert.AreEqual("6F05", Palette.ColorToMemFormat(p.psychopunch5));
 
+            s = Sprite.bis1sprite;
+            p = new Sprite(s);
+            Assert.AreEqual("EF0B", Palette.ColorToMemFormat(p.costume1));
+            Assert.AreEqual("BE08", Palette.ColorToMemFormat(p.costume2));
+            Assert.AreEqual("7C05", Palette.ColorToMemFormat(p.costume3));
+            Assert.AreEqual("5903", Palette.ColorToMemFormat(p.costume4));
+            Assert.AreEqual("3700", Palette.ColorToMemFormat(p.costume5));
         }
 
         [TestMethod]
