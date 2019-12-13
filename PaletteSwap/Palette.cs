@@ -327,6 +327,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color pads5;
 
         public Color stripe;
+        public Color psychoglow;
 
         public Color psychopunch1;
         public Color psychopunch2;
@@ -367,6 +368,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var r3 = row3.Split(' ');
 
             var r4 = row4.Split(' ');
+            psychoglow = Palette.MemFormatToColor(r4[6]);
+
             var r5 = row5.Split(' ');
             psychopunch1 = Palette.MemFormatToColor(r5[6]);
             psychopunch2 = Palette.MemFormatToColor(r5[7]);

@@ -172,6 +172,8 @@ namespace PaletteSwap
             pal_sprite_cost4.BackColor = s.costume4;
             pal_sprite_cost5.BackColor = s.costume5;
 
+            pal_sprite_psychoglow.BackColor = s.psychoglow;
+
         }
 
         private void load_portrait_buttons()
@@ -593,7 +595,6 @@ namespace PaletteSwap
             }
             load_portrait_victory();
             load_portrait_loss();
-
         }
     }
 }

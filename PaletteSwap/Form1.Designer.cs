@@ -105,6 +105,8 @@
             this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
             this.portraitBox = new System.Windows.Forms.PictureBox();
             this.neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychoglow = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -160,6 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -917,11 +920,31 @@
             this.neutralStandBox.TabStop = false;
             this.neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
+            // pal_sprite_psychoglow
+            // 
+            this.pal_sprite_psychoglow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(73, 568);
+            this.pal_sprite_psychoglow.Name = "pal_sprite_psychoglow";
+            this.pal_sprite_psychoglow.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychoglow.TabIndex = 79;
+            this.pal_sprite_psychoglow.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 580);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(29, 13);
+            this.label16.TabIndex = 80;
+            this.label16.Text = "glow";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 655);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.pal_sprite_psychoglow);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.portrait_blood3);
             this.Controls.Add(this.portrait_blood2);
@@ -1056,6 +1079,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1139,6 +1163,8 @@
         private System.Windows.Forms.PictureBox portrait_blood2;
         private System.Windows.Forms.PictureBox portrait_blood3;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pal_sprite_psychoglow;
+        private System.Windows.Forms.Label label16;
     }
 }
 
