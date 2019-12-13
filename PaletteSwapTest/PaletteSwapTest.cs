@@ -337,6 +337,20 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
+        public void GenerateStandSpriteTest()
+        {
+            Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand1);
+            var s = new Sprite(Sprite.bis1sprite);
+            Bitmap sprite_result = s.GenerateStandingSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
+            s = new Sprite(Sprite.bis0sprite);
+            sprite_result = s.GenerateStandingSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+        }
+
+        [TestMethod]
         public void areBitmapsSameTest()
         {
             Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);

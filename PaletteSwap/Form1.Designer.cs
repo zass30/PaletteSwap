@@ -104,7 +104,7 @@
             this.pal_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
             this.portraitBox = new System.Windows.Forms.PictureBox();
-            this.spriteBox = new System.Windows.Forms.PictureBox();
+            this.neutralStandBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -159,7 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -906,15 +906,15 @@
             this.portraitBox.TabStop = false;
             this.portraitBox.Click += new System.EventHandler(this.zoom);
             // 
-            // spriteBox
+            // neutralStandBox
             // 
-            this.spriteBox.BackColor = System.Drawing.Color.Black;
-            this.spriteBox.Location = new System.Drawing.Point(9, 41);
-            this.spriteBox.Name = "spriteBox";
-            this.spriteBox.Size = new System.Drawing.Size(103, 91);
-            this.spriteBox.TabIndex = 1;
-            this.spriteBox.TabStop = false;
-            this.spriteBox.Click += new System.EventHandler(this.zoom);
+            this.neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.neutralStandBox.Location = new System.Drawing.Point(9, 41);
+            this.neutralStandBox.Name = "neutralStandBox";
+            this.neutralStandBox.Size = new System.Drawing.Size(103, 91);
+            this.neutralStandBox.TabIndex = 1;
+            this.neutralStandBox.TabStop = false;
+            this.neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // Form1
             // 
@@ -997,7 +997,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.portraitBox);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.spriteBox);
+            this.Controls.Add(this.neutralStandBox);
             this.Name = "Form1";
             this.Text = "PaletteSwapper";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
@@ -1054,14 +1054,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox spriteBox;
+        private System.Windows.Forms.PictureBox neutralStandBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox portraitBox;
         private System.Windows.Forms.ComboBox comboBox1;

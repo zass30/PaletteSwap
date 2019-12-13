@@ -372,6 +372,22 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             psychopunch4 = Palette.MemFormatToColor(r5[9]);
             psychopunch5 = Palette.MemFormatToColor(r5[10]);
         }
+
+        public Color[] StandingSpriteColorsArray()
+        {
+            return new[] { skin1, skin2, skin3, skin4, stripe, pads1, pads2, pads3, pads4, pads5,
+            costume1, costume2, costume3, costume4, costume5};
+        }
+
+        public Bitmap GenerateStandingSprite()
+        {
+            var orig = new Sprite(Sprite.bis1sprite);
+            var orig_colors = orig.StandingSpriteColorsArray();
+            Bitmap b = new Bitmap(Properties.Resources.dicstand1);
+            var my_colors = this.StandingSpriteColorsArray();
+            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            return ret;
+        }
     }
 
     public class Palette

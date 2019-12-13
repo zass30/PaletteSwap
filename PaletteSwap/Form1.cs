@@ -22,6 +22,7 @@ namespace PaletteSwap
         ZoomForm z;
         PictureBox currentlySelectedColor;
         Portrait currentPortrait;
+        Sprite currentSprite;
 
         public Form1()
         {
@@ -32,7 +33,7 @@ namespace PaletteSwap
             pal_dictionary = new Dictionary<string, int>();
             palcol_dict = new Dictionary<Color, int>();
 
-            spriteBox.Image = Properties.Resources.dicstand1;
+            neutralStandBox.Image = Properties.Resources.dicstand1;
             psychopunchBox.Image = Properties.Resources.dicmp5;
             psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
             crusherBox1.Image = Properties.Resources.diccrusher1_5;
@@ -68,45 +69,72 @@ namespace PaletteSwap
             {
                 case 0:
                     pal_dest = Palette.PaletteFromMem(Palette.bis0Mem);
+                    currentSprite = new Sprite(Sprite.bis0sprite);
                     currentPortrait = new Portrait(Portrait.bis0portrait);
                     break;
                 case 1:
                     pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+                    currentSprite = new Sprite(Sprite.bis1sprite);
                     currentPortrait = new Portrait(Portrait.bis1portrait);
                     break;
                 case 2:
                     pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
+                    currentSprite = new Sprite(Sprite.bis2sprite);
                     currentPortrait = new Portrait(Portrait.bis2portrait);
                     break;
                 case 3:
                     pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
+                    currentSprite = new Sprite(Sprite.bis3sprite);
                     currentPortrait = new Portrait(Portrait.bis3portrait);
                     break;
                 case 4:
                     pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
+                    currentSprite = new Sprite(Sprite.bis4sprite);
                     currentPortrait = new Portrait(Portrait.bis4portrait);
                     break;
                 case 5:
                     pal_dest = Palette.PaletteFromMem(Palette.bis5Mem);
+                    currentSprite = new Sprite(Sprite.bis5sprite);
                     currentPortrait = new Portrait(Portrait.bis5portrait);
                     break;
                 case 6:
                     pal_dest = Palette.PaletteFromMem(Palette.bis6Mem);
+                    currentSprite = new Sprite(Sprite.bis6sprite);
                     currentPortrait = new Portrait(Portrait.bis6portrait);
                     break;
                 case 7:
                     pal_dest = Palette.PaletteFromMem(Palette.bis7Mem);
+                    currentSprite = new Sprite(Sprite.bis7sprite);
                     currentPortrait = new Portrait(Portrait.bis7portrait);
                     break;
                 case 8:
                     pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
+                    currentSprite = new Sprite(Sprite.bis8sprite);
                     currentPortrait = new Portrait(Portrait.bis8portrait);
                     break;
             }
-            load_sprite_neutralpose(pal_dest);
+//            load_sprite_neutralpose(pal_dest);
             load_portrait_buttons();
+            load_sprite_buttons();
             load_portrait_victory();
             load_portrait_loss();
+            load_sprite_neutralstand();
+        }
+
+        private void load_sprite_neutralstand()
+        {
+            var b = currentSprite.GenerateStandingSprite();
+            neutralStandBox.Image = b;
+            try
+            {
+                b.Save(@"..\..\Resources\dest.png");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("There was a problem saving the file." +
+                    "Check the file permissions.");
+            }
+            
         }
 
         private void load_portrait_victory()
@@ -119,6 +147,15 @@ namespace PaletteSwap
             portraitLossBox.Image = currentPortrait.GenerateLossPortrait();
         }
 
+        private void load_sprite_buttons()
+        {
+            var s = currentSprite;
+            pal_sprite_skin1.BackColor = s.skin1;
+            pal_sprite_skin2.BackColor = s.skin2;
+            pal_sprite_skin3.BackColor = s.skin3;
+            pal_sprite_skin4.BackColor = s.skin4;
+
+        }
 
         private void load_portrait_buttons()
         {
@@ -167,7 +204,7 @@ namespace PaletteSwap
             Bitmap imgsource = masterStand;
             Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
             Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
-            spriteBox.Image = swappedBmp;
+            neutralStandBox.Image = swappedBmp;
             pal_sprite_skin1.BackColor = pal_dest.colors[11];
             pal_sprite_skin2.BackColor = pal_dest.colors[12];
             pal_sprite_skin3.BackColor = pal_dest.colors[13];
@@ -281,7 +318,7 @@ namespace PaletteSwap
         {
             LoadImageIntoPalette();
 
-            Image Img = spriteBox.Image;
+            Image Img = neutralStandBox.Image;
             Bitmap bmp = new Bitmap(Img);
             for (int x = 0; x < bmp.Width; x++)
             {
@@ -291,7 +328,7 @@ namespace PaletteSwap
                     bmp.SetPixel(x, y, Color.FromArgb(gotColor.A, gotColor.R, gotColor.B, gotColor.G));
                 }
             }
-            spriteBox.Image = bmp;
+            neutralStandBox.Image = bmp;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
