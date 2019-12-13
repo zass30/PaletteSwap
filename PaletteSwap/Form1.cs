@@ -158,6 +158,20 @@ namespace PaletteSwap
             pal_sprite_skin3.BackColor = s.skin3;
             pal_sprite_skin4.BackColor = s.skin4;
 
+            pal_sprite_stripe1.BackColor = s.stripe;
+
+            pal_sprite_pads1.BackColor = s.pads1;
+            pal_sprite_pads2.BackColor = s.pads2;
+            pal_sprite_pads3.BackColor = s.pads3;
+            pal_sprite_pads4.BackColor = s.pads4;
+            pal_sprite_pads5.BackColor = s.pads5;
+
+            pal_sprite_cost1.BackColor = s.costume1;
+            pal_sprite_cost2.BackColor = s.costume2;
+            pal_sprite_cost3.BackColor = s.costume3;
+            pal_sprite_cost4.BackColor = s.costume4;
+            pal_sprite_cost5.BackColor = s.costume5;
+
         }
 
         private void load_portrait_buttons()
@@ -386,7 +400,7 @@ namespace PaletteSwap
         private void zoom(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
-            var bmp = magnify_sprite(p.Image, 6);
+            var bmp = magnify_sprite(p.Image, 4);
             if (z.IsDisposed)
                 z = new ZoomForm();
             z.Show();
