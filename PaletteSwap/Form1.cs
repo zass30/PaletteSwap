@@ -112,29 +112,30 @@ namespace PaletteSwap
                     currentSprite = new Sprite(Sprite.bis8sprite);
                     currentPortrait = new Portrait(Portrait.bis8portrait);
                     break;
+                case 9:
+                    pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
+                    currentSprite = new Sprite(Sprite.bis9sprite);
+                    currentPortrait = new Portrait(Portrait.bis9portrait);
+                    break;
             }
-//            load_sprite_neutralpose(pal_dest);
+            //            load_sprite_neutralpose(pal_dest);
             load_portrait_buttons();
             load_sprite_buttons();
             load_portrait_victory();
             load_portrait_loss();
             load_sprite_neutralstand();
+            load_sprite_psychopunch();
         }
 
         private void load_sprite_neutralstand()
         {
-            var b = currentSprite.GenerateStandingSprite();
-            neutralStandBox.Image = b;
-            try
-            {
-                b.Save(@"..\..\Resources\dest.png");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("There was a problem saving the file." +
-                    "Check the file permissions.");
-            }
-            
+            var b = currentSprite.GenerateStandingSprite();        
+        }
+
+        private void load_sprite_psychopunch()
+        {
+            var b = currentSprite.GeneratePsychoPunchSprite();
+            psychopunchBox.Image = b;
         }
 
         private void load_portrait_victory()
