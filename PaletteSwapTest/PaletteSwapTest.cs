@@ -231,11 +231,11 @@ namespace PaletteSwapTestsNet
         {
             string s = Sprite.bis5sprite;
             var p = new Sprite(s);
-            Assert.AreEqual("4101", Palette.ColorToMemFormat(p.pads1));
-            Assert.AreEqual("6402", Palette.ColorToMemFormat(p.pads2));
+            Assert.AreEqual("FD0A", Palette.ColorToMemFormat(p.pads1));
+            Assert.AreEqual("DB06", Palette.ColorToMemFormat(p.pads2));
             Assert.AreEqual("A803", Palette.ColorToMemFormat(p.pads3));
-            Assert.AreEqual("DB06", Palette.ColorToMemFormat(p.pads4));
-            Assert.AreEqual("FD0A", Palette.ColorToMemFormat(p.pads5));
+            Assert.AreEqual("6402", Palette.ColorToMemFormat(p.pads4));
+            Assert.AreEqual("4101", Palette.ColorToMemFormat(p.pads5));
 
             Assert.AreEqual("BF0F", Palette.ColorToMemFormat(p.costume1));
             Assert.AreEqual("8E0E", Palette.ColorToMemFormat(p.costume2));
@@ -247,6 +247,13 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual("B90C", Palette.ColorToMemFormat(p.skin2));
             Assert.AreEqual("7609", Palette.ColorToMemFormat(p.skin3));
             Assert.AreEqual("5307", Palette.ColorToMemFormat(p.skin4));
+
+            Assert.AreEqual("FF0E", Palette.ColorToMemFormat(p.psychopunch1));
+            Assert.AreEqual("DF0C", Palette.ColorToMemFormat(p.psychopunch2));
+            Assert.AreEqual("AF09", Palette.ColorToMemFormat(p.psychopunch3));
+            Assert.AreEqual("8F07", Palette.ColorToMemFormat(p.psychopunch4));
+            Assert.AreEqual("6F05", Palette.ColorToMemFormat(p.psychopunch5));
+
         }
 
         [TestMethod]

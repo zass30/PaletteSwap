@@ -323,11 +323,11 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             this.row5 = v[4].Trim();
 
             var r1 = row1.Split(' ');
-            pads1 = Palette.MemFormatToColor(r1[0]);
-            pads2 = Palette.MemFormatToColor(r1[6]);
+            pads5 = Palette.MemFormatToColor(r1[0]);
+            pads4 = Palette.MemFormatToColor(r1[6]);
             pads3 = Palette.MemFormatToColor(r1[10]);
-            pads4 = Palette.MemFormatToColor(r1[9]);
-            pads5 = Palette.MemFormatToColor(r1[8]);
+            pads2 = Palette.MemFormatToColor(r1[9]);
+            pads1 = Palette.MemFormatToColor(r1[8]);
 
             costume1 = Palette.MemFormatToColor(r1[5]);
             costume2 = Palette.MemFormatToColor(r1[4]);
@@ -340,43 +340,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             skin3 = Palette.MemFormatToColor(r1[13]);
             skin4 = Palette.MemFormatToColor(r1[14]);
 
-            /*
-                        skin3 = Palette.MemFormatToColor(r1[2]);
-                        skin4 = Palette.MemFormatToColor(r1[3]);
-                        skin5 = Palette.MemFormatToColor(r1[4]);
-                        skin6 = Palette.MemFormatToColor(r1[5]);
-                        skin7 = Palette.MemFormatToColor(r1[6]);
-                        piping1 = Palette.MemFormatToColor(r1[7]);
-                        piping2 = Palette.MemFormatToColor(r1[8]);
-                        piping3 = Palette.MemFormatToColor(r1[9]);
-                        piping4 = Palette.MemFormatToColor(r1[10]);
-                        costume1 = Palette.MemFormatToColor(r1[11]);
-                        costume2 = Palette.MemFormatToColor(r1[12]);
-                        costume3 = Palette.MemFormatToColor(r1[13]);
-                        costume4 = Palette.MemFormatToColor(r1[14]);
+            var r2 = row2.Split(' ');
 
-                        var r2 = row2.Split(' ');
-                        teeth1 = Palette.MemFormatToColor(r2[11]);
-                        teeth2 = Palette.MemFormatToColor(r2[12]);
-                        teeth3 = Palette.MemFormatToColor(r2[13]);
-                        teeth4 = Palette.MemFormatToColor(r2[14]);
+            var r3 = row3.Split(' ');
 
-                        var r3 = row3.Split(' ');
-                        blood1 = Palette.MemFormatToColor(r3[7]);
-                        blood2 = Palette.MemFormatToColor(r3[8]);
-                        blood3 = Palette.MemFormatToColor(r3[9]);
-
-                        var r4 = row4.Split(' ');
-                        pipingloss1 = Palette.MemFormatToColor(r4[7]);
-                        pipingloss2 = Palette.MemFormatToColor(r4[8]);
-                        pipingloss3 = Palette.MemFormatToColor(r4[9]);
-                        pipingloss4 = Palette.MemFormatToColor(r4[10]);
-                        costumeloss1 = Palette.MemFormatToColor(r4[11]);
-                        costumeloss2 = Palette.MemFormatToColor(r4[12]);
-                        costumeloss3 = Palette.MemFormatToColor(r4[13]);
-                        costumeloss4 = Palette.MemFormatToColor(r4[14]);*/
+            var r4 = row4.Split(' ');
+            var r5 = row5.Split(' ');
+            psychopunch1 = Palette.MemFormatToColor(r5[6]);
+            psychopunch2 = Palette.MemFormatToColor(r5[7]);
+            psychopunch3 = Palette.MemFormatToColor(r5[8]);
+            psychopunch4 = Palette.MemFormatToColor(r5[9]);
+            psychopunch5 = Palette.MemFormatToColor(r5[10]);
         }
-
     }
 
     public class Palette
