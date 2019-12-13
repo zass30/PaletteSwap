@@ -50,7 +50,7 @@ namespace PaletteSwap
             comboBox1.SelectedIndex = 5;
             loadPalette();
             //            createColorMasks();
-            overlayTransparency();
+//            overlayTransparency();
             z = new ZoomForm();
 
         }
@@ -181,6 +181,11 @@ namespace PaletteSwap
 
             pal_sprite_psychoglow.BackColor = s.psychoglow;
 
+            pal_sprite_psychopunch1.BackColor = s.psychopunch1;
+            pal_sprite_psychopunch2.BackColor = s.psychopunch2;
+            pal_sprite_psychopunch3.BackColor = s.psychopunch3;
+            pal_sprite_psychopunch4.BackColor = s.psychopunch4;
+            pal_sprite_psychopunch5.BackColor = s.psychopunch5;
         }
 
         private void load_portrait_buttons()
