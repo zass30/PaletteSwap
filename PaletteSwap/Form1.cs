@@ -50,7 +50,7 @@ namespace PaletteSwap
             comboBox1.SelectedIndex = 5;
             loadPalette();
             //            createColorMasks();
-//            overlayTransparency();
+            overlayTransparency();
             z = new ZoomForm();
 
         }
@@ -125,6 +125,7 @@ namespace PaletteSwap
             load_portrait_loss();
             load_sprite_neutralstand();
             load_sprite_psychopunch();
+            load_sprite_psychoprep();
         }
 
         private void load_sprite_neutralstand()
@@ -138,6 +139,12 @@ namespace PaletteSwap
         {
             var b = currentSprite.GeneratePsychoPunchSprite();
             psychopunchBox.Image = b;
+        }
+
+        private void load_sprite_psychoprep()
+        {
+            var b = currentSprite.GeneratePsychoPrepSprite();
+            psychoprepBox.Image = b;
         }
 
         private void load_portrait_victory()
@@ -262,8 +269,8 @@ namespace PaletteSwap
 
         private void overlayTransparency()
         {
-            var p_src = new Bitmap(@"..\..\Resources\dicmp1.png");
-            var p_dest = new Bitmap(@"..\..\Resources\dicmp5.png");
+            var p_src = new Bitmap(@"..\..\Resources\dicpsychoprep5.png");
+            var p_dest = new Bitmap(@"..\..\Resources\0012.png");
 
 
             var newimg = Palette.overlayTransparency(p_src, p_dest);

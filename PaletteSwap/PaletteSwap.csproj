@@ -125,6 +125,8 @@
     <None Include="Resources\dicportraitwin5.png" />
     <None Include="Resources\dicportraitlosstop5.png" />
     <None Include="Resources\dicportraitlossbottom5.png" />
+    <None Include="Resources\dicpsychoprep0.png" />
+    <None Include="Resources\dicpsychoprep1.png" />
     <Content Include="Resources\dicstand0.png" />
     <None Include="Resources\dicstand1.png" />
   </ItemGroup>

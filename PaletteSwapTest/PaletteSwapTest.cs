@@ -359,9 +359,34 @@ namespace PaletteSwapTestsNet
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GenerateStandingSprite();
             Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
-            // fails here because belt gets improperty colored. look into this.
         }
 
+        [TestMethod]
+        public void GenerateSPsychoPunchSpriteTest()
+        {
+        }
+
+
+        [TestMethod]
+        public void GenerateSPsychoPrepSpriteTest()
+        {
+            Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep5);
+            var s = new Sprite(Sprite.bis5sprite);
+            Bitmap sprite_result = s.GeneratePsychoPrepSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep1);
+            s = new Sprite(Sprite.bis1sprite);
+            sprite_result = s.GeneratePsychoPrepSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep0);
+            s = new Sprite(Sprite.bis0sprite);
+            sprite_result = s.GeneratePsychoPrepSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+
+        }
         [TestMethod]
         public void areBitmapsSameTest()
         {
