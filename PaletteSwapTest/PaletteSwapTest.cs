@@ -256,11 +256,11 @@ namespace PaletteSwapTestsNet
 
             s = Sprite.bis1sprite;
             p = new Sprite(s);
-            Assert.AreEqual("EF0B", Palette.ColorToMemFormat(p.costume1));
-            Assert.AreEqual("BE08", Palette.ColorToMemFormat(p.costume2));
-            Assert.AreEqual("7C05", Palette.ColorToMemFormat(p.costume3));
-            Assert.AreEqual("5903", Palette.ColorToMemFormat(p.costume4));
-            Assert.AreEqual("3700", Palette.ColorToMemFormat(p.costume5));
+            Assert.AreEqual("FE0B", Palette.ColorToMemFormat(p.costume1));
+            Assert.AreEqual("EB08", Palette.ColorToMemFormat(p.costume2));
+            Assert.AreEqual("C705", Palette.ColorToMemFormat(p.costume3));
+            Assert.AreEqual("9503", Palette.ColorToMemFormat(p.costume4));
+            Assert.AreEqual("7300", Palette.ColorToMemFormat(p.costume5));
         }
 
         [TestMethod]
@@ -355,6 +355,7 @@ namespace PaletteSwapTestsNet
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GenerateStandingSprite();
             Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            // fails here because belt gets improperty colored. look into this.
         }
 
         [TestMethod]

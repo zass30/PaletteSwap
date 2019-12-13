@@ -129,7 +129,9 @@ namespace PaletteSwap
 
         private void load_sprite_neutralstand()
         {
-            var b = currentSprite.GenerateStandingSprite();        
+            var b = currentSprite.GenerateStandingSprite();
+            neutralStandBox.Image = b;
+            b.Save(@"..\..\Resources\dest.png");
         }
 
         private void load_sprite_psychopunch()
