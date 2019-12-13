@@ -335,6 +335,11 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             costume4 = Palette.MemFormatToColor(r1[2]);
             costume5 = Palette.MemFormatToColor(r1[1]);
 
+            skin1 = Palette.MemFormatToColor(r1[11]);
+            skin2 = Palette.MemFormatToColor(r1[12]);
+            skin3 = Palette.MemFormatToColor(r1[13]);
+            skin4 = Palette.MemFormatToColor(r1[14]);
+
             /*
                         skin3 = Palette.MemFormatToColor(r1[2]);
                         skin4 = Palette.MemFormatToColor(r1[3]);
