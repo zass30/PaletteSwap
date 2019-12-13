@@ -226,14 +226,14 @@ namespace PaletteSwap
 
         private void LoadImageIntoPalette()
         {
-            Image Img = portraitBox.Image;
+            Image Img = psychopunchBox.Image;
             Bitmap bmp = new Bitmap(Img);
             for (int x = 0; x < bmp.Width; x++)
             {
                 for (int y = 0; y < bmp.Height; y++)
                 {
                     Color gotColor = bmp.GetPixel(x, y);
-                    string colstr = coltohex(gotColor) ;
+                    string colstr = coltohex(gotColor);
                     if (pal_dictionary.ContainsKey(colstr))
                         pal_dictionary[colstr]++;
                     else

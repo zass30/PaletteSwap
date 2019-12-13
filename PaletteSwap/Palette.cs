@@ -249,6 +249,120 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         }
     }
 
+    public class Sprite
+    {
+
+        public static readonly string bis0sprite = @"0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005 0000 
+0007 2302 3403 5605 6706 7807 8A08 9B09 F70F B00F 700F FC0F C80D 7309 4005 0000 
+5009 6800 7A02 9C04 CE06 EF0B 700B FC0F FF0F F80F B00E DB07 B805 8604 4300 0000 
+0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005 0000 
+0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000";
+        public static readonly string bis1sprite = @"0007 3700 5903 7C05 BE08 EF0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306 0000 
+3402 2302 3403 5605 6706 7807 8A08 9B09 EF0E AD0A 7906 D90F 960E 640A 4306 0000 
+0007 4006 7007 9309 C50C F90D 540A FB0F FF0F CB0F 870D FE0A EA07 C704 9500 0500 
+0007 3700 5903 7C05 BE08 EF0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306 0000 
+0007 3700 5903 7C05 BE08 FE0B FF0D CE07 9D02 7B00 6800 EB0F B70E 740A 4306 0000";
+        public static readonly string bis2sprite = @"0005 5505 8808 BB0B DD0D FF0F 0007 7F00 770F 440C 000A ED0F B90D 760A 4306 0000 
+3402 2302 3403 5605 6706 7807 8A08 9B09 770F 440C 000A ED0F B90D 760A 4306 0000 
+3208 6506 890A 9B0C CD0E DE0F 520A A90F D90F A70F 640D FE0B DC09 B906 7604 0000 
+0005 5505 8808 BB0B DD0D FF0F A80F 7F00 770F 440C 000A ED0F DC0D 760A 4306 0000 
+0005 5505 8808 BB0B DD0D FF0F EF0C DE07 9D02 7B00 3402 ED0F B90D 760A 4306 0000 ";
+        public static readonly string bis3sprite = @"0005 4600 6802 8903 BC05 DE06 0007 D70F 770F 440C 000A FE0E B90C 7609 5307 0000 
+3402 2302 3403 5605 6706 7807 8A08 9B09 770F 440C 000A FE0E B90C 7609 5307 0000 
+3008 7B04 9C05 BD07 CE09 DF0B 500C EC0F CA0F 860F 640D CF0F AB0E 890C 570A 0000 
+0005 4600 6802 8903 BC05 DE06 A80F D70F 770F 440C 000A FE0E B90C 7609 5307 0000 
+0005 4600 6802 8903 BC05 DE06 DF0F AC0F 7A0D 590B 0809 FE0E B90C 7609 5307 0000";
+        public static readonly string bis4sprite = @"3400 4205 6307 8509 A80C DB0E 4500 550F 9A08 7806 5603 FF0E AB0C 7808 4005 0000 
+3402 2302 3403 5605 6706 7807 8A08 9B09 9A08 7806 5603 FF0E AB0C 7808 4005 0000 
+4404 6407 8609 A70B C80D EA0F 6606 FF0F DC0E A90B 8709 E90F A80E 870C 650A 0000 
+3400 4205 6307 8509 A80C DB0E CD0B 550F 9A08 7806 5603 FF0E AB0C 7808 4005 0000 
+3400 4205 6307 8509 A80C DB0E FF0F DE0D AB0A 8908 6706 FF0E AB0C 7808 4005 0000";
+        public static readonly string bis5sprite = @"4101 0606 4909 6C0C 8E0E BF0F 6402 330D FD0A DB06 A803 FE0E B90C 7609 5307 0000 
+3402 2302 3403 5605 6706 7807 8A08 9B09 FD0A DB06 A803 FE0E B90C 7609 5307 0000 
+5200 0606 6A0A 7C0C AE0E DF0F 7305 EF0D FF0E DA08 9506 F80E EC0B CA08 A706 0000 
+4101 0606 4909 6C0C 8E0E BF0F FE0D 330D FD0A DB06 A803 FE0E B90C 7609 5307 0000 
+4101 0606 4909 6C0C 8E0E BF0F FF0E DF0C AF09 8F07 6F05 FE0E B90C 7608 5307 0000";
+
+        public string row1;
+        public string row2;
+        public string row3;
+        public string row4;
+        public string row5;
+
+        public Color skin1;
+        public Color skin2;
+        public Color skin3;
+        public Color skin4;
+
+        public Color costume1;
+        public Color costume2;
+        public Color costume3;
+        public Color costume4;
+        public Color costume5;
+
+        public Color pads1;
+        public Color pads2;
+        public Color pads3;
+        public Color pads4;
+        public Color pads5;
+
+        public Color stripe;
+
+        public Color pyschopunch1;
+        public Color pyschopunch2;
+        public Color pyschopunch3;
+        public Color pyschopunch4;
+        public Color pyschopunch5;
+
+        public Sprite(string s) {
+            var v = s.Split('\n');
+            this.row1 = v[0].Trim();
+            this.row2 = v[1].Trim();
+            this.row3 = v[2].Trim();
+            this.row4 = v[3].Trim();
+            this.row5 = v[4].Trim();
+
+            /*            var r1 = row1.Split(' ');
+                        skin1 = Palette.MemFormatToColor(r1[0]);
+                        skin2 = Palette.MemFormatToColor(r1[1]);
+                        skin3 = Palette.MemFormatToColor(r1[2]);
+                        skin4 = Palette.MemFormatToColor(r1[3]);
+                        skin5 = Palette.MemFormatToColor(r1[4]);
+                        skin6 = Palette.MemFormatToColor(r1[5]);
+                        skin7 = Palette.MemFormatToColor(r1[6]);
+                        piping1 = Palette.MemFormatToColor(r1[7]);
+                        piping2 = Palette.MemFormatToColor(r1[8]);
+                        piping3 = Palette.MemFormatToColor(r1[9]);
+                        piping4 = Palette.MemFormatToColor(r1[10]);
+                        costume1 = Palette.MemFormatToColor(r1[11]);
+                        costume2 = Palette.MemFormatToColor(r1[12]);
+                        costume3 = Palette.MemFormatToColor(r1[13]);
+                        costume4 = Palette.MemFormatToColor(r1[14]);
+
+                        var r2 = row2.Split(' ');
+                        teeth1 = Palette.MemFormatToColor(r2[11]);
+                        teeth2 = Palette.MemFormatToColor(r2[12]);
+                        teeth3 = Palette.MemFormatToColor(r2[13]);
+                        teeth4 = Palette.MemFormatToColor(r2[14]);
+
+                        var r3 = row3.Split(' ');
+                        blood1 = Palette.MemFormatToColor(r3[7]);
+                        blood2 = Palette.MemFormatToColor(r3[8]);
+                        blood3 = Palette.MemFormatToColor(r3[9]);
+
+                        var r4 = row4.Split(' ');
+                        pipingloss1 = Palette.MemFormatToColor(r4[7]);
+                        pipingloss2 = Palette.MemFormatToColor(r4[8]);
+                        pipingloss3 = Palette.MemFormatToColor(r4[9]);
+                        pipingloss4 = Palette.MemFormatToColor(r4[10]);
+                        costumeloss1 = Palette.MemFormatToColor(r4[11]);
+                        costumeloss2 = Palette.MemFormatToColor(r4[12]);
+                        costumeloss3 = Palette.MemFormatToColor(r4[13]);
+                        costumeloss4 = Palette.MemFormatToColor(r4[14]);*/
+        }
+
+    }
+
     public class Palette
     {
         public static readonly string bis0Mem = "0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005";

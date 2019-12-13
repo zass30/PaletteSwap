@@ -175,6 +175,15 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
+        public void spriteNewTest()
+        {
+            string s = Sprite.bis0sprite;
+            var sprite = new Sprite(s);
+            Assert.AreEqual("0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005 0000", sprite.row1);
+            Assert.AreEqual("0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000", sprite.row5);
+        }
+
+        [TestMethod]
         public void portraitColorsTest()
         {
             string s = Portrait.bis0portrait;
