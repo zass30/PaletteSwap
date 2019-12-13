@@ -188,18 +188,54 @@ namespace PaletteSwapTestsNet
         {
             string s = Portrait.bis0portrait;
             var p = new Portrait(s);
-            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), p.skin1);
-            Assert.AreEqual(Color.FromArgb(255, 255, 221, 153), p.skin2);
-            Assert.AreEqual(Color.FromArgb(255, 238, 153, 102), p.skin3);
-            Assert.AreEqual(Color.FromArgb(255, 204, 119, 85), p.skin4);
-            Assert.AreEqual(Color.FromArgb(255, 170, 102, 68), p.skin5);
-            Assert.AreEqual(Color.FromArgb(255, 136, 85, 68), p.skin6);
-            Assert.AreEqual(Color.FromArgb(255, 102, 68, 51), p.skin7);
-            Assert.AreEqual(Color.FromArgb(255, 255, 0, 0), p.blood1);
-            Assert.AreEqual(Color.FromArgb(255, 0, 136, 238), p.costume1);
-            Assert.AreEqual(Color.FromArgb(255, 0, 119, 204), p.costumeloss1);
-            Assert.AreEqual(Color.FromArgb(255, 255, 255, 238), p.piping1);
-            Assert.AreEqual(Color.FromArgb(255, 153, 119, 255), p.pipingloss1);
+            Assert.AreEqual("FF0F", Palette.ColorToMemFormat(p.skin1));
+            Assert.AreEqual("D90F", Palette.ColorToMemFormat(p.skin2));
+            Assert.AreEqual("960E", Palette.ColorToMemFormat(p.skin3));
+            Assert.AreEqual("750C", Palette.ColorToMemFormat(p.skin4));
+            Assert.AreEqual("640A", Palette.ColorToMemFormat(p.skin5));
+            Assert.AreEqual("5408", Palette.ColorToMemFormat(p.skin6));
+            Assert.AreEqual("4306", Palette.ColorToMemFormat(p.skin7));
+
+            Assert.AreEqual("FE0F", Palette.ColorToMemFormat(p.piping1));
+            Assert.AreEqual("F90F", Palette.ColorToMemFormat(p.piping2));
+            Assert.AreEqual("D50F", Palette.ColorToMemFormat(p.piping3));
+            Assert.AreEqual("A00F", Palette.ColorToMemFormat(p.piping4));
+
+            Assert.AreEqual("8E00", Palette.ColorToMemFormat(p.costume1));
+            Assert.AreEqual("6D03", Palette.ColorToMemFormat(p.costume2));
+            Assert.AreEqual("4C00", Palette.ColorToMemFormat(p.costume3));
+            Assert.AreEqual("2A02", Palette.ColorToMemFormat(p.costume4));
+
+            Assert.AreEqual("000F", Palette.ColorToMemFormat(p.blood1));
+            Assert.AreEqual("000C", Palette.ColorToMemFormat(p.blood2));
+            Assert.AreEqual("000A", Palette.ColorToMemFormat(p.blood3));
+
+            Assert.AreEqual("FF0F", Palette.ColorToMemFormat(p.teeth1));
+            Assert.AreEqual("CC0C", Palette.ColorToMemFormat(p.teeth2));
+            Assert.AreEqual("9909", Palette.ColorToMemFormat(p.teeth3));
+            Assert.AreEqual("7707", Palette.ColorToMemFormat(p.teeth4));
+
+            Assert.AreEqual("7F09", Palette.ColorToMemFormat(p.pipingloss1));
+            Assert.AreEqual("5D09", Palette.ColorToMemFormat(p.pipingloss2));
+            Assert.AreEqual("3B09", Palette.ColorToMemFormat(p.pipingloss3));
+            Assert.AreEqual("0909", Palette.ColorToMemFormat(p.pipingloss4));
+
+            Assert.AreEqual("7C00", Palette.ColorToMemFormat(p.costumeloss1));
+            Assert.AreEqual("5B03", Palette.ColorToMemFormat(p.costumeloss2));
+            Assert.AreEqual("4A00", Palette.ColorToMemFormat(p.costumeloss3));
+            Assert.AreEqual("0900", Palette.ColorToMemFormat(p.costumeloss4));
+        }
+
+        [TestMethod]
+        public void spriteColorsTest()
+        {
+            string s = Sprite.bis5sprite;
+            var p = new Sprite(s);
+            Assert.AreEqual("4101", Palette.ColorToMemFormat(p.pads1));
+            Assert.AreEqual("6402", Palette.ColorToMemFormat(p.pads2));
+            Assert.AreEqual("A803", Palette.ColorToMemFormat(p.pads3));
+            Assert.AreEqual("DB06", Palette.ColorToMemFormat(p.pads4));
+            Assert.AreEqual("FD0A", Palette.ColorToMemFormat(p.pads5));
         }
 
         [TestMethod]
