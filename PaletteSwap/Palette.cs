@@ -335,6 +335,24 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color psychopunch4;
         public Color psychopunch5;
 
+        public Color crusherlegs1;
+        public Color crusherlegs2;
+        public Color crusherlegs3;
+        public Color crusherlegs4;
+        public Color crusherlegs5;
+
+        public Color crushercostume1;
+        public Color crushercostume2;
+        public Color crushercostume3;
+        public Color crushercostume4;
+
+        public Color crusherflame1;
+        public Color crusherflame2;
+
+        public Color crusherhands1;
+        public Color crusherhands2;
+
+
         public Sprite(string s) {
             var v = s.Split('\n');
             this.row1 = v[0].Trim();
@@ -366,6 +384,22 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var r2 = row2.Split(' ');
 
             var r3 = row3.Split(' ');
+            crusherlegs1 = Palette.MemFormatToColor(r3[0]);
+            crusherlegs2 = Palette.MemFormatToColor(r3[6]);
+            crusherlegs3 = Palette.MemFormatToColor(r3[8]);
+            crusherlegs4 = Palette.MemFormatToColor(r3[9]);
+            crusherlegs5 = Palette.MemFormatToColor(r3[10]);
+
+            crushercostume1 = Palette.MemFormatToColor(r3[2]);
+            crushercostume2 = Palette.MemFormatToColor(r3[3]);
+            crushercostume3 = Palette.MemFormatToColor(r3[4]);
+            crushercostume4 = Palette.MemFormatToColor(r3[5]);
+
+            crusherhands1 = Palette.MemFormatToColor(r3[12]);
+            crusherhands2 = Palette.MemFormatToColor(r3[13]);
+
+            crusherflame1 = Palette.MemFormatToColor(r3[7]);
+            crusherflame2 = Palette.MemFormatToColor(r3[11]);
 
             var r4 = row4.Split(' ');
             psychoglow = Palette.MemFormatToColor(r4[6]);
