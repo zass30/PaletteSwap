@@ -126,6 +126,8 @@ namespace PaletteSwap
             load_sprite_neutralstand();
             load_sprite_psychopunch();
             load_sprite_psychoprep();
+            load_sprite_crushertop();
+            load_sprite_crusherside();
         }
 
         private void load_sprite_neutralstand()
@@ -145,6 +147,18 @@ namespace PaletteSwap
         {
             var b = currentSprite.GeneratePsychoPrepSprite();
             psychoprepBox.Image = b;
+        }
+
+        private void load_sprite_crushertop()
+        {
+            var b = currentSprite.GenerateCrusherTopSprite();
+            crusherBox1.Image = b;
+        }
+
+        private void load_sprite_crusherside()
+        {
+            var b = currentSprite.GenerateCrusherSideSprite();
+            crusherBox2.Image = b;
         }
 
         private void load_portrait_victory()
@@ -414,7 +428,7 @@ namespace PaletteSwap
         private void zoom(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
-            var bmp = magnify_sprite(p.Image, 4);
+            var bmp = magnify_sprite(p.Image, 6);
             if (z.IsDisposed)
                 z = new ZoomForm();
             z.Show();
