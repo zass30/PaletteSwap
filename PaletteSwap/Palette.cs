@@ -390,10 +390,10 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             crusherpads4 = Palette.MemFormatToColor(r3[6]);
             crusherpads5 = Palette.MemFormatToColor(r3[0]);
 
-            crushercostume1 = Palette.MemFormatToColor(r3[2]);
-            crushercostume2 = Palette.MemFormatToColor(r3[3]);
-            crushercostume3 = Palette.MemFormatToColor(r3[4]);
-            crushercostume4 = Palette.MemFormatToColor(r3[5]);
+            crushercostume1 = Palette.MemFormatToColor(r3[5]);
+            crushercostume2 = Palette.MemFormatToColor(r3[4]);
+            crushercostume3 = Palette.MemFormatToColor(r3[3]);
+            crushercostume4 = Palette.MemFormatToColor(r3[2]);
 
             crusherhands1 = Palette.MemFormatToColor(r3[12]);
             crusherhands2 = Palette.MemFormatToColor(r3[13]);

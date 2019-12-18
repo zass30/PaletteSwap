@@ -258,10 +258,10 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual("8F07", Palette.ColorToMemFormat(p.psychopunch4));
             Assert.AreEqual("6F05", Palette.ColorToMemFormat(p.psychopunch5));
 
-            Assert.AreEqual("6A0A", Palette.ColorToMemFormat(p.crushercostume1));
-            Assert.AreEqual("7C0C", Palette.ColorToMemFormat(p.crushercostume2));
-            Assert.AreEqual("AE0E", Palette.ColorToMemFormat(p.crushercostume3));
-            Assert.AreEqual("DF0F", Palette.ColorToMemFormat(p.crushercostume4));
+            Assert.AreEqual("DF0F", Palette.ColorToMemFormat(p.crushercostume1));
+            Assert.AreEqual("AE0E", Palette.ColorToMemFormat(p.crushercostume2));
+            Assert.AreEqual("7C0C", Palette.ColorToMemFormat(p.crushercostume3));
+            Assert.AreEqual("6A0A", Palette.ColorToMemFormat(p.crushercostume4));
 
             Assert.AreEqual("FF0E", Palette.ColorToMemFormat(p.crusherpads1));
             Assert.AreEqual("DA08", Palette.ColorToMemFormat(p.crusherpads2));
