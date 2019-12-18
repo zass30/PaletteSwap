@@ -335,11 +335,11 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color psychopunch4;
         public Color psychopunch5;
 
-        public Color crusherlegs1;
-        public Color crusherlegs2;
-        public Color crusherlegs3;
-        public Color crusherlegs4;
-        public Color crusherlegs5;
+        public Color crusherpads1;
+        public Color crusherpads2;
+        public Color crusherpads3;
+        public Color crusherpads4;
+        public Color crusherpads5;
 
         public Color crushercostume1;
         public Color crushercostume2;
@@ -384,11 +384,11 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var r2 = row2.Split(' ');
 
             var r3 = row3.Split(' ');
-            crusherlegs1 = Palette.MemFormatToColor(r3[0]);
-            crusherlegs2 = Palette.MemFormatToColor(r3[6]);
-            crusherlegs3 = Palette.MemFormatToColor(r3[8]);
-            crusherlegs4 = Palette.MemFormatToColor(r3[9]);
-            crusherlegs5 = Palette.MemFormatToColor(r3[10]);
+            crusherpads1 = Palette.MemFormatToColor(r3[8]);
+            crusherpads2 = Palette.MemFormatToColor(r3[9]);
+            crusherpads3 = Palette.MemFormatToColor(r3[10]);
+            crusherpads4 = Palette.MemFormatToColor(r3[6]);
+            crusherpads5 = Palette.MemFormatToColor(r3[0]);
 
             crushercostume1 = Palette.MemFormatToColor(r3[2]);
             crushercostume2 = Palette.MemFormatToColor(r3[3]);
@@ -416,7 +416,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             return new[] { crushercostume1, crushercostume2, crushercostume3, crushercostume4,
                 crusherflame1, crusherflame2, crusherhands1, crusherhands2,
-                crusherlegs1, crusherlegs2, crusherlegs3, crusherlegs4, crusherlegs5
+                crusherpads1, crusherpads2, crusherpads3, crusherpads4, crusherpads5
             };
         }
 

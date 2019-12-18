@@ -199,6 +199,12 @@ namespace PaletteSwap
             pal_sprite_psychopunch3.BackColor = s.psychopunch3;
             pal_sprite_psychopunch4.BackColor = s.psychopunch4;
             pal_sprite_psychopunch5.BackColor = s.psychopunch5;
+
+            pal_sprite_crusherpads1.BackColor = s.crusherpads1;
+            pal_sprite_crusherpads2.BackColor = s.crusherpads2;
+            pal_sprite_crusherpads3.BackColor = s.crusherpads3;
+            pal_sprite_crusherpads4.BackColor = s.crusherpads4;
+            pal_sprite_crusherpads5.BackColor = s.crusherpads5;
         }
 
         private void load_portrait_buttons()
@@ -255,14 +261,12 @@ namespace PaletteSwap
                 newmask.Save(@"..\..\Resources\dicstandmask" + i + ".png");
                 i++;
             }
-
         }
 
         private void overlayTransparency()
         {
             var p_src = new Bitmap(@"..\..\Resources\dicpsychoprep5.png");
             var p_dest = new Bitmap(@"..\..\Resources\0012.png");
-
 
             var newimg = Palette.overlayTransparency(p_src, p_dest);
 
