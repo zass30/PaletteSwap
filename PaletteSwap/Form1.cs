@@ -118,7 +118,6 @@ namespace PaletteSwap
                     currentPortrait = new Portrait(Portrait.bis9portrait);
                     break;
             }
-            //            load_sprite_neutralpose(pal_dest);
             load_portrait_buttons();
             load_sprite_buttons();
             load_portrait_victory();
@@ -243,33 +242,6 @@ namespace PaletteSwap
             portrait_blood3.BackColor = p.blood3;
 
         }
-
-        private void load_sprite_neutralpose( Palette pal_dest)
-        {
-            Bitmap imgsource = masterStand;
-            Palette pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
-            Bitmap swappedBmp = Palette.PaletteSwap(imgsource, pal_src, pal_dest);
-            neutralStandBox.Image = swappedBmp;
-            pal_sprite_skin1.BackColor = pal_dest.colors[11];
-            pal_sprite_skin2.BackColor = pal_dest.colors[12];
-            pal_sprite_skin3.BackColor = pal_dest.colors[13];
-            pal_sprite_skin4.BackColor = pal_dest.colors[14];
-
-            pal_sprite_pads1.BackColor = pal_dest.colors[8];
-            pal_sprite_pads2.BackColor = pal_dest.colors[9];
-            pal_sprite_pads3.BackColor = pal_dest.colors[10];
-            pal_sprite_pads4.BackColor = pal_dest.colors[6];
-            pal_sprite_pads5.BackColor = pal_dest.colors[0];
-
-            pal_sprite_cost1.BackColor = pal_dest.colors[5];
-            pal_sprite_cost2.BackColor = pal_dest.colors[4];
-            pal_sprite_cost3.BackColor = pal_dest.colors[3];
-            pal_sprite_cost4.BackColor = pal_dest.colors[2];
-            pal_sprite_cost5.BackColor = pal_dest.colors[1];
-
-            pal_sprite_stripe1.BackColor = pal_dest.colors[7];
-        }
-
 
         private void createColorMasks()
         {
@@ -397,14 +369,12 @@ namespace PaletteSwap
             textBox1.Text = Palette.ACTtoText(reducedline);
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            load_sprite_neutralpose(pal_dest);
         }
 
         private void loadACT_Click(object sender, EventArgs e)
         {
             string newACT = textBox1.Text;
             Palette pal_dest = Palette.PaletteFromACT(newACT);
-            load_sprite_neutralpose(pal_dest);
         }
 
         private void pal_square_click(object sender, EventArgs e)

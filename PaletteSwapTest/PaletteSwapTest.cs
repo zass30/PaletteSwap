@@ -402,6 +402,8 @@ namespace PaletteSwapTestsNet
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GeneratePsychoPrepSprite();
             Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            // for palette 0, the glow color appears to be unread! Instead reads from line 5. Check this
+            // by swapping 0 and 1, see if the glow changes.
 
 
         }
