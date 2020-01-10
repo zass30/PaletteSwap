@@ -1165,6 +1165,7 @@
             this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherflame2.TabIndex = 100;
             this.pal_sprite_crusherflame2.TabStop = false;
+            this.pal_sprite_crusherflame2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherflame1
             // 
@@ -1174,6 +1175,7 @@
             this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherflame1.TabIndex = 99;
             this.pal_sprite_crusherflame1.TabStop = false;
+            this.pal_sprite_crusherflame1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label21
             // 
@@ -1192,6 +1194,7 @@
             this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherhands2.TabIndex = 105;
             this.pal_sprite_crusherhands2.TabStop = false;
+            this.pal_sprite_crusherhands2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherhands1
             // 
@@ -1201,6 +1204,7 @@
             this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherhands1.TabIndex = 104;
             this.pal_sprite_crusherhands1.TabStop = false;
+            this.pal_sprite_crusherhands1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // Form1
             // 

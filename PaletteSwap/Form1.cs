@@ -23,6 +23,7 @@ namespace PaletteSwap
         PictureBox currentlySelectedColor;
         Portrait currentPortrait;
         Sprite currentSprite;
+        bool changeskip = false;
 
         public Form1()
         {
@@ -400,7 +401,10 @@ namespace PaletteSwap
             int r = c.R / 17;
             int g = c.G / 17;
             int b = c.B / 17;
-
+            changeskip = true;
+            // each of this triggers change function and updates color.
+            // we just want it all at once.
+            // and then it changes the portraits too, which we don't want
             pal_val_R.Text = r.ToString();
             pal_val_G.Text = g.ToString();
             pal_val_B.Text = b.ToString();
@@ -408,6 +412,7 @@ namespace PaletteSwap
             trackBarR.Value = r;
             trackBarG.Value = g;
             trackBarB.Value = b;
+            changeskip = false;
         }
 
         private void zoom(object sender, EventArgs e)
@@ -446,6 +451,8 @@ namespace PaletteSwap
 
         private void pal_val_R_TextChanged(object sender, EventArgs e)
         {
+            if (changeskip)
+                return;
             int r = 0;
             try
             {
@@ -465,6 +472,8 @@ namespace PaletteSwap
 
         private void pal_val_G_TextChanged(object sender, EventArgs e)
         {
+            if (changeskip)
+                return;
             int g = 0;        
             try
             {
@@ -484,6 +493,8 @@ namespace PaletteSwap
 
         private void pal_val_B_TextChanged(object sender, EventArgs e)
         {
+            if (changeskip)
+                return;
             int b = 0;
             try
             {
