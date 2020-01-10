@@ -393,7 +393,7 @@ namespace PaletteSwap
             Palette pal_dest = Palette.PaletteFromACT(newACT);
         }
 
-        private void portrait_square_click(object sender, EventArgs e)
+        private void pal_square_click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
             currentlySelectedColor = p;
@@ -467,7 +467,9 @@ namespace PaletteSwap
             var c = currentlySelectedColor.BackColor;
             var newcolor = Color.FromArgb(c.A, r*17, c.G, c.B);
             currentlySelectedColor.BackColor = newcolor;
-            updateColor(newcolor);
+
+            // this is the wrong place for this.. should be an onchanged of the original square
+//            updatePortraitColor(newcolor);
         }
 
         private void pal_val_G_TextChanged(object sender, EventArgs e)
@@ -488,7 +490,7 @@ namespace PaletteSwap
             var c = currentlySelectedColor.BackColor;
             var newcolor = Color.FromArgb(c.A, c.R, g*17, c.B);
             currentlySelectedColor.BackColor = newcolor;
-            updateColor(newcolor);
+//            updatePortraitColor(newcolor);
         }
 
         private void pal_val_B_TextChanged(object sender, EventArgs e)
@@ -509,13 +511,14 @@ namespace PaletteSwap
             var c = currentlySelectedColor.BackColor;
             var newcolor = Color.FromArgb(c.A, c.R, c.G, b*17);
             currentlySelectedColor.BackColor = newcolor;
-            updateColor(newcolor);
+ //           updatePortraitColor(newcolor);
         }
 
-        private void updateColor(Color c)
+        private void updatePortraitColor(Color c, PictureBox p)
         {
-            currentlySelectedColor.BackColor = c;
-            switch (currentlySelectedColor.Name)
+            currentlySelectedColor = p;
+//            currentlySelectedColor.BackColor = c;
+            switch (p.Name)
             {
                 case "portrait_skin1":
                     currentPortrait.skin1 = c;
@@ -617,6 +620,13 @@ namespace PaletteSwap
             }
             load_portrait_victory();
             load_portrait_loss();
+        }
+
+        private void portrait_skin1_BackColorChanged(object sender, EventArgs e)
+        {
+            var p = (PictureBox)sender;
+            var c = p.BackColor;
+            updatePortraitColor(c, p);
         }
     }
 }
