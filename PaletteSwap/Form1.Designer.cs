@@ -218,7 +218,8 @@
             "roundhouse",
             "start",
             "hold",
-            "old"});
+            "old 1",
+            "old 2"});
             this.comboBox1.Location = new System.Drawing.Point(12, 267);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
