@@ -393,7 +393,7 @@ namespace PaletteSwap
             Palette pal_dest = Palette.PaletteFromACT(newACT);
         }
 
-        private void pal_square_click(object sender, EventArgs e)
+        private void portrait_square_click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
             currentlySelectedColor = p;
