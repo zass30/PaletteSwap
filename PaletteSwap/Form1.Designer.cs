@@ -124,6 +124,12 @@
             this.pal_sprite_crushercostume3 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_crushercostume2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_crushercostume1 = new System.Windows.Forms.PictureBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pal_sprite_crusherflame2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherflame1 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.pal_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -194,6 +200,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -1138,11 +1148,71 @@
             this.pal_sprite_crushercostume1.TabStop = false;
             this.pal_sprite_crushercostume1.Click += new System.EventHandler(this.pal_square_click);
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 601);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 13);
+            this.label20.TabIndex = 103;
+            this.label20.Text = "crusher flames";
+            // 
+            // pal_sprite_crusherflame2
+            // 
+            this.pal_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(126, 589);
+            this.pal_sprite_crusherflame2.Name = "pal_sprite_crusherflame2";
+            this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherflame2.TabIndex = 100;
+            this.pal_sprite_crusherflame2.TabStop = false;
+            // 
+            // pal_sprite_crusherflame1
+            // 
+            this.pal_sprite_crusherflame1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(95, 589);
+            this.pal_sprite_crusherflame1.Name = "pal_sprite_crusherflame1";
+            this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherflame1.TabIndex = 99;
+            this.pal_sprite_crusherflame1.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 630);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(74, 13);
+            this.label21.TabIndex = 106;
+            this.label21.Text = "crusher hands";
+            // 
+            // pal_sprite_crusherhands2
+            // 
+            this.pal_sprite_crusherhands2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(126, 618);
+            this.pal_sprite_crusherhands2.Name = "pal_sprite_crusherhands2";
+            this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherhands2.TabIndex = 105;
+            this.pal_sprite_crusherhands2.TabStop = false;
+            // 
+            // pal_sprite_crusherhands1
+            // 
+            this.pal_sprite_crusherhands1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(95, 618);
+            this.pal_sprite_crusherhands1.Name = "pal_sprite_crusherhands1";
+            this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherhands1.TabIndex = 104;
+            this.pal_sprite_crusherhands1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 655);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.pal_sprite_crusherhands2);
+            this.Controls.Add(this.pal_sprite_crusherhands1);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.pal_sprite_crusherflame2);
+            this.Controls.Add(this.pal_sprite_crusherflame1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.pal_sprite_crushercostume4);
             this.Controls.Add(this.pal_sprite_crushercostume3);
@@ -1311,6 +1381,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1413,6 +1487,12 @@
         private System.Windows.Forms.PictureBox pal_sprite_crushercostume3;
         private System.Windows.Forms.PictureBox pal_sprite_crushercostume2;
         private System.Windows.Forms.PictureBox pal_sprite_crushercostume1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pal_sprite_crusherflame2;
+        private System.Windows.Forms.PictureBox pal_sprite_crusherflame1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pal_sprite_crusherhands2;
+        private System.Windows.Forms.PictureBox pal_sprite_crusherhands1;
     }
 }
 

@@ -211,6 +211,11 @@ namespace PaletteSwap
             pal_sprite_crushercostume3.BackColor = s.crushercostume3;
             pal_sprite_crushercostume4.BackColor = s.crushercostume4;
 
+            pal_sprite_crusherflame1.BackColor = s.crusherflame1;
+            pal_sprite_crusherflame2.BackColor = s.crusherflame2;
+
+            pal_sprite_crusherhands1.BackColor = s.crusherhands1;
+            pal_sprite_crusherhands2.BackColor = s.crusherhands2;
         }
 
         private void load_portrait_buttons()
