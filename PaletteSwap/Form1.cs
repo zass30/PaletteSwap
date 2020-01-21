@@ -23,7 +23,7 @@ namespace PaletteSwap
         PictureBox currentlySelectedColor;
         Portrait currentPortrait;
         Sprite currentSprite;
-        bool changeskip = false;
+        bool skip_image_recolors = false;
 
         public Form1()
         {
@@ -401,10 +401,7 @@ namespace PaletteSwap
             int r = c.R / 17;
             int g = c.G / 17;
             int b = c.B / 17;
-            changeskip = true;
-            // each of this triggers change function and updates color.
-            // we just want it all at once.
-            // and then it changes the portraits too, which we don't want
+            skip_image_recolors = true;
             pal_val_R.Text = r.ToString();
             pal_val_G.Text = g.ToString();
             pal_val_B.Text = b.ToString();
@@ -412,7 +409,7 @@ namespace PaletteSwap
             trackBarR.Value = r;
             trackBarG.Value = g;
             trackBarB.Value = b;
-            changeskip = false;
+            skip_image_recolors = false;
         }
 
         private void zoom(object sender, EventArgs e)
@@ -451,7 +448,7 @@ namespace PaletteSwap
 
         private void pal_val_R_TextChanged(object sender, EventArgs e)
         {
-            if (changeskip)
+            if (skip_image_recolors)
                 return;
             int r = 0;
             try
@@ -467,14 +464,11 @@ namespace PaletteSwap
             var c = currentlySelectedColor.BackColor;
             var newcolor = Color.FromArgb(c.A, r*17, c.G, c.B);
             currentlySelectedColor.BackColor = newcolor;
-
-            // this is the wrong place for this.. should be an onchanged of the original square
-//            updatePortraitColor(newcolor);
         }
 
         private void pal_val_G_TextChanged(object sender, EventArgs e)
         {
-            if (changeskip)
+            if (skip_image_recolors)
                 return;
             int g = 0;        
             try
@@ -490,12 +484,11 @@ namespace PaletteSwap
             var c = currentlySelectedColor.BackColor;
             var newcolor = Color.FromArgb(c.A, c.R, g*17, c.B);
             currentlySelectedColor.BackColor = newcolor;
-//            updatePortraitColor(newcolor);
         }
 
         private void pal_val_B_TextChanged(object sender, EventArgs e)
         {
-            if (changeskip)
+            if (skip_image_recolors)
                 return;
             int b = 0;
             try
@@ -511,13 +504,11 @@ namespace PaletteSwap
             var c = currentlySelectedColor.BackColor;
             var newcolor = Color.FromArgb(c.A, c.R, c.G, b*17);
             currentlySelectedColor.BackColor = newcolor;
- //           updatePortraitColor(newcolor);
         }
 
         private void updatePortraitColor(Color c, PictureBox p)
         {
             currentlySelectedColor = p;
-//            currentlySelectedColor.BackColor = c;
             switch (p.Name)
             {
                 case "portrait_skin1":
@@ -622,7 +613,7 @@ namespace PaletteSwap
             load_portrait_loss();
         }
 
-        private void portrait_skin1_BackColorChanged(object sender, EventArgs e)
+        private void portrait_BackColorChanged(object sender, EventArgs e)
         {
             var p = (PictureBox)sender;
             var c = p.BackColor;

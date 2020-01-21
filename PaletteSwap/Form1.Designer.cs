@@ -451,6 +451,7 @@
             this.portrait_blood3.Size = new System.Drawing.Size(25, 25);
             this.portrait_blood3.TabIndex = 77;
             this.portrait_blood3.TabStop = false;
+            this.portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_blood2
@@ -461,6 +462,7 @@
             this.portrait_blood2.Size = new System.Drawing.Size(25, 25);
             this.portrait_blood2.TabIndex = 76;
             this.portrait_blood2.TabStop = false;
+            this.portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_blood1
@@ -471,6 +473,7 @@
             this.portrait_blood1.Size = new System.Drawing.Size(25, 25);
             this.portrait_blood1.TabIndex = 75;
             this.portrait_blood1.TabStop = false;
+            this.portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_pipingloss4
@@ -481,6 +484,7 @@
             this.portrait_pipingloss4.Size = new System.Drawing.Size(25, 25);
             this.portrait_pipingloss4.TabIndex = 73;
             this.portrait_pipingloss4.TabStop = false;
+            this.portrait_pipingloss4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_pipingloss4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_pipingloss3
@@ -491,6 +495,7 @@
             this.portrait_pipingloss3.Size = new System.Drawing.Size(25, 25);
             this.portrait_pipingloss3.TabIndex = 72;
             this.portrait_pipingloss3.TabStop = false;
+            this.portrait_pipingloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_pipingloss3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_pipingloss2
@@ -501,6 +506,7 @@
             this.portrait_pipingloss2.Size = new System.Drawing.Size(25, 25);
             this.portrait_pipingloss2.TabIndex = 71;
             this.portrait_pipingloss2.TabStop = false;
+            this.portrait_pipingloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_pipingloss2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_pipingloss1
@@ -511,6 +517,7 @@
             this.portrait_pipingloss1.Size = new System.Drawing.Size(25, 25);
             this.portrait_pipingloss1.TabIndex = 70;
             this.portrait_pipingloss1.TabStop = false;
+            this.portrait_pipingloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_pipingloss1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_piping4
@@ -521,6 +528,7 @@
             this.portrait_piping4.Size = new System.Drawing.Size(25, 25);
             this.portrait_piping4.TabIndex = 68;
             this.portrait_piping4.TabStop = false;
+            this.portrait_piping4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_piping4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_piping3
@@ -531,6 +539,7 @@
             this.portrait_piping3.Size = new System.Drawing.Size(25, 25);
             this.portrait_piping3.TabIndex = 67;
             this.portrait_piping3.TabStop = false;
+            this.portrait_piping3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_piping3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_piping2
@@ -541,6 +550,7 @@
             this.portrait_piping2.Size = new System.Drawing.Size(25, 25);
             this.portrait_piping2.TabIndex = 66;
             this.portrait_piping2.TabStop = false;
+            this.portrait_piping2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_piping2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_piping1
@@ -551,6 +561,7 @@
             this.portrait_piping1.Size = new System.Drawing.Size(25, 25);
             this.portrait_piping1.TabIndex = 65;
             this.portrait_piping1.TabStop = false;
+            this.portrait_piping1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_piping1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costumeloss4
@@ -561,6 +572,7 @@
             this.portrait_costumeloss4.Size = new System.Drawing.Size(25, 25);
             this.portrait_costumeloss4.TabIndex = 63;
             this.portrait_costumeloss4.TabStop = false;
+            this.portrait_costumeloss4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costumeloss4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costumeloss3
@@ -571,6 +583,7 @@
             this.portrait_costumeloss3.Size = new System.Drawing.Size(25, 25);
             this.portrait_costumeloss3.TabIndex = 62;
             this.portrait_costumeloss3.TabStop = false;
+            this.portrait_costumeloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costumeloss3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costumeloss2
@@ -581,6 +594,7 @@
             this.portrait_costumeloss2.Size = new System.Drawing.Size(25, 25);
             this.portrait_costumeloss2.TabIndex = 61;
             this.portrait_costumeloss2.TabStop = false;
+            this.portrait_costumeloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costumeloss2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costumeloss1
@@ -591,6 +605,7 @@
             this.portrait_costumeloss1.Size = new System.Drawing.Size(25, 25);
             this.portrait_costumeloss1.TabIndex = 60;
             this.portrait_costumeloss1.TabStop = false;
+            this.portrait_costumeloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costumeloss1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costume4
@@ -601,6 +616,7 @@
             this.portrait_costume4.Size = new System.Drawing.Size(25, 25);
             this.portrait_costume4.TabIndex = 58;
             this.portrait_costume4.TabStop = false;
+            this.portrait_costume4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costume3
@@ -611,6 +627,7 @@
             this.portrait_costume3.Size = new System.Drawing.Size(25, 25);
             this.portrait_costume3.TabIndex = 57;
             this.portrait_costume3.TabStop = false;
+            this.portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costume2
@@ -621,6 +638,7 @@
             this.portrait_costume2.Size = new System.Drawing.Size(25, 25);
             this.portrait_costume2.TabIndex = 56;
             this.portrait_costume2.TabStop = false;
+            this.portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_costume1
@@ -631,6 +649,7 @@
             this.portrait_costume1.Size = new System.Drawing.Size(25, 25);
             this.portrait_costume1.TabIndex = 55;
             this.portrait_costume1.TabStop = false;
+            this.portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_teeth4
@@ -641,6 +660,7 @@
             this.portrait_teeth4.Size = new System.Drawing.Size(25, 25);
             this.portrait_teeth4.TabIndex = 54;
             this.portrait_teeth4.TabStop = false;
+            this.portrait_teeth4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_teeth4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_teeth3
@@ -651,6 +671,7 @@
             this.portrait_teeth3.Size = new System.Drawing.Size(25, 25);
             this.portrait_teeth3.TabIndex = 53;
             this.portrait_teeth3.TabStop = false;
+            this.portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_teeth2
@@ -661,6 +682,7 @@
             this.portrait_teeth2.Size = new System.Drawing.Size(25, 25);
             this.portrait_teeth2.TabIndex = 52;
             this.portrait_teeth2.TabStop = false;
+            this.portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_teeth1
@@ -671,6 +693,7 @@
             this.portrait_teeth1.Size = new System.Drawing.Size(25, 25);
             this.portrait_teeth1.TabIndex = 51;
             this.portrait_teeth1.TabStop = false;
+            this.portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin7
@@ -681,6 +704,7 @@
             this.portrait_skin7.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin7.TabIndex = 49;
             this.portrait_skin7.TabStop = false;
+            this.portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin6
@@ -691,6 +715,7 @@
             this.portrait_skin6.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin6.TabIndex = 48;
             this.portrait_skin6.TabStop = false;
+            this.portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin5
@@ -701,6 +726,7 @@
             this.portrait_skin5.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin5.TabIndex = 47;
             this.portrait_skin5.TabStop = false;
+            this.portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin4
@@ -711,6 +737,7 @@
             this.portrait_skin4.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin4.TabIndex = 46;
             this.portrait_skin4.TabStop = false;
+            this.portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin3
@@ -721,6 +748,7 @@
             this.portrait_skin3.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin3.TabIndex = 45;
             this.portrait_skin3.TabStop = false;
+            this.portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin2
@@ -731,6 +759,7 @@
             this.portrait_skin2.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin2.TabIndex = 44;
             this.portrait_skin2.TabStop = false;
+            this.portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_skin1
@@ -741,7 +770,7 @@
             this.portrait_skin1.Size = new System.Drawing.Size(25, 25);
             this.portrait_skin1.TabIndex = 43;
             this.portrait_skin1.TabStop = false;
-            this.portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_skin1_BackColorChanged);
+            this.portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // crusherBox2
