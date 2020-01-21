@@ -365,6 +365,18 @@ namespace PaletteSwapTestsNet
             Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
         }
 
+
+        [TestMethod]
+        public void GenerateLossPortraitTest()
+        { 
+            // this one works b/c of flames, eventually fix this test to ignore the flames.
+            Bitmap portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitloss5);
+            string s = Portrait.bis5portrait;
+            var p = new Portrait(s);
+            Bitmap portrait_result = p.GenerateLossPortrait();
+            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+        }
+
         [TestMethod]
         public void GenerateStandSpriteTest()
         {
@@ -380,13 +392,13 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void GenerateSPsychoPunchSpriteTest()
+        public void GeneratePsychoPunchSpriteTest()
         {
         }
 
 
         [TestMethod]
-        public void GenerateSPsychoPrepSpriteTest()
+        public void GeneratePsychoPrepSpriteTest()
         {
             Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep5);
             var s = new Sprite(Sprite.bis5sprite);

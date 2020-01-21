@@ -619,5 +619,12 @@ namespace PaletteSwap
             var c = p.BackColor;
             updatePortraitColor(c, p);
         }
+
+        private void sprite_BackColorChanged(object sender, EventArgs e)
+        {
+            var p = (PictureBox)sender;
+            var c = p.BackColor;
+//            updateSpriteNeutralColor(c, p);
+        }
     }
 }
