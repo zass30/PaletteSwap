@@ -284,7 +284,7 @@ namespace PaletteSwap
         private void overlayTransparency()
         {
             var p_src = new Bitmap(@"..\..\Resources\diccrusher2-5.png");
-            var p_dest = new Bitmap(@"..\..\Resources\diccrusherside-0.png");
+            var p_dest = new Bitmap(@"..\..\Resources\diccrusher2-1.png");
 
             var newimg = Palette.overlayTransparency(p_src, p_dest);
 

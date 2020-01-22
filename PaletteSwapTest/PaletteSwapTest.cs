@@ -438,6 +438,11 @@ namespace PaletteSwapTestsNet
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GenerateCrusherSideSprite();
             Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher2_1);
+            s = new Sprite(Sprite.bis1sprite);
+            sprite_result = s.GenerateCrusherSideSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
         }
 
         [TestMethod]
