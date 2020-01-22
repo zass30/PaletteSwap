@@ -119,6 +119,7 @@ namespace PaletteSwap
                     currentPortrait = new Portrait(Portrait.bis9portrait);
                     break;
             }
+            skip_image_recolors = true;
             load_portrait_buttons();
             load_sprite_buttons();
             load_portrait_victory();
@@ -128,13 +129,13 @@ namespace PaletteSwap
             load_sprite_psychoprep();
             load_sprite_crushertop();
             load_sprite_crusherside();
+            skip_image_recolors = false;
         }
 
         private void load_sprite_neutralstand()
         {
             var b = currentSprite.GenerateStandingSprite();
             neutralStandBox.Image = b;
-            b.Save(@"..\..\Resources\dest.png");
         }
 
         private void load_sprite_psychopunch()
@@ -179,7 +180,7 @@ namespace PaletteSwap
             pal_sprite_skin3.BackColor = s.skin3;
             pal_sprite_skin4.BackColor = s.skin4;
 
-            pal_sprite_stripe1.BackColor = s.stripe;
+            pal_sprite_stripe.BackColor = s.stripe;
 
             pal_sprite_pads1.BackColor = s.pads1;
             pal_sprite_pads2.BackColor = s.pads2;
@@ -187,11 +188,11 @@ namespace PaletteSwap
             pal_sprite_pads4.BackColor = s.pads4;
             pal_sprite_pads5.BackColor = s.pads5;
 
-            pal_sprite_cost1.BackColor = s.costume1;
-            pal_sprite_cost2.BackColor = s.costume2;
-            pal_sprite_cost3.BackColor = s.costume3;
-            pal_sprite_cost4.BackColor = s.costume4;
-            pal_sprite_cost5.BackColor = s.costume5;
+            pal_sprite_costume1.BackColor = s.costume1;
+            pal_sprite_costume2.BackColor = s.costume2;
+            pal_sprite_costume3.BackColor = s.costume3;
+            pal_sprite_costume4.BackColor = s.costume4;
+            pal_sprite_costume5.BackColor = s.costume5;
 
             pal_sprite_psychoglow.BackColor = s.psychoglow;
 
@@ -613,8 +614,134 @@ namespace PaletteSwap
             load_portrait_loss();
         }
 
+        private void updateSpriteColor(Color c, PictureBox p)
+        {
+            currentlySelectedColor = p;
+            switch (p.Name)
+            {
+                case "pal_sprite_skin1":
+                    currentSprite.skin1 = c;
+                    break;
+                case "pal_sprite_skin2":
+                    currentSprite.skin2 = c;
+                    break;
+                case "pal_sprite_skin3":
+                    currentSprite.skin3 = c;
+                    break;
+                case "pal_sprite_skin4":
+                    currentSprite.skin4 = c;
+                    break;
+                case "pal_sprite_pads1":
+                    currentSprite.pads1 = c;
+                    break;
+                case "pal_sprite_pads2":
+                    currentSprite.pads2 = c;
+                    break;
+                case "pal_sprite_pads3":
+                    currentSprite.pads3 = c;
+                    break;
+                case "pal_sprite_pads4":
+                    currentSprite.pads4 = c;
+                    break;
+                case "pal_sprite_pads5":
+                    currentSprite.pads5 = c;
+                    break;
+                case "pal_sprite_costume1":
+                    currentSprite.costume1 = c;
+                    break;
+                case "pal_sprite_costume2":
+                    currentSprite.costume2 = c;
+                    break;
+                case "pal_sprite_costume3":
+                    currentSprite.costume3 = c;
+                    break;
+                case "pal_sprite_costume4":
+                    currentSprite.costume4 = c;
+                    break;
+                case "pal_sprite_costume5":
+                    currentSprite.costume5 = c;
+                    break;
+                case "pal_sprite_stripe":
+                    currentSprite.stripe = c;
+                    break;
+                case "pal_sprite_psychoglow":
+                    currentSprite.psychoglow = c;
+                    break;
+                case "pal_sprite_psychopunch1":
+                    currentSprite.psychopunch1 = c;
+                    break;
+                case "pal_sprite_psychopunch2":
+                    currentSprite.psychopunch2 = c;
+                    break;
+                case "pal_sprite_psychopunch3":
+                    currentSprite.psychopunch3 = c;
+                    break;
+                case "pal_sprite_psychopunch4":
+                    currentSprite.psychopunch4 = c;
+                    break;
+            }
+
+            load_sprite_neutralstand();
+            load_sprite_psychopunch();
+            load_sprite_psychoprep();
+        }
+
+        private void updateSpriteCrusherColor(Color c, PictureBox p)
+        {
+            currentlySelectedColor = p;
+            switch (p.Name)
+            {
+                case "pal_sprite_crusherpads1":
+                    currentSprite.crusherpads1 = c;
+                    break;
+                case "pal_sprite_crusherpads2":
+                    currentSprite.crusherpads2 = c;
+                    break;
+                case "pal_sprite_crusherpads3":
+                    currentSprite.crusherpads3 = c;
+                    break;
+                case "pal_sprite_crusherpads4":
+                    currentSprite.crusherpads4 = c;
+                    break;
+                case "pal_sprite_crusherpads5":
+                    currentSprite.crusherpads5 = c;
+                    break;
+                case "pal_sprite_crushercostume1":
+                    currentSprite.crushercostume1 = c;
+                    break;
+                case "pal_sprite_crushercostume2":
+                    currentSprite.crushercostume2 = c;
+                    break;
+                case "pal_sprite_crushercostume3":
+                    currentSprite.crushercostume3 = c;
+                    break;
+                case "pal_sprite_crushercostume4":
+                    currentSprite.crushercostume4 = c;
+                    break;
+                case "pal_sprite_crusherflame1":
+                    currentSprite.crusherflame1 = c;
+                    break;
+                case "pal_sprite_crusherflame2":
+                    currentSprite.crusherflame2 = c;
+                    break;
+                case "pal_sprite_crusherhands1":
+                    currentSprite.crusherhands1 = c;
+                    break;
+                case "pal_sprite_crusherhands2":
+                    currentSprite.crusherhands2 = c;
+                    break;
+            }
+
+            load_sprite_crusherside();
+            load_sprite_crushertop();
+        }
+
         private void portrait_BackColorChanged(object sender, EventArgs e)
         {
+            if (skip_image_recolors)
+                return;
+            // problem is that this gets triggered every time we switch from drop down on each portrait button
+            // above is a workaround but still slow
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updatePortraitColor(c, p);
@@ -622,9 +749,20 @@ namespace PaletteSwap
 
         private void sprite_BackColorChanged(object sender, EventArgs e)
         {
+            if (skip_image_recolors)
+                return;
             var p = (PictureBox)sender;
             var c = p.BackColor;
-//            updateSpriteNeutralColor(c, p);
+            updateSpriteColor(c, p);
+        }
+
+        private void spriteCrusher_BackColorChanged(object sender, EventArgs e)
+        {
+            if (skip_image_recolors)
+                return;
+            var p = (PictureBox)sender;
+            var c = p.BackColor;
+            updateSpriteCrusherColor(c, p);
         }
     }
 }

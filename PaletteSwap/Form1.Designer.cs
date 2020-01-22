@@ -88,12 +88,12 @@
             this.psychoprepBox = new System.Windows.Forms.PictureBox();
             this.psychopunchBox = new System.Windows.Forms.PictureBox();
             this.portraitLossBox = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_stripe1 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_cost5 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_cost4 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_cost3 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_cost2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_cost1 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_stripe = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_costume1 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_pads5 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_pads4 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_pads3 = new System.Windows.Forms.PictureBox();
@@ -168,12 +168,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads3)).BeginInit();
@@ -822,65 +822,71 @@
             this.portraitLossBox.TabStop = false;
             this.portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
-            // pal_sprite_stripe1
+            // pal_sprite_stripe
             // 
-            this.pal_sprite_stripe1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_stripe1.Location = new System.Drawing.Point(96, 436);
-            this.pal_sprite_stripe1.Name = "pal_sprite_stripe1";
-            this.pal_sprite_stripe1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_stripe1.TabIndex = 27;
-            this.pal_sprite_stripe1.TabStop = false;
-            this.pal_sprite_stripe1.Click += new System.EventHandler(this.pal_square_click);
+            this.pal_sprite_stripe.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_stripe.Location = new System.Drawing.Point(96, 436);
+            this.pal_sprite_stripe.Name = "pal_sprite_stripe";
+            this.pal_sprite_stripe.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_stripe.TabIndex = 27;
+            this.pal_sprite_stripe.TabStop = false;
+            this.pal_sprite_stripe.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_stripe.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_cost5
+            // pal_sprite_costume5
             // 
-            this.pal_sprite_cost5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_cost5.Location = new System.Drawing.Point(220, 407);
-            this.pal_sprite_cost5.Name = "pal_sprite_cost5";
-            this.pal_sprite_cost5.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_cost5.TabIndex = 26;
-            this.pal_sprite_cost5.TabStop = false;
-            this.pal_sprite_cost5.Click += new System.EventHandler(this.pal_square_click);
+            this.pal_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_costume5.Location = new System.Drawing.Point(220, 407);
+            this.pal_sprite_costume5.Name = "pal_sprite_costume5";
+            this.pal_sprite_costume5.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_costume5.TabIndex = 26;
+            this.pal_sprite_costume5.TabStop = false;
+            this.pal_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_cost4
+            // pal_sprite_costume4
             // 
-            this.pal_sprite_cost4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_cost4.Location = new System.Drawing.Point(189, 407);
-            this.pal_sprite_cost4.Name = "pal_sprite_cost4";
-            this.pal_sprite_cost4.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_cost4.TabIndex = 25;
-            this.pal_sprite_cost4.TabStop = false;
-            this.pal_sprite_cost4.Click += new System.EventHandler(this.pal_square_click);
+            this.pal_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_costume4.Location = new System.Drawing.Point(189, 407);
+            this.pal_sprite_costume4.Name = "pal_sprite_costume4";
+            this.pal_sprite_costume4.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_costume4.TabIndex = 25;
+            this.pal_sprite_costume4.TabStop = false;
+            this.pal_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_cost3
+            // pal_sprite_costume3
             // 
-            this.pal_sprite_cost3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_cost3.Location = new System.Drawing.Point(158, 407);
-            this.pal_sprite_cost3.Name = "pal_sprite_cost3";
-            this.pal_sprite_cost3.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_cost3.TabIndex = 24;
-            this.pal_sprite_cost3.TabStop = false;
-            this.pal_sprite_cost3.Click += new System.EventHandler(this.pal_square_click);
+            this.pal_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_costume3.Location = new System.Drawing.Point(158, 407);
+            this.pal_sprite_costume3.Name = "pal_sprite_costume3";
+            this.pal_sprite_costume3.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_costume3.TabIndex = 24;
+            this.pal_sprite_costume3.TabStop = false;
+            this.pal_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_cost2
+            // pal_sprite_costume2
             // 
-            this.pal_sprite_cost2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_cost2.Location = new System.Drawing.Point(126, 407);
-            this.pal_sprite_cost2.Name = "pal_sprite_cost2";
-            this.pal_sprite_cost2.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_cost2.TabIndex = 23;
-            this.pal_sprite_cost2.TabStop = false;
-            this.pal_sprite_cost2.Click += new System.EventHandler(this.pal_square_click);
+            this.pal_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_costume2.Location = new System.Drawing.Point(126, 407);
+            this.pal_sprite_costume2.Name = "pal_sprite_costume2";
+            this.pal_sprite_costume2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_costume2.TabIndex = 23;
+            this.pal_sprite_costume2.TabStop = false;
+            this.pal_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_cost1
+            // pal_sprite_costume1
             // 
-            this.pal_sprite_cost1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_cost1.Location = new System.Drawing.Point(96, 407);
-            this.pal_sprite_cost1.Name = "pal_sprite_cost1";
-            this.pal_sprite_cost1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_cost1.TabIndex = 22;
-            this.pal_sprite_cost1.TabStop = false;
-            this.pal_sprite_cost1.Click += new System.EventHandler(this.pal_square_click);
+            this.pal_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_costume1.Location = new System.Drawing.Point(96, 407);
+            this.pal_sprite_costume1.Name = "pal_sprite_costume1";
+            this.pal_sprite_costume1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_costume1.TabIndex = 22;
+            this.pal_sprite_costume1.TabStop = false;
+            this.pal_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads5
             // 
@@ -890,6 +896,7 @@
             this.pal_sprite_pads5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads5.TabIndex = 21;
             this.pal_sprite_pads5.TabStop = false;
+            this.pal_sprite_pads5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_pads5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads4
@@ -900,6 +907,7 @@
             this.pal_sprite_pads4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads4.TabIndex = 20;
             this.pal_sprite_pads4.TabStop = false;
+            this.pal_sprite_pads4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_pads4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads3
@@ -910,6 +918,7 @@
             this.pal_sprite_pads3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads3.TabIndex = 19;
             this.pal_sprite_pads3.TabStop = false;
+            this.pal_sprite_pads3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_pads3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads2
@@ -920,6 +929,7 @@
             this.pal_sprite_pads2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads2.TabIndex = 18;
             this.pal_sprite_pads2.TabStop = false;
+            this.pal_sprite_pads2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_pads2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_pads1
@@ -930,6 +940,7 @@
             this.pal_sprite_pads1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_pads1.TabIndex = 17;
             this.pal_sprite_pads1.TabStop = false;
+            this.pal_sprite_pads1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_pads1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin4
@@ -940,6 +951,7 @@
             this.pal_sprite_skin4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin4.TabIndex = 16;
             this.pal_sprite_skin4.TabStop = false;
+            this.pal_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin3
@@ -950,6 +962,7 @@
             this.pal_sprite_skin3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin3.TabIndex = 15;
             this.pal_sprite_skin3.TabStop = false;
+            this.pal_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin2
@@ -960,6 +973,7 @@
             this.pal_sprite_skin2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin2.TabIndex = 14;
             this.pal_sprite_skin2.TabStop = false;
+            this.pal_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_skin1
@@ -970,6 +984,7 @@
             this.pal_sprite_skin1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin1.TabIndex = 13;
             this.pal_sprite_skin1.TabStop = false;
+            this.pal_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portraitBox
@@ -1000,6 +1015,7 @@
             this.pal_sprite_psychoglow.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychoglow.TabIndex = 79;
             this.pal_sprite_psychoglow.TabStop = false;
+            this.pal_sprite_psychoglow.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychoglow.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label16
@@ -1019,6 +1035,7 @@
             this.pal_sprite_psychopunch1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch1.TabIndex = 81;
             this.pal_sprite_psychopunch1.TabStop = false;
+            this.pal_sprite_psychopunch1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychopunch1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_psychopunch2
@@ -1029,6 +1046,7 @@
             this.pal_sprite_psychopunch2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch2.TabIndex = 82;
             this.pal_sprite_psychopunch2.TabStop = false;
+            this.pal_sprite_psychopunch2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychopunch2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_psychopunch3
@@ -1039,6 +1057,7 @@
             this.pal_sprite_psychopunch3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch3.TabIndex = 83;
             this.pal_sprite_psychopunch3.TabStop = false;
+            this.pal_sprite_psychopunch3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychopunch3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_psychopunch4
@@ -1049,6 +1068,7 @@
             this.pal_sprite_psychopunch4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch4.TabIndex = 84;
             this.pal_sprite_psychopunch4.TabStop = false;
+            this.pal_sprite_psychopunch4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychopunch4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_psychopunch5
@@ -1059,6 +1079,7 @@
             this.pal_sprite_psychopunch5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch5.TabIndex = 85;
             this.pal_sprite_psychopunch5.TabStop = false;
+            this.pal_sprite_psychopunch5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychopunch5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label17
@@ -1087,6 +1108,7 @@
             this.pal_sprite_crusherpads5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads5.TabIndex = 91;
             this.pal_sprite_crusherpads5.TabStop = false;
+            this.pal_sprite_crusherpads5.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherpads5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherpads4
@@ -1097,6 +1119,7 @@
             this.pal_sprite_crusherpads4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads4.TabIndex = 90;
             this.pal_sprite_crusherpads4.TabStop = false;
+            this.pal_sprite_crusherpads4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherpads4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherpads3
@@ -1107,6 +1130,7 @@
             this.pal_sprite_crusherpads3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads3.TabIndex = 89;
             this.pal_sprite_crusherpads3.TabStop = false;
+            this.pal_sprite_crusherpads3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherpads3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherpads2
@@ -1117,6 +1141,7 @@
             this.pal_sprite_crusherpads2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads2.TabIndex = 88;
             this.pal_sprite_crusherpads2.TabStop = false;
+            this.pal_sprite_crusherpads2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherpads2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherpads1
@@ -1127,6 +1152,7 @@
             this.pal_sprite_crusherpads1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads1.TabIndex = 87;
             this.pal_sprite_crusherpads1.TabStop = false;
+            this.pal_sprite_crusherpads1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherpads1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label19
@@ -1146,6 +1172,7 @@
             this.pal_sprite_crushercostume4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume4.TabIndex = 96;
             this.pal_sprite_crushercostume4.TabStop = false;
+            this.pal_sprite_crushercostume4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crushercostume4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crushercostume3
@@ -1156,6 +1183,7 @@
             this.pal_sprite_crushercostume3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume3.TabIndex = 95;
             this.pal_sprite_crushercostume3.TabStop = false;
+            this.pal_sprite_crushercostume3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crushercostume3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crushercostume2
@@ -1166,6 +1194,7 @@
             this.pal_sprite_crushercostume2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume2.TabIndex = 94;
             this.pal_sprite_crushercostume2.TabStop = false;
+            this.pal_sprite_crushercostume2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crushercostume2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crushercostume1
@@ -1176,6 +1205,7 @@
             this.pal_sprite_crushercostume1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume1.TabIndex = 93;
             this.pal_sprite_crushercostume1.TabStop = false;
+            this.pal_sprite_crushercostume1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crushercostume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label20
@@ -1195,6 +1225,7 @@
             this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherflame2.TabIndex = 100;
             this.pal_sprite_crusherflame2.TabStop = false;
+            this.pal_sprite_crusherflame2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherflame2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherflame1
@@ -1205,6 +1236,7 @@
             this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherflame1.TabIndex = 99;
             this.pal_sprite_crusherflame1.TabStop = false;
+            this.pal_sprite_crusherflame1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherflame1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label21
@@ -1224,6 +1256,7 @@
             this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherhands2.TabIndex = 105;
             this.pal_sprite_crusherhands2.TabStop = false;
+            this.pal_sprite_crusherhands2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherhands2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // pal_sprite_crusherhands1
@@ -1234,6 +1267,7 @@
             this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherhands1.TabIndex = 104;
             this.pal_sprite_crusherhands1.TabStop = false;
+            this.pal_sprite_crusherhands1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherhands1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // Form1
@@ -1317,12 +1351,12 @@
             this.Controls.Add(this.trackBarB);
             this.Controls.Add(this.trackBarG);
             this.Controls.Add(this.trackBarR);
-            this.Controls.Add(this.pal_sprite_stripe1);
-            this.Controls.Add(this.pal_sprite_cost5);
-            this.Controls.Add(this.pal_sprite_cost4);
-            this.Controls.Add(this.pal_sprite_cost3);
-            this.Controls.Add(this.pal_sprite_cost2);
-            this.Controls.Add(this.pal_sprite_cost1);
+            this.Controls.Add(this.pal_sprite_stripe);
+            this.Controls.Add(this.pal_sprite_costume5);
+            this.Controls.Add(this.pal_sprite_costume4);
+            this.Controls.Add(this.pal_sprite_costume3);
+            this.Controls.Add(this.pal_sprite_costume2);
+            this.Controls.Add(this.pal_sprite_costume1);
             this.Controls.Add(this.pal_sprite_pads5);
             this.Controls.Add(this.pal_sprite_pads4);
             this.Controls.Add(this.pal_sprite_pads3);
@@ -1383,12 +1417,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_cost1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads3)).EndInit();
@@ -1445,12 +1479,12 @@
         private System.Windows.Forms.PictureBox pal_sprite_pads3;
         private System.Windows.Forms.PictureBox pal_sprite_pads4;
         private System.Windows.Forms.PictureBox pal_sprite_pads5;
-        private System.Windows.Forms.PictureBox pal_sprite_cost1;
-        private System.Windows.Forms.PictureBox pal_sprite_cost2;
-        private System.Windows.Forms.PictureBox pal_sprite_cost3;
-        private System.Windows.Forms.PictureBox pal_sprite_cost4;
-        private System.Windows.Forms.PictureBox pal_sprite_cost5;
-        private System.Windows.Forms.PictureBox pal_sprite_stripe1;
+        private System.Windows.Forms.PictureBox pal_sprite_costume1;
+        private System.Windows.Forms.PictureBox pal_sprite_costume2;
+        private System.Windows.Forms.PictureBox pal_sprite_costume3;
+        private System.Windows.Forms.PictureBox pal_sprite_costume4;
+        private System.Windows.Forms.PictureBox pal_sprite_costume5;
+        private System.Windows.Forms.PictureBox pal_sprite_stripe;
         private System.Windows.Forms.TrackBar trackBarR;
         private System.Windows.Forms.TrackBar trackBarG;
         private System.Windows.Forms.TrackBar trackBarB;
