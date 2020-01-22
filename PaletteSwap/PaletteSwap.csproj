@@ -98,6 +98,8 @@
     <None Include="Resources\diccrusher1-5.png" />
     <None Include="Resources\diccrusher2-5.png" />
     <None Include="Resources\dicmp5.png" />
+    <None Include="Resources\diccrusher1-0.png" />
+    <None Include="Resources\diccrusher2-0.png" />
     <Content Include="Resources\dicportrait0.png" />
     <None Include="Resources\masks\dicstandmask14.png" />
     <None Include="Resources\masks\dicstandmask13.png" />

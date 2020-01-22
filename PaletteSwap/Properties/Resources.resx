@@ -187,4 +187,10 @@
   <data name="dicpsychoprep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dicpsychoprep1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="diccrusher1_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diccrusher1-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diccrusher2_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diccrusher2-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

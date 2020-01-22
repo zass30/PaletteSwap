@@ -414,11 +414,32 @@ namespace PaletteSwapTestsNet
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GeneratePsychoPrepSprite();
             Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
-            // for palette 0, the glow color appears to be unread! Instead reads from line 5. Check this
-            // by swapping 0 and 1, see if the glow changes.
-
-
         }
+
+        [TestMethod]
+        public void GeneratePsychoCrusherSpriteTest()
+        {
+            Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher1_5);
+            var s = new Sprite(Sprite.bis5sprite);
+            Bitmap sprite_result = s.GenerateCrusherTopSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher2_5);
+            s = new Sprite(Sprite.bis5sprite);
+            sprite_result = s.GenerateCrusherSideSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher1_0);
+            s = new Sprite(Sprite.bis0sprite);
+            sprite_result = s.GenerateCrusherTopSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher2_0);
+            s = new Sprite(Sprite.bis0sprite);
+            sprite_result = s.GenerateCrusherSideSprite();
+            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+        }
+
         [TestMethod]
         public void areBitmapsSameTest()
         {

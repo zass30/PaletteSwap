@@ -106,7 +106,6 @@
             this.portraitBox = new System.Windows.Forms.PictureBox();
             this.neutralStandBox = new System.Windows.Forms.PictureBox();
             this.pal_sprite_psychoglow = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.pal_sprite_psychopunch1 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_psychopunch2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_psychopunch3 = new System.Windows.Forms.PictureBox();
@@ -130,6 +129,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.pal_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -295,9 +295,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(7, 448);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "stripe";
+            this.label5.Text = "stripe / glow";
             // 
             // trackBarR
             // 
@@ -968,7 +968,7 @@
             // pal_sprite_skin2
             // 
             this.pal_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_skin2.Location = new System.Drawing.Point(127, 345);
+            this.pal_sprite_skin2.Location = new System.Drawing.Point(125, 345);
             this.pal_sprite_skin2.Name = "pal_sprite_skin2";
             this.pal_sprite_skin2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_skin2.TabIndex = 14;
@@ -1010,7 +1010,7 @@
             // pal_sprite_psychoglow
             // 
             this.pal_sprite_psychoglow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(96, 467);
+            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(126, 436);
             this.pal_sprite_psychoglow.Name = "pal_sprite_psychoglow";
             this.pal_sprite_psychoglow.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychoglow.TabIndex = 79;
@@ -1018,19 +1018,10 @@
             this.pal_sprite_psychoglow.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_psychoglow.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 479);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 13);
-            this.label16.TabIndex = 80;
-            this.label16.Text = "glow";
-            // 
             // pal_sprite_psychopunch1
             // 
             this.pal_sprite_psychopunch1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch1.Location = new System.Drawing.Point(96, 498);
+            this.pal_sprite_psychopunch1.Location = new System.Drawing.Point(96, 467);
             this.pal_sprite_psychopunch1.Name = "pal_sprite_psychopunch1";
             this.pal_sprite_psychopunch1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch1.TabIndex = 81;
@@ -1041,7 +1032,7 @@
             // pal_sprite_psychopunch2
             // 
             this.pal_sprite_psychopunch2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch2.Location = new System.Drawing.Point(127, 498);
+            this.pal_sprite_psychopunch2.Location = new System.Drawing.Point(126, 467);
             this.pal_sprite_psychopunch2.Name = "pal_sprite_psychopunch2";
             this.pal_sprite_psychopunch2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch2.TabIndex = 82;
@@ -1052,7 +1043,7 @@
             // pal_sprite_psychopunch3
             // 
             this.pal_sprite_psychopunch3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch3.Location = new System.Drawing.Point(158, 498);
+            this.pal_sprite_psychopunch3.Location = new System.Drawing.Point(157, 467);
             this.pal_sprite_psychopunch3.Name = "pal_sprite_psychopunch3";
             this.pal_sprite_psychopunch3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch3.TabIndex = 83;
@@ -1063,7 +1054,7 @@
             // pal_sprite_psychopunch4
             // 
             this.pal_sprite_psychopunch4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch4.Location = new System.Drawing.Point(189, 498);
+            this.pal_sprite_psychopunch4.Location = new System.Drawing.Point(188, 467);
             this.pal_sprite_psychopunch4.Name = "pal_sprite_psychopunch4";
             this.pal_sprite_psychopunch4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch4.TabIndex = 84;
@@ -1074,7 +1065,7 @@
             // pal_sprite_psychopunch5
             // 
             this.pal_sprite_psychopunch5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch5.Location = new System.Drawing.Point(220, 498);
+            this.pal_sprite_psychopunch5.Location = new System.Drawing.Point(219, 467);
             this.pal_sprite_psychopunch5.Name = "pal_sprite_psychopunch5";
             this.pal_sprite_psychopunch5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_psychopunch5.TabIndex = 85;
@@ -1085,7 +1076,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(7, 510);
+            this.label17.Location = new System.Drawing.Point(6, 479);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 13);
             this.label17.TabIndex = 86;
@@ -1094,7 +1085,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(7, 541);
+            this.label18.Location = new System.Drawing.Point(6, 510);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(68, 13);
             this.label18.TabIndex = 92;
@@ -1103,7 +1094,7 @@
             // pal_sprite_crusherpads5
             // 
             this.pal_sprite_crusherpads5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads5.Location = new System.Drawing.Point(220, 529);
+            this.pal_sprite_crusherpads5.Location = new System.Drawing.Point(219, 498);
             this.pal_sprite_crusherpads5.Name = "pal_sprite_crusherpads5";
             this.pal_sprite_crusherpads5.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads5.TabIndex = 91;
@@ -1114,7 +1105,7 @@
             // pal_sprite_crusherpads4
             // 
             this.pal_sprite_crusherpads4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads4.Location = new System.Drawing.Point(189, 529);
+            this.pal_sprite_crusherpads4.Location = new System.Drawing.Point(188, 498);
             this.pal_sprite_crusherpads4.Name = "pal_sprite_crusherpads4";
             this.pal_sprite_crusherpads4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads4.TabIndex = 90;
@@ -1125,7 +1116,7 @@
             // pal_sprite_crusherpads3
             // 
             this.pal_sprite_crusherpads3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads3.Location = new System.Drawing.Point(158, 529);
+            this.pal_sprite_crusherpads3.Location = new System.Drawing.Point(157, 498);
             this.pal_sprite_crusherpads3.Name = "pal_sprite_crusherpads3";
             this.pal_sprite_crusherpads3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads3.TabIndex = 89;
@@ -1136,7 +1127,7 @@
             // pal_sprite_crusherpads2
             // 
             this.pal_sprite_crusherpads2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads2.Location = new System.Drawing.Point(127, 529);
+            this.pal_sprite_crusherpads2.Location = new System.Drawing.Point(126, 496);
             this.pal_sprite_crusherpads2.Name = "pal_sprite_crusherpads2";
             this.pal_sprite_crusherpads2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads2.TabIndex = 88;
@@ -1147,7 +1138,7 @@
             // pal_sprite_crusherpads1
             // 
             this.pal_sprite_crusherpads1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads1.Location = new System.Drawing.Point(96, 529);
+            this.pal_sprite_crusherpads1.Location = new System.Drawing.Point(96, 498);
             this.pal_sprite_crusherpads1.Name = "pal_sprite_crusherpads1";
             this.pal_sprite_crusherpads1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherpads1.TabIndex = 87;
@@ -1158,7 +1149,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 570);
+            this.label19.Location = new System.Drawing.Point(5, 539);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 13);
             this.label19.TabIndex = 98;
@@ -1167,7 +1158,7 @@
             // pal_sprite_crushercostume4
             // 
             this.pal_sprite_crushercostume4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume4.Location = new System.Drawing.Point(188, 558);
+            this.pal_sprite_crushercostume4.Location = new System.Drawing.Point(187, 527);
             this.pal_sprite_crushercostume4.Name = "pal_sprite_crushercostume4";
             this.pal_sprite_crushercostume4.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume4.TabIndex = 96;
@@ -1178,7 +1169,7 @@
             // pal_sprite_crushercostume3
             // 
             this.pal_sprite_crushercostume3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume3.Location = new System.Drawing.Point(158, 558);
+            this.pal_sprite_crushercostume3.Location = new System.Drawing.Point(157, 527);
             this.pal_sprite_crushercostume3.Name = "pal_sprite_crushercostume3";
             this.pal_sprite_crushercostume3.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume3.TabIndex = 95;
@@ -1189,7 +1180,7 @@
             // pal_sprite_crushercostume2
             // 
             this.pal_sprite_crushercostume2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume2.Location = new System.Drawing.Point(126, 558);
+            this.pal_sprite_crushercostume2.Location = new System.Drawing.Point(125, 527);
             this.pal_sprite_crushercostume2.Name = "pal_sprite_crushercostume2";
             this.pal_sprite_crushercostume2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume2.TabIndex = 94;
@@ -1200,7 +1191,7 @@
             // pal_sprite_crushercostume1
             // 
             this.pal_sprite_crushercostume1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume1.Location = new System.Drawing.Point(96, 558);
+            this.pal_sprite_crushercostume1.Location = new System.Drawing.Point(96, 527);
             this.pal_sprite_crushercostume1.Name = "pal_sprite_crushercostume1";
             this.pal_sprite_crushercostume1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crushercostume1.TabIndex = 93;
@@ -1211,7 +1202,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 601);
+            this.label20.Location = new System.Drawing.Point(5, 570);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(75, 13);
             this.label20.TabIndex = 103;
@@ -1220,7 +1211,7 @@
             // pal_sprite_crusherflame2
             // 
             this.pal_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(126, 589);
+            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(125, 558);
             this.pal_sprite_crusherflame2.Name = "pal_sprite_crusherflame2";
             this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherflame2.TabIndex = 100;
@@ -1231,7 +1222,7 @@
             // pal_sprite_crusherflame1
             // 
             this.pal_sprite_crusherflame1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(95, 589);
+            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(96, 556);
             this.pal_sprite_crusherflame1.Name = "pal_sprite_crusherflame1";
             this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherflame1.TabIndex = 99;
@@ -1242,7 +1233,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(7, 630);
+            this.label21.Location = new System.Drawing.Point(6, 599);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(74, 13);
             this.label21.TabIndex = 106;
@@ -1251,7 +1242,7 @@
             // pal_sprite_crusherhands2
             // 
             this.pal_sprite_crusherhands2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(126, 618);
+            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(125, 587);
             this.pal_sprite_crusherhands2.Name = "pal_sprite_crusherhands2";
             this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherhands2.TabIndex = 105;
@@ -1262,7 +1253,7 @@
             // pal_sprite_crusherhands1
             // 
             this.pal_sprite_crusherhands1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(95, 618);
+            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(96, 587);
             this.pal_sprite_crusherhands1.Name = "pal_sprite_crusherhands1";
             this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(25, 25);
             this.pal_sprite_crusherhands1.TabIndex = 104;
@@ -1270,11 +1261,24 @@
             this.pal_sprite_crusherhands1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.pal_sprite_crusherhands1.Click += new System.EventHandler(this.pal_square_click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(420, 570);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(128, 17);
+            this.checkBox1.TabIndex = 107;
+            this.checkBox1.Text = "Fix old punche sprites";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 655);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.pal_sprite_crusherhands2);
             this.Controls.Add(this.pal_sprite_crusherhands1);
@@ -1298,7 +1302,6 @@
             this.Controls.Add(this.pal_sprite_psychopunch3);
             this.Controls.Add(this.pal_sprite_psychopunch2);
             this.Controls.Add(this.pal_sprite_psychopunch1);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.pal_sprite_psychoglow);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.portrait_blood3);
@@ -1537,7 +1540,6 @@
         private System.Windows.Forms.PictureBox portrait_blood3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pal_sprite_psychoglow;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pal_sprite_psychopunch1;
         private System.Windows.Forms.PictureBox pal_sprite_psychopunch2;
         private System.Windows.Forms.PictureBox pal_sprite_psychopunch3;
@@ -1561,6 +1563,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pal_sprite_crusherhands2;
         private System.Windows.Forms.PictureBox pal_sprite_crusherhands1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

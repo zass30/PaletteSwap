@@ -41,7 +41,7 @@ namespace PaletteSwap
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
             portraitBox.Image = Properties.Resources.dicportraitwin5;
             portraitLossBox.Image = Properties.Resources.dicportraitloss5;
-
+            overlayTransparency();
             masterStand = new Bitmap(Properties.Resources.dicstand1);
 /*            standMasks = new Bitmap[15];
             for (int i = 0; i < 15; i++)
@@ -262,6 +262,11 @@ namespace PaletteSwap
 
         }
 
+        private void debugImage()
+        {
+            Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+        }
+
         private void createColorMasks()
         {
             var p_src = new Bitmap(@"..\..\Resources\dicstand1.png");
@@ -278,8 +283,8 @@ namespace PaletteSwap
 
         private void overlayTransparency()
         {
-            var p_src = new Bitmap(@"..\..\Resources\dicpsychoprep5.png");
-            var p_dest = new Bitmap(@"..\..\Resources\0012.png");
+            var p_src = new Bitmap(@"..\..\Resources\diccrusher2-5.png");
+            var p_dest = new Bitmap(@"..\..\Resources\diccrusherside-0.png");
 
             var newimg = Palette.overlayTransparency(p_src, p_dest);
 
