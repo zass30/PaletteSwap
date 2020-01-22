@@ -29,6 +29,7 @@ namespace PaletteSwap
         {
             InitializeComponent();
             EnableDragAndDrop();
+            portraitBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
 
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
@@ -47,6 +48,21 @@ namespace PaletteSwap
 //            overlayTransparency();
             z = new ZoomForm();
 
+        }
+
+        private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+        // look at this to improve speed
+//        https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/how-to-use-a-color-matrix-to-transform-a-single-color
+            // Create a local version of the graphics object for the PictureBox.
+            Graphics g = e.Graphics;
+            Font fnt = new Font("Arial", 10);
+            // Draw a string on the PictureBox.
+            g.DrawString("This is a diagonal line drawn on the control",
+                fnt, System.Drawing.Brushes.Blue, new Point(30, 30));
+            // Draw a line in the PictureBox.
+            g.DrawLine(System.Drawing.Pens.Red, portraitBox.Left, portraitBox.Top,
+                portraitBox.Right, portraitBox.Bottom);
         }
 
         private void EnableDragAndDrop()
@@ -424,6 +440,7 @@ namespace PaletteSwap
 
         private void refreshZoom()
         {
+            return;
             if (currentlySelectedZoomImage == null)
                 return;
 
