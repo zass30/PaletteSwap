@@ -30,7 +30,6 @@ namespace PaletteSwap
             zoomBox.Image = b;
             this.Height = (int) (b.Height * factor);
             this.Width = (int)(b.Width * factor);
-
         }
     }
 }

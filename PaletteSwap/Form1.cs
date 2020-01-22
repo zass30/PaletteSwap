@@ -18,8 +18,8 @@ namespace PaletteSwap
         Dictionary<string, int> pal_dictionary;
         Dictionary<Color, int> palcol_dict;
         Bitmap masterStand;
-//        Bitmap[] standMasks;
         ZoomForm z;
+        PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
         Portrait currentPortrait;
         Sprite currentSprite;
@@ -41,16 +41,9 @@ namespace PaletteSwap
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
             portraitBox.Image = Properties.Resources.dicportraitwin5;
             portraitLossBox.Image = Properties.Resources.dicportraitloss5;
-            overlayTransparency();
             masterStand = new Bitmap(Properties.Resources.dicstand1);
-/*            standMasks = new Bitmap[15];
-            for (int i = 0; i < 15; i++)
-            {
-                standMasks[i] = new Bitmap(@"..\..\Resources\masks\dicstandmask" + i + ".png");
-            }*/
             comboBox1.SelectedIndex = 5;
             loadPalette();
-            //            createColorMasks();
 //            overlayTransparency();
             z = new ZoomForm();
 
@@ -421,7 +414,20 @@ namespace PaletteSwap
         private void zoom(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
+            currentlySelectedZoomImage = p;
             var bmp = magnify_sprite(p.Image, 6);
+            if (z.IsDisposed)
+                z = new ZoomForm();
+            z.Show();
+            z.displayZoomImage(bmp);
+        }
+
+        private void refreshZoom()
+        {
+            if (currentlySelectedZoomImage == null)
+                return;
+
+            var bmp = magnify_sprite(currentlySelectedZoomImage.Image, 6);
             if (z.IsDisposed)
                 z = new ZoomForm();
             z.Show();
@@ -750,6 +756,7 @@ namespace PaletteSwap
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updatePortraitColor(c, p);
+            refreshZoom();
         }
 
         private void sprite_BackColorChanged(object sender, EventArgs e)
@@ -759,6 +766,7 @@ namespace PaletteSwap
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updateSpriteColor(c, p);
+            refreshZoom();
         }
 
         private void spriteCrusher_BackColorChanged(object sender, EventArgs e)
@@ -768,6 +776,7 @@ namespace PaletteSwap
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updateSpriteCrusherColor(c, p);
+            refreshZoom();
         }
     }
 }
