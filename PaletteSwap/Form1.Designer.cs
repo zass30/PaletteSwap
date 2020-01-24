@@ -103,7 +103,7 @@
             this.pal_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
-            this.portraitBox = new System.Windows.Forms.PictureBox();
+            this.portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.neutralStandBox = new System.Windows.Forms.PictureBox();
             this.pal_sprite_psychoglow = new System.Windows.Forms.PictureBox();
             this.pal_sprite_psychopunch1 = new System.Windows.Forms.PictureBox();
@@ -183,7 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch1)).BeginInit();
@@ -987,15 +987,15 @@
             this.pal_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portraitBox
+            // portraitVictoryBox
             // 
-            this.portraitBox.BackColor = System.Drawing.Color.Black;
-            this.portraitBox.Location = new System.Drawing.Point(346, 41);
-            this.portraitBox.Name = "portraitBox";
-            this.portraitBox.Size = new System.Drawing.Size(128, 112);
-            this.portraitBox.TabIndex = 3;
-            this.portraitBox.TabStop = false;
-            this.portraitBox.Click += new System.EventHandler(this.zoom);
+            this.portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.portraitVictoryBox.Location = new System.Drawing.Point(346, 41);
+            this.portraitVictoryBox.Name = "portraitVictoryBox";
+            this.portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.portraitVictoryBox.TabIndex = 3;
+            this.portraitVictoryBox.TabStop = false;
+            this.portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // neutralStandBox
             // 
@@ -1377,7 +1377,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.portraitBox);
+            this.Controls.Add(this.portraitVictoryBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.neutralStandBox);
             this.Name = "Form1";
@@ -1435,7 +1435,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch1)).EndInit();
@@ -1464,7 +1464,7 @@
         #endregion
         private System.Windows.Forms.PictureBox neutralStandBox;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox portraitBox;
+        private System.Windows.Forms.PictureBox portraitVictoryBox;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;

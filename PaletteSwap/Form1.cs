@@ -29,7 +29,7 @@ namespace PaletteSwap
         {
             InitializeComponent();
             EnableDragAndDrop();
-            portraitBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
+            portraitVictoryBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
             portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
 
 
@@ -184,14 +184,12 @@ namespace PaletteSwap
 
         private void load_portrait_victory()
         {
-            portraitBox.Refresh();
-//            portraitBox.Image = currentPortrait.GenerateVictoryPortrait();
+            portraitVictoryBox.Refresh();
         }
 
         private void load_portrait_loss()
         {
             portraitLossBox.Refresh();
-//            portraitLossBox.Image = currentPortrait.GenerateLossPortrait();
         }
 
         private void load_sprite_buttons()
