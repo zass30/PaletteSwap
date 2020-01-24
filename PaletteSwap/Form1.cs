@@ -76,7 +76,6 @@ namespace PaletteSwap
             }
 
             imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            g.DrawImage(portrait_orig, new Point(0, 0));
             g.DrawImage(portrait_orig, 
                 new Rectangle(0, 0, width, height), 
                 0, 0, width, height,
