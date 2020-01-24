@@ -107,11 +107,10 @@ namespace PaletteSwap
              imageAttributes = new ImageAttributes();
             var portraitlossbottomremaptable = currentPortrait.LossBottomColorsRemapTable();
 
-            // not quite working, figure out why
             imageAttributes.SetRemapTable(portraitlossbottomremaptable, ColorAdjustType.Bitmap);
             g.DrawImage(portraitlossbottom,
                 new Rectangle(0, 0, plb_width, plb_height),
-                plt_width, plt_height, plb_width, plb_height,
+                0, 0, plb_width, plb_height,
                 GraphicsUnit.Pixel,
                 imageAttributes);
 
