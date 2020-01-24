@@ -81,6 +81,10 @@ namespace PaletteSwap
                 0, 0, width, height,
                 GraphicsUnit.Pixel,
                 imageAttributes);
+
+            // this seems to work but slow?
+//            portraitBox.DrawToBitmap(portrait_orig, new Rectangle(0, 0, width, height));
+//            portraitBox.Image = portrait_orig;
         }
 
         private void EnableDragAndDrop()
