@@ -7,8 +7,17 @@ using System.Drawing;
 
 namespace PaletteSwap
 {
+    public class PortraitHelper
+    {
+        public static Portrait original_portrait = new Portrait(Portrait.bis5portrait);
+        public static Color[] orig_victory_colors = original_portrait.VictoryColorsArray();
+        public static Color[] orig_losstop_colors = original_portrait.LossTopColorsArray();
+        public static Color[] orig_lossbottom_colors = original_portrait.LossBottomColorsArray();
+    }
+
     public class Portrait
     {
+
         public static readonly string bis0portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00
 FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F FF0F CC0C 9909 7707 0A00
 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00
@@ -213,11 +222,12 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Bitmap GenerateVictoryPortrait()
         {
-            var orig = new Portrait(Portrait.bis5portrait);
-            var orig_colors = orig.VictoryColorsArray();
+//            var orig = new Portrait(Portrait.bis5portrait);
+//            var orig_colors = orig.VictoryColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
             var my_colors = this.VictoryColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = Palette.PaletteSwap(b, PortraitHelper.orig_victory_colors, my_colors);
+ //           var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using System.Drawing.Imaging;
 
 namespace PaletteSwap
 {
@@ -29,6 +29,8 @@ namespace PaletteSwap
         {
             InitializeComponent();
             EnableDragAndDrop();
+            portraitBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
+
 
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
@@ -39,7 +41,7 @@ namespace PaletteSwap
             psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
             crusherBox1.Image = Properties.Resources.diccrusher1_5;
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
-            portraitBox.Image = Properties.Resources.dicportraitwin5;
+//            portraitBox.Image = Properties.Resources.dicportraitwin5;
             portraitLossBox.Image = Properties.Resources.dicportraitloss5;
             masterStand = new Bitmap(Properties.Resources.dicstand1);
             comboBox1.SelectedIndex = 5;
@@ -47,6 +49,39 @@ namespace PaletteSwap
 //            overlayTransparency();
             z = new ZoomForm();
 
+        }
+
+        private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            Bitmap portrait_orig = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
+            int width = portrait_orig.Width;
+            int height = portrait_orig.Height;
+
+            // Create a local version of the graphics object for the PictureBox.
+            Graphics g = e.Graphics;
+
+            ImageAttributes imageAttributes = new ImageAttributes();
+            var orig = new Portrait(Portrait.bis5portrait);
+            var orig_colors = orig.VictoryColorsArray();
+            var dest_colors = currentPortrait.VictoryColorsArray();
+            ColorMap[] remapTable = new ColorMap[orig_colors.Length];
+
+            // change this so remaptable is a method of portrait.
+            for (int j = 0; j < orig_colors.Length; j++)
+            {
+                ColorMap colorMap = new ColorMap();
+                colorMap.OldColor = orig_colors[j];
+                colorMap.NewColor = dest_colors[j];
+                remapTable[j] = colorMap;
+            }
+
+            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+            g.DrawImage(portrait_orig, new Point(0, 0));
+            g.DrawImage(portrait_orig, 
+                new Rectangle(0, 0, width, height), 
+                0, 0, width, height,
+                GraphicsUnit.Pixel,
+                imageAttributes);
         }
 
         private void EnableDragAndDrop()
@@ -157,7 +192,8 @@ namespace PaletteSwap
 
         private void load_portrait_victory()
         {
-            portraitBox.Image = currentPortrait.GenerateVictoryPortrait();
+            portraitBox.Refresh();
+//            portraitBox.Image = currentPortrait.GenerateVictoryPortrait();
         }
 
         private void load_portrait_loss()
@@ -622,7 +658,7 @@ namespace PaletteSwap
 
             }
             load_portrait_victory();
-            load_portrait_loss();
+//            load_portrait_loss();
         }
 
         private void updateSpriteColor(Color c, PictureBox p)
