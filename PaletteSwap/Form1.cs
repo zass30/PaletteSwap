@@ -63,6 +63,8 @@ namespace PaletteSwap
             // Draw a line in the PictureBox.
             g.DrawLine(System.Drawing.Pens.Red, portraitBox.Left, portraitBox.Top,
                 portraitBox.Right, portraitBox.Bottom);
+
+//        https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/how-to-use-a-color-remap-table
         }
 
         private void EnableDragAndDrop()
