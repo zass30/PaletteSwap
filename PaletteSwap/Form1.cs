@@ -61,19 +61,7 @@ namespace PaletteSwap
             Graphics g = e.Graphics;
 
             ImageAttributes imageAttributes = new ImageAttributes();
-            var orig = new Portrait(Portrait.bis5portrait);
-            var orig_colors = orig.VictoryColorsArray();
-            var dest_colors = currentPortrait.VictoryColorsArray();
-            ColorMap[] remapTable = new ColorMap[orig_colors.Length];
-
-            // change this so remaptable is a method of portrait.
-            for (int j = 0; j < orig_colors.Length; j++)
-            {
-                ColorMap colorMap = new ColorMap();
-                colorMap.OldColor = orig_colors[j];
-                colorMap.NewColor = dest_colors[j];
-                remapTable[j] = colorMap;
-            }
+            var remapTable = currentPortrait.VictoryColorsRemapTable();
 
             imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
             g.DrawImage(portrait_orig, 
