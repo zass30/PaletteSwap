@@ -43,7 +43,7 @@ namespace PaletteSwap
             crusherBox1.Image = Properties.Resources.diccrusher1_5;
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
 //            portraitBox.Image = Properties.Resources.dicportraitwin5;
-            portraitLossBox.Image = Properties.Resources.dicportraitloss5;
+//            portraitLossBox.Image = Properties.Resources.dicportraitloss5;
             masterStand = new Bitmap(Properties.Resources.dicstand1);
             comboBox1.SelectedIndex = 5;
             loadPalette();
@@ -485,66 +485,43 @@ namespace PaletteSwap
             return i;
         }
 
-        private void pal_val_R_TextChanged(object sender, EventArgs e)
+        private void pal_val_TextChanged(object sender, EventArgs e)
         {
+            if (currentlySelectedColor == null)
+                return;
             if (skip_image_recolors)
                 return;
-            int r = 0;
+            int value = 0;
+            var tb = (TextBox)sender;
             try
             {
-                r = Int32.Parse(pal_val_R.Text);
+                value = Int32.Parse(tb.Text);
             }
             catch (Exception)
             {
                 // nothing
             }
-            r = clamp(r);
-            trackBarR.Value = r;
+            value = clamp(value);
             var c = currentlySelectedColor.BackColor;
-            var newcolor = Color.FromArgb(c.A, r*17, c.G, c.B);
+            Color newcolor = Color.Firebrick;
+            switch (tb.Name)
+            {
+                case "pal_val_R":
+                    trackBarR.Value = value;
+                    newcolor = Color.FromArgb(c.A, value * 17, c.G, c.B);
+                    break;
+                case "pal_val_G":
+                    trackBarG.Value = value;
+                    newcolor = Color.FromArgb(c.A, c.R, value * 17, c.B);
+                    break;
+                case "pal_val_B":
+                    trackBarB.Value = value;
+                    newcolor = Color.FromArgb(c.A, c.R, c.G, value * 17);
+                    break;
+            }
             currentlySelectedColor.BackColor = newcolor;
         }
-
-        private void pal_val_G_TextChanged(object sender, EventArgs e)
-        {
-            if (skip_image_recolors)
-                return;
-            int g = 0;        
-            try
-            {
-                g = Int32.Parse(pal_val_G.Text);
-            }
-            catch (Exception)
-            {
-                // nothing
-            }
-            g = clamp(g);
-            trackBarG.Value = g;
-            var c = currentlySelectedColor.BackColor;
-            var newcolor = Color.FromArgb(c.A, c.R, g*17, c.B);
-            currentlySelectedColor.BackColor = newcolor;
-        }
-
-        private void pal_val_B_TextChanged(object sender, EventArgs e)
-        {
-            if (skip_image_recolors)
-                return;
-            int b = 0;
-            try
-            {
-                b = Int32.Parse(pal_val_B.Text);
-            }
-            catch (Exception)
-            {
-                // nothing
-            }
-            b = clamp(b);
-            trackBarB.Value = b;
-            var c = currentlySelectedColor.BackColor;
-            var newcolor = Color.FromArgb(c.A, c.R, c.G, b*17);
-            currentlySelectedColor.BackColor = newcolor;
-        }
-
+        
         private void updatePortraitColor(Color c, PictureBox p)
         {
             currentlySelectedColor = p;

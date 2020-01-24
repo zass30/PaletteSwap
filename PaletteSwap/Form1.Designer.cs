@@ -335,7 +335,7 @@
             this.pal_val_R.Name = "pal_val_R";
             this.pal_val_R.Size = new System.Drawing.Size(37, 20);
             this.pal_val_R.TabIndex = 31;
-            this.pal_val_R.TextChanged += new System.EventHandler(this.pal_val_R_TextChanged);
+            this.pal_val_R.TextChanged += new System.EventHandler(this.pal_val_TextChanged);
             // 
             // pal_val_G
             // 
@@ -343,7 +343,7 @@
             this.pal_val_G.Name = "pal_val_G";
             this.pal_val_G.Size = new System.Drawing.Size(37, 20);
             this.pal_val_G.TabIndex = 32;
-            this.pal_val_G.TextChanged += new System.EventHandler(this.pal_val_G_TextChanged);
+            this.pal_val_G.TextChanged += new System.EventHandler(this.pal_val_TextChanged);
             // 
             // pal_val_B
             // 
@@ -351,7 +351,7 @@
             this.pal_val_B.Name = "pal_val_B";
             this.pal_val_B.Size = new System.Drawing.Size(37, 20);
             this.pal_val_B.TabIndex = 33;
-            this.pal_val_B.TextChanged += new System.EventHandler(this.pal_val_B_TextChanged);
+            this.pal_val_B.TextChanged += new System.EventHandler(this.pal_val_TextChanged);
             // 
             // label6
             // 
