@@ -52,74 +52,28 @@ namespace PaletteSwap
 
         }
 
+        private void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
+        {
+            int width = b.Width;
+            int height = b.Height;
+            Graphics g = e.Graphics;
+            ImageAttributes imageAttributes = new ImageAttributes();
+            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+            g.DrawImage(b, new Rectangle(0, 0, width, height), 
+                        0, 0, width, height,
+                        GraphicsUnit.Pixel, imageAttributes);
+        }
+
         private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            Bitmap portrait_orig = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
-            int width = portrait_orig.Width;
-            int height = portrait_orig.Height;
-
-            // Create a local version of the graphics object for the PictureBox.
-            Graphics g = e.Graphics;
-
-            ImageAttributes imageAttributes = new ImageAttributes();
             var remapTable = currentPortrait.VictoryColorsRemapTable();
-
-            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            g.DrawImage(portrait_orig, 
-                new Rectangle(0, 0, width, height), 
-                0, 0, width, height,
-                GraphicsUnit.Pixel,
-                imageAttributes);
-
-            // make same call on zoomwindow, which needs logic to know what portrait to draw
-
-            // this seems to work but slow?
-//            portraitBox.DrawToBitmap(portrait_orig, new Rectangle(0, 0, width, height));
-//            portraitBox.Image = portrait_orig;
-
+            imagepaint(e, Properties.Resources.dicportraitwin5, remapTable);
         }
 
         private void portraitLossBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            Bitmap portraitlosstop = new Bitmap(PaletteSwap.Properties.Resources.dicportraitlosstop5);
-            int plt_width = portraitlosstop.Width;
-            int plt_height = portraitlosstop.Height;
-
-            // Create a local version of the graphics object for the PictureBox.
-            Graphics g = e.Graphics;
-
-            // this doesn't work b/c shared colors between top and bottom, so need to draw top and bottom seperately.
-            ImageAttributes imageAttributes = new ImageAttributes();
-            var portraitlosstopremaptable = currentPortrait.LossTopColorsRemapTable();
-
-            imageAttributes.SetRemapTable(portraitlosstopremaptable, ColorAdjustType.Bitmap);
-            g.DrawImage(portraitlosstop,
-                new Rectangle(0, 0, plt_width, plt_height),
-                0, 0, plt_width, plt_height,
-                GraphicsUnit.Pixel,
-                imageAttributes);
-            
-           Bitmap portraitlossbottom = new Bitmap(PaletteSwap.Properties.Resources.dicportraitlossbottom5);
-           int plb_width = portraitlossbottom.Width;
-           int plb_height = portraitlossbottom.Height;
-
-
-             imageAttributes = new ImageAttributes();
-            var portraitlossbottomremaptable = currentPortrait.LossBottomColorsRemapTable();
-
-            imageAttributes.SetRemapTable(portraitlossbottomremaptable, ColorAdjustType.Bitmap);
-            g.DrawImage(portraitlossbottom,
-                new Rectangle(0, 0, plb_width, plb_height),
-                0, 0, plb_width, plb_height,
-                GraphicsUnit.Pixel,
-                imageAttributes);
-
-            // make same call on zoomwindow, which needs logic to know what portrait to draw
-
-            // this seems to work but slow?
-            //            portraitBox.DrawToBitmap(portrait_orig, new Rectangle(0, 0, width, height));
-            //            portraitBox.Image = portrait_orig;
-
+            imagepaint(e, Properties.Resources.dicportraitlosstop5, currentPortrait.LossTopColorsRemapTable());
+            imagepaint(e, Properties.Resources.dicportraitlossbottom5, currentPortrait.LossBottomColorsRemapTable());
         }
 
         private void EnableDragAndDrop()
