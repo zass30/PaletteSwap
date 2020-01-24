@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
 using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace PaletteSwapTestsNet
 {
@@ -365,6 +366,53 @@ namespace PaletteSwapTestsNet
             Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
         }
 
+
+        [TestMethod]
+        public void GenerateVictoryPortraitPerfTest()
+        {
+            Bitmap portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin0);
+            string s = Portrait.bis0portrait;
+
+            for (int i = 0; i < 50; i++)
+            {
+                var p = new Portrait(s);
+                Bitmap portrait_result = p.GenerateVictoryPortrait();
+                Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+            }
+
+            Bitmap portrait_orig = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
+            Graphics g = Graphics.FromImage(portrait_orig);
+            int width = portrait_orig.Width;
+            int height = portrait_orig.Height;
+
+            for (int i = 0; i < 2; i++)
+            {
+                ImageAttributes imageAttributes = new ImageAttributes();
+                var orig = new Portrait(Portrait.bis5portrait);
+                var orig_colors = orig.VictoryColorsArray();
+                var dest = new Portrait(Portrait.bis5portrait);
+                var dest_colors = dest.VictoryColorsArray();
+                ColorMap[] remapTable = new ColorMap[orig_colors.Length];
+
+                for (int j = 0; j < orig_colors.Length; j++)
+                {
+                    ColorMap colorMap = new ColorMap();
+                    colorMap.OldColor = orig_colors[j];
+                    colorMap.NewColor = dest_colors[j];
+                    remapTable[j] = colorMap;
+                }
+
+                imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+                g.DrawImage(
+   portrait_orig,
+   new Rectangle(150, 10, width, height),  // destination rectangle 
+   0, 0,        // upper-left corner of source rectangle 
+   width,       // width of source rectangle
+   height,      // height of source rectangle
+   GraphicsUnit.Pixel,
+   imageAttributes);
+            }
+        }
 
         [TestMethod]
         public void GenerateLossPortraitTest()
