@@ -81,21 +81,37 @@ namespace PaletteSwap
 
         private void portraitLossBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            Bitmap portrait_orig = new Bitmap(PaletteSwap.Properties.Resources.dicportraitloss5);
-            int width = portrait_orig.Width;
-            int height = portrait_orig.Height;
+            Bitmap portraitlosstop = new Bitmap(PaletteSwap.Properties.Resources.dicportraitlosstop5);
+            int plt_width = portraitlosstop.Width;
+            int plt_height = portraitlosstop.Height;
 
             // Create a local version of the graphics object for the PictureBox.
             Graphics g = e.Graphics;
 
             // this doesn't work b/c shared colors between top and bottom, so need to draw top and bottom seperately.
             ImageAttributes imageAttributes = new ImageAttributes();
-            var remapTable = currentPortrait.LossColorsRemapTable();
+            var portraitlosstopremaptable = currentPortrait.LossTopColorsRemapTable();
 
-            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            g.DrawImage(portrait_orig,
-                new Rectangle(0, 0, width, height),
-                0, 0, width, height,
+            imageAttributes.SetRemapTable(portraitlosstopremaptable, ColorAdjustType.Bitmap);
+            g.DrawImage(portraitlosstop,
+                new Rectangle(0, 0, plt_width, plt_height),
+                0, 0, plt_width, plt_height,
+                GraphicsUnit.Pixel,
+                imageAttributes);
+            
+           Bitmap portraitlossbottom = new Bitmap(PaletteSwap.Properties.Resources.dicportraitlossbottom5);
+           int plb_width = portraitlossbottom.Width;
+           int plb_height = portraitlossbottom.Height;
+
+
+             imageAttributes = new ImageAttributes();
+            var portraitlossbottomremaptable = currentPortrait.LossBottomColorsRemapTable();
+
+            // not quite working, figure out why
+            imageAttributes.SetRemapTable(portraitlossbottomremaptable, ColorAdjustType.Bitmap);
+            g.DrawImage(portraitlossbottom,
+                new Rectangle(0, 0, plb_width, plb_height),
+                plt_width, plt_height, plb_width, plb_height,
                 GraphicsUnit.Pixel,
                 imageAttributes);
 

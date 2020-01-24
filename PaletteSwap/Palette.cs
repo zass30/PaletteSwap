@@ -191,6 +191,36 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return remapTable;
         }
 
+        public ColorMap[] LossBottomColorsRemapTable()
+        {
+            ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_lossbottom_colors.Length];
+            var loss_bottom_colors = LossBottomColorsArray();
+
+            for (int j = 0; j < remapTable.Length; j++)
+            {
+                ColorMap colorMap = new ColorMap();
+                colorMap.OldColor = PortraitHelper.orig_lossbottom_colors[j];
+                colorMap.NewColor = loss_bottom_colors[j];
+                remapTable[j] = colorMap;
+            }
+            return remapTable;
+        }
+
+        public ColorMap[] LossTopColorsRemapTable()
+        {
+            ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_losstop_colors.Length];
+            var loss_top_colors = LossTopColorsArray();
+
+            for (int j = 0; j < remapTable.Length; j++)
+            {
+                ColorMap colorMap = new ColorMap();
+                colorMap.OldColor = PortraitHelper.orig_losstop_colors[j];
+                colorMap.NewColor = loss_top_colors[j];
+                remapTable[j] = colorMap;
+            }
+            return remapTable;
+        }
+
         public ColorMap[] LossColorsRemapTable()
         {
             ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_losstop_colors.Length + PortraitHelper.orig_lossbottom_colors.Length];
