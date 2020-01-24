@@ -30,6 +30,7 @@ namespace PaletteSwap
             InitializeComponent();
             EnableDragAndDrop();
             portraitBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
+            portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
 
 
             palette = new byte[16*4];
@@ -75,6 +76,34 @@ namespace PaletteSwap
             // this seems to work but slow?
 //            portraitBox.DrawToBitmap(portrait_orig, new Rectangle(0, 0, width, height));
 //            portraitBox.Image = portrait_orig;
+
+        }
+
+        private void portraitLossBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            Bitmap portrait_orig = new Bitmap(PaletteSwap.Properties.Resources.dicportraitloss5);
+            int width = portrait_orig.Width;
+            int height = portrait_orig.Height;
+
+            // Create a local version of the graphics object for the PictureBox.
+            Graphics g = e.Graphics;
+
+            // this doesn't work b/c shared colors between top and bottom, so need to draw top and bottom seperately.
+            ImageAttributes imageAttributes = new ImageAttributes();
+            var remapTable = currentPortrait.LossColorsRemapTable();
+
+            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+            g.DrawImage(portrait_orig,
+                new Rectangle(0, 0, width, height),
+                0, 0, width, height,
+                GraphicsUnit.Pixel,
+                imageAttributes);
+
+            // make same call on zoomwindow, which needs logic to know what portrait to draw
+
+            // this seems to work but slow?
+            //            portraitBox.DrawToBitmap(portrait_orig, new Rectangle(0, 0, width, height));
+            //            portraitBox.Image = portrait_orig;
 
         }
 
@@ -192,7 +221,8 @@ namespace PaletteSwap
 
         private void load_portrait_loss()
         {
-            portraitLossBox.Image = currentPortrait.GenerateLossPortrait();
+            portraitLossBox.Refresh();
+//            portraitLossBox.Image = currentPortrait.GenerateLossPortrait();
         }
 
         private void load_sprite_buttons()
@@ -652,7 +682,7 @@ namespace PaletteSwap
 
             }
             load_portrait_victory();
-//            load_portrait_loss();
+            load_portrait_loss();
         }
 
         private void updateSpriteColor(Color c, PictureBox p)
