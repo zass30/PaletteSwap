@@ -8,12 +8,31 @@ using System.Drawing.Imaging;
 
 namespace PaletteSwap
 {
-    public class PortraitHelper
+    public class PaletteHelper
     {
         public static Portrait original_portrait = new Portrait(Portrait.bis5portrait);
         public static Color[] orig_victory_colors = original_portrait.VictoryColorsArray();
         public static Color[] orig_losstop_colors = original_portrait.LossTopColorsArray();
         public static Color[] orig_lossbottom_colors = original_portrait.LossBottomColorsArray();
+
+        public static Sprite sprite1 = new Sprite(Sprite.bis1sprite);
+        public static Sprite sprite5 = new Sprite(Sprite.bis5sprite);
+        public static Color[] standing_sprite_colors1 = sprite1.StandingSpriteColorsArray();
+        public static Color[] psychopunch_sprite_colors5 = sprite5.PsychoPunchSpriteColorsArray();
+        public static Color[] psychoprep_sprite_colors5 = sprite5.PsychoPrepSpriteColorsArray();
+
+        public static ColorMap[] GenerateColorMap(Color[] oldcolors, Color[] newcolors)
+        {
+            ColorMap[] remapTable = new ColorMap[oldcolors.Length];
+            for (int j = 0; j < remapTable.Length; j++)
+            {
+                ColorMap colorMap = new ColorMap();
+                colorMap.OldColor = oldcolors[j];
+                colorMap.NewColor = newcolors[j];
+                remapTable[j] = colorMap;
+            }
+            return remapTable;
+        }
     }
 
     public class Portrait
@@ -178,71 +197,17 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public ColorMap[] VictoryColorsRemapTable()
         {
-            ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_victory_colors.Length];
-            var vic_colors = VictoryColorsArray();
-
-            for (int j = 0; j < remapTable.Length; j++)
-            {
-                ColorMap colorMap = new ColorMap();
-                colorMap.OldColor = PortraitHelper.orig_victory_colors[j];
-                colorMap.NewColor = vic_colors[j];
-                remapTable[j] = colorMap;
-            }
-            return remapTable;
+            return PaletteHelper.GenerateColorMap(PaletteHelper.orig_victory_colors, VictoryColorsArray());
         }
 
         public ColorMap[] LossBottomColorsRemapTable()
         {
-            ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_lossbottom_colors.Length];
-            var loss_bottom_colors = LossBottomColorsArray();
-
-            for (int j = 0; j < remapTable.Length; j++)
-            {
-                ColorMap colorMap = new ColorMap();
-                colorMap.OldColor = PortraitHelper.orig_lossbottom_colors[j];
-                colorMap.NewColor = loss_bottom_colors[j];
-                remapTable[j] = colorMap;
-            }
-            return remapTable;
+            return PaletteHelper.GenerateColorMap(PaletteHelper.orig_lossbottom_colors, LossBottomColorsArray());
         }
 
         public ColorMap[] LossTopColorsRemapTable()
         {
-            ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_losstop_colors.Length];
-            var loss_top_colors = LossTopColorsArray();
-
-            for (int j = 0; j < remapTable.Length; j++)
-            {
-                ColorMap colorMap = new ColorMap();
-                colorMap.OldColor = PortraitHelper.orig_losstop_colors[j];
-                colorMap.NewColor = loss_top_colors[j];
-                remapTable[j] = colorMap;
-            }
-            return remapTable;
-        }
-
-        public ColorMap[] LossColorsRemapTable()
-        {
-            ColorMap[] remapTable = new ColorMap[PortraitHelper.orig_losstop_colors.Length + PortraitHelper.orig_lossbottom_colors.Length];
-            var loss_top_colors = LossTopColorsArray();
-            var loss_bottom_colors = LossBottomColorsArray() ;
-
-            for (int j = 0; j < loss_top_colors.Length; j++)
-            {
-                ColorMap colorMap = new ColorMap();
-                colorMap.OldColor = PortraitHelper.orig_losstop_colors[j];
-                colorMap.NewColor = loss_top_colors[j];
-                remapTable[j] = colorMap;
-            }
-            for (int j = 0; j < loss_bottom_colors.Length; j++)
-            {
-                ColorMap colorMap = new ColorMap();
-                colorMap.OldColor = PortraitHelper.orig_lossbottom_colors[j];
-                colorMap.NewColor = loss_bottom_colors[j];
-                remapTable[j + loss_top_colors.Length] = colorMap;
-            }
-
-            return remapTable;
+            return PaletteHelper.GenerateColorMap(PaletteHelper.orig_losstop_colors, LossTopColorsArray());
         }
 
         public string facerow()
@@ -295,7 +260,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 //            var orig_colors = orig.VictoryColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
             var my_colors = this.VictoryColorsArray();
-            var ret = Palette.PaletteSwap(b, PortraitHelper.orig_victory_colors, my_colors);
+            var ret = Palette.PaletteSwap(b, PaletteHelper.orig_victory_colors, my_colors);
  //           var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
@@ -517,6 +482,23 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             costume1, costume2, costume3, costume4, costume5, psychopunch1, psychopunch2,
             psychopunch3, psychopunch4, psychopunch5};
         }
+
+
+        public ColorMap[] StandingSpriteColorsRemapTable()
+        {
+            return PaletteHelper.GenerateColorMap(PaletteHelper.standing_sprite_colors1, StandingSpriteColorsArray());
+        }
+
+        public ColorMap[] PsychoPunchColorsRemapTable()
+        {
+            return PaletteHelper.GenerateColorMap(PaletteHelper.psychopunch_sprite_colors5, PsychoPunchSpriteColorsArray());
+        }
+
+        public ColorMap[] PsychoPrepColorsRemapTable()
+        {
+            return PaletteHelper.GenerateColorMap(PaletteHelper.psychoprep_sprite_colors5, PsychoPrepSpriteColorsArray());
+        }
+
 
         public Bitmap GenerateStandingSprite()
         {

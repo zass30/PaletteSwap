@@ -31,7 +31,9 @@ namespace PaletteSwap
             EnableDragAndDrop();
             portraitVictoryBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
             portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
-
+            neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
+            psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
+            psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
 
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
@@ -62,6 +64,24 @@ namespace PaletteSwap
             g.DrawImage(b, new Rectangle(0, 0, width, height), 
                         0, 0, width, height,
                         GraphicsUnit.Pixel, imageAttributes);
+        }
+
+        private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            var remapTable = currentSprite.StandingSpriteColorsRemapTable();
+            imagepaint(e, Properties.Resources.dicstand1, remapTable);
+        }
+
+        private void psychopunchBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            var remapTable = currentSprite.PsychoPunchColorsRemapTable();
+            imagepaint(e, Properties.Resources.dicmp5, remapTable);
+        }
+
+        private void psychoprepBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            var remapTable = currentSprite.PsychoPrepColorsRemapTable();
+            imagepaint(e, Properties.Resources.dicpsychoprep5, remapTable);
         }
 
         private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -154,20 +174,17 @@ namespace PaletteSwap
 
         private void load_sprite_neutralstand()
         {
-            var b = currentSprite.GenerateStandingSprite();
-            neutralStandBox.Image = b;
+            neutralStandBox.Refresh();
         }
 
         private void load_sprite_psychopunch()
         {
-            var b = currentSprite.GeneratePsychoPunchSprite();
-            psychopunchBox.Image = b;
+            psychopunchBox.Refresh();
         }
 
         private void load_sprite_psychoprep()
         {
-            var b = currentSprite.GeneratePsychoPrepSprite();
-            psychoprepBox.Image = b;
+            psychoprepBox.Refresh();
         }
 
         private void load_sprite_crushertop()
@@ -503,7 +520,7 @@ namespace PaletteSwap
             }
             value = clamp(value);
             var c = currentlySelectedColor.BackColor;
-            Color newcolor = Color.Firebrick;
+            Color newcolor = Color.Black;
             switch (tb.Name)
             {
                 case "pal_val_R":
