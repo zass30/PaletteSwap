@@ -12,9 +12,28 @@ namespace PaletteSwap
 {
     public partial class ZoomForm : Form
     {
-        public ZoomForm()
+        Form1 mainform;
+        int scale;
+        Bitmap magnified_sprite;
+
+        public ZoomForm(Form1 parentform)
         {
             InitializeComponent();
+            mainform = parentform;
+            scale = 6;
+            magnified_sprite = parentform.magnify_sprite(Properties.Resources.dicstand1, 6);
+            zoomBox.Paint += new System.Windows.Forms.PaintEventHandler(this.zoomBox_Paint);
+        }
+
+        private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            var remapTable = mainform.currentSprite.StandingSpriteColorsRemapTable();
+            mainform.imagepaint(e, magnified_sprite, remapTable, 1);
+        }
+
+        public void refreshZoomBox()
+        {
+            zoomBox.Refresh();
         }
 
         private void zoomBox_Click(object sender, EventArgs e)

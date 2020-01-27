@@ -21,8 +21,8 @@ namespace PaletteSwap
         ZoomForm z;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
-        Portrait currentPortrait;
-        Sprite currentSprite;
+        public Portrait currentPortrait;
+        public Sprite currentSprite;
         bool skip_image_recolors = false;
 
         public Form1()
@@ -51,23 +51,28 @@ namespace PaletteSwap
             comboBox1.SelectedIndex = 5;
             loadPalette();
 //            overlayTransparency();
-            z = new ZoomForm();
+            z = new ZoomForm(this);
 
         }
 
-        private void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
+        public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable, int scale)
         {
             int width = b.Width;
             int height = b.Height;
             Graphics g = e.Graphics;
             ImageAttributes imageAttributes = new ImageAttributes();
             imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            g.DrawImage(b, new Rectangle(0, 0, width, height), 
+            g.DrawImage(b, new Rectangle(0, 0, width*scale, height*scale), 
                         0, 0, width, height,
                         GraphicsUnit.Pixel, imageAttributes);
         }
 
-        private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
+        {
+            imagepaint(e, b, remapTable, 1);
+        }
+
+            private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             imagepaint(e, Properties.Resources.dicstand1, remapTable);
@@ -375,7 +380,7 @@ namespace PaletteSwap
             return s;
         }
 
-        private Bitmap magnify_sprite(Image img, int factor)
+        public Bitmap magnify_sprite(Image img, int factor)
         {
             int neww = img.Width * factor;
             int newh = img.Height * factor;
@@ -469,11 +474,12 @@ namespace PaletteSwap
         {
             PictureBox p = (PictureBox)sender;
             currentlySelectedZoomImage = p;
-            var bmp = magnify_sprite(p.Image, 6);
+//            var bmp = magnify_sprite(p.Image, 6);
             if (z.IsDisposed)
-                z = new ZoomForm();
+                z = new ZoomForm(this);
             z.Show();
-            z.displayZoomImage(bmp);
+            z.refreshZoomBox();
+//            z.displayZoomImage(bmp);
         }
 
         private void refreshZoom()
@@ -481,11 +487,11 @@ namespace PaletteSwap
             if (currentlySelectedZoomImage == null)
                 return;
 
-            var bmp = magnify_sprite(currentlySelectedZoomImage.Image, 6);
+/*            var bmp = magnify_sprite(currentlySelectedZoomImage.Image, 6);
             if (z.IsDisposed)
                 z = new ZoomForm();
             z.Show();
-            z.displayZoomImage(bmp);
+            z.displayZoomImage(bmp);*/
         }
 
         private void trackBarR_Scroll(object sender, EventArgs e)
