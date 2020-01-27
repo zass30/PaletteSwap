@@ -33,7 +33,8 @@ namespace PaletteSwap
             portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
             neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
             psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
-            psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
+            crusherBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox1_Paint);
+            crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);
 
             palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
@@ -82,6 +83,17 @@ namespace PaletteSwap
         {
             var remapTable = currentSprite.PsychoPrepColorsRemapTable();
             imagepaint(e, Properties.Resources.dicpsychoprep5, remapTable);
+        }
+
+        private void crusherBox1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            var remapTable = currentSprite.CrusherColorsRemapTable();
+            imagepaint(e, Properties.Resources.diccrusher1_5, remapTable);
+        }
+        private void crusherBox2_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            var remapTable = currentSprite.CrusherColorsRemapTable();
+            imagepaint(e, Properties.Resources.diccrusher2_5, remapTable);
         }
 
         private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -189,14 +201,12 @@ namespace PaletteSwap
 
         private void load_sprite_crushertop()
         {
-            var b = currentSprite.GenerateCrusherTopSprite();
-            crusherBox1.Image = b;
+            crusherBox1.Refresh();
         }
 
         private void load_sprite_crusherside()
         {
-            var b = currentSprite.GenerateCrusherSideSprite();
-            crusherBox2.Image = b;
+            crusherBox2.Refresh();
         }
 
         private void load_portrait_victory()

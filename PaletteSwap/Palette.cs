@@ -20,6 +20,7 @@ namespace PaletteSwap
         public static Color[] standing_sprite_colors1 = sprite1.StandingSpriteColorsArray();
         public static Color[] psychopunch_sprite_colors5 = sprite5.PsychoPunchSpriteColorsArray();
         public static Color[] psychoprep_sprite_colors5 = sprite5.PsychoPrepSpriteColorsArray();
+        public static Color[] crusher_sprite_colors5 = sprite5.CrusherSpriteColorsArray();
 
         public static ColorMap[] GenerateColorMap(Color[] oldcolors, Color[] newcolors)
         {
@@ -499,6 +500,10 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return PaletteHelper.GenerateColorMap(PaletteHelper.psychoprep_sprite_colors5, PsychoPrepSpriteColorsArray());
         }
 
+        public ColorMap[] CrusherColorsRemapTable()
+        {
+            return PaletteHelper.GenerateColorMap(PaletteHelper.crusher_sprite_colors5, CrusherSpriteColorsArray());
+        }
 
         public Bitmap GenerateStandingSprite()
         {
