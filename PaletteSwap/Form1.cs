@@ -482,7 +482,9 @@ namespace PaletteSwap
                 case "neutralStandBox":
                     z.displayZoomImage((Bitmap)p.Image, img_type.neutral);
                     break;
-
+                case "psychopunchBox":
+                    z.displayZoomImage((Bitmap)p.Image, img_type.psychopunch);
+                    break;
             }
             z.refreshZoomBox();
         }
