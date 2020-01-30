@@ -14,7 +14,6 @@ namespace PaletteSwap
 {
     public partial class Form1 : Form
     {
-        byte[] palette;
         Dictionary<string, int> pal_dictionary;
         Dictionary<Color, int> palcol_dict;
         Bitmap masterStand;
@@ -29,15 +28,8 @@ namespace PaletteSwap
         {
             InitializeComponent();
             EnableDragAndDrop();
-            portraitVictoryBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
-            portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
-            neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
-            psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
-            psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
-            crusherBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox1_Paint);
-            crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);
+            EnablePaintRefresh();
 
-            palette = new byte[16*4];
             pal_dictionary = new Dictionary<string, int>();
             palcol_dict = new Dictionary<Color, int>();
 
@@ -66,6 +58,17 @@ namespace PaletteSwap
             g.DrawImage(b, new Rectangle(0, 0, width, height), 
                         0, 0, width, height,
                         GraphicsUnit.Pixel, imageAttributes);
+        }
+
+        private void EnablePaintRefresh()
+        {
+            portraitVictoryBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
+            portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
+            neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
+            psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
+            psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
+            crusherBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox1_Paint);
+            crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);
         }
 
             private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -400,23 +403,6 @@ namespace PaletteSwap
             }
 
             return newbmp;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            LoadImageIntoPalette();
-
-            Image Img = neutralStandBox.Image;
-            Bitmap bmp = new Bitmap(Img);
-            for (int x = 0; x < bmp.Width; x++)
-            {
-                for (int y = 0; y < bmp.Height; y++)
-                {
-                    Color gotColor = bmp.GetPixel(x, y);                            
-                    bmp.SetPixel(x, y, Color.FromArgb(gotColor.A, gotColor.R, gotColor.B, gotColor.G));
-                }
-            }
-            neutralStandBox.Image = bmp;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -831,6 +817,13 @@ namespace PaletteSwap
             var c = p.BackColor;
             updateSpriteCrusherColor(c, p);
             refreshZoom();
+        }
+
+        private void colorSwapBG_Click(object sender, EventArgs e)
+        {
+            var b = pal_val_B.Text;
+            pal_val_B.Text = pal_val_G.Text;
+            trackBarG.Text = b;
         }
     }
 }

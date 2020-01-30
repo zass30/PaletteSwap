@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.colorSwapBG = new System.Windows.Forms.Button();
             this.colorSelectorBox = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -130,6 +130,8 @@
             this.pal_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.colorSwapRB = new System.Windows.Forms.Button();
+            this.colorSwapGR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -206,15 +208,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // colorSwapBG
             // 
-            this.button2.Location = new System.Drawing.Point(308, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "swap B & G";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.colorSwapBG.Location = new System.Drawing.Point(497, 248);
+            this.colorSwapBG.Name = "colorSwapBG";
+            this.colorSwapBG.Size = new System.Drawing.Size(34, 23);
+            this.colorSwapBG.TabIndex = 2;
+            this.colorSwapBG.Text = "BG";
+            this.colorSwapBG.UseVisualStyleBackColor = true;
+            this.colorSwapBG.Click += new System.EventHandler(this.colorSwapBG_Click);
             // 
             // colorSelectorBox
             // 
@@ -1273,11 +1275,31 @@
             this.checkBox1.Text = "Fix old punche sprites";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // colorSwapRB
+            // 
+            this.colorSwapRB.Location = new System.Drawing.Point(497, 278);
+            this.colorSwapRB.Name = "colorSwapRB";
+            this.colorSwapRB.Size = new System.Drawing.Size(34, 23);
+            this.colorSwapRB.TabIndex = 108;
+            this.colorSwapRB.Text = "RB";
+            this.colorSwapRB.UseVisualStyleBackColor = true;
+            // 
+            // colorSwapGR
+            // 
+            this.colorSwapGR.Location = new System.Drawing.Point(534, 248);
+            this.colorSwapGR.Name = "colorSwapGR";
+            this.colorSwapGR.Size = new System.Drawing.Size(34, 23);
+            this.colorSwapGR.TabIndex = 109;
+            this.colorSwapGR.Text = "GR";
+            this.colorSwapGR.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 655);
+            this.Controls.Add(this.colorSwapGR);
+            this.Controls.Add(this.colorSwapRB);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.pal_sprite_crusherhands2);
@@ -1378,7 +1400,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.colorSelectorBox);
             this.Controls.Add(this.portraitVictoryBox);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.colorSwapBG);
             this.Controls.Add(this.neutralStandBox);
             this.Name = "Form1";
             this.Text = "PaletteSwapper";
@@ -1463,7 +1485,7 @@
 
         #endregion
         private System.Windows.Forms.PictureBox neutralStandBox;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button colorSwapBG;
         private System.Windows.Forms.PictureBox portraitVictoryBox;
         private System.Windows.Forms.ComboBox colorSelectorBox;
         private System.Windows.Forms.TextBox textBox1;
@@ -1564,6 +1586,8 @@
         private System.Windows.Forms.PictureBox pal_sprite_crusherhands2;
         private System.Windows.Forms.PictureBox pal_sprite_crusherhands1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button colorSwapRB;
+        private System.Windows.Forms.Button colorSwapGR;
     }
 }
 
