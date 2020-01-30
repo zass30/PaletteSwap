@@ -210,7 +210,7 @@
             // 
             // colorSwapBG
             // 
-            this.colorSwapBG.Location = new System.Drawing.Point(497, 248);
+            this.colorSwapBG.Location = new System.Drawing.Point(269, 205);
             this.colorSwapBG.Name = "colorSwapBG";
             this.colorSwapBG.Size = new System.Drawing.Size(34, 23);
             this.colorSwapBG.TabIndex = 2;
@@ -232,7 +232,7 @@
             "hold",
             "old 1",
             "old 2"});
-            this.colorSelectorBox.Location = new System.Drawing.Point(12, 267);
+            this.colorSelectorBox.Location = new System.Drawing.Point(8, 222);
             this.colorSelectorBox.Name = "colorSelectorBox";
             this.colorSelectorBox.Size = new System.Drawing.Size(121, 21);
             this.colorSelectorBox.TabIndex = 5;
@@ -241,7 +241,7 @@
             // textBox1
             // 
             this.textBox1.AllowDrop = true;
-            this.textBox1.Location = new System.Drawing.Point(525, 173);
+            this.textBox1.Location = new System.Drawing.Point(525, 145);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 6;
@@ -249,7 +249,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(531, 196);
+            this.label1.Location = new System.Drawing.Point(531, 168);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 7;
@@ -257,7 +257,7 @@
             // 
             // loadACT
             // 
-            this.loadACT.Location = new System.Drawing.Point(534, 212);
+            this.loadACT.Location = new System.Drawing.Point(534, 184);
             this.loadACT.Name = "loadACT";
             this.loadACT.Size = new System.Drawing.Size(75, 23);
             this.loadACT.TabIndex = 8;
@@ -304,7 +304,7 @@
             // trackBarR
             // 
             this.trackBarR.LargeChange = 2;
-            this.trackBarR.Location = new System.Drawing.Point(342, 175);
+            this.trackBarR.Location = new System.Drawing.Point(342, 147);
             this.trackBarR.Maximum = 15;
             this.trackBarR.Name = "trackBarR";
             this.trackBarR.Size = new System.Drawing.Size(104, 45);
@@ -314,7 +314,7 @@
             // trackBarG
             // 
             this.trackBarG.LargeChange = 2;
-            this.trackBarG.Location = new System.Drawing.Point(342, 226);
+            this.trackBarG.Location = new System.Drawing.Point(342, 198);
             this.trackBarG.Maximum = 15;
             this.trackBarG.Name = "trackBarG";
             this.trackBarG.Size = new System.Drawing.Size(104, 45);
@@ -324,7 +324,7 @@
             // trackBarB
             // 
             this.trackBarB.LargeChange = 2;
-            this.trackBarB.Location = new System.Drawing.Point(342, 278);
+            this.trackBarB.Location = new System.Drawing.Point(342, 250);
             this.trackBarB.Maximum = 15;
             this.trackBarB.Name = "trackBarB";
             this.trackBarB.Size = new System.Drawing.Size(104, 45);
@@ -333,7 +333,7 @@
             // 
             // pal_val_R
             // 
-            this.pal_val_R.Location = new System.Drawing.Point(452, 173);
+            this.pal_val_R.Location = new System.Drawing.Point(452, 145);
             this.pal_val_R.Name = "pal_val_R";
             this.pal_val_R.Size = new System.Drawing.Size(37, 20);
             this.pal_val_R.TabIndex = 31;
@@ -341,7 +341,7 @@
             // 
             // pal_val_G
             // 
-            this.pal_val_G.Location = new System.Drawing.Point(452, 226);
+            this.pal_val_G.Location = new System.Drawing.Point(452, 198);
             this.pal_val_G.Name = "pal_val_G";
             this.pal_val_G.Size = new System.Drawing.Size(37, 20);
             this.pal_val_G.TabIndex = 32;
@@ -349,7 +349,7 @@
             // 
             // pal_val_B
             // 
-            this.pal_val_B.Location = new System.Drawing.Point(452, 278);
+            this.pal_val_B.Location = new System.Drawing.Point(452, 250);
             this.pal_val_B.Name = "pal_val_B";
             this.pal_val_B.Size = new System.Drawing.Size(37, 20);
             this.pal_val_B.TabIndex = 33;
@@ -358,7 +358,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(318, 180);
+            this.label6.Location = new System.Drawing.Point(318, 152);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(15, 13);
             this.label6.TabIndex = 34;
@@ -367,7 +367,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(321, 233);
+            this.label7.Location = new System.Drawing.Point(321, 205);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 13);
             this.label7.TabIndex = 35;
@@ -376,7 +376,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(319, 285);
+            this.label8.Location = new System.Drawing.Point(319, 257);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(14, 13);
             this.label8.TabIndex = 36;
@@ -778,7 +778,7 @@
             // crusherBox2
             // 
             this.crusherBox2.BackColor = System.Drawing.Color.Black;
-            this.crusherBox2.Location = new System.Drawing.Point(133, 193);
+            this.crusherBox2.Location = new System.Drawing.Point(115, 147);
             this.crusherBox2.Name = "crusherBox2";
             this.crusherBox2.Size = new System.Drawing.Size(170, 46);
             this.crusherBox2.TabIndex = 41;
@@ -788,7 +788,7 @@
             // crusherBox1
             // 
             this.crusherBox1.BackColor = System.Drawing.Color.Black;
-            this.crusherBox1.Location = new System.Drawing.Point(135, 126);
+            this.crusherBox1.Location = new System.Drawing.Point(115, 94);
             this.crusherBox1.Name = "crusherBox1";
             this.crusherBox1.Size = new System.Drawing.Size(168, 47);
             this.crusherBox1.TabIndex = 40;
@@ -798,7 +798,7 @@
             // psychoprepBox
             // 
             this.psychoprepBox.BackColor = System.Drawing.Color.Black;
-            this.psychoprepBox.Location = new System.Drawing.Point(135, 41);
+            this.psychoprepBox.Location = new System.Drawing.Point(117, 12);
             this.psychoprepBox.Name = "psychoprepBox";
             this.psychoprepBox.Size = new System.Drawing.Size(149, 67);
             this.psychoprepBox.TabIndex = 39;
@@ -808,7 +808,7 @@
             // psychopunchBox
             // 
             this.psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this.psychopunchBox.Location = new System.Drawing.Point(9, 155);
+            this.psychopunchBox.Location = new System.Drawing.Point(9, 109);
             this.psychopunchBox.Name = "psychopunchBox";
             this.psychopunchBox.Size = new System.Drawing.Size(80, 84);
             this.psychopunchBox.TabIndex = 38;
@@ -817,7 +817,7 @@
             // 
             // portraitLossBox
             // 
-            this.portraitLossBox.Location = new System.Drawing.Point(497, 41);
+            this.portraitLossBox.Location = new System.Drawing.Point(497, 12);
             this.portraitLossBox.Name = "portraitLossBox";
             this.portraitLossBox.Size = new System.Drawing.Size(128, 112);
             this.portraitLossBox.TabIndex = 37;
@@ -992,7 +992,7 @@
             // portraitVictoryBox
             // 
             this.portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.portraitVictoryBox.Location = new System.Drawing.Point(346, 41);
+            this.portraitVictoryBox.Location = new System.Drawing.Point(342, 12);
             this.portraitVictoryBox.Name = "portraitVictoryBox";
             this.portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.portraitVictoryBox.TabIndex = 3;
@@ -1002,7 +1002,7 @@
             // neutralStandBox
             // 
             this.neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.neutralStandBox.Location = new System.Drawing.Point(9, 41);
+            this.neutralStandBox.Location = new System.Drawing.Point(8, 12);
             this.neutralStandBox.Name = "neutralStandBox";
             this.neutralStandBox.Size = new System.Drawing.Size(103, 91);
             this.neutralStandBox.TabIndex = 1;
@@ -1277,21 +1277,23 @@
             // 
             // colorSwapRB
             // 
-            this.colorSwapRB.Location = new System.Drawing.Point(497, 278);
+            this.colorSwapRB.Location = new System.Drawing.Point(269, 234);
             this.colorSwapRB.Name = "colorSwapRB";
             this.colorSwapRB.Size = new System.Drawing.Size(34, 23);
             this.colorSwapRB.TabIndex = 108;
             this.colorSwapRB.Text = "RB";
             this.colorSwapRB.UseVisualStyleBackColor = true;
+            this.colorSwapRB.Click += new System.EventHandler(this.colorSwapRB_Click);
             // 
             // colorSwapGR
             // 
-            this.colorSwapGR.Location = new System.Drawing.Point(534, 248);
+            this.colorSwapGR.Location = new System.Drawing.Point(269, 263);
             this.colorSwapGR.Name = "colorSwapGR";
             this.colorSwapGR.Size = new System.Drawing.Size(34, 23);
             this.colorSwapGR.TabIndex = 109;
             this.colorSwapGR.Text = "GR";
             this.colorSwapGR.UseVisualStyleBackColor = true;
+            this.colorSwapGR.Click += new System.EventHandler(this.colorSwapGR_Click);
             // 
             // Form1
             // 

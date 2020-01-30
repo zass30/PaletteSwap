@@ -823,7 +823,22 @@ namespace PaletteSwap
         {
             var b = pal_val_B.Text;
             pal_val_B.Text = pal_val_G.Text;
-            trackBarG.Text = b;
+            pal_val_G.Text = b;
         }
+
+        private void colorSwapRB_Click(object sender, EventArgs e)
+        {
+            var r = pal_val_R.Text;
+            pal_val_R.Text = pal_val_B.Text;
+            pal_val_B.Text = r;
+        }
+
+        private void colorSwapGR_Click(object sender, EventArgs e)
+        {
+            var g = pal_val_G.Text;
+            pal_val_G.Text = pal_val_R.Text;
+            pal_val_R.Text = g;
+        }
+
     }
 }
