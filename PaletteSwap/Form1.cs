@@ -14,9 +14,6 @@ namespace PaletteSwap
 {
     public partial class Form1 : Form
     {
-        Dictionary<string, int> pal_dictionary;
-        Dictionary<Color, int> palcol_dict;
-        Bitmap masterStand;
         ZoomForm z;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
@@ -29,10 +26,13 @@ namespace PaletteSwap
             InitializeComponent();
             EnableDragAndDrop();
             EnablePaintRefresh();
+            colorSelectorBox.SelectedIndex = 5;
+            loadSpritesAndPalettes();
+            z = new ZoomForm(this);
+        }
 
-            pal_dictionary = new Dictionary<string, int>();
-            palcol_dict = new Dictionary<Color, int>();
-
+        public void loadImages()
+        {
             neutralStandBox.Image = Properties.Resources.dicstand1;
             psychopunchBox.Image = Properties.Resources.dicmp5;
             psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
@@ -40,12 +40,6 @@ namespace PaletteSwap
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
             portraitVictoryBox.Image = Properties.Resources.dicportraitwin5;
             portraitLossBox.Image = Properties.Resources.dicportraitloss5;
-            masterStand = new Bitmap(Properties.Resources.dicstand1);
-            colorSelectorBox.SelectedIndex = 5;
-            loadPalette();
-//            overlayTransparency();
-            z = new ZoomForm(this);
-
         }
 
         public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
@@ -71,7 +65,7 @@ namespace PaletteSwap
             crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);
         }
 
-            private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             imagepaint(e, Properties.Resources.dicstand1, remapTable);
@@ -119,7 +113,7 @@ namespace PaletteSwap
             textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
         }
 
-        private void loadPalette()
+        private void loadSpritesAndPalettes()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
             switch (colorSelectorBox.SelectedIndex)
@@ -317,6 +311,7 @@ namespace PaletteSwap
         private void debugImage()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+            var mp = new Bitmap(Properties.Resources.dicmp5);
         }
 
         private void createColorMasks()
@@ -356,11 +351,18 @@ namespace PaletteSwap
         {
             Image Img = psychopunchBox.Image;
             Bitmap bmp = new Bitmap(Img);
+            var colors = currentSprite.PsychoPunchSpriteColorsArray();
             for (int x = 0; x < bmp.Width; x++)
             {
                 for (int y = 0; y < bmp.Height; y++)
                 {
                     Color gotColor = bmp.GetPixel(x, y);
+                    if (gotColor == colors.Last())
+                    {
+                        int asdf = 0;
+                    }
+            
+/*
                     string colstr = coltohex(gotColor);
                     if (pal_dictionary.ContainsKey(colstr))
                         pal_dictionary[colstr]++;
@@ -370,6 +372,7 @@ namespace PaletteSwap
                         palcol_dict[gotColor]++;
                     else
                         palcol_dict[gotColor] = 1;
+                        */
                 }
             }
         }
@@ -407,7 +410,7 @@ namespace PaletteSwap
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loadPalette();
+            loadSpritesAndPalettes();
         }
 
         private void textBox1_DragEnter(object sender, DragEventArgs e)
@@ -729,6 +732,9 @@ namespace PaletteSwap
                     break;
                 case "pal_sprite_psychopunch4":
                     currentSprite.psychopunch4 = c;
+                    break;
+                case "pal_sprite_psychopunch5":
+                    currentSprite.psychopunch5 = c;
                     break;
             }
 
