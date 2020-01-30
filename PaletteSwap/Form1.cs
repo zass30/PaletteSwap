@@ -55,21 +55,16 @@ namespace PaletteSwap
 
         }
 
-        public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable, int scale)
+        public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
         {
             int width = b.Width;
             int height = b.Height;
             Graphics g = e.Graphics;
             ImageAttributes imageAttributes = new ImageAttributes();
             imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            g.DrawImage(b, new Rectangle(0, 0, width*scale, height*scale), 
+            g.DrawImage(b, new Rectangle(0, 0, width, height), 
                         0, 0, width, height,
                         GraphicsUnit.Pixel, imageAttributes);
-        }
-
-        public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
-        {
-            imagepaint(e, b, remapTable, 1);
         }
 
             private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -494,6 +489,12 @@ namespace PaletteSwap
                     break;
                 case "crusherBox2":
                     i = img_type.crushertop;
+                    break;
+                case "portraitVictoryBox":
+                    i = img_type.victoryportrait;
+                    break;
+                case "portraitLossBox":
+                    i = img_type.lossportrait;
                     break;
             }
             z.displayZoomImage((Bitmap)p.Image, i);

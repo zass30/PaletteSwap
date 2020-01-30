@@ -17,7 +17,9 @@ namespace PaletteSwap
         psychopunch,
         psychoprep,
         crushertop,
-        crusherside
+        crusherside,
+        victoryportrait,
+        lossportrait
     }
 
     public partial class ZoomForm : Form
@@ -26,6 +28,8 @@ namespace PaletteSwap
         int scale; // how much is image zoomed
         double factor = 1.3; // how much buffer around window and image
         Bitmap magnified_sprite;
+        Bitmap magnified_losstop;
+        Bitmap magnified_lossbottom; // special case for loss portrait which is made of two bitmaps
         img_type zoomed_img;
 
         public ZoomForm(Form1 parentform)
@@ -57,9 +61,24 @@ namespace PaletteSwap
                 case img_type.crusherside:
                     remapTable = mainform.currentSprite.CrusherColorsRemapTable();
                     break;
-            }
-            mainform.imagepaint(e, magnified_sprite, remapTable, 1);
+                case img_type.victoryportrait:
+                    remapTable = mainform.currentPortrait.VictoryColorsRemapTable();
+                    break;
+                case img_type.lossportrait:
+                    if (magnified_losstop == null)
+                    {
+                        magnified_losstop = mainform.magnify_sprite(Properties.Resources.dicportraitlosstop5, scale);
+                    }
+                    if (magnified_lossbottom == null)
+                    {
+                        magnified_lossbottom = mainform.magnify_sprite(Properties.Resources.dicportraitlossbottom5, scale);
 
+                    }
+                    mainform.imagepaint(e, magnified_losstop, mainform.currentPortrait.LossTopColorsRemapTable());
+                    mainform.imagepaint(e, magnified_lossbottom, mainform.currentPortrait.LossBottomColorsRemapTable());
+                    return;
+            }
+            mainform.imagepaint(e, magnified_sprite, remapTable);
         }
 
         public void refreshZoomBox()
