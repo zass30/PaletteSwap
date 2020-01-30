@@ -24,7 +24,7 @@ namespace PaletteSwap
     {
         Form1 mainform;
         int scale; // how much is image zoomed
-        double factor = 1.2; // how much buffer around window and image
+        double factor = 1.3; // how much buffer around window and image
         Bitmap magnified_sprite;
         img_type zoomed_img;
 
@@ -39,18 +39,27 @@ namespace PaletteSwap
 
         private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            ColorMap[] remapTable;
+            ColorMap[] remapTable = new ColorMap[0];
             switch (zoomed_img)
             {
                 case img_type.neutral:
                     remapTable = mainform.currentSprite.StandingSpriteColorsRemapTable();
-                    mainform.imagepaint(e, magnified_sprite, remapTable, 1);
                     break;
                 case img_type.psychopunch:
                     remapTable = mainform.currentSprite.PsychoPunchColorsRemapTable();
-                    mainform.imagepaint(e, magnified_sprite, remapTable, 1);
+                    break;
+                case img_type.psychoprep:
+                     remapTable = mainform.currentSprite.PsychoPrepColorsRemapTable();
+                    break;
+                case img_type.crushertop:
+                     remapTable = mainform.currentSprite.CrusherColorsRemapTable();
+                    break;
+                case img_type.crusherside:
+                    remapTable = mainform.currentSprite.CrusherColorsRemapTable();
                     break;
             }
+            mainform.imagepaint(e, magnified_sprite, remapTable, 1);
+
         }
 
         public void refreshZoomBox()

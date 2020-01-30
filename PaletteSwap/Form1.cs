@@ -477,15 +477,27 @@ namespace PaletteSwap
             if (z.IsDisposed)
                 z = new ZoomForm(this);
             z.Show();
+            img_type i = img_type.neutral;
             switch (p.Name)
             {
                 case "neutralStandBox":
-                    z.displayZoomImage((Bitmap)p.Image, img_type.neutral);
+                    i = img_type.neutral;
                     break;
                 case "psychopunchBox":
-                    z.displayZoomImage((Bitmap)p.Image, img_type.psychopunch);
+                    i = img_type.psychopunch;
+                    break;
+                case "psychoprepBox":
+                    i = img_type.psychoprep;
+                    break;
+                case "crusherBox1":
+                    i = img_type.crushertop;
+                    break;
+                case "crusherBox2":
+                    i = img_type.crushertop;
                     break;
             }
+            z.displayZoomImage((Bitmap)p.Image, i);
+
             z.refreshZoomBox();
         }
 
