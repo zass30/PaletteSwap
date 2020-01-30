@@ -45,8 +45,8 @@ namespace PaletteSwap
             psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
             crusherBox1.Image = Properties.Resources.diccrusher1_5;
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
-//            portraitBox.Image = Properties.Resources.dicportraitwin5;
-//            portraitLossBox.Image = Properties.Resources.dicportraitloss5;
+            portraitVictoryBox.Image = Properties.Resources.dicportraitwin5;
+            portraitLossBox.Image = Properties.Resources.dicportraitloss5;
             masterStand = new Bitmap(Properties.Resources.dicstand1);
             comboBox1.SelectedIndex = 5;
             loadPalette();
@@ -474,24 +474,24 @@ namespace PaletteSwap
         {
             PictureBox p = (PictureBox)sender;
             currentlySelectedZoomImage = p;
-//            var bmp = magnify_sprite(p.Image, 6);
             if (z.IsDisposed)
                 z = new ZoomForm(this);
             z.Show();
+            switch (p.Name)
+            {
+                case "neutralStandBox":
+                    z.displayZoomImage((Bitmap)p.Image, img_type.neutral);
+                    break;
+
+            }
             z.refreshZoomBox();
-//            z.displayZoomImage(bmp);
         }
 
         private void refreshZoom()
         {
             if (currentlySelectedZoomImage == null)
                 return;
-
-/*            var bmp = magnify_sprite(currentlySelectedZoomImage.Image, 6);
-            if (z.IsDisposed)
-                z = new ZoomForm();
-            z.Show();
-            z.displayZoomImage(bmp);*/
+            z.refreshZoomBox();
         }
 
         private void trackBarR_Scroll(object sender, EventArgs e)
