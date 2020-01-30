@@ -33,6 +33,7 @@ namespace PaletteSwap
             portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
             neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
             psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
+            psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
             crusherBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox1_Paint);
             crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);
 
