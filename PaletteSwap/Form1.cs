@@ -49,7 +49,7 @@ namespace PaletteSwap
             portraitVictoryBox.Image = Properties.Resources.dicportraitwin5;
             portraitLossBox.Image = Properties.Resources.dicportraitloss5;
             masterStand = new Bitmap(Properties.Resources.dicstand1);
-            comboBox1.SelectedIndex = 5;
+            colorSelectorBox.SelectedIndex = 5;
             loadPalette();
 //            overlayTransparency();
             z = new ZoomForm(this);
@@ -119,7 +119,7 @@ namespace PaletteSwap
         private void loadPalette()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
-            switch (comboBox1.SelectedIndex)
+            switch (colorSelectorBox.SelectedIndex)
             {
                 case 0:
                     pal_dest = Palette.PaletteFromMem(Palette.bis0Mem);
@@ -182,6 +182,7 @@ namespace PaletteSwap
             load_sprite_psychoprep();
             load_sprite_crushertop();
             load_sprite_crusherside();
+            refreshZoom();
             skip_image_recolors = false;
         }
 
