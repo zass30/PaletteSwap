@@ -26,6 +26,7 @@ namespace PaletteSwap
             InitializeComponent();
             EnableDragAndDrop();
             EnablePaintRefresh();
+            loadImages();
             colorSelectorBox.SelectedIndex = 5;
             loadSpritesAndPalettes();
             z = new ZoomForm(this);
@@ -846,5 +847,14 @@ namespace PaletteSwap
             pal_val_R.Text = g;
         }
 
+        private void invertColorsButton_Click(object sender, EventArgs e)
+        {
+            var g = trackBarG.Value;
+            var r = trackBarR.Value;
+            var b = trackBarB.Value;
+            pal_val_G.Text = (17 - g).ToString();
+            pal_val_R.Text = (17 - r).ToString();
+            pal_val_B.Text = (17 - b).ToString();
+        }
     }
 }

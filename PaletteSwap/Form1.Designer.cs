@@ -132,6 +132,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.colorSwapRB = new System.Windows.Forms.Button();
             this.colorSwapGR = new System.Windows.Forms.Button();
+            this.invertColorsButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -367,7 +368,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(321, 205);
+            this.label7.Location = new System.Drawing.Point(319, 201);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 13);
             this.label7.TabIndex = 35;
@@ -376,7 +377,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(319, 257);
+            this.label8.Location = new System.Drawing.Point(318, 253);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(14, 13);
             this.label8.TabIndex = 36;
@@ -1295,11 +1296,22 @@
             this.colorSwapGR.UseVisualStyleBackColor = true;
             this.colorSwapGR.Click += new System.EventHandler(this.colorSwapGR_Click);
             // 
+            // invertColorsButton
+            // 
+            this.invertColorsButton.Location = new System.Drawing.Point(219, 205);
+            this.invertColorsButton.Name = "invertColorsButton";
+            this.invertColorsButton.Size = new System.Drawing.Size(44, 23);
+            this.invertColorsButton.TabIndex = 110;
+            this.invertColorsButton.Text = "Invert";
+            this.invertColorsButton.UseVisualStyleBackColor = true;
+            this.invertColorsButton.Click += new System.EventHandler(this.invertColorsButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 655);
+            this.Controls.Add(this.invertColorsButton);
             this.Controls.Add(this.colorSwapGR);
             this.Controls.Add(this.colorSwapRB);
             this.Controls.Add(this.checkBox1);
@@ -1590,6 +1602,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button colorSwapRB;
         private System.Windows.Forms.Button colorSwapGR;
+        private System.Windows.Forms.Button invertColorsButton;
     }
 }
 
