@@ -28,7 +28,7 @@ namespace PaletteSwap
             EnablePaintRefresh();
             loadImages();
             colorSelectorBox.SelectedIndex = 5;
-            loadSpritesAndPalettes();
+            loadSpritesAndPalettesFromDropDown();
             z = new ZoomForm(this);
         }
 
@@ -114,7 +114,7 @@ namespace PaletteSwap
             textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
         }
 
-        private void loadSpritesAndPalettes()
+        private void loadSpritesAndPalettesFromDropDown()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
             switch (colorSelectorBox.SelectedIndex)
@@ -411,7 +411,7 @@ namespace PaletteSwap
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loadSpritesAndPalettes();
+            loadSpritesAndPalettesFromDropDown();
         }
 
         private void textBox1_DragEnter(object sender, DragEventArgs e)
@@ -798,8 +798,6 @@ namespace PaletteSwap
         {
             if (skip_image_recolors)
                 return;
-            // problem is that this gets triggered every time we switch from drop down on each portrait button
-            // above is a workaround but still slow
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updatePortraitColor(c, p);
@@ -855,6 +853,40 @@ namespace PaletteSwap
             pal_val_G.Text = (17 - g).ToString();
             pal_val_R.Text = (17 - r).ToString();
             pal_val_B.Text = (17 - b).ToString();
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Displays a SaveFileDialog so the user can save the Image
+            // assigned to Button2.
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "04a ROM|*.04a|03c ROM|*.03c";
+            saveFileDialog1.Title = "Save a ROM File";
+            saveFileDialog1.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog1.FileName != "")
+            {
+                // Saves the Image via a FileStream created by the OpenFile method.
+                System.IO.FileStream fs =
+                    (System.IO.FileStream)saveFileDialog1.OpenFile();
+                // Saves the Image in the appropriate ImageFormat based upon the
+                // File type selected in the dialog box.
+                // NOTE that the FilterIndex property is one-based.
+                switch (saveFileDialog1.FilterIndex)
+                {
+                    case 1:
+                        break;
+
+                    case 2:
+                        break;
+
+                    case 3:
+                        break;
+                }
+
+                fs.Close();
+            }
         }
     }
 }
