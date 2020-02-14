@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Reflection;
 
 namespace PaletteSwapTestsNet
 {
@@ -502,6 +503,18 @@ namespace PaletteSwapTestsNet
             b.SetPixel(10, 10, Color.Chocolate);
             Assert.IsFalse(Palette.areBitmapsSame(a, b));
         }
+
+        [TestMethod]
+        public void WriteSpriteToFileTest()
+        {
+            string s = Sprite.bis0sprite;
+            var sprite = new Sprite(s);
+
+            byte[] data_expected = PaletteSwap.Properties.Resources.sfxe;
+            byte[] data_result = sprite.ByteStream();
+            Assert.AreEqual(data_expected.Length, data_result.Length);
+        }
+
     }
 }
 
