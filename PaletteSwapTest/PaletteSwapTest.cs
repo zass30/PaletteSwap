@@ -510,9 +510,10 @@ namespace PaletteSwapTestsNet
             string s = Sprite.bis0sprite;
             var sprite = new Sprite(s);
 
-            byte[] data_expected = PaletteSwap.Properties.Resources.sfxe;
+            byte[] data_expected = PaletteSwap.Properties.Resources.sfxe1;
             byte[] data_result = sprite.ByteStream();
             Assert.AreEqual(data_expected.Length, data_result.Length);
+            Assert.AreEqual(data_expected[0x00042E7E], data_result[0x00042E7E]);
         }
 
     }
