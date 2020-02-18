@@ -855,13 +855,13 @@ namespace PaletteSwap
             pal_val_B.Text = (17 - b).ToString();
         }
 
-        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "04a ROM|*.04a|03c ROM|*.03c";
-            saveFileDialog1.Title = "Save a ROM File";
+            saveFileDialog1.Filter = "Color Files (*.col)|*.col";
+            saveFileDialog1.Title = "Save a color File";
             saveFileDialog1.ShowDialog();
 
             // If the file name is not an empty string open it for saving.
@@ -876,12 +876,10 @@ namespace PaletteSwap
                 switch (saveFileDialog1.FilterIndex)
                 {
                     case 1:
-                        break;
-
-                    case 2:
-                        break;
-
-                    case 3:
+                        string s = currentSprite.ToStringFormat();
+                        var b = Encoding.ASCII.GetBytes(s);
+                        fs.Seek(0, SeekOrigin.End);
+                        await fs.WriteAsync(b, 0, b.Length);
                         break;
                 }
 

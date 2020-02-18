@@ -584,7 +584,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             StringBuilder s = new StringBuilder();
             foreach (Color c in Colors)
             {
-                s.Append(c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + "\n");
+                s.Append(c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + System.Environment.NewLine);
             }
             return s.ToString();
         }
