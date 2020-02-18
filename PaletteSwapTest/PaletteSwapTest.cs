@@ -505,7 +505,7 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void WriteSpriteToFileTest()
+        public void WriteSpriteByteStreamTest()
         {
             string s = Sprite.bis0sprite;
             var sprite = new Sprite(s);
@@ -516,6 +516,16 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(data_expected[0x00042E7E], data_result[0x00042E7E]);
         }
 
+        [TestMethod]
+        public void WriteSpriteToFileTest()
+        {
+            string s = Sprite.bis0sprite;
+            var sprite = new Sprite(s);
+
+            string string_expected = "";
+            string string_result = sprite.ToString();
+            Assert.AreEqual(string_expected, string_result);
+        }
     }
 }
 
