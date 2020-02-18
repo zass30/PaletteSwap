@@ -484,7 +484,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             psychopunch3, psychopunch4, psychopunch5};
         }
 
-
+        public Color[] FullSpriteColorsArray()
+        {
+            return new[] { skin1, skin2, skin3, skin4,
+            costume1, costume2, costume3, costume4, costume5,
+                pads1, pads2, pads3, pads4, pads5,
+                stripe, psychoglow,
+                psychopunch1, psychopunch2, psychopunch3, psychopunch4, psychopunch5,
+                crushercostume1, crushercostume2, crushercostume3, crushercostume4,
+                crusherpads1, crusherpads2, crusherpads3, crusherpads4, crusherpads5,
+                crusherhands1, crusherhands2, crusherflame1, crusherflame2
+            };
+        }
         public ColorMap[] StandingSpriteColorsRemapTable()
         {
             return PaletteHelper.GenerateColorMap(PaletteHelper.standing_sprite_colors1, StandingSpriteColorsArray());
@@ -567,9 +578,15 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return foo;
         }
 
-        public override string ToString()
+        public string ToStringFormat()
         {
-            return "";
+            var Colors = FullSpriteColorsArray();
+            StringBuilder s = new StringBuilder();
+            foreach (Color c in Colors)
+            {
+                s.Append(c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + "\n");
+            }
+            return s.ToString();
         }
 
     }

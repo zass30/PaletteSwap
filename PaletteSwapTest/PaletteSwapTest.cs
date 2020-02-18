@@ -517,13 +517,18 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void WriteSpriteToFileTest()
+        public void WriteSpriteToSaveFileFormatTest()
         {
             string s = Sprite.bis0sprite;
             var sprite = new Sprite(s);
 
-            string string_expected = "";
-            string string_result = sprite.ToString();
+            string string_expected = "255 255 204\n221 204 136\n153 119 51\n85 68 0\n0 136 238\n51 102 221\n0 68 204\n34 34 170\n0 0 136\n255 255 119\n255 187 0\n255 119 0\n170 51 0\n119 0 0\n255 187 0\n255 255 255\n255 255 255\n255 238 153\n238 170 68\n238 119 0\n221 68 0\n187 238 255\n102 204 238\n68 153 204\n34 119 170\n255 255 255\n255 255 136\n238 187 0\n187 119 0\n153 85 0\n85 187 136\n68 136 102\n255 255 204\n119 221 187\n";
+            string string_result = sprite.ToStringFormat();
+            Assert.AreEqual(string_expected, string_result);
+
+            sprite.skin1 = Color.FromArgb(0, 17, 34, 51);
+            string_expected = "17 34 51\n221 204 136\n153 119 51\n85 68 0\n0 136 238\n51 102 221\n0 68 204\n34 34 170\n0 0 136\n255 255 119\n255 187 0\n255 119 0\n170 51 0\n119 0 0\n255 187 0\n255 255 255\n255 255 255\n255 238 153\n238 170 68\n238 119 0\n221 68 0\n187 238 255\n102 204 238\n68 153 204\n34 119 170\n255 255 255\n255 255 136\n238 187 0\n187 119 0\n153 85 0\n85 187 136\n68 136 102\n255 255 204\n119 221 187\n";
+            string_result = sprite.ToStringFormat();
             Assert.AreEqual(string_expected, string_result);
         }
     }
