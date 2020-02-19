@@ -327,6 +327,19 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), c);
         }
 
+
+        [TestMethod]
+        public void ColFormatToColorTest()
+        {
+            var s = "255 255 255";
+            var c = Palette.ColFormatToColor(s);
+            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), c);
+
+            s = "17 34 51";
+            c = Palette.ColFormatToColor(s);
+            Assert.AreEqual(Color.FromArgb(255, 17, 34, 51), c);
+        }
+
         [TestMethod]
         public void portraitRowTest()
         {
@@ -517,19 +530,28 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void WriteSpriteToSaveFileFormatTest()
+        public void WriteSpriteToColFormatTest()
         {
             string s = Sprite.bis0sprite;
             var sprite = new Sprite(s);
 
             string string_expected = "255 255 204\r\n221 204 136\r\n153 119 51\r\n85 68 0\r\n0 136 238\r\n51 102 221\r\n0 68 204\r\n34 34 170\r\n0 0 136\r\n255 255 119\r\n255 187 0\r\n255 119 0\r\n170 51 0\r\n119 0 0\r\n255 187 0\r\n255 255 255\r\n255 255 255\r\n255 238 153\r\n238 170 68\r\n238 119 0\r\n221 68 0\r\n187 238 255\r\n102 204 238\r\n68 153 204\r\n34 119 170\r\n255 255 255\r\n255 255 136\r\n238 187 0\r\n187 119 0\r\n153 85 0\r\n85 187 136\r\n68 136 102\r\n255 255 204\r\n119 221 187\r\n";
-            string string_result = sprite.ToStringFormat();
+            string string_result = sprite.ToColFormat();
             Assert.AreEqual(string_expected, string_result);
 
             sprite.skin1 = Color.FromArgb(0, 17, 34, 51);
             string_expected = "17 34 51\r\n221 204 136\r\n153 119 51\r\n85 68 0\r\n0 136 238\r\n51 102 221\r\n0 68 204\r\n34 34 170\r\n0 0 136\r\n255 255 119\r\n255 187 0\r\n255 119 0\r\n170 51 0\r\n119 0 0\r\n255 187 0\r\n255 255 255\r\n255 255 255\r\n255 238 153\r\n238 170 68\r\n238 119 0\r\n221 68 0\r\n187 238 255\r\n102 204 238\r\n68 153 204\r\n34 119 170\r\n255 255 255\r\n255 255 136\r\n238 187 0\r\n187 119 0\r\n153 85 0\r\n85 187 136\r\n68 136 102\r\n255 255 204\r\n119 221 187\r\n";
-            string_result = sprite.ToStringFormat();
+            string_result = sprite.ToColFormat();
             Assert.AreEqual(string_expected, string_result);
+        }
+
+        [TestMethod]
+        public void LoadSpriteFromColFormatTest()
+        {
+            string s = "17 34 51\r\n221 204 136\r\n153 119 51\r\n85 68 0\r\n0 136 238\r\n51 102 221\r\n0 68 204\r\n34 34 170\r\n0 0 136\r\n255 255 119\r\n255 187 0\r\n255 119 0\r\n170 51 0\r\n119 0 0\r\n255 187 0\r\n255 255 255\r\n255 255 255\r\n255 238 153\r\n238 170 68\r\n238 119 0\r\n221 68 0\r\n187 238 255\r\n102 204 238\r\n68 153 204\r\n34 119 170\r\n255 255 255\r\n255 255 136\r\n238 187 0\r\n187 119 0\r\n153 85 0\r\n85 187 136\r\n68 136 102\r\n255 255 204\r\n119 221 187\r\n";
+            var sprite = Sprite.LoadFromColFormat(s);
+            string string_result = sprite.ToColFormat();
+            Assert.AreEqual(s, string_result);
         }
     }
 }

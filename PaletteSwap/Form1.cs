@@ -360,7 +360,7 @@ namespace PaletteSwap
                     Color gotColor = bmp.GetPixel(x, y);
                     if (gotColor == colors.Last())
                     {
-                        int asdf = 0;
+//                        int asdf = 0;
                     }
             
 /*
@@ -876,7 +876,7 @@ namespace PaletteSwap
                 switch (saveFileDialog1.FilterIndex)
                 {
                     case 1:
-                        string s = currentSprite.ToStringFormat();
+                        string s = currentSprite.ToColFormat();
                         var b = Encoding.ASCII.GetBytes(s);
                         fs.Seek(0, SeekOrigin.End);
                         await fs.WriteAsync(b, 0, b.Length);

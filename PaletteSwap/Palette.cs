@@ -257,12 +257,9 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Bitmap GenerateVictoryPortrait()
         {
-//            var orig = new Portrait(Portrait.bis5portrait);
-//            var orig_colors = orig.VictoryColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
             var my_colors = this.VictoryColorsArray();
             var ret = Palette.PaletteSwap(b, PaletteHelper.orig_victory_colors, my_colors);
- //           var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 
@@ -397,6 +394,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color crusherhands1;
         public Color crusherhands2;
 
+        public static Sprite LoadFromColFormat(string s)
+        {
+            Sprite sp = new Sprite();
+            var v = s.Split('\n');
+//            sp.skin1 = v[0];
+            return sp;
+        }
+
+        public Sprite()
+        {
+
+        }
 
         public Sprite(string s) {
             var v = s.Split('\n');
@@ -578,7 +587,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return foo;
         }
 
-        public string ToStringFormat()
+        public string ToColFormat()
         {
             var Colors = FullSpriteColorsArray();
             StringBuilder s = new StringBuilder();
@@ -740,6 +749,15 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
             var cint = int.Parse(c, System.Globalization.NumberStyles.HexNumber);
             return Color.FromArgb(cint);
+        }
+
+        public static Color ColFormatToColor(string s)
+        {
+            var v = s.Split(' ');
+            var R = int.Parse(v[0]);
+            var G = int.Parse(v[1]);
+            var B = int.Parse(v[2]);
+            return Color.FromArgb(255, R, G, B);
         }
 
         public static string toACTFormat(Color c)
