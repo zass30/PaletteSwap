@@ -398,7 +398,41 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             Sprite sp = new Sprite();
             var v = s.Split('\n');
-//            sp.skin1 = v[0];
+            sp.skin1 = Palette.ColFormatToColor(v[0]);
+            sp.skin2 = Palette.ColFormatToColor(v[1]);
+            sp.skin3 = Palette.ColFormatToColor(v[2]);
+            sp.skin4 = Palette.ColFormatToColor(v[3]);
+            sp.costume1 = Palette.ColFormatToColor(v[4]);
+            sp.costume2 = Palette.ColFormatToColor(v[5]);
+            sp.costume3 = Palette.ColFormatToColor(v[6]);
+            sp.costume4 = Palette.ColFormatToColor(v[7]);
+            sp.costume5 = Palette.ColFormatToColor(v[8]);
+            sp.pads1 = Palette.ColFormatToColor(v[9]);
+            sp.pads2 = Palette.ColFormatToColor(v[10]);
+            sp.pads3 = Palette.ColFormatToColor(v[11]);
+            sp.pads4 = Palette.ColFormatToColor(v[12]);
+            sp.pads5 = Palette.ColFormatToColor(v[13]);
+            sp.stripe = Palette.ColFormatToColor(v[14]);
+            sp.psychoglow = Palette.ColFormatToColor(v[15]);
+            sp.psychopunch1 = Palette.ColFormatToColor(v[16]);
+            sp.psychopunch2 = Palette.ColFormatToColor(v[17]);
+            sp.psychopunch3 = Palette.ColFormatToColor(v[18]);
+            sp.psychopunch4 = Palette.ColFormatToColor(v[19]);
+            sp.psychopunch5 = Palette.ColFormatToColor(v[20]);
+            sp.crushercostume1 = Palette.ColFormatToColor(v[21]);
+            sp.crushercostume2 = Palette.ColFormatToColor(v[22]);
+            sp.crushercostume3 = Palette.ColFormatToColor(v[23]);
+            sp.crushercostume4 = Palette.ColFormatToColor(v[24]);
+            sp.crusherpads1 = Palette.ColFormatToColor(v[25]);
+            sp.crusherpads2 = Palette.ColFormatToColor(v[26]);
+            sp.crusherpads3 = Palette.ColFormatToColor(v[27]);
+            sp.crusherpads4 = Palette.ColFormatToColor(v[28]);
+            sp.crusherpads5 = Palette.ColFormatToColor(v[29]);
+            sp.crusherhands1 = Palette.ColFormatToColor(v[30]);
+            sp.crusherhands2 = Palette.ColFormatToColor(v[31]);
+            sp.crusherflame1 = Palette.ColFormatToColor(v[32]);
+            sp.crusherflame2 = Palette.ColFormatToColor(v[33]);
+
             return sp;
         }
 

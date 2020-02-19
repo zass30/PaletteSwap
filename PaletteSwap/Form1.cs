@@ -110,8 +110,8 @@ namespace PaletteSwap
         private void EnableDragAndDrop()
         {
             // drag and drop functionality
-            textBox1.DragDrop += new DragEventHandler(textBox1_DragDrop);
-            textBox1.DragEnter += new DragEventHandler(textBox1_DragEnter);
+            label1.DragDrop += new DragEventHandler(label1_DragDrop);
+            label1.DragEnter += new DragEventHandler(label1_DragEnter);
         }
 
         private void loadSpritesAndPalettesFromDropDown()
@@ -170,6 +170,11 @@ namespace PaletteSwap
                     currentPortrait = new Portrait(Portrait.bis9portrait);
                     break;
             }
+            reload_everything();
+        }
+
+        private void reload_everything()
+        {
             skip_image_recolors = true;
             load_portrait_buttons();
             load_sprite_buttons();
@@ -414,7 +419,7 @@ namespace PaletteSwap
             loadSpritesAndPalettesFromDropDown();
         }
 
-        private void textBox1_DragEnter(object sender, DragEventArgs e)
+        private void label1_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
                 e.Effect = DragDropEffects.All;
@@ -422,20 +427,14 @@ namespace PaletteSwap
                 e.Effect = DragDropEffects.None;
         }
 
-        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        private void label1_DragDrop(object sender, DragEventArgs e)
         {
             string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
             byte[] lineasbytes = File.ReadAllBytes(s[0]);
-            byte[] reducedline = lineasbytes.Take(16 * 3).Skip(3).ToArray();
-            textBox1.Text = Palette.ACTtoText(reducedline);
-            string newACT = textBox1.Text;
-            Palette pal_dest = Palette.PaletteFromACT(newACT);
-        }
-
-        private void loadACT_Click(object sender, EventArgs e)
-        {
-            string newACT = textBox1.Text;
-            Palette pal_dest = Palette.PaletteFromACT(newACT);
+            string colstr = System.Text.Encoding.UTF8.GetString(lineasbytes);
+            var sprite = Sprite.LoadFromColFormat(colstr);
+            this.currentSprite = sprite;
+            reload_everything();
         }
 
         private void pal_square_click(object sender, EventArgs e)
