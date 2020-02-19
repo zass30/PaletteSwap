@@ -432,8 +432,11 @@ namespace PaletteSwap
             string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
             byte[] lineasbytes = File.ReadAllBytes(s[0]);
             string colstr = System.Text.Encoding.UTF8.GetString(lineasbytes);
-            var sprite = Sprite.LoadFromColFormat(colstr);
+            var v = colstr.Split(':');
+            var sprite = Sprite.LoadFromColFormat(v[0]);
             this.currentSprite = sprite;
+            var portrait = Portrait.LoadFromColFormat(v[1]);
+            this.currentPortrait = portrait;
             reload_everything();
         }
 
@@ -878,6 +881,12 @@ namespace PaletteSwap
                         string s = currentSprite.ToColFormat();
                         var b = Encoding.ASCII.GetBytes(s);
                         fs.Seek(0, SeekOrigin.End);
+                        await fs.WriteAsync(b, 0, b.Length);
+                        s = ":";
+                        b = Encoding.ASCII.GetBytes(s);
+                        await fs.WriteAsync(b, 0, b.Length);
+                        s = currentPortrait.ToColFormat();
+                        b = Encoding.ASCII.GetBytes(s);
                         await fs.WriteAsync(b, 0, b.Length);
                         break;
                 }
