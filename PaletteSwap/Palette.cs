@@ -126,6 +126,38 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public static Portrait LoadFromColFormat(string s)
         {
             Portrait p = new Portrait();
+            var v = s.Split('\n');
+            p.skin1 = Palette.ColFormatToColor(v[0]);
+            p.skin2 = Palette.ColFormatToColor(v[1]);
+            p.skin3 = Palette.ColFormatToColor(v[2]);
+            p.skin4 = Palette.ColFormatToColor(v[3]);
+            p.skin5 = Palette.ColFormatToColor(v[4]);
+            p.skin6 = Palette.ColFormatToColor(v[5]);
+            p.skin7 = Palette.ColFormatToColor(v[6]);
+            p.costume1 = Palette.ColFormatToColor(v[7]);
+            p.costume2 = Palette.ColFormatToColor(v[8]);
+            p.costume3 = Palette.ColFormatToColor(v[9]);
+            p.costume4 = Palette.ColFormatToColor(v[10]);
+            p.teeth1 = Palette.ColFormatToColor(v[11]);
+            p.teeth2 = Palette.ColFormatToColor(v[12]);
+            p.teeth3 = Palette.ColFormatToColor(v[13]);
+            p.teeth4 = Palette.ColFormatToColor(v[14]);
+            p.piping1 = Palette.ColFormatToColor(v[15]);
+            p.piping2 = Palette.ColFormatToColor(v[16]);
+            p.piping3 = Palette.ColFormatToColor(v[17]);
+            p.piping4 = Palette.ColFormatToColor(v[18]);
+            p.pipingloss1 = Palette.ColFormatToColor(v[19]);
+            p.pipingloss2 = Palette.ColFormatToColor(v[20]);
+            p.pipingloss3 = Palette.ColFormatToColor(v[21]);
+            p.pipingloss4 = Palette.ColFormatToColor(v[22]);
+            p.costumeloss1 = Palette.ColFormatToColor(v[23]);
+            p.costumeloss2 = Palette.ColFormatToColor(v[24]);
+            p.costumeloss3 = Palette.ColFormatToColor(v[25]);
+            p.costumeloss4 = Palette.ColFormatToColor(v[26]);
+            p.blood1 = Palette.ColFormatToColor(v[27]);
+            p.blood2 = Palette.ColFormatToColor(v[28]);
+            p.blood3 = Palette.ColFormatToColor(v[29]);
+
             return p;
         }
 

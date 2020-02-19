@@ -569,6 +569,15 @@ namespace PaletteSwapTestsNet
             string string_result = sprite.ToColFormat();
             Assert.AreEqual(s, string_result);
         }
+
+        [TestMethod]
+        public void LoadPortraitFromColFormatTest()
+        {
+            string s = "17 34 51\r\n255 221 153\r\n238 153 102\r\n204 119 85\r\n170 102 68\r\n136 85 68\r\n102 68 51\r\n0 136 238\r\n51 102 221\r\n0 68 204\r\n34 34 170\r\n255 255 255\r\n204 204 204\r\n153 153 153\r\n119 119 119\r\n255 255 238\r\n255 255 153\r\n255 221 85\r\n255 170 0\r\n153 119 255\r\n153 85 221\r\n153 51 187\r\n153 0 153\r\n0 119 204\r\n51 85 187\r\n0 68 170\r\n0 0 153\r\n255 0 0\r\n204 0 0\r\n170 0 0\r\n";
+            var portrait = Portrait.LoadFromColFormat(s);
+            string string_result = portrait.ToColFormat();
+            Assert.AreEqual(s, string_result);
+        }
     }
 }
 
