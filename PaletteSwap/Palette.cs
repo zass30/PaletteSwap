@@ -122,6 +122,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color blood2;
         public Color blood3;
 
+
+        public static Portrait LoadFromColFormat(string s)
+        {
+            Portrait p = new Portrait();
+            return p;
+        }
+
+        public Portrait()
+        {
+
+        }
+
         public Portrait(string s)
         {
             var v = s.Split('\n');
@@ -193,6 +205,20 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return new[]{ skin1, skin2, skin3, skin4, skin5, skin6, skin7,
                 costume1, costume2, costume3, costume4,
                  piping1, piping2, piping3, piping4,
+            };
+        }
+
+        public Color[] FullPortraitColorsArray()
+        {
+            return new[]
+            {
+                skin1, skin2, skin3, skin4, skin5, skin6, skin7,
+                costume1, costume2, costume3, costume4,
+                 teeth1, teeth2, teeth3, teeth4,
+                 piping1, piping2, piping3, piping4,
+                 pipingloss1, pipingloss2, pipingloss3, pipingloss4,
+                 costumeloss1, costumeloss2, costumeloss3, costumeloss4,
+                 blood1, blood2, blood3,
             };
         }
 
@@ -288,6 +314,17 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var bottom = GenerateLossBottomPortrait();
             var loss = Palette.overlayImage(top, bottom);
             return loss;
+        }
+
+        public string ToColFormat()
+        {
+            var Colors = FullPortraitColorsArray();
+            StringBuilder s = new StringBuilder();
+            foreach (Color c in Colors)
+            {
+                s.Append(c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + System.Environment.NewLine);
+            }
+            return s.ToString();
         }
     }
 
@@ -613,10 +650,6 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             byte[] foo = PaletteSwap.Properties.Resources.sfxe1;
             int start = 0x00042E7E; 
-            var pal1 = foo.Skip(start).Take(16 * 3);
-            //            foo[0x00042E7E];
-//            var pal2 = foo.Skip(0x00042E7E).Take(16 * 3);
-//            pal1[0] = 0xdd;
 
             return foo;
         }
