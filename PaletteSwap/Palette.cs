@@ -42,11 +42,18 @@ namespace PaletteSwap
             foreach (byte b in bytearray)
             {
                 s.Append(b.ToString("X2"));
-                if (i%2 != 0)
+                if (i % 2 != 0)
                     s.Append(" ");
                 i++;
             }
             return s.ToString().Trim();
+        }
+
+        public static byte[] StringToByteStream(string s)
+        {
+            var v = s.Split(' ');
+            byte[] b = new byte[v.Length*2 - 1];
+            return b;
         }
     }
 
@@ -224,7 +231,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             costumeloss1 = Palette.MemFormatToColor(r4[11]);
             costumeloss2 = Palette.MemFormatToColor(r4[12]);
             costumeloss3 = Palette.MemFormatToColor(r4[13]);
-            costumeloss4 = Palette.MemFormatToColor(r4[14]);            
+            costumeloss4 = Palette.MemFormatToColor(r4[14]);
         }
 
         public Color[] VictoryColorsArray()
@@ -285,12 +292,12 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public string facerow()
         {
-            return String.Join(" ", new[] { skin1, skin2, skin3, skin4, skin5, skin6, skin7}.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { skin1, skin2, skin3, skin4, skin5, skin6, skin7 }.Select(x => Palette.ColorToMemFormat(x)));
         }
 
         public string costumerow()
         {
-            return String.Join(" ", new[] { costume1, costume2, costume3, costume4}.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { costume1, costume2, costume3, costume4 }.Select(x => Palette.ColorToMemFormat(x)));
         }
 
         public string teethrow()
@@ -553,7 +560,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         }
 
-        public Sprite(string s) {
+        public Sprite(string s)
+        {
             var v = s.Split('\n');
             this.row1 = v[0].Trim();
             this.row2 = v[1].Trim();
@@ -807,7 +815,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
                 {
                     Color gotColor = img.GetPixel(x, y);
                     var swappedColor = ColorSwap(gotColor, p_src, p_dest);
-                    swappedImg.SetPixel(x,y, swappedColor);
+                    swappedImg.SetPixel(x, y, swappedColor);
                 }
             }
             return swappedImg;
@@ -834,7 +842,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public static Color ColorSwap(Color c, Palette p_src, Palette p_dest)
         {
-            for (int i = 0; i < p_src.colors.Length; i++){
+            for (int i = 0; i < p_src.colors.Length; i++)
+            {
                 if (c == p_src.colors[i])
                     return p_dest.colors[i];
             }
@@ -853,8 +862,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public static Palette PaletteFromACT(string s)
         {
-//            if (s == "" || s == " ")
-//                return;
+            //            if (s == "" || s == " ")
+            //                return;
             var pal = new Palette();
             string[] s_colors = s.Split(' ');
             for (int i = 0; i < pal.colors.Length; i++)
@@ -984,7 +993,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
                     }
                 }
             }
-        return retimg;
+            return retimg;
         }
 
         public static Bitmap overlayTransparency(Bitmap src_img, Bitmap dest_img)
@@ -1006,7 +1015,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
                     if (gotColor.A == 0)
                     {
-                        retimg.SetPixel(x, y, Color.FromArgb(0,0,0,0));
+                        retimg.SetPixel(x, y, Color.FromArgb(0, 0, 0, 0));
                     }
                     else
                     {
