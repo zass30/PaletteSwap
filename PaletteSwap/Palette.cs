@@ -34,6 +34,20 @@ namespace PaletteSwap
             }
             return remapTable;
         }
+
+        public static string ByteStreamToString(byte[] bytearray)
+        {
+            StringBuilder s = new StringBuilder();
+            int i = 0;
+            foreach (byte b in bytearray)
+            {
+                s.Append(b.ToString("X2"));
+                if (i%2 != 0)
+                    s.Append(" ");
+                i++;
+            }
+            return s.ToString().Trim();
+        }
     }
 
     public class Portrait
@@ -463,6 +477,35 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color crusherhands1;
         public Color crusherhands2;
 
+        public static int MEMSTART = 0x42E7C;
+        public static int MEMEND = 0x42F1E;
+        public static int MEMLEN = MEMEND - MEMSTART;
+
+        public enum SPRITE_COLORS
+        {
+            skin1,
+            skin2,
+            skin3,
+            skin4,
+            costume1,
+            costume2,
+            costume3,
+            costume4,
+            costume5,
+            pads1,
+            pads2,
+            pads3,
+            pads4,
+            pads5,
+            stripe
+        }
+
+        public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
+        {
+            { SPRITE_COLORS.skin1, new List<int>() { 2 } },
+            { SPRITE_COLORS.skin2, new List<int>() { 4 } },
+        };
+
         public static Sprite LoadFromColFormat(string s)
         {
             Sprite sp = new Sprite();
@@ -680,11 +723,16 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public Byte[] ByteStream()
         {
-            byte[] foo = PaletteSwap.Properties.Resources.sfxe1;
-            int start = 0x00042E7E; 
+            byte[] b = new byte[MEMLEN];
+            b[0] = 0x05;
 
-            return foo;
+            /*
+             * 05 00 00 07 08 00 2A 02 4C 00 6D 03 8E 00 30 0A B0 0F F7 0F B0 0F 70 0F FC 0F C8 0D 73 09 40 05 00 00 00 07 23 02 34 03 56 05 67 06 78 07 8A 08 9B 09 F7 0F B0 0F 70 0F FC 0F C8 0D 73 09 40 05 00 00 50 09 68 00 7A 02 9C 04 CE 06 EF 0B 70 0B FC 0F FF 0F F8 0F B0 0E DB 07 B8 05 86 04 43 00 00 00 00 07 08 00 2A 02 4C 00 6D 03 8E 00 FF 0F B0 0F F7 0F B0 0F 70 0F FC 0F C8 0D 73 09 40 05 00 00 00 07 08 00 2A 02 4C 00 6D 03 8E 00 FF 0F E9 0F A4 0E 70 0E 40 0D FC 0F C8 0D 73 09 40 05 00 00
+             */
+            return b;
         }
+
+
 
         public string ToColFormat()
         {

@@ -4,6 +4,8 @@ using PaletteSwap;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Reflection;
+using System.Linq;
+
 
 namespace PaletteSwapTestsNet
 {
@@ -521,12 +523,27 @@ namespace PaletteSwapTestsNet
         public void WriteSpriteByteStreamTest()
         {
             string s = Sprite.bis0sprite;
+            string data_expected = "0500 " + s;
+            var sprite = new Sprite(s);
+
+            string data_result = PaletteHelper.ByteStreamToString(sprite.ByteStream());
+            Assert.AreEqual(data_expected, data_result);
+            /*
+            string s = Sprite.bis0sprite;
             var sprite = new Sprite(s);
 
             byte[] data_expected = PaletteSwap.Properties.Resources.sfxe1;
             byte[] data_result = sprite.ByteStream();
             Assert.AreEqual(data_expected.Length, data_result.Length);
             Assert.AreEqual(data_expected[0x00042E7E], data_result[0x00042E7E]);
+
+            sprite.costume1 = Color.FromArgb(0, 255, 255, 255);
+            data_result = sprite.ByteStream();
+            Assert.AreEqual(data_expected.Length, data_result.Length);
+            var slice = data_result.Skip(0x00042E7E).Take(8).ToArray();
+            Assert.AreEqual(0x0F, slice[0]);
+            Assert.AreEqual(0xFF, slice[1]);*/
+
         }
 
         [TestMethod]
@@ -543,6 +560,23 @@ namespace PaletteSwapTestsNet
             string_expected = "17 34 51\r\n221 204 136\r\n153 119 51\r\n85 68 0\r\n0 136 238\r\n51 102 221\r\n0 68 204\r\n34 34 170\r\n0 0 136\r\n255 255 119\r\n255 187 0\r\n255 119 0\r\n170 51 0\r\n119 0 0\r\n255 187 0\r\n255 255 255\r\n255 255 255\r\n255 238 153\r\n238 170 68\r\n238 119 0\r\n221 68 0\r\n187 238 255\r\n102 204 238\r\n68 153 204\r\n34 119 170\r\n255 255 255\r\n255 255 136\r\n238 187 0\r\n187 119 0\r\n153 85 0\r\n85 187 136\r\n68 136 102\r\n255 255 204\r\n119 221 187\r\n";
             string_result = sprite.ToColFormat();
             Assert.AreEqual(string_expected, string_result);
+        }
+
+        [TestMethod]
+        public void ByteStreamToStringTest()
+        {
+            string expected = "0000 000F";
+            byte[] b = new byte[] { 0x00, 0x00, 0x00, 0x0F };
+
+            string result = PaletteHelper.ByteStreamToString(b);
+            Assert.AreEqual(expected, result);
+
+            expected = "0500 0007 0800 2A02";
+            b = new byte[] { 0x05, 0x00, 0x00, 0x07, 0x08, 0x00, 0x2A, 0x02 };
+
+            result = PaletteHelper.ByteStreamToString(b);
+            Assert.AreEqual(expected, result);
+
         }
 
         [TestMethod]
