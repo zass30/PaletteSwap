@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Reflection;
 using System.Linq;
-
+using System.Text.RegularExpressions;
 
 namespace PaletteSwapTestsNet
 {
@@ -522,28 +522,12 @@ namespace PaletteSwapTestsNet
         [TestMethod]
         public void WriteSpriteByteStreamTest()
         {
-            string s = Sprite.bis0sprite;
-            string data_expected = "0500 " + s;
+            string s = "0500 " + Sprite.bis0sprite;
+            string data_expected = Regex.Replace(s, @"\t|\n|\r", "");
             var sprite = new Sprite(s);
 
             string data_result = PaletteHelper.ByteStreamToString(sprite.ByteStream());
             Assert.AreEqual(data_expected, data_result);
-            /*
-            string s = Sprite.bis0sprite;
-            var sprite = new Sprite(s);
-
-            byte[] data_expected = PaletteSwap.Properties.Resources.sfxe1;
-            byte[] data_result = sprite.ByteStream();
-            Assert.AreEqual(data_expected.Length, data_result.Length);
-            Assert.AreEqual(data_expected[0x00042E7E], data_result[0x00042E7E]);
-
-            sprite.costume1 = Color.FromArgb(0, 255, 255, 255);
-            data_result = sprite.ByteStream();
-            Assert.AreEqual(data_expected.Length, data_result.Length);
-            var slice = data_result.Skip(0x00042E7E).Take(8).ToArray();
-            Assert.AreEqual(0x0F, slice[0]);
-            Assert.AreEqual(0xFF, slice[1]);*/
-
         }
 
         [TestMethod]
