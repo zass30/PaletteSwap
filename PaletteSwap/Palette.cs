@@ -52,8 +52,19 @@ namespace PaletteSwap
         public static byte[] StringToByteStream(string s)
         {
             var v = s.Split(' ');
-            byte[] b = new byte[v.Length*2 - 1];
-            return b;
+            byte[] bytearray = new byte[v.Length*2];
+            int i = 0;
+            foreach (string w in v)
+            {
+                var a = w[0] + "" + w[1];
+                var b = w[2] + "" + w[3];
+
+                bytearray[i] = byte.Parse(a, System.Globalization.NumberStyles.HexNumber);
+                bytearray[i+1] = byte.Parse(b, System.Globalization.NumberStyles.HexNumber);
+
+                i += 2;
+            }
+            return bytearray;
         }
     }
 
