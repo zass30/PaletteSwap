@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Reflection;
 
 namespace PaletteSwap
 {
@@ -520,8 +521,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
         {
-            { SPRITE_COLORS.skin1, new List<int>() { 2 } },
-            { SPRITE_COLORS.skin2, new List<int>() { 4 } },
+            { SPRITE_COLORS.pads5, new List<int>() { 2, 98, 130 } },
+            { SPRITE_COLORS.skin1, new List<int>() { 4, 100, 132 } },
         };
 
         public static Sprite LoadFromColFormat(string s)
@@ -748,10 +749,38 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 "0007 0800 2A02 4C00 6D03 8E00 FF0F B00F F70F B00F 700F FC0F C80D 7309 4005 0000 " +
 "0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000";
             byte[] b = PaletteHelper.StringToByteStream(s);
+
+            foreach (var k in colorsToMemOffsets.Keys)
+            {
+                foreach (int offset in colorsToMemOffsets[k])
+                {
+
+                }
+            }
             return b;
         }
 
+        public Color ColorFromSpriteColor(SPRITE_COLORS label)
+        {
+            Type myType = GetType();
+            var myPropInfo = myType.GetField("skin1");
+            var foo = myPropInfo.GetValue(this);
+            var property = this.GetType().GetProperty("skin1");
+            return (Color)property.GetValue(this);
+            switch (label)
+            {
+                case SPRITE_COLORS.skin1:
+                    return this.skin1;
+                case SPRITE_COLORS.skin2:
+                    return this.skin2;
+                case SPRITE_COLORS.skin3:
+                    return this.skin3;
+                case SPRITE_COLORS.skin4:
+                    return this.skin4;
+            }
 
+            return Color.FromArgb(0, 0, 0, 0);
+        }
 
         public string ToColFormat()
         {

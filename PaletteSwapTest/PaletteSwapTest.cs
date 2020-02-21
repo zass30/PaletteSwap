@@ -528,6 +528,19 @@ namespace PaletteSwapTestsNet
 
             string data_result = PaletteHelper.ByteStreamToString(sprite.ByteStream());
             Assert.AreEqual(data_expected, data_result);
+
+            var bytes_expected = PaletteHelper.StringToByteStream(data_expected);
+            bytes_expected[2] = 0x02;
+            bytes_expected[3] = 0x03;
+            bytes_expected[4] = 0x00;
+            bytes_expected[5] = 0x01;
+
+            sprite.skin1 = Color.FromArgb(0, 17, 34, 51);
+            var bytes_recieved = sprite.ByteStream();
+            for (int i = 0; i < 6; i++)
+            {
+                Assert.AreEqual(bytes_expected[i], bytes_recieved[i]);
+            }
         }
 
         [TestMethod]
@@ -616,6 +629,19 @@ namespace PaletteSwapTestsNet
             var portrait = Portrait.LoadFromColFormat(s);
             string string_result = portrait.ToColFormat();
             Assert.AreEqual(s, string_result);
+        }
+
+        [TestMethod]
+        public void ColorFromSpriteLabelTest()
+        {
+            string s = Sprite.bis0sprite;
+            var sprite = new Sprite(s);
+
+            var expected = sprite.skin1;
+            var result = sprite.ColorFromSpriteColor(Sprite.SPRITE_COLORS.skin1);
+
+            Assert.AreEqual(expected, result);
+
         }
     }
 }
