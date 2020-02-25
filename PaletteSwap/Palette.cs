@@ -516,7 +516,26 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             pads3,
             pads4,
             pads5,
-            stripe
+            stripe,
+            psychoglow,
+            psychopunch1,
+            psychopunch2,
+            psychopunch3,
+            psychopunch4,
+            psychopunch5,
+            crusherpads1,
+            crusherpads2,
+            crusherpads3,
+            crusherpads4,
+            crusherpads5,
+            crushercostume1,
+            crushercostume2,
+            crushercostume3,
+            crushercostume4,
+            crusherflame1,
+            crusherflame2,
+            crusherhands1,
+            crusherhands2,
         }
 
         public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
@@ -763,23 +782,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color ColorFromSpriteColor(SPRITE_COLORS label)
         {
             Type myType = GetType();
-            var myPropInfo = myType.GetField("skin1");
-            var foo = myPropInfo.GetValue(this);
-            var property = this.GetType().GetProperty("skin1");
-            return (Color)property.GetValue(this);
-            switch (label)
-            {
-                case SPRITE_COLORS.skin1:
-                    return this.skin1;
-                case SPRITE_COLORS.skin2:
-                    return this.skin2;
-                case SPRITE_COLORS.skin3:
-                    return this.skin3;
-                case SPRITE_COLORS.skin4:
-                    return this.skin4;
-            }
-
-            return Color.FromArgb(0, 0, 0, 0);
+            var myFieldInfo = myType.GetField(label.ToString());
+            return (Color)myFieldInfo.GetValue(this);
         }
 
         public string ToColFormat()

@@ -637,11 +637,15 @@ namespace PaletteSwapTestsNet
             string s = Sprite.bis0sprite;
             var sprite = new Sprite(s);
 
-            var expected = sprite.skin1;
-            var result = sprite.ColorFromSpriteColor(Sprite.SPRITE_COLORS.skin1);
-
-            Assert.AreEqual(expected, result);
-
+            var myType = sprite.GetType();
+            foreach (var label in Enum.GetNames(typeof(Sprite.SPRITE_COLORS)))
+            {
+                var myFieldInfo = myType.GetField(label.ToString());
+                var expected = (Color)myFieldInfo.GetValue(sprite);
+                var sprite_color = (Sprite.SPRITE_COLORS)Enum.Parse(typeof(Sprite.SPRITE_COLORS), label);
+                var result = sprite.ColorFromSpriteColor(sprite_color);
+                Assert.AreEqual(expected, result);
+            }
         }
     }
 }
