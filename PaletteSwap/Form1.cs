@@ -48,11 +48,29 @@ namespace PaletteSwap
             int width = b.Width;
             int height = b.Height;
             Graphics g = e.Graphics;
+            Graphics gfb = Graphics.FromImage(b);
             ImageAttributes imageAttributes = new ImageAttributes();
             imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
             g.DrawImage(b, new Rectangle(0, 0, width, height), 
                         0, 0, width, height,
+                        GraphicsUnit.Pixel, imageAttributes); 
+/*            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
+                        0, 0, width, height,
                         GraphicsUnit.Pixel, imageAttributes);
+            psychopunchBox.BackgroundImage = b;*/
+        }
+
+        public void imagepaint2(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
+        {
+            int width = b.Width;
+            int height = b.Height;
+            Graphics g = e.Graphics;
+            Graphics gfb = Graphics.FromImage(b);
+            ImageAttributes imageAttributes = new ImageAttributes();
+            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
+                                    0, 0, width, height,
+                                    GraphicsUnit.Pixel, imageAttributes);
         }
 
         private void EnablePaintRefresh()
@@ -70,6 +88,9 @@ namespace PaletteSwap
         {
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             imagepaint(e, Properties.Resources.dicstand1, remapTable);
+            /* Bitmap b = new Bitmap(Properties.Resources.dicstand1);
+            imagepaint2(e, b, remapTable);
+            neutralStandBox.BackgroundImage = b; // not working */
         }
 
         private void psychopunchBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
