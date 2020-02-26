@@ -88,8 +88,8 @@ namespace PaletteSwap
         {
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             imagepaint(e, Properties.Resources.dicstand1, remapTable);
-            /* Bitmap b = new Bitmap(Properties.Resources.dicstand1);
-            imagepaint2(e, b, remapTable);
+/*            Bitmap b = new Bitmap(Properties.Resources.dicstand0);
+            // imagepaint2(e, b, remapTable);
             neutralStandBox.BackgroundImage = b; // not working */
         }
 
