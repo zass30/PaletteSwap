@@ -71,6 +71,8 @@ namespace PaletteSwap
         public static byte[] ColorToByte(Color c)
         {
             byte[] b = new byte[2];
+            b[0] = (byte)((c.G / 16) * 16 + (c.B / 16));
+            b[1] = (byte)(c.R / 16);
             return b;
         }
     }

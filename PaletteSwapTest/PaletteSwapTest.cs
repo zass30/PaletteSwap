@@ -657,6 +657,23 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(expected[0], result[0]);
             Assert.AreEqual(expected[1], result[1]);
 
+            c = Color.FromArgb(0, 0, 255, 255);
+            expected = new byte[] { 0xFF, 0x00 };
+            result = PaletteHelper.ColorToByte(c);
+            Assert.AreEqual(expected[0], result[0]);
+            Assert.AreEqual(expected[1], result[1]);
+
+            c = Color.FromArgb(0, 0, 0, 255);
+            expected = new byte[] { 0x0F, 0x00 };
+            result = PaletteHelper.ColorToByte(c);
+            Assert.AreEqual(expected[0], result[0]);
+            Assert.AreEqual(expected[1], result[1]);
+
+            c = Color.FromArgb(0, 255, 255, 255);
+            expected = new byte[] { 0xFF, 0x0F };
+            result = PaletteHelper.ColorToByte(c);
+            Assert.AreEqual(expected[0], result[0]);
+            Assert.AreEqual(expected[1], result[1]);
         }
     }
 }
