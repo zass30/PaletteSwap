@@ -30,6 +30,12 @@ namespace PaletteSwap
             colorSelectorBox.SelectedIndex = 5;
             loadSpritesAndPalettesFromDropDown();
             z = new ZoomForm(this);
+
+
+            var remapTable = currentSprite.StandingSpriteColorsRemapTable();
+            Bitmap b = new Bitmap(Properties.Resources.dicstand1);
+            imagepaint2(b, remapTable);
+            pictureBox1.BackgroundImage = b;
         }
 
         public void loadImages()
@@ -60,11 +66,10 @@ namespace PaletteSwap
             psychopunchBox.BackgroundImage = b;*/
         }
 
-        public void imagepaint2(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
+        public void imagepaint2(Bitmap b, ColorMap[] remapTable)
         {
             int width = b.Width;
             int height = b.Height;
-            Graphics g = e.Graphics;
             Graphics gfb = Graphics.FromImage(b);
             ImageAttributes imageAttributes = new ImageAttributes();
             imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
@@ -89,7 +94,7 @@ namespace PaletteSwap
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             imagepaint(e, Properties.Resources.dicstand1, remapTable);
 /*            Bitmap b = new Bitmap(Properties.Resources.dicstand0);
-            // imagepaint2(e, b, remapTable);
+            // imagepaint2(b, remapTable);
             neutralStandBox.BackgroundImage = b; // not working */
         }
 

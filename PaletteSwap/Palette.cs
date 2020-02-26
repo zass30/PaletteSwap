@@ -67,6 +67,12 @@ namespace PaletteSwap
             }
             return bytearray;
         }
+
+        public static byte[] ColorToByte(Color c)
+        {
+            byte[] b = new byte[2];
+            return b;
+        }
     }
 
     public class Portrait
@@ -769,11 +775,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 "0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000";
             byte[] b = PaletteHelper.StringToByteStream(s);
 
+
             foreach (var k in colorsToMemOffsets.Keys)
             {
+                Color col = this.ColorFromSpriteColor(k);
                 foreach (int offset in colorsToMemOffsets[k])
                 {
-
+                    // k is a color, and offset is a position
                 }
             }
             return b;
