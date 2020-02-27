@@ -548,12 +548,6 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             crusherhands2,
         }
 
-        public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
-        {
-            { SPRITE_COLORS.pads5, new List<int>() { 2, ROWLEN*3 + 2, ROWLEN*4 + 2 } },
-            { SPRITE_COLORS.costume5, new List<int>() { 4, ROWLEN * 3 + 4, ROWLEN * 4 + 4 } },
-        };
-
         public static Sprite LoadFromColFormat(string s)
         {
             Sprite sp = new Sprite();
@@ -600,6 +594,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
 
         }
+
+
+        public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
+        {
+            { SPRITE_COLORS.pads5, new List<int>() { 2, ROWLEN * 3 + 2, ROWLEN * 4 + 2 } },
+            { SPRITE_COLORS.costume5, new List<int>() { 4, ROWLEN * 3 + 4, ROWLEN * 4 + 4 } },
+            { SPRITE_COLORS.costume4, new List<int>() { 6, ROWLEN * 3 + 6, ROWLEN * 4 + 6 } },
+            { SPRITE_COLORS.costume3, new List<int>() { 8, ROWLEN * 3 + 8, ROWLEN * 4 + 8 } },
+            { SPRITE_COLORS.costume2, new List<int>() { 10, ROWLEN * 3 + 10, ROWLEN * 4 + 10 } },
+            { SPRITE_COLORS.costume1, new List<int>() { 12, ROWLEN * 3 + 12, ROWLEN * 4 + 12 } },
+        };
+
 
         public Sprite(string s)
         {
@@ -778,15 +784,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 "0007 0800 2A02 4C00 6D03 8E00 FF0F B00F F70F B00F 700F FC0F C80D 7309 4005 0000 " +
 "0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000";
 
-           var b0s = @"0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005 0000 
-0007 2302 3403 5605 6706 7807 8A08 9B09 F70F B00F 700F FC0F C80D 7309 4005 0000 
-5009 6800 7A02 9C04 CE06 EF0B 700B FC0F FF0F F80F B00E DB07 B805 8604 4300 0000 
-0007 0800 2A02 4C00 6D03 8E00 FF0F B00F F70F B00F 700F FC0F C80D 7309 4005 0000 
-0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000";
             byte[] b = PaletteHelper.StringToByteStream(s);
-
-//            { SPRITE_COLORS.pads5, new List<int>() { 2, 98, 130 } },
-//            { SPRITE_COLORS.skin1, new List<int>() { 4, 100, 132 } },
 
             foreach (var k in colorsToMemOffsets.Keys)
             {
