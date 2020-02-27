@@ -522,24 +522,40 @@ namespace PaletteSwapTestsNet
         [TestMethod]
         public void WriteSpriteByteStreamTest()
         {
+            var sprite = new Sprite(Sprite.bis0sprite);
             string s = "0500 " + Sprite.bis0sprite;
-            string data_expected = Regex.Replace(s, @"\t|\n|\r", "");
-            var sprite = new Sprite(s);
+            string s_expected = Regex.Replace(s, @"\t|\n|\r", "");
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
 
-            string data_result = PaletteHelper.ByteStreamToString(sprite.ByteStream());
-            Assert.AreEqual(data_expected, data_result);
-
-            var bytes_expected = PaletteHelper.StringToByteStream(data_expected);
-            bytes_expected[2] = 0x02;
-            bytes_expected[3] = 0x03;
-            bytes_expected[4] = 0x00;
-            bytes_expected[5] = 0x01;
-
-            sprite.skin1 = Color.FromArgb(0, 17, 34, 51);
-            var bytes_recieved = sprite.ByteStream();
-            for (int i = 0; i < 6; i++)
+            var data_result = sprite.ByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
             {
-                Assert.AreEqual(bytes_expected[i], bytes_recieved[i]);
+                Assert.AreEqual(data_expected[0], data_result[0]);
+            }
+
+            //  pads5
+            data_expected[2] = 0x23;
+            data_expected[3] = 0x01;
+            data_expected[2 + 3*32] = 0x23;
+            data_expected[3 + 3*32] = 0x01;
+            data_expected[2 + 4 * 32] = 0x23;
+            data_expected[3 + 4 * 32] = 0x01;
+
+            // costume 5
+            data_expected[4] = 0x12;
+            data_expected[5] = 0x03;
+            data_expected[4 + 3 * 32] = 0x12;
+            data_expected[5 + 3 * 32] = 0x03;
+            data_expected[4 + 4 * 32] = 0x12;
+            data_expected[5 + 4 * 32] = 0x03;
+
+            sprite.pads5 = Color.FromArgb(0, 17, 34, 51);
+            sprite.costume5 = Color.FromArgb(0, 51, 17, 34);
+
+            data_result = sprite.ByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+                Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
 
