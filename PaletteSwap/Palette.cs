@@ -455,6 +455,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 3402 0006 0009 320C 650E 870F EB0F 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 
 3402 0006 0009 320C 650E 870F FF0D EC07 D902 B700 8600 D90F 960E 640A 4306 0000";
 
+        public static int ROWLEN = 32;
+
         public string row1;
         public string row2;
         public string row3;
@@ -548,8 +550,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
         {
-            { SPRITE_COLORS.pads5, new List<int>() { 2, 98, 130 } },
-            { SPRITE_COLORS.costume5, new List<int>() { 4, 100, 132 } },
+            { SPRITE_COLORS.pads5, new List<int>() { 2, ROWLEN*3 + 2, ROWLEN*4 + 2 } },
+            { SPRITE_COLORS.costume5, new List<int>() { 4, ROWLEN * 3 + 4, ROWLEN * 4 + 4 } },
         };
 
         public static Sprite LoadFromColFormat(string s)
@@ -794,7 +796,6 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
                 {
                     b[offset] = c[0];
                     b[offset + 1] = c[1];
-                    // k is a color, and offset is a position
                 }
             }
             return b;

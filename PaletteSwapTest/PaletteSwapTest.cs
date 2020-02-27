@@ -533,11 +533,11 @@ namespace PaletteSwapTestsNet
                 Assert.AreEqual(data_expected[0], data_result[0]);
             }
 
-            //  pads5
+            //  pads 5
             data_expected[2] = 0x23;
             data_expected[3] = 0x01;
-            data_expected[2 + 3*32] = 0x23;
-            data_expected[3 + 3*32] = 0x01;
+            data_expected[2 + 3 * 32] = 0x23;
+            data_expected[3 + 3 * 32] = 0x01;
             data_expected[2 + 4 * 32] = 0x23;
             data_expected[3 + 4 * 32] = 0x01;
 
@@ -553,6 +553,34 @@ namespace PaletteSwapTestsNet
             sprite.costume5 = Color.FromArgb(0, 51, 17, 34);
 
             data_result = sprite.ByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+                Assert.AreEqual(data_expected[i], data_result[i]);
+            }
+
+
+            // for full test, we'll change color 0 to color 5, and check 
+            var sprite0 = new Sprite(Sprite.bis0sprite);
+            var sprite5 = new Sprite(Sprite.bis5sprite);
+
+            Assert.AreNotEqual(sprite5.costume1, sprite0.costume1);
+
+            var spriteType = sprite.GetType();
+            foreach (var label in Enum.GetNames(typeof(Sprite.SPRITE_COLORS)))
+            {
+                var myFieldInfo = spriteType.GetField(label.ToString());
+                var sprite5color = (Color)myFieldInfo.GetValue(sprite5);
+                myFieldInfo.SetValue(sprite0, sprite5color);
+            }
+
+            Assert.AreEqual(sprite5.costume1, sprite0.costume1);
+
+            // check that they have identical byte strings
+            data_result = sprite0.ByteStream();
+            s = "0500 " + Sprite.bis5sprite;
+            s_expected = Regex.Replace(s, @"\t|\n|\r", "");
+            data_expected = PaletteHelper.StringToByteStream(s_expected);
+
             for (int i = 0; i < data_expected.Length; i++)
             {
                 Assert.AreEqual(data_expected[i], data_result[i]);
