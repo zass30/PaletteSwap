@@ -523,8 +523,7 @@ namespace PaletteSwapTestsNet
         public void WriteSpriteByteStreamTest()
         {
             var sprite = new Sprite(Sprite.bis0sprite);
-            string s = "0500 " + Sprite.bis0sprite;
-            string s_expected = Regex.Replace(s, @"\t|\n|\r", "");
+            string s_expected = Sprite.spriteAsTextLine(Sprite.bis0sprite);
             var data_expected = PaletteHelper.StringToByteStream(s_expected);
 
             var data_result = sprite.ByteStream();
@@ -577,8 +576,7 @@ namespace PaletteSwapTestsNet
 
             // check that they have identical byte strings
             data_result = sprite0.ByteStream();
-            s = "0500 " + Sprite.bis5sprite;
-            s_expected = Regex.Replace(s, @"\t|\n|\r", "");
+            s_expected = Sprite.spriteAsTextLine(Sprite.bis5sprite);
             data_expected = PaletteHelper.StringToByteStream(s_expected);
 
             for (int i = 0; i < data_expected.Length; i++)

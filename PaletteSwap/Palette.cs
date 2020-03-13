@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace PaletteSwap
 {
@@ -455,6 +456,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 3402 0006 0009 320C 650E 870F EB0F 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 
 3402 0006 0009 320C 650E 870F FF0D EC07 D902 B700 8600 D90F 960E 640A 4306 0000";
 
+        public static string spriteAsTextLine(string s)
+        {
+            s = "0500 " + s;
+            string s_expected = Regex.Replace(s, @"\t|\n|\r", "");
+            return s_expected;
+        }
+
         public static int ROWLEN = 32;
 
         public string row1;
@@ -604,6 +612,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             { SPRITE_COLORS.costume3, new List<int>() { 8, ROWLEN * 3 + 8, ROWLEN * 4 + 8 } },
             { SPRITE_COLORS.costume2, new List<int>() { 10, ROWLEN * 3 + 10, ROWLEN * 4 + 10 } },
             { SPRITE_COLORS.costume1, new List<int>() { 12, ROWLEN * 3 + 12, ROWLEN * 4 + 12 } },
+          //  { SPRITE_COLORS.stripe, new List<int>() { 14, ROWLEN * 3 + 14 } },
         };
 
 
