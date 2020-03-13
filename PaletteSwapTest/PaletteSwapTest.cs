@@ -566,6 +566,8 @@ namespace PaletteSwapTestsNet
             var data_result = sprite.ByteStream();
             for (int i = 0; i < data_expected.Length; i++)
             {
+                if (Sprite.unusedOffsets.ContainsKey(i))
+                    continue;
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
@@ -601,8 +603,17 @@ namespace PaletteSwapTestsNet
 
             for (int i = 0; i < data_expected.Length; i++)
             {
+                if (Sprite.unusedOffsets.ContainsKey(i))
+                    continue;
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
+        }
+
+        [TestMethod]
+        public void UnusedOffsetsTest()
+        {
+            Assert.IsTrue(Sprite.unusedOffsets[34]);
+            Assert.IsTrue(Sprite.unusedOffsets[35]);
         }
 
         [TestMethod]

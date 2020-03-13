@@ -603,6 +603,11 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         }
 
+        public static Dictionary<int, bool> unusedOffsets = new Dictionary<int, bool>
+        {
+            { 34, true },
+            { 35, true },
+        };
 
         public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
         {
@@ -621,6 +626,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             { SPRITE_COLORS.skin2, new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 3 + 26, ROWLEN * 3 + 26 } },
             { SPRITE_COLORS.skin3, new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28, ROWLEN * 3 + 28 } },
             { SPRITE_COLORS.skin4, new List<int>() { 30, ROWLEN * 1 + 30, ROWLEN * 3 + 30, ROWLEN * 3 + 30 } },
+            { SPRITE_COLORS.crusherpads5, new List<int>() { ROWLEN * 2 + 2 } },
+            { SPRITE_COLORS.crushercostume4, new List<int>() { ROWLEN * 2 + 4 } },
         };
 
 
