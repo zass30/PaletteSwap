@@ -614,6 +614,9 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             { SPRITE_COLORS.costume1, new List<int>() { 12, ROWLEN * 3 + 12, ROWLEN * 4 + 12 } },
             { SPRITE_COLORS.pads4, new List<int>() { 14 } },
             { SPRITE_COLORS.stripe, new List<int>() { 16, ROWLEN * 3 + 16 } },
+            { SPRITE_COLORS.pads1, new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
+            { SPRITE_COLORS.pads2, new List<int>() { 20, ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
+            { SPRITE_COLORS.pads3, new List<int>() { 22, ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
         };
 
 
