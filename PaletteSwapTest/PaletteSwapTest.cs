@@ -520,8 +520,10 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void WriteSpriteByteStreamTest()
+        public void WriteSpriteByteStreamBasicTest()
         {
+            // test #1
+            // check that a bis0sprite's byte representation is what we expect 
             var sprite = new Sprite(Sprite.bis0sprite);
             string s_expected = Sprite.spriteAsTextLine(Sprite.bis0sprite);
             var data_expected = PaletteHelper.StringToByteStream(s_expected);
@@ -531,6 +533,16 @@ namespace PaletteSwapTestsNet
             {
                 Assert.AreEqual(data_expected[0], data_result[0]);
             }
+        }
+
+        [TestMethod]
+        public void WriteSpriteByteStreamChangeFieldsTest()
+        {
+            var sprite = new Sprite(Sprite.bis0sprite);
+            string s_expected = Sprite.spriteAsTextLine(Sprite.bis0sprite);
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // test #2
+            // modify a few fields, check that results are what we expect 
 
             //  pads 5
             data_expected[2] = 0x23;
@@ -551,14 +563,22 @@ namespace PaletteSwapTestsNet
             sprite.pads5 = Color.FromArgb(0, 17, 34, 51);
             sprite.costume5 = Color.FromArgb(0, 51, 17, 34);
 
-            data_result = sprite.ByteStream();
+            var data_result = sprite.ByteStream();
             for (int i = 0; i < data_expected.Length; i++)
             {
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
+        }
+        [TestMethod]
+        public void WriteSpriteByteStreamChangeSpriteTest()
+        {
+            var sprite = new Sprite(Sprite.bis0sprite);
+            string s_expected = Sprite.spriteAsTextLine(Sprite.bis0sprite);
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // test #3
+            // change all fields in sprite0 to sprite5, check new byte 
+            // representation is correct
 
-
-            // for full test, we'll change color 0 to color 5, and check 
             var sprite0 = new Sprite(Sprite.bis0sprite);
             var sprite5 = new Sprite(Sprite.bis5sprite);
 
@@ -575,7 +595,7 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(sprite5.costume1, sprite0.costume1);
 
             // check that they have identical byte strings
-            data_result = sprite0.ByteStream();
+            var data_result = sprite0.ByteStream();
             s_expected = Sprite.spriteAsTextLine(Sprite.bis5sprite);
             data_expected = PaletteHelper.StringToByteStream(s_expected);
 
