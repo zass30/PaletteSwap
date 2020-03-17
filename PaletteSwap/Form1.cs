@@ -35,7 +35,6 @@ namespace PaletteSwap
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             Bitmap b = new Bitmap(Properties.Resources.dicstand1);
             imagepaint2(b, remapTable);
-            pictureBox1.BackgroundImage = b;
         }
 
         public void loadImages()
@@ -920,5 +919,6 @@ namespace PaletteSwap
                 fs.Close();
             }
         }
+
     }
 }
