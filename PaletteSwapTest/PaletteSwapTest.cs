@@ -614,6 +614,8 @@ namespace PaletteSwapTestsNet
         {
             Assert.IsTrue(Sprite.unusedOffsets[34]);
             Assert.IsTrue(Sprite.unusedOffsets[35]);
+            Assert.IsTrue(Sprite.unusedOffsets[68]);
+            Assert.IsTrue(Sprite.unusedOffsets[69]);
         }
 
         [TestMethod]

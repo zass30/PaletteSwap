@@ -607,6 +607,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             { 34, true },
             { 35, true },
+            { 68, true },
+            { 69, true },
         };
 
         public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
