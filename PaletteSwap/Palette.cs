@@ -609,6 +609,8 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             { 35, true },
             { 68, true },
             { 69, true },
+            { 94, true },
+            { 95, true },
         };
 
         public static Dictionary<SPRITE_COLORS, List<int>> colorsToMemOffsets = new Dictionary<SPRITE_COLORS, List<int>>
@@ -624,12 +626,29 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             { SPRITE_COLORS.pads1, new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
             { SPRITE_COLORS.pads2, new List<int>() { 20, ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
             { SPRITE_COLORS.pads3, new List<int>() { 22, ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
-            { SPRITE_COLORS.skin1, new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 3 + 24, ROWLEN * 3 + 24 } },
-            { SPRITE_COLORS.skin2, new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 3 + 26, ROWLEN * 3 + 26 } },
-            { SPRITE_COLORS.skin3, new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28, ROWLEN * 3 + 28 } },
-            { SPRITE_COLORS.skin4, new List<int>() { 30, ROWLEN * 1 + 30, ROWLEN * 3 + 30, ROWLEN * 3 + 30 } },
+            { SPRITE_COLORS.skin1, new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 3 + 24, ROWLEN * 4 + 24 } },
+            { SPRITE_COLORS.skin2, new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 3 + 26, ROWLEN * 4 + 26 } },
+            { SPRITE_COLORS.skin3, new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28, ROWLEN * 4 + 28 } },
+            { SPRITE_COLORS.skin4, new List<int>() { 30, ROWLEN * 1 + 30, ROWLEN * 3 + 30, ROWLEN * 4 + 30 } },
             { SPRITE_COLORS.crusherpads5, new List<int>() { ROWLEN * 2 + 2 } },
-            { SPRITE_COLORS.crushercostume4, new List<int>() { ROWLEN * 2 + 4 } },
+            { SPRITE_COLORS.crushercostume4, new List<int>() { ROWLEN * 2 + 6 } },
+            { SPRITE_COLORS.crushercostume3, new List<int>() { ROWLEN * 2 + 8 } },
+            { SPRITE_COLORS.crushercostume2, new List<int>() { ROWLEN * 2 + 10 } },
+            { SPRITE_COLORS.crushercostume1, new List<int>() { ROWLEN * 2 + 12 } },
+            { SPRITE_COLORS.crusherpads4, new List<int>() { ROWLEN * 2 + 14 } },
+            { SPRITE_COLORS.crusherflame1, new List<int>() { ROWLEN * 2 + 16 } },
+            { SPRITE_COLORS.crusherpads1, new List<int>() { ROWLEN * 2 + 18 } },
+            { SPRITE_COLORS.crusherpads2, new List<int>() { ROWLEN * 2 + 20 } },
+            { SPRITE_COLORS.crusherpads3, new List<int>() { ROWLEN * 2 + 22 } },
+            { SPRITE_COLORS.crusherflame2, new List<int>() { ROWLEN * 2 + 24 } },
+            { SPRITE_COLORS.crusherhands1, new List<int>() { ROWLEN * 2 + 26 } },
+            { SPRITE_COLORS.crusherhands2, new List<int>() { ROWLEN * 2 + 28 } },
+            { SPRITE_COLORS.psychoglow, new List<int>() { ROWLEN * 3 + 14 } },
+            { SPRITE_COLORS.psychopunch1, new List<int>() { ROWLEN * 4 + 14 } },
+            { SPRITE_COLORS.psychopunch2, new List<int>() { ROWLEN * 4 + 16 } },
+            { SPRITE_COLORS.psychopunch3, new List<int>() { ROWLEN * 4 + 18 } },
+            { SPRITE_COLORS.psychopunch4, new List<int>() { ROWLEN * 4 + 20 } },
+            { SPRITE_COLORS.psychopunch5, new List<int>() { ROWLEN * 4 + 22 } },
         };
 
 
