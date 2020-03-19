@@ -759,7 +759,7 @@ namespace PaletteSwapTestsNet
         {
             var p = new Portrait(Portrait.bis5portrait);
             var s = new Sprite(Sprite.bis5sprite);
-            ColorSet cs = new ColorSet();
+            CharacterColor cs = new CharacterColor();
             cs.p = p;
             cs.s = s;
             Assert.AreEqual(p, cs.p);
