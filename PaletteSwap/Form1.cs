@@ -17,6 +17,7 @@ namespace PaletteSwap
         ZoomForm z;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
+        CharacterColorSet characterColorSet;
         public Portrait currentPortrait;
         public Sprite currentSprite;
         bool skip_image_recolors = false;
@@ -24,13 +25,13 @@ namespace PaletteSwap
         public Form1()
         {
             InitializeComponent();
+            characterColorSet = new CharacterColorSet();
             EnableDragAndDrop();
             EnablePaintRefresh();
             loadImages();
             colorSelectorBox.SelectedIndex = 5;
             loadSpritesAndPalettesFromDropDown();
             z = new ZoomForm(this);
-
 
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             Bitmap b = new Bitmap(Properties.Resources.dicstand1);
@@ -141,61 +142,52 @@ namespace PaletteSwap
 
         private void loadSpritesAndPalettesFromDropDown()
         {
-            Palette pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
             switch (colorSelectorBox.SelectedIndex)
             {
                 case 0:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis0Mem);
                     currentSprite = new Sprite(Sprite.bis0sprite);
                     currentPortrait = new Portrait(Portrait.bis0portrait);
                     break;
                 case 1:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
                     currentSprite = new Sprite(Sprite.bis1sprite);
                     currentPortrait = new Portrait(Portrait.bis1portrait);
                     break;
                 case 2:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
                     currentSprite = new Sprite(Sprite.bis2sprite);
                     currentPortrait = new Portrait(Portrait.bis2portrait);
                     break;
                 case 3:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis3Mem);
                     currentSprite = new Sprite(Sprite.bis3sprite);
                     currentPortrait = new Portrait(Portrait.bis3portrait);
                     break;
                 case 4:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis4Mem);
                     currentSprite = new Sprite(Sprite.bis4sprite);
                     currentPortrait = new Portrait(Portrait.bis4portrait);
                     break;
                 case 5:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis5Mem);
                     currentSprite = new Sprite(Sprite.bis5sprite);
                     currentPortrait = new Portrait(Portrait.bis5portrait);
                     break;
                 case 6:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis6Mem);
                     currentSprite = new Sprite(Sprite.bis6sprite);
                     currentPortrait = new Portrait(Portrait.bis6portrait);
                     break;
                 case 7:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis7Mem);
                     currentSprite = new Sprite(Sprite.bis7sprite);
                     currentPortrait = new Portrait(Portrait.bis7portrait);
                     break;
                 case 8:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
                     currentSprite = new Sprite(Sprite.bis8sprite);
                     currentPortrait = new Portrait(Portrait.bis8portrait);
                     break;
                 case 9:
-                    pal_dest = Palette.PaletteFromMem(Palette.bis8Mem);
                     currentSprite = new Sprite(Sprite.bis9sprite);
                     currentPortrait = new Portrait(Portrait.bis9portrait);
                     break;
             }
-            reload_everything();
+            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s != null)
+                currentSprite = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s;
+                reload_everything();
         }
 
         private void reload_everything()
@@ -654,7 +646,6 @@ namespace PaletteSwap
                 case "portrait_costumeloss4":
                     currentPortrait.costumeloss4 = c;
                     break;
-
                 case "portrait_piping1":
                     currentPortrait.piping1 = c;
                     break;
@@ -920,5 +911,9 @@ namespace PaletteSwap
             }
         }
 
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s = currentSprite;
+        }
     }
 }
