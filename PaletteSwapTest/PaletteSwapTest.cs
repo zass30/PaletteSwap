@@ -754,6 +754,17 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(expected[0], result[0]);
             Assert.AreEqual(expected[1], result[1]);
         }
+
+        public void ColorSetTest()
+        {
+            var p = new Portrait(Portrait.bis5portrait);
+            var s = new Sprite(Sprite.bis5sprite);
+            ColorSet cs = new ColorSet();
+            cs.p = p;
+            cs.s = s;
+            Assert.AreEqual(p, cs.p);
+            Assert.AreEqual(s, cs.s);
+        }
     }
 }
 
