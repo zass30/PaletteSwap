@@ -755,7 +755,7 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(expected[1], result[1]);
         }
 
-        public void ColorSetTest()
+        public void CharacterColorTest()
         {
             var p = new Portrait(Portrait.bis5portrait);
             var s = new Sprite(Sprite.bis5sprite);
@@ -764,6 +764,38 @@ namespace PaletteSwapTestsNet
             cs.s = s;
             Assert.AreEqual(p, cs.p);
             Assert.AreEqual(s, cs.s);
+        }
+
+        public void CharacterColorSetTest()
+        {
+            var p = new Portrait(Portrait.bis5portrait);
+            var s = new Sprite(Sprite.bis5sprite);
+            CharacterColor cc = new CharacterColor();
+            cc.p = p;
+            cc.s = s;
+
+            var cs = new CharacterColorSet();
+            cs.col_0 = cc;
+            cs.col_1 = cc;
+            cs.col_2 = cc;
+            cs.col_3 = cc;
+            cs.col_4 = cc;
+            cs.col_5 = cc;
+            cs.col_6 = cc;
+            cs.col_7 = cc;
+            cs.col_8 = cc;
+            cs.col_9 = cc;
+            Assert.AreEqual(cc, cs.col_0);
+            Assert.AreEqual(cc, cs.col_1);
+            Assert.AreEqual(cc, cs.col_2);
+            Assert.AreEqual(cc, cs.col_3);
+            Assert.AreEqual(cc, cs.col_4);
+            Assert.AreEqual(cc, cs.col_5);
+            Assert.AreEqual(cc, cs.col_6);
+            Assert.AreEqual(cc, cs.col_7);
+            Assert.AreEqual(cc, cs.col_8);
+            Assert.AreEqual(cc, cs.col_9);
+
         }
     }
 }

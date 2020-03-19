@@ -870,6 +870,23 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Portrait p;
     }
 
+    public class CharacterColorSet
+    {
+        public CharacterColor col_0;
+        public CharacterColor col_1;
+        public CharacterColor col_2;
+        public CharacterColor col_3;
+        public CharacterColor col_4;
+        public CharacterColor col_5;
+        public CharacterColor col_6;
+        public CharacterColor col_7;
+        public CharacterColor col_8;
+        public CharacterColor col_9;
+
+        public CharacterColorSet()
+        { }
+    }
+
     public class Palette
     {
         public static readonly string bis0Mem = "0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005";
