@@ -6,6 +6,7 @@ using System.Drawing.Imaging;
 using System.Reflection;
 using System.Linq;
 using System.Text.RegularExpressions;
+using PaletteSwap.Properties;
 
 namespace PaletteSwapTestsNet
 {
@@ -755,6 +756,7 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(expected[1], result[1]);
         }
 
+        [TestMethod]
         public void CharacterColorTest()
         {
             var p = new Portrait(Portrait.bis5portrait);
@@ -766,6 +768,7 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(s, cs.s);
         }
 
+        [TestMethod]
         public void CharacterColorSetTest()
         {
             var p = new Portrait(Portrait.bis5portrait);
@@ -795,6 +798,33 @@ namespace PaletteSwapTestsNet
             Assert.AreEqual(cc, cs.col_7);
             Assert.AreEqual(cc, cs.col_8);
             Assert.AreEqual(cc, cs.col_9);
+        }
+
+        [TestMethod]
+        public void CharacterColorSetByteStreamTest()
+        {
+            var cs = new CharacterColorSet();
+            byte[] b = cs.sprites_stream04();
+            byte[] b_expected = Resources.sfxe1;
+
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i]);
+            }
+
+            var s = new Sprite(Sprite.bis5sprite);
+            CharacterColor cc = new CharacterColor();
+            cc.s = s;
+
+            // make color 0 bis5color
+            cs.col_0 = cc;
+            b = cs.sprites_stream04();
+            b_expected = s.ByteStream();
+            int offset = 0x00042E7C;
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i + offset]);
+            }
 
         }
     }

@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using PaletteSwap.Properties;
 
 namespace PaletteSwap
 {
@@ -885,7 +886,14 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public CharacterColorSet()
         { }
+
+        public byte[] sprites_stream04()
+        {
+            byte[] b = Resources.sfxe1;
+            return b;
+        }
     }
+
 
     public class Palette
     {
