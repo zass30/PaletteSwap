@@ -778,26 +778,14 @@ namespace PaletteSwapTestsNet
             cc.s = s;
 
             var cs = new CharacterColorSet();
-            cs.col_0 = cc;
-            cs.col_1 = cc;
-            cs.col_2 = cc;
-            cs.col_3 = cc;
-            cs.col_4 = cc;
-            cs.col_5 = cc;
-            cs.col_6 = cc;
-            cs.col_7 = cc;
-            cs.col_8 = cc;
-            cs.col_9 = cc;
-            Assert.AreEqual(cc, cs.col_0);
-            Assert.AreEqual(cc, cs.col_1);
-            Assert.AreEqual(cc, cs.col_2);
-            Assert.AreEqual(cc, cs.col_3);
-            Assert.AreEqual(cc, cs.col_4);
-            Assert.AreEqual(cc, cs.col_5);
-            Assert.AreEqual(cc, cs.col_6);
-            Assert.AreEqual(cc, cs.col_7);
-            Assert.AreEqual(cc, cs.col_8);
-            Assert.AreEqual(cc, cs.col_9);
+            for (int i = 0; i < 10; i++)
+            {
+                cs.characterColors[i] = cc;
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                Assert.AreEqual(cc, cs.characterColors[i]);
+            }
         }
 
         [TestMethod]
@@ -817,15 +805,22 @@ namespace PaletteSwapTestsNet
             cc.s = s;
 
             // make color 0 bis5color
-            cs.col_0 = cc;
+            cs.characterColors[0] = cc;
             b = cs.sprites_stream04();
             b_expected = s.ByteStream();
-            int offset = 0x00042E7C;
             for (int i = 0; i < b_expected.Length; i++)
             {
-                Assert.AreEqual(b_expected[i], b[i + offset]);
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset]);
             }
 
+
+            // make color 9 bis5color
+            cs.characterColors[9] = cc;
+            b = cs.sprites_stream04();
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset + 9*CharacterColorSet.sprite_length]);
+            }
         }
     }
 }

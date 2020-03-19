@@ -873,23 +873,31 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
     public class CharacterColorSet
     {
-        public CharacterColor col_0;
-        public CharacterColor col_1;
-        public CharacterColor col_2;
-        public CharacterColor col_3;
-        public CharacterColor col_4;
-        public CharacterColor col_5;
-        public CharacterColor col_6;
-        public CharacterColor col_7;
-        public CharacterColor col_8;
-        public CharacterColor col_9;
+        public CharacterColor[] characterColors;
+
+        public static int offset = 0x00042E7C;
+        public static int sprite_length = 0xa2;
 
         public CharacterColorSet()
-        { }
+        {
+            characterColors = new CharacterColor[10];
+        }
 
         public byte[] sprites_stream04()
         {
-            byte[] b = Resources.sfxe1;
+            byte[] b = Resources.sfxe1;     
+            for (int i=0; i<10; i++)
+            {
+                if (characterColors[i].s == null)
+                    continue;
+                var s = characterColors[i].s;
+                byte[] color_bytes = s.ByteStream();
+                for (int j = 0; j < color_bytes.Length; j++)
+                {
+                    b[offset + i * sprite_length + j] = color_bytes[j];
+                }
+
+            }
             return b;
         }
     }
