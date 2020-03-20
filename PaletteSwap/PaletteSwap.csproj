@@ -52,6 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Portrait.cs" />
+    <Compile Include="Sprite.cs" />
     <Compile Include="ZoomForm.cs">
       <SubType>Form</SubType>
     </Compile>

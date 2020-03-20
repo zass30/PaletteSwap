@@ -773,6 +773,15 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
+        public void ByteToColorTest()
+        {
+            Color expected = Color.FromArgb(0, 0, 0, 0);
+            byte[] b = new byte[] { 0x00, 0x00 };
+            Color result = PaletteHelper.ByteToColor(b);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
         public void CharacterColorTest()
         {
             var p = new Portrait(Portrait.bis5portrait);
