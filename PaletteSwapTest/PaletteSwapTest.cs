@@ -69,7 +69,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void overlayTransparencyTest()
+        public void OverlayTransparencyTest()
         {
             Bitmap srcbmp = new Bitmap(20, 1);
             Bitmap destbmp = new Bitmap(20, 1);
@@ -87,7 +87,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void createColorMaskTest()
+        public void CreateColorMaskTest()
         {
 
             Bitmap srcbmp = new Bitmap(20, 1);
@@ -108,7 +108,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void overlayImageTest()
+        public void OverlayImageTest()
         {
 
             Bitmap foreground = new Bitmap(20, 1);
@@ -132,7 +132,7 @@ namespace PaletteSwapTest
 
 
         [TestMethod]
-        public void colorToMemFormatTest()
+        public void ColorToMemFormatTest()
         {
             Color c = Color.FromArgb(255, 255, 255, 255);
             var s = Palette.ColorToMemFormat(c);
@@ -187,7 +187,7 @@ namespace PaletteSwapTest
 
 
         [TestMethod]
-        public void areBitmapsSameTest()
+        public void AreBitmapsSameTest()
         {
             Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
             Bitmap b = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);

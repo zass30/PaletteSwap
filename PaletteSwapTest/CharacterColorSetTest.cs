@@ -8,7 +8,6 @@ namespace PaletteSwapTest
     [TestClass]
     public class CharacterColorSetTest
     {
-
         [TestMethod]
         public void CharacterColorTest()
         {

@@ -11,7 +11,7 @@ namespace PaletteSwapTest
     {
 
         [TestMethod]
-        public void portraitNewTest()
+        public void PortraitNewTest()
         {
             string s = Portrait.bis0portrait;
             var p = new Portrait(s);
@@ -20,7 +20,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void portraitColorsTest()
+        public void PortraitColorsTest()
         {
             string s = Portrait.bis0portrait;
             var p = new Portrait(s);
@@ -86,7 +86,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void portraitRowTest()
+        public void PortraitRowTest()
         {
             string s = Portrait.bis0portrait;
             var p = new Portrait(s);
@@ -217,6 +217,7 @@ namespace PaletteSwapTest
             string_result = portrait.ToColFormat();
             Assert.AreEqual(string_expected, string_result);
         }
+
 
         [TestMethod]
         public void LoadPortraitFromColFormatTest()
