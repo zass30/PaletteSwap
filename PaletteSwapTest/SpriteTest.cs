@@ -2,9 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
 using System.Drawing;
-using System.Drawing.Imaging;
 
-namespace PaletteSwapTests
+namespace PaletteSwapTest
 {
     [TestClass]
     public class SpriteTest
