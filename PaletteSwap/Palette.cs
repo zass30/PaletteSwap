@@ -123,6 +123,12 @@ FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 FF0F CC0C 9909 7707 0A00
 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 
 FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00";
 
+        public static string portraitAsTextLine(string s)
+        {
+            string s_expected = Regex.Replace(s, @"\t|\n|\r", "");
+            return s_expected;
+        }
+
         public string row1;
         public string row2;
         public string row3;
@@ -165,6 +171,39 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public Color blood2;
         public Color blood3;
 
+        public enum PORTRAIT_COLORS
+        {
+            skin1,
+            skin2,
+            skin3,
+            skin4,
+            skin5,
+            skin6,
+            skin7,
+            teeth1,
+            teeth2,
+            teeth3,
+            teeth4,
+            costume1,
+            costume2,
+            costume3,
+            costume4,
+            costumeloss1,
+            costumeloss2,
+            costumeloss3,
+            costumeloss4,
+            piping1,
+            piping2,
+            piping3,
+            piping4,
+            pipingloss1,
+            pipingloss2,
+            pipingloss3,
+            pipingloss4,
+            blood1,
+            blood2,
+            blood3,
+        }
 
         public static Portrait LoadFromColFormat(string s)
         {
@@ -389,6 +428,24 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var bottom = GenerateLossBottomPortrait();
             var loss = Palette.overlayImage(top, bottom);
             return loss;
+        }
+
+        public Byte[] ByteStream()
+        {
+            string s = portraitAsTextLine(bis0portrait);
+            byte[] b = PaletteHelper.StringToByteStream(s);
+
+/*            foreach (var k in colorsToMemOffsets.Keys)
+            {
+                Color col = this.ColorFromSpriteColor(k);
+                byte[] c = PaletteHelper.ColorToByte(col);
+                foreach (int offset in colorsToMemOffsets[k])
+                {
+                    b[offset] = c[0];
+                    b[offset + 1] = c[1];
+                }
+            }*/
+            return b;
         }
 
         public string ToColFormat()

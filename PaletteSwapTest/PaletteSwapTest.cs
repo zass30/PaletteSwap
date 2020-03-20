@@ -521,6 +521,22 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
+        public void WriteSPortraitByteStreamBasicTest()
+        {
+            // test #1
+            // check that a bis0sprite's byte representation is what we expect 
+            var portrait = new Portrait(Portrait.bis0portrait);
+            string s_expected = Portrait.portraitAsTextLine(Portrait.bis0portrait);
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            /*
+            var data_result = sprite.ByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+                Assert.AreEqual(data_expected[0], data_result[0]);
+            }*/
+        }
+
+        [TestMethod]
         public void WriteSpriteByteStreamBasicTest()
         {
             // test #1

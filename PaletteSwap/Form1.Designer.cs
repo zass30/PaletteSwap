@@ -162,6 +162,8 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paletteSwapperByZassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePatchedRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1450,7 +1452,8 @@
             this.printToolStripMenuItem,
             this.printPreviewToolStripMenuItem,
             this.toolStripSeparator2,
-            this.exitToolStripMenuItem});
+            this.exitToolStripMenuItem,
+            this.savePatchedRomToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 38);
             this.fileToolStripMenuItem.Text = "&File";
@@ -1667,9 +1670,24 @@
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.paletteSwapperByZassToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // paletteSwapperByZassToolStripMenuItem
+            // 
+            this.paletteSwapperByZassToolStripMenuItem.Name = "paletteSwapperByZassToolStripMenuItem";
+            this.paletteSwapperByZassToolStripMenuItem.Size = new System.Drawing.Size(398, 44);
+            this.paletteSwapperByZassToolStripMenuItem.Text = "PaletteSwapper by Zass";
+            // 
+            // savePatchedRomToolStripMenuItem
+            // 
+            this.savePatchedRomToolStripMenuItem.Name = "savePatchedRomToolStripMenuItem";
+            this.savePatchedRomToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.savePatchedRomToolStripMenuItem.Text = "Save Patched Rom";
+            this.savePatchedRomToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -1999,6 +2017,8 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem paletteSwapperByZassToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem savePatchedRomToolStripMenuItem;
     }
 }
 
