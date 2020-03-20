@@ -331,7 +331,7 @@ namespace PaletteSwap
 
         }
 
-        private void debugImage()
+/*        private void debugImage()
         {
             Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
             var mp = new Bitmap(Properties.Resources.dicmp5);
@@ -369,6 +369,7 @@ namespace PaletteSwap
                     "Check the file permissions.");
             }
         }
+        */
 
         private void LoadImageIntoPalette()
         {

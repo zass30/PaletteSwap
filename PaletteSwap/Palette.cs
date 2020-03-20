@@ -120,7 +120,7 @@ namespace PaletteSwap
             return b;
         }
     }
-
+    
     public class Palette
     {
         public static readonly string bis0Mem = "0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005";
@@ -165,26 +165,6 @@ namespace PaletteSwap
                 sb.Append(" ");
             }
             return sb.ToString().Trim();
-        }
-
-        // function that takes an image a, source, and a destination palette, and returns new image
-        // with swapped colors
-        public static Bitmap PaletteSwap(Bitmap img, Palette p_src, Palette p_dest)
-        {
-            // foreach pixel in image
-            // get "swap color"
-            // replace color 
-            Bitmap swappedImg = new Bitmap(img.Width, img.Height);
-            for (int x = 0; x < img.Width; x++)
-            {
-                for (int y = 0; y < img.Height; y++)
-                {
-                    Color gotColor = img.GetPixel(x, y);
-                    var swappedColor = ColorSwap(gotColor, p_src, p_dest);
-                    swappedImg.SetPixel(x, y, swappedColor);
-                }
-            }
-            return swappedImg;
         }
 
         public static Bitmap PaletteSwap(Bitmap img, Color[] p_src, Color[] p_dest)
@@ -393,5 +373,5 @@ namespace PaletteSwap
             return retimg;
 
         }
-    }
+    }   
 }

@@ -58,25 +58,6 @@ namespace PaletteSwapTestsNet
         }
 
         [TestMethod]
-        public void PaletteSwapTest()
-        {
-            Bitmap srcbmp = new Bitmap(15, 1);
-            var pal_src = Palette.PaletteFromMem(Palette.bis1Mem);
-            var pal_dest = Palette.PaletteFromMem(Palette.bis2Mem);
-            for (int i = 0; i < 15; i++)
-            {
-                srcbmp.SetPixel(i, 0, pal_src.colors[i]);
-            }
-
-            var swappedbmp = Palette.PaletteSwap(srcbmp, pal_src, pal_dest);
-            for (int i = 0; i < 15; i++)
-            {
-                Assert.AreEqual(pal_dest.colors[i], swappedbmp.GetPixel(i, 0));
-            }
-        }
-
-
-        [TestMethod]
         public void PaletteSwapArrayTest()
         {
             Bitmap srcbmp = new Bitmap(30, 1);
