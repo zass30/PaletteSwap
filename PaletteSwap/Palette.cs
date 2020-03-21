@@ -175,16 +175,6 @@ namespace PaletteSwap
         }
 
 
-        public static Color ColorSwap(Color c, Palette p_src, Palette p_dest)
-        {
-            for (int i = 0; i < p_src.colors.Length; i++)
-            {
-                if (c == p_src.colors[i])
-                    return p_dest.colors[i];
-            }
-            return c;
-        }
-
         public static Color ColorSwap(Color c, Color[] p_src, Color[] p_dest)
         {
             for (int i = 0; i < p_src.Length; i++)
@@ -234,23 +224,6 @@ namespace PaletteSwap
             var G = int.Parse(v[1]);
             var B = int.Parse(v[2]);
             return Color.FromArgb(255, R, G, B);
-        }
-
-        public static string toACTFormat(Color c)
-        {
-            string s = c.R.ToString("X2") + " " + c.G.ToString("X2") + " " + c.B.ToString("X2");
-            return s;
-        }
-
-        public static string ACTtoText(byte[] bytearray)
-        {
-            StringBuilder s = new StringBuilder();
-            foreach (byte b in bytearray)
-            {
-                s.Append(b.ToString("X2"));
-                s.Append(" ");
-            }
-            return s.ToString().Trim();
         }
 
         public static Boolean areBitmapsSame(Bitmap a, Bitmap b)
