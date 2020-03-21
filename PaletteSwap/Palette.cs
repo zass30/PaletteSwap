@@ -224,7 +224,4 @@ namespace PaletteSwap
             return retimg;
         }
     }
-
-
-
 }
