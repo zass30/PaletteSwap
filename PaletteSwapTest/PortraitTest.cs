@@ -186,7 +186,7 @@ namespace PaletteSwapTest
 
 
         [TestMethod]
-        public void WriteSPortraitByteStreamBasicTest()
+        public void WritePortraitByteStreamBasicTest()
         {
             // test #1
             // check that a bis0sprite's byte representation is what we expect 

@@ -14,15 +14,6 @@ namespace PaletteSwapTest
     public class PaletteTest
     {
         [TestMethod]
-        public void PaletteACTTest()
-        {
-            var pal = new Palette();
-            string sACT = "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00";
-            string result = pal.asACT();
-            Assert.AreEqual(sACT, pal.asACT());
-        }
-
-        [TestMethod]
         public void PaletteMemTest()
         {
             var pal = new Palette();
@@ -30,33 +21,6 @@ namespace PaletteSwapTest
             string result = pal.asMem();
             Assert.AreEqual(sMem, result);
         }
-
-        [TestMethod]
-        public void PaletteFromACTTest()
-        {
-            string s = Palette.bis1ACT;
-            var pal = Palette.PaletteFromACT(s);
-            string result = pal.asACT();
-            Assert.AreEqual(s, result);
-
-            s = Palette.bis1Mem;
-            result = pal.asMem();
-            Assert.AreEqual(s, result);
-        }
-
-        [TestMethod]
-        public void PaletteFromMemTest()
-        {
-            string s = Palette.bis1Mem;
-            var pal = Palette.PaletteFromMem(s);
-            string result = pal.asMem();
-            Assert.AreEqual(s, result);
-
-            s = Palette.bis1ACT;
-            result = pal.asACT();
-            Assert.AreEqual(s, result);
-        }
-
 
         [TestMethod]
         public void ACTtoTextTest()

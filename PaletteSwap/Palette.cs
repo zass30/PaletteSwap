@@ -145,17 +145,6 @@ namespace PaletteSwap
             }
         }
 
-        public string asACT()
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < colors.Length; i++)
-            {
-                sb.Append(toACTFormat(colors[i]));
-                sb.Append(" ");
-            }
-            return sb.ToString().Trim();
-        }
-
         public string asMem()
         {
             StringBuilder sb = new StringBuilder();
@@ -204,21 +193,6 @@ namespace PaletteSwap
                     return p_dest[i];
             }
             return c;
-        }
-
-        public static Palette PaletteFromACT(string s)
-        {
-            //            if (s == "" || s == " ")
-            //                return;
-            var pal = new Palette();
-            string[] s_colors = s.Split(' ');
-            for (int i = 0; i < pal.colors.Length; i++)
-            {
-                var c = "FF" + s_colors[3 * i] + s_colors[3 * i + 1] + s_colors[3 * i + 2];
-                var cint = int.Parse(c, System.Globalization.NumberStyles.HexNumber);
-                pal.colors[i] = Color.FromArgb(cint);
-            }
-            return pal;
         }
 
         public static Palette PaletteFromMem(string s)
