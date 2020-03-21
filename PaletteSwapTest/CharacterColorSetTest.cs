@@ -74,5 +74,40 @@ namespace PaletteSwapTest
                 Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset + 9 * CharacterColorSet.sprite_length]);
             }
         }
+
+        [TestMethod]
+        public void CharacterColorSetByteStreamPhoenixTest()
+        {
+            var cs = new CharacterColorSet();
+            byte[] b = cs.sprites_stream04phoenix();
+            byte[] b_expected = Resources.sfxjd;
+
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i]);
+            }
+
+            var s = new Sprite(Sprite.bis5sprite);
+            CharacterColor cc = new CharacterColor();
+            cc.s = s;
+
+            // make color 0 bis5color
+            cs.characterColors[0] = cc;
+            b = cs.sprites_stream04();
+            b_expected = s.ByteStream();
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset]);
+            }
+
+
+            // make color 9 bis5color
+            cs.characterColors[9] = cc;
+            b = cs.sprites_stream04();
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset + 9 * CharacterColorSet.sprite_length]);
+            }
+        }
     }
 }
