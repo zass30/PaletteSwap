@@ -11,6 +11,10 @@ namespace PaletteSwap
     {
         // todo: add 0500 to all of these and fix tests
         // todo: create a base abstract class to parent sprite and portrait
+        // todo: create an 'image'? class that represents a neutral sprite, a
+        // crusher top sprite, etc. This would have a base image and a remap table
+        // and this class would have a list of these images objects, along with a 
+        // byteArray output and a .col output
         public static readonly string bis0sprite = @"0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005 0000 
 0007 2302 3403 5605 6706 7807 8A08 9B09 F70F B00F 700F FC0F C80D 7309 4005 0000 
 5009 6800 7A02 9C04 CE06 EF0B 700B FC0F FF0F F80F B00E DB07 B805 8604 4300 0000 
