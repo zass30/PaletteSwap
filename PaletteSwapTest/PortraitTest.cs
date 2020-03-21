@@ -24,42 +24,42 @@ namespace PaletteSwapTest
         {
             string s = Portrait.bis0portrait;
             var p = new Portrait(s);
-            Assert.AreEqual("FF0F", Palette.ColorToMemFormat(p.skin1));
-            Assert.AreEqual("D90F", Palette.ColorToMemFormat(p.skin2));
-            Assert.AreEqual("960E", Palette.ColorToMemFormat(p.skin3));
-            Assert.AreEqual("750C", Palette.ColorToMemFormat(p.skin4));
-            Assert.AreEqual("640A", Palette.ColorToMemFormat(p.skin5));
-            Assert.AreEqual("5408", Palette.ColorToMemFormat(p.skin6));
-            Assert.AreEqual("4306", Palette.ColorToMemFormat(p.skin7));
+            Assert.AreEqual("FF0F", PaletteHelper.ColorToMemFormat(p.skin1));
+            Assert.AreEqual("D90F", PaletteHelper.ColorToMemFormat(p.skin2));
+            Assert.AreEqual("960E", PaletteHelper.ColorToMemFormat(p.skin3));
+            Assert.AreEqual("750C", PaletteHelper.ColorToMemFormat(p.skin4));
+            Assert.AreEqual("640A", PaletteHelper.ColorToMemFormat(p.skin5));
+            Assert.AreEqual("5408", PaletteHelper.ColorToMemFormat(p.skin6));
+            Assert.AreEqual("4306", PaletteHelper.ColorToMemFormat(p.skin7));
 
-            Assert.AreEqual("FE0F", Palette.ColorToMemFormat(p.piping1));
-            Assert.AreEqual("F90F", Palette.ColorToMemFormat(p.piping2));
-            Assert.AreEqual("D50F", Palette.ColorToMemFormat(p.piping3));
-            Assert.AreEqual("A00F", Palette.ColorToMemFormat(p.piping4));
+            Assert.AreEqual("FE0F", PaletteHelper.ColorToMemFormat(p.piping1));
+            Assert.AreEqual("F90F", PaletteHelper.ColorToMemFormat(p.piping2));
+            Assert.AreEqual("D50F", PaletteHelper.ColorToMemFormat(p.piping3));
+            Assert.AreEqual("A00F", PaletteHelper.ColorToMemFormat(p.piping4));
 
-            Assert.AreEqual("8E00", Palette.ColorToMemFormat(p.costume1));
-            Assert.AreEqual("6D03", Palette.ColorToMemFormat(p.costume2));
-            Assert.AreEqual("4C00", Palette.ColorToMemFormat(p.costume3));
-            Assert.AreEqual("2A02", Palette.ColorToMemFormat(p.costume4));
+            Assert.AreEqual("8E00", PaletteHelper.ColorToMemFormat(p.costume1));
+            Assert.AreEqual("6D03", PaletteHelper.ColorToMemFormat(p.costume2));
+            Assert.AreEqual("4C00", PaletteHelper.ColorToMemFormat(p.costume3));
+            Assert.AreEqual("2A02", PaletteHelper.ColorToMemFormat(p.costume4));
 
-            Assert.AreEqual("000F", Palette.ColorToMemFormat(p.blood1));
-            Assert.AreEqual("000C", Palette.ColorToMemFormat(p.blood2));
-            Assert.AreEqual("000A", Palette.ColorToMemFormat(p.blood3));
+            Assert.AreEqual("000F", PaletteHelper.ColorToMemFormat(p.blood1));
+            Assert.AreEqual("000C", PaletteHelper.ColorToMemFormat(p.blood2));
+            Assert.AreEqual("000A", PaletteHelper.ColorToMemFormat(p.blood3));
 
-            Assert.AreEqual("FF0F", Palette.ColorToMemFormat(p.teeth1));
-            Assert.AreEqual("CC0C", Palette.ColorToMemFormat(p.teeth2));
-            Assert.AreEqual("9909", Palette.ColorToMemFormat(p.teeth3));
-            Assert.AreEqual("7707", Palette.ColorToMemFormat(p.teeth4));
+            Assert.AreEqual("FF0F", PaletteHelper.ColorToMemFormat(p.teeth1));
+            Assert.AreEqual("CC0C", PaletteHelper.ColorToMemFormat(p.teeth2));
+            Assert.AreEqual("9909", PaletteHelper.ColorToMemFormat(p.teeth3));
+            Assert.AreEqual("7707", PaletteHelper.ColorToMemFormat(p.teeth4));
 
-            Assert.AreEqual("7F09", Palette.ColorToMemFormat(p.pipingloss1));
-            Assert.AreEqual("5D09", Palette.ColorToMemFormat(p.pipingloss2));
-            Assert.AreEqual("3B09", Palette.ColorToMemFormat(p.pipingloss3));
-            Assert.AreEqual("0909", Palette.ColorToMemFormat(p.pipingloss4));
+            Assert.AreEqual("7F09", PaletteHelper.ColorToMemFormat(p.pipingloss1));
+            Assert.AreEqual("5D09", PaletteHelper.ColorToMemFormat(p.pipingloss2));
+            Assert.AreEqual("3B09", PaletteHelper.ColorToMemFormat(p.pipingloss3));
+            Assert.AreEqual("0909", PaletteHelper.ColorToMemFormat(p.pipingloss4));
 
-            Assert.AreEqual("7C00", Palette.ColorToMemFormat(p.costumeloss1));
-            Assert.AreEqual("5B03", Palette.ColorToMemFormat(p.costumeloss2));
-            Assert.AreEqual("4A00", Palette.ColorToMemFormat(p.costumeloss3));
-            Assert.AreEqual("0900", Palette.ColorToMemFormat(p.costumeloss4));
+            Assert.AreEqual("7C00", PaletteHelper.ColorToMemFormat(p.costumeloss1));
+            Assert.AreEqual("5B03", PaletteHelper.ColorToMemFormat(p.costumeloss2));
+            Assert.AreEqual("4A00", PaletteHelper.ColorToMemFormat(p.costumeloss3));
+            Assert.AreEqual("0900", PaletteHelper.ColorToMemFormat(p.costumeloss4));
         }
 
 
@@ -78,7 +78,7 @@ namespace PaletteSwapTest
                 srcbmp.SetPixel(i, 0, src_colors[i]);
             }
 
-            var swappedbmp = Palette.PaletteSwap(srcbmp, src_colors, dest_colors);
+            var swappedbmp = PaletteHelper.PaletteSwap(srcbmp, src_colors, dest_colors);
             for (int i = 0; i < l; i++)
             {
                 Assert.AreEqual(dest_colors[i], swappedbmp.GetPixel(i, 0));
@@ -116,13 +116,13 @@ namespace PaletteSwapTest
             string s = Portrait.bis5portrait;
             var p = new Portrait(s);
             Bitmap portrait_result = p.GenerateVictoryPortrait();
-            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(portrait_expected, portrait_result));
 
             portrait_expected = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin0);
             s = Portrait.bis0portrait;
             p = new Portrait(s);
             portrait_result = p.GenerateVictoryPortrait();
-            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(portrait_expected, portrait_result));
         }
 
 
@@ -136,7 +136,7 @@ namespace PaletteSwapTest
             {
                 var p = new Portrait(s);
                 Bitmap portrait_result = p.GenerateVictoryPortrait();
-                Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+                Assert.IsTrue(PaletteHelper.areBitmapsSame(portrait_expected, portrait_result));
             }
 
             Bitmap portrait_orig = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
@@ -181,7 +181,7 @@ namespace PaletteSwapTest
             string s = Portrait.bis5portrait;
             var p = new Portrait(s);
             Bitmap portrait_result = p.GenerateLossPortrait();
-            Assert.IsTrue(Palette.areBitmapsSame(portrait_expected, portrait_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(portrait_expected, portrait_result));
         }
 
 

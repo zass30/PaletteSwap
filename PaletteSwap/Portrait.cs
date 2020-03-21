@@ -138,36 +138,36 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             Portrait p = new Portrait();
             var v = s.Split('\n');
-            p.skin1 = Palette.RGBFormatToColor(v[0]);
-            p.skin2 = Palette.RGBFormatToColor(v[1]);
-            p.skin3 = Palette.RGBFormatToColor(v[2]);
-            p.skin4 = Palette.RGBFormatToColor(v[3]);
-            p.skin5 = Palette.RGBFormatToColor(v[4]);
-            p.skin6 = Palette.RGBFormatToColor(v[5]);
-            p.skin7 = Palette.RGBFormatToColor(v[6]);
-            p.costume1 = Palette.RGBFormatToColor(v[7]);
-            p.costume2 = Palette.RGBFormatToColor(v[8]);
-            p.costume3 = Palette.RGBFormatToColor(v[9]);
-            p.costume4 = Palette.RGBFormatToColor(v[10]);
-            p.teeth1 = Palette.RGBFormatToColor(v[11]);
-            p.teeth2 = Palette.RGBFormatToColor(v[12]);
-            p.teeth3 = Palette.RGBFormatToColor(v[13]);
-            p.teeth4 = Palette.RGBFormatToColor(v[14]);
-            p.piping1 = Palette.RGBFormatToColor(v[15]);
-            p.piping2 = Palette.RGBFormatToColor(v[16]);
-            p.piping3 = Palette.RGBFormatToColor(v[17]);
-            p.piping4 = Palette.RGBFormatToColor(v[18]);
-            p.pipingloss1 = Palette.RGBFormatToColor(v[19]);
-            p.pipingloss2 = Palette.RGBFormatToColor(v[20]);
-            p.pipingloss3 = Palette.RGBFormatToColor(v[21]);
-            p.pipingloss4 = Palette.RGBFormatToColor(v[22]);
-            p.costumeloss1 = Palette.RGBFormatToColor(v[23]);
-            p.costumeloss2 = Palette.RGBFormatToColor(v[24]);
-            p.costumeloss3 = Palette.RGBFormatToColor(v[25]);
-            p.costumeloss4 = Palette.RGBFormatToColor(v[26]);
-            p.blood1 = Palette.RGBFormatToColor(v[27]);
-            p.blood2 = Palette.RGBFormatToColor(v[28]);
-            p.blood3 = Palette.RGBFormatToColor(v[29]);
+            p.skin1 = PaletteHelper.RGBFormatToColor(v[0]);
+            p.skin2 = PaletteHelper.RGBFormatToColor(v[1]);
+            p.skin3 = PaletteHelper.RGBFormatToColor(v[2]);
+            p.skin4 = PaletteHelper.RGBFormatToColor(v[3]);
+            p.skin5 = PaletteHelper.RGBFormatToColor(v[4]);
+            p.skin6 = PaletteHelper.RGBFormatToColor(v[5]);
+            p.skin7 = PaletteHelper.RGBFormatToColor(v[6]);
+            p.costume1 = PaletteHelper.RGBFormatToColor(v[7]);
+            p.costume2 = PaletteHelper.RGBFormatToColor(v[8]);
+            p.costume3 = PaletteHelper.RGBFormatToColor(v[9]);
+            p.costume4 = PaletteHelper.RGBFormatToColor(v[10]);
+            p.teeth1 = PaletteHelper.RGBFormatToColor(v[11]);
+            p.teeth2 = PaletteHelper.RGBFormatToColor(v[12]);
+            p.teeth3 = PaletteHelper.RGBFormatToColor(v[13]);
+            p.teeth4 = PaletteHelper.RGBFormatToColor(v[14]);
+            p.piping1 = PaletteHelper.RGBFormatToColor(v[15]);
+            p.piping2 = PaletteHelper.RGBFormatToColor(v[16]);
+            p.piping3 = PaletteHelper.RGBFormatToColor(v[17]);
+            p.piping4 = PaletteHelper.RGBFormatToColor(v[18]);
+            p.pipingloss1 = PaletteHelper.RGBFormatToColor(v[19]);
+            p.pipingloss2 = PaletteHelper.RGBFormatToColor(v[20]);
+            p.pipingloss3 = PaletteHelper.RGBFormatToColor(v[21]);
+            p.pipingloss4 = PaletteHelper.RGBFormatToColor(v[22]);
+            p.costumeloss1 = PaletteHelper.RGBFormatToColor(v[23]);
+            p.costumeloss2 = PaletteHelper.RGBFormatToColor(v[24]);
+            p.costumeloss3 = PaletteHelper.RGBFormatToColor(v[25]);
+            p.costumeloss4 = PaletteHelper.RGBFormatToColor(v[26]);
+            p.blood1 = PaletteHelper.RGBFormatToColor(v[27]);
+            p.blood2 = PaletteHelper.RGBFormatToColor(v[28]);
+            p.blood3 = PaletteHelper.RGBFormatToColor(v[29]);
 
             return p;
         }
@@ -186,42 +186,42 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             this.row4 = v[3].Trim();
 
             var r1 = row1.Split(' ');
-            skin1 = Palette.MemFormatToColor(r1[0]);
-            skin2 = Palette.MemFormatToColor(r1[1]);
-            skin3 = Palette.MemFormatToColor(r1[2]);
-            skin4 = Palette.MemFormatToColor(r1[3]);
-            skin5 = Palette.MemFormatToColor(r1[4]);
-            skin6 = Palette.MemFormatToColor(r1[5]);
-            skin7 = Palette.MemFormatToColor(r1[6]);
-            piping1 = Palette.MemFormatToColor(r1[7]);
-            piping2 = Palette.MemFormatToColor(r1[8]);
-            piping3 = Palette.MemFormatToColor(r1[9]);
-            piping4 = Palette.MemFormatToColor(r1[10]);
-            costume1 = Palette.MemFormatToColor(r1[11]);
-            costume2 = Palette.MemFormatToColor(r1[12]);
-            costume3 = Palette.MemFormatToColor(r1[13]);
-            costume4 = Palette.MemFormatToColor(r1[14]);
+            skin1 = PaletteHelper.MemFormatToColor(r1[0]);
+            skin2 = PaletteHelper.MemFormatToColor(r1[1]);
+            skin3 = PaletteHelper.MemFormatToColor(r1[2]);
+            skin4 = PaletteHelper.MemFormatToColor(r1[3]);
+            skin5 = PaletteHelper.MemFormatToColor(r1[4]);
+            skin6 = PaletteHelper.MemFormatToColor(r1[5]);
+            skin7 = PaletteHelper.MemFormatToColor(r1[6]);
+            piping1 = PaletteHelper.MemFormatToColor(r1[7]);
+            piping2 = PaletteHelper.MemFormatToColor(r1[8]);
+            piping3 = PaletteHelper.MemFormatToColor(r1[9]);
+            piping4 = PaletteHelper.MemFormatToColor(r1[10]);
+            costume1 = PaletteHelper.MemFormatToColor(r1[11]);
+            costume2 = PaletteHelper.MemFormatToColor(r1[12]);
+            costume3 = PaletteHelper.MemFormatToColor(r1[13]);
+            costume4 = PaletteHelper.MemFormatToColor(r1[14]);
 
             var r2 = row2.Split(' ');
-            teeth1 = Palette.MemFormatToColor(r2[11]);
-            teeth2 = Palette.MemFormatToColor(r2[12]);
-            teeth3 = Palette.MemFormatToColor(r2[13]);
-            teeth4 = Palette.MemFormatToColor(r2[14]);
+            teeth1 = PaletteHelper.MemFormatToColor(r2[11]);
+            teeth2 = PaletteHelper.MemFormatToColor(r2[12]);
+            teeth3 = PaletteHelper.MemFormatToColor(r2[13]);
+            teeth4 = PaletteHelper.MemFormatToColor(r2[14]);
 
             var r3 = row3.Split(' ');
-            blood1 = Palette.MemFormatToColor(r3[7]);
-            blood2 = Palette.MemFormatToColor(r3[8]);
-            blood3 = Palette.MemFormatToColor(r3[9]);
+            blood1 = PaletteHelper.MemFormatToColor(r3[7]);
+            blood2 = PaletteHelper.MemFormatToColor(r3[8]);
+            blood3 = PaletteHelper.MemFormatToColor(r3[9]);
 
             var r4 = row4.Split(' ');
-            pipingloss1 = Palette.MemFormatToColor(r4[7]);
-            pipingloss2 = Palette.MemFormatToColor(r4[8]);
-            pipingloss3 = Palette.MemFormatToColor(r4[9]);
-            pipingloss4 = Palette.MemFormatToColor(r4[10]);
-            costumeloss1 = Palette.MemFormatToColor(r4[11]);
-            costumeloss2 = Palette.MemFormatToColor(r4[12]);
-            costumeloss3 = Palette.MemFormatToColor(r4[13]);
-            costumeloss4 = Palette.MemFormatToColor(r4[14]);
+            pipingloss1 = PaletteHelper.MemFormatToColor(r4[7]);
+            pipingloss2 = PaletteHelper.MemFormatToColor(r4[8]);
+            pipingloss3 = PaletteHelper.MemFormatToColor(r4[9]);
+            pipingloss4 = PaletteHelper.MemFormatToColor(r4[10]);
+            costumeloss1 = PaletteHelper.MemFormatToColor(r4[11]);
+            costumeloss2 = PaletteHelper.MemFormatToColor(r4[12]);
+            costumeloss3 = PaletteHelper.MemFormatToColor(r4[13]);
+            costumeloss4 = PaletteHelper.MemFormatToColor(r4[14]);
         }
 
         public Color[] VictoryColorsArray()
@@ -282,37 +282,37 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public string facerow()
         {
-            return String.Join(" ", new[] { skin1, skin2, skin3, skin4, skin5, skin6, skin7 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { skin1, skin2, skin3, skin4, skin5, skin6, skin7 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string costumerow()
         {
-            return String.Join(" ", new[] { costume1, costume2, costume3, costume4 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { costume1, costume2, costume3, costume4 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string teethrow()
         {
-            return String.Join(" ", new[] { teeth1, teeth2, teeth3, teeth4 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { teeth1, teeth2, teeth3, teeth4 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string pipingrow()
         {
-            return String.Join(" ", new[] { piping1, piping2, piping3, piping4 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { piping1, piping2, piping3, piping4 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string bloodrow()
         {
-            return String.Join(" ", new[] { blood1, blood2, blood3 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { blood1, blood2, blood3 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string costumelossrow()
         {
-            return String.Join(" ", new[] { costumeloss1, costumeloss2, costumeloss3, costumeloss4 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { costumeloss1, costumeloss2, costumeloss3, costumeloss4 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string pipinglossrow()
         {
-            return String.Join(" ", new[] { pipingloss1, pipingloss2, pipingloss3, pipingloss4 }.Select(x => Palette.ColorToMemFormat(x)));
+            return String.Join(" ", new[] { pipingloss1, pipingloss2, pipingloss3, pipingloss4 }.Select(x => PaletteHelper.ColorToMemFormat(x)));
         }
 
         public string portraitmem()
@@ -328,7 +328,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             Bitmap b = new Bitmap(Properties.Resources.dicportraitwin5);
             var my_colors = this.VictoryColorsArray();
-            var ret = Palette.PaletteSwap(b, PaletteHelper.orig_victory_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, PaletteHelper.orig_victory_colors, my_colors);
             return ret;
         }
 
@@ -338,7 +338,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var orig_colors = orig.LossTopColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitlosstop5);
             var my_colors = this.LossTopColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 
@@ -348,14 +348,14 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             var orig_colors = orig.LossBottomColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicportraitlossbottom5);
             var my_colors = this.LossBottomColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
         public Bitmap GenerateLossPortrait()
         {
             var top = GenerateLossTopPortrait();
             var bottom = GenerateLossBottomPortrait();
-            var loss = Palette.overlayImage(top, bottom);
+            var loss = PaletteHelper.overlayImage(top, bottom);
             return loss;
         }
 

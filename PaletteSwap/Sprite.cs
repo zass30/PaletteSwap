@@ -166,40 +166,40 @@ namespace PaletteSwap
         {
             Sprite sp = new Sprite();
             var v = s.Split('\n');
-            sp.skin1 = Palette.RGBFormatToColor(v[0]);
-            sp.skin2 = Palette.RGBFormatToColor(v[1]);
-            sp.skin3 = Palette.RGBFormatToColor(v[2]);
-            sp.skin4 = Palette.RGBFormatToColor(v[3]);
-            sp.costume1 = Palette.RGBFormatToColor(v[4]);
-            sp.costume2 = Palette.RGBFormatToColor(v[5]);
-            sp.costume3 = Palette.RGBFormatToColor(v[6]);
-            sp.costume4 = Palette.RGBFormatToColor(v[7]);
-            sp.costume5 = Palette.RGBFormatToColor(v[8]);
-            sp.pads1 = Palette.RGBFormatToColor(v[9]);
-            sp.pads2 = Palette.RGBFormatToColor(v[10]);
-            sp.pads3 = Palette.RGBFormatToColor(v[11]);
-            sp.pads4 = Palette.RGBFormatToColor(v[12]);
-            sp.pads5 = Palette.RGBFormatToColor(v[13]);
-            sp.stripe = Palette.RGBFormatToColor(v[14]);
-            sp.psychoglow = Palette.RGBFormatToColor(v[15]);
-            sp.psychopunch1 = Palette.RGBFormatToColor(v[16]);
-            sp.psychopunch2 = Palette.RGBFormatToColor(v[17]);
-            sp.psychopunch3 = Palette.RGBFormatToColor(v[18]);
-            sp.psychopunch4 = Palette.RGBFormatToColor(v[19]);
-            sp.psychopunch5 = Palette.RGBFormatToColor(v[20]);
-            sp.crushercostume1 = Palette.RGBFormatToColor(v[21]);
-            sp.crushercostume2 = Palette.RGBFormatToColor(v[22]);
-            sp.crushercostume3 = Palette.RGBFormatToColor(v[23]);
-            sp.crushercostume4 = Palette.RGBFormatToColor(v[24]);
-            sp.crusherpads1 = Palette.RGBFormatToColor(v[25]);
-            sp.crusherpads2 = Palette.RGBFormatToColor(v[26]);
-            sp.crusherpads3 = Palette.RGBFormatToColor(v[27]);
-            sp.crusherpads4 = Palette.RGBFormatToColor(v[28]);
-            sp.crusherpads5 = Palette.RGBFormatToColor(v[29]);
-            sp.crusherhands1 = Palette.RGBFormatToColor(v[30]);
-            sp.crusherhands2 = Palette.RGBFormatToColor(v[31]);
-            sp.crusherflame1 = Palette.RGBFormatToColor(v[32]);
-            sp.crusherflame2 = Palette.RGBFormatToColor(v[33]);
+            sp.skin1 = PaletteHelper.RGBFormatToColor(v[0]);
+            sp.skin2 = PaletteHelper.RGBFormatToColor(v[1]);
+            sp.skin3 = PaletteHelper.RGBFormatToColor(v[2]);
+            sp.skin4 = PaletteHelper.RGBFormatToColor(v[3]);
+            sp.costume1 = PaletteHelper.RGBFormatToColor(v[4]);
+            sp.costume2 = PaletteHelper.RGBFormatToColor(v[5]);
+            sp.costume3 = PaletteHelper.RGBFormatToColor(v[6]);
+            sp.costume4 = PaletteHelper.RGBFormatToColor(v[7]);
+            sp.costume5 = PaletteHelper.RGBFormatToColor(v[8]);
+            sp.pads1 = PaletteHelper.RGBFormatToColor(v[9]);
+            sp.pads2 = PaletteHelper.RGBFormatToColor(v[10]);
+            sp.pads3 = PaletteHelper.RGBFormatToColor(v[11]);
+            sp.pads4 = PaletteHelper.RGBFormatToColor(v[12]);
+            sp.pads5 = PaletteHelper.RGBFormatToColor(v[13]);
+            sp.stripe = PaletteHelper.RGBFormatToColor(v[14]);
+            sp.psychoglow = PaletteHelper.RGBFormatToColor(v[15]);
+            sp.psychopunch1 = PaletteHelper.RGBFormatToColor(v[16]);
+            sp.psychopunch2 = PaletteHelper.RGBFormatToColor(v[17]);
+            sp.psychopunch3 = PaletteHelper.RGBFormatToColor(v[18]);
+            sp.psychopunch4 = PaletteHelper.RGBFormatToColor(v[19]);
+            sp.psychopunch5 = PaletteHelper.RGBFormatToColor(v[20]);
+            sp.crushercostume1 = PaletteHelper.RGBFormatToColor(v[21]);
+            sp.crushercostume2 = PaletteHelper.RGBFormatToColor(v[22]);
+            sp.crushercostume3 = PaletteHelper.RGBFormatToColor(v[23]);
+            sp.crushercostume4 = PaletteHelper.RGBFormatToColor(v[24]);
+            sp.crusherpads1 = PaletteHelper.RGBFormatToColor(v[25]);
+            sp.crusherpads2 = PaletteHelper.RGBFormatToColor(v[26]);
+            sp.crusherpads3 = PaletteHelper.RGBFormatToColor(v[27]);
+            sp.crusherpads4 = PaletteHelper.RGBFormatToColor(v[28]);
+            sp.crusherpads5 = PaletteHelper.RGBFormatToColor(v[29]);
+            sp.crusherhands1 = PaletteHelper.RGBFormatToColor(v[30]);
+            sp.crusherhands2 = PaletteHelper.RGBFormatToColor(v[31]);
+            sp.crusherflame1 = PaletteHelper.RGBFormatToColor(v[32]);
+            sp.crusherflame2 = PaletteHelper.RGBFormatToColor(v[33]);
 
             return sp;
         }
@@ -283,54 +283,54 @@ namespace PaletteSwap
             this.row5 = v[4].Trim();
 
             var r1 = row1.Split(' ');
-            pads5 = Palette.MemFormatToColor(r1[0]);
-            pads4 = Palette.MemFormatToColor(r1[6]);
-            pads3 = Palette.MemFormatToColor(r1[10]);
-            pads2 = Palette.MemFormatToColor(r1[9]);
-            pads1 = Palette.MemFormatToColor(r1[8]);
+            pads5 = PaletteHelper.MemFormatToColor(r1[0]);
+            pads4 = PaletteHelper.MemFormatToColor(r1[6]);
+            pads3 = PaletteHelper.MemFormatToColor(r1[10]);
+            pads2 = PaletteHelper.MemFormatToColor(r1[9]);
+            pads1 = PaletteHelper.MemFormatToColor(r1[8]);
 
-            costume1 = Palette.MemFormatToColor(r1[5]);
-            costume2 = Palette.MemFormatToColor(r1[4]);
-            costume3 = Palette.MemFormatToColor(r1[3]);
-            costume4 = Palette.MemFormatToColor(r1[2]);
-            costume5 = Palette.MemFormatToColor(r1[1]);
+            costume1 = PaletteHelper.MemFormatToColor(r1[5]);
+            costume2 = PaletteHelper.MemFormatToColor(r1[4]);
+            costume3 = PaletteHelper.MemFormatToColor(r1[3]);
+            costume4 = PaletteHelper.MemFormatToColor(r1[2]);
+            costume5 = PaletteHelper.MemFormatToColor(r1[1]);
 
-            skin1 = Palette.MemFormatToColor(r1[11]);
-            skin2 = Palette.MemFormatToColor(r1[12]);
-            skin3 = Palette.MemFormatToColor(r1[13]);
-            skin4 = Palette.MemFormatToColor(r1[14]);
+            skin1 = PaletteHelper.MemFormatToColor(r1[11]);
+            skin2 = PaletteHelper.MemFormatToColor(r1[12]);
+            skin3 = PaletteHelper.MemFormatToColor(r1[13]);
+            skin4 = PaletteHelper.MemFormatToColor(r1[14]);
 
-            stripe = Palette.MemFormatToColor(r1[7]);
+            stripe = PaletteHelper.MemFormatToColor(r1[7]);
 
             var r2 = row2.Split(' ');
 
             var r3 = row3.Split(' ');
-            crusherpads1 = Palette.MemFormatToColor(r3[8]);
-            crusherpads2 = Palette.MemFormatToColor(r3[9]);
-            crusherpads3 = Palette.MemFormatToColor(r3[10]);
-            crusherpads4 = Palette.MemFormatToColor(r3[6]);
-            crusherpads5 = Palette.MemFormatToColor(r3[0]);
+            crusherpads1 = PaletteHelper.MemFormatToColor(r3[8]);
+            crusherpads2 = PaletteHelper.MemFormatToColor(r3[9]);
+            crusherpads3 = PaletteHelper.MemFormatToColor(r3[10]);
+            crusherpads4 = PaletteHelper.MemFormatToColor(r3[6]);
+            crusherpads5 = PaletteHelper.MemFormatToColor(r3[0]);
 
-            crushercostume1 = Palette.MemFormatToColor(r3[5]);
-            crushercostume2 = Palette.MemFormatToColor(r3[4]);
-            crushercostume3 = Palette.MemFormatToColor(r3[3]);
-            crushercostume4 = Palette.MemFormatToColor(r3[2]);
+            crushercostume1 = PaletteHelper.MemFormatToColor(r3[5]);
+            crushercostume2 = PaletteHelper.MemFormatToColor(r3[4]);
+            crushercostume3 = PaletteHelper.MemFormatToColor(r3[3]);
+            crushercostume4 = PaletteHelper.MemFormatToColor(r3[2]);
 
-            crusherhands1 = Palette.MemFormatToColor(r3[12]);
-            crusherhands2 = Palette.MemFormatToColor(r3[13]);
+            crusherhands1 = PaletteHelper.MemFormatToColor(r3[12]);
+            crusherhands2 = PaletteHelper.MemFormatToColor(r3[13]);
 
-            crusherflame1 = Palette.MemFormatToColor(r3[7]);
-            crusherflame2 = Palette.MemFormatToColor(r3[11]);
+            crusherflame1 = PaletteHelper.MemFormatToColor(r3[7]);
+            crusherflame2 = PaletteHelper.MemFormatToColor(r3[11]);
 
             var r4 = row4.Split(' ');
-            psychoglow = Palette.MemFormatToColor(r4[6]);
+            psychoglow = PaletteHelper.MemFormatToColor(r4[6]);
 
             var r5 = row5.Split(' ');
-            psychopunch1 = Palette.MemFormatToColor(r5[6]);
-            psychopunch2 = Palette.MemFormatToColor(r5[7]);
-            psychopunch3 = Palette.MemFormatToColor(r5[8]);
-            psychopunch4 = Palette.MemFormatToColor(r5[9]);
-            psychopunch5 = Palette.MemFormatToColor(r5[10]);
+            psychopunch1 = PaletteHelper.MemFormatToColor(r5[6]);
+            psychopunch2 = PaletteHelper.MemFormatToColor(r5[7]);
+            psychopunch3 = PaletteHelper.MemFormatToColor(r5[8]);
+            psychopunch4 = PaletteHelper.MemFormatToColor(r5[9]);
+            psychopunch5 = PaletteHelper.MemFormatToColor(r5[10]);
         }
 
         public Color[] CrusherSpriteColorsArray()
@@ -398,7 +398,7 @@ namespace PaletteSwap
             var orig_colors = orig.StandingSpriteColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicstand1);
             var my_colors = this.StandingSpriteColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 
@@ -408,7 +408,7 @@ namespace PaletteSwap
             var orig_colors = orig.PsychoPunchSpriteColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicmp1);
             var my_colors = this.PsychoPunchSpriteColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 
@@ -418,7 +418,7 @@ namespace PaletteSwap
             var orig_colors = orig.PsychoPrepSpriteColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.dicpsychoprep5);
             var my_colors = this.PsychoPrepSpriteColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 
@@ -428,7 +428,7 @@ namespace PaletteSwap
             var orig_colors = orig.CrusherSpriteColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.diccrusher1_5);
             var my_colors = this.CrusherSpriteColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 
@@ -438,7 +438,7 @@ namespace PaletteSwap
             var orig_colors = orig.CrusherSpriteColorsArray();
             Bitmap b = new Bitmap(Properties.Resources.diccrusher2_5);
             var my_colors = this.CrusherSpriteColorsArray();
-            var ret = Palette.PaletteSwap(b, orig_colors, my_colors);
+            var ret = PaletteHelper.PaletteSwap(b, orig_colors, my_colors);
             return ret;
         }
 

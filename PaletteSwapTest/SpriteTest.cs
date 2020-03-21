@@ -23,58 +23,58 @@ namespace PaletteSwapTest
         {
             string s = Sprite.bis5sprite;
             var p = new Sprite(s);
-            Assert.AreEqual("FD0A", Palette.ColorToMemFormat(p.pads1));
-            Assert.AreEqual("DB06", Palette.ColorToMemFormat(p.pads2));
-            Assert.AreEqual("A803", Palette.ColorToMemFormat(p.pads3));
-            Assert.AreEqual("6402", Palette.ColorToMemFormat(p.pads4));
-            Assert.AreEqual("4101", Palette.ColorToMemFormat(p.pads5));
+            Assert.AreEqual("FD0A", PaletteHelper.ColorToMemFormat(p.pads1));
+            Assert.AreEqual("DB06", PaletteHelper.ColorToMemFormat(p.pads2));
+            Assert.AreEqual("A803", PaletteHelper.ColorToMemFormat(p.pads3));
+            Assert.AreEqual("6402", PaletteHelper.ColorToMemFormat(p.pads4));
+            Assert.AreEqual("4101", PaletteHelper.ColorToMemFormat(p.pads5));
 
-            Assert.AreEqual("BF0F", Palette.ColorToMemFormat(p.costume1));
-            Assert.AreEqual("8E0E", Palette.ColorToMemFormat(p.costume2));
-            Assert.AreEqual("6C0C", Palette.ColorToMemFormat(p.costume3));
-            Assert.AreEqual("4909", Palette.ColorToMemFormat(p.costume4));
-            Assert.AreEqual("0606", Palette.ColorToMemFormat(p.costume5));
+            Assert.AreEqual("BF0F", PaletteHelper.ColorToMemFormat(p.costume1));
+            Assert.AreEqual("8E0E", PaletteHelper.ColorToMemFormat(p.costume2));
+            Assert.AreEqual("6C0C", PaletteHelper.ColorToMemFormat(p.costume3));
+            Assert.AreEqual("4909", PaletteHelper.ColorToMemFormat(p.costume4));
+            Assert.AreEqual("0606", PaletteHelper.ColorToMemFormat(p.costume5));
 
-            Assert.AreEqual("FE0E", Palette.ColorToMemFormat(p.skin1));
-            Assert.AreEqual("B90C", Palette.ColorToMemFormat(p.skin2));
-            Assert.AreEqual("7609", Palette.ColorToMemFormat(p.skin3));
-            Assert.AreEqual("5307", Palette.ColorToMemFormat(p.skin4));
+            Assert.AreEqual("FE0E", PaletteHelper.ColorToMemFormat(p.skin1));
+            Assert.AreEqual("B90C", PaletteHelper.ColorToMemFormat(p.skin2));
+            Assert.AreEqual("7609", PaletteHelper.ColorToMemFormat(p.skin3));
+            Assert.AreEqual("5307", PaletteHelper.ColorToMemFormat(p.skin4));
 
-            Assert.AreEqual("330D", Palette.ColorToMemFormat(p.stripe));
+            Assert.AreEqual("330D", PaletteHelper.ColorToMemFormat(p.stripe));
 
-            Assert.AreEqual("FE0D", Palette.ColorToMemFormat(p.psychoglow));
+            Assert.AreEqual("FE0D", PaletteHelper.ColorToMemFormat(p.psychoglow));
 
-            Assert.AreEqual("FF0E", Palette.ColorToMemFormat(p.psychopunch1));
-            Assert.AreEqual("DF0C", Palette.ColorToMemFormat(p.psychopunch2));
-            Assert.AreEqual("AF09", Palette.ColorToMemFormat(p.psychopunch3));
-            Assert.AreEqual("8F07", Palette.ColorToMemFormat(p.psychopunch4));
-            Assert.AreEqual("6F05", Palette.ColorToMemFormat(p.psychopunch5));
+            Assert.AreEqual("FF0E", PaletteHelper.ColorToMemFormat(p.psychopunch1));
+            Assert.AreEqual("DF0C", PaletteHelper.ColorToMemFormat(p.psychopunch2));
+            Assert.AreEqual("AF09", PaletteHelper.ColorToMemFormat(p.psychopunch3));
+            Assert.AreEqual("8F07", PaletteHelper.ColorToMemFormat(p.psychopunch4));
+            Assert.AreEqual("6F05", PaletteHelper.ColorToMemFormat(p.psychopunch5));
 
-            Assert.AreEqual("DF0F", Palette.ColorToMemFormat(p.crushercostume1));
-            Assert.AreEqual("AE0E", Palette.ColorToMemFormat(p.crushercostume2));
-            Assert.AreEqual("7C0C", Palette.ColorToMemFormat(p.crushercostume3));
-            Assert.AreEqual("6A0A", Palette.ColorToMemFormat(p.crushercostume4));
+            Assert.AreEqual("DF0F", PaletteHelper.ColorToMemFormat(p.crushercostume1));
+            Assert.AreEqual("AE0E", PaletteHelper.ColorToMemFormat(p.crushercostume2));
+            Assert.AreEqual("7C0C", PaletteHelper.ColorToMemFormat(p.crushercostume3));
+            Assert.AreEqual("6A0A", PaletteHelper.ColorToMemFormat(p.crushercostume4));
 
-            Assert.AreEqual("FF0E", Palette.ColorToMemFormat(p.crusherpads1));
-            Assert.AreEqual("DA08", Palette.ColorToMemFormat(p.crusherpads2));
-            Assert.AreEqual("9506", Palette.ColorToMemFormat(p.crusherpads3));
-            Assert.AreEqual("7305", Palette.ColorToMemFormat(p.crusherpads4));
-            Assert.AreEqual("5200", Palette.ColorToMemFormat(p.crusherpads5));
+            Assert.AreEqual("FF0E", PaletteHelper.ColorToMemFormat(p.crusherpads1));
+            Assert.AreEqual("DA08", PaletteHelper.ColorToMemFormat(p.crusherpads2));
+            Assert.AreEqual("9506", PaletteHelper.ColorToMemFormat(p.crusherpads3));
+            Assert.AreEqual("7305", PaletteHelper.ColorToMemFormat(p.crusherpads4));
+            Assert.AreEqual("5200", PaletteHelper.ColorToMemFormat(p.crusherpads5));
 
-            Assert.AreEqual("EC0B", Palette.ColorToMemFormat(p.crusherhands1));
-            Assert.AreEqual("CA08", Palette.ColorToMemFormat(p.crusherhands2));
+            Assert.AreEqual("EC0B", PaletteHelper.ColorToMemFormat(p.crusherhands1));
+            Assert.AreEqual("CA08", PaletteHelper.ColorToMemFormat(p.crusherhands2));
 
-            Assert.AreEqual("EF0D", Palette.ColorToMemFormat(p.crusherflame1));
-            Assert.AreEqual("F80E", Palette.ColorToMemFormat(p.crusherflame2));
+            Assert.AreEqual("EF0D", PaletteHelper.ColorToMemFormat(p.crusherflame1));
+            Assert.AreEqual("F80E", PaletteHelper.ColorToMemFormat(p.crusherflame2));
 
 
             s = Sprite.bis1sprite;
             p = new Sprite(s);
-            Assert.AreEqual("FE0B", Palette.ColorToMemFormat(p.costume1));
-            Assert.AreEqual("EB08", Palette.ColorToMemFormat(p.costume2));
-            Assert.AreEqual("C705", Palette.ColorToMemFormat(p.costume3));
-            Assert.AreEqual("9503", Palette.ColorToMemFormat(p.costume4));
-            Assert.AreEqual("7300", Palette.ColorToMemFormat(p.costume5));
+            Assert.AreEqual("FE0B", PaletteHelper.ColorToMemFormat(p.costume1));
+            Assert.AreEqual("EB08", PaletteHelper.ColorToMemFormat(p.costume2));
+            Assert.AreEqual("C705", PaletteHelper.ColorToMemFormat(p.costume3));
+            Assert.AreEqual("9503", PaletteHelper.ColorToMemFormat(p.costume4));
+            Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(p.costume5));
         }
 
 
@@ -84,12 +84,12 @@ namespace PaletteSwapTest
             Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand1);
             var s = new Sprite(Sprite.bis1sprite);
             Bitmap sprite_result = s.GenerateStandingSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GenerateStandingSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
         }
 
         [TestMethod]
@@ -104,17 +104,17 @@ namespace PaletteSwapTest
             Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep5);
             var s = new Sprite(Sprite.bis5sprite);
             Bitmap sprite_result = s.GeneratePsychoPrepSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep1);
             s = new Sprite(Sprite.bis1sprite);
             sprite_result = s.GeneratePsychoPrepSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicpsychoprep0);
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GeneratePsychoPrepSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
         }
 
         [TestMethod]
@@ -123,27 +123,27 @@ namespace PaletteSwapTest
             Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher1_5);
             var s = new Sprite(Sprite.bis5sprite);
             Bitmap sprite_result = s.GenerateCrusherTopSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher2_5);
             s = new Sprite(Sprite.bis5sprite);
             sprite_result = s.GenerateCrusherSideSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher1_0);
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GenerateCrusherTopSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher2_0);
             s = new Sprite(Sprite.bis0sprite);
             sprite_result = s.GenerateCrusherSideSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
 
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.diccrusher2_1);
             s = new Sprite(Sprite.bis1sprite);
             sprite_result = s.GenerateCrusherSideSprite();
-            Assert.IsTrue(Palette.areBitmapsSame(sprite_expected, sprite_result));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
         }
 
 

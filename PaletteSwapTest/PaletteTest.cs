@@ -25,7 +25,7 @@ namespace PaletteSwapTest
             }
             srcbmp.SetPixel(5, 0, Color.FromArgb(0, 0, 0, 0));
             srcbmp.SetPixel(10, 0, Color.FromArgb(0, 0, 0, 0));
-            var resultbmp = Palette.overlayTransparency(srcbmp, destbmp);
+            var resultbmp = PaletteHelper.overlayTransparency(srcbmp, destbmp);
             Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(5, 0));
             Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(10, 0));
             Assert.AreEqual(Color.FromArgb(255, 25, 3, 5), resultbmp.GetPixel(17, 0));
@@ -43,7 +43,7 @@ namespace PaletteSwapTest
             srcbmp.SetPixel(5, 0, Color.FromArgb(255, 255, 0, 255));
             srcbmp.SetPixel(10, 0, Color.FromArgb(255, 255, 0, 255));
 
-            var resultbmp = Palette.createColorMask(srcbmp, Color.FromArgb(255, 255, 0, 255));
+            var resultbmp = PaletteHelper.createColorMask(srcbmp, Color.FromArgb(255, 255, 0, 255));
 
             Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(0, 0));
             Assert.AreEqual(Color.FromArgb(0, 0, 0, 0), resultbmp.GetPixel(15, 0));
@@ -66,7 +66,7 @@ namespace PaletteSwapTest
             foreground.SetPixel(5, 0, Color.FromArgb(255, 255, 0, 255));
             foreground.SetPixel(10, 0, Color.FromArgb(255, 255, 0, 255));
 
-            var resultbmp = Palette.overlayImage(foreground, background);
+            var resultbmp = PaletteHelper.overlayImage(foreground, background);
 
             Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), resultbmp.GetPixel(0, 0));
             Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), resultbmp.GetPixel(15, 0));
@@ -80,19 +80,19 @@ namespace PaletteSwapTest
         public void ColorToMemFormatTest()
         {
             Color c = Color.FromArgb(255, 255, 255, 255);
-            var s = Palette.ColorToMemFormat(c);
+            var s = PaletteHelper.ColorToMemFormat(c);
             Assert.AreEqual("FF0F", s);
 
             c = Color.FromArgb(255, 0, 255, 255);
-            s = Palette.ColorToMemFormat(c);
+            s = PaletteHelper.ColorToMemFormat(c);
             Assert.AreEqual("FF00", s);
 
             c = Color.FromArgb(255, 0, 0, 255);
-            s = Palette.ColorToMemFormat(c);
+            s = PaletteHelper.ColorToMemFormat(c);
             Assert.AreEqual("0F00", s);
 
             c = Color.FromArgb(255, 0, 0, 0);
-            s = Palette.ColorToMemFormat(c);
+            s = PaletteHelper.ColorToMemFormat(c);
             Assert.AreEqual("0000", s);
         }
 
@@ -100,19 +100,19 @@ namespace PaletteSwapTest
         public void MemFormatToColorTest()
         {
             var s = "FF0F";
-            var c = Palette.MemFormatToColor(s);
+            var c = PaletteHelper.MemFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), c);
 
             s = "0000";
-            c = Palette.MemFormatToColor(s);
+            c = PaletteHelper.MemFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), c);
 
             s = "FF00";
-            c = Palette.MemFormatToColor(s);
+            c = PaletteHelper.MemFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 0, 255, 255), c);
 
             s = "0F00";
-            c = Palette.MemFormatToColor(s);
+            c = PaletteHelper.MemFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), c);
         }
 
@@ -121,11 +121,11 @@ namespace PaletteSwapTest
         public void ColFormatToColorTest()
         {
             var s = "255 255 255";
-            var c = Palette.RGBFormatToColor(s);
+            var c = PaletteHelper.RGBFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), c);
 
             s = "17 34 51";
-            c = Palette.RGBFormatToColor(s);
+            c = PaletteHelper.RGBFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 17, 34, 51), c);
         }
 
@@ -136,9 +136,9 @@ namespace PaletteSwapTest
         {
             Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
             Bitmap b = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
-            Assert.IsTrue(Palette.areBitmapsSame(a,b));
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(a,b));
             b.SetPixel(10, 10, Color.Chocolate);
-            Assert.IsFalse(Palette.areBitmapsSame(a, b));
+            Assert.IsFalse(PaletteHelper.areBitmapsSame(a, b));
         }
 
 
