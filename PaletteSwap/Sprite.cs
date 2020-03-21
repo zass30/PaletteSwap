@@ -7,6 +7,19 @@ using System.Text.RegularExpressions;
 
 namespace PaletteSwap
 {
+    // abstract class for sprite and portrait
+    // might be better to just combine them into one big color set that has several
+    // images. maybe not b/c each one has its own byte representation
+    public abstract class Palette
+    {
+        // a set of "name", "color" pairs
+
+        // ability to get "color" from a given name. Dictionary?
+
+        // abilty to get a Byte[] representation 
+
+        // constructor from Byte[] or string.
+    }
     public class Sprite
     {
         // todo: add 0500 to all of these and fix tests
@@ -15,6 +28,8 @@ namespace PaletteSwap
         // crusher top sprite, etc. This would have a base image and a remap table
         // and this class would have a list of these images objects, along with a 
         // byteArray output and a .col output
+        // question: the base image should have access to colors from parent sprite
+        // or portrait
         public static readonly string bis0sprite = @"0007 0800 2A02 4C00 6D03 8E00 300A B00F F70F B00F 700F FC0F C80D 7309 4005 0000 
 0007 2302 3403 5605 6706 7807 8A08 9B09 F70F B00F 700F FC0F C80D 7309 4005 0000 
 5009 6800 7A02 9C04 CE06 EF0B 700B FC0F FF0F F80F B00E DB07 B805 8604 4300 0000 
