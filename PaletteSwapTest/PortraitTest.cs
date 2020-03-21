@@ -8,7 +8,6 @@ namespace PaletteSwapTest
     [TestClass]
     public class PortraitTest
     {
-
         [TestMethod]
         public void PortraitNewTest()
         {
@@ -60,7 +59,6 @@ namespace PaletteSwapTest
             Assert.AreEqual("4A00", PaletteHelper.ColorToMemFormat(p.costumeloss3));
             Assert.AreEqual("0900", PaletteHelper.ColorToMemFormat(p.costumeloss4));
         }
-
 
         [TestMethod]
         public void PaletteSwapArrayTest()
@@ -124,7 +122,6 @@ namespace PaletteSwapTest
             Assert.IsTrue(PaletteHelper.areBitmapsSame(portrait_expected, portrait_result));
         }
 
-
         [TestMethod]
         public void GenerateVictoryPortraitPerfTest()
         {
@@ -183,7 +180,6 @@ namespace PaletteSwapTest
             Assert.IsTrue(PaletteHelper.areBitmapsSame(portrait_expected, portrait_result));
         }
 
-
         [TestMethod]
         public void WritePortraitByteStreamBasicTest()
         {
@@ -200,7 +196,6 @@ namespace PaletteSwapTest
             }
         }
 
-
         [TestMethod]
         public void WritePortraitToColFormatTest()
         {
@@ -216,7 +211,6 @@ namespace PaletteSwapTest
             string_result = portrait.ToColFormat();
             Assert.AreEqual(string_expected, string_result);
         }
-
 
         [TestMethod]
         public void LoadPortraitFromColFormatTest()

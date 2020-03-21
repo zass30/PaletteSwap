@@ -17,7 +17,6 @@ namespace PaletteSwapTest
             Assert.AreEqual("0007 0800 2A02 4C00 6D03 8E00 FF0F E90F A40E 700E 400D FC0F C80D 7309 4005 0000", sprite.row5);
         }
 
-
         [TestMethod]
         public void SpriteColorsTest()
         {
@@ -77,7 +76,6 @@ namespace PaletteSwapTest
             Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(p.costume5));
         }
 
-
         [TestMethod]
         public void GenerateStandSpriteTest()
         {
@@ -95,8 +93,8 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GeneratePsychoPunchSpriteTest()
         {
+            Assert.IsTrue(false);
         }
-
 
         [TestMethod]
         public void GeneratePsychoPrepSpriteTest()
@@ -146,7 +144,6 @@ namespace PaletteSwapTest
             Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
         }
 
-
         [TestMethod]
         public void WriteSpriteByteStreamBasicTest()
         {
@@ -162,9 +159,6 @@ namespace PaletteSwapTest
                 Assert.AreEqual(data_expected[0], data_result[0]);
             }
         }
-
-
-
 
         [TestMethod]
         public void WriteSpriteByteStreamChangeFieldsTest()
@@ -202,6 +196,7 @@ namespace PaletteSwapTest
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
+
         [TestMethod]
         public void WriteSpriteByteStreamChangeSpriteTest()
         {

@@ -69,7 +69,6 @@ namespace PaletteSwapTest
             Assert.AreEqual(Color.FromArgb(255, 255, 0, 255), resultbmp.GetPixel(10, 0));
         }
 
-
         [TestMethod]
         public void ColorToMemFormatTest()
         {
@@ -110,7 +109,6 @@ namespace PaletteSwapTest
             Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), c);
         }
 
-
         [TestMethod]
         public void ColFormatToColorTest()
         {
@@ -123,8 +121,6 @@ namespace PaletteSwapTest
             Assert.AreEqual(Color.FromArgb(255, 17, 34, 51), c);
         }
 
-
-
         [TestMethod]
         public void AreBitmapsSameTest()
         {
@@ -134,7 +130,6 @@ namespace PaletteSwapTest
             b.SetPixel(10, 10, Color.Chocolate);
             Assert.IsFalse(PaletteHelper.areBitmapsSame(a, b));
         }
-
 
         [TestMethod]
         public void ByteStreamToStringTest()
@@ -173,7 +168,6 @@ namespace PaletteSwapTest
             }
 
         }
-
 
         [TestMethod]
         public void ColorToByteTest()
