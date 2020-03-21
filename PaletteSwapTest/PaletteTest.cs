@@ -1,17 +1,11 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Reflection;
-using System.Linq;
-using System.Text.RegularExpressions;
-using PaletteSwap.Properties;
 
 namespace PaletteSwapTest
 {
     [TestClass]
-    public class PaletteTest
+    public class PaletteHelperTest
     {
         [TestMethod]
         public void OverlayTransparencyTest()
