@@ -20,6 +20,18 @@ namespace PaletteSwap
 
         // constructor from Byte[] or string.
     }
+
+    public abstract class PaletteImage
+    {
+        // a base bitmap (static)
+
+        // a color remap table
+
+        // ability to output remapped Image
+
+        // access colors from parent palette
+    }
+
     public class Sprite
     {
         // todo: add 0500 to all of these and fix tests
