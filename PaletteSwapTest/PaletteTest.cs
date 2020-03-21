@@ -121,11 +121,11 @@ namespace PaletteSwapTest
         public void ColFormatToColorTest()
         {
             var s = "255 255 255";
-            var c = Palette.ColFormatToColor(s);
+            var c = Palette.RGBFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), c);
 
             s = "17 34 51";
-            c = Palette.ColFormatToColor(s);
+            c = Palette.RGBFormatToColor(s);
             Assert.AreEqual(Color.FromArgb(255, 17, 34, 51), c);
         }
 

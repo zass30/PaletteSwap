@@ -168,7 +168,7 @@ namespace PaletteSwap
             return Color.FromArgb(cint);
         }
 
-        public static Color ColFormatToColor(string s)
+        public static Color RGBFormatToColor(string s)
         {
             var v = s.Split(' ');
             var R = int.Parse(v[0]);
@@ -177,7 +177,7 @@ namespace PaletteSwap
             return Color.FromArgb(255, R, G, B);
         }
 
-        public static Boolean areBitmapsSame(Bitmap a, Bitmap b)
+        public static bool areBitmapsSame(Bitmap a, Bitmap b)
         {
             if (a.Width != b.Width || a.Height != b.Height)
                 return false;
@@ -267,9 +267,7 @@ namespace PaletteSwap
                     }
                 }
             }
-
             return retimg;
-
         }
     }   
 }
