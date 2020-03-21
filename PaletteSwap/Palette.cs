@@ -123,28 +123,6 @@ namespace PaletteSwap
     
     public class Palette
     {
-        public Color[] colors;
-
-        public Palette()
-        {
-            colors = new Color[15];
-            for (int i = 0; i < colors.Length; i++)
-            {
-                colors[i] = Color.FromArgb(0, 0, 0, 0);
-            }
-        }
-
-        public string asMem()
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < colors.Length; i++)
-            {
-                sb.Append(ColorToMemFormat(colors[i]));
-                sb.Append(" ");
-            }
-            return sb.ToString().Trim();
-        }
-
         public static Bitmap PaletteSwap(Bitmap img, Color[] p_src, Color[] p_dest)
         {
             // foreach pixel in image
@@ -172,22 +150,6 @@ namespace PaletteSwap
                     return p_dest[i];
             }
             return c;
-        }
-
-        public static Palette PaletteFromMem(string s)
-        {
-            var pal = new Palette();
-            string[] s_colors = s.Split(' ');
-            for (int i = 0; i < pal.colors.Length; i++)
-            {
-                string c = "FF" + s_colors[i][3].ToString() +
-                    s_colors[i][3].ToString() + s_colors[i][0].ToString() + s_colors[i][0].ToString()
-                    + s_colors[i][1].ToString() + s_colors[i][1].ToString();
-
-                var cint = int.Parse(c, System.Globalization.NumberStyles.HexNumber);
-                pal.colors[i] = Color.FromArgb(cint);
-            }
-            return pal;
         }
 
         public static string ColorToMemFormat(Color c)

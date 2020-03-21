@@ -14,15 +14,6 @@ namespace PaletteSwapTest
     public class PaletteTest
     {
         [TestMethod]
-        public void PaletteMemTest()
-        {
-            var pal = new Palette();
-            string sMem = "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000";
-            string result = pal.asMem();
-            Assert.AreEqual(sMem, result);
-        }
-
-        [TestMethod]
         public void OverlayTransparencyTest()
         {
             Bitmap srcbmp = new Bitmap(20, 1);
