@@ -182,6 +182,24 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             { PORTRAIT_COLORS.skin1, new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
             { PORTRAIT_COLORS.skin2, new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+            { PORTRAIT_COLORS.skin3, new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+            { PORTRAIT_COLORS.skin4, new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+            { PORTRAIT_COLORS.skin5, new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+            { PORTRAIT_COLORS.skin6, new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+            { PORTRAIT_COLORS.skin7, new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+            { PORTRAIT_COLORS.piping1, new List<int>() { 14, ROWLEN * 1 + 14 } },
+            { PORTRAIT_COLORS.piping2, new List<int>() { 16, ROWLEN * 1 + 16 } },
+            { PORTRAIT_COLORS.piping3, new List<int>() { 18, ROWLEN * 1 + 18 } },
+            { PORTRAIT_COLORS.piping4, new List<int>() { 20, ROWLEN * 1 + 20 } },
+            { PORTRAIT_COLORS.costume1, new List<int>() { 22 } },
+            { PORTRAIT_COLORS.costume2, new List<int>() { 24 } },
+            { PORTRAIT_COLORS.costume3, new List<int>() { 26 } },
+            { PORTRAIT_COLORS.costume4, new List<int>() { 28 } },
+            { PORTRAIT_COLORS.teeth1, new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
+            { PORTRAIT_COLORS.teeth2, new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
+            { PORTRAIT_COLORS.teeth3, new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
+            { PORTRAIT_COLORS.teeth4, new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
+
         };
 
         public Portrait(string s)

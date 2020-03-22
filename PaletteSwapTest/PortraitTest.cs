@@ -239,6 +239,44 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void WritePortraitByteStreamChangeSpriteTest()
+        {
+            var portrait = new Portrait(Portrait.bis0portrait);
+            string s_expected = Portrait.portraitAsTextLine(Portrait.bis0portrait);
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // test #3
+            // change all fields in portrait0 to portrait5, check new byte 
+            // representation is correct
+
+            var portrait0 = new Portrait(Portrait.bis0portrait);
+            var portrait5 = new Portrait(Portrait.bis5portrait);
+
+            Assert.AreNotEqual(portrait5.costume1, portrait0.costume1);
+
+            var portraitType = portrait.GetType();
+            foreach (var label in Enum.GetNames(typeof(Portrait.PORTRAIT_COLORS)))
+            {
+                var myFieldInfo = portraitType.GetField(label.ToString());
+                var portrait5color = (Color)myFieldInfo.GetValue(portrait5);
+                myFieldInfo.SetValue(portrait0, portrait5color);
+            }
+
+            Assert.AreEqual(portrait5.costume1, portrait0.costume1);
+
+            // check that they have identical byte strings
+            var data_result = portrait0.ByteStream();
+            s_expected = Portrait.portraitAsTextLine(Portrait.bis5portrait);
+            data_expected = PaletteHelper.StringToByteStream(s_expected);
+
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+//                if (Portrait.unusedOffsets.ContainsKey(i))
+//                    continue;
+                Assert.AreEqual(data_expected[i], data_result[i]);
+            }
+        }
+
+        [TestMethod]
         public void WritePortraitToColFormatTest()
         {
             string s = Portrait.bis0portrait;
