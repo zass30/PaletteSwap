@@ -74,7 +74,10 @@ namespace PaletteSwap
 
         public static Color ByteToColor (byte[] b)
         {
-            return Color.AliceBlue;
+            int R = (b[1] % 16) * 17;
+            int B = (b[0] % 16) * 17;
+            int G = (b[0] / 16) * 17;
+            return Color.FromArgb(0, R, G, B);
         }
 
         public static Bitmap PaletteSwap(Bitmap img, Color[] p_src, Color[] p_dest)
