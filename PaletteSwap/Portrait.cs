@@ -4,6 +4,7 @@ using System.Text;
 using System.Drawing.Imaging;
 using System.Drawing;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
 namespace PaletteSwap
 {
@@ -174,6 +175,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
 
         }
+
+        public static int ROWLEN = 32;
+
+        public static Dictionary<PORTRAIT_COLORS, List<int>> colorsToMemOffsets = new Dictionary<PORTRAIT_COLORS, List<int>>
+        {
+            { PORTRAIT_COLORS.skin1, new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+        };
 
         public Portrait(string s)
         {
@@ -361,17 +369,17 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         {
             string s = portraitAsTextLine(bis0portrait);
             byte[] b = PaletteHelper.StringToByteStream(s);
-
-            /**            foreach (var k in colorsToMemOffsets.Keys)
-                        {
-                            Color col = this.ColorFromSpriteColor(k);
-                            byte[] c = PaletteHelper.ColorToByte(col);
-                            foreach (int offset in colorsToMemOffsets[k])
-                            {
-                                b[offset] = c[0];
-                                b[offset + 1] = c[1];
-                            }
-                        }*/
+        
+            foreach (var k in colorsToMemOffsets.Keys)
+            {
+                Color col = this.ColorFromSpriteColor(k);
+                byte[] c = PaletteHelper.ColorToByte(col);
+                foreach (int offset in colorsToMemOffsets[k])
+                {
+                    b[offset] = c[0];
+                    b[offset + 1] = c[1];
+                }
+            }
             return b;
         }
 

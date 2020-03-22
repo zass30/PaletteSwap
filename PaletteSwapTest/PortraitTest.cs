@@ -198,6 +198,36 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void WritePortraitByteStreamChangeFieldsTest()
+        {
+            var portrait = new Portrait(Portrait.bis0portrait);
+            string s_expected = Portrait.portraitAsTextLine(Portrait.bis0portrait);
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // test #2
+            // modify a few fields, check that results are what we expect 
+
+            //  skin 1
+            data_expected[0] = 0x23;
+            data_expected[1] = 0x01;
+            data_expected[0 + 32] = 0x23;
+            data_expected[1 + 32] = 0x01;
+            data_expected[0 + 2*32] = 0x23;
+            data_expected[1 + 2*32] = 0x01;
+            data_expected[0 + 3 * 32] = 0x23;
+            data_expected[1 + 3 * 32] = 0x01;
+
+            portrait.skin1 = Color.FromArgb(0, 17, 34, 51);
+
+            var data_result = portrait.ByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+//                if (Portrait.unusedOffsets.ContainsKey(i))
+//                    continue;
+                Assert.AreEqual(data_expected[i], data_result[i]);
+            }
+        }
+
+        [TestMethod]
         public void WritePortraitToColFormatTest()
         {
             string s = Portrait.bis0portrait;
@@ -236,7 +266,7 @@ namespace PaletteSwapTest
                 var sprite_color = (Portrait.PORTRAIT_COLORS)Enum.Parse(typeof(Portrait.PORTRAIT_COLORS), label);
                 var result = portrait.ColorFromSpriteColor(sprite_color);
                 Assert.AreEqual(expected, result);
-            }
-        }
+            }        
+        }        
     }
 }
