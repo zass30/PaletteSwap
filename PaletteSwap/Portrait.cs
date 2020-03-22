@@ -10,9 +10,9 @@ namespace PaletteSwap
 {
     public class Portrait
     {
-        public static readonly string bis0portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00
-FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F FF0F CC0C 9909 7707 0A00
-FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00
+        public static readonly string bis0portrait = @"FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F 8E00 6D03 4C00 2A02 0A00 
+FF0F D90F 960E 750C 640A 5408 4306 FE0F F90F D50F A00F FF0F CC0C 9909 7707 0A00 
+FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 
 FF0F D90F 960E 750C 640A 5408 4306 7F09 5D09 3B09 0909 7C00 5B03 4A00 0900 0A00";
         public static readonly string bis1portrait = @"FD0F EB0F B70E 950C 740A 6008 4106 B70F 700F 400C 2008 EB08 C705 9503 7300 0A00 
 FD0F EB0F B70E 950C 740A 6008 4106 B70F 700F 400C 2008 FF0F CC0C 9909 7707 0A00 
@@ -199,7 +199,17 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             { PORTRAIT_COLORS.teeth2, new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
             { PORTRAIT_COLORS.teeth3, new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
             { PORTRAIT_COLORS.teeth4, new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
-
+            { PORTRAIT_COLORS.blood1, new List<int>() { ROWLEN * 2 + 14 } },
+            { PORTRAIT_COLORS.blood2, new List<int>() { ROWLEN * 2 + 16 } },
+            { PORTRAIT_COLORS.blood3, new List<int>() { ROWLEN * 2 + 18 } },
+            { PORTRAIT_COLORS.pipingloss1, new List<int>() { ROWLEN * 3 + 14 } },
+            { PORTRAIT_COLORS.pipingloss2, new List<int>() { ROWLEN * 3 + 16 } },
+            { PORTRAIT_COLORS.pipingloss3, new List<int>() { ROWLEN * 3 + 18 } },
+            { PORTRAIT_COLORS.pipingloss4, new List<int>() { ROWLEN * 3 + 20 } },
+            { PORTRAIT_COLORS.costumeloss1, new List<int>() { ROWLEN * 3 + 22 } },
+            { PORTRAIT_COLORS.costumeloss2, new List<int>() { ROWLEN * 3 + 24 } },
+            { PORTRAIT_COLORS.costumeloss3, new List<int>() { ROWLEN * 3 + 26 } },
+            { PORTRAIT_COLORS.costumeloss4, new List<int>() { ROWLEN * 3 + 28 } },
         };
 
         public Portrait(string s)
