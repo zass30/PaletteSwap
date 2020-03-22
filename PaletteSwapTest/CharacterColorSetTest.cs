@@ -45,7 +45,7 @@ namespace PaletteSwapTest
         {
             var cs = new CharacterColorSet();
             byte[] b = cs.sprites_stream04();
-            byte[] b_expected = Resources.sfxe1;
+            byte[] b_expected = Resources.sfxe04a;
 
             for (int i = 0; i < b_expected.Length; i++)
             {
@@ -81,7 +81,7 @@ namespace PaletteSwapTest
         {
             var cs = new CharacterColorSet();
             byte[] b = cs.portraits_stream03();
-            byte[] b_expected = Resources.sfxe;
+            byte[] b_expected = Resources.sfxe03c;
 
             for (int i = 0; i < b_expected.Length; i++)
             {
@@ -116,7 +116,7 @@ namespace PaletteSwapTest
         {
             var cs = new CharacterColorSet();
             byte[] b = cs.sprites_stream04phoenix();
-            byte[] b_expected = Resources.sfxjd;
+            byte[] b_expected = Resources.sfxjd04a;
 
             for (int i = 0; i < b_expected.Length; i++)
             {

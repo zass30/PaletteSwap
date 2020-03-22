@@ -24,7 +24,7 @@ namespace PaletteSwap
 
         public byte[] sprites_stream04()
         {
-            byte[] b = Resources.sfxe1;
+            byte[] b = Resources.sfxe04a;
             for (int i = 0; i < 10; i++)
             {
                 if (characterColors[i].s == null)
@@ -42,7 +42,7 @@ namespace PaletteSwap
 
         public byte[] portraits_stream03()
         {
-            byte[] b = Resources.sfxe;
+            byte[] b = Resources.sfxe03c;
             for (int i = 0; i < 10; i++)
             {
                 if (characterColors[i].p == null)
@@ -79,7 +79,7 @@ namespace PaletteSwap
 
         public byte[] sprites_stream04phoenix()
         {
-            byte[] b = Resources.sfxjd;
+            byte[] b = Resources.sfxjd04a;
             for (int i = 0; i < 10; i++)
             {
                 if (characterColors[i].s == null)

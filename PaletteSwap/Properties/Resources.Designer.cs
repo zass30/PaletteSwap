@@ -303,9 +303,9 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        public static byte[] sfxe {
+        public static byte[] sfxe03c {
             get {
-                object obj = ResourceManager.GetObject("sfxe", resourceCulture);
+                object obj = ResourceManager.GetObject("sfxe03c", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -313,19 +313,9 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        public static byte[] sfxe1 {
+        public static byte[] sfxe04a {
             get {
-                object obj = ResourceManager.GetObject("sfxe1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] sfxjd {
-            get {
-                object obj = ResourceManager.GetObject("sfxjd", resourceCulture);
+                object obj = ResourceManager.GetObject("sfxe04a", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -336,6 +326,16 @@ namespace PaletteSwap.Properties {
         public static byte[] sfxjd03c {
             get {
                 object obj = ResourceManager.GetObject("sfxjd03c", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] sfxjd04a {
+            get {
+                object obj = ResourceManager.GetObject("sfxjd04a", resourceCulture);
                 return ((byte[])(obj));
             }
         }
