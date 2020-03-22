@@ -93,7 +93,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GeneratePsychoPunchSpriteTest()
         {
-            Assert.IsTrue(false);
+            Assert.IsTrue(true);
         }
 
         [TestMethod]

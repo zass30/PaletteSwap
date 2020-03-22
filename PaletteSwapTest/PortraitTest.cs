@@ -216,7 +216,18 @@ namespace PaletteSwapTest
             data_expected[0 + 3 * 32] = 0x23;
             data_expected[1 + 3 * 32] = 0x01;
 
+            //  skin 2
+            data_expected[2] = 0x12;
+            data_expected[3] = 0x03;
+            data_expected[2 + 32] = 0x12;
+            data_expected[3 + 32] = 0x03;
+            data_expected[2 + 2*32] = 0x12;
+            data_expected[3 + 2*32] = 0x03;
+            data_expected[2 + 3*32] = 0x12;
+            data_expected[3 + 3*32] = 0x03;
+
             portrait.skin1 = Color.FromArgb(0, 17, 34, 51);
+            portrait.skin2 = Color.FromArgb(0, 51, 17, 34);
 
             var data_result = portrait.ByteStream();
             for (int i = 0; i < data_expected.Length; i++)
