@@ -87,6 +87,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paletteSwapperByZassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.savePatchedPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePhoenixPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pal_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_crusherflame2 = new System.Windows.Forms.PictureBox();
@@ -166,7 +167,8 @@
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePhoenixPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorCycleRGB = new System.Windows.Forms.Button();
+            this.colorCycleRBG = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -755,6 +757,13 @@
             this.savePatchedPortraitsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
             this.savePatchedPortraitsToolStripMenuItem.Text = "Save Patched Portraits";
             this.savePatchedPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePatchedPortraitsToolStripMenuItem_Click);
+            // 
+            // savePhoenixPortraitsToolStripMenuItem
+            // 
+            this.savePhoenixPortraitsToolStripMenuItem.Name = "savePhoenixPortraitsToolStripMenuItem";
+            this.savePhoenixPortraitsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.savePhoenixPortraitsToolStripMenuItem.Text = "Save Phoenix Portraits";
+            this.savePhoenixPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixPortraitsToolStripMenuItem_Click);
             // 
             // pal_sprite_crusherhands2
             // 
@@ -1605,18 +1614,33 @@
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
-            // savePhoenixPortraitsToolStripMenuItem
+            // colorCycleRGB
             // 
-            this.savePhoenixPortraitsToolStripMenuItem.Name = "savePhoenixPortraitsToolStripMenuItem";
-            this.savePhoenixPortraitsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
-            this.savePhoenixPortraitsToolStripMenuItem.Text = "Save Phoenix Portraits";
-            this.savePhoenixPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixPortraitsToolStripMenuItem_Click);
+            this.colorCycleRGB.Location = new System.Drawing.Point(219, 249);
+            this.colorCycleRGB.Name = "colorCycleRGB";
+            this.colorCycleRGB.Size = new System.Drawing.Size(47, 23);
+            this.colorCycleRGB.TabIndex = 112;
+            this.colorCycleRGB.Text = "RGB";
+            this.colorCycleRGB.UseVisualStyleBackColor = true;
+            this.colorCycleRGB.Click += new System.EventHandler(this.colorCycleRGB_Click);
+            // 
+            // colorCycleRBG
+            // 
+            this.colorCycleRBG.Location = new System.Drawing.Point(219, 278);
+            this.colorCycleRBG.Name = "colorCycleRBG";
+            this.colorCycleRBG.Size = new System.Drawing.Size(47, 23);
+            this.colorCycleRBG.TabIndex = 113;
+            this.colorCycleRBG.Text = "RBG";
+            this.colorCycleRBG.UseVisualStyleBackColor = true;
+            this.colorCycleRBG.Click += new System.EventHandler(this.colorCycleRBG_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 537);
+            this.Controls.Add(this.colorCycleRBG);
+            this.Controls.Add(this.colorCycleRGB);
             this.Controls.Add(this.invertColorsButton);
             this.Controls.Add(this.colorSwapGR);
             this.Controls.Add(this.colorSwapRB);
@@ -1944,6 +1968,8 @@
         private System.Windows.Forms.ToolStripMenuItem savePhoenixRomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem savePatchedPortraitsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem savePhoenixPortraitsToolStripMenuItem;
+        private System.Windows.Forms.Button colorCycleRGB;
+        private System.Windows.Forms.Button colorCycleRBG;
     }
 }
 

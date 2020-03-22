@@ -866,6 +866,27 @@ namespace PaletteSwap
             pal_val_R.Text = g;
         }
 
+        private void colorCycleRGB_Click(object sender, EventArgs e)
+        {
+            var r = pal_val_R.Text;
+            var g = pal_val_G.Text;
+            var b = pal_val_B.Text;
+            pal_val_R.Text = g;
+            pal_val_G.Text = b;
+            pal_val_B.Text = r;
+        }
+
+
+        private void colorCycleRBG_Click(object sender, EventArgs e)
+        {
+            var r = pal_val_R.Text;
+            var g = pal_val_G.Text;
+            var b = pal_val_B.Text;
+            pal_val_R.Text = b;
+            pal_val_B.Text = g;
+            pal_val_G.Text = r;
+        }
+
         private void invertColorsButton_Click(object sender, EventArgs e)
         {
             var g = trackBarG.Value;
