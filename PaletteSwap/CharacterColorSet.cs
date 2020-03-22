@@ -12,8 +12,10 @@ namespace PaletteSwap
     {
         public CharacterColor[] characterColors;
 
-        public static int offset = 0x00042E7C;
-        public static int sprite_length = 0xa2;
+        public static int sprite_offset = 0x00042E7C;
+        public static int sprite_length = 0xA2;
+        public static int portrait_offset = 0x34448;
+        public static int portrait_length = 0x80;
 
         public CharacterColorSet()
         {
@@ -31,12 +33,31 @@ namespace PaletteSwap
                 byte[] color_bytes = s.ByteStream();
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
-                    b[offset + i * sprite_length + j] = color_bytes[j];
+                    b[sprite_offset + i * sprite_length + j] = color_bytes[j];
                 }
 
             }
             return b;
         }
+
+        public byte[] portraits_stream03()
+        {
+            byte[] b = Resources.sfxe;
+            for (int i = 0; i < 10; i++)
+            {
+                if (characterColors[i].p == null)
+                    continue;
+                var p = characterColors[i].p;
+                byte[] color_bytes = p.ByteStream();
+                for (int j = 0; j < color_bytes.Length; j++)
+                {
+                    b[portrait_offset + i * portrait_length + j] = color_bytes[j];
+                }
+
+            }
+            return b;
+        }
+
 
         public byte[] sprites_stream04phoenix()
         {
@@ -49,7 +70,7 @@ namespace PaletteSwap
                 byte[] color_bytes = s.ByteStream();
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
-                    b[offset + i * sprite_length + j] = color_bytes[j];
+                    b[sprite_offset + i * sprite_length + j] = color_bytes[j];
                 }
 
             }

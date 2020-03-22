@@ -41,7 +41,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void CharacterColorSetByteStreamTest()
+        public void CharacterColorSetSpriteByteStreamTest()
         {
             var cs = new CharacterColorSet();
             byte[] b = cs.sprites_stream04();
@@ -62,7 +62,7 @@ namespace PaletteSwapTest
             b_expected = s.ByteStream();
             for (int i = 0; i < b_expected.Length; i++)
             {
-                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset]);
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset]);
             }
 
 
@@ -71,7 +71,43 @@ namespace PaletteSwapTest
             b = cs.sprites_stream04();
             for (int i = 0; i < b_expected.Length; i++)
             {
-                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset + 9 * CharacterColorSet.sprite_length]);
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset + 9 * CharacterColorSet.sprite_length]);
+            }
+        }
+
+
+        [TestMethod]
+        public void CharacterColorSetPortraitByteStreamTest()
+        {
+            var cs = new CharacterColorSet();
+            byte[] b = cs.portraits_stream03();
+            byte[] b_expected = Resources.sfxe;
+
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i]);
+            }
+
+            var p = new Portrait(Portrait.bis5portrait);
+            CharacterColor cc = new CharacterColor();
+            cc.p = p;
+
+            // make color 0 bis5color
+            cs.characterColors[0] = cc;
+            b = cs.portraits_stream03();
+            b_expected = p.ByteStream();
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.portrait_offset]);
+            }
+
+
+            // make color 9 bis5color
+            cs.characterColors[9] = cc;
+            b = cs.portraits_stream03();
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.portrait_offset + 9 * CharacterColorSet.portrait_length]);
             }
         }
 
@@ -97,7 +133,7 @@ namespace PaletteSwapTest
             b_expected = s.ByteStream();
             for (int i = 0; i < b_expected.Length; i++)
             {
-                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset]);
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset]);
             }
 
 
@@ -106,7 +142,7 @@ namespace PaletteSwapTest
             b = cs.sprites_stream04();
             for (int i = 0; i < b_expected.Length; i++)
             {
-                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.offset + 9 * CharacterColorSet.sprite_length]);
+                Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset + 9 * CharacterColorSet.sprite_length]);
             }
         }
     }
