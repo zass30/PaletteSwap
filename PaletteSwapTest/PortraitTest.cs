@@ -2,6 +2,7 @@
 using PaletteSwap;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System;
 
 namespace PaletteSwapTest
 {
@@ -219,6 +220,23 @@ namespace PaletteSwapTest
             var portrait = Portrait.LoadFromColFormat(s);
             string string_result = portrait.ToColFormat();
             Assert.AreEqual(s, string_result);
+        }
+
+        [TestMethod]
+        public void ColorFromPortraitColorsLabelTest()
+        {
+            string p = Portrait.bis0portrait;
+            var portrait = new Portrait(p);
+
+            var myType = portrait.GetType();
+            foreach (var label in Enum.GetNames(typeof(Portrait.PORTRAIT_COLORS)))
+            {
+                var myFieldInfo = myType.GetField(label.ToString());
+                var expected = (Color)myFieldInfo.GetValue(portrait);
+                var sprite_color = (Portrait.PORTRAIT_COLORS)Enum.Parse(typeof(Portrait.PORTRAIT_COLORS), label);
+                var result = portrait.ColorFromSpriteColor(sprite_color);
+                Assert.AreEqual(expected, result);
+            }
         }
     }
 }

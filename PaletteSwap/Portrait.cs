@@ -375,6 +375,13 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return b;
         }
 
+        public Color ColorFromSpriteColor(PORTRAIT_COLORS label)
+        {
+            Type myType = GetType();
+            var myFieldInfo = myType.GetField(label.ToString());
+            return (Color)myFieldInfo.GetValue(this);
+        }
+
         public string ToColFormat()
         {
             var Colors = FullPortraitColorsArray();
