@@ -52,6 +52,60 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.colorSwapRB = new System.Windows.Forms.Button();
+            this.colorSwapGR = new System.Windows.Forms.Button();
+            this.invertColorsButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePatchedRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePhoenixRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paletteSwapperByZassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePatchedPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pal_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherflame2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherflame1 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crushercostume4 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crushercostume3 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crushercostume2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crushercostume1 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherpads5 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherpads4 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherpads3 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherpads2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_crusherpads1 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychopunch5 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychopunch4 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychopunch3 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychopunch2 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychopunch1 = new System.Windows.Forms.PictureBox();
+            this.pal_sprite_psychoglow = new System.Windows.Forms.PictureBox();
             this.portrait_blood3 = new System.Windows.Forms.PictureBox();
             this.portrait_blood2 = new System.Windows.Forms.PictureBox();
             this.portrait_blood1 = new System.Windows.Forms.PictureBox();
@@ -104,71 +158,38 @@
             this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
             this.portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_psychoglow = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_psychopunch1 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_psychopunch2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_psychopunch3 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_psychopunch4 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_psychopunch5 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pal_sprite_crusherpads5 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crusherpads4 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crusherpads3 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crusherpads2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crusherpads1 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pal_sprite_crushercostume4 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crushercostume3 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crushercostume2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crushercostume1 = new System.Windows.Forms.PictureBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pal_sprite_crusherflame2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crusherflame1 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.pal_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.colorSwapRB = new System.Windows.Forms.Button();
-            this.colorSwapGR = new System.Windows.Forms.Button();
-            this.invertColorsButton = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePatchedRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePhoenixRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paletteSwapperByZassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePatchedPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePhoenixPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_blood3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_blood2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_blood1)).BeginInit();
@@ -221,26 +242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -462,6 +463,507 @@
             this.label15.Size = new System.Drawing.Size(33, 13);
             this.label15.TabIndex = 78;
             this.label15.Text = "blood";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 479);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(71, 13);
+            this.label17.TabIndex = 86;
+            this.label17.Text = "psychopunch";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 510);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(68, 13);
+            this.label18.TabIndex = 92;
+            this.label18.Text = "crusher pads";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(5, 539);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(85, 13);
+            this.label19.TabIndex = 98;
+            this.label19.Text = "crusher costume";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(5, 570);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 13);
+            this.label20.TabIndex = 103;
+            this.label20.Text = "crusher flames";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 599);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(74, 13);
+            this.label21.TabIndex = 106;
+            this.label21.Text = "crusher hands";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(420, 570);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(128, 17);
+            this.checkBox1.TabIndex = 107;
+            this.checkBox1.Text = "Fix old punche sprites";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // colorSwapRB
+            // 
+            this.colorSwapRB.Location = new System.Drawing.Point(269, 249);
+            this.colorSwapRB.Name = "colorSwapRB";
+            this.colorSwapRB.Size = new System.Drawing.Size(34, 23);
+            this.colorSwapRB.TabIndex = 108;
+            this.colorSwapRB.Text = "RB";
+            this.colorSwapRB.UseVisualStyleBackColor = true;
+            this.colorSwapRB.Click += new System.EventHandler(this.colorSwapRB_Click);
+            // 
+            // colorSwapGR
+            // 
+            this.colorSwapGR.Location = new System.Drawing.Point(269, 278);
+            this.colorSwapGR.Name = "colorSwapGR";
+            this.colorSwapGR.Size = new System.Drawing.Size(34, 23);
+            this.colorSwapGR.TabIndex = 109;
+            this.colorSwapGR.Text = "GR";
+            this.colorSwapGR.UseVisualStyleBackColor = true;
+            this.colorSwapGR.Click += new System.EventHandler(this.colorSwapGR_Click);
+            // 
+            // invertColorsButton
+            // 
+            this.invertColorsButton.Location = new System.Drawing.Point(219, 220);
+            this.invertColorsButton.Name = "invertColorsButton";
+            this.invertColorsButton.Size = new System.Drawing.Size(44, 23);
+            this.invertColorsButton.TabIndex = 110;
+            this.invertColorsButton.Text = "Invert";
+            this.invertColorsButton.UseVisualStyleBackColor = true;
+            this.invertColorsButton.Click += new System.EventHandler(this.invertColorsButton_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(705, 24);
+            this.menuStrip1.TabIndex = 111;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.toolStripSeparator,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.printToolStripMenuItem,
+            this.printPreviewToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.exitToolStripMenuItem,
+            this.savePatchedRomToolStripMenuItem,
+            this.savePhoenixRomToolStripMenuItem,
+            this.savePatchedPortraitsToolStripMenuItem,
+            this.savePhoenixPortraitsToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(204, 6);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.saveAsToolStripMenuItem.Text = "Save &As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(204, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(204, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
+            // savePatchedRomToolStripMenuItem
+            // 
+            this.savePatchedRomToolStripMenuItem.Name = "savePatchedRomToolStripMenuItem";
+            this.savePatchedRomToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.savePatchedRomToolStripMenuItem.Text = "Save Patched Sprites";
+            this.savePatchedRomToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem_Click);
+            // 
+            // savePhoenixRomToolStripMenuItem
+            // 
+            this.savePhoenixRomToolStripMenuItem.Name = "savePhoenixRomToolStripMenuItem";
+            this.savePhoenixRomToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.savePhoenixRomToolStripMenuItem.Text = "Save Phoenix Sprites";
+            this.savePhoenixRomToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.selectAllToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 22);
+            this.editToolStripMenuItem.Text = "&Edit";
+            this.editToolStripMenuItem.Visible = false;
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.undoToolStripMenuItem.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.redoToolStripMenuItem.Text = "&Redo";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.selectAllToolStripMenuItem.Text = "Select &All";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customizeToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
+            this.toolsToolStripMenuItem.Text = "&Tools";
+            this.toolsToolStripMenuItem.Visible = false;
+            // 
+            // customizeToolStripMenuItem
+            // 
+            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Text = "&Customize";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Text = "&Options";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contentsToolStripMenuItem,
+            this.indexToolStripMenuItem,
+            this.searchToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // contentsToolStripMenuItem
+            // 
+            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.contentsToolStripMenuItem.Text = "&Contents";
+            this.contentsToolStripMenuItem.Visible = false;
+            // 
+            // indexToolStripMenuItem
+            // 
+            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.indexToolStripMenuItem.Text = "&Index";
+            this.indexToolStripMenuItem.Visible = false;
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.searchToolStripMenuItem.Text = "&Search";
+            this.searchToolStripMenuItem.Visible = false;
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.paletteSwapperByZassToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // paletteSwapperByZassToolStripMenuItem
+            // 
+            this.paletteSwapperByZassToolStripMenuItem.Name = "paletteSwapperByZassToolStripMenuItem";
+            this.paletteSwapperByZassToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.paletteSwapperByZassToolStripMenuItem.Text = "PaletteSwapper by Zass";
+            // 
+            // savePatchedPortraitsToolStripMenuItem
+            // 
+            this.savePatchedPortraitsToolStripMenuItem.Name = "savePatchedPortraitsToolStripMenuItem";
+            this.savePatchedPortraitsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.savePatchedPortraitsToolStripMenuItem.Text = "Save Patched Portraits";
+            this.savePatchedPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePatchedPortraitsToolStripMenuItem_Click);
+            // 
+            // pal_sprite_crusherhands2
+            // 
+            this.pal_sprite_crusherhands2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(125, 587);
+            this.pal_sprite_crusherhands2.Name = "pal_sprite_crusherhands2";
+            this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherhands2.TabIndex = 105;
+            this.pal_sprite_crusherhands2.TabStop = false;
+            this.pal_sprite_crusherhands2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherhands2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherhands1
+            // 
+            this.pal_sprite_crusherhands1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(96, 587);
+            this.pal_sprite_crusherhands1.Name = "pal_sprite_crusherhands1";
+            this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherhands1.TabIndex = 104;
+            this.pal_sprite_crusherhands1.TabStop = false;
+            this.pal_sprite_crusherhands1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherhands1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherflame2
+            // 
+            this.pal_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(125, 558);
+            this.pal_sprite_crusherflame2.Name = "pal_sprite_crusherflame2";
+            this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherflame2.TabIndex = 100;
+            this.pal_sprite_crusherflame2.TabStop = false;
+            this.pal_sprite_crusherflame2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherflame2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherflame1
+            // 
+            this.pal_sprite_crusherflame1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(96, 556);
+            this.pal_sprite_crusherflame1.Name = "pal_sprite_crusherflame1";
+            this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherflame1.TabIndex = 99;
+            this.pal_sprite_crusherflame1.TabStop = false;
+            this.pal_sprite_crusherflame1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherflame1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crushercostume4
+            // 
+            this.pal_sprite_crushercostume4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crushercostume4.Location = new System.Drawing.Point(187, 527);
+            this.pal_sprite_crushercostume4.Name = "pal_sprite_crushercostume4";
+            this.pal_sprite_crushercostume4.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crushercostume4.TabIndex = 96;
+            this.pal_sprite_crushercostume4.TabStop = false;
+            this.pal_sprite_crushercostume4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crushercostume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crushercostume3
+            // 
+            this.pal_sprite_crushercostume3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crushercostume3.Location = new System.Drawing.Point(157, 527);
+            this.pal_sprite_crushercostume3.Name = "pal_sprite_crushercostume3";
+            this.pal_sprite_crushercostume3.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crushercostume3.TabIndex = 95;
+            this.pal_sprite_crushercostume3.TabStop = false;
+            this.pal_sprite_crushercostume3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crushercostume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crushercostume2
+            // 
+            this.pal_sprite_crushercostume2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crushercostume2.Location = new System.Drawing.Point(125, 527);
+            this.pal_sprite_crushercostume2.Name = "pal_sprite_crushercostume2";
+            this.pal_sprite_crushercostume2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crushercostume2.TabIndex = 94;
+            this.pal_sprite_crushercostume2.TabStop = false;
+            this.pal_sprite_crushercostume2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crushercostume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crushercostume1
+            // 
+            this.pal_sprite_crushercostume1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crushercostume1.Location = new System.Drawing.Point(96, 527);
+            this.pal_sprite_crushercostume1.Name = "pal_sprite_crushercostume1";
+            this.pal_sprite_crushercostume1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crushercostume1.TabIndex = 93;
+            this.pal_sprite_crushercostume1.TabStop = false;
+            this.pal_sprite_crushercostume1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crushercostume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherpads5
+            // 
+            this.pal_sprite_crusherpads5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherpads5.Location = new System.Drawing.Point(219, 498);
+            this.pal_sprite_crusherpads5.Name = "pal_sprite_crusherpads5";
+            this.pal_sprite_crusherpads5.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherpads5.TabIndex = 91;
+            this.pal_sprite_crusherpads5.TabStop = false;
+            this.pal_sprite_crusherpads5.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherpads5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherpads4
+            // 
+            this.pal_sprite_crusherpads4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherpads4.Location = new System.Drawing.Point(188, 498);
+            this.pal_sprite_crusherpads4.Name = "pal_sprite_crusherpads4";
+            this.pal_sprite_crusherpads4.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherpads4.TabIndex = 90;
+            this.pal_sprite_crusherpads4.TabStop = false;
+            this.pal_sprite_crusherpads4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherpads4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherpads3
+            // 
+            this.pal_sprite_crusherpads3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherpads3.Location = new System.Drawing.Point(157, 498);
+            this.pal_sprite_crusherpads3.Name = "pal_sprite_crusherpads3";
+            this.pal_sprite_crusherpads3.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherpads3.TabIndex = 89;
+            this.pal_sprite_crusherpads3.TabStop = false;
+            this.pal_sprite_crusherpads3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherpads3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherpads2
+            // 
+            this.pal_sprite_crusherpads2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherpads2.Location = new System.Drawing.Point(126, 496);
+            this.pal_sprite_crusherpads2.Name = "pal_sprite_crusherpads2";
+            this.pal_sprite_crusherpads2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherpads2.TabIndex = 88;
+            this.pal_sprite_crusherpads2.TabStop = false;
+            this.pal_sprite_crusherpads2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherpads2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_crusherpads1
+            // 
+            this.pal_sprite_crusherpads1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_crusherpads1.Location = new System.Drawing.Point(96, 498);
+            this.pal_sprite_crusherpads1.Name = "pal_sprite_crusherpads1";
+            this.pal_sprite_crusherpads1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_crusherpads1.TabIndex = 87;
+            this.pal_sprite_crusherpads1.TabStop = false;
+            this.pal_sprite_crusherpads1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.pal_sprite_crusherpads1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_psychopunch5
+            // 
+            this.pal_sprite_psychopunch5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychopunch5.Location = new System.Drawing.Point(219, 467);
+            this.pal_sprite_psychopunch5.Name = "pal_sprite_psychopunch5";
+            this.pal_sprite_psychopunch5.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychopunch5.TabIndex = 85;
+            this.pal_sprite_psychopunch5.TabStop = false;
+            this.pal_sprite_psychopunch5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_psychopunch5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_psychopunch4
+            // 
+            this.pal_sprite_psychopunch4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychopunch4.Location = new System.Drawing.Point(188, 467);
+            this.pal_sprite_psychopunch4.Name = "pal_sprite_psychopunch4";
+            this.pal_sprite_psychopunch4.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychopunch4.TabIndex = 84;
+            this.pal_sprite_psychopunch4.TabStop = false;
+            this.pal_sprite_psychopunch4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_psychopunch4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_psychopunch3
+            // 
+            this.pal_sprite_psychopunch3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychopunch3.Location = new System.Drawing.Point(157, 467);
+            this.pal_sprite_psychopunch3.Name = "pal_sprite_psychopunch3";
+            this.pal_sprite_psychopunch3.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychopunch3.TabIndex = 83;
+            this.pal_sprite_psychopunch3.TabStop = false;
+            this.pal_sprite_psychopunch3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_psychopunch3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_psychopunch2
+            // 
+            this.pal_sprite_psychopunch2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychopunch2.Location = new System.Drawing.Point(126, 467);
+            this.pal_sprite_psychopunch2.Name = "pal_sprite_psychopunch2";
+            this.pal_sprite_psychopunch2.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychopunch2.TabIndex = 82;
+            this.pal_sprite_psychopunch2.TabStop = false;
+            this.pal_sprite_psychopunch2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_psychopunch2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_psychopunch1
+            // 
+            this.pal_sprite_psychopunch1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychopunch1.Location = new System.Drawing.Point(96, 467);
+            this.pal_sprite_psychopunch1.Name = "pal_sprite_psychopunch1";
+            this.pal_sprite_psychopunch1.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychopunch1.TabIndex = 81;
+            this.pal_sprite_psychopunch1.TabStop = false;
+            this.pal_sprite_psychopunch1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_psychopunch1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // pal_sprite_psychoglow
+            // 
+            this.pal_sprite_psychoglow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(126, 436);
+            this.pal_sprite_psychoglow.Name = "pal_sprite_psychoglow";
+            this.pal_sprite_psychoglow.Size = new System.Drawing.Size(25, 25);
+            this.pal_sprite_psychoglow.TabIndex = 79;
+            this.pal_sprite_psychoglow.TabStop = false;
+            this.pal_sprite_psychoglow.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.pal_sprite_psychoglow.Click += new System.EventHandler(this.pal_square_click);
             // 
             // portrait_blood3
             // 
@@ -1027,337 +1529,6 @@
             this.neutralStandBox.TabStop = false;
             this.neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
-            // pal_sprite_psychoglow
-            // 
-            this.pal_sprite_psychoglow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(126, 436);
-            this.pal_sprite_psychoglow.Name = "pal_sprite_psychoglow";
-            this.pal_sprite_psychoglow.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_psychoglow.TabIndex = 79;
-            this.pal_sprite_psychoglow.TabStop = false;
-            this.pal_sprite_psychoglow.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_psychoglow.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_psychopunch1
-            // 
-            this.pal_sprite_psychopunch1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch1.Location = new System.Drawing.Point(96, 467);
-            this.pal_sprite_psychopunch1.Name = "pal_sprite_psychopunch1";
-            this.pal_sprite_psychopunch1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_psychopunch1.TabIndex = 81;
-            this.pal_sprite_psychopunch1.TabStop = false;
-            this.pal_sprite_psychopunch1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_psychopunch1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_psychopunch2
-            // 
-            this.pal_sprite_psychopunch2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch2.Location = new System.Drawing.Point(126, 467);
-            this.pal_sprite_psychopunch2.Name = "pal_sprite_psychopunch2";
-            this.pal_sprite_psychopunch2.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_psychopunch2.TabIndex = 82;
-            this.pal_sprite_psychopunch2.TabStop = false;
-            this.pal_sprite_psychopunch2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_psychopunch2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_psychopunch3
-            // 
-            this.pal_sprite_psychopunch3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch3.Location = new System.Drawing.Point(157, 467);
-            this.pal_sprite_psychopunch3.Name = "pal_sprite_psychopunch3";
-            this.pal_sprite_psychopunch3.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_psychopunch3.TabIndex = 83;
-            this.pal_sprite_psychopunch3.TabStop = false;
-            this.pal_sprite_psychopunch3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_psychopunch3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_psychopunch4
-            // 
-            this.pal_sprite_psychopunch4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch4.Location = new System.Drawing.Point(188, 467);
-            this.pal_sprite_psychopunch4.Name = "pal_sprite_psychopunch4";
-            this.pal_sprite_psychopunch4.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_psychopunch4.TabIndex = 84;
-            this.pal_sprite_psychopunch4.TabStop = false;
-            this.pal_sprite_psychopunch4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_psychopunch4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_psychopunch5
-            // 
-            this.pal_sprite_psychopunch5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_psychopunch5.Location = new System.Drawing.Point(219, 467);
-            this.pal_sprite_psychopunch5.Name = "pal_sprite_psychopunch5";
-            this.pal_sprite_psychopunch5.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_psychopunch5.TabIndex = 85;
-            this.pal_sprite_psychopunch5.TabStop = false;
-            this.pal_sprite_psychopunch5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_psychopunch5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 479);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 13);
-            this.label17.TabIndex = 86;
-            this.label17.Text = "psychopunch";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 510);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 13);
-            this.label18.TabIndex = 92;
-            this.label18.Text = "crusher pads";
-            // 
-            // pal_sprite_crusherpads5
-            // 
-            this.pal_sprite_crusherpads5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads5.Location = new System.Drawing.Point(219, 498);
-            this.pal_sprite_crusherpads5.Name = "pal_sprite_crusherpads5";
-            this.pal_sprite_crusherpads5.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherpads5.TabIndex = 91;
-            this.pal_sprite_crusherpads5.TabStop = false;
-            this.pal_sprite_crusherpads5.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherpads5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crusherpads4
-            // 
-            this.pal_sprite_crusherpads4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads4.Location = new System.Drawing.Point(188, 498);
-            this.pal_sprite_crusherpads4.Name = "pal_sprite_crusherpads4";
-            this.pal_sprite_crusherpads4.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherpads4.TabIndex = 90;
-            this.pal_sprite_crusherpads4.TabStop = false;
-            this.pal_sprite_crusherpads4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherpads4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crusherpads3
-            // 
-            this.pal_sprite_crusherpads3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads3.Location = new System.Drawing.Point(157, 498);
-            this.pal_sprite_crusherpads3.Name = "pal_sprite_crusherpads3";
-            this.pal_sprite_crusherpads3.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherpads3.TabIndex = 89;
-            this.pal_sprite_crusherpads3.TabStop = false;
-            this.pal_sprite_crusherpads3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherpads3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crusherpads2
-            // 
-            this.pal_sprite_crusherpads2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads2.Location = new System.Drawing.Point(126, 496);
-            this.pal_sprite_crusherpads2.Name = "pal_sprite_crusherpads2";
-            this.pal_sprite_crusherpads2.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherpads2.TabIndex = 88;
-            this.pal_sprite_crusherpads2.TabStop = false;
-            this.pal_sprite_crusherpads2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherpads2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crusherpads1
-            // 
-            this.pal_sprite_crusherpads1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherpads1.Location = new System.Drawing.Point(96, 498);
-            this.pal_sprite_crusherpads1.Name = "pal_sprite_crusherpads1";
-            this.pal_sprite_crusherpads1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherpads1.TabIndex = 87;
-            this.pal_sprite_crusherpads1.TabStop = false;
-            this.pal_sprite_crusherpads1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherpads1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(5, 539);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 13);
-            this.label19.TabIndex = 98;
-            this.label19.Text = "crusher costume";
-            // 
-            // pal_sprite_crushercostume4
-            // 
-            this.pal_sprite_crushercostume4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume4.Location = new System.Drawing.Point(187, 527);
-            this.pal_sprite_crushercostume4.Name = "pal_sprite_crushercostume4";
-            this.pal_sprite_crushercostume4.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crushercostume4.TabIndex = 96;
-            this.pal_sprite_crushercostume4.TabStop = false;
-            this.pal_sprite_crushercostume4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crushercostume4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crushercostume3
-            // 
-            this.pal_sprite_crushercostume3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume3.Location = new System.Drawing.Point(157, 527);
-            this.pal_sprite_crushercostume3.Name = "pal_sprite_crushercostume3";
-            this.pal_sprite_crushercostume3.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crushercostume3.TabIndex = 95;
-            this.pal_sprite_crushercostume3.TabStop = false;
-            this.pal_sprite_crushercostume3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crushercostume3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crushercostume2
-            // 
-            this.pal_sprite_crushercostume2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume2.Location = new System.Drawing.Point(125, 527);
-            this.pal_sprite_crushercostume2.Name = "pal_sprite_crushercostume2";
-            this.pal_sprite_crushercostume2.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crushercostume2.TabIndex = 94;
-            this.pal_sprite_crushercostume2.TabStop = false;
-            this.pal_sprite_crushercostume2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crushercostume2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crushercostume1
-            // 
-            this.pal_sprite_crushercostume1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crushercostume1.Location = new System.Drawing.Point(96, 527);
-            this.pal_sprite_crushercostume1.Name = "pal_sprite_crushercostume1";
-            this.pal_sprite_crushercostume1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crushercostume1.TabIndex = 93;
-            this.pal_sprite_crushercostume1.TabStop = false;
-            this.pal_sprite_crushercostume1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crushercostume1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(5, 570);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 13);
-            this.label20.TabIndex = 103;
-            this.label20.Text = "crusher flames";
-            // 
-            // pal_sprite_crusherflame2
-            // 
-            this.pal_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(125, 558);
-            this.pal_sprite_crusherflame2.Name = "pal_sprite_crusherflame2";
-            this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherflame2.TabIndex = 100;
-            this.pal_sprite_crusherflame2.TabStop = false;
-            this.pal_sprite_crusherflame2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherflame2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crusherflame1
-            // 
-            this.pal_sprite_crusherflame1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(96, 556);
-            this.pal_sprite_crusherflame1.Name = "pal_sprite_crusherflame1";
-            this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherflame1.TabIndex = 99;
-            this.pal_sprite_crusherflame1.TabStop = false;
-            this.pal_sprite_crusherflame1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherflame1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 599);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(74, 13);
-            this.label21.TabIndex = 106;
-            this.label21.Text = "crusher hands";
-            // 
-            // pal_sprite_crusherhands2
-            // 
-            this.pal_sprite_crusherhands2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(125, 587);
-            this.pal_sprite_crusherhands2.Name = "pal_sprite_crusherhands2";
-            this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherhands2.TabIndex = 105;
-            this.pal_sprite_crusherhands2.TabStop = false;
-            this.pal_sprite_crusherhands2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherhands2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // pal_sprite_crusherhands1
-            // 
-            this.pal_sprite_crusherhands1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(96, 587);
-            this.pal_sprite_crusherhands1.Name = "pal_sprite_crusherhands1";
-            this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(25, 25);
-            this.pal_sprite_crusherhands1.TabIndex = 104;
-            this.pal_sprite_crusherhands1.TabStop = false;
-            this.pal_sprite_crusherhands1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.pal_sprite_crusherhands1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(420, 570);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(128, 17);
-            this.checkBox1.TabIndex = 107;
-            this.checkBox1.Text = "Fix old punche sprites";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // colorSwapRB
-            // 
-            this.colorSwapRB.Location = new System.Drawing.Point(269, 249);
-            this.colorSwapRB.Name = "colorSwapRB";
-            this.colorSwapRB.Size = new System.Drawing.Size(34, 23);
-            this.colorSwapRB.TabIndex = 108;
-            this.colorSwapRB.Text = "RB";
-            this.colorSwapRB.UseVisualStyleBackColor = true;
-            this.colorSwapRB.Click += new System.EventHandler(this.colorSwapRB_Click);
-            // 
-            // colorSwapGR
-            // 
-            this.colorSwapGR.Location = new System.Drawing.Point(269, 278);
-            this.colorSwapGR.Name = "colorSwapGR";
-            this.colorSwapGR.Size = new System.Drawing.Size(34, 23);
-            this.colorSwapGR.TabIndex = 109;
-            this.colorSwapGR.Text = "GR";
-            this.colorSwapGR.UseVisualStyleBackColor = true;
-            this.colorSwapGR.Click += new System.EventHandler(this.colorSwapGR_Click);
-            // 
-            // invertColorsButton
-            // 
-            this.invertColorsButton.Location = new System.Drawing.Point(219, 220);
-            this.invertColorsButton.Name = "invertColorsButton";
-            this.invertColorsButton.Size = new System.Drawing.Size(44, 23);
-            this.invertColorsButton.TabIndex = 110;
-            this.invertColorsButton.Text = "Invert";
-            this.invertColorsButton.UseVisualStyleBackColor = true;
-            this.invertColorsButton.Click += new System.EventHandler(this.invertColorsButton_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(705, 24);
-            this.menuStrip1.TabIndex = 111;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.toolStripSeparator,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.printToolStripMenuItem,
-            this.printPreviewToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.exitToolStripMenuItem,
-            this.savePatchedRomToolStripMenuItem,
-            this.savePhoenixRomToolStripMenuItem,
-            this.savePatchedPortraitsToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
@@ -1378,11 +1549,6 @@
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Visible = false;
             // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(204, 6);
-            // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
@@ -1392,18 +1558,6 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
-            this.saveAsToolStripMenuItem.Text = "Save &As";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(204, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -1423,66 +1577,6 @@
             this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(204, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // savePatchedRomToolStripMenuItem
-            // 
-            this.savePatchedRomToolStripMenuItem.Name = "savePatchedRomToolStripMenuItem";
-            this.savePatchedRomToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
-            this.savePatchedRomToolStripMenuItem.Text = "Save Patched Sprites";
-            this.savePatchedRomToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem_Click);
-            // 
-            // savePhoenixRomToolStripMenuItem
-            // 
-            this.savePhoenixRomToolStripMenuItem.Name = "savePhoenixRomToolStripMenuItem";
-            this.savePhoenixRomToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
-            this.savePhoenixRomToolStripMenuItem.Text = "Save Phoenix Sprites";
-            this.savePhoenixRomToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.selectAllToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 22);
-            this.editToolStripMenuItem.Text = "&Edit";
-            this.editToolStripMenuItem.Visible = false;
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -1511,97 +1605,12 @@
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
-            // toolStripSeparator4
+            // savePhoenixPortraitsToolStripMenuItem
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.selectAllToolStripMenuItem.Text = "Select &All";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customizeToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
-            this.toolsToolStripMenuItem.Text = "&Tools";
-            this.toolsToolStripMenuItem.Visible = false;
-            // 
-            // customizeToolStripMenuItem
-            // 
-            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.optionsToolStripMenuItem.Text = "&Options";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contentsToolStripMenuItem,
-            this.indexToolStripMenuItem,
-            this.searchToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // contentsToolStripMenuItem
-            // 
-            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.contentsToolStripMenuItem.Text = "&Contents";
-            this.contentsToolStripMenuItem.Visible = false;
-            // 
-            // indexToolStripMenuItem
-            // 
-            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.indexToolStripMenuItem.Text = "&Index";
-            this.indexToolStripMenuItem.Visible = false;
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.searchToolStripMenuItem.Text = "&Search";
-            this.searchToolStripMenuItem.Visible = false;
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.paletteSwapperByZassToolStripMenuItem});
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
-            // 
-            // paletteSwapperByZassToolStripMenuItem
-            // 
-            this.paletteSwapperByZassToolStripMenuItem.Name = "paletteSwapperByZassToolStripMenuItem";
-            this.paletteSwapperByZassToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.paletteSwapperByZassToolStripMenuItem.Text = "PaletteSwapper by Zass";
-            // 
-            // savePatchedPortraitsToolStripMenuItem
-            // 
-            this.savePatchedPortraitsToolStripMenuItem.Name = "savePatchedPortraitsToolStripMenuItem";
-            this.savePatchedPortraitsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
-            this.savePatchedPortraitsToolStripMenuItem.Text = "Save Patched Portraits";
-            this.savePatchedPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePatchedPortraitsToolStripMenuItem_Click);
+            this.savePhoenixPortraitsToolStripMenuItem.Name = "savePhoenixPortraitsToolStripMenuItem";
+            this.savePhoenixPortraitsToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
+            this.savePhoenixPortraitsToolStripMenuItem.Text = "Save Phoenix Portraits";
+            this.savePhoenixPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixPortraitsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -1718,6 +1727,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_blood3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_blood2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_blood1)).EndInit();
@@ -1770,27 +1800,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychoglow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_psychopunch5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherpads1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crushercostume1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherflame1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_crusherhands1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1934,6 +1943,7 @@
         private System.Windows.Forms.ToolStripMenuItem savePatchedRomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem savePhoenixRomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem savePatchedPortraitsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem savePhoenixPortraitsToolStripMenuItem;
     }
 }
 

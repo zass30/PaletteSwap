@@ -92,6 +92,7 @@
     <EmbeddedResource Include="Resources\roms\sfxe.03c" />
     <EmbeddedResource Include="Resources\roms\sfxe.04a" />
     <None Include="Resources\roms\sfxjd.04a" />
+    <None Include="Resources\roms\sfxjd03c.03c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

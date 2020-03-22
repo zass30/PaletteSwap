@@ -59,6 +59,24 @@ namespace PaletteSwap
         }
 
 
+        public byte[] portraits_stream03phoenix()
+        {
+            byte[] b = Resources.sfxjd03c;
+            for (int i = 0; i < 10; i++)
+            {
+                if (characterColors[i].p == null)
+                    continue;
+                var p = characterColors[i].p;
+                byte[] color_bytes = p.ByteStream();
+                for (int j = 0; j < color_bytes.Length; j++)
+                {
+                    b[portrait_offset + i * portrait_length + j] = color_bytes[j];
+                }
+
+            }
+            return b;
+        }
+
         public byte[] sprites_stream04phoenix()
         {
             byte[] b = Resources.sfxjd;
