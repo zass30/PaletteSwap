@@ -352,9 +352,9 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
 
         public string portraitmem()
         {
-            string s = facerow() + " " + pipingrow() + " " + costumerow() + " 0A00\r\n" +
-                facerow() + " " + pipingrow() + " " + teethrow() + " 0A00\r\n" +
-                facerow() + " " + bloodrow() + " 0008 " + teethrow() + " 0A00\r\n" +
+            string s = facerow() + " " + pipingrow() + " " + costumerow() + " 0A00 \r\n" +
+                facerow() + " " + pipingrow() + " " + teethrow() + " 0A00 \r\n" +
+                facerow() + " " + bloodrow() + " 0008 " + teethrow() + " 0A00 \r\n" +
                 facerow() + " " + pipinglossrow() + " " + costumelossrow() + " 0A00";
             return s;
         }
