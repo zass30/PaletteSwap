@@ -157,6 +157,7 @@ namespace PaletteSwapTest
             cc.s = s;
             cc.p = p;
             cs.characterColors[0] = cc;
+            cs.characterColors[6] = cc;
             byte[] portraits_stream = cs.portraits_stream03();
             byte[] sprites_stream = cs.sprites_stream04();
 
@@ -165,6 +166,15 @@ namespace PaletteSwapTest
             Assert.IsNotNull(cc_result);
             var sprite_result = cc_result.s;
             var portrait_result = cc_result.p;
+            Assert.IsNotNull(sprite_result);
+            Assert.IsNotNull(portrait_result);
+            Assert.AreEqual(s.costume1, sprite_result.costume1);
+            Assert.AreEqual(p.costume1, portrait_result.costume1);
+
+            cc_result = cs_result.characterColors[6];
+            Assert.IsNotNull(cc_result);
+            sprite_result = cc_result.s;
+            portrait_result = cc_result.p;
             Assert.IsNotNull(sprite_result);
             Assert.IsNotNull(portrait_result);
             Assert.AreEqual(s.costume1, sprite_result.costume1);

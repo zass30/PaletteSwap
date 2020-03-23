@@ -1,4 +1,5 @@
 ﻿using PaletteSwap.Properties;
+using System;
 
 namespace PaletteSwap
 {
@@ -24,7 +25,19 @@ namespace PaletteSwap
 
         public static CharacterColorSet CharacterColorSetFromStreams(byte[] sprites, byte[] portraits)
         {
-            return new CharacterColorSet();
+            var cs = new CharacterColorSet();
+            byte[] sprite_bytes = new byte[sprite_length];
+            byte[] portrait_bytes = new byte[portrait_length];
+            for (int i = 0; i < 10; i++)
+            {
+                Array.Copy(sprites, sprite_offset + i* sprite_length, sprite_bytes, 0, sprite_length);
+                Array.Copy(portraits, portrait_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
+                Portrait p = Portrait.LoadFromStream(portrait_bytes);
+                Sprite s = Sprite.LoadFromStream(sprite_bytes);
+                cs.characterColors[i].p = p;
+                cs.characterColors[i].s = s;
+            }
+            return cs;
         }
 
         private byte[] sprites_stream(byte[] b)
