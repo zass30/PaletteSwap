@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
 using PaletteSwap.Properties;
+using System.IO.Compression;
+using System.IO;
 
 namespace PaletteSwapTest
 {
@@ -180,6 +182,30 @@ namespace PaletteSwapTest
             Assert.AreEqual(s.costume1, sprite_result.costume1);
             Assert.AreEqual(p.costume1, portrait_result.costume1);
 
+        }
+
+        [TestMethod]
+        public void ColorSetLoadFromZipTest()
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                using (var archive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+                {
+                    var demoFile = archive.CreateEntry("foo.txt");
+
+                    using (var entryStream = demoFile.Open())
+                    using (var streamWriter = new StreamWriter(entryStream))
+                    {
+                        streamWriter.Write("Bar!");
+                    }
+                }
+
+                using (var fileStream = new FileStream(@"C:\Temp\test.zip", FileMode.Create))
+                {
+                    memoryStream.Seek(0, SeekOrigin.Begin);
+                    memoryStream.CopyTo(fileStream);
+                }
+            }
         }
     }
 }

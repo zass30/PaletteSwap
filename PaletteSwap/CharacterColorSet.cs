@@ -40,6 +40,11 @@ namespace PaletteSwap
             return cs;
         }
 
+        public static CharacterColorSet CharacterColorSetFromZip(byte[] z)
+        {
+            return CharacterColorSetFromStreams(null, null);
+        }
+
         private byte[] sprites_stream(byte[] b)
         {
             for (int i = 0; i < 10; i++)
