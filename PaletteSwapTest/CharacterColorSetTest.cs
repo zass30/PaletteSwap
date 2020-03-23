@@ -199,12 +199,12 @@ namespace PaletteSwapTest
                         streamWriter.Write("Bar!");
                     }
                 }
-
+                /*
                 using (var fileStream = new FileStream(@"C:\Temp\test.zip", FileMode.Create))
                 {
                     memoryStream.Seek(0, SeekOrigin.Begin);
                     memoryStream.CopyTo(fileStream);
-                }
+                }*/
             }
         }
 
@@ -222,29 +222,50 @@ namespace PaletteSwapTest
             cs.characterColors[6] = cc;
             byte[] portraits_stream = cs.portraits_stream03();
             byte[] sprites_stream = cs.sprites_stream04();
+            byte[] ziparray;
+            CharacterColorSet cs_result;
 
             using (var memoryStream = new MemoryStream())
             {
                 using (var archive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
                 {
                     var _03file = archive.CreateEntry("sfxe.03c");
-
-                     using (var entryStream = _03file.Open())
+                    using (var entryStream = _03file.Open())
                     using (var streamWriter = new StreamWriter(entryStream))
                     {
                         var c = entryStream.CanSeek;
-//                        entryStream.Seek(0, SeekOrigin.End);
                         entryStream.Write(portraits_stream, 0, portraits_stream.Length);
-//                        entryStream.Close();
+                    }
+
+                    var _04file = archive.CreateEntry("sfxe.04a");
+                    using (var entryStream = _04file.Open())
+                    using (var streamWriter = new StreamWriter(entryStream))
+                    {
+                        var c = entryStream.CanSeek;
+                        entryStream.Write(sprites_stream, 0, sprites_stream.Length);
                     }
                 }
-
-                using (var fileStream = new FileStream(@"C:\Temp\test.zip", FileMode.Create))
-                {
-                    memoryStream.Seek(0, SeekOrigin.Begin);
-                    memoryStream.CopyTo(fileStream);
-                }
+                /*
+                                using (var fileStream = new FileStream(@"C:\Temp\test.zip", FileMode.Create))
+                                {
+                                    memoryStream.Seek(0, SeekOrigin.Begin);
+                                    memoryStream.CopyTo(fileStream);
+                                }
+                                */
+                ziparray = memoryStream.ToArray();
+                cs_result = CharacterColorSet.CharacterColorSetFromZip(ziparray);
             }
+
+            // now check that cs_result is correctly populated
+            Assert.IsNotNull(cs_result);
+            var cc_result = cs_result.characterColors[0];
+            Assert.IsNotNull(cc_result);
+            Assert.IsNotNull(cc_result.p);
+            Assert.IsNotNull(cc_result.s);
+            Assert.AreEqual(cc.p.costume1, cc_result.p.costume1);
+            Assert.AreEqual(cc.p.piping1, cc_result.p.piping1);
+            Assert.AreEqual(cc.s.costume1, cc_result.s.costume1);
+            Assert.AreEqual(cc.s.pads1, cc_result.s.pads1);
         }
     }
 }

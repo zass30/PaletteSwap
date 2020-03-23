@@ -1,5 +1,7 @@
 ﻿using PaletteSwap.Properties;
 using System;
+using System.IO.Compression;
+using System.IO;
 
 namespace PaletteSwap
 {
@@ -40,9 +42,41 @@ namespace PaletteSwap
             return cs;
         }
 
-        public static CharacterColorSet CharacterColorSetFromZip(byte[] z)
+        public static CharacterColorSet CharacterColorSetFromZip(byte[] ziparray)
         {
-            return CharacterColorSetFromStreams(null, null);
+            byte[] sprites = new byte[sprite_length];
+            byte[] portraits = new byte[portrait_length];
+            using (var memoryStream = new MemoryStream())
+            {
+                memoryStream.Write(ziparray, 0, ziparray.Length);
+                var zip = new ZipArchive(memoryStream, ZipArchiveMode.Read);
+                foreach (var entry in zip.Entries)
+                {
+                    using (var stream = entry.Open())
+                    {
+                        if (entry.Name == "sfxe.03c" ||
+                            entry.Name == "sfxjd.03c")
+                        {
+                            using (var memorySubStream = new MemoryStream())
+                            {
+                                stream.CopyTo(memorySubStream);
+                                portraits = memorySubStream.ToArray();
+                            }
+                        }
+                        
+                        if (entry.Name == "sfxe.04a" ||
+                            entry.Name == "sfxjd.04a")
+                        {
+                            using (var memorySubStream = new MemoryStream())
+                            {
+                                stream.CopyTo(memorySubStream);
+                                sprites = memorySubStream.ToArray();
+                            }
+                        }
+                    }
+                }
+            }
+            return CharacterColorSetFromStreams(sprites, portraits);
         }
 
         private byte[] sprites_stream(byte[] b)
