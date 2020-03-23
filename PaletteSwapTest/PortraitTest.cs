@@ -302,6 +302,17 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void LoadPortraitFromStreamTest()
+        {
+            Portrait p_expected = new Portrait(Portrait.bis1portrait);
+            var b = p_expected.ByteStream();
+
+            Portrait p_result = Portrait.LoadFromStream(b);
+            Assert.AreEqual(p_expected.costume1, p_result.costume1);
+            Assert.AreEqual(p_expected.piping1, p_result.piping1);
+        }
+
+        [TestMethod]
         public void ColorFromPortraitColorsLabelTest()
         {
             string p = Portrait.bis0portrait;

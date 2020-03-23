@@ -133,6 +133,12 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             blood3,
         }
 
+        public static Portrait LoadFromStream(byte[] b)
+        {
+            Portrait p = new Portrait();
+            return p;
+        }
+
         public static Portrait LoadFromColFormat(string s)
         {
             Portrait p = new Portrait();
