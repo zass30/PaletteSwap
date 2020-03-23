@@ -22,9 +22,8 @@ namespace PaletteSwap
             characterColors = new CharacterColor[10];
         }
 
-        public byte[] sprites_stream04()
+        private byte[] sprites_stream(byte[] b)
         {
-            byte[] b = Resources.sfxe04a;
             for (int i = 0; i < 10; i++)
             {
                 if (characterColors[i].s == null)
@@ -40,9 +39,8 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] portraits_stream03()
+        private byte[] portraits_stream(byte[] b)
         {
-            byte[] b = Resources.sfxe03c;
             for (int i = 0; i < 10; i++)
             {
                 if (characterColors[i].p == null)
@@ -56,43 +54,27 @@ namespace PaletteSwap
 
             }
             return b;
+        }
+
+        public byte[] sprites_stream04()
+        {
+            return sprites_stream(Resources.sfxe04a);
+        }
+
+        public byte[] portraits_stream03()
+        {
+            return portraits_stream(Resources.sfxe03c);
         }
 
 
         public byte[] portraits_stream03phoenix()
         {
-            byte[] b = Resources.sfxjd03c;
-            for (int i = 0; i < 10; i++)
-            {
-                if (characterColors[i].p == null)
-                    continue;
-                var p = characterColors[i].p;
-                byte[] color_bytes = p.ByteStream();
-                for (int j = 0; j < color_bytes.Length; j++)
-                {
-                    b[portrait_offset + i * portrait_length + j] = color_bytes[j];
-                }
-
-            }
-            return b;
+            return portraits_stream(Resources.sfxjd03c);
         }
 
         public byte[] sprites_stream04phoenix()
         {
-            byte[] b = Resources.sfxjd04a;
-            for (int i = 0; i < 10; i++)
-            {
-                if (characterColors[i].s == null)
-                    continue;
-                var s = characterColors[i].s;
-                byte[] color_bytes = s.ByteStream();
-                for (int j = 0; j < color_bytes.Length; j++)
-                {
-                    b[sprite_offset + i * sprite_length + j] = color_bytes[j];
-                }
-
-            }
-            return b;
+            return sprites_stream(Resources.sfxjd04a);          
         }
     }
 }
