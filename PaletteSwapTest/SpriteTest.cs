@@ -289,5 +289,17 @@ namespace PaletteSwapTest
                 Assert.AreEqual(expected, result);
             }
         }
+
+        [TestMethod]
+        public void LoadSpriteFromStreamTest()
+        {
+            Sprite s_expected = new Sprite(Sprite.bis1sprite);
+            var b = s_expected.ByteStream();
+
+            Sprite s_result = Sprite.LoadFromStream(b);
+            Assert.AreEqual(s_expected.costume1, s_result.costume1);
+            Assert.AreEqual(s_expected.pads1, s_result.pads1);
+        }
+
     }
 }

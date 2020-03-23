@@ -193,6 +193,22 @@ namespace PaletteSwap
             crusherhands2,
         }
 
+        public static Sprite LoadFromStream(byte[] b)
+        {
+            Sprite s = new Sprite();
+            foreach (var k in colorsToMemOffsets.Keys)
+            {
+                int offset = colorsToMemOffsets[k][0];
+                byte[] colbyte = new byte[2];
+                colbyte[0] = b[offset];
+                colbyte[1] = b[offset + 1];
+                Color c_transparent = PaletteHelper.ByteToColor(colbyte);
+                Color c = Color.FromArgb(255, c_transparent);
+                s.SetColorFromAttributeLabel(k, c);
+            }
+            return s;
+        }
+
         public static Sprite LoadFromColFormat(string s)
         {
             Sprite sp = new Sprite();
@@ -501,6 +517,14 @@ namespace PaletteSwap
             Type myType = GetType();
             var myFieldInfo = myType.GetField(label.ToString());
             return (Color)myFieldInfo.GetValue(this);
+        }
+
+
+        public void SetColorFromAttributeLabel(SPRITE_COLORS label, Color c)
+        {
+            Type myType = GetType();
+            var myFieldInfo = myType.GetField(label.ToString());
+            myFieldInfo.SetValue(this, c);
         }
 
         public string ToColFormat()
