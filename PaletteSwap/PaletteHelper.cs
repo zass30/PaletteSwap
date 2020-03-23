@@ -131,7 +131,7 @@ namespace PaletteSwap
             var R = int.Parse(v[0]);
             var G = int.Parse(v[1]);
             var B = int.Parse(v[2]);
-            return Color.FromArgb(0, R, G, B);
+            return Color.FromArgb(255, R, G, B);
         }
 
         public static bool areBitmapsSame(Bitmap a, Bitmap b)

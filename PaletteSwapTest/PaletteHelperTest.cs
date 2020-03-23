@@ -114,11 +114,11 @@ namespace PaletteSwapTest
         {
             var s = "255 255 255";
             var c = PaletteHelper.RGBFormatToColor(s);
-            Assert.AreEqual(Color.FromArgb(0, 255, 255, 255), c);
+            Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), c);
 
             s = "17 34 51";
             c = PaletteHelper.RGBFormatToColor(s);
-            Assert.AreEqual(Color.FromArgb(0, 17, 34, 51), c);
+            Assert.AreEqual(Color.FromArgb(255, 17, 34, 51), c);
         }
 
         [TestMethod]
