@@ -61,7 +61,7 @@
     <Compile Include="ZoomForm.Designer.cs">
       <DependentUpon>ZoomForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Palette.cs" />
+    <Compile Include="PaletteHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

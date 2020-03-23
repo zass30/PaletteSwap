@@ -22,6 +22,11 @@ namespace PaletteSwap
             characterColors = new CharacterColor[10];
         }
 
+        public static CharacterColorSet CharacterColorSetFromStreams(byte[] sprites, byte[] portraits)
+        {
+            return new CharacterColorSet();
+        }
+
         private byte[] sprites_stream(byte[] b)
         {
             for (int i = 0; i < 10; i++)

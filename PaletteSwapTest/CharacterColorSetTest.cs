@@ -145,5 +145,31 @@ namespace PaletteSwapTest
                 Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset + 9 * CharacterColorSet.sprite_length]);
             }
         }
+
+        [TestMethod]
+        public void ColorSetLoadFromBytesTest()
+        {
+            // create a color set with bis5 as jab
+            var cs = new CharacterColorSet();
+            var s = new Sprite(Sprite.bis5sprite);
+            var p = new Portrait(Portrait.bis5portrait);
+            CharacterColor cc = new CharacterColor();
+            cc.s = s;
+            cc.p = p;
+            cs.characterColors[0] = cc;
+            byte[] portraits_stream = cs.portraits_stream03();
+            byte[] sprites_stream = cs.sprites_stream04();
+
+            var cs_result = CharacterColorSet.CharacterColorSetFromStreams(sprites_stream, portraits_stream);
+            var cc_result = cs_result.characterColors[0];
+            Assert.IsNotNull(cc_result);
+            var sprite_result = cc_result.s;
+            var portrait_result = cc_result.p;
+            Assert.IsNotNull(sprite_result);
+            Assert.IsNotNull(portrait_result);
+            Assert.AreEqual(s.costume1, sprite_result.costume1);
+            Assert.AreEqual(p.costume1, portrait_result.costume1);
+
+        }
     }
 }
