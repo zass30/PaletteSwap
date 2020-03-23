@@ -185,7 +185,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void ColorSetLoadFromZipTest()
+        public void ColorSetLoadFromZipTestDemo()
         {
             using (var memoryStream = new MemoryStream())
             {
@@ -197,6 +197,45 @@ namespace PaletteSwapTest
                     using (var streamWriter = new StreamWriter(entryStream))
                     {
                         streamWriter.Write("Bar!");
+                    }
+                }
+
+                using (var fileStream = new FileStream(@"C:\Temp\test.zip", FileMode.Create))
+                {
+                    memoryStream.Seek(0, SeekOrigin.Begin);
+                    memoryStream.CopyTo(fileStream);
+                }
+            }
+        }
+
+        [TestMethod]
+        public void ColorSetLoadFromZipTest()
+        {
+            // create a color set with bis5 as jab
+            var cs = new CharacterColorSet();
+            var s = new Sprite(Sprite.bis5sprite);
+            var p = new Portrait(Portrait.bis5portrait);
+            CharacterColor cc = new CharacterColor();
+            cc.s = s;
+            cc.p = p;
+            cs.characterColors[0] = cc;
+            cs.characterColors[6] = cc;
+            byte[] portraits_stream = cs.portraits_stream03();
+            byte[] sprites_stream = cs.sprites_stream04();
+
+            using (var memoryStream = new MemoryStream())
+            {
+                using (var archive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+                {
+                    var _03file = archive.CreateEntry("sfxe.03c");
+
+                     using (var entryStream = _03file.Open())
+                    using (var streamWriter = new StreamWriter(entryStream))
+                    {
+                        var c = entryStream.CanSeek;
+//                        entryStream.Seek(0, SeekOrigin.End);
+                        entryStream.Write(portraits_stream, 0, portraits_stream.Length);
+//                        entryStream.Close();
                     }
                 }
 
