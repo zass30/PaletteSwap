@@ -1040,5 +1040,10 @@ namespace PaletteSwap
                 fs.Close();
             }
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Palette Swapper, by Zass");
+        }
     }
 }
