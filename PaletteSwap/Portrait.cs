@@ -136,7 +136,25 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         public static Portrait LoadFromStream(byte[] b)
         {
             Portrait p = new Portrait();
-            return p;
+            foreach (var k in colorsToMemOffsets.Keys)
+            {
+                int offset = colorsToMemOffsets[k][0];
+
+            }
+                /*
+                 *             foreach (var k in colorsToMemOffsets.Keys)
+                {
+                    Color col = this.ColorFromSpriteColor(k);
+                    byte[] c = PaletteHelper.ColorToByte(col);
+                    foreach (int offset in colorsToMemOffsets[k])
+                    {
+                        b[offset] = c[0];
+                        b[offset + 1] = c[1];
+                    }
+                }
+                return b;
+                */
+                return p;
         }
 
         public static Portrait LoadFromColFormat(string s)
@@ -407,7 +425,7 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
         
             foreach (var k in colorsToMemOffsets.Keys)
             {
-                Color col = this.ColorFromSpriteColor(k);
+                Color col = this.GetColorFromAttributeLabel(k);
                 byte[] c = PaletteHelper.ColorToByte(col);
                 foreach (int offset in colorsToMemOffsets[k])
                 {
@@ -418,11 +436,18 @@ FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00"
             return b;
         }
 
-        public Color ColorFromSpriteColor(PORTRAIT_COLORS label)
+        public Color GetColorFromAttributeLabel(PORTRAIT_COLORS label)
         {
             Type myType = GetType();
             var myFieldInfo = myType.GetField(label.ToString());
             return (Color)myFieldInfo.GetValue(this);
+        }
+
+        public void SetColorFromAttributeLabel(PORTRAIT_COLORS label, Color c)
+        {
+            Type myType = GetType();
+            var myFieldInfo = myType.GetField(label.ToString());
+            myFieldInfo.SetValue(this, c);
         }
 
         public string ToColFormat()

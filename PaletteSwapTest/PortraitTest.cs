@@ -324,9 +324,18 @@ namespace PaletteSwapTest
                 var myFieldInfo = myType.GetField(label.ToString());
                 var expected = (Color)myFieldInfo.GetValue(portrait);
                 var sprite_color = (Portrait.PORTRAIT_COLORS)Enum.Parse(typeof(Portrait.PORTRAIT_COLORS), label);
-                var result = portrait.ColorFromSpriteColor(sprite_color);
+                var result = portrait.GetColorFromAttributeLabel(sprite_color);
                 Assert.AreEqual(expected, result);
             }        
-        }        
+        }
+
+        [TestMethod]
+        public void SetColorFromAttributeLabelTest()
+        {
+            string p = Portrait.bis0portrait;
+            var portrait = new Portrait(p);
+            portrait.SetColorFromAttributeLabel(Portrait.PORTRAIT_COLORS.costume1, Color.Azure);
+            Assert.AreEqual(portrait.costume1, Color.Azure);
+        }
     }
 }
