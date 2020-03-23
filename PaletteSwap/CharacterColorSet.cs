@@ -56,16 +56,15 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] sprites_stream04()
-        {
-            return sprites_stream(Resources.sfxe04a);
-        }
-
         public byte[] portraits_stream03()
         {
             return portraits_stream(Resources.sfxe03c);
         }
 
+        public byte[] sprites_stream04()
+        {
+            return sprites_stream(Resources.sfxe04a);
+        }
 
         public byte[] portraits_stream03phoenix()
         {
