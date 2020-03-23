@@ -1045,5 +1045,36 @@ namespace PaletteSwap
         {
             MessageBox.Show("Palette Swapper, by Zass");
         }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+//                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        fileStream.CopyTo(memoryStream);
+                        var b = memoryStream.ToArray();
+
+                        characterColorSet = CharacterColorSet.CharacterColorSetFromZip(b);
+                        reload_everything();
+                    }
+                }
+            }
+        }
     }
 }
