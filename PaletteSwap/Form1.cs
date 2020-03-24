@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing.Imaging;
+using System.IO.Compression;
 
 namespace PaletteSwap
 {
@@ -1062,7 +1063,7 @@ namespace PaletteSwap
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-                openFileDialog.FilterIndex = 2;
+//                openFileDialog.FilterIndex = 0;
                 openFileDialog.RestoreDirectory = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -1075,6 +1076,47 @@ namespace PaletteSwap
                     characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
                     resetCurrentCharacterColorFromDropDown();
                     reload_everything();
+                    fileStream.Close();
+                }
+            }
+        }
+
+        // would like to encapsulate in object 
+        private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            // Displays a SaveFileDialog so the user can save the Image
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+            saveFileDialog1.Title = "Save a rom";
+            saveFileDialog1.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog1.FileName != "")
+            {
+                // Saves the Image via a FileStream created by the OpenFile method.
+                using (System.IO.FileStream fs =
+                    (System.IO.FileStream)saveFileDialog1.OpenFile())
+                {
+                    using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
+                    {
+                        var _03file = archive.CreateEntry("sfxe.03c");
+                        using (var entryStream = _03file.Open())
+                        using (var streamWriter = new StreamWriter(entryStream))
+                        {
+                            var p_stream = characterColorSet.portraits_stream03();
+                            var c = entryStream.CanSeek;
+                            entryStream.Write(p_stream, 0, p_stream.Length);
+                        }
+
+                        var _04file = archive.CreateEntry("sfxe.04a");
+                        using (var entryStream = _04file.Open())
+                        using (var streamWriter = new StreamWriter(entryStream))
+                        {
+                            var s_stream = characterColorSet.sprites_stream04();
+                            var c = entryStream.CanSeek;
+                            entryStream.Write(s_stream, 0, s_stream.Length);
+                        }
+                    }
                 }
             }
         }

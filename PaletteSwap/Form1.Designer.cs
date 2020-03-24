@@ -168,6 +168,7 @@
             this.neutralStandBox = new System.Windows.Forms.PictureBox();
             this.colorCycleRGB = new System.Windows.Forms.Button();
             this.colorCycleRBG = new System.Windows.Forms.Button();
+            this.savePatchedRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -583,7 +584,8 @@
             this.savePatchedRomToolStripMenuItem,
             this.savePhoenixRomToolStripMenuItem,
             this.savePatchedPortraitsToolStripMenuItem,
-            this.savePhoenixPortraitsToolStripMenuItem});
+            this.savePhoenixPortraitsToolStripMenuItem,
+            this.savePatchedRomToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "&File";
@@ -594,7 +596,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1626,6 +1628,13 @@
             this.colorCycleRBG.UseVisualStyleBackColor = true;
             this.colorCycleRBG.Click += new System.EventHandler(this.colorCycleRBG_Click);
             // 
+            // savePatchedRomToolStripMenuItem1
+            // 
+            this.savePatchedRomToolStripMenuItem1.Name = "savePatchedRomToolStripMenuItem1";
+            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(207, 38);
+            this.savePatchedRomToolStripMenuItem1.Text = "Save Patched Rom";
+            this.savePatchedRomToolStripMenuItem1.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1961,6 +1970,7 @@
         private System.Windows.Forms.ToolStripMenuItem savePhoenixPortraitsToolStripMenuItem;
         private System.Windows.Forms.Button colorCycleRGB;
         private System.Windows.Forms.Button colorCycleRBG;
+        private System.Windows.Forms.ToolStripMenuItem savePatchedRomToolStripMenuItem1;
     }
 }
 
