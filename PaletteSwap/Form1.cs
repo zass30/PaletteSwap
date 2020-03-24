@@ -21,6 +21,7 @@ namespace PaletteSwap
         public Portrait currentPortrait;
         public Sprite currentSprite;
         bool skip_image_recolors = false;
+        int DEFAULT_DROPDOWN_INDEX = 0;
 
         public Form1()
         {
@@ -29,7 +30,7 @@ namespace PaletteSwap
             EnableDragAndDrop();
             EnablePaintRefresh();
             loadImages();
-            colorSelectorBox.SelectedIndex = 5;
+            colorSelectorBox.SelectedIndex = DEFAULT_DROPDOWN_INDEX;
             loadSpritesAndPalettesFromDropDown();
             z = new ZoomForm(this);
 
@@ -185,10 +186,8 @@ namespace PaletteSwap
                     currentPortrait = new Portrait(Portrait.bis9portrait);
                     break;
             }
-            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s != null)
-                currentSprite = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s;
-            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p != null)
-                currentPortrait = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p;
+
+            resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
 
@@ -1016,6 +1015,15 @@ namespace PaletteSwap
             }
         }
 
+        private void resetCurrentCharacterColorFromDropDown()
+        {
+            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s != null)
+                currentSprite = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s;
+            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p != null)
+                currentPortrait = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p;
+
+        }
+
         private async void savePhoenixPortraitsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Displays a SaveFileDialog so the user can save the Image
@@ -1065,6 +1073,7 @@ namespace PaletteSwap
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
                     characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
+                    resetCurrentCharacterColorFromDropDown();
                     reload_everything();
                 }
             }
