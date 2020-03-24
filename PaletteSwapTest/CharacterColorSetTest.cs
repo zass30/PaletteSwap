@@ -259,5 +259,53 @@ namespace PaletteSwapTest
             Assert.AreEqual(cc.s.costume1, cc_result.s.costume1);
             Assert.AreEqual(cc.s.pads1, cc_result.s.pads1);
         }
+
+        [TestMethod]
+        public void ZipArchiveTest()
+        {
+            var cs = new CharacterColorSet();
+            var s = new Sprite(Sprite.bis5sprite);
+            var p = new Portrait(Portrait.bis5portrait);
+            CharacterColor cc = new CharacterColor();
+            cc.s = s;
+            cc.p = p;
+            cs.characterColors[0] = cc;
+            cs.characterColors[6] = cc;
+
+            var archive = cs.ZipArchive();
+            byte[] sprites_array;
+            byte[] portraits_array;
+
+
+            var _04 = archive.GetEntry("sfxe.04a");
+            using (var unzippedEntryStream = _04.Open())
+            {
+                using (var ms = new MemoryStream())
+                {
+                    unzippedEntryStream.CopyTo(ms);
+                    sprites_array = ms.ToArray();
+                }
+            }
+            var _03 = archive.GetEntry("sfxe.03c");
+            using (var unzippedEntryStream = _03.Open())
+            {
+                using (var ms = new MemoryStream())
+                {
+                    unzippedEntryStream.CopyTo(ms);
+                    portraits_array = ms.ToArray();
+                }
+            }
+
+            var cs_result = CharacterColorSet.CharacterColorSetFromStreams(sprites_array, portraits_array);
+            Assert.IsNotNull(cs_result);
+            var cc_result = cs_result.characterColors[0];
+            Assert.IsNotNull(cc_result);
+            Assert.IsNotNull(cc_result.p);
+            Assert.IsNotNull(cc_result.s);
+            Assert.AreEqual(cc.p.costume1, cc_result.p.costume1);
+            Assert.AreEqual(cc.p.piping1, cc_result.p.piping1);
+            Assert.AreEqual(cc.s.costume1, cc_result.s.costume1);
+            Assert.AreEqual(cc.s.pads1, cc_result.s.pads1);
+        }
     }
 }

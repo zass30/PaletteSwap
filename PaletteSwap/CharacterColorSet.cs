@@ -42,6 +42,7 @@ namespace PaletteSwap
             return cs;
         }
 
+
         public static CharacterColorSet CharacterColorSetFromZipStream(Stream fileStream)
         {
             byte[] sprites = new byte[sprite_length];
@@ -77,6 +78,29 @@ namespace PaletteSwap
             return CharacterColorSetFromStreams(sprites, portraits);
         }
 
+        public ZipArchive ZipArchive()
+        {
+            var memoryStream = new MemoryStream();
+            byte[] p_stream = portraits_stream03();
+            byte[] s_stream = sprites_stream04();
+            var archive = new ZipArchive(memoryStream, ZipArchiveMode.Update, true);
+            var _03file = archive.CreateEntry("sfxe.03c");
+            using (var entryStream = _03file.Open())
+            using (var streamWriter = new StreamWriter(entryStream))
+            {
+                var c = entryStream.CanSeek;
+                entryStream.Write(p_stream, 0, p_stream.Length);
+            }
+
+            var _04file = archive.CreateEntry("sfxe.04a");
+            using (var entryStream = _04file.Open())
+            using (var streamWriter = new StreamWriter(entryStream))
+            {
+                var c = entryStream.CanSeek;
+                entryStream.Write(s_stream, 0, s_stream.Length);
+            }
+            return archive;
+        }
 
         private byte[] sprites_stream(byte[] b)
         {
