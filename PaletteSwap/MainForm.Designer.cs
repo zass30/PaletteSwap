@@ -1,6 +1,6 @@
 ﻿namespace PaletteSwap
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.colorSwapBG = new System.Windows.Forms.Button();
             this.colorSelectorBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,8 +73,6 @@
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePhoenixRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePhoenixPortraitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,6 +166,8 @@
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.savePatchedRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.savePhoenixRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -557,6 +557,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.viewToolStripMenuItem,
             this.editToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -580,8 +581,6 @@
             this.printPreviewToolStripMenuItem,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem,
-            this.savePhoenixRomToolStripMenuItem,
-            this.savePhoenixPortraitsToolStripMenuItem,
             this.savePatchedRomToolStripMenuItem1,
             this.savePhoenixRomToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -594,7 +593,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(206, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -664,20 +663,6 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // savePhoenixRomToolStripMenuItem
-            // 
-            this.savePhoenixRomToolStripMenuItem.Name = "savePhoenixRomToolStripMenuItem";
-            this.savePhoenixRomToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.savePhoenixRomToolStripMenuItem.Text = "Save Phoenix Sprites";
-            this.savePhoenixRomToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem_Click);
-            // 
-            // savePhoenixPortraitsToolStripMenuItem
-            // 
-            this.savePhoenixPortraitsToolStripMenuItem.Name = "savePhoenixPortraitsToolStripMenuItem";
-            this.savePhoenixPortraitsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.savePhoenixPortraitsToolStripMenuItem.Text = "Save Phoenix Portraits";
-            this.savePhoenixPortraitsToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixPortraitsToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -1626,6 +1611,20 @@
             this.savePhoenixRomToolStripMenuItem1.Text = "Save Phoenix Rom";
             this.savePhoenixRomToolStripMenuItem1.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorSetToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // colorSetToolStripMenuItem
+            // 
+            this.colorSetToolStripMenuItem.Name = "colorSetToolStripMenuItem";
+            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorSetToolStripMenuItem.Text = "Color Set";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1955,12 +1954,12 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem savePhoenixRomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem savePhoenixPortraitsToolStripMenuItem;
         private System.Windows.Forms.Button colorCycleRGB;
         private System.Windows.Forms.Button colorCycleRBG;
         private System.Windows.Forms.ToolStripMenuItem savePatchedRomToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem savePhoenixRomToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem;
     }
 }
 

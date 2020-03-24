@@ -24,7 +24,7 @@ namespace PaletteSwap
 
     public partial class ZoomForm : Form
     {
-        Form1 mainform;
+        MainForm mainform;
         int scale; // how much is image zoomed
         double factor = 1.3; // how much buffer around window and image
         Bitmap magnified_sprite;
@@ -32,7 +32,7 @@ namespace PaletteSwap
         Bitmap magnified_lossbottom; // special case for loss portrait which is made of two bitmaps
         img_type zoomed_img;
 
-        public ZoomForm(Form1 parentform)
+        public ZoomForm(MainForm parentform)
         {
             InitializeComponent();
             mainform = parentform;

@@ -13,7 +13,7 @@ using System.IO.Compression;
 
 namespace PaletteSwap
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         ZoomForm z;
         PictureBox currentlySelectedZoomImage;
@@ -24,7 +24,7 @@ namespace PaletteSwap
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             characterColorSet = new CharacterColorSet();
@@ -941,80 +941,7 @@ namespace PaletteSwap
             characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p = currentPortrait;
         }
 
-        private async void savePatchedRomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Displays a SaveFileDialog so the user can save the Image
-            // assigned to Button2.
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Sprite rom (*.04a)|*.04a";
-            saveFileDialog1.Title = "Save a sprite rom";
-            saveFileDialog1.ShowDialog();
 
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile();
-                // Saves the Image in the appropriate ImageFormat based upon the
-                // File type selected in the dialog box.
-                // NOTE that the FilterIndex property is one-based.
-                byte[] b = characterColorSet.sprites_stream04();
-                fs.Seek(0, SeekOrigin.End);
-                await fs.WriteAsync(b, 0, b.Length);
-                fs.Close();
-            }
-        }
-
-        private async void savePhoenixRomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Displays a SaveFileDialog so the user can save the Image
-            // assigned to Button2.
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Sprite rom (*.04a)|*.04a";
-            saveFileDialog1.Title = "Save a sprite rom";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile();
-                // Saves the Image in the appropriate ImageFormat based upon the
-                // File type selected in the dialog box.
-                // NOTE that the FilterIndex property is one-based.
-                byte[] b = characterColorSet.sprites_stream04phoenix();
-                fs.Seek(0, SeekOrigin.End);
-                await fs.WriteAsync(b, 0, b.Length);
-                fs.Close();
-            }
-        }
-
-        private async void savePatchedPortraitsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Displays a SaveFileDialog so the user can save the Image
-            // assigned to Button2.
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Sprite rom (*.03c)|*.03c";
-            saveFileDialog1.Title = "Save a portrait rom";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile();
-                // Saves the Image in the appropriate ImageFormat based upon the
-                // File type selected in the dialog box.
-                // NOTE that the FilterIndex property is one-based.
-                byte[] b = characterColorSet.portraits_stream03();
-                fs.Seek(0, SeekOrigin.End);
-                await fs.WriteAsync(b, 0, b.Length);
-                fs.Close();
-            }
-        }
 
         private void resetCurrentCharacterColorFromDropDown()
         {
@@ -1023,31 +950,6 @@ namespace PaletteSwap
             if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p != null)
                 currentPortrait = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p;
 
-        }
-
-        private async void savePhoenixPortraitsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Displays a SaveFileDialog so the user can save the Image
-            // assigned to Button2.
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Sprite rom (*.03c)|*.03c";
-            saveFileDialog1.Title = "Save a portrait rom";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile();
-                // Saves the Image in the appropriate ImageFormat based upon the
-                // File type selected in the dialog box.
-                // NOTE that the FilterIndex property is one-based.
-                byte[] b = characterColorSet.portraits_stream03phoenix();
-                fs.Seek(0, SeekOrigin.End);
-                await fs.WriteAsync(b, 0, b.Length);
-                fs.Close();
-            }
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
