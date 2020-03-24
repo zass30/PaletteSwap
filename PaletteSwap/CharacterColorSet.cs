@@ -42,42 +42,41 @@ namespace PaletteSwap
             return cs;
         }
 
-        public static CharacterColorSet CharacterColorSetFromZip(byte[] ziparray)
+        public static CharacterColorSet CharacterColorSetFromZipStream(Stream fileStream)
         {
             byte[] sprites = new byte[sprite_length];
             byte[] portraits = new byte[portrait_length];
-            using (var memoryStream = new MemoryStream())
+
+            var zip = new ZipArchive(fileStream, ZipArchiveMode.Read);
+            foreach (var entry in zip.Entries)
             {
-                memoryStream.Write(ziparray, 0, ziparray.Length);
-                var zip = new ZipArchive(memoryStream, ZipArchiveMode.Read);
-                foreach (var entry in zip.Entries)
+                using (var stream = entry.Open())
                 {
-                    using (var stream = entry.Open())
+                    if (entry.Name == "sfxe.03c" ||
+                        entry.Name == "sfxjd.03c")
                     {
-                        if (entry.Name == "sfxe.03c" ||
-                            entry.Name == "sfxjd.03c")
+                        using (var memorySubStream = new MemoryStream())
                         {
-                            using (var memorySubStream = new MemoryStream())
-                            {
-                                stream.CopyTo(memorySubStream);
-                                portraits = memorySubStream.ToArray();
-                            }
+                            stream.CopyTo(memorySubStream);
+                            portraits = memorySubStream.ToArray();
                         }
-                        
-                        if (entry.Name == "sfxe.04a" ||
-                            entry.Name == "sfxjd.04a")
+                    }
+
+                    if (entry.Name == "sfxe.04a" ||
+                        entry.Name == "sfxjd.04a")
+                    {
+                        using (var memorySubStream = new MemoryStream())
                         {
-                            using (var memorySubStream = new MemoryStream())
-                            {
-                                stream.CopyTo(memorySubStream);
-                                sprites = memorySubStream.ToArray();
-                            }
+                            stream.CopyTo(memorySubStream);
+                            sprites = memorySubStream.ToArray();
                         }
                     }
                 }
             }
+
             return CharacterColorSetFromStreams(sprites, portraits);
         }
+
 
         private byte[] sprites_stream(byte[] b)
         {

@@ -1053,7 +1053,6 @@ namespace PaletteSwap
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-//                openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
@@ -1065,14 +1064,8 @@ namespace PaletteSwap
 
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        fileStream.CopyTo(memoryStream);
-                        var b = memoryStream.ToArray();
-
-                        characterColorSet = CharacterColorSet.CharacterColorSetFromZip(b);
-                        reload_everything();
-                    }
+                    characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
+                    reload_everything();
                 }
             }
         }

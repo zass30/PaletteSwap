@@ -209,7 +209,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void ColorSetLoadFromZipTest()
+        public void ColorSetLoadFromZipStreamTest()
         {
             // create a color set with bis5 as jab
             var cs = new CharacterColorSet();
@@ -222,7 +222,6 @@ namespace PaletteSwapTest
             cs.characterColors[6] = cc;
             byte[] portraits_stream = cs.portraits_stream03();
             byte[] sprites_stream = cs.sprites_stream04();
-            byte[] ziparray;
             CharacterColorSet cs_result;
 
             using (var memoryStream = new MemoryStream())
@@ -245,15 +244,8 @@ namespace PaletteSwapTest
                         entryStream.Write(sprites_stream, 0, sprites_stream.Length);
                     }
                 }
-                /*
-                                using (var fileStream = new FileStream(@"C:\Temp\test.zip", FileMode.Create))
-                                {
-                                    memoryStream.Seek(0, SeekOrigin.Begin);
-                                    memoryStream.CopyTo(fileStream);
-                                }
-                                */
-                ziparray = memoryStream.ToArray();
-                cs_result = CharacterColorSet.CharacterColorSetFromZip(ziparray);
+
+                cs_result = CharacterColorSet.CharacterColorSetFromZipStream(memoryStream);
             }
 
             // now check that cs_result is correctly populated
