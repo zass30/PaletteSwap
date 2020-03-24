@@ -16,9 +16,10 @@ namespace PaletteSwap
     public partial class MainForm : Form
     {
         ZoomForm z;
+        ColorSetForm c;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
-        CharacterColorSet characterColorSet;
+        public CharacterColorSet characterColorSet;
         public Portrait currentPortrait;
         public Sprite currentSprite;
         bool skip_image_recolors = false;
@@ -27,17 +28,29 @@ namespace PaletteSwap
         public MainForm()
         {
             InitializeComponent();
-            characterColorSet = new CharacterColorSet();
             EnableDragAndDrop();
             EnablePaintRefresh();
             loadImages();
-            colorSelectorBox.SelectedIndex = DEFAULT_DROPDOWN_INDEX;
+            Setup();
             loadSpritesAndPalettesFromDropDown();
-            z = new ZoomForm(this);
 
             var remapTable = currentSprite.StandingSpriteColorsRemapTable();
             Bitmap b = new Bitmap(Properties.Resources.dicstand1);
             imagepaint2(b, remapTable);
+        }
+
+        public void Setup()
+        {
+            characterColorSet = new CharacterColorSet();
+            for (int i = 0; i < 10; i++)
+            {
+                colorSelectorBox.SelectedIndex = i;
+                loadSpritesAndPalettesFromDropDown();
+                saveCharacterColorToSet();
+            }
+            colorSelectorBox.SelectedIndex = DEFAULT_DROPDOWN_INDEX;
+            z = new ZoomForm(this);
+            c = new ColorSetForm(this);
         }
 
         public void loadImages()
@@ -937,10 +950,14 @@ namespace PaletteSwap
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            saveCharacterColorToSet();
+        }
+
+        private void saveCharacterColorToSet()
+        {
             characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s = currentSprite;
             characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p = currentPortrait;
         }
-
 
 
         private void resetCurrentCharacterColorFromDropDown()
@@ -1050,6 +1067,14 @@ namespace PaletteSwap
                     }
                 }
             }
+        }
+
+        private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (c.IsDisposed)
+                c = new ColorSetForm(this);
+            c.Reload();
+            c.Show();
         }
     }
 }
