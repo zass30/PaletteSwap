@@ -1063,7 +1063,6 @@ namespace PaletteSwap
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-//                openFileDialog.FilterIndex = 0;
                 openFileDialog.RestoreDirectory = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -1081,8 +1080,18 @@ namespace PaletteSwap
             }
         }
 
-        // would like to encapsulate in object 
         private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            savePatchedRomToolFormat(sender, e, false);
+        }
+
+        private void savePhoenixRomToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            savePatchedRomToolFormat(sender, e, true);
+        }
+
+        // would like to encapsulate in object 
+        private void savePatchedRomToolFormat(object sender, EventArgs e, bool isPhoenix)
         {
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -1099,20 +1108,40 @@ namespace PaletteSwap
                 {
                     using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
                     {
-                        var _03file = archive.CreateEntry("sfxe.03c");
+                        string _03filename;
+                        string _04filename;
+                        byte[] p_stream;
+                        byte[] s_stream;
+
+                        if (isPhoenix)
+                        {
+                            _03filename = "sfxjd.03c";
+                            _04filename = "sfxjd.04a";
+                            p_stream = characterColorSet.portraits_stream03phoenix();
+                            s_stream = characterColorSet.sprites_stream04phoenix();
+                        }
+                        else
+                        {
+                            _03filename = "sfxe.03c";
+                            _04filename = "sfxe.04a";
+                            p_stream = characterColorSet.portraits_stream03();
+                            s_stream = characterColorSet.sprites_stream04();
+                        }
+
+                        var _03file = archive.CreateEntry(_03filename);
                         using (var entryStream = _03file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))
                         {
-                            var p_stream = characterColorSet.portraits_stream03();
+                            //var p_stream = characterColorSet.portraits_stream03();
                             var c = entryStream.CanSeek;
                             entryStream.Write(p_stream, 0, p_stream.Length);
                         }
 
-                        var _04file = archive.CreateEntry("sfxe.04a");
+                        var _04file = archive.CreateEntry(_04filename);
                         using (var entryStream = _04file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))
                         {
-                            var s_stream = characterColorSet.sprites_stream04();
+                            //var s_stream = characterColorSet.sprites_stream04();
                             var c = entryStream.CanSeek;
                             entryStream.Write(s_stream, 0, s_stream.Length);
                         }
