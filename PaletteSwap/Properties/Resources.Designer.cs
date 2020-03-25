@@ -349,5 +349,15 @@ namespace PaletteSwap.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] sfxjd06a {
+            get {
+                object obj = ResourceManager.GetObject("sfxjd06a", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

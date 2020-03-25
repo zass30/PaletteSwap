@@ -105,6 +105,7 @@
     <None Include="Resources\roms\sfxe.06a" />
     <None Include="Resources\roms\sfxjd.04a" />
     <None Include="Resources\roms\sfxjd.03c" />
+    <None Include="Resources\roms\sfxjd.06a" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
