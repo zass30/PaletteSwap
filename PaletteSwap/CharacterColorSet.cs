@@ -19,6 +19,10 @@ namespace PaletteSwap
         public static int sprite_length = 0xA2;
         public static int portrait_offset = 0x34448;
         public static int portrait_length = 0x80;
+        public static int portrait2_offset = 0x394FE;
+        public static int[] punch_glitch = new int[] { 0x6BD1A, 0x6BD1E, 0x6BFB6, 0x6C024,
+        0x6C038, 0x6C03C, 0x6C04C, 0x6C050};
+        public static byte punch_glitch_replacement_value = 0x14;
 
         public CharacterColorSet()
         {
@@ -130,10 +134,25 @@ namespace PaletteSwap
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
                     b[portrait_offset + i * portrait_length + j] = color_bytes[j];
+                    b[portrait2_offset + i * portrait_length + j] = color_bytes[j];
                 }
 
             }
             return b;
+        }
+
+        private byte[] old_bison_punches_stream(byte[] b)
+        {
+            foreach (int offset in punch_glitch)
+            {
+                b[offset] = punch_glitch_replacement_value;
+            }
+            return b;
+        }
+
+        public byte[] old_bison_punches_stream06()
+        {
+            return old_bison_punches_stream(Resources.sfxe06a);
         }
 
         public byte[] portraits_stream03()

@@ -102,6 +102,7 @@
     </Compile>
     <EmbeddedResource Include="Resources\roms\sfxe.03c" />
     <EmbeddedResource Include="Resources\roms\sfxe.04a" />
+    <None Include="Resources\roms\sfxe.06a" />
     <None Include="Resources\roms\sfxjd.04a" />
     <None Include="Resources\roms\sfxjd.03c" />
   </ItemGroup>
