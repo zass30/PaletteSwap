@@ -62,6 +62,7 @@
     <Compile Include="SpriteTest.cs" />
     <Compile Include="PortraitTest.cs" />
     <Compile Include="CharacterColorSetTest.cs" />
+    <Compile Include="PaletteTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

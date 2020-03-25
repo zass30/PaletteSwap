@@ -10,7 +10,7 @@ namespace PaletteSwap
     // abstract class for sprite and portrait
     // might be better to just combine them into one big color set that has several
     // images. maybe not b/c each one has its own byte representation
-    public abstract class Palette
+    public abstract class Palette_
     {
         // a set of "name", "color" pairs
 
@@ -19,9 +19,22 @@ namespace PaletteSwap
         // abilty to get a Byte[] representation 
 
         // constructor from Byte[] or string.
+
+        // generate image (enum image types)
+
+        // has several palette images
+
+        // sprite inherits from this
+        // eg dicsprite IS a sprite
+        // sprite IS a palette
+
+
+
+        // portrait inherits from this
+        // is there a diff between sprite and portrait? maybenot
     }
 
-    public abstract class PaletteImage
+    public abstract class PaletteImage_
     {
         // a base bitmap (static)
 
