@@ -91,6 +91,20 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void GenerateStandSpriteFromRemapTest()
+        {
+            Bitmap sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand1);
+            var s = new Sprite(Sprite.bis1sprite);
+            Bitmap sprite_result = s.GenerateStandingSpriteFromRemap();
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
+
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
+            s = new Sprite(Sprite.bis0sprite);
+            sprite_result = s.GenerateStandingSpriteFromRemap();
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, sprite_result));
+        }
+
+        [TestMethod]
         public void GeneratePsychoPunchSpriteTest()
         {
             Assert.IsTrue(true);

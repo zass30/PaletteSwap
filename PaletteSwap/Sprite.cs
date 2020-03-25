@@ -439,6 +439,21 @@ namespace PaletteSwap
             return PaletteHelper.GenerateColorMap(PaletteHelper.crusher_sprite_colors5, CrusherSpriteColorsArray());
         }
 
+        public Bitmap GenerateStandingSpriteFromRemap()
+        {
+            Bitmap b = new Bitmap(Properties.Resources.dicstand1);
+            var remapTable = StandingSpriteColorsRemapTable();
+            int width = b.Width;
+            int height = b.Height;
+            Graphics gfb = Graphics.FromImage(b);
+            ImageAttributes imageAttributes = new ImageAttributes();
+            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
+                                    0, 0, width, height,
+                                    GraphicsUnit.Pixel, imageAttributes);
+            return b;
+        }
+
         public Bitmap GenerateStandingSprite()
         {
             var orig = new Sprite(Sprite.bis1sprite);
