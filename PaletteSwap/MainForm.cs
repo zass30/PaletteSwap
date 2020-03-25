@@ -1034,7 +1034,7 @@ namespace PaletteSwap
                         byte[] p_stream;
                         byte[] s_stream;
                         byte[] punches_stream;
-                        punches_stream = characterColorSet.old_bison_punches_stream06();
+
                         if (isPhoenix)
                         {
                             _03filename = "sfxjd.03c";
@@ -1042,6 +1042,7 @@ namespace PaletteSwap
                             _06filename = "sfxjd.06a";
                             p_stream = characterColorSet.portraits_stream03phoenix();
                             s_stream = characterColorSet.sprites_stream04phoenix();
+                            punches_stream = characterColorSet.old_bison_punches_stream06phoenix();
                         }
                         else
                         {
@@ -1051,7 +1052,7 @@ namespace PaletteSwap
 
                             p_stream = characterColorSet.portraits_stream03();
                             s_stream = characterColorSet.sprites_stream04();
-                            
+                            punches_stream = characterColorSet.old_bison_punches_stream06();
                         }
 
                         var _03file = archive.CreateEntry(_03filename);

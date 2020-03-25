@@ -174,5 +174,11 @@ namespace PaletteSwap
         {
             return sprites_stream(Resources.sfxjd04a);          
         }
+
+        public byte[] old_bison_punches_stream06phoenix()
+        {
+            return old_bison_punches_stream(Resources.sfxjd06a);
+        }
+
     }
 }
