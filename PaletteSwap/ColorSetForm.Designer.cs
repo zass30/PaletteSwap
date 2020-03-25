@@ -53,98 +53,108 @@
             // _09psychopunchBox
             // 
             this._09psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._09psychopunchBox.Location = new System.Drawing.Point(98, 282);
+            this._09psychopunchBox.Location = new System.Drawing.Point(712, 197);
+            this._09psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._09psychopunchBox.Name = "_09psychopunchBox";
-            this._09psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._09psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._09psychopunchBox.TabIndex = 48;
             this._09psychopunchBox.TabStop = false;
             // 
             // _08psychopunchBox
             // 
             this._08psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._08psychopunchBox.Location = new System.Drawing.Point(12, 282);
+            this._08psychopunchBox.Location = new System.Drawing.Point(712, 23);
+            this._08psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._08psychopunchBox.Name = "_08psychopunchBox";
-            this._08psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._08psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._08psychopunchBox.TabIndex = 47;
             this._08psychopunchBox.TabStop = false;
             // 
             // _07psychopunchBox
             // 
             this._07psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._07psychopunchBox.Location = new System.Drawing.Point(98, 192);
+            this._07psychopunchBox.Location = new System.Drawing.Point(540, 197);
+            this._07psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._07psychopunchBox.Name = "_07psychopunchBox";
-            this._07psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._07psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._07psychopunchBox.TabIndex = 46;
             this._07psychopunchBox.TabStop = false;
             // 
             // _06psychopunchBox
             // 
             this._06psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._06psychopunchBox.Location = new System.Drawing.Point(12, 192);
+            this._06psychopunchBox.Location = new System.Drawing.Point(540, 23);
+            this._06psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._06psychopunchBox.Name = "_06psychopunchBox";
-            this._06psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._06psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._06psychopunchBox.TabIndex = 45;
             this._06psychopunchBox.TabStop = false;
             // 
             // _05psychopunchBox
             // 
             this._05psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._05psychopunchBox.Location = new System.Drawing.Point(184, 102);
+            this._05psychopunchBox.Location = new System.Drawing.Point(368, 196);
+            this._05psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._05psychopunchBox.Name = "_05psychopunchBox";
-            this._05psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._05psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._05psychopunchBox.TabIndex = 44;
             this._05psychopunchBox.TabStop = false;
             // 
             // _04psychopunchBox
             // 
             this._04psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._04psychopunchBox.Location = new System.Drawing.Point(98, 102);
+            this._04psychopunchBox.Location = new System.Drawing.Point(196, 196);
+            this._04psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._04psychopunchBox.Name = "_04psychopunchBox";
-            this._04psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._04psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._04psychopunchBox.TabIndex = 43;
             this._04psychopunchBox.TabStop = false;
             // 
             // _03psychopunchBox
             // 
             this._03psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._03psychopunchBox.Location = new System.Drawing.Point(12, 102);
+            this._03psychopunchBox.Location = new System.Drawing.Point(24, 196);
+            this._03psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._03psychopunchBox.Name = "_03psychopunchBox";
-            this._03psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._03psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._03psychopunchBox.TabIndex = 42;
             this._03psychopunchBox.TabStop = false;
             // 
             // _02psychopunchBox
             // 
             this._02psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._02psychopunchBox.Location = new System.Drawing.Point(184, 12);
+            this._02psychopunchBox.Location = new System.Drawing.Point(368, 23);
+            this._02psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._02psychopunchBox.Name = "_02psychopunchBox";
-            this._02psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._02psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._02psychopunchBox.TabIndex = 41;
             this._02psychopunchBox.TabStop = false;
             // 
             // _01psychopunchBox
             // 
             this._01psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._01psychopunchBox.Location = new System.Drawing.Point(98, 12);
+            this._01psychopunchBox.Location = new System.Drawing.Point(196, 23);
+            this._01psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._01psychopunchBox.Name = "_01psychopunchBox";
-            this._01psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._01psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._01psychopunchBox.TabIndex = 40;
             this._01psychopunchBox.TabStop = false;
             // 
             // _00psychopunchBox
             // 
             this._00psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this._00psychopunchBox.Location = new System.Drawing.Point(12, 12);
+            this._00psychopunchBox.Location = new System.Drawing.Point(24, 23);
+            this._00psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._00psychopunchBox.Name = "_00psychopunchBox";
-            this._00psychopunchBox.Size = new System.Drawing.Size(80, 84);
+            this._00psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._00psychopunchBox.TabIndex = 39;
             this._00psychopunchBox.TabStop = false;
             // 
             // ColorSetForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 420);
+            this.ClientSize = new System.Drawing.Size(1080, 462);
             this.Controls.Add(this._09psychopunchBox);
             this.Controls.Add(this._08psychopunchBox);
             this.Controls.Add(this._07psychopunchBox);
@@ -155,6 +165,7 @@
             this.Controls.Add(this._02psychopunchBox);
             this.Controls.Add(this._01psychopunchBox);
             this.Controls.Add(this._00psychopunchBox);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ColorSetForm";
             this.Text = "ColorSetForm";
             ((System.ComponentModel.ISupportInitialize)(this._09psychopunchBox)).EndInit();
