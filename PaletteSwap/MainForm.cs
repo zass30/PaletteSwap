@@ -17,6 +17,7 @@ namespace PaletteSwap
     {
         ZoomForm z;
         ColorSetForm c;
+        PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
         public CharacterColorSet characterColorSet;
@@ -476,6 +477,10 @@ namespace PaletteSwap
         private void pal_square_click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
+            if (previouslySelectedSquare != null)
+                previouslySelectedSquare.BorderStyle = BorderStyle.FixedSingle;
+            p.BorderStyle = BorderStyle.Fixed3D;
+            previouslySelectedSquare = p;
             currentlySelectedColor = p;
             Color c = p.BackColor;
             int r = c.R / 17;
