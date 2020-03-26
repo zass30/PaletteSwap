@@ -50,6 +50,18 @@ namespace PaletteSwap
         public byte[] memoryRepresentation()
         {
             byte[] b = new byte[memlen];
+
+            foreach (var k in labelsToMemOffsets.Keys)
+            {
+                Color col = this.getColor(k);
+                byte[] c = PaletteHelper.ColorToByte(col);
+                foreach (int offset in labelsToMemOffsets[k])
+                {
+                    b[offset] = c[0];
+                    b[offset + 1] = c[1];
+                }
+            }
+
             return b;
         }
 
