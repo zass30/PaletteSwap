@@ -23,6 +23,11 @@ namespace PaletteSwapTest
             Assert.AreEqual(0, r_offset[0]);
             Assert.AreEqual(5, r_offset[2]);
 
+            s.memlen = 10;
+            var b_result = s.memoryRepresentation();
+            Assert.AreEqual(10, b_result.Length);
+
+
         }
     }
 }

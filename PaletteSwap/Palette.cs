@@ -10,6 +10,9 @@ namespace PaletteSwap
     public class Palette
     {
         public static int ROWLEN = 32;
+        public int memlen { get; set; }
+        public byte[] b;
+        
 
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
@@ -44,10 +47,10 @@ namespace PaletteSwap
         }
 
         
-        public string memoryRepresentation()
+        public byte[] memoryRepresentation()
         {
-            string s = "";
-            return s;
+            byte[] b = new byte[memlen];
+            return b;
         }
 
     }
