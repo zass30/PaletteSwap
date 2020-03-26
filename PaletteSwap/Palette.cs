@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,8 +11,32 @@ namespace PaletteSwap
     {
         public enum PALETTE_COLORS { foo, bar };
         public static int ROWLEN = 32;
+        public int _testfield;
 
-        public string printFirstColor<TEnum>() where TEnum : struct
+        public Dictionary<PALETTE_COLORS, Color> _labelsToColors = new Dictionary<PALETTE_COLORS, Color>
+        {
+            { PALETTE_COLORS.foo, Color.Black },
+            { PALETTE_COLORS.bar, Color.DarkOrange },
+        };
+
+        /*
+        public abstract Dictionary<PALETTE_COLORS, Color> labelsToColors
+        {
+            get;
+            set;
+        }*/
+
+        public Dictionary<int, string> EnumNamedValues<T>() where T : System.Enum
+        {
+            var result = new Dictionary<int, string>();
+            var values = Enum.GetValues(typeof(T));
+
+            foreach (int item in values)
+                result.Add(item, Enum.GetName(typeof(T), item));
+            return result;
+        }
+
+        public string printFirstColor<TEnum>() where TEnum : System.Enum
             {
             if (!typeof(TEnum).IsEnum)
             {
@@ -25,12 +50,59 @@ namespace PaletteSwap
                 }
             }
             return "";
+        }
 
+        public Color ColorFromEnum<T>(T label) where T : System.Enum
+        {
+            var e = (PaletteSwap.Palette.PALETTE_COLORS)Enum.Parse(typeof(T), label.ToString());
+
+            if (_labelsToColors.ContainsKey(e))
+            {
+                return _labelsToColors[e];
+            }
+            else
+            {
+                return Color.FromArgb(255, 0, 0, 0);
+            }
         }
     }
 
     public class DictatorSprite : Palette
     {
+        public Dictionary<PALETTE_COLORS, Color> _labelsToColors = new Dictionary<PALETTE_COLORS, Color>
+        {
+        };
+        /*
+        public override Dictionary<PALETTE_COLORS, Color> labelsToColors
+        {
+            get
+            {
+
+            }
+            set
+            {
+
+            }
+        }*/
+
+        public Color getColor(PALETTE_COLORS label)
+        {
+            if (_labelsToColors.ContainsKey(label))
+            {
+                return _labelsToColors[label];
+            }
+            else
+            {
+                return Color.FromArgb(255, 0, 0, 0);
+            }
+        }
+
+
+        public void setColor(PALETTE_COLORS label, Color c)
+        {
+            _labelsToColors[label] = c;
+        }
+
         public new enum PALETTE_COLORS
         {
             skin1,
