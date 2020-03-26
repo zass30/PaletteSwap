@@ -15,6 +15,21 @@ namespace PaletteSwap
         {
         };
 
+        public static Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
+        {
+        };
+
+        public void setOffsets(string s, List<int> l)
+        {
+            labelsToMemOffsets[s] = l;
+        }
+
+        public List<int> getOffsets(string s)
+        {
+            return labelsToMemOffsets[s];
+        }
+
+
         public Color getColor(string s)
         {
             if (labelsToColors.ContainsKey(s))
@@ -26,6 +41,13 @@ namespace PaletteSwap
         public void setColor(string s, Color c)
         {
             labelsToColors[s] = c;
+        }
+
+        
+        public string memoryRepresentation()
+        {
+            string s = "";
+            return s;
         }
 
     }
