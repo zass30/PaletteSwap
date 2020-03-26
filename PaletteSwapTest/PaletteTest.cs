@@ -11,18 +11,11 @@ namespace PaletteSwapTest
         [TestMethod]
         public void TestMethod1()
         {
-            var s = new DictatorSprite();
-
-            string bar = s.printFirstColor<DictatorSprite.PALETTE_COLORS>();
-            int x = 5;
-            x = x + 1;
-            s.setColor(DictatorSprite.PALETTE_COLORS.costume1, Color.AliceBlue);
-            var c = s.getColor(DictatorSprite.PALETTE_COLORS.costume1);
-            x = x + 4;
-            var f = s.EnumNamedValues<DictatorSprite.PALETTE_COLORS>();
-            x = 7;
-            var test = s.ColorFromEnum<DictatorSprite.PALETTE_COLORS>(DictatorSprite.PALETTE_COLORS.costume1);
-            x = 0;
+            var s = new Palette();
+            var c = Color.AliceBlue;
+            s.setColor("skin1", c);
+            var result = s.getColor("skin1");
+            Assert.AreEqual(c, result);
 
         }
     }
