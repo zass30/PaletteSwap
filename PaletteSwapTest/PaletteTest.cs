@@ -61,8 +61,6 @@ namespace PaletteSwapTest
             s.setAllOffSets(Character.dictatorSpriteOffsets);
             Assert.AreEqual(0, s.getOffsets("pads5")[0]);
             Assert.AreEqual(12, s.getOffsets("pads4")[0]);
-            string s_expected = System.Text.RegularExpressions.Regex.Replace(Sprite.bis9sprite, @"\t|\n|\r", "");
-            int x = 0;
         }
 
         [TestMethod]
