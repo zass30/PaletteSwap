@@ -55,6 +55,8 @@ namespace PaletteSwap
             { "psychopunch4", new List<int>() { ROWLEN * 4 + 18 } },
             { "psychopunch5", new List<int>() { ROWLEN * 4 + 20 } },
         };
+        // put in dictator unused offsets
+        // and dictator default values
 
         public Palette sprite;
         public Palette portrait;
