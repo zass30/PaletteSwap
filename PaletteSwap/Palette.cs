@@ -9,11 +9,10 @@ namespace PaletteSwap
 {
     public class Palette
     {
-        public static int ROWLEN = 32;
+        //public static int ROWLEN = 32;
         public int memlen { get; set; }
         public byte[] b;
         
-
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
         };
@@ -21,6 +20,24 @@ namespace PaletteSwap
         public static Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
         {
         };
+
+        public Palette()
+        {
+
+        }
+
+        public void loadStream(byte[] b)
+        {
+            byte[] col_byte = new byte[2];
+            foreach (var k in labelsToMemOffsets.Keys)
+            {
+                int offset = labelsToMemOffsets[k][0];
+                col_byte[0] = b[offset];
+                col_byte[1] = b[offset+1];
+                Color col = PaletteHelper.ByteToColor(col_byte);
+                labelsToColors[k] = col;
+            }
+        }
 
         public void setOffsets(string s, List<int> l)
         {

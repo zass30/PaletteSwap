@@ -46,7 +46,18 @@ namespace PaletteSwapTest
             result_color = PaletteHelper.ByteToColor(byte_color);
             Assert.AreEqual(c, result_color);
 
+            var s2 = new Palette();
+            s2.setOffsets("skin1", new List<int>() { 0, 4, 6 });
+            s2.loadStream(b_result);
+            Assert.AreEqual(s.getColor("skin1"), s2.getColor("skin1"));
+
+
 
         }
-    }
+
+        [TestMethod]
+        public void PaletteLoadTest()
+        {
+        }
+        }
 }
