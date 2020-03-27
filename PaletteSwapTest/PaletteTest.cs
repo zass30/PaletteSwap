@@ -64,7 +64,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void CharacterTest()
+        public void createDefaultCharacterTest()
         {
             Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var s = d.sprite;
@@ -112,6 +112,16 @@ namespace PaletteSwapTest
 
             Assert.AreEqual("EF0D", PaletteHelper.ColorToMemFormat(s.getColor("crusherflame1")));
             Assert.AreEqual("F80E", PaletteHelper.ColorToMemFormat(s.getColor("crusherflame2")));
+
+            d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            s = d.sprite;
+            Assert.IsNotNull(s);
+
+            Assert.AreEqual("FE0B", PaletteHelper.ColorToMemFormat(s.getColor("costume1")));
+            Assert.AreEqual("EB08", PaletteHelper.ColorToMemFormat(s.getColor("costume2")));
+            Assert.AreEqual("C705", PaletteHelper.ColorToMemFormat(s.getColor("costume3")));
+            Assert.AreEqual("9503", PaletteHelper.ColorToMemFormat(s.getColor("costume4")));
+            Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(s.getColor("costume5")));
 
         }
     }
