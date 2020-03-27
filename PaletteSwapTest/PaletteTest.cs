@@ -53,6 +53,16 @@ namespace PaletteSwapTest
 
         }
 
+
+        [TestMethod]
+        public void OffsetsTest()
+        {
+            var s = new Palette();
+            s.setAllOffSets(Character.dictatorSpriteOffsets);
+            Assert.AreEqual(0, s.getOffsets("pads5")[0]);
+            Assert.AreEqual(12, s.getOffsets("pads4")[0]);
+        }
+
         [TestMethod]
         public void CharacterTest()
         {
