@@ -75,7 +75,7 @@ namespace PaletteSwap
                 Palette p = new Palette();
                 c.sprite = s;
                 s.setAllOffSets(dictatorSpriteOffsets);
-                byte[] b = PaletteHelper.StringToByteStream(bis5sprite);
+                byte[] b = PaletteHelper.StringToByteStream(Properties.Resources.Bis5sprite);
                 s.loadStream(b);
                 c.portrait = p;
             }

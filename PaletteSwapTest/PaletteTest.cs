@@ -66,6 +66,8 @@ namespace PaletteSwapTest
         [TestMethod]
         public void CharacterTest()
         {
+            Assert.AreEqual(Character.bis5sprite, PaletteSwap.Properties.Resources.Bis5sprite);
+
             Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var s = d.sprite;
             Assert.IsNotNull(s);
