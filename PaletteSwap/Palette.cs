@@ -17,6 +17,11 @@ namespace PaletteSwap
     public class Character
     {
         public static int ROWLEN = 32;
+        public static string bis5sprite = @"4101 0606 4909 6C0C 8E0E BF0F 6402 330D FD0A DB06 A803 FE0E B90C 7609 5307 0000 " + 
+"3402 2302 3403 5605 6706 7807 8A08 9B09 FD0A DB06 A803 FE0E B90C 7609 5307 0000 " +
+"5200 0606 6A0A 7C0C AE0E DF0F 7305 EF0D FF0E DA08 9506 F80E EC0B CA08 A706 0000 " +
+"4101 0606 4909 6C0C 8E0E BF0F FE0D 330D FD0A DB06 A803 FE0E B90C 7609 5307 0000 " +
+"4101 0606 4909 6C0C 8E0E BF0F FF0E DF0C AF09 8F07 6F05 FE0E B90C 7608 5307 0000";
         public static Dictionary<string, List<int>> dictatorSpriteOffsets = new Dictionary<string, List<int>>
         {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
@@ -28,7 +33,7 @@ namespace PaletteSwap
             { "pads4", new List<int>() { 12 } },
             { "stripe", new List<int>() { 14, ROWLEN * 3 + 14 } },
             { "pads1", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
-            { "pads2", new List<int>() { 28, ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
+            { "pads2", new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
             { "pads3", new List<int>() { 20, ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
             { "skin1", new List<int>() { 22, ROWLEN * 1 + 22, ROWLEN * 3 + 22, ROWLEN * 4 + 22 } },
             { "skin2", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 3 + 24, ROWLEN * 4 + 24 } },
@@ -38,7 +43,7 @@ namespace PaletteSwap
             { "crusherpads5", new List<int>() { ROWLEN * 2 + 0 } },
             { "crushercostume4", new List<int>() { ROWLEN * 2 + 4 } },
             { "crushercostume3", new List<int>() { ROWLEN * 2 + 6 } },
-            { "crushercostume2", new List<int>() { ROWLEN * 2 + 9 } },
+            { "crushercostume2", new List<int>() { ROWLEN * 2 + 8 } },
             { "crushercostume1", new List<int>() { ROWLEN * 2 + 10 } },
             { "crusherpads4", new List<int>() { ROWLEN * 2 + 12 } },
             { "crusherflame1", new List<int>() { ROWLEN * 2 + 14 } },
@@ -61,23 +66,25 @@ namespace PaletteSwap
         public enum CHARACTERS { Dictator, Claw };
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold };
 
-        public static Character createDefaultCharacter(CHARACTERS c, BUTTONS b)
+        public static Character createDefaultCharacter(CHARACTERS characater, BUTTONS button)
         {
-            var characater = new Character();
-            if (c == CHARACTERS.Dictator)
+            var c = new Character();
+            if (characater == CHARACTERS.Dictator)
             {
                 Palette s = new Palette();
                 Palette p = new Palette();
-                characater.sprite = s;
-                characater.portrait = p;
+                c.sprite = s;
+                s.setAllOffSets(dictatorSpriteOffsets);
+                byte[] b = PaletteHelper.StringToByteStream(bis5sprite);
+                s.loadStream(b);
+                c.portrait = p;
             }
-            return characater;
+            return c;
         }
     }
 
     public class Palette
     {
-        //public static int ROWLEN = 32;
         public int memlen { get; set; }
         public byte[] b;
         
