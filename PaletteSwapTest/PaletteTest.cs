@@ -14,7 +14,7 @@ namespace PaletteSwapTest
         {
             var s = new Palette();
             var c = Color.FromArgb(0, 17, 34, 51);
-            s.setColor("skin1", c);
+            s.SetColor("skin1", c);
             var result = s.getColor("skin1");
             Assert.AreEqual(c, result);
 
@@ -139,6 +139,44 @@ namespace PaletteSwapTest
             for (int i = 0; i < data_expected.Length; i++)
             {
                 Assert.AreEqual(data_expected[0], data_result[0]);
+            }
+        }
+
+        [TestMethod]
+        public void WriteByteStreamChangeFieldsTest()
+        {
+            var d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var sprite = d.sprite;
+            string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // test #2
+            // modify a few fields, check that results are what we expect 
+
+            //  pads 5
+            data_expected[0] = 0x23;
+            data_expected[1] = 0x01;
+            data_expected[0 + 3 * 32] = 0x23;
+            data_expected[1 + 3 * 32] = 0x01;
+            data_expected[0 + 4 * 32] = 0x23;
+            data_expected[1 + 4 * 32] = 0x01;
+
+            // costume 5
+            data_expected[2] = 0x12;
+            data_expected[3] = 0x03;
+            data_expected[2 + 3 * 32] = 0x12;
+            data_expected[3 + 3 * 32] = 0x03;
+            data_expected[2 + 4 * 32] = 0x12;
+            data_expected[3 + 4 * 32] = 0x03;
+
+            sprite.SetColor("pads5", Color.FromArgb(0, 17, 34, 51));
+            sprite.SetColor("costume5", Color.FromArgb(0, 51, 17, 34));
+
+            var data_result = sprite.ToByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+                if (Sprite.unusedOffsets.ContainsKey(i))
+                    continue;
+                Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
     }

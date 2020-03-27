@@ -171,7 +171,7 @@ namespace PaletteSwap
                 return Color.Black;
         }
 
-        public void setColor(string s, Color c)
+        public void SetColor(string s, Color c)
         {
             labelsToColors[s] = c;
         }
