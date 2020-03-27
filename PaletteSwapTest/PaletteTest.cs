@@ -24,7 +24,7 @@ namespace PaletteSwapTest
             Assert.AreEqual(6, r_offset[2]);
 
             s.memlen = 10;
-            var b_result = s.memoryRepresentation();
+            var b_result = s.ToByteStream();
             Assert.AreEqual(10, b_result.Length);
 
             byte[] byte_color = new byte[2];
@@ -123,6 +123,23 @@ namespace PaletteSwapTest
             Assert.AreEqual("9503", PaletteHelper.ColorToMemFormat(s.getColor("costume4")));
             Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(s.getColor("costume5")));
 
+        }
+
+        [TestMethod]
+        public void WriteByteStreamBasicTest()
+        {
+            // test #1
+            // check that a bis0sprite's byte representation is what we expect 
+            string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+
+            var d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var s = d.sprite;
+            var data_result = s.ToByteStream();
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+                Assert.AreEqual(data_expected[0], data_result[0]);
+            }
         }
     }
 }

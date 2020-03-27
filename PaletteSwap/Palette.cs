@@ -105,6 +105,7 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(b);
+                s.memlen = b.Length;
                 c.portrait = p;
             }
             return c;
@@ -113,7 +114,7 @@ namespace PaletteSwap
 
     public class Palette
     {
-        public int memlen { get; set; }
+        public int memlen { get; set; } // this doens't belong here
         public byte[] b;
         
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
@@ -176,7 +177,7 @@ namespace PaletteSwap
         }
 
         
-        public byte[] memoryRepresentation()
+        public byte[] ToByteStream()
         {
             byte[] b = new byte[memlen];
 
