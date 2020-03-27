@@ -180,5 +180,19 @@ namespace PaletteSwap
             return old_bison_punches_stream(Resources.sfxjd06a);
         }
 
+        public byte[] portraits_stream03japanese()
+        {
+            return portraits_stream(Resources.sfxj03c);
+        }
+
+        public byte[] sprites_stream04japanese()
+        {
+            return sprites_stream(Resources.sfxj04a);
+        }
+
+        public byte[] old_bison_punches_stream06japanese()
+        {
+            return old_bison_punches_stream(Resources.sfxj06a);
+        }
     }
 }

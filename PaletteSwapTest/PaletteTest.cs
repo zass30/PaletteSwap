@@ -51,13 +51,17 @@ namespace PaletteSwapTest
             s2.loadStream(b_result);
             Assert.AreEqual(s.getColor("skin1"), s2.getColor("skin1"));
 
-
-
         }
 
         [TestMethod]
-        public void PaletteLoadTest()
+        public void CharacterTest()
         {
+            Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var s = d.sprite;
+            Assert.IsNotNull(s);
+
+            // is sprite.costume1 = a
+            //Assert.AreEqual("FD0A", PaletteHelper.ColorToMemFormat(p.pads1));
         }
-        }
+    }
 }

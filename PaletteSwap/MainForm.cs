@@ -25,6 +25,7 @@ namespace PaletteSwap
         public Sprite currentSprite;
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
+        enum ROMSTYLE { us, japanese, phoenix };
 
         public MainForm()
         {
@@ -1006,16 +1007,21 @@ namespace PaletteSwap
 
         private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            savePatchedRomToolFormat(sender, e, false);
+            savePatchedRomToolFormat(sender, e, ROMSTYLE.us);
         }
 
         private void savePhoenixRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            savePatchedRomToolFormat(sender, e, true);
+            savePatchedRomToolFormat(sender, e, ROMSTYLE.phoenix);
+        }
+
+        private void saveJapaneseRomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            savePatchedRomToolFormat(sender, e, ROMSTYLE.japanese);
         }
 
         // would like to encapsulate in object 
-        private void savePatchedRomToolFormat(object sender, EventArgs e, bool isPhoenix)
+        private void savePatchedRomToolFormat(object sender, EventArgs e, ROMSTYLE r)
         {
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -1040,7 +1046,7 @@ namespace PaletteSwap
                         byte[] s_stream;
                         byte[] punches_stream;
 
-                        if (isPhoenix)
+                        if (r == ROMSTYLE.phoenix)
                         {
                             _03filename = "sfxjd.03c";
                             _04filename = "sfxjd.04a";
@@ -1049,7 +1055,7 @@ namespace PaletteSwap
                             s_stream = characterColorSet.sprites_stream04phoenix();
                             punches_stream = characterColorSet.old_bison_punches_stream06phoenix();
                         }
-                        else
+                        else if (r == ROMSTYLE.us)
                         {
                             _03filename = "sfxe.03c";
                             _04filename = "sfxe.04a";
@@ -1059,7 +1065,26 @@ namespace PaletteSwap
                             s_stream = characterColorSet.sprites_stream04();
                             punches_stream = characterColorSet.old_bison_punches_stream06();
                         }
+                        else if (r == ROMSTYLE.us)
+                        {
+                            _03filename = "sfxj.03c";
+                            _04filename = "sfxj.04a";
+                            _06filename = "sfxj.06a";
 
+                            p_stream = characterColorSet.portraits_stream03japanese();
+                            s_stream = characterColorSet.sprites_stream04japanese();
+                            punches_stream = characterColorSet.old_bison_punches_stream06japanese();
+                        }
+                        else
+                        {
+                                _03filename = "sfxj.03c";
+                                _04filename = "sfxj.04a";
+                                _06filename = "sfxj.06a";
+
+                                p_stream = characterColorSet.portraits_stream03japanese();
+                                s_stream = characterColorSet.sprites_stream04japanese();
+                                punches_stream = characterColorSet.old_bison_punches_stream06japanese();
+                        }
                         var _03file = archive.CreateEntry(_03filename);
                         using (var entryStream = _03file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))

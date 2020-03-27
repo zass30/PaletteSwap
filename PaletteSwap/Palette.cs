@@ -7,6 +7,34 @@ using System.Threading.Tasks;
 
 namespace PaletteSwap
 {
+    // palette has label->color
+
+    // stream: object that can print out stream and load stream
+    // stream can go to string and back
+
+    // image: can print image from palette
+
+    public class Character
+    {
+        public Palette sprite;
+        public Palette portrait;
+        public enum CHARACTERS { Dictator, Claw };
+        public enum BUTTONS { lp, mp };
+
+        public static Character createDefaultCharacter(CHARACTERS c, BUTTONS b)
+        {
+            var characater = new Character();
+            if (c == CHARACTERS.Dictator)
+            {
+                Palette s = new Palette();
+                Palette p = new Palette();
+                characater.sprite = s;
+                characater.portrait = p;
+            }
+            return characater;
+        }
+    }
+
     public class Palette
     {
         //public static int ROWLEN = 32;
