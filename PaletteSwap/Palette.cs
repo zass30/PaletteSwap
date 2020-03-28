@@ -17,6 +17,7 @@ namespace PaletteSwap
     public class Character
     {
         public static int ROWLEN = 32;
+        public static string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
         public static Dictionary<string, List<int>> dictatorSpriteOffsets = new Dictionary<string, List<int>>
         {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
@@ -114,10 +115,16 @@ namespace PaletteSwap
         }
     }
 
+    public struct ColorPosition
+    {
+        public Color c;
+        public int position;
+    }
+
     public class Palette
     {
         public int memlen { get; set; } // this doens't belong here
-        public byte[] b;
+        public List<ColorPosition> defaults;
         
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
