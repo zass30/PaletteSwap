@@ -181,5 +181,53 @@ namespace PaletteSwapTest
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
+
+/*
+        [TestMethod]
+        public void WriteSpriteByteStreamChangeSpriteTest()
+        {
+            var d_lp = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var sprite_lp = d_lp.sprite;
+
+            var d_hk = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            var sprite_hk = d_hk.sprite;
+
+
+            string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
+            var data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // test #3
+            // change all fields in sprite0 to sprite5, check new byte 
+            // representation is correct
+
+            var sprite0 = new Sprite(Sprite.bis0sprite);
+            var sprite5 = new Sprite(Sprite.bis5sprite);
+
+            Assert.AreNotEqual(sprite5.costume1, sprite0.costume1);
+
+            var spriteType = sprite.GetType();
+            foreach (var label in Enum.GetNames(typeof(Sprite.SPRITE_COLORS)))
+            {
+                var myFieldInfo = spriteType.GetField(label.ToString());
+                var sprite5color = (Color)myFieldInfo.GetValue(sprite5);
+                myFieldInfo.SetValue(sprite0, sprite5color);
+            }
+
+            Assert.AreEqual(sprite5.costume1, sprite0.costume1);
+
+            // check that they have identical byte strings
+            var data_result = sprite0.ByteStream();
+            s_expected = Sprite.spriteAsTextLine(Sprite.bis5sprite);
+            data_expected = PaletteHelper.StringToByteStream(s_expected);
+
+            for (int i = 0; i < data_expected.Length; i++)
+            {
+                if (Sprite.unusedOffsets.ContainsKey(i))
+                    continue;
+                if (i == 157) // bug in data for bison5, this is a data bug in the rom
+                    continue;
+                Assert.AreEqual(data_expected[i], data_result[i]);
+            }
+        }
+        */
     }
 }
