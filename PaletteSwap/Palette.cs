@@ -20,6 +20,22 @@ namespace PaletteSwap
         public List<ColorOffset> defaultColorOffsets;
         public List<int> unusedOffsets;
         public int streamLength;
+
+        public void createColorOffsets(string defaults, int offset)
+        {
+            byte[] colordefaults = PaletteHelper.StringToByteStream(defaults);
+            byte[] col_byte = new byte[2];
+            for (int i = 0; i < colordefaults.Length; i = i + 2)
+            {
+                col_byte[0] = colordefaults[i];
+                col_byte[1] = colordefaults[i + 1];
+                Color defaultcolor = PaletteHelper.ByteToColor(col_byte);
+                ColorOffset cp = new ColorOffset();
+                cp.c = defaultcolor;
+                cp.position = offset + i;
+                this.defaultColorOffsets.Add(cp);
+            }
+        }
     }
 
     public class Character
