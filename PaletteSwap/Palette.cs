@@ -119,6 +119,11 @@ namespace PaletteSwap
     {
         public Color c;
         public int position;
+
+       /* public List<ColorPosition> createDefaults(string s)
+        {
+
+        }*/
     }
 
     public class Palette
@@ -189,6 +194,13 @@ namespace PaletteSwap
         public byte[] ToByteStream()
         {
             byte[] b = new byte[memlen];
+
+            foreach (var k in defaults)
+            {
+                byte[] c = PaletteHelper.ColorToByte(k.c);
+                b[k.position] = c[0];
+                b[k.position + 1] = c[1];
+            }
 
             foreach (var k in labelsToMemOffsets.Keys)
             {
