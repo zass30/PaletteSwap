@@ -95,9 +95,6 @@ namespace PaletteSwap
     public class Character
     {
         public static int ROWLEN = 32;
-        public static string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
-        public static int defaultoffset = 32;
-        public static List<ColorOffset> defaultentries = new List<ColorOffset>();
         public static Dictionary<string, List<int>> dictatorSpriteOffsets = new Dictionary<string, List<int>>
         {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
@@ -136,9 +133,6 @@ namespace PaletteSwap
             { "psychopunch4", new List<int>() { ROWLEN * 4 + 18 } },
             { "psychopunch5", new List<int>() { ROWLEN * 4 + 20 } },
         };
-        // put in dictator unused offsets
-        // and dictator default values
-
         public Palette sprite;
         public Palette portrait;
         public enum CHARACTERS { Dictator, Claw };
