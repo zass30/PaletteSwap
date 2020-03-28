@@ -23,7 +23,7 @@ namespace PaletteSwapTest
             Assert.AreEqual(0, r_offset[0]);
             Assert.AreEqual(6, r_offset[2]);
 
-            s.memlen = 10;
+            s.streamLength = 10;
             var b_result = s.ToByteStream();
             Assert.AreEqual(10, b_result.Length);
 
@@ -174,7 +174,7 @@ namespace PaletteSwapTest
             var data_result = sprite.ToByteStream();
             for (int i = 0; i < data_expected.Length; i++)
             {
-                if (Sprite.unusedOffsets.ContainsKey(i))
+                if (sprite.unusedOffsets.Contains(i))
                     continue;
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }

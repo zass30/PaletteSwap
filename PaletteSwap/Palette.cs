@@ -14,12 +14,20 @@ namespace PaletteSwap
 
     // image: can print image from palette
 
+    public struct PaletteConfig
+    {
+        public Dictionary<string, List<int>> labelOffsets;
+        public List<ColorOffset> defaultColorOffsets;
+        public List<int> unusedOffsets;
+        public int streamLength;
+    }
+
     public class Character
     {
         public static int ROWLEN = 32;
         public static string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
         public static int defaultoffset = 32;
-        public static List<ColorPosition> defaultentries = new List<ColorPosition>();
+        public static List<ColorOffset> defaultentries = new List<ColorOffset>();
         public static Dictionary<string, List<int>> dictatorSpriteOffsets = new Dictionary<string, List<int>>
         {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
@@ -110,7 +118,7 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(b);
-                s.memlen = b.Length;
+                s.streamLength = b.Length;
                 byte[] colordefaults = PaletteHelper.StringToByteStream(defaults);
                 byte[] col_byte = new byte[2];
                 for (int i = 0; i < colordefaults.Length; i = i + 2)
@@ -118,27 +126,30 @@ namespace PaletteSwap
                     col_byte[0] = colordefaults[i];
                     col_byte[1] = colordefaults[i + 1];
                     Color defaultcolor = PaletteHelper.ByteToColor(col_byte);
-                    ColorPosition cp = new ColorPosition();
+                    ColorOffset cp = new ColorOffset();
                     cp.c = defaultcolor;
                     cp.position = defaultoffset + i;
-                    s.defaults.Add(cp);
+                    s.defaultColorOffsets.Add(cp);
                 }
-                c.portrait = p;
+                s.unusedOffsets = new List<int>() { 66, 67, 92, 93 };
+                c.portrait = p;                
             }
             return c;
         }
     }
 
-    public struct ColorPosition
+    public struct ColorOffset
     {
         public Color c;
         public int position;
     }
 
+
     public class Palette
     {
-        public int memlen { get; set; } // this doens't belong here
-        public List<ColorPosition> defaults = new List<ColorPosition>();
+        public int streamLength { get; set; } // this doens't belong here
+        public List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+        public List<int> unusedOffsets = new List<int>();
         
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
@@ -147,6 +158,16 @@ namespace PaletteSwap
         public static Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
         {
         };
+
+        public static Palette PaletteFromConfig(PaletteConfig pc)
+        {
+            Palette p = new Palette();
+            p.setAllOffSets(pc.labelOffsets);
+            p.defaultColorOffsets = new List<ColorOffset>(pc.defaultColorOffsets);
+            p.streamLength = pc.streamLength;
+            p.unusedOffsets = new List<int>(pc.unusedOffsets);
+            return p;
+        }
 
         public Palette()
         {
@@ -202,9 +223,9 @@ namespace PaletteSwap
         
         public byte[] ToByteStream()
         {
-            byte[] b = new byte[memlen];
+            byte[] b = new byte[streamLength];
 
-            foreach (var k in defaults)
+            foreach (var k in defaultColorOffsets)
             {
                 byte[] c = PaletteHelper.ColorToByte(k.c);
                 b[k.position] = c[0];
