@@ -153,7 +153,6 @@ namespace PaletteSwap
                 Palette s = Palette.PaletteFromConfig(pc);
                 Palette p = new Palette();
                 c.sprite = s;
-//                s.setAllOffSets(dictatorSpriteOffsets);
                 byte[] b = new byte[0];                
                 switch (button)
                 {
@@ -189,23 +188,6 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(b);
-
-                /*
-                s.streamLength = b.Length;
-                byte[] colordefaults = PaletteHelper.StringToByteStream(defaults);
-                byte[] col_byte = new byte[2];
-                for (int i = 0; i < colordefaults.Length; i = i + 2)
-                {
-                    col_byte[0] = colordefaults[i];
-                    col_byte[1] = colordefaults[i + 1];
-                    Color defaultcolor = PaletteHelper.ByteToColor(col_byte);
-                    ColorOffset cp = new ColorOffset();
-                    cp.c = defaultcolor;
-                    cp.position = defaultoffset + i;
-                    s.defaultColorOffsets.Add(cp);
-                }
-                s.unusedOffsets = new List<int>() { 66, 67, 92, 93 };
-                */
                 c.portrait = p;                
             }
             return c;
