@@ -18,6 +18,8 @@ namespace PaletteSwap
     {
         public static int ROWLEN = 32;
         public static string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
+        public static int defaultoffset = 32;
+        public static List<ColorPosition> defaultentries = new List<ColorPosition>();
         public static Dictionary<string, List<int>> dictatorSpriteOffsets = new Dictionary<string, List<int>>
         {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
@@ -73,7 +75,7 @@ namespace PaletteSwap
                 Palette p = new Palette();
                 c.sprite = s;
                 s.setAllOffSets(dictatorSpriteOffsets);
-                byte[] b = new byte[0];
+                byte[] b = new byte[0];                
                 switch (button)
                 {
                     case BUTTONS.lp:
@@ -109,6 +111,18 @@ namespace PaletteSwap
                 }
                 s.loadStream(b);
                 s.memlen = b.Length;
+                byte[] colordefaults = PaletteHelper.StringToByteStream(defaults);
+                byte[] col_byte = new byte[2];
+                for (int i = 0; i < colordefaults.Length; i = i + 2)
+                {
+                    col_byte[0] = colordefaults[i];
+                    col_byte[1] = colordefaults[i + 1];
+                    Color defaultcolor = PaletteHelper.ByteToColor(col_byte);
+                    ColorPosition cp = new ColorPosition();
+                    cp.c = defaultcolor;
+                    cp.position = defaultoffset + i;
+                    s.defaults.Add(cp);
+                }
                 c.portrait = p;
             }
             return c;
@@ -119,17 +133,12 @@ namespace PaletteSwap
     {
         public Color c;
         public int position;
-
-       /* public List<ColorPosition> createDefaults(string s)
-        {
-
-        }*/
     }
 
     public class Palette
     {
         public int memlen { get; set; } // this doens't belong here
-        public List<ColorPosition> defaults;
+        public List<ColorPosition> defaults = new List<ColorPosition>();
         
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
