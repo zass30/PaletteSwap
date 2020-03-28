@@ -42,7 +42,8 @@ namespace PaletteSwap
         {
             int ROWLEN = 32;
             int MEMLEN = 160;
-            Dictionary<string, List<int>> dictatorSpriteOffsets = new Dictionary<string, List<int>>
+            Dictionary<string, List<int>> dictatorSpriteOffsets = 
+                new Dictionary<string, List<int>>
         {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
             { "costume5", new List<int>() { 2, ROWLEN * 3 + 2, ROWLEN * 4 + 2 } },
