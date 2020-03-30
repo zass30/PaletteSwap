@@ -19,7 +19,16 @@ namespace PaletteSwap
 
         public Bitmap RemappedImage()
         {
-            return baseImage;
+            Bitmap b = new Bitmap(baseImage);
+            int width = b.Width;
+            int height = b.Height;
+            Graphics gfb = Graphics.FromImage(b);
+            ImageAttributes imageAttributes = new ImageAttributes();
+            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
+            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
+                                    0, 0, width, height,
+                                    GraphicsUnit.Pixel, imageAttributes);
+            return b;
         }
     }
 }
