@@ -54,7 +54,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void createDefaultCharacterTest()
+        public void CreateDefaultCharacterTest()
         {
             Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var s = d.sprite;

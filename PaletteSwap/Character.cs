@@ -34,30 +34,39 @@ namespace PaletteSwap
                         break;
                     case BUTTONS.mp:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis1sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis1portrait);
                         break;
                     case BUTTONS.hp:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis2sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis2portrait);
                         break;
                     case BUTTONS.lk:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis3sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis3portrait);
                         break;
                     case BUTTONS.mk:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis4sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis4portrait);
                         break;
                     case BUTTONS.hk:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis5sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis5portrait);
                         break;
                     case BUTTONS.start:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis6sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis6portrait);
                         break;
                     case BUTTONS.hold:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis7sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis7portrait);
                         break;
                     case BUTTONS.old1:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis8sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis8portrait);
                         break;
                     case BUTTONS.old2:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis9sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis9portrait);
                         break;
                 }
                 s.loadStream(sprite_bytestream);

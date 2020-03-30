@@ -79,11 +79,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FD0F EB0F B70E 950C 740A 6008 4106 B70F 700F 400C 2008 EB08 C705 9503 7300 0A00 FD0F EB0F B70E 950C 740A 6008 4106 B70F 700F 400C 2008 FF0F CC0C 9909 7707 0A00 FD0F EB0F B70E 950C 740A 6008 4106 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FD0F EB0F B70E 950C 740A 6008 4106 B70F 700F 400C 2008 9503 7300 6000 4000 0A00.
+        /// </summary>
+        public static string bis1portrait {
+            get {
+                return ResourceManager.GetString("bis1portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0007 7300 9503 C705 EB08 FE0B 000A 400C B70F 840F 500D EB0F B70E 740A 4306 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 EF0E AD0A 7906 D90F 960E 640A 4306 0000 0007 4006 7007 9309 C50C F90D 540A FB0F FF0F CB0F 870D FE0A EA07 C704 9500 0000 0007 7300 9503 C705 EB08 FE0B EB0F 400C B70F 840F 500D EB0F B70E 740A 4306 0000 0007 7300 9503 C705 EB08 FE0B FF0D CE07 9D02 7B00 6800 EB0F B70E 740A 4306 0000.
         /// </summary>
         public static string bis1sprite {
             get {
                 return ResourceManager.GetString("bis1sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D90F B80F 960E 750C 640A 5308 4306 770F 440C 000A 0008 FF0F DD0D BB0B 8808 0A00 D90F B80F 960E 750C 640A 5308 4306 770F 440C 000A 0008 FF0F CC0C 9909 7707 0A00 D90F B80F 960E 750C 640A 5308 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 D90F B80F 960E 750C 640A 5308 4306 7F00 5D00 4A00 3700 BB0B 8808 7707 6606 0A00.
+        /// </summary>
+        public static string bis2portrait {
+            get {
+                return ResourceManager.GetString("bis2portrait", resourceCulture);
             }
         }
         
@@ -97,11 +115,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F DB0E B90C 970A 7609 6508 4306 770F 440C 000A 2008 DE06 BC05 8903 6802 0A00 FE0F DB0E B90C 970A 7609 6508 4306 770F 440C 000A 2008 FF0F CC0C 9909 7707 0A00 FE0F DB0E B90C 970A 7609 6508 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FE0F DB0E B90C 970A 7609 6508 4306 D80F B50D 940B 6008 8903 6802 4600 3400 0A00.
+        /// </summary>
+        public static string bis3portrait {
+            get {
+                return ResourceManager.GetString("bis3portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0005 4600 6802 8903 BC05 DE06 0007 D70F 770F 440C 000A FE0E B90C 7609 5307 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 770F 440C 000A FE0E B90C 7609 5307 0000 3008 7B04 9C05 BD07 CE09 DF0B 500C EC0F CA0F 860F 640D CF0F AB0E 890C 570A 0000 0005 4600 6802 8903 BC05 DE06 A80F D70F 770F 440C 000A FE0E B90C 7609 5307 0000 0005 4600 6802 8903 BC05 DE06 DF0F AC0F 7A0D 590B 0809 FE0E B90C 7609 5307 0000.
         /// </summary>
         public static string bis3sprite {
             get {
                 return ResourceManager.GetString("bis3sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0E CD0D AB0C 890A 7808 6607 5406 9A08 7806 5603 4502 DB0E A80C 860A 7408 0A00 FF0E CD0D AB0C 890A 7808 6607 5406 9A08 7806 5603 4502 FF0F CC0C 9909 7707 0A00 FF0E CD0D AB0C 890A 7808 6607 5406 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FF0E CD0D AB0C 890A 7808 6607 5406 550F 000D 000B 0009 860A 7408 6307 5206 0A00.
+        /// </summary>
+        public static string bis4portrait {
+            get {
+                return ResourceManager.GetString("bis4portrait", resourceCulture);
             }
         }
         
@@ -115,11 +151,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F DB0E B90C 970A 7609 6508 4306 FD0A DB06 9703 7500 BF0F 8E0E 6C0C 4909 0A00 FE0F DB0E B90C 970A 7609 6508 4306 FD0A DB06 9703 7500 FF0F CC0C 9909 7707 0A00 FE0F DB0E B90C 970A 7609 6508 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FE0F DB0E B90C 970A 7609 6508 4306 550F 000D 000B 0009 6C0C 4909 0606 4101 0A00.
+        /// </summary>
+        public static string bis5portrait {
+            get {
+                return ResourceManager.GetString("bis5portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 4101 0606 4909 6C0C 8E0E BF0F 6402 330D FD0A DB06 A803 FE0E B90C 7609 5307 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 FD0A DB06 A803 FE0E B90C 7609 5307 0000 5200 0606 6A0A 7C0C AE0E DF0F 7305 EF0D FF0E DA08 9506 F80E EC0B CA08 A706 0000 4101 0606 4909 6C0C 8E0E BF0F FE0D 330D FD0A DB06 A803 FE0E B90C 7609 5307 0000 4101 0606 4909 6C0C 8E0E BF0F FF0E DF0C AF09 8F07 6F05 FE0E B90C 7608 5307 0000.
         /// </summary>
         public static string bis5sprite {
             get {
                 return ResourceManager.GetString("bis5sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F DB0E B90C 970A 7609 6508 4306 EF0E AD0A 7906 5704 9A09 8908 7807 6706 0A00 FE0F DB0E B90C 970A 7609 6508 4306 EF0E AD0A 7906 5704 FF0F CC0C 9909 7707 0A00 FE0F DB0E B90C 970A 7609 6508 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FE0F DB0E B90C 970A 7609 6508 4306 000F 000C 000A 0008 7807 6706 5505 4404 0A00.
+        /// </summary>
+        public static string bis6portrait {
+            get {
+                return ResourceManager.GetString("bis6portrait", resourceCulture);
             }
         }
         
@@ -133,6 +187,15 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FD0F EB0F B70E 950C 740A 6008 4106 EC0F C70E 940B 6008 D90F A70E 850C 6409 0A00 FD0F EB0F B70E 950C 740A 6008 4106 EC0F C70E 940B 6008 FF0F CC0C 9909 7707 0A00 FD0F EB0F B70E 950C 740A 6008 4106 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FD0F EB0F B70E 950C 740A 6008 4106 9C0F 6B0E 590C 4709 850C 750A 5008 3006 0A00.
+        /// </summary>
+        public static string bis7portrait {
+            get {
+                return ResourceManager.GetString("bis7portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 5006 4006 6409 850C A70E D90F 6008 6B0E EC0F C70E 940B EB0F B70E 740A 4306 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 EC0F C70E 940B EB0F B70E 740A 4306 0000 5008 7508 970A A80C C90E DB0F 720A FD0F D90F A70F 940D CF0F 9D0B 7A09 5807 0000 5006 4006 6409 850C A70E D90F E80F 6B0E EC0F C70E 940B EB0F B70E 740A 4306 0000 5006 4006 6409 850C A70E D90F CF0D 8E0B 5D08 4B07 0806 EB0F B70E 740A 4306 0000.
         /// </summary>
         public static string bis7sprite {
@@ -142,11 +205,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 870F 650E 320C 0009 0A00 FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00.
+        /// </summary>
+        public static string bis8portrait {
+            get {
+                return ResourceManager.GetString("bis8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3402 0006 0009 320C 650E 870F 5604 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 EF0E AD0A 7906 D90F 960E 640A 4306 0000 5007 0006 600A 720C A50E D80F 6208 EB0F FF0F CA0D 850A EF0C CD09 9B06 6704 0000 3402 0006 0009 320C 650E 870F EB0F 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 3402 0006 0009 320C 650E 870F FF0D EC07 D902 B700 8600 D90F 960E 640A 4306 0000 .
         /// </summary>
         public static string bis8sprite {
             get {
                 return ResourceManager.GetString("bis8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 870F 650E 320C 0009 0A00 FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00.
+        /// </summary>
+        public static string bis9portrait {
+            get {
+                return ResourceManager.GetString("bis9portrait", resourceCulture);
             }
         }
         
