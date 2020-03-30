@@ -182,7 +182,7 @@ namespace PaletteSwapTest
             }
         }
 
-/*
+
         [TestMethod]
         public void WriteSpriteByteStreamChangeSpriteTest()
         {
@@ -192,42 +192,27 @@ namespace PaletteSwapTest
             var d_hk = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var sprite_hk = d_hk.sprite;
 
+            Assert.AreNotEqual(sprite_hk.getColor("costume1"), sprite_lp.getColor("costume1"));
 
-            string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
-            var data_expected = PaletteHelper.StringToByteStream(s_expected);
-            // test #3
-            // change all fields in sprite0 to sprite5, check new byte 
-            // representation is correct
-
-            var sprite0 = new Sprite(Sprite.bis0sprite);
-            var sprite5 = new Sprite(Sprite.bis5sprite);
-
-            Assert.AreNotEqual(sprite5.costume1, sprite0.costume1);
-
-            var spriteType = sprite.GetType();
-            foreach (var label in Enum.GetNames(typeof(Sprite.SPRITE_COLORS)))
+            // now get each label
+            foreach (var k in sprite_hk.labelsToMemOffsets)
             {
-                var myFieldInfo = spriteType.GetField(label.ToString());
-                var sprite5color = (Color)myFieldInfo.GetValue(sprite5);
-                myFieldInfo.SetValue(sprite0, sprite5color);
+                string label = k.Key;
+                sprite_lp.SetColor(label, sprite_hk.getColor(label));
             }
 
-            Assert.AreEqual(sprite5.costume1, sprite0.costume1);
+            Assert.AreEqual(sprite_hk.getColor("costume1"), sprite_lp.getColor("costume1"));
 
-            // check that they have identical byte strings
-            var data_result = sprite0.ByteStream();
-            s_expected = Sprite.spriteAsTextLine(Sprite.bis5sprite);
-            data_expected = PaletteHelper.StringToByteStream(s_expected);
+            // check byte strings are identical
 
+            var data_expected = sprite_hk.ToByteStream();
+            var data_result = sprite_lp.ToByteStream();
             for (int i = 0; i < data_expected.Length; i++)
             {
-                if (Sprite.unusedOffsets.ContainsKey(i))
-                    continue;
-                if (i == 157) // bug in data for bison5, this is a data bug in the rom
+                if (sprite_lp.unusedOffsets.Contains(i))
                     continue;
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
-        */
     }
 }
