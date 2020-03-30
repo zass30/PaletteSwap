@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="Palette.cs" />
     <Compile Include="PaletteConfig.cs" />
+    <Compile Include="PaletteImage.cs" />
     <Compile Include="Portrait.cs" />
     <Compile Include="Sprite.cs" />
     <Compile Include="ZoomForm.cs">

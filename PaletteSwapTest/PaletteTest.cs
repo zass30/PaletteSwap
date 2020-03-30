@@ -112,7 +112,6 @@ namespace PaletteSwapTest
             Assert.AreEqual("C705", PaletteHelper.ColorToMemFormat(s.GetColor("costume3")));
             Assert.AreEqual("9503", PaletteHelper.ColorToMemFormat(s.GetColor("costume4")));
             Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(s.GetColor("costume5")));
-
         }
 
         [TestMethod]
@@ -201,7 +200,6 @@ namespace PaletteSwapTest
                 Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
-
 
         [TestMethod]
         public void CreateDicPortraitFromConfigTest()
