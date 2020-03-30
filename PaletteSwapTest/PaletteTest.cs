@@ -15,7 +15,7 @@ namespace PaletteSwapTest
             var s = new Palette();
             var c = Color.FromArgb(0, 17, 34, 51);
             s.SetColor("skin1", c);
-            var result = s.getColor("skin1");
+            var result = s.GetColor("skin1");
             Assert.AreEqual(c, result);
 
             s.setOffsets("skin1", new List<int>() { 0, 4, 6});
@@ -49,7 +49,7 @@ namespace PaletteSwapTest
             var s2 = new Palette();
             s2.setOffsets("skin1", new List<int>() { 0, 4, 6 });
             s2.loadStream(b_result);
-            Assert.AreEqual(s.getColor("skin1"), s2.getColor("skin1"));
+            Assert.AreEqual(s.GetColor("skin1"), s2.GetColor("skin1"));
 
         }
 
@@ -59,59 +59,59 @@ namespace PaletteSwapTest
             Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var s = d.sprite;
             Assert.IsNotNull(s);
-            Assert.AreEqual("FD0A", PaletteHelper.ColorToMemFormat(s.getColor("pads1")));
-            Assert.AreEqual("DB06", PaletteHelper.ColorToMemFormat(s.getColor("pads2")));
-            Assert.AreEqual("A803", PaletteHelper.ColorToMemFormat(s.getColor("pads3")));
-            Assert.AreEqual("6402", PaletteHelper.ColorToMemFormat(s.getColor("pads4")));
-            Assert.AreEqual("4101", PaletteHelper.ColorToMemFormat(s.getColor("pads5")));
+            Assert.AreEqual("FD0A", PaletteHelper.ColorToMemFormat(s.GetColor("pads1")));
+            Assert.AreEqual("DB06", PaletteHelper.ColorToMemFormat(s.GetColor("pads2")));
+            Assert.AreEqual("A803", PaletteHelper.ColorToMemFormat(s.GetColor("pads3")));
+            Assert.AreEqual("6402", PaletteHelper.ColorToMemFormat(s.GetColor("pads4")));
+            Assert.AreEqual("4101", PaletteHelper.ColorToMemFormat(s.GetColor("pads5")));
             
-            Assert.AreEqual("BF0F", PaletteHelper.ColorToMemFormat(s.getColor("costume1")));
-            Assert.AreEqual("8E0E", PaletteHelper.ColorToMemFormat(s.getColor("costume2")));
-            Assert.AreEqual("6C0C", PaletteHelper.ColorToMemFormat(s.getColor("costume3")));
-            Assert.AreEqual("4909", PaletteHelper.ColorToMemFormat(s.getColor("costume4")));
-            Assert.AreEqual("0606", PaletteHelper.ColorToMemFormat(s.getColor("costume5")));
+            Assert.AreEqual("BF0F", PaletteHelper.ColorToMemFormat(s.GetColor("costume1")));
+            Assert.AreEqual("8E0E", PaletteHelper.ColorToMemFormat(s.GetColor("costume2")));
+            Assert.AreEqual("6C0C", PaletteHelper.ColorToMemFormat(s.GetColor("costume3")));
+            Assert.AreEqual("4909", PaletteHelper.ColorToMemFormat(s.GetColor("costume4")));
+            Assert.AreEqual("0606", PaletteHelper.ColorToMemFormat(s.GetColor("costume5")));
 
-            Assert.AreEqual("FE0E", PaletteHelper.ColorToMemFormat(s.getColor("skin1")));
-            Assert.AreEqual("B90C", PaletteHelper.ColorToMemFormat(s.getColor("skin2")));
-            Assert.AreEqual("7609", PaletteHelper.ColorToMemFormat(s.getColor("skin3")));
-            Assert.AreEqual("5307", PaletteHelper.ColorToMemFormat(s.getColor("skin4")));
+            Assert.AreEqual("FE0E", PaletteHelper.ColorToMemFormat(s.GetColor("skin1")));
+            Assert.AreEqual("B90C", PaletteHelper.ColorToMemFormat(s.GetColor("skin2")));
+            Assert.AreEqual("7609", PaletteHelper.ColorToMemFormat(s.GetColor("skin3")));
+            Assert.AreEqual("5307", PaletteHelper.ColorToMemFormat(s.GetColor("skin4")));
 
-            Assert.AreEqual("330D", PaletteHelper.ColorToMemFormat(s.getColor("stripe")));
+            Assert.AreEqual("330D", PaletteHelper.ColorToMemFormat(s.GetColor("stripe")));
 
-            Assert.AreEqual("FE0D", PaletteHelper.ColorToMemFormat(s.getColor("psychoglow")));
+            Assert.AreEqual("FE0D", PaletteHelper.ColorToMemFormat(s.GetColor("psychoglow")));
 
-            Assert.AreEqual("FF0E", PaletteHelper.ColorToMemFormat(s.getColor("psychopunch1")));
-            Assert.AreEqual("DF0C", PaletteHelper.ColorToMemFormat(s.getColor("psychopunch2")));
-            Assert.AreEqual("AF09", PaletteHelper.ColorToMemFormat(s.getColor("psychopunch3")));
-            Assert.AreEqual("8F07", PaletteHelper.ColorToMemFormat(s.getColor("psychopunch4")));
-            Assert.AreEqual("6F05", PaletteHelper.ColorToMemFormat(s.getColor("psychopunch5")));
+            Assert.AreEqual("FF0E", PaletteHelper.ColorToMemFormat(s.GetColor("psychopunch1")));
+            Assert.AreEqual("DF0C", PaletteHelper.ColorToMemFormat(s.GetColor("psychopunch2")));
+            Assert.AreEqual("AF09", PaletteHelper.ColorToMemFormat(s.GetColor("psychopunch3")));
+            Assert.AreEqual("8F07", PaletteHelper.ColorToMemFormat(s.GetColor("psychopunch4")));
+            Assert.AreEqual("6F05", PaletteHelper.ColorToMemFormat(s.GetColor("psychopunch5")));
 
-            Assert.AreEqual("DF0F", PaletteHelper.ColorToMemFormat(s.getColor("crushercostume1")));
-            Assert.AreEqual("AE0E", PaletteHelper.ColorToMemFormat(s.getColor("crushercostume2")));
-            Assert.AreEqual("7C0C", PaletteHelper.ColorToMemFormat(s.getColor("crushercostume3")));
-            Assert.AreEqual("6A0A", PaletteHelper.ColorToMemFormat(s.getColor("crushercostume4")));
+            Assert.AreEqual("DF0F", PaletteHelper.ColorToMemFormat(s.GetColor("crushercostume1")));
+            Assert.AreEqual("AE0E", PaletteHelper.ColorToMemFormat(s.GetColor("crushercostume2")));
+            Assert.AreEqual("7C0C", PaletteHelper.ColorToMemFormat(s.GetColor("crushercostume3")));
+            Assert.AreEqual("6A0A", PaletteHelper.ColorToMemFormat(s.GetColor("crushercostume4")));
 
-            Assert.AreEqual("FF0E", PaletteHelper.ColorToMemFormat(s.getColor("crusherpads1")));
-            Assert.AreEqual("DA08", PaletteHelper.ColorToMemFormat(s.getColor("crusherpads2")));
-            Assert.AreEqual("9506", PaletteHelper.ColorToMemFormat(s.getColor("crusherpads3")));
-            Assert.AreEqual("7305", PaletteHelper.ColorToMemFormat(s.getColor("crusherpads4")));
-            Assert.AreEqual("5200", PaletteHelper.ColorToMemFormat(s.getColor("crusherpads5")));
+            Assert.AreEqual("FF0E", PaletteHelper.ColorToMemFormat(s.GetColor("crusherpads1")));
+            Assert.AreEqual("DA08", PaletteHelper.ColorToMemFormat(s.GetColor("crusherpads2")));
+            Assert.AreEqual("9506", PaletteHelper.ColorToMemFormat(s.GetColor("crusherpads3")));
+            Assert.AreEqual("7305", PaletteHelper.ColorToMemFormat(s.GetColor("crusherpads4")));
+            Assert.AreEqual("5200", PaletteHelper.ColorToMemFormat(s.GetColor("crusherpads5")));
 
-            Assert.AreEqual("EC0B", PaletteHelper.ColorToMemFormat(s.getColor("crusherhands1")));
-            Assert.AreEqual("CA08", PaletteHelper.ColorToMemFormat(s.getColor("crusherhands2")));
+            Assert.AreEqual("EC0B", PaletteHelper.ColorToMemFormat(s.GetColor("crusherhands1")));
+            Assert.AreEqual("CA08", PaletteHelper.ColorToMemFormat(s.GetColor("crusherhands2")));
 
-            Assert.AreEqual("EF0D", PaletteHelper.ColorToMemFormat(s.getColor("crusherflame1")));
-            Assert.AreEqual("F80E", PaletteHelper.ColorToMemFormat(s.getColor("crusherflame2")));
+            Assert.AreEqual("EF0D", PaletteHelper.ColorToMemFormat(s.GetColor("crusherflame1")));
+            Assert.AreEqual("F80E", PaletteHelper.ColorToMemFormat(s.GetColor("crusherflame2")));
 
             d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
             s = d.sprite;
             Assert.IsNotNull(s);
 
-            Assert.AreEqual("FE0B", PaletteHelper.ColorToMemFormat(s.getColor("costume1")));
-            Assert.AreEqual("EB08", PaletteHelper.ColorToMemFormat(s.getColor("costume2")));
-            Assert.AreEqual("C705", PaletteHelper.ColorToMemFormat(s.getColor("costume3")));
-            Assert.AreEqual("9503", PaletteHelper.ColorToMemFormat(s.getColor("costume4")));
-            Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(s.getColor("costume5")));
+            Assert.AreEqual("FE0B", PaletteHelper.ColorToMemFormat(s.GetColor("costume1")));
+            Assert.AreEqual("EB08", PaletteHelper.ColorToMemFormat(s.GetColor("costume2")));
+            Assert.AreEqual("C705", PaletteHelper.ColorToMemFormat(s.GetColor("costume3")));
+            Assert.AreEqual("9503", PaletteHelper.ColorToMemFormat(s.GetColor("costume4")));
+            Assert.AreEqual("7300", PaletteHelper.ColorToMemFormat(s.GetColor("costume5")));
 
         }
 
@@ -170,7 +170,6 @@ namespace PaletteSwapTest
             }
         }
 
-
         [TestMethod]
         public void WriteSpriteByteStreamChangeSpriteTest()
         {
@@ -180,16 +179,16 @@ namespace PaletteSwapTest
             var d_hk = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var sprite_hk = d_hk.sprite;
 
-            Assert.AreNotEqual(sprite_hk.getColor("costume1"), sprite_lp.getColor("costume1"));
+            Assert.AreNotEqual(sprite_hk.GetColor("costume1"), sprite_lp.GetColor("costume1"));
 
             // now get each label
             foreach (var k in sprite_hk.labelsToMemOffsets)
             {
                 string label = k.Key;
-                sprite_lp.SetColor(label, sprite_hk.getColor(label));
+                sprite_lp.SetColor(label, sprite_hk.GetColor(label));
             }
 
-            Assert.AreEqual(sprite_hk.getColor("costume1"), sprite_lp.getColor("costume1"));
+            Assert.AreEqual(sprite_hk.GetColor("costume1"), sprite_lp.GetColor("costume1"));
 
             // check byte strings are identical
 
@@ -200,6 +199,59 @@ namespace PaletteSwapTest
                 if (sprite_lp.unusedOffsets.Contains(i))
                     continue;
                 Assert.AreEqual(data_expected[i], data_result[i]);
+            }
+        }
+
+
+        [TestMethod]
+        public void CreateDicPortraitFromConfigTest()
+        {
+            Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var p = d.portrait;
+            Assert.IsNotNull(p);
+            Assert.AreEqual("FF0F", PaletteHelper.ColorToMemFormat(p.GetColor("skin1")));
+            Assert.AreEqual("D90F", PaletteHelper.ColorToMemFormat(p.GetColor("skin2")));
+            Assert.AreEqual("960E", PaletteHelper.ColorToMemFormat(p.GetColor("skin3")));
+            Assert.AreEqual("750C", PaletteHelper.ColorToMemFormat(p.GetColor("skin4")));
+            Assert.AreEqual("640A", PaletteHelper.ColorToMemFormat(p.GetColor("skin5")));
+            Assert.AreEqual("5408", PaletteHelper.ColorToMemFormat(p.GetColor("skin6")));
+            Assert.AreEqual("4306", PaletteHelper.ColorToMemFormat(p.GetColor("skin7")));
+
+            Assert.AreEqual("FE0F", PaletteHelper.ColorToMemFormat(p.GetColor("piping1")));
+            Assert.AreEqual("F90F", PaletteHelper.ColorToMemFormat(p.GetColor("piping2")));
+            Assert.AreEqual("D50F", PaletteHelper.ColorToMemFormat(p.GetColor("piping3")));
+            Assert.AreEqual("A00F", PaletteHelper.ColorToMemFormat(p.GetColor("piping4")));
+
+            Assert.AreEqual("8E00", PaletteHelper.ColorToMemFormat(p.GetColor("costume1")));
+            Assert.AreEqual("6D03", PaletteHelper.ColorToMemFormat(p.GetColor("costume2")));
+            Assert.AreEqual("4C00", PaletteHelper.ColorToMemFormat(p.GetColor("costume3")));
+            Assert.AreEqual("2A02", PaletteHelper.ColorToMemFormat(p.GetColor("costume4")));
+
+            Assert.AreEqual("000F", PaletteHelper.ColorToMemFormat(p.GetColor("blood1")));
+            Assert.AreEqual("000C", PaletteHelper.ColorToMemFormat(p.GetColor("blood2")));
+            Assert.AreEqual("000A", PaletteHelper.ColorToMemFormat(p.GetColor("blood3")));
+
+            Assert.AreEqual("FF0F", PaletteHelper.ColorToMemFormat(p.GetColor("teeth1")));
+            Assert.AreEqual("CC0C", PaletteHelper.ColorToMemFormat(p.GetColor("teeth2")));
+            Assert.AreEqual("9909", PaletteHelper.ColorToMemFormat(p.GetColor("teeth3")));
+            Assert.AreEqual("7707", PaletteHelper.ColorToMemFormat(p.GetColor("teeth4")));
+
+            Assert.AreEqual("7F09", PaletteHelper.ColorToMemFormat(p.GetColor("pipingloss1")));
+            Assert.AreEqual("5D09", PaletteHelper.ColorToMemFormat(p.GetColor("pipingloss2")));
+            Assert.AreEqual("3B09", PaletteHelper.ColorToMemFormat(p.GetColor("pipingloss3")));
+            Assert.AreEqual("0909", PaletteHelper.ColorToMemFormat(p.GetColor("pipingloss4")));
+
+            Assert.AreEqual("7C00", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss1")));
+            Assert.AreEqual("5B03", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss2")));
+            Assert.AreEqual("4A00", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss3")));
+            Assert.AreEqual("0900", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss4")));
+
+            var portrait_bytestream_expected = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis0portrait);
+            var portrait_bytestream_result = p.ToByteStream();
+
+            for (int i = 0; i < portrait_bytestream_expected.Length; i++)
+            {
+                Assert.AreEqual(portrait_bytestream_expected[i], portrait_bytestream_result[i]);
             }
         }
     }

@@ -84,7 +84,7 @@ namespace PaletteSwap
         }
 
 
-        public Color getColor(string s)
+        public Color GetColor(string s)
         {
             if (labelsToColors.ContainsKey(s))
                 return labelsToColors[s];
@@ -111,7 +111,7 @@ namespace PaletteSwap
 
             foreach (var k in labelsToMemOffsets.Keys)
             {
-                Color col = this.getColor(k);
+                Color col = this.GetColor(k);
                 byte[] c = PaletteHelper.ColorToByte(col);
                 foreach (int offset in labelsToMemOffsets[k])
                 {
