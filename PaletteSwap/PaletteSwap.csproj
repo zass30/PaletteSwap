@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="CharacterColorSet.cs" />
     <Compile Include="ColorSetForm.cs">
       <SubType>Form</SubType>
@@ -63,6 +64,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Palette.cs" />
+    <Compile Include="PaletteConfig.cs" />
     <Compile Include="Portrait.cs" />
     <Compile Include="Sprite.cs" />
     <Compile Include="ZoomForm.cs">

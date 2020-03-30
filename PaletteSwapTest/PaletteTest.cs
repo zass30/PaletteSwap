@@ -9,8 +9,6 @@ namespace PaletteSwapTest
     [TestClass]
     public class PaletteTest
     {
-
-
         [TestMethod]
         public void PaletteNewTest()
         {
