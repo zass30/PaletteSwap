@@ -16,11 +16,11 @@ namespace PaletteSwapTest
             Color c = Color.FromArgb(255, 255, 0, 0);
             b.SetPixel(0, 0, c);
             PaletteImage p = new PaletteImage(b);
-            Assert.AreEqual(c, p.baseImage.GetPixel(0,0));
+            Assert.AreEqual(c, p.baseImage.GetPixel(0, 0));
         }
 
         [TestMethod]
-        public void ImageColorRemapTest()
+        public void ImageColorRemapSimpleTest()
         {
             Bitmap b = new Bitmap(1, 1);
             var red = Color.FromArgb(255, 255, 0, 0);
@@ -28,11 +28,34 @@ namespace PaletteSwapTest
             Color c = red;
             b.SetPixel(0, 0, c);
 
-            PaletteImage p = new PaletteImage(b, new Color[] { red } );
+            PaletteImage p = new PaletteImage(b, new Color[] { red });
             p.SetRemapColorArray(new Color[] { blue });
-           var result_image = p.RemappedImage();            
+            var result_image = p.RemappedImage();
 
             Assert.AreEqual(blue, result_image.GetPixel(0, 0));
+        }
+
+        [TestMethod]
+        public void ImageColorRemapTest()
+        {
+            Bitmap b = new Bitmap(2, 2);
+            var red = Color.FromArgb(255, 255, 0, 0);
+            var blue = Color.FromArgb(255, 0, 0, 255);
+            var green = Color.FromArgb(255, 0, 255, 0);
+            var yellow = Color.FromArgb(255, 255, 255, 0);
+            b.SetPixel(0, 0, red);
+            b.SetPixel(0, 1, blue);
+            b.SetPixel(1, 0, green);
+            b.SetPixel(1, 1, yellow);
+
+            PaletteImage p = new PaletteImage(b, new Color[] { red, blue, green, yellow });
+            p.SetRemapColorArray(new Color[] { blue, green, yellow, red });
+            var result_image = p.RemappedImage();
+
+            Assert.AreEqual(blue, result_image.GetPixel(0, 0));
+            Assert.AreEqual(green, result_image.GetPixel(0, 1));
+            Assert.AreEqual(yellow, result_image.GetPixel(1, 0));
+            Assert.AreEqual(red, result_image.GetPixel(1, 1));
         }
     }
 }
