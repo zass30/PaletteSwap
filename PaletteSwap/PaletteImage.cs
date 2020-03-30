@@ -10,11 +10,23 @@ namespace PaletteSwap
 {    public class PaletteImage
     {
         public Bitmap baseImage;
+        public Color[] baseColors;
         public ColorMap[] remapTable;
 
-        public PaletteImage(Bitmap b)
+        public PaletteImage(Bitmap bitmap)
         {
-            baseImage = b;
+            baseImage = bitmap;
+        }
+
+        public PaletteImage(Bitmap bitmap, Color[] colors)
+        {
+            this.baseColors = colors;
+            baseImage = bitmap;
+        }
+
+        public void SetRemapColorArray(Color[] colors)
+        {
+            remapTable = PaletteHelper.GenerateColorMap(baseColors, colors);
         }
 
         public Bitmap RemappedImage()

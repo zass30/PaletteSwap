@@ -23,19 +23,16 @@ namespace PaletteSwapTest
         public void ImageColorRemapTest()
         {
             Bitmap b = new Bitmap(1, 1);
-            Color c = Color.FromArgb(255, 255, 0, 0);
+            var red = Color.FromArgb(255, 255, 0, 0);
+            var blue = Color.FromArgb(255, 0, 0, 255);
+            Color c = red;
             b.SetPixel(0, 0, c);
-            ColorMap cm = new ColorMap();
-            cm.OldColor = c;
-            cm.NewColor = Color.FromArgb(255, 0, 0, 255);
-            ColorMap[] table = new ColorMap[1];
-            table[0] = cm;
 
-            PaletteImage p = new PaletteImage(b);
-            p.remapTable = table;
-            var result_image = p.RemappedImage();            
+            PaletteImage p = new PaletteImage(b, new Color[] { red } );
+            p.SetRemapColorArray(new Color[] { blue });
+           var result_image = p.RemappedImage();            
 
-            Assert.AreEqual(Color.FromArgb(255, 0, 0, 255), result_image.GetPixel(0, 0));
+            Assert.AreEqual(blue, result_image.GetPixel(0, 0));
         }
     }
 }
