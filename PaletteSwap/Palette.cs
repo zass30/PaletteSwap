@@ -205,7 +205,7 @@ namespace PaletteSwap
         {
         };
 
-        public static Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
+        public Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
         {
         };
 
