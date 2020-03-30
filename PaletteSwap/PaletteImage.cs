@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace PaletteSwap
 {    public class PaletteImage
     {
+        public string name;
         public Bitmap baseImage;
         public Color[] baseColors;
         public ColorMap[] remapTable;

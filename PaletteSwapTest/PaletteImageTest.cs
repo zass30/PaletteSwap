@@ -17,6 +17,8 @@ namespace PaletteSwapTest
             b.SetPixel(0, 0, c);
             PaletteImage p = new PaletteImage(b);
             Assert.AreEqual(c, p.baseImage.GetPixel(0, 0));
+            p.name = "test1";
+            Assert.AreEqual("test1", p.name);
         }
 
         [TestMethod]
@@ -56,6 +58,19 @@ namespace PaletteSwapTest
             Assert.AreEqual(green, result_image.GetPixel(0, 1));
             Assert.AreEqual(yellow, result_image.GetPixel(1, 0));
             Assert.AreEqual(red, result_image.GetPixel(1, 1));
+        }
+
+
+        [TestMethod]
+        public void GenerateDictatorStandingNeutralImageTest()
+        {
+            var i = ImageConfig.GenerateDictatorStandingNeutralBaseImage();
+            var dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var remap = dic.sprite.ColorsFromListOfLabels(ImageConfig.DictatorStandNeutralLabels());
+            i.SetRemapColorArray(remap);
+            var result_image = i.RemappedImage();
+            var sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, result_image));
         }
     }
 }

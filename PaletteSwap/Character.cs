@@ -74,5 +74,25 @@ namespace PaletteSwap
             }
             return c;
         }
+
+        // test me
+        public static Character CreateDictator_mp()
+        {
+            var c = new Character();
+            PaletteConfig dicSpriteConfig = PaletteConfig.GenerateDictatorSpriteConfig();
+            PaletteConfig dicPortraitConfig = PaletteConfig.GenerateDictatorPortraitConfig();
+            Palette s = Palette.PaletteFromConfig(dicSpriteConfig);
+            Palette p = Palette.PaletteFromConfig(dicPortraitConfig);
+            c.sprite = s;
+            c.portrait = p;
+            byte[] sprite_bytestream = new byte[0];
+            byte[] portrait_bytestream = new byte[0];
+            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis1sprite);
+            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis1portrait);
+            s.loadStream(sprite_bytestream);
+            p.loadStream(portrait_bytestream);
+            ImageConfig.ApplyDictatorStandNeutralImage(s);
+            return c;
+        }
     }
 }

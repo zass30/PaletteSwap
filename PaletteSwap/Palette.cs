@@ -12,9 +12,7 @@ namespace PaletteSwap
     // stream: object that can print out stream and load stream
     // stream can go to string and back
 
-    // image: can print image from palette
-
-  
+    // image: can print image from palette  
 
     public struct ColorOffset
     {
@@ -24,9 +22,10 @@ namespace PaletteSwap
 
     public class Palette
     {
-        public int streamLength { get; set; } // this doens't belong here
+        public int streamLength { get; set; }
         public List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
         public List<int> unusedOffsets = new List<int>();
+        public List<PaletteImage> images = new List<PaletteImage>();
         
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
@@ -44,6 +43,17 @@ namespace PaletteSwap
             p.streamLength = pc.streamLength;
             p.unusedOffsets = new List<int>(pc.unusedOffsets);
             return p;
+        }
+
+        // test me
+        public Color[] ColorsFromListOfLabels(List<string> labels)
+        {
+            List<Color> colors = new List<Color>();
+            foreach (string label in labels)
+            {
+                colors.Add(GetColor(label));
+            }
+            return colors.ToArray();
         }
 
         public Palette()

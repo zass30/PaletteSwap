@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms.ComponentModel.Com2Interop;
 
 namespace PaletteSwap
 {
@@ -141,6 +142,36 @@ namespace PaletteSwap
             pc.unusedOffsets = new List<int>() { };
             pc.streamLength = MEMLEN;
             return pc;
+        }
+    }
+
+    public struct ImageConfig
+    {
+        public static List<string> DictatorStandNeutralLabels()
+        {
+            return new List<string> { "skin1", "skin2", "skin3", "skin4", 
+                "stripe", "pads1", "pads2", "pads3", "pads4", "pads5", 
+                "costume1", "costume2", "costume3", "costume4", "costume5"};
+        }
+
+        public static Bitmap DictatorStandNeutralBaseImage()
+        {
+            return new Bitmap(Properties.Resources.dicstand1);
+        }
+
+        public static void ApplyDictatorStandNeutralImage(Palette palette)
+        {
+            Bitmap b = DictatorStandNeutralBaseImage();
+            PaletteImage p = new PaletteImage(b);
+            p.baseColors = palette.ColorsFromListOfLabels(DictatorStandNeutralLabels());
+            palette.images.Add(p);
+        }
+
+        public static PaletteImage GenerateDictatorStandingNeutralBaseImage()
+        {
+            var dictator_mp = Character.CreateDictator_mp();
+            ApplyDictatorStandNeutralImage(dictator_mp.sprite);
+            return dictator_mp.sprite.images[0];
         }
     }
 }
