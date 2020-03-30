@@ -200,32 +200,32 @@ namespace PaletteSwapTest
         [TestMethod]
         public void ByteToColorTest()
         {
-            Color expected = Color.FromArgb(0, 0, 0, 0);
+            Color expected = Color.FromArgb(255, 0, 0, 0);
             byte[] b = new byte[] { 0x00, 0x00 };
             Color result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);
 
-            expected = Color.FromArgb(0, 0, 255, 255);
+            expected = Color.FromArgb(255, 0, 255, 255);
             b = new byte[] { 0xFF, 0x00 };
             result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);
 
-            expected = Color.FromArgb(0, 0, 0, 255);
+            expected = Color.FromArgb(255, 0, 0, 255);
             b = new byte[] { 0x0F, 0x00 };
             result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);
 
-            expected = Color.FromArgb(0, 255, 255, 255);
+            expected = Color.FromArgb(255, 255, 255, 255);
             b = new byte[] { 0xFF, 0x0F };
             result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);
 
-            expected = Color.FromArgb(0, 255, 0, 0);
+            expected = Color.FromArgb(255, 255, 0, 0);
             b = new byte[] { 0x00, 0x0F };
             result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);
 
-            expected = Color.FromArgb(0, 0, 255, 0);
+            expected = Color.FromArgb(255, 0, 255, 0);
             b = new byte[] { 0xF0, 0x00 };
             result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);

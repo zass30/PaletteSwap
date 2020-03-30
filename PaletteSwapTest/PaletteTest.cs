@@ -13,7 +13,7 @@ namespace PaletteSwapTest
         public void PaletteNewTest()
         {
             var s = new Palette();
-            var c = Color.FromArgb(0, 17, 34, 51);
+            var c = Color.FromArgb(255, 17, 34, 51);
             s.SetColor("skin1", c);
             var result = s.GetColor("skin1");
             Assert.AreEqual(c, result);

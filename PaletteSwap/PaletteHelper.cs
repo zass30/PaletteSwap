@@ -77,7 +77,7 @@ namespace PaletteSwap
             int R = (b[1] % 16) * 17;
             int B = (b[0] % 16) * 17;
             int G = (b[0] / 16) * 17;
-            return Color.FromArgb(0, R, G, B);
+            return Color.FromArgb(255, R, G, B);
         }
 
         public static Bitmap PaletteSwap(Bitmap img, Color[] p_src, Color[] p_dest)
@@ -138,9 +138,9 @@ namespace PaletteSwap
         {
             if (a.Width != b.Width || a.Height != b.Height)
                 return false;
-            for (int x = 0; x < a.Width; x++)
+            for (int y = 0; y < a.Height; y++)
             {
-                for (int y = 0; y < a.Height; y++)
+                for (int x = 0; x < a.Width; x++)
                 {
                     {
                         var apix = a.GetPixel(x, y);

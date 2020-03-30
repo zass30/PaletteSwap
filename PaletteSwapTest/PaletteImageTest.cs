@@ -64,13 +64,20 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GenerateDictatorStandingNeutralImageTest()
         {
-            var i = ImageConfig.GenerateDictatorStandingNeutralBaseImage();
+            // is the base image for standing neutral green bison?
+            var base_image = ImageConfig.GenerateDictatorStandingNeutralBaseImage();
+            var sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand1);
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, base_image.baseImage));
+
+            // set remap to blue jab bison
             var dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var remap = dic.sprite.ColorsFromListOfLabels(ImageConfig.DictatorStandNeutralLabels());
-            i.SetRemapColorArray(remap);
-            var result_image = i.RemappedImage();
-            var sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
-            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, result_image));
+            base_image.SetRemapColorArray(remap); 
+            var remapped_image = base_image.RemappedImage();
+            sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
+            base_image.baseImage.Save(@"C:/Temp/test1.bmp");
+            remapped_image.Save(@"C:/Temp/test2.bmp");
+            Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, remapped_image));
         }
     }
 }
