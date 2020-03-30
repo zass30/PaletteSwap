@@ -75,8 +75,6 @@ namespace PaletteSwapTest
             base_image.SetRemapColorArray(remap); 
             var remapped_image = base_image.RemappedImage();
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
-            base_image.baseImage.Save(@"C:/Temp/test1.bmp");
-            remapped_image.Save(@"C:/Temp/test2.bmp");
             Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, remapped_image));
         }
     }
