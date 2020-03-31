@@ -575,7 +575,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(717, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(729, 24);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1694,7 +1694,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 537);
+            this.ClientSize = new System.Drawing.Size(729, 653);
             this.Controls.Add(this.crusherbottomBoxRedo);
             this.Controls.Add(this.crushertopBoxRedo);
             this.Controls.Add(this.psychoprepBoxRedo);

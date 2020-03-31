@@ -154,99 +154,101 @@ namespace PaletteSwap
     {
         public struct Dictator
         {
-            public static List<string> DictatorStandNeutralLabels()
+            public struct SPRITE
             {
-                return new List<string> { "skin1", "skin2", "skin3", "skin4",
+                public static List<string> DictatorStandNeutralLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4",
                 "stripe", "pads1", "pads2", "pads3", "pads4", "pads5",
                 "costume1", "costume2", "costume3", "costume4", "costume5"};
-            }
+                }
 
-            public static List<string> DictatorPsychoPunchLabels()
-            {
-                return new List<string> { "skin1", "skin2", "skin3", "skin4",
+                public static List<string> DictatorPsychoPunchLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4",
                 "stripe", "pads1", "pads2", "pads3", "pads4", "pads5",
                 "costume1", "costume2", "costume3", "costume4", "costume5",
                 "psychopunch1", "psychopunch2", "psychopunch3", "psychopunch4", "psychopunch5"};
-            }
+                }
 
-            public static List<string> DictatorPsychoPrepLabels()
-            {
-                return new List<string> { "skin1", "skin2", "skin3", "skin4",
+                public static List<string> DictatorPsychoPrepLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4",
                 "stripe", "pads1", "pads2", "pads3", "pads4", "pads5",
                 "costume1", "costume2", "costume3", "costume4", "costume5",
                 "psychoglow"};
-            }
+                }
 
-            public static List<string> DictatorPsychoCrusherLabels()
-            {
-                return new List<string> { "crushercostume1", "crushercostume2", "crushercostume3", "crushercostume4",
+                public static List<string> DictatorPsychoCrusherLabels()
+                {
+                    return new List<string> { "crushercostume1", "crushercostume2", "crushercostume3", "crushercostume4",
                 "crusherflame1", "crusherflame2", "crusherhands1", "crusherhands2",
                 "crusherpads1", "crusherpads2", "crusherpads3", "crusherpads4", "crusherpads5" };
+                }
+
+
+                public static Bitmap DictatorStandNeutralBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.dicstand1);
+                }
+
+                public static Bitmap DictatorPsychoPunchBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.dicmp1);
+                }
+
+                public static Bitmap DictatorPsychoPrepBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.dicpsychoprep5);
+                }
+
+                public static Bitmap DictatorCrusherTopBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.diccrusher1_5);
+                }
+
+                public static Bitmap DictatorCrusherBottomBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.diccrusher2_5);
+                }
+
+
+                public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
+                {
+                    return GenerateDicatatorPaletteImage(DictatorStandNeutralBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorStandNeutralLabels());
+                }
+
+                public static PaletteImage GenerateDictatorPsychoPunchBasePaletteImage()
+                {
+                    return GenerateDicatatorPaletteImage(DictatorPsychoPunchBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorPsychoPunchLabels());
+                }
+
+                public static PaletteImage GenerateDictatorPsychoPrepBasePaletteImage()
+                {
+                    return GenerateDicatatorPaletteImage(DictatorPsychoPrepBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoPrepLabels());
+                }
+
+                public static PaletteImage GenerateDictatorCrusherTopBasePaletteImage()
+                {
+                    return GenerateDicatatorPaletteImage(DictatorCrusherTopBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
+                }
+
+                public static PaletteImage GenerateDictatorCrusherBottomBasePaletteImage()
+                {
+                    return GenerateDicatatorPaletteImage(DictatorCrusherBottomBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
+                }
+
+                public static PaletteImage GenerateDicatatorPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.GenerateDictatorSpriteOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
             }
-
-
-            public static Bitmap DictatorStandNeutralBaseImage()
-            {
-                return new Bitmap(Properties.Resources.dicstand1);
-            }
-
-            public static Bitmap DictatorPsychoPunchBaseImage()
-            {
-                return new Bitmap(Properties.Resources.dicmp1);
-            }
-
-            public static Bitmap DictatorPsychoPrepBaseImage()
-            {
-                return new Bitmap(Properties.Resources.dicpsychoprep5);
-            }
-
-            public static Bitmap DictatorCrusherTopBaseImage()
-            {
-                return new Bitmap(Properties.Resources.diccrusher1_5);
-            }
-
-            public static Bitmap DictatorCrusherBottomBaseImage()
-            {
-                return new Bitmap(Properties.Resources.diccrusher2_5);
-            }
-
-
-            public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
-            {
-                return GenerateDicatatorPaletteImage(DictatorStandNeutralBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorStandNeutralLabels());
-            }
-
-            public static PaletteImage GenerateDictatorPsychoPunchBasePaletteImage()
-            {
-                return GenerateDicatatorPaletteImage(DictatorPsychoPunchBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorPsychoPunchLabels());
-            }
-
-            public static PaletteImage GenerateDictatorPsychoPrepBasePaletteImage()
-            {
-                return GenerateDicatatorPaletteImage(DictatorPsychoPrepBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoPrepLabels());
-            }
-
-            public static PaletteImage GenerateDictatorCrusherTopBasePaletteImage()
-            {
-                return GenerateDicatatorPaletteImage(DictatorCrusherTopBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
-            }
-
-            public static PaletteImage GenerateDictatorCrusherBottomBasePaletteImage()
-            {
-                return GenerateDicatatorPaletteImage(DictatorCrusherBottomBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
-            }
-
-            public static PaletteImage GenerateDicatatorPaletteImage(Bitmap base_image, string resource, List<string> labels)
-            {
-                byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
-                Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
-                    PaletteConfig.GenerateDictatorSpriteOffsets(),
-                    labels);
-                PaletteImage p = new PaletteImage(base_image, c);
-                p.labels = labels;
-                return p;
-            }
-
         }
     }
 }

@@ -70,26 +70,31 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(sprite_bytestream);
-
-                // neutral sprite image
-                AssignImage(s, ImageConfig.Dictator.GenerateDictatorStandingNeutralBasePaletteImage(), "neutral");
-
-                // psychopunch image
-                AssignImage(s, ImageConfig.Dictator.GenerateDictatorPsychoPunchBasePaletteImage(), "psychopunch");
-
-                // psychoprep image
-                AssignImage(s, ImageConfig.Dictator.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
-
-                // crushertop image
-                AssignImage(s, ImageConfig.Dictator.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
-
-                // crusherbottom image
-                AssignImage(s, ImageConfig.Dictator.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
+                AssignDicatatorSpriteImages(s);
 
                 p.loadStream(portrait_bytestream);
             }
             return c;
         }        
+
+        private static void AssignDicatatorSpriteImages(Palette s)
+        {
+            // neutral sprite image
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage(), "neutral");
+
+            // psychopunch image
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPunchBasePaletteImage(), "psychopunch");
+
+            // psychoprep image
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
+
+            // crushertop image
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
+
+            // crusherbottom image
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
+
+        }
 
         private static void AssignImage(Palette sprite, PaletteImage p, string label)
         {
