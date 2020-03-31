@@ -172,6 +172,7 @@ namespace PaletteSwap
                 PaletteConfig.GenerateDictatorSpriteOffsets(), 
                 DictatorStandNeutralLabels());
             PaletteImage p = new PaletteImage(base_image ,c);
+            p.labels = DictatorStandNeutralLabels();
             return p;            
         }
 

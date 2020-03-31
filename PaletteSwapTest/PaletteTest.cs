@@ -276,7 +276,6 @@ namespace PaletteSwapTest
 
             var remapped_img = s.GetBitmap("neutral");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand0, remapped_img));
-
         }
     }
 }

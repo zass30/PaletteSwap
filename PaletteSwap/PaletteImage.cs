@@ -13,6 +13,7 @@ namespace PaletteSwap
         public Bitmap baseImage;
         public Color[] baseColors;
         public ColorMap[] remapTable;
+        public List<string> labels;
 
         public PaletteImage(Bitmap bitmap)
         {
@@ -32,7 +33,7 @@ namespace PaletteSwap
 
         public Bitmap RemappedImage()
         {
-            var remap = palette.ColorsFromListOfLabels(ImageConfig.DictatorStandNeutralLabels());
+            var remap = palette.ColorsFromListOfLabels(labels);
             SetRemapColorArray(remap);
             Bitmap b = new Bitmap(baseImage);
             int width = b.Width;
