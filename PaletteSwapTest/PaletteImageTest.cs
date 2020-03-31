@@ -66,6 +66,7 @@ namespace PaletteSwapTest
         {
             // is the base image for standing neutral green bison?
             var base_image = ImageConfig.GenerateDictatorStandingNeutralBaseImage();
+            base_image = ImageConfig.GenerateDictatorStandingNeutralBaseImageLessSuck();
             var sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand1);
             Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, base_image.baseImage));
 

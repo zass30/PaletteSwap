@@ -2,6 +2,7 @@
 using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Collections.Generic;
 
 namespace PaletteSwap
 {
@@ -18,6 +19,15 @@ namespace PaletteSwap
         public static Color[] psychopunch_sprite_colors5 = sprite5.PsychoPunchSpriteColorsArray();
         public static Color[] psychoprep_sprite_colors5 = sprite5.PsychoPrepSpriteColorsArray();
         public static Color[] crusher_sprite_colors5 = sprite5.CrusherSpriteColorsArray();
+
+
+        // function that takes byte stream, dictionary, and list of labels
+        // outputs an array of colors for those labels
+        public static Color[] ColorsFromLabelsAndStream(byte[] b, 
+            Dictionary<string, List<int>> offsets, List<string> labels)
+        {
+            return new Color[] { Color.AliceBlue };
+        }
 
         public static ColorMap[] GenerateColorMap(Color[] oldcolors, Color[] newcolors)
         {
