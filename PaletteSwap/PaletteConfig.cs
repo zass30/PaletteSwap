@@ -169,6 +169,15 @@ namespace PaletteSwap
                 "psychopunch1", "psychopunch2", "psychopunch3", "psychopunch4", "psychopunch5"};
             }
 
+            public static List<string> DictatorPsychoPrepLabels()
+            {
+                return new List<string> { "skin1", "skin2", "skin3", "skin4",
+                "stripe", "pads1", "pads2", "pads3", "pads4", "pads5",
+                "costume1", "costume2", "costume3", "costume4", "costume5",
+                "psychoglow"};
+            }
+
+
             public static Bitmap DictatorStandNeutralBaseImage()
             {
                 return new Bitmap(Properties.Resources.dicstand1);
@@ -177,6 +186,11 @@ namespace PaletteSwap
             public static Bitmap DictatorPsychoPunchBaseImage()
             {
                 return new Bitmap(Properties.Resources.dicmp1);
+            }
+
+            public static Bitmap DictatorPsychoPrepBaseImage()
+            {
+                return new Bitmap(Properties.Resources.dicpsychoprep5);
             }
 
             public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
@@ -200,6 +214,18 @@ namespace PaletteSwap
                     DictatorPsychoPunchLabels());
                 PaletteImage p = new PaletteImage(base_image, c);
                 p.labels = DictatorPsychoPunchLabels();
+                return p;
+            }
+
+            public static PaletteImage GenerateDictatorPsychoPrepBasePaletteImage()
+            {
+                Bitmap base_image = DictatorPsychoPrepBaseImage();
+                byte[] byte_stream = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis5sprite);
+                Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                    PaletteConfig.GenerateDictatorSpriteOffsets(),
+                    DictatorPsychoPrepLabels());
+                PaletteImage p = new PaletteImage(base_image, c);
+                p.labels = DictatorPsychoPrepLabels();
                 return p;
             }
 

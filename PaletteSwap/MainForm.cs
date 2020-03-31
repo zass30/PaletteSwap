@@ -236,6 +236,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_crusherside();
             load_sprite_neutralstandredo();
             load_sprite_load_sprite_psychopunchredo();
+            load_sprite_load_sprite_psychoprepredo();
 
             refreshZoom();
             skip_image_recolors = false;
@@ -249,6 +250,11 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         private void load_sprite_load_sprite_psychopunchredo()
         {
             psychopunchBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("psychopunch");
+        }
+
+        private void load_sprite_load_sprite_psychoprepredo()
+        {
+            psychoprepBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("psychoprep");
         }
 
 
@@ -827,6 +833,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_psychoprep();
             load_sprite_neutralstandredo();
             load_sprite_load_sprite_psychopunchredo();
+            load_sprite_load_sprite_psychoprepredo();
         }
 
         private void updateSpriteCrusherColor(Color c, PictureBox p)

@@ -171,6 +171,7 @@
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.neutralStandBoxRedo = new System.Windows.Forms.PictureBox();
             this.psychopunchBoxRedo = new System.Windows.Forms.PictureBox();
+            this.psychoprepBoxRedo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -248,6 +249,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBoxRedo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psychoprepBoxRedo)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1657,11 +1659,21 @@
             this.psychopunchBoxRedo.TabIndex = 115;
             this.psychopunchBoxRedo.TabStop = false;
             // 
+            // psychoprepBoxRedo
+            // 
+            this.psychoprepBoxRedo.BackColor = System.Drawing.Color.Black;
+            this.psychoprepBoxRedo.Location = new System.Drawing.Point(529, 382);
+            this.psychoprepBoxRedo.Name = "psychoprepBoxRedo";
+            this.psychoprepBoxRedo.Size = new System.Drawing.Size(149, 67);
+            this.psychoprepBoxRedo.TabIndex = 116;
+            this.psychoprepBoxRedo.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 537);
+            this.Controls.Add(this.psychoprepBoxRedo);
             this.Controls.Add(this.psychopunchBoxRedo);
             this.Controls.Add(this.neutralStandBoxRedo);
             this.Controls.Add(this.colorCycleRBG);
@@ -1851,6 +1863,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBoxRedo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psychoprepBoxRedo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1999,6 +2012,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveJapaneseRomToolStripMenuItem;
         private System.Windows.Forms.PictureBox neutralStandBoxRedo;
         private System.Windows.Forms.PictureBox psychopunchBoxRedo;
+        private System.Windows.Forms.PictureBox psychoprepBoxRedo;
     }
 }
 

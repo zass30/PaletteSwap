@@ -80,6 +80,12 @@ namespace PaletteSwap
                 psychopunch_sprite_image.palette = s;
                 s.SetImage("psychopunch", psychopunch_sprite_image);
 
+                // psychoprep image
+                var psychoprep_sprite_image = ImageConfig.Dictator.GenerateDictatorPsychoPrepBasePaletteImage();
+                psychoprep_sprite_image.palette = s;
+                s.SetImage("psychoprep", psychoprep_sprite_image);
+
+
                 p.loadStream(portrait_bytestream);
             }
             return c;
