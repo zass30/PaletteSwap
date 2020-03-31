@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Drawing.Imaging;
 using System.IO.Compression;
+using System.Text.RegularExpressions;
 
 namespace PaletteSwap
 {
@@ -27,6 +28,9 @@ namespace PaletteSwap
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
         enum ROMSTYLE { us, japanese, phoenix };
+        Regex rx = new Regex(@"[^_]+$",
+RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
 
         public MainForm()
         {
@@ -726,9 +730,19 @@ namespace PaletteSwap
             load_portrait_loss();
         }
 
+        private string extractLabel(string s)
+        {
+            Match m = rx.Match(s);
+            string label = m.Value;
+            return label;
+        }
+
         private void updateSpriteColor(Color c, PictureBox p)
         {
             currentlySelectedColor = p;
+            string label = extractLabel(p.Name);
+            currentCharacter.sprite.SetColor(label, c);
+
             switch (p.Name)
             {
                 case "pal_sprite_skin1":
@@ -799,6 +813,7 @@ namespace PaletteSwap
             load_sprite_neutralstand();
             load_sprite_psychopunch();
             load_sprite_psychoprep();
+            load_sprite_neutralstandredo();
         }
 
         private void updateSpriteCrusherColor(Color c, PictureBox p)
