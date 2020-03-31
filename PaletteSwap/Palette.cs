@@ -111,6 +111,11 @@ namespace PaletteSwap
                 return images[s];
         }
 
+        public Bitmap GetBitmap(string s)
+        {
+            return images[s].RemappedImage();
+        }
+
         public void SetImage(string s, PaletteImage p)
         {
             images[s] = p;

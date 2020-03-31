@@ -70,6 +70,10 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(sprite_bytestream);
+                // neutral sprite image
+                var neutral_sprite_image = ImageConfig.GenerateDictatorStandingNeutralBasePaletteImage();
+                neutral_sprite_image.palette = s;
+                s.SetImage("neutral", neutral_sprite_image);
                 p.loadStream(portrait_bytestream);
             }
             return c;

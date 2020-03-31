@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PaletteSwap
 {    public class PaletteImage
     {
-        public string name;
+        public Palette palette;
         public Bitmap baseImage;
         public Color[] baseColors;
         public ColorMap[] remapTable;
@@ -32,6 +32,8 @@ namespace PaletteSwap
 
         public Bitmap RemappedImage()
         {
+            var remap = palette.ColorsFromListOfLabels(ImageConfig.DictatorStandNeutralLabels());
+            SetRemapColorArray(remap);
             Bitmap b = new Bitmap(baseImage);
             int width = b.Width;
             int height = b.Height;

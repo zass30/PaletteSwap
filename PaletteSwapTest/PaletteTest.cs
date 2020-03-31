@@ -264,5 +264,19 @@ namespace PaletteSwapTest
             Assert.AreEqual(expected_colors[0], result_colors[0]);
             Assert.AreEqual(expected_colors[1], result_colors[1]);
         }
+
+
+        [TestMethod]
+        public void GetDictatorStandingNeutralImageTest()
+        {
+            var dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var s = dic.sprite;
+            var pal = s.GetImage("neutral");
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand1, pal.baseImage ));
+
+            var remapped_img = s.GetBitmap("neutral");
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand0, remapped_img));
+
+        }
     }
 }

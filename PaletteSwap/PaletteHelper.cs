@@ -171,7 +171,26 @@ namespace PaletteSwap
                 }
             }
             return true;
+        }
 
+
+        public static bool areBitmapsSameSkipTransparencies(Bitmap a, Bitmap b)
+        {
+            if (a.Width != b.Width || a.Height != b.Height)
+                return false;
+            for (int y = 0; y < a.Height; y++)
+            {
+                for (int x = 0; x < a.Width; x++)
+                {
+                    {
+                        var apix = a.GetPixel(x, y);
+                        var bpix = b.GetPixel(x, y);
+                        if (a.GetPixel(x, y) != b.GetPixel(x, y) && apix.A !=0 && bpix.A != 0)
+                            return false;
+                    }
+                }
+            }
+            return true;
         }
 
         public static Bitmap overlayImage(Bitmap foreground, Bitmap background)
