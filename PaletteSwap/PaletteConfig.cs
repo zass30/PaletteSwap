@@ -204,21 +204,6 @@ namespace PaletteSwap
             return new Bitmap(Properties.Resources.dicstand1);
         }
 
-        public static void ApplyDictatorStandNeutralImage(Palette palette)
-        {
-            Bitmap b = DictatorStandNeutralBaseImage();
-            PaletteImage p = new PaletteImage(b);
-            p.baseColors = palette.ColorsFromListOfLabels(DictatorStandNeutralLabels());
-            palette.images.Add(p);
-        }
-
-        public static PaletteImage GenerateDictatorStandingNeutralBaseImage()
-        {
-            var dictator_mp = Character.CreateDictator_mp();
-            ApplyDictatorStandNeutralImage(dictator_mp.sprite);
-            return dictator_mp.sprite.images[0];
-        }
-
         public static PaletteImage GenerateDictatorStandingNeutralBaseImageLessSuck()
         {
             Bitmap base_image = DictatorStandNeutralBaseImage();

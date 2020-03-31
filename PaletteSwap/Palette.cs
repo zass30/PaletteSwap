@@ -45,7 +45,6 @@ namespace PaletteSwap
             return p;
         }
 
-        // test me
         public Color[] ColorsFromListOfLabels(List<string> labels)
         {
             List<Color> colors = new List<Color>();

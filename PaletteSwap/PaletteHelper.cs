@@ -26,7 +26,17 @@ namespace PaletteSwap
         public static Color[] ColorsFromLabelsAndStream(byte[] b, 
             Dictionary<string, List<int>> offsets, List<string> labels)
         {
-            return new Color[] { Color.AliceBlue };
+            List<Color> colors = new List<Color>();
+            foreach (string label in labels)
+            {
+                int position = offsets[label][0];
+                byte[] colbyte = new byte[2];
+                colbyte[0] = b[position];
+                colbyte[1] = b[position + 1];
+                Color col = PaletteHelper.ByteToColor(colbyte);
+                colors.Add(col);
+            }
+            return colors.ToArray();
         }
 
         public static ColorMap[] GenerateColorMap(Color[] oldcolors, Color[] newcolors)

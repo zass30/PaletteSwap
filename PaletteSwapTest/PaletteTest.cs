@@ -252,5 +252,17 @@ namespace PaletteSwapTest
                 Assert.AreEqual(portrait_bytestream_expected[i], portrait_bytestream_result[i]);
             }
         }
+
+        [TestMethod]
+        public void ColorsFromListOfLabelsTest()
+        {
+            Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var p = d.portrait;
+            Assert.IsNotNull(p);
+            Color[] expected_colors = new Color[] { p.GetColor("skin1"), p.GetColor("blood1") };
+            var result_colors = p.ColorsFromListOfLabels(new List<string> { "skin1", "blood1" });
+            Assert.AreEqual(expected_colors[0], result_colors[0]);
+            Assert.AreEqual(expected_colors[1], result_colors[1]);
+        }
     }
 }
