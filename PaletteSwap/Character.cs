@@ -73,6 +73,9 @@ namespace PaletteSwap
                 AssignDicatatorSpriteImages(s);
 
                 p.loadStream(portrait_bytestream);
+                var portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
+                portrait.palette = p;
+                p.SetImage("victory", portrait);
             }
             return c;
         }        

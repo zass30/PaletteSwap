@@ -239,6 +239,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_load_sprite_psychoprepredo();
             load_sprite_load_sprite_crushertopredo();
             load_sprite_load_sprite_crusherbottomredo();
+            load_portrait_victoryredo();
 
             refreshZoom();
             skip_image_recolors = false;
@@ -267,6 +268,11 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         private void load_sprite_load_sprite_crusherbottomredo()
         {
             crusherbottomBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
+        }
+
+        private void load_portrait_victoryredo()
+        {
+            portraitVictoryBoxRedo.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
         }
 
         private void load_sprite_neutralstand()
@@ -652,6 +658,9 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         private void updatePortraitColor(Color c, PictureBox p)
         {
             currentlySelectedColor = p;
+            string label = extractLabel(p.Name);
+            currentCharacter.portrait.SetColor(label, c);
+
             switch (p.Name)
             {
                 case "portrait_skin1":
@@ -753,6 +762,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             }
             load_portrait_victory();
             load_portrait_loss();
+            load_portrait_victoryredo();
         }
 
         private string extractLabel(string s)
