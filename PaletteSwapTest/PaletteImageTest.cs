@@ -19,7 +19,7 @@ namespace PaletteSwapTest
             Assert.AreEqual(c, p.baseImage.GetPixel(0, 0));
         }
 
-        [TestMethod]
+/*        [TestMethod]
         public void ImageColorRemapSimpleTest()
         {
             Bitmap b = new Bitmap(1, 1);
@@ -57,9 +57,9 @@ namespace PaletteSwapTest
             Assert.AreEqual(yellow, result_image.GetPixel(1, 0));
             Assert.AreEqual(red, result_image.GetPixel(1, 1));
         }
+        */
 
-
-        [TestMethod]
+/*        [TestMethod]
         public void GenerateDefaultDictatorStandingNeutralImageTest()
         {
             // is the base image for standing neutral green bison?
@@ -74,6 +74,6 @@ namespace PaletteSwapTest
             var remapped_image = base_image.RemappedImage();
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
             Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, remapped_image));
-        }
+        }*/
     }
 }
