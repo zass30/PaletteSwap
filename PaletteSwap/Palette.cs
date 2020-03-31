@@ -25,7 +25,7 @@ namespace PaletteSwap
         public int streamLength { get; set; }
         public List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
         public List<int> unusedOffsets = new List<int>();
-        public List<PaletteImage> images = new List<PaletteImage>();
+        public Dictionary<string, PaletteImage> images = new Dictionary<string, PaletteImage>();
         
         private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
         {
@@ -106,7 +106,17 @@ namespace PaletteSwap
             labelsToColors[s] = c;
         }
 
-        
+        public PaletteImage GetImage(string s)
+        {
+                return images[s];
+        }
+
+        public void SetImage(string s, PaletteImage p)
+        {
+            images[s] = p;
+        }
+
+
         public byte[] ToByteStream()
         {
             byte[] b = new byte[streamLength];

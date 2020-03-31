@@ -62,7 +62,7 @@ namespace PaletteSwapTest
 
 
         [TestMethod]
-        public void GenerateDictatorStandingNeutralImageTest()
+        public void GenerateDefaultDictatorStandingNeutralImageTest()
         {
             // is the base image for standing neutral green bison?
             var base_image = ImageConfig.GenerateDictatorStandingNeutralBasePaletteImage();
@@ -72,10 +72,18 @@ namespace PaletteSwapTest
             // set remap to blue jab bison
             var dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var remap = dic.sprite.ColorsFromListOfLabels(ImageConfig.DictatorStandNeutralLabels());
-            base_image.SetRemapColorArray(remap); 
+            base_image.SetRemapColorArray(remap);
             var remapped_image = base_image.RemappedImage();
             sprite_expected = new Bitmap(PaletteSwap.Properties.Resources.dicstand0);
             Assert.IsTrue(PaletteHelper.areBitmapsSame(sprite_expected, remapped_image));
+        }
+
+        [TestMethod]
+        public void GenerateDictatorStandingNeutralImageTest()
+        {
+            var dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var s = dic.sprite;
+            //var b = s.GetImage("neutral");
         }
     }
 }
