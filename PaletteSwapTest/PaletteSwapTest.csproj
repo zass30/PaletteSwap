@@ -64,6 +64,7 @@
     <Compile Include="CharacterColorSetTest.cs" />
     <Compile Include="PaletteTest.cs" />
     <Compile Include="PaletteImageTest.cs" />
+    <Compile Include="CharacterTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
