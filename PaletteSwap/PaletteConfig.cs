@@ -204,7 +204,7 @@ namespace PaletteSwap
             return new Bitmap(Properties.Resources.dicstand1);
         }
 
-        public static PaletteImage GenerateDictatorStandingNeutralBaseImageLessSuck()
+        public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
         {
             Bitmap base_image = DictatorStandNeutralBaseImage();
             byte[] byte_stream = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis1sprite);
