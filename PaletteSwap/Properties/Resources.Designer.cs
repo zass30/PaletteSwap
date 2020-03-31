@@ -19,7 +19,7 @@ namespace PaletteSwap.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -214,7 +214,7 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3402 0006 0009 320C 650E 870F 5604 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 EF0E AD0A 7906 D90F 960E 640A 4306 0000 5007 0006 600A 720C A50E D80F 6208 EB0F FF0F CA0D 850A EF0C CD09 9B06 6704 0000 3402 0006 0009 320C 650E 870F EB0F 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 3402 0006 0009 320C 650E 870F FF0D EC07 D902 B700 8600 D90F 960E 640A 4306 0000 .
+        ///   Looks up a localized string similar to 3402 0006 0009 320C 650E 870F 5604 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 3402 2302 3403 5605 6706 7807 8A08 9B09 EF0E AD0A 7906 D90F 960E 640A 4306 0000 5007 0006 600A 720C A50E D80F 6208 EB0F FF0F CA0D 850A EF0C CD09 9B06 6704 0000 3402 0006 0009 320C 650E 870F EB0F 7F00 EF0E AD0A 7906 D90F 960E 640A 4306 0000 3402 0006 0009 320C 650E 870F FF0D EC07 D902 B700 8600 D90F 960E 640A 4306 0000.
         /// </summary>
         public static string bis8sprite {
             get {

@@ -23,6 +23,7 @@ namespace PaletteSwap
         public CharacterColorSet characterColorSet;
         public Portrait currentPortrait;
         public Sprite currentSprite;
+        public Character currentCharacter;
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
         enum ROMSTYLE { us, japanese, phoenix };
@@ -164,42 +165,52 @@ namespace PaletteSwap
                 case 0:
                     currentSprite = new Sprite(Sprite.bis0sprite);
                     currentPortrait = new Portrait(Portrait.bis0portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
                     break;
                 case 1:
                     currentSprite = new Sprite(Sprite.bis1sprite);
                     currentPortrait = new Portrait(Portrait.bis1portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
                     break;
                 case 2:
                     currentSprite = new Sprite(Sprite.bis2sprite);
                     currentPortrait = new Portrait(Portrait.bis2portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hp);
                     break;
                 case 3:
                     currentSprite = new Sprite(Sprite.bis3sprite);
                     currentPortrait = new Portrait(Portrait.bis3portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lk);
                     break;
                 case 4:
                     currentSprite = new Sprite(Sprite.bis4sprite);
                     currentPortrait = new Portrait(Portrait.bis4portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mk);
                     break;
                 case 5:
                     currentSprite = new Sprite(Sprite.bis5sprite);
                     currentPortrait = new Portrait(Portrait.bis5portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
                     break;
                 case 6:
                     currentSprite = new Sprite(Sprite.bis6sprite);
                     currentPortrait = new Portrait(Portrait.bis6portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.start);
                     break;
                 case 7:
                     currentSprite = new Sprite(Sprite.bis7sprite);
                     currentPortrait = new Portrait(Portrait.bis7portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hold);
                     break;
                 case 8:
                     currentSprite = new Sprite(Sprite.bis8sprite);
                     currentPortrait = new Portrait(Portrait.bis8portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old1);
                     break;
                 case 9:
                     currentSprite = new Sprite(Sprite.bis9sprite);
                     currentPortrait = new Portrait(Portrait.bis9portrait);
+                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
                     break;
             }
 
@@ -219,8 +230,14 @@ namespace PaletteSwap
             load_sprite_psychoprep();
             load_sprite_crushertop();
             load_sprite_crusherside();
+            load_sprite_neutralstandredo();
             refreshZoom();
             skip_image_recolors = false;
+        }
+
+        private void load_sprite_neutralstandredo()
+        {
+            neutralStandBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
         }
 
         private void load_sprite_neutralstand()
