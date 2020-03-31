@@ -175,6 +175,7 @@
             this.crushertopBoxRedo = new System.Windows.Forms.PictureBox();
             this.crusherbottomBoxRedo = new System.Windows.Forms.PictureBox();
             this.portraitVictoryBoxRedo = new System.Windows.Forms.PictureBox();
+            this.portraitLossBoxRedo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -256,6 +257,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.crushertopBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBoxRedo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBoxRedo)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1701,11 +1703,21 @@
             this.portraitVictoryBoxRedo.TabIndex = 119;
             this.portraitVictoryBoxRedo.TabStop = false;
             // 
+            // portraitLossBoxRedo
+            // 
+            this.portraitLossBoxRedo.BackColor = System.Drawing.Color.Black;
+            this.portraitLossBoxRedo.Location = new System.Drawing.Point(758, 479);
+            this.portraitLossBoxRedo.Name = "portraitLossBoxRedo";
+            this.portraitLossBoxRedo.Size = new System.Drawing.Size(128, 112);
+            this.portraitLossBoxRedo.TabIndex = 120;
+            this.portraitLossBoxRedo.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 659);
+            this.Controls.Add(this.portraitLossBoxRedo);
             this.Controls.Add(this.portraitVictoryBoxRedo);
             this.Controls.Add(this.crusherbottomBoxRedo);
             this.Controls.Add(this.crushertopBoxRedo);
@@ -1903,6 +1915,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.crushertopBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBoxRedo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBoxRedo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2055,6 +2068,7 @@
         private System.Windows.Forms.PictureBox crushertopBoxRedo;
         private System.Windows.Forms.PictureBox crusherbottomBoxRedo;
         private System.Windows.Forms.PictureBox portraitVictoryBoxRedo;
+        private System.Windows.Forms.PictureBox portraitLossBoxRedo;
     }
 }
 

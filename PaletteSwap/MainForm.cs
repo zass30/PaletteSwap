@@ -240,6 +240,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_load_sprite_crushertopredo();
             load_sprite_load_sprite_crusherbottomredo();
             load_portrait_victoryredo();
+            load_portrait_lossredo();
 
             refreshZoom();
             skip_image_recolors = false;
@@ -273,6 +274,11 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         private void load_portrait_victoryredo()
         {
             portraitVictoryBoxRedo.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+        }
+
+        private void load_portrait_lossredo()
+        {
+            portraitLossBoxRedo.BackgroundImage = currentCharacter.portrait.GetBitmap("losstop");
         }
 
         private void load_sprite_neutralstand()
@@ -763,6 +769,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_portrait_victory();
             load_portrait_loss();
             load_portrait_victoryredo();
+            load_portrait_lossredo();
         }
 
         private string extractLabel(string s)

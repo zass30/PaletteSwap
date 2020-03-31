@@ -76,6 +76,10 @@ namespace PaletteSwap
                 var portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
                 portrait.palette = p;
                 p.SetImage("victory", portrait);
+
+                portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossTopBasePaletteImage();
+                portrait.palette = p;
+                p.SetImage("losstop", portrait);
             }
             return c;
         }        
