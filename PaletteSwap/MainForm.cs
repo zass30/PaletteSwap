@@ -237,6 +237,8 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_neutralstandredo();
             load_sprite_load_sprite_psychopunchredo();
             load_sprite_load_sprite_psychoprepredo();
+            load_sprite_load_sprite_crushertopredo();
+            load_sprite_load_sprite_crusherbottomredo();
 
             refreshZoom();
             skip_image_recolors = false;
@@ -257,6 +259,15 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             psychoprepBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("psychoprep");
         }
 
+        private void load_sprite_load_sprite_crushertopredo()
+        {
+            crushertopBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("crushertop");
+        }
+
+        private void load_sprite_load_sprite_crusherbottomredo()
+        {
+            crusherbottomBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
+        }
 
         private void load_sprite_neutralstand()
         {
@@ -834,11 +845,15 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_neutralstandredo();
             load_sprite_load_sprite_psychopunchredo();
             load_sprite_load_sprite_psychoprepredo();
+            load_sprite_load_sprite_crushertopredo();
         }
 
         private void updateSpriteCrusherColor(Color c, PictureBox p)
         {
             currentlySelectedColor = p;
+            string label = extractLabel(p.Name);
+            currentCharacter.sprite.SetColor(label, c);
+
             switch (p.Name)
             {
                 case "pal_sprite_crusherpads1":
@@ -884,6 +899,8 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             load_sprite_crusherside();
             load_sprite_crushertop();
+            load_sprite_load_sprite_crushertopredo();
+            load_sprite_load_sprite_crusherbottomredo();
         }
 
         private void portrait_BackColorChanged(object sender, EventArgs e)

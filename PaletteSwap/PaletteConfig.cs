@@ -177,6 +177,13 @@ namespace PaletteSwap
                 "psychoglow"};
             }
 
+            public static List<string> DictatorPsychoCrusherLabels()
+            {
+                return new List<string> { "crushercostume1", "crushercostume2", "crushercostume3", "crushercostume4",
+                "crusherflame1", "crusherflame2", "crusherhands1", "crusherhands2",
+                "crusherpads1", "crusherpads2", "crusherpads3", "crusherpads4", "crusherpads5" };
+            }
+
 
             public static Bitmap DictatorStandNeutralBaseImage()
             {
@@ -193,39 +200,50 @@ namespace PaletteSwap
                 return new Bitmap(Properties.Resources.dicpsychoprep5);
             }
 
+            public static Bitmap DictatorCrusherTopBaseImage()
+            {
+                return new Bitmap(Properties.Resources.diccrusher1_5);
+            }
+
+            public static Bitmap DictatorCrusherBottomBaseImage()
+            {
+                return new Bitmap(Properties.Resources.diccrusher2_5);
+            }
+
+
             public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
             {
-                Bitmap base_image = DictatorStandNeutralBaseImage();
-                byte[] byte_stream = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis1sprite);
-                Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
-                    PaletteConfig.GenerateDictatorSpriteOffsets(),
-                    DictatorStandNeutralLabels());
-                PaletteImage p = new PaletteImage(base_image, c);
-                p.labels = DictatorStandNeutralLabels();
-                return p;
+                return GenerateDicatatorPaletteImage(DictatorStandNeutralBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorStandNeutralLabels());
             }
 
             public static PaletteImage GenerateDictatorPsychoPunchBasePaletteImage()
             {
-                Bitmap base_image = DictatorPsychoPunchBaseImage();
-                byte[] byte_stream = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis1sprite);
-                Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
-                    PaletteConfig.GenerateDictatorSpriteOffsets(),
-                    DictatorPsychoPunchLabels());
-                PaletteImage p = new PaletteImage(base_image, c);
-                p.labels = DictatorPsychoPunchLabels();
-                return p;
+                return GenerateDicatatorPaletteImage(DictatorPsychoPunchBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorPsychoPunchLabels());
             }
 
             public static PaletteImage GenerateDictatorPsychoPrepBasePaletteImage()
             {
-                Bitmap base_image = DictatorPsychoPrepBaseImage();
-                byte[] byte_stream = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis5sprite);
+                return GenerateDicatatorPaletteImage(DictatorPsychoPrepBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoPrepLabels());
+            }
+
+            public static PaletteImage GenerateDictatorCrusherTopBasePaletteImage()
+            {
+                return GenerateDicatatorPaletteImage(DictatorCrusherTopBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
+            }
+
+            public static PaletteImage GenerateDictatorCrusherBottomBasePaletteImage()
+            {
+                return GenerateDicatatorPaletteImage(DictatorCrusherBottomBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
+            }
+
+            public static PaletteImage GenerateDicatatorPaletteImage(Bitmap base_image, string resource, List<string> labels)
+            {
+                byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                 Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                     PaletteConfig.GenerateDictatorSpriteOffsets(),
-                    DictatorPsychoPrepLabels());
+                    labels);
                 PaletteImage p = new PaletteImage(base_image, c);
-                p.labels = DictatorPsychoPrepLabels();
+                p.labels = labels;
                 return p;
             }
 

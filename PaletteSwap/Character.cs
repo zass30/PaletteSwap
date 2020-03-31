@@ -70,25 +70,31 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(sprite_bytestream);
+
                 // neutral sprite image
-                var neutral_sprite_image = ImageConfig.Dictator.GenerateDictatorStandingNeutralBasePaletteImage();
-                neutral_sprite_image.palette = s;
-                s.SetImage("neutral", neutral_sprite_image);
+                AssignImage(s, ImageConfig.Dictator.GenerateDictatorStandingNeutralBasePaletteImage(), "neutral");
 
                 // psychopunch image
-                var psychopunch_sprite_image = ImageConfig.Dictator.GenerateDictatorPsychoPunchBasePaletteImage();
-                psychopunch_sprite_image.palette = s;
-                s.SetImage("psychopunch", psychopunch_sprite_image);
+                AssignImage(s, ImageConfig.Dictator.GenerateDictatorPsychoPunchBasePaletteImage(), "psychopunch");
 
                 // psychoprep image
-                var psychoprep_sprite_image = ImageConfig.Dictator.GenerateDictatorPsychoPrepBasePaletteImage();
-                psychoprep_sprite_image.palette = s;
-                s.SetImage("psychoprep", psychoprep_sprite_image);
+                AssignImage(s, ImageConfig.Dictator.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
 
+                // crushertop image
+                AssignImage(s, ImageConfig.Dictator.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
+
+                // crusherbottom image
+                AssignImage(s, ImageConfig.Dictator.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
 
                 p.loadStream(portrait_bytestream);
             }
             return c;
         }        
+
+        private static void AssignImage(Palette sprite, PaletteImage p, string label)
+        {
+            p.palette = sprite;
+            sprite.SetImage(label, p);
+        }
     }
 }

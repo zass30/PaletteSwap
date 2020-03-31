@@ -172,6 +172,8 @@
             this.neutralStandBoxRedo = new System.Windows.Forms.PictureBox();
             this.psychopunchBoxRedo = new System.Windows.Forms.PictureBox();
             this.psychoprepBoxRedo = new System.Windows.Forms.PictureBox();
+            this.crushertopBoxRedo = new System.Windows.Forms.PictureBox();
+            this.crusherbottomBoxRedo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -250,6 +252,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBoxRedo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crushertopBoxRedo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBoxRedo)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1668,11 +1672,31 @@
             this.psychoprepBoxRedo.TabIndex = 116;
             this.psychoprepBoxRedo.TabStop = false;
             // 
+            // crushertopBoxRedo
+            // 
+            this.crushertopBoxRedo.BackColor = System.Drawing.Color.Black;
+            this.crushertopBoxRedo.Location = new System.Drawing.Point(529, 455);
+            this.crushertopBoxRedo.Name = "crushertopBoxRedo";
+            this.crushertopBoxRedo.Size = new System.Drawing.Size(168, 47);
+            this.crushertopBoxRedo.TabIndex = 117;
+            this.crushertopBoxRedo.TabStop = false;
+            // 
+            // crusherbottomBoxRedo
+            // 
+            this.crusherbottomBoxRedo.BackColor = System.Drawing.Color.Black;
+            this.crusherbottomBoxRedo.Location = new System.Drawing.Point(529, 507);
+            this.crusherbottomBoxRedo.Name = "crusherbottomBoxRedo";
+            this.crusherbottomBoxRedo.Size = new System.Drawing.Size(170, 46);
+            this.crusherbottomBoxRedo.TabIndex = 118;
+            this.crusherbottomBoxRedo.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 537);
+            this.Controls.Add(this.crusherbottomBoxRedo);
+            this.Controls.Add(this.crushertopBoxRedo);
             this.Controls.Add(this.psychoprepBoxRedo);
             this.Controls.Add(this.psychopunchBoxRedo);
             this.Controls.Add(this.neutralStandBoxRedo);
@@ -1864,6 +1888,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBoxRedo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crushertopBoxRedo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBoxRedo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2013,6 +2039,8 @@
         private System.Windows.Forms.PictureBox neutralStandBoxRedo;
         private System.Windows.Forms.PictureBox psychopunchBoxRedo;
         private System.Windows.Forms.PictureBox psychoprepBoxRedo;
+        private System.Windows.Forms.PictureBox crushertopBoxRedo;
+        private System.Windows.Forms.PictureBox crusherbottomBoxRedo;
     }
 }
 
