@@ -71,9 +71,15 @@ namespace PaletteSwap
                 }
                 s.loadStream(sprite_bytestream);
                 // neutral sprite image
-                var neutral_sprite_image = ImageConfig.GenerateDictatorStandingNeutralBasePaletteImage();
+                var neutral_sprite_image = ImageConfig.Dictator.GenerateDictatorStandingNeutralBasePaletteImage();
                 neutral_sprite_image.palette = s;
                 s.SetImage("neutral", neutral_sprite_image);
+
+                // psychopunch image
+                var psychopunch_sprite_image = ImageConfig.Dictator.GenerateDictatorPsychoPunchBasePaletteImage();
+                psychopunch_sprite_image.palette = s;
+                s.SetImage("psychopunch", psychopunch_sprite_image);
+
                 p.loadStream(portrait_bytestream);
             }
             return c;

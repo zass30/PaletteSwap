@@ -235,6 +235,8 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             load_sprite_crushertop();
             load_sprite_crusherside();
             load_sprite_neutralstandredo();
+            load_sprite_load_sprite_psychopunchredo();
+
             refreshZoom();
             skip_image_recolors = false;
         }
@@ -243,6 +245,12 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         {
             neutralStandBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
         }
+
+        private void load_sprite_load_sprite_psychopunchredo()
+        {
+            psychopunchBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("psychopunch");
+        }
+
 
         private void load_sprite_neutralstand()
         {
@@ -809,11 +817,16 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                     currentSprite.psychopunch5 = c;
                     break;
             }
+            load_sprites();
+        }
 
+        private void load_sprites()
+        {
             load_sprite_neutralstand();
             load_sprite_psychopunch();
             load_sprite_psychoprep();
             load_sprite_neutralstandredo();
+            load_sprite_load_sprite_psychopunchredo();
         }
 
         private void updateSpriteCrusherColor(Color c, PictureBox p)
