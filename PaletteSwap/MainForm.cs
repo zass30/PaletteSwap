@@ -539,6 +539,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             this.currentSprite = sprite;
             var portrait = Portrait.LoadFromColFormat(v[1]);
             this.currentPortrait = portrait;
+            currentCharacter.loadFromColFormat(colstr);
             reload_everything();
         }
 
