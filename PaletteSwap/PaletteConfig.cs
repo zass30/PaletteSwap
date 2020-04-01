@@ -302,6 +302,7 @@ namespace PaletteSwap
                 {
                     return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
                 "teeth1", "teeth2", "teeth3", "teeth4",
+                "blood1", "blood2", "blood3",
                 "costumeloss1", "costumeloss2", "costumeloss3", "costumeloss4",
                 "pipingloss1", "pipingloss2", "pipingloss3", "pipingloss4", };
                 }
