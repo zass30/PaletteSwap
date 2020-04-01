@@ -43,10 +43,9 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void CharacterSetSpriteByteStreamTest()
+        public void CharacterSetGenericByteStreamTest()
         {
             var characterSet = new CharacterSet();
-            characterSet.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
             byte[] b = characterSet.sprites_stream04();
             byte[] b_expected = Resources.sfxe04a;
             for (int i = 0; i < b_expected.Length; i++)
@@ -63,7 +62,7 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void CharacterSetChangeColorByteStreamTest()
+        public void CharacterSetDefaultColorByteStreamTest()
         {
             var characterSet = CharacterSet.GenerateDictatorCharacterSet();
             characterSet.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
@@ -76,6 +75,44 @@ namespace PaletteSwapTest
             {
                 Assert.AreEqual(byte_expected[i], byte_result[i]);
             }
+
+            byte_expected = characterSet.characterColors[0].portrait.ToByteStream();
+            byte_result = new Byte[byte_expected.Length];
+            Array.Copy(characterSet.portraits_stream03(), characterSet.portrait_offset,
+                byte_result, 0, byte_result.Length);
+
+            for (int i = 0; i < byte_expected.Length; i++)
+            {
+                Assert.AreEqual(byte_expected[i], byte_result[i]);
+            }
+
+        }
+
+        [TestMethod]
+        public void CharacterSetChangeColorByteStreamTest()
+        {
+            var characterSet = CharacterSet.GenerateDictatorCharacterSet();
+            characterSet.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            var byte_expected = characterSet.characterColors[0].sprite.ToByteStream();
+            var byte_result = new Byte[byte_expected.Length];
+            Array.Copy(characterSet.sprites_stream04(), characterSet.sprite_offset,
+                byte_result, 0, byte_result.Length);
+
+            for (int i = 0; i < byte_expected.Length; i++)
+            {
+                Assert.AreEqual(byte_expected[i], byte_result[i]);
+            }
+
+            byte_expected = characterSet.characterColors[0].portrait.ToByteStream();
+            byte_result = new Byte[byte_expected.Length];
+            Array.Copy(characterSet.portraits_stream03(), characterSet.portrait_offset,
+                byte_result, 0, byte_result.Length);
+
+            for (int i = 0; i < byte_expected.Length; i++)
+            {
+                Assert.AreEqual(byte_expected[i], byte_result[i]);
+            }
+
         }
 
         [TestMethod]

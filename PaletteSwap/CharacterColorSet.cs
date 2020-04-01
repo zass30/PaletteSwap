@@ -33,9 +33,21 @@ namespace PaletteSwap
 
         public byte[] portraits_stream03()
         {
-            byte[] b = new byte[0];
-//            return b;
-            return Resources.sfxe03c;
+            byte[] b = Resources.sfxe03c;
+            for (int i = 0; i < 10; i++)
+            {
+                if (characterColors[i] == null)
+                    continue;
+                if (characterColors[i].portrait == null)
+                    continue;
+                var p = characterColors[i].portrait;
+                byte[] color_bytes = p.ToByteStream();
+                for (int j = 0; j < color_bytes.Length; j++)
+                {
+                    b[portrait_offset + i * portrait_length + j] = color_bytes[j];
+                }
+            }
+            return b;
         }
 
         public byte[] sprites_stream04()
@@ -53,11 +65,8 @@ namespace PaletteSwap
                 {
                     b[sprite_offset + i * sprite_length + j] = color_bytes[j];
                 }
-
             }
             return b;
-            // return b;
-            return Resources.sfxe04a;
         }
     }
 
