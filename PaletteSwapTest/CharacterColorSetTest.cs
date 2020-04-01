@@ -43,6 +43,34 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void CharacterSetSpriteByteStreamTest()
+        {
+            var characterSet = new CharacterSet();
+            characterSet.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            byte[] b = characterSet.sprites_stream04();
+            byte[] b_expected = Resources.sfxe04a;
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i]);
+            }
+
+            b = characterSet.portraits_stream03();
+            b_expected = Resources.sfxe03c;
+            for (int i = 0; i < b_expected.Length; i++)
+            {
+                Assert.AreEqual(b_expected[i], b[i]);
+            }
+        }
+
+        [TestMethod]
+        public void CharacterSetChangeColorByteStreamTest()
+        {
+            var characterSet = new CharacterSet();
+            characterSet.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            Assert.Fail(); // check that stream looks right at offset for portrait and sprite
+        }
+
+        [TestMethod]
         public void CharacterColorSetSpriteByteStreamTest()
         {
             var cs = new CharacterColorSet();
@@ -67,7 +95,6 @@ namespace PaletteSwapTest
                 Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset]);
             }
 
-
             // make color 9 bis5color
             cs.characterColors[9] = cc;
             b = cs.sprites_stream04();
@@ -76,7 +103,6 @@ namespace PaletteSwapTest
                 Assert.AreEqual(b_expected[i], b[i + CharacterColorSet.sprite_offset + 9 * CharacterColorSet.sprite_length]);
             }
         }
-
 
         [TestMethod]
         public void CharacterColorSetPortraitByteStreamTest()

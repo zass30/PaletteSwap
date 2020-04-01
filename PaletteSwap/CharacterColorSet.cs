@@ -11,6 +11,41 @@ namespace PaletteSwap
         public Portrait p;
     }
 
+    public class CharacterSet
+    {
+        public Character[] characterColors = new Character[10];
+        public int sprite_offset;
+        public int sprite_length;
+        public int portrait_offset;
+        public int portrait2_offset;
+        public int portrait_length;
+
+        public static CharacterSet GenerateDictatorCharacterSet()
+        {
+            CharacterSet cs = new CharacterSet();
+            cs.sprite_offset = 0x00042E7D;
+            cs.sprite_length = 0xA2;
+            cs.portrait_offset = 0x34448;
+            cs.portrait2_offset = 0x394FE;
+            cs.portrait_length = 0x80;
+            return cs;
+        }
+
+        public byte[] portraits_stream03()
+        {
+            byte[] b = new byte[0];
+//            return b;
+            return Resources.sfxe03c;
+        }
+
+        public byte[] sprites_stream04()
+        {
+            byte[] b = new byte[0];
+           // return b;
+            return Resources.sfxe04a;
+        }
+    }
+
     public class CharacterColorSet
     {
         public CharacterColor[] characterColors;
