@@ -22,6 +22,7 @@ namespace PaletteSwap
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
         public CharacterColorSet characterColorSet;
+        public CharacterSet characterSet;
         public Portrait currentPortrait;
         public Sprite currentSprite;
         public Character currentCharacter;
@@ -49,6 +50,8 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         public void Setup()
         {
             characterColorSet = new CharacterColorSet();
+            characterSet = CharacterSet.GenerateDictatorCharacterSet();
+            currentCharacter = characterSet.characterColors[0];
             for (int i = 0; i < 10; i++)
             {
                 colorSelectorBox.SelectedIndex = i;
@@ -1055,6 +1058,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         {
             characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s = currentSprite;
             characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p = currentPortrait;
+            characterSet.characterColors[colorSelectorBox.SelectedIndex] = currentCharacter;
         }
 
 
@@ -1064,7 +1068,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                 currentSprite = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s;
             if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p != null)
                 currentPortrait = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p;
-
+            currentCharacter = characterSet.characterColors[colorSelectorBox.SelectedIndex];
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1157,7 +1161,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                             s_stream = characterColorSet.sprites_stream04();
                             punches_stream = characterColorSet.old_bison_punches_stream06();
                         }
-                        else if (r == ROMSTYLE.us)
+                        else if (r == ROMSTYLE.japanese)
                         {
                             _03filename = "sfxj.03c";
                             _04filename = "sfxj.04a";
@@ -1181,7 +1185,6 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                         using (var entryStream = _03file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))
                         {
-                            //var p_stream = characterColorSet.portraits_stream03();
                             var c = entryStream.CanSeek;
                             entryStream.Write(p_stream, 0, p_stream.Length);
                         }
@@ -1190,7 +1193,6 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                         using (var entryStream = _04file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))
                         {
-                            //var s_stream = characterColorSet.sprites_stream04();
                             var c = entryStream.CanSeek;
                             entryStream.Write(s_stream, 0, s_stream.Length);
                         }
@@ -1199,7 +1201,6 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                         using (var entryStream = _06file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))
                         {
-                            //var s_stream = characterColorSet.sprites_stream04();
                             var c = entryStream.CanSeek;
                             entryStream.Write(punches_stream, 0, punches_stream.Length);
                         }
@@ -1214,6 +1215,64 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                 c = new ColorSetForm(this);
             c.Reload();
             c.Show();
+        }
+
+        private void savePatchedRomRedoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ROMSTYLE r = ROMSTYLE.us;
+            // Displays a SaveFileDialog so the user can save the Image
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+            saveFileDialog1.Title = "Save a rom";
+            saveFileDialog1.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog1.FileName != "")
+            {
+                // Saves the Image via a FileStream created by the OpenFile method.
+                using (System.IO.FileStream fs =
+                    (System.IO.FileStream)saveFileDialog1.OpenFile())
+                {
+                    using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
+                    {
+                        string _03filename;
+                        string _04filename;
+
+                        byte[] p_stream;
+                        byte[] s_stream;
+
+                        _03filename = "sfxe.03c";
+                        _04filename = "sfxe.04a";
+
+                        p_stream = characterSet.portraits_stream03();
+                        s_stream = characterSet.sprites_stream04();
+
+                        var _03file = archive.CreateEntry(_03filename);
+                        using (var entryStream = _03file.Open())
+                        using (var streamWriter = new StreamWriter(entryStream))
+                        {
+                            var c = entryStream.CanSeek;
+                            entryStream.Write(p_stream, 0, p_stream.Length);
+                        }
+
+                        var _04file = archive.CreateEntry(_04filename);
+                        using (var entryStream = _04file.Open())
+                        using (var streamWriter = new StreamWriter(entryStream))
+                        {
+                            var c = entryStream.CanSeek;
+                            entryStream.Write(s_stream, 0, s_stream.Length);
+                        }
+
+                        /*var _06file = archive.CreateEntry(_06filename);
+                        using (var entryStream = _06file.Open())
+                        using (var streamWriter = new StreamWriter(entryStream))
+                        {
+                            var c = entryStream.CanSeek;
+                            entryStream.Write(punches_stream, 0, punches_stream.Length);
+                        }*/
+                    }
+                }
+            }
         }
     }
 }

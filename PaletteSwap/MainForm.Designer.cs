@@ -176,6 +176,7 @@
             this.crusherbottomBoxRedo = new System.Windows.Forms.PictureBox();
             this.portraitVictoryBoxRedo = new System.Windows.Forms.PictureBox();
             this.portraitLossBoxRedo = new System.Windows.Forms.PictureBox();
+            this.savePatchedRomRedoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -598,7 +599,8 @@
             this.exitToolStripMenuItem,
             this.savePatchedRomToolStripMenuItem1,
             this.savePhoenixRomToolStripMenuItem1,
-            this.saveJapaneseRomToolStripMenuItem});
+            this.saveJapaneseRomToolStripMenuItem,
+            this.savePatchedRomRedoToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "&File";
@@ -609,7 +611,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1712,6 +1714,13 @@
             this.portraitLossBoxRedo.TabIndex = 120;
             this.portraitLossBoxRedo.TabStop = false;
             // 
+            // savePatchedRomRedoToolStripMenuItem
+            // 
+            this.savePatchedRomRedoToolStripMenuItem.Name = "savePatchedRomRedoToolStripMenuItem";
+            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.savePatchedRomRedoToolStripMenuItem.Text = "Save Patched Rom Redo";
+            this.savePatchedRomRedoToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomRedoToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2069,6 +2078,7 @@
         private System.Windows.Forms.PictureBox crusherbottomBoxRedo;
         private System.Windows.Forms.PictureBox portraitVictoryBoxRedo;
         private System.Windows.Forms.PictureBox portraitLossBoxRedo;
+        private System.Windows.Forms.ToolStripMenuItem savePatchedRomRedoToolStripMenuItem;
     }
 }
 

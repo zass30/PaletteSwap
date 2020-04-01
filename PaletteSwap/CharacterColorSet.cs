@@ -28,6 +28,16 @@ namespace PaletteSwap
             cs.portrait_offset = 0x34448;
             cs.portrait2_offset = 0x394FE;
             cs.portrait_length = 0x80;
+            cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            cs.characterColors[2] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hp);
+            cs.characterColors[3] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lk);
+            cs.characterColors[4] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mk);
+            cs.characterColors[5] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            cs.characterColors[6] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.start);
+            cs.characterColors[7] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hold);
+            cs.characterColors[8] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old1);
+            cs.characterColors[9] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
             return cs;
         }
 
