@@ -21,37 +21,24 @@ namespace PaletteSwap
         PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
-        //        public CharacterColorSet characterColorSet;
-        //       public Portrait currentPortrait;
-        //        public Sprite currentSprite;
         public CharacterSet characterSet;
         public Character currentCharacter;
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
         enum ROMSTYLE { us, japanese, phoenix };
-        Regex rx = new Regex(@"[^_]+$",
-RegexOptions.Compiled | RegexOptions.IgnoreCase);
-
+        Regex rx = new Regex(@"[^_]+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public MainForm()
         {
             InitializeComponent();
             EnableDragAndDrop();
-            EnablePaintRefresh();
-            loadImages();
             Setup();
             loadSpritesAndPalettesFromDropDown();
-
- //           var remapTable = currentSprite.StandingSpriteColorsRemapTable();
- //           Bitmap b = new Bitmap(Properties.Resources.dicstand1);
- //           imagepaint2(b, remapTable);
         }
 
         public void Setup()
         {
-//            characterColorSet = new CharacterColorSet();
             characterSet = CharacterSet.GenerateDictatorCharacterSet();
-//            currentCharacter = characterSet.characterColors[0];
             for (int i = 0; i < 10; i++)
             {
                 colorSelectorBox.SelectedIndex = i;
@@ -63,101 +50,6 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             c = new ColorSetForm(this);
         }
 
-        public void loadImages()
-        {/*
-            neutralStandBox.Image = Properties.Resources.dicstand1;
-            psychopunchBox.Image = Properties.Resources.dicmp5;
-            psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
-            crusherBox1.Image = Properties.Resources.diccrusher1_5;
-            crusherBox2.Image = Properties.Resources.diccrusher2_5;
-            portraitVictoryBox.Image = Properties.Resources.dicportraitwin5;
-            portraitLossBox.Image = Properties.Resources.dicportraitloss5;*/
-        }
-
-        public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
-        {
-            int width = b.Width;
-            int height = b.Height;
-            Graphics g = e.Graphics;
-            Graphics gfb = Graphics.FromImage(b);
-            ImageAttributes imageAttributes = new ImageAttributes();
-            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            g.DrawImage(b, new Rectangle(0, 0, width, height), 
-                        0, 0, width, height,
-                        GraphicsUnit.Pixel, imageAttributes); 
-/*            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
-                        0, 0, width, height,
-                        GraphicsUnit.Pixel, imageAttributes);
-            psychopunchBox.BackgroundImage = b;*/
-        }
-
-        public void imagepaint2(Bitmap b, ColorMap[] remapTable)
-        {
-            int width = b.Width;
-            int height = b.Height;
-            Graphics gfb = Graphics.FromImage(b);
-            ImageAttributes imageAttributes = new ImageAttributes();
-            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
-                                    0, 0, width, height,
-                                    GraphicsUnit.Pixel, imageAttributes);
-        }
-
-        private void EnablePaintRefresh()
-        {/*
-            portraitVictoryBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
-            portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
-            neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
-            psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
-            psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
-            crusherBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox1_Paint);
-            crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);*/
-        }
-
-        private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
-//            var remapTable = currentSprite.StandingSpriteColorsRemapTable();
-//            imagepaint(e, Properties.Resources.dicstand1, remapTable);
-/*            Bitmap b = new Bitmap(Properties.Resources.dicstand0);
-            // imagepaint2(b, remapTable);
-            neutralStandBox.BackgroundImage = b; // not working */
-        }
-
-        private void psychopunchBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
-//            var remapTable = currentSprite.PsychoPunchColorsRemapTable();
-//            imagepaint(e, Properties.Resources.dicmp5, remapTable);
-        }
-
-        private void psychoprepBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
- //           var remapTable = currentSprite.PsychoPrepColorsRemapTable();
- //           imagepaint(e, Properties.Resources.dicpsychoprep5, remapTable);
-        }
-
-        private void crusherBox1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
-//            var remapTable = currentSprite.CrusherColorsRemapTable();
-//            imagepaint(e, Properties.Resources.diccrusher1_5, remapTable);
-        }
-        private void crusherBox2_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
-//            var remapTable = currentSprite.CrusherColorsRemapTable();
- //           imagepaint(e, Properties.Resources.diccrusher2_5, remapTable);
-        }
-
-        private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
-//            var remapTable = currentPortrait.VictoryColorsRemapTable();
- //           imagepaint(e, Properties.Resources.dicportraitwin5, remapTable);
-        }
-
-        private void portraitLossBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-        {
- //           imagepaint(e, Properties.Resources.dicportraitlosstop5, currentPortrait.LossTopColorsRemapTable());
- //           imagepaint(e, Properties.Resources.dicportraitlossbottom5, currentPortrait.LossBottomColorsRemapTable());
-        }
-
         private void EnableDragAndDrop()
         {
             // drag and drop functionality
@@ -166,61 +58,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
         private void loadSpritesAndPalettesFromDropDown()
-        {/*
-            switch (colorSelectorBox.SelectedIndex)
-            {
-                case 0:
-                    currentSprite = new Sprite(Sprite.bis0sprite);
-                    currentPortrait = new Portrait(Portrait.bis0portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
-                    break;
-                case 1:
-                    currentSprite = new Sprite(Sprite.bis1sprite);
-                    currentPortrait = new Portrait(Portrait.bis1portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
-                    break;
-                case 2:
-                    currentSprite = new Sprite(Sprite.bis2sprite);
-                    currentPortrait = new Portrait(Portrait.bis2portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hp);
-                    break;
-                case 3:
-                    currentSprite = new Sprite(Sprite.bis3sprite);
-                    currentPortrait = new Portrait(Portrait.bis3portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lk);
-                    break;
-                case 4:
-                    currentSprite = new Sprite(Sprite.bis4sprite);
-                    currentPortrait = new Portrait(Portrait.bis4portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mk);
-                    break;
-                case 5:
-                    currentSprite = new Sprite(Sprite.bis5sprite);
-                    currentPortrait = new Portrait(Portrait.bis5portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
-                    break;
-                case 6:
-                    currentSprite = new Sprite(Sprite.bis6sprite);
-                    currentPortrait = new Portrait(Portrait.bis6portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.start);
-                    break;
-                case 7:
-                    currentSprite = new Sprite(Sprite.bis7sprite);
-                    currentPortrait = new Portrait(Portrait.bis7portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hold);
-                    break;
-                case 8:
-                    currentSprite = new Sprite(Sprite.bis8sprite);
-                    currentPortrait = new Portrait(Portrait.bis8portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old1);
-                    break;
-                case 9:
-                    currentSprite = new Sprite(Sprite.bis9sprite);
-                    currentPortrait = new Portrait(Portrait.bis9portrait);
-                    currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
-                    break;
-            }
-            */
+        {
             resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
@@ -230,13 +68,6 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             skip_image_recolors = true;
             load_portrait_buttons();
             load_sprite_buttons();
-            load_portrait_victory();
-            load_portrait_loss();
-            load_sprite_neutralstand();
-            load_sprite_psychopunch();
-            load_sprite_psychoprep();
-            load_sprite_crushertop();
-            load_sprite_crusherside();
             load_sprite_neutralstandredo();
             load_sprite_load_sprite_psychopunchredo();
             load_sprite_load_sprite_psychoprepredo();
@@ -289,206 +120,93 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             }
             portraitLossBoxRedo.BackgroundImage = result;
         }
-
-        private void load_sprite_neutralstand()
-        {
-//            neutralStandBox.Refresh();
-        }
-
-        private void load_sprite_psychopunch()
-        {
-//            psychopunchBox.Refresh();
-        }
-
-        private void load_sprite_psychoprep()
-        {
-//            psychoprepBox.Refresh();
-        }
-
-        private void load_sprite_crushertop()
-        {
- //           crusherBox1.Refresh();
-        }
-
-        private void load_sprite_crusherside()
-        {
-//            crusherBox2.Refresh();
-        }
-
-        private void load_portrait_victory()
-        {
- //           portraitVictoryBox.Refresh();
-        }
-
-        private void load_portrait_loss()
-        {
-//            portraitLossBox.Refresh();
-        }
+       
 
         private void load_sprite_buttons()
-        {/*
-            var s = currentSprite;
-            pal_sprite_skin1.BackColor = s.skin1;
-            pal_sprite_skin2.BackColor = s.skin2;
-            pal_sprite_skin3.BackColor = s.skin3;
-            pal_sprite_skin4.BackColor = s.skin4;
+        {
+            pal_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+            pal_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+            pal_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+            pal_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
 
-            pal_sprite_stripe.BackColor = s.stripe;
+            pal_sprite_stripe.BackColor = currentCharacter.sprite.GetColor("stripe");
 
-            pal_sprite_pads1.BackColor = s.pads1;
-            pal_sprite_pads2.BackColor = s.pads2;
-            pal_sprite_pads3.BackColor = s.pads3;
-            pal_sprite_pads4.BackColor = s.pads4;
-            pal_sprite_pads5.BackColor = s.pads5;
+            pal_sprite_pads1.BackColor = currentCharacter.sprite.GetColor("pads1");
+            pal_sprite_pads2.BackColor = currentCharacter.sprite.GetColor("pads2");
+            pal_sprite_pads3.BackColor = currentCharacter.sprite.GetColor("pads3");
+            pal_sprite_pads4.BackColor = currentCharacter.sprite.GetColor("pads4");
+            pal_sprite_pads5.BackColor = currentCharacter.sprite.GetColor("pads5");
 
-            pal_sprite_costume1.BackColor = s.costume1;
-            pal_sprite_costume2.BackColor = s.costume2;
-            pal_sprite_costume3.BackColor = s.costume3;
-            pal_sprite_costume4.BackColor = s.costume4;
-            pal_sprite_costume5.BackColor = s.costume5;
+            pal_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+            pal_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+            pal_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+            pal_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+            pal_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
 
-            pal_sprite_psychoglow.BackColor = s.psychoglow;
+            pal_sprite_psychoglow.BackColor = currentCharacter.sprite.GetColor("psychoglow");
 
-            pal_sprite_psychopunch1.BackColor = s.psychopunch1;
-            pal_sprite_psychopunch2.BackColor = s.psychopunch2;
-            pal_sprite_psychopunch3.BackColor = s.psychopunch3;
-            pal_sprite_psychopunch4.BackColor = s.psychopunch4;
-            pal_sprite_psychopunch5.BackColor = s.psychopunch5;
+            pal_sprite_psychopunch1.BackColor = currentCharacter.sprite.GetColor("psychopunch1");
+            pal_sprite_psychopunch2.BackColor = currentCharacter.sprite.GetColor("psychopunch2");
+            pal_sprite_psychopunch3.BackColor = currentCharacter.sprite.GetColor("psychopunch3");
+            pal_sprite_psychopunch4.BackColor = currentCharacter.sprite.GetColor("psychopunch4");
+            pal_sprite_psychopunch5.BackColor = currentCharacter.sprite.GetColor("psychopunch5");
 
-            pal_sprite_crusherpads1.BackColor = s.crusherpads1;
-            pal_sprite_crusherpads2.BackColor = s.crusherpads2;
-            pal_sprite_crusherpads3.BackColor = s.crusherpads3;
-            pal_sprite_crusherpads4.BackColor = s.crusherpads4;
-            pal_sprite_crusherpads5.BackColor = s.crusherpads5;
+            pal_sprite_crusherpads1.BackColor = currentCharacter.sprite.GetColor("crusherpads1");
+            pal_sprite_crusherpads2.BackColor = currentCharacter.sprite.GetColor("crusherpads2");
+            pal_sprite_crusherpads3.BackColor = currentCharacter.sprite.GetColor("crusherpads3");
+            pal_sprite_crusherpads4.BackColor = currentCharacter.sprite.GetColor("crusherpads4");
+            pal_sprite_crusherpads5.BackColor = currentCharacter.sprite.GetColor("crusherpads5");
 
-            pal_sprite_crushercostume1.BackColor = s.crushercostume1;
-            pal_sprite_crushercostume2.BackColor = s.crushercostume2;
-            pal_sprite_crushercostume3.BackColor = s.crushercostume3;
-            pal_sprite_crushercostume4.BackColor = s.crushercostume4;
+            pal_sprite_crushercostume1.BackColor = currentCharacter.sprite.GetColor("crushercostume1");
+            pal_sprite_crushercostume2.BackColor = currentCharacter.sprite.GetColor("crushercostume2");
+            pal_sprite_crushercostume3.BackColor = currentCharacter.sprite.GetColor("crushercostume3");
+            pal_sprite_crushercostume4.BackColor = currentCharacter.sprite.GetColor("crushercostume4");
 
-            pal_sprite_crusherflame1.BackColor = s.crusherflame1;
-            pal_sprite_crusherflame2.BackColor = s.crusherflame2;
+            pal_sprite_crusherflame1.BackColor = currentCharacter.sprite.GetColor("crusherflame1");
+            pal_sprite_crusherflame2.BackColor = currentCharacter.sprite.GetColor("crusherflame2");
 
-            pal_sprite_crusherhands1.BackColor = s.crusherhands1;
-            pal_sprite_crusherhands2.BackColor = s.crusherhands2; */
+            pal_sprite_crusherhands1.BackColor = currentCharacter.sprite.GetColor("crusherhands1");
+            pal_sprite_crusherhands2.BackColor = currentCharacter.sprite.GetColor("crusherhands2");
         }
 
         private void load_portrait_buttons()
-        {/*
-            var p = currentPortrait;
-            portrait_skin1.BackColor = p.skin1;
-            portrait_skin2.BackColor = p.skin2;
-            portrait_skin3.BackColor = p.skin3;
-            portrait_skin4.BackColor = p.skin4;
-            portrait_skin5.BackColor = p.skin5;
-            portrait_skin6.BackColor = p.skin6;
-            portrait_skin7.BackColor = p.skin7;
-
-            portrait_teeth1.BackColor = p.teeth1;
-            portrait_teeth2.BackColor = p.teeth2;
-            portrait_teeth3.BackColor = p.teeth3;
-            portrait_teeth4.BackColor = p.teeth4;
-
-            portrait_costume1.BackColor = p.costume1;
-            portrait_costume2.BackColor = p.costume2;
-            portrait_costume3.BackColor = p.costume3;
-            portrait_costume4.BackColor = p.costume4;
-
-            portrait_costumeloss1.BackColor = p.costumeloss1;
-            portrait_costumeloss2.BackColor = p.costumeloss2;
-            portrait_costumeloss3.BackColor = p.costumeloss3;
-            portrait_costumeloss4.BackColor = p.costumeloss4;
-
-            portrait_piping1.BackColor = p.piping1;
-            portrait_piping2.BackColor = p.piping2;
-            portrait_piping3.BackColor = p.piping3;
-            portrait_piping4.BackColor = p.piping4;
-
-            portrait_pipingloss1.BackColor = p.pipingloss1;
-            portrait_pipingloss2.BackColor = p.pipingloss2;
-            portrait_pipingloss3.BackColor = p.pipingloss3;
-            portrait_pipingloss4.BackColor = p.pipingloss4;
-
-            portrait_blood1.BackColor = p.blood1;
-            portrait_blood2.BackColor = p.blood2;
-            portrait_blood3.BackColor = p.blood3;
-            */
-        }
-
-/*        private void debugImage()
         {
-            Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
-            var mp = new Bitmap(Properties.Resources.dicmp5);
-        }
+            portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+            portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+            portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+            portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+            portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+            portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+            portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
 
-        private void createColorMasks()
-        {
-            var p_src = new Bitmap(@"..\..\Resources\dicstand1.png");
-            Palette pal_dest = Palette.PaletteFromMem(Palette.bis1Mem);
+            portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+            portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+            portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+            portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
 
-            int i = 0;
-            foreach (Color c in pal_dest.colors)
-            {
-                var newmask = Palette.createColorMask(p_src, c);
-                newmask.Save(@"..\..\Resources\dicstandmask" + i + ".png");
-                i++;
-            }
-        }
+            portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+            portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+            portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+            portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
 
-        private void overlayTransparency()
-        {
-            var p_src = new Bitmap(@"..\..\Resources\diccrusher2-5.png");
-            var p_dest = new Bitmap(@"..\..\Resources\diccrusher2-1.png");
+            portrait_costumeloss1.BackColor = currentCharacter.portrait.GetColor("costumeloss1");
+            portrait_costumeloss2.BackColor = currentCharacter.portrait.GetColor("costumeloss2");
+            portrait_costumeloss3.BackColor = currentCharacter.portrait.GetColor("costumeloss3");
+            portrait_costumeloss4.BackColor = currentCharacter.portrait.GetColor("costumeloss4");
 
-            var newimg = Palette.overlayTransparency(p_src, p_dest);
+            portrait_piping1.BackColor = currentCharacter.portrait.GetColor("piping1");
+            portrait_piping2.BackColor = currentCharacter.portrait.GetColor("piping2");
+            portrait_piping3.BackColor = currentCharacter.portrait.GetColor("piping3");
+            portrait_piping4.BackColor = currentCharacter.portrait.GetColor("piping4");
 
-            try
-            {
-                p_src.Save(@"..\..\Resources\src.png");
-                newimg.Save(@"..\..\Resources\dest.png");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("There was a problem saving the file." +
-                    "Check the file permissions.");
-            }
-        }
-        */
+            portrait_pipingloss1.BackColor = currentCharacter.portrait.GetColor("pipingloss1");
+            portrait_pipingloss2.BackColor = currentCharacter.portrait.GetColor("pipingloss2");
+            portrait_pipingloss3.BackColor = currentCharacter.portrait.GetColor("pipingloss3");
+            portrait_pipingloss4.BackColor = currentCharacter.portrait.GetColor("pipingloss4");
 
-/*        private void LoadImageIntoPalette()
-        {
-            Image Img = psychopunchBox.Image;
-            Bitmap bmp = new Bitmap(Img);
-            var colors = currentSprite.PsychoPunchSpriteColorsArray();
-            for (int x = 0; x < bmp.Width; x++)
-            {
-                for (int y = 0; y < bmp.Height; y++)
-                {
-                    Color gotColor = bmp.GetPixel(x, y);
-                    if (gotColor == colors.Last())
-                    {
-//                        int asdf = 0;
-                    }
-            
-
-                    string colstr = coltohex(gotColor);
-                    if (pal_dictionary.ContainsKey(colstr))
-                        pal_dictionary[colstr]++;
-                    else
-                        pal_dictionary[colstr] = 1;
-                    if (palcol_dict.ContainsKey(gotColor))
-                        palcol_dict[gotColor]++;
-                    else
-                        palcol_dict[gotColor] = 1;
-                        
-                }
-            }
-        }*/
-
-        private string coltohex(Color c)
-        {
-            string s = (c.G / 16).ToString("X1") + (c.B / 16).ToString("X1") + "0" + (c.R / 16).ToString("X1");
-            return s;
+            portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+            portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+            portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
         }
 
         public Bitmap magnify_sprite(Image img, int factor)
@@ -676,109 +394,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             currentlySelectedColor = p;
             string label = extractLabel(p.Name);
             currentCharacter.portrait.SetColor(label, c);
-            /*
-            switch (p.Name)
-            {
-                case "portrait_skin1":
-                    currentPortrait.skin1 = c;
-                    break;
-                case "portrait_skin2":
-                    currentPortrait.skin2 = c;
-                    break;
-                case "portrait_skin3":
-                    currentPortrait.skin3 = c;
-                    break;
-                case "portrait_skin4":
-                    currentPortrait.skin4 = c;
-                    break;
-                case "portrait_skin5":
-                    currentPortrait.skin5 = c;
-                    break;
-                case "portrait_skin6":
-                    currentPortrait.skin6 = c;
-                    break;
-                case "portrait_skin7":
-                    currentPortrait.skin7 = c;
-                    break;
 
-                case "portrait_teeth1":
-                    currentPortrait.teeth1 = c;
-                    break;
-                case "portrait_teeth2":
-                    currentPortrait.teeth2 = c;
-                    break;
-                case "portrait_teeth3":
-                    currentPortrait.teeth3 = c;
-                    break;
-                case "portrait_teeth4":
-                    currentPortrait.teeth4 = c;
-                    break;
-
-                case "portrait_costume1":
-                    currentPortrait.costume1 = c;
-                    break;
-                case "portrait_costume2":
-                    currentPortrait.costume2 = c;
-                    break;
-                case "portrait_costume3":
-                    currentPortrait.costume3 = c;
-                    break;
-                case "portrait_costume4":
-                    currentPortrait.costume4 = c;
-                    break;
-
-                case "portrait_costumeloss1":
-                    currentPortrait.costumeloss1 = c;
-                    break;
-                case "portrait_costumeloss2":
-                    currentPortrait.costumeloss2 = c;
-                    break;
-                case "portrait_costumeloss3":
-                    currentPortrait.costumeloss3 = c;
-                    break;
-                case "portrait_costumeloss4":
-                    currentPortrait.costumeloss4 = c;
-                    break;
-                case "portrait_piping1":
-                    currentPortrait.piping1 = c;
-                    break;
-                case "portrait_piping2":
-                    currentPortrait.piping2 = c;
-                    break;
-                case "portrait_piping3":
-                    currentPortrait.piping3 = c;
-                    break;
-                case "portrait_piping4":
-                    currentPortrait.piping4 = c;
-                    break;
-
-                case "portrait_pipingloss1":
-                    currentPortrait.pipingloss1 = c;
-                    break;
-                case "portrait_pipingloss2":
-                    currentPortrait.pipingloss2 = c;
-                    break;
-                case "portrait_pipingloss3":
-                    currentPortrait.pipingloss3 = c;
-                    break;
-                case "portrait_pipingloss4":
-                    currentPortrait.pipingloss4 = c;
-                    break;
-
-                case "portrait_blood1":
-                    currentPortrait.blood1 = c;
-                    break;
-                case "portrait_blood2":
-                    currentPortrait.blood2 = c;
-                    break;
-                case "portrait_blood3":
-                    currentPortrait.blood3 = c;
-                    break;
-
-            }
-            */
-            load_portrait_victory();
-            load_portrait_loss();
             load_portrait_victoryredo();
             load_portrait_lossredo();
         }
@@ -795,82 +411,11 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             currentlySelectedColor = p;
             string label = extractLabel(p.Name);
             currentCharacter.sprite.SetColor(label, c);
-/*
-            switch (p.Name)
-            {
-                case "pal_sprite_skin1":
-                    currentSprite.skin1 = c;
-                    break;
-                case "pal_sprite_skin2":
-                    currentSprite.skin2 = c;
-                    break;
-                case "pal_sprite_skin3":
-                    currentSprite.skin3 = c;
-                    break;
-                case "pal_sprite_skin4":
-                    currentSprite.skin4 = c;
-                    break;
-                case "pal_sprite_pads1":
-                    currentSprite.pads1 = c;
-                    break;
-                case "pal_sprite_pads2":
-                    currentSprite.pads2 = c;
-                    break;
-                case "pal_sprite_pads3":
-                    currentSprite.pads3 = c;
-                    break;
-                case "pal_sprite_pads4":
-                    currentSprite.pads4 = c;
-                    break;
-                case "pal_sprite_pads5":
-                    currentSprite.pads5 = c;
-                    break;
-                case "pal_sprite_costume1":
-                    currentSprite.costume1 = c;
-                    break;
-                case "pal_sprite_costume2":
-                    currentSprite.costume2 = c;
-                    break;
-                case "pal_sprite_costume3":
-                    currentSprite.costume3 = c;
-                    break;
-                case "pal_sprite_costume4":
-                    currentSprite.costume4 = c;
-                    break;
-                case "pal_sprite_costume5":
-                    currentSprite.costume5 = c;
-                    break;
-                case "pal_sprite_stripe":
-                    currentSprite.stripe = c;
-                    break;
-                case "pal_sprite_psychoglow":
-                    currentSprite.psychoglow = c;
-                    break;
-                case "pal_sprite_psychopunch1":
-                    currentSprite.psychopunch1 = c;
-                    break;
-                case "pal_sprite_psychopunch2":
-                    currentSprite.psychopunch2 = c;
-                    break;
-                case "pal_sprite_psychopunch3":
-                    currentSprite.psychopunch3 = c;
-                    break;
-                case "pal_sprite_psychopunch4":
-                    currentSprite.psychopunch4 = c;
-                    break;
-                case "pal_sprite_psychopunch5":
-                    currentSprite.psychopunch5 = c;
-                    break;
-            }
-            */
             load_sprites();
         }
 
         private void load_sprites()
         {
-            load_sprite_neutralstand();
-            load_sprite_psychopunch();
-            load_sprite_psychoprep();
             load_sprite_neutralstandredo();
             load_sprite_load_sprite_psychopunchredo();
             load_sprite_load_sprite_psychoprepredo();
@@ -882,52 +427,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             currentlySelectedColor = p;
             string label = extractLabel(p.Name);
             currentCharacter.sprite.SetColor(label, c);
-            /*
-            switch (p.Name)
-            {
-                case "pal_sprite_crusherpads1":
-                    currentSprite.crusherpads1 = c;
-                    break;
-                case "pal_sprite_crusherpads2":
-                    currentSprite.crusherpads2 = c;
-                    break;
-                case "pal_sprite_crusherpads3":
-                    currentSprite.crusherpads3 = c;
-                    break;
-                case "pal_sprite_crusherpads4":
-                    currentSprite.crusherpads4 = c;
-                    break;
-                case "pal_sprite_crusherpads5":
-                    currentSprite.crusherpads5 = c;
-                    break;
-                case "pal_sprite_crushercostume1":
-                    currentSprite.crushercostume1 = c;
-                    break;
-                case "pal_sprite_crushercostume2":
-                    currentSprite.crushercostume2 = c;
-                    break;
-                case "pal_sprite_crushercostume3":
-                    currentSprite.crushercostume3 = c;
-                    break;
-                case "pal_sprite_crushercostume4":
-                    currentSprite.crushercostume4 = c;
-                    break;
-                case "pal_sprite_crusherflame1":
-                    currentSprite.crusherflame1 = c;
-                    break;
-                case "pal_sprite_crusherflame2":
-                    currentSprite.crusherflame2 = c;
-                    break;
-                case "pal_sprite_crusherhands1":
-                    currentSprite.crusherhands1 = c;
-                    break;
-                case "pal_sprite_crusherhands2":
-                    currentSprite.crusherhands2 = c;
-                    break;
-            }
-            */
-            load_sprite_crusherside();
-            load_sprite_crushertop();
+
             load_sprite_load_sprite_crushertopredo();
             load_sprite_load_sprite_crusherbottomredo();
         }
