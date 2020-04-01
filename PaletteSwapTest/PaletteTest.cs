@@ -264,6 +264,5 @@ namespace PaletteSwapTest
             Assert.AreEqual(expected_colors[0], result_colors[0]);
             Assert.AreEqual(expected_colors[1], result_colors[1]);
         }
-
     }
 }
