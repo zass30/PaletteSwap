@@ -116,6 +116,39 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void CharacterSetLoadFromBytesTest()
+        {
+            // create a color set with bis5 as jab
+            var cs = CharacterSet.GenerateDictatorCharacterSet();
+            cs.characterColors[0].sprite.loadStream(cs.characterColors[5].sprite.ToByteStream());
+            cs.characterColors[0].portrait.loadStream(cs.characterColors[5].portrait.ToByteStream());
+            byte[] portraits_stream = cs.portraits_stream03();
+            byte[] sprites_stream = cs.sprites_stream04();
+            var s = cs.characterColors[0].sprite;
+            var p = cs.characterColors[0].portrait;
+
+            var cs_result = CharacterSet.CharacterColorSetFromStreams(sprites_stream, portraits_stream);
+            var cc_result = cs_result.characterColors[0];
+            Assert.IsNotNull(cc_result);
+            var sprite_result = cc_result.sprite;
+            var portrait_result = cc_result.portrait;
+            Assert.IsNotNull(sprite_result);
+            Assert.IsNotNull(portrait_result);
+            Assert.AreEqual(s.GetColor("costume1"), sprite_result.GetColor("costume1"));
+            Assert.AreEqual(p.GetColor("costume1"), portrait_result.GetColor("costume1"));
+            /*
+            cc_result = cs_result.characterColors[6];
+            Assert.IsNotNull(cc_result);
+            sprite_result = cc_result.s;
+            portrait_result = cc_result.p;
+            Assert.IsNotNull(sprite_result);
+            Assert.IsNotNull(portrait_result);
+            Assert.AreEqual(s.costume1, sprite_result.costume1);
+            Assert.AreEqual(p.costume1, portrait_result.costume1);*/
+
+        }
+
+        [TestMethod]
         public void CharacterColorSetSpriteByteStreamTest()
         {
             var cs = new CharacterColorSet();

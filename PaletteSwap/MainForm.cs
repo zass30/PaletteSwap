@@ -1095,6 +1095,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
                     characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
+                    characterSet = CharacterSet.CharacterColorSetFromZipStream(fileStream);
                     resetCurrentCharacterColorFromDropDown();
                     reload_everything();
                     fileStream.Close();

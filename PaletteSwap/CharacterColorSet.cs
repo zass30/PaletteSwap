@@ -41,6 +41,57 @@ namespace PaletteSwap
             return cs;
         }
 
+        public static CharacterSet CharacterColorSetFromStreams(byte[] sprites, byte[] portraits)
+        {
+            var cs = GenerateDictatorCharacterSet();
+            byte[] sprite_bytes = new byte[cs.sprite_length];
+            byte[] portrait_bytes = new byte[cs.portrait_length];
+            for (int i = 0; i < 10; i++)
+            {
+                Array.Copy(sprites, cs.sprite_offset + i * cs.sprite_length, sprite_bytes, 0, cs.sprite_length);
+                Array.Copy(portraits, cs.portrait_offset + i * cs.portrait_length, portrait_bytes, 0, cs.portrait_length);
+                cs.characterColors[i].sprite.loadStream(sprite_bytes);
+                cs.characterColors[i].portrait.loadStream(portrait_bytes);
+            }
+            return cs;
+        }
+
+        public static CharacterSet CharacterColorSetFromZipStream(Stream fileStream)
+        {
+            var cs = GenerateDictatorCharacterSet();
+            byte[] sprites = new byte[cs.sprite_length];
+            byte[] portraits = new byte[cs.portrait_length];
+
+            var zip = new ZipArchive(fileStream, ZipArchiveMode.Read);
+            foreach (var entry in zip.Entries)
+            {
+                using (var stream = entry.Open())
+                {
+                    if (entry.Name == "sfxe.03c" ||
+                        entry.Name == "sfxjd.03c")
+                    {
+                        using (var memorySubStream = new MemoryStream())
+                        {
+                            stream.CopyTo(memorySubStream);
+                            portraits = memorySubStream.ToArray();
+                        }
+                    }
+
+                    if (entry.Name == "sfxe.04a" ||
+                        entry.Name == "sfxjd.04a")
+                    {
+                        using (var memorySubStream = new MemoryStream())
+                        {
+                            stream.CopyTo(memorySubStream);
+                            sprites = memorySubStream.ToArray();
+                        }
+                    }
+                }
+            }
+
+            return CharacterColorSetFromStreams(sprites, portraits);
+        }
+
         public byte[] portraits_stream03()
         {
             byte[] b = Resources.sfxe03c;
