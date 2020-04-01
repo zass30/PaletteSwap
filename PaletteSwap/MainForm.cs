@@ -278,7 +278,13 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         private void load_portrait_lossredo()
         {
-            portraitLossBoxRedo.BackgroundImage = currentCharacter.portrait.GetBitmap("losstop");
+            Bitmap result = new Bitmap(portraitLossBoxRedo.Width, portraitLossBoxRedo.Height);
+            using (Graphics g = Graphics.FromImage(result))
+            {
+                g.DrawImage(currentCharacter.portrait.GetBitmap("losstop"), Point.Empty);
+                g.DrawImage(currentCharacter.portrait.GetBitmap("lossbottom"), Point.Empty);
+            }
+            portraitLossBoxRedo.BackgroundImage = result;
         }
 
         private void load_sprite_neutralstand()

@@ -80,6 +80,10 @@ namespace PaletteSwap
                 portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossTopBasePaletteImage();
                 portrait.palette = p;
                 p.SetImage("losstop", portrait);
+
+                portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossBottomBasePaletteImage();
+                portrait.palette = p;
+                p.SetImage("lossbottom", portrait);
             }
             return c;
         }        

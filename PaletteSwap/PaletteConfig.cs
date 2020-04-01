@@ -307,6 +307,13 @@ namespace PaletteSwap
                 "pipingloss1", "pipingloss2", "pipingloss3", "pipingloss4", };
                 }
 
+                public static List<string> DictatorLossBottomPortraitLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
+                "costume1", "costume2", "costume3", "costume4",
+                "piping1", "piping2", "piping3", "piping4", };
+                }
+
                 public static Bitmap DictatorVictoryPortraitBaseImage()
                 {
                     return new Bitmap(Properties.Resources.dicportraitwin5);
@@ -317,6 +324,11 @@ namespace PaletteSwap
                     return new Bitmap(Properties.Resources.dicportraitlosstop5);
                 }
 
+                public static Bitmap DictatorLossBottomPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.dicportraitlossbottom5);
+                }
+
                 public static PaletteImage GenerateDictatorVictoryBasePaletteImage()
                 {
                     return GenerateDicatatorPortraitPaletteImage(DictatorVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorVictoryPortraitLabels());
@@ -325,6 +337,11 @@ namespace PaletteSwap
                 public static PaletteImage GenerateDictatorLossTopBasePaletteImage()
                 {
                     return GenerateDicatatorPortraitPaletteImage(DictatorLossTopPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorLossTopPortraitLabels());
+                }
+
+                public static PaletteImage GenerateDictatorLossBottomBasePaletteImage()
+                {
+                    return GenerateDicatatorPortraitPaletteImage(DictatorLossBottomPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorLossBottomPortraitLabels());
                 }
 
                 public static PaletteImage GenerateDicatatorPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
