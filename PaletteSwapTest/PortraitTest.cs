@@ -8,7 +8,7 @@ namespace PaletteSwapTest
 {
     [TestClass]
     public class PortraitTest
-    {
+    {/*
         [TestMethod]
         public void PortraitNewTest()
         {
@@ -336,6 +336,6 @@ namespace PaletteSwapTest
             var portrait = new Portrait(p);
             portrait.SetColorFromAttributeLabel(Portrait.PORTRAIT_COLORS.costume1, Color.Azure);
             Assert.AreEqual(portrait.costume1, Color.Azure);
-        }
+        }*/
     }
 }

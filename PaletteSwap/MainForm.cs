@@ -21,10 +21,10 @@ namespace PaletteSwap
         PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
-        public CharacterColorSet characterColorSet;
+        //        public CharacterColorSet characterColorSet;
+        //       public Portrait currentPortrait;
+        //        public Sprite currentSprite;
         public CharacterSet characterSet;
-        public Portrait currentPortrait;
-        public Sprite currentSprite;
         public Character currentCharacter;
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
@@ -42,16 +42,16 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             Setup();
             loadSpritesAndPalettesFromDropDown();
 
-            var remapTable = currentSprite.StandingSpriteColorsRemapTable();
-            Bitmap b = new Bitmap(Properties.Resources.dicstand1);
-            imagepaint2(b, remapTable);
+ //           var remapTable = currentSprite.StandingSpriteColorsRemapTable();
+ //           Bitmap b = new Bitmap(Properties.Resources.dicstand1);
+ //           imagepaint2(b, remapTable);
         }
 
         public void Setup()
         {
-            characterColorSet = new CharacterColorSet();
+//            characterColorSet = new CharacterColorSet();
             characterSet = CharacterSet.GenerateDictatorCharacterSet();
-            currentCharacter = characterSet.characterColors[0];
+//            currentCharacter = characterSet.characterColors[0];
             for (int i = 0; i < 10; i++)
             {
                 colorSelectorBox.SelectedIndex = i;
@@ -64,14 +64,14 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
         public void loadImages()
-        {
+        {/*
             neutralStandBox.Image = Properties.Resources.dicstand1;
             psychopunchBox.Image = Properties.Resources.dicmp5;
             psychoprepBox.Image = Properties.Resources.dicpsychoprep5;
             crusherBox1.Image = Properties.Resources.diccrusher1_5;
             crusherBox2.Image = Properties.Resources.diccrusher2_5;
             portraitVictoryBox.Image = Properties.Resources.dicportraitwin5;
-            portraitLossBox.Image = Properties.Resources.dicportraitloss5;
+            portraitLossBox.Image = Properties.Resources.dicportraitloss5;*/
         }
 
         public void imagepaint(PaintEventArgs e, Bitmap b, ColorMap[] remapTable)
@@ -104,20 +104,20 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
         private void EnablePaintRefresh()
-        {
+        {/*
             portraitVictoryBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitBox_Paint);
             portraitLossBox.Paint += new System.Windows.Forms.PaintEventHandler(this.portraitLossBox_Paint);
             neutralStandBox.Paint += new System.Windows.Forms.PaintEventHandler(this.neutralStandBox_Paint);
             psychopunchBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychopunchBox_Paint);
             psychoprepBox.Paint += new System.Windows.Forms.PaintEventHandler(this.psychoprepBox_Paint);
             crusherBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox1_Paint);
-            crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);
+            crusherBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.crusherBox2_Paint);*/
         }
 
         private void neutralStandBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            var remapTable = currentSprite.StandingSpriteColorsRemapTable();
-            imagepaint(e, Properties.Resources.dicstand1, remapTable);
+//            var remapTable = currentSprite.StandingSpriteColorsRemapTable();
+//            imagepaint(e, Properties.Resources.dicstand1, remapTable);
 /*            Bitmap b = new Bitmap(Properties.Resources.dicstand0);
             // imagepaint2(b, remapTable);
             neutralStandBox.BackgroundImage = b; // not working */
@@ -125,37 +125,37 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         private void psychopunchBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            var remapTable = currentSprite.PsychoPunchColorsRemapTable();
-            imagepaint(e, Properties.Resources.dicmp5, remapTable);
+//            var remapTable = currentSprite.PsychoPunchColorsRemapTable();
+//            imagepaint(e, Properties.Resources.dicmp5, remapTable);
         }
 
         private void psychoprepBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            var remapTable = currentSprite.PsychoPrepColorsRemapTable();
-            imagepaint(e, Properties.Resources.dicpsychoprep5, remapTable);
+ //           var remapTable = currentSprite.PsychoPrepColorsRemapTable();
+ //           imagepaint(e, Properties.Resources.dicpsychoprep5, remapTable);
         }
 
         private void crusherBox1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            var remapTable = currentSprite.CrusherColorsRemapTable();
-            imagepaint(e, Properties.Resources.diccrusher1_5, remapTable);
+//            var remapTable = currentSprite.CrusherColorsRemapTable();
+//            imagepaint(e, Properties.Resources.diccrusher1_5, remapTable);
         }
         private void crusherBox2_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            var remapTable = currentSprite.CrusherColorsRemapTable();
-            imagepaint(e, Properties.Resources.diccrusher2_5, remapTable);
+//            var remapTable = currentSprite.CrusherColorsRemapTable();
+ //           imagepaint(e, Properties.Resources.diccrusher2_5, remapTable);
         }
 
         private void portraitBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            var remapTable = currentPortrait.VictoryColorsRemapTable();
-            imagepaint(e, Properties.Resources.dicportraitwin5, remapTable);
+//            var remapTable = currentPortrait.VictoryColorsRemapTable();
+ //           imagepaint(e, Properties.Resources.dicportraitwin5, remapTable);
         }
 
         private void portraitLossBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            imagepaint(e, Properties.Resources.dicportraitlosstop5, currentPortrait.LossTopColorsRemapTable());
-            imagepaint(e, Properties.Resources.dicportraitlossbottom5, currentPortrait.LossBottomColorsRemapTable());
+ //           imagepaint(e, Properties.Resources.dicportraitlosstop5, currentPortrait.LossTopColorsRemapTable());
+ //           imagepaint(e, Properties.Resources.dicportraitlossbottom5, currentPortrait.LossBottomColorsRemapTable());
         }
 
         private void EnableDragAndDrop()
@@ -166,7 +166,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
 
         private void loadSpritesAndPalettesFromDropDown()
-        {
+        {/*
             switch (colorSelectorBox.SelectedIndex)
             {
                 case 0:
@@ -220,7 +220,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                     currentCharacter = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
                     break;
             }
-
+            */
             resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
@@ -292,41 +292,41 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         private void load_sprite_neutralstand()
         {
-            neutralStandBox.Refresh();
+//            neutralStandBox.Refresh();
         }
 
         private void load_sprite_psychopunch()
         {
-            psychopunchBox.Refresh();
+//            psychopunchBox.Refresh();
         }
 
         private void load_sprite_psychoprep()
         {
-            psychoprepBox.Refresh();
+//            psychoprepBox.Refresh();
         }
 
         private void load_sprite_crushertop()
         {
-            crusherBox1.Refresh();
+ //           crusherBox1.Refresh();
         }
 
         private void load_sprite_crusherside()
         {
-            crusherBox2.Refresh();
+//            crusherBox2.Refresh();
         }
 
         private void load_portrait_victory()
         {
-            portraitVictoryBox.Refresh();
+ //           portraitVictoryBox.Refresh();
         }
 
         private void load_portrait_loss()
         {
-            portraitLossBox.Refresh();
+//            portraitLossBox.Refresh();
         }
 
         private void load_sprite_buttons()
-        {
+        {/*
             var s = currentSprite;
             pal_sprite_skin1.BackColor = s.skin1;
             pal_sprite_skin2.BackColor = s.skin2;
@@ -370,11 +370,11 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             pal_sprite_crusherflame2.BackColor = s.crusherflame2;
 
             pal_sprite_crusherhands1.BackColor = s.crusherhands1;
-            pal_sprite_crusherhands2.BackColor = s.crusherhands2;
+            pal_sprite_crusherhands2.BackColor = s.crusherhands2; */
         }
 
         private void load_portrait_buttons()
-        {
+        {/*
             var p = currentPortrait;
             portrait_skin1.BackColor = p.skin1;
             portrait_skin2.BackColor = p.skin2;
@@ -412,7 +412,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             portrait_blood1.BackColor = p.blood1;
             portrait_blood2.BackColor = p.blood2;
             portrait_blood3.BackColor = p.blood3;
-
+            */
         }
 
 /*        private void debugImage()
@@ -455,7 +455,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
         */
 
-        private void LoadImageIntoPalette()
+/*        private void LoadImageIntoPalette()
         {
             Image Img = psychopunchBox.Image;
             Bitmap bmp = new Bitmap(Img);
@@ -470,7 +470,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 //                        int asdf = 0;
                     }
             
-/*
+
                     string colstr = coltohex(gotColor);
                     if (pal_dictionary.ContainsKey(colstr))
                         pal_dictionary[colstr]++;
@@ -480,10 +480,10 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                         palcol_dict[gotColor]++;
                     else
                         palcol_dict[gotColor] = 1;
-                        */
+                        
                 }
             }
-        }
+        }*/
 
         private string coltohex(Color c)
         {
@@ -535,10 +535,10 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             byte[] lineasbytes = File.ReadAllBytes(s[0]);
             string colstr = System.Text.Encoding.UTF8.GetString(lineasbytes);
             var v = colstr.Split(':');
-            var sprite = Sprite.LoadFromColFormat(v[0]);
-            this.currentSprite = sprite;
-            var portrait = Portrait.LoadFromColFormat(v[1]);
-            this.currentPortrait = portrait;
+//            var sprite = Sprite.LoadFromColFormat(v[0]);
+//            this.currentSprite = sprite;
+//            var portrait = Portrait.LoadFromColFormat(v[1]);
+ //           this.currentPortrait = portrait;
             currentCharacter.loadFromColFormat(colstr);
             reload_everything();
         }
@@ -676,7 +676,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             currentlySelectedColor = p;
             string label = extractLabel(p.Name);
             currentCharacter.portrait.SetColor(label, c);
-
+            /*
             switch (p.Name)
             {
                 case "portrait_skin1":
@@ -776,6 +776,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                     break;
 
             }
+            */
             load_portrait_victory();
             load_portrait_loss();
             load_portrait_victoryredo();
@@ -794,7 +795,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             currentlySelectedColor = p;
             string label = extractLabel(p.Name);
             currentCharacter.sprite.SetColor(label, c);
-
+/*
             switch (p.Name)
             {
                 case "pal_sprite_skin1":
@@ -861,6 +862,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                     currentSprite.psychopunch5 = c;
                     break;
             }
+            */
             load_sprites();
         }
 
@@ -880,7 +882,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             currentlySelectedColor = p;
             string label = extractLabel(p.Name);
             currentCharacter.sprite.SetColor(label, c);
-
+            /*
             switch (p.Name)
             {
                 case "pal_sprite_crusherpads1":
@@ -923,7 +925,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                     currentSprite.crusherhands2 = c;
                     break;
             }
-
+            */
             load_sprite_crusherside();
             load_sprite_crushertop();
             load_sprite_load_sprite_crushertopredo();
@@ -1012,8 +1014,8 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
             pal_val_B.Text = (17 - b).ToString();
         }
 
-        private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {/*
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -1047,7 +1049,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                 }
 
                 fs.Close();
-            }
+            }*/
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1057,18 +1059,19 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         private void saveCharacterColorToSet()
         {
-            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s = currentSprite;
-            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p = currentPortrait;
+//            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s = currentSprite;
+//            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p = currentPortrait;
             characterSet.characterColors[colorSelectorBox.SelectedIndex] = currentCharacter;
         }
 
 
         private void resetCurrentCharacterColorFromDropDown()
         {
-            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s != null)
+/*            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s != null)
                 currentSprite = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s;
             if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p != null)
                 currentPortrait = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p;
+                */
             currentCharacter = characterSet.characterColors[colorSelectorBox.SelectedIndex];
         }
 
@@ -1094,7 +1097,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
-                    characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
+//                    characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
                     characterSet = CharacterSet.CharacterColorSetFromZipStream(fileStream);
                     resetCurrentCharacterColorFromDropDown();
                     reload_everything();
@@ -1120,7 +1123,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         // would like to encapsulate in object 
         private void savePatchedRomToolFormat(object sender, EventArgs e, ROMSTYLE r)
-        {
+        {/*
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
@@ -1208,7 +1211,7 @@ RegexOptions.Compiled | RegexOptions.IgnoreCase);
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)

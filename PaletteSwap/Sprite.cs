@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text.RegularExpressions;
 
 namespace PaletteSwap
-{
+{/*
     // abstract class for sprite and portrait
     // might be better to just combine them into one big color set that has several
     // images. maybe not b/c each one has its own byte representation
@@ -334,7 +334,7 @@ namespace PaletteSwap
                      b[offset + 1] = c[1];
                  }
              }*/
-
+             /*
             var v = s.Split('\n');
             this.row1 = v[0].Trim();
             this.row2 = v[1].Trim();
@@ -566,4 +566,5 @@ namespace PaletteSwap
             return s.ToString();
         }
     }
+    */
 }

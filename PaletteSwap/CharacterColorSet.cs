@@ -5,11 +5,12 @@ using System.IO;
 
 namespace PaletteSwap
 {
+    /*
     public struct CharacterColor
     {
         public Sprite s;
         public Portrait p;
-    }
+    }*/
 
     public class CharacterSet
     {
@@ -131,6 +132,7 @@ namespace PaletteSwap
         }
     }
 
+    /*
     public class CharacterColorSet
     {
         public CharacterColor[] characterColors;
@@ -314,5 +316,5 @@ namespace PaletteSwap
         {
             return old_bison_punches_stream(Resources.sfxj06a);
         }
-    }
+    } */
 }

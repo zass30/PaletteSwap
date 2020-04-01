@@ -10,7 +10,7 @@ namespace PaletteSwapTest
     [TestClass]
     public class CharacterColorSetTest
     {
-        [TestMethod]
+        /* [TestMethod]
         public void CharacterColorTest()
         {
             var p = new Portrait(Portrait.bis5portrait);
@@ -20,7 +20,7 @@ namespace PaletteSwapTest
             cs.s = s;
             Assert.AreEqual(p, cs.p);
             Assert.AreEqual(s, cs.s);
-        }
+        } 
 
         [TestMethod]
         public void CharacterColorSetNewTest()
@@ -41,6 +41,7 @@ namespace PaletteSwapTest
                 Assert.AreEqual(cc, cs.characterColors[i]);
             }
         }
+        */
 
         [TestMethod]
         public void CharacterSetGenericByteStreamTest()
@@ -148,6 +149,7 @@ namespace PaletteSwapTest
 
         }
 
+        /*
         [TestMethod]
         public void CharacterColorSetSpriteByteStreamTest()
         {
@@ -308,7 +310,7 @@ namespace PaletteSwapTest
                 {
                     memoryStream.Seek(0, SeekOrigin.Begin);
                     memoryStream.CopyTo(fileStream);
-                }*/
+                }*/ /*
             }
         }
 
@@ -411,5 +413,6 @@ namespace PaletteSwapTest
             Assert.AreEqual(cc.s.costume1, cc_result.s.costume1);
             Assert.AreEqual(cc.s.pads1, cc_result.s.pads1);
         }
+*/
     }
 }

@@ -185,5 +185,5 @@ namespace PaletteSwap
             paletteImage.palette = palette;
             palette.SetImage(label, paletteImage);
         }
-    }
+    } 
 }

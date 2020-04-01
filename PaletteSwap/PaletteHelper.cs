@@ -8,6 +8,7 @@ namespace PaletteSwap
 {
     public class PaletteHelper
     {
+        /*
         public static Portrait original_portrait = new Portrait(Portrait.bis5portrait);
         public static Color[] orig_victory_colors = original_portrait.VictoryColorsArray();
         public static Color[] orig_losstop_colors = original_portrait.LossTopColorsArray();
@@ -19,7 +20,7 @@ namespace PaletteSwap
         public static Color[] psychopunch_sprite_colors5 = sprite5.PsychoPunchSpriteColorsArray();
         public static Color[] psychoprep_sprite_colors5 = sprite5.PsychoPrepSpriteColorsArray();
         public static Color[] crusher_sprite_colors5 = sprite5.CrusherSpriteColorsArray();
-
+        */
 
         // function that takes byte stream, dictionary, and list of labels
         // outputs an array of colors for those labels

@@ -76,6 +76,7 @@
             this.savePatchedRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.savePhoenixRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveJapaneseRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePatchedRomRedoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -145,11 +146,6 @@
             this.portrait_skin3 = new System.Windows.Forms.PictureBox();
             this.portrait_skin2 = new System.Windows.Forms.PictureBox();
             this.portrait_skin1 = new System.Windows.Forms.PictureBox();
-            this.crusherBox2 = new System.Windows.Forms.PictureBox();
-            this.crusherBox1 = new System.Windows.Forms.PictureBox();
-            this.psychoprepBox = new System.Windows.Forms.PictureBox();
-            this.psychopunchBox = new System.Windows.Forms.PictureBox();
-            this.portraitLossBox = new System.Windows.Forms.PictureBox();
             this.pal_sprite_stripe = new System.Windows.Forms.PictureBox();
             this.pal_sprite_costume5 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_costume4 = new System.Windows.Forms.PictureBox();
@@ -165,8 +161,6 @@
             this.pal_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
-            this.portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.neutralStandBox = new System.Windows.Forms.PictureBox();
             this.colorCycleRGB = new System.Windows.Forms.Button();
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.neutralStandBoxRedo = new System.Windows.Forms.PictureBox();
@@ -176,7 +170,6 @@
             this.crusherbottomBoxRedo = new System.Windows.Forms.PictureBox();
             this.portraitVictoryBoxRedo = new System.Windows.Forms.PictureBox();
             this.portraitLossBoxRedo = new System.Windows.Forms.PictureBox();
-            this.savePatchedRomRedoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -230,11 +223,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.portrait_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crusherBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crusherBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume4)).BeginInit();
@@ -250,8 +238,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBoxRedo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBoxRedo)).BeginInit();
@@ -621,14 +607,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(173, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(215, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -636,21 +622,21 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(173, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(215, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -658,7 +644,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -667,41 +653,48 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(173, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(215, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // savePatchedRomToolStripMenuItem1
             // 
             this.savePatchedRomToolStripMenuItem1.Name = "savePatchedRomToolStripMenuItem1";
-            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(218, 38);
             this.savePatchedRomToolStripMenuItem1.Text = "Save Patched Rom";
             this.savePatchedRomToolStripMenuItem1.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // savePhoenixRomToolStripMenuItem1
             // 
             this.savePhoenixRomToolStripMenuItem1.Name = "savePhoenixRomToolStripMenuItem1";
-            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(218, 38);
             this.savePhoenixRomToolStripMenuItem1.Text = "Save Phoenix Rom";
             this.savePhoenixRomToolStripMenuItem1.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // saveJapaneseRomToolStripMenuItem
             // 
             this.saveJapaneseRomToolStripMenuItem.Name = "saveJapaneseRomToolStripMenuItem";
-            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.saveJapaneseRomToolStripMenuItem.Text = "Save Japanese Rom";
             this.saveJapaneseRomToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
+            // 
+            // savePatchedRomRedoToolStripMenuItem
+            // 
+            this.savePatchedRomRedoToolStripMenuItem.Name = "savePatchedRomRedoToolStripMenuItem";
+            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.savePatchedRomRedoToolStripMenuItem.Text = "Save Patched Rom Redo";
+            this.savePatchedRomRedoToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomRedoToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -1397,55 +1390,6 @@
             this.portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // crusherBox2
-            // 
-            this.crusherBox2.BackColor = System.Drawing.Color.Black;
-            this.crusherBox2.Location = new System.Drawing.Point(115, 162);
-            this.crusherBox2.Name = "crusherBox2";
-            this.crusherBox2.Size = new System.Drawing.Size(170, 46);
-            this.crusherBox2.TabIndex = 41;
-            this.crusherBox2.TabStop = false;
-            this.crusherBox2.Click += new System.EventHandler(this.zoom);
-            // 
-            // crusherBox1
-            // 
-            this.crusherBox1.BackColor = System.Drawing.Color.Black;
-            this.crusherBox1.Location = new System.Drawing.Point(115, 109);
-            this.crusherBox1.Name = "crusherBox1";
-            this.crusherBox1.Size = new System.Drawing.Size(168, 47);
-            this.crusherBox1.TabIndex = 40;
-            this.crusherBox1.TabStop = false;
-            this.crusherBox1.Click += new System.EventHandler(this.zoom);
-            // 
-            // psychoprepBox
-            // 
-            this.psychoprepBox.BackColor = System.Drawing.Color.Black;
-            this.psychoprepBox.Location = new System.Drawing.Point(117, 27);
-            this.psychoprepBox.Name = "psychoprepBox";
-            this.psychoprepBox.Size = new System.Drawing.Size(149, 67);
-            this.psychoprepBox.TabIndex = 39;
-            this.psychoprepBox.TabStop = false;
-            this.psychoprepBox.Click += new System.EventHandler(this.zoom);
-            // 
-            // psychopunchBox
-            // 
-            this.psychopunchBox.BackColor = System.Drawing.Color.Black;
-            this.psychopunchBox.Location = new System.Drawing.Point(9, 124);
-            this.psychopunchBox.Name = "psychopunchBox";
-            this.psychopunchBox.Size = new System.Drawing.Size(80, 84);
-            this.psychopunchBox.TabIndex = 38;
-            this.psychopunchBox.TabStop = false;
-            this.psychopunchBox.Click += new System.EventHandler(this.zoom);
-            // 
-            // portraitLossBox
-            // 
-            this.portraitLossBox.Location = new System.Drawing.Point(497, 27);
-            this.portraitLossBox.Name = "portraitLossBox";
-            this.portraitLossBox.Size = new System.Drawing.Size(128, 112);
-            this.portraitLossBox.TabIndex = 37;
-            this.portraitLossBox.TabStop = false;
-            this.portraitLossBox.Click += new System.EventHandler(this.zoom);
-            // 
             // pal_sprite_stripe
             // 
             this.pal_sprite_stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1611,26 +1555,6 @@
             this.pal_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portraitVictoryBox
-            // 
-            this.portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.portraitVictoryBox.Location = new System.Drawing.Point(342, 27);
-            this.portraitVictoryBox.Name = "portraitVictoryBox";
-            this.portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
-            this.portraitVictoryBox.TabIndex = 3;
-            this.portraitVictoryBox.TabStop = false;
-            this.portraitVictoryBox.Click += new System.EventHandler(this.zoom);
-            // 
-            // neutralStandBox
-            // 
-            this.neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.neutralStandBox.Location = new System.Drawing.Point(8, 27);
-            this.neutralStandBox.Name = "neutralStandBox";
-            this.neutralStandBox.Size = new System.Drawing.Size(103, 91);
-            this.neutralStandBox.TabIndex = 1;
-            this.neutralStandBox.TabStop = false;
-            this.neutralStandBox.Click += new System.EventHandler(this.zoom);
-            // 
             // colorCycleRGB
             // 
             this.colorCycleRGB.Location = new System.Drawing.Point(219, 249);
@@ -1654,7 +1578,7 @@
             // neutralStandBoxRedo
             // 
             this.neutralStandBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.neutralStandBoxRedo.Location = new System.Drawing.Point(515, 237);
+            this.neutralStandBoxRedo.Location = new System.Drawing.Point(8, 27);
             this.neutralStandBoxRedo.Name = "neutralStandBoxRedo";
             this.neutralStandBoxRedo.Size = new System.Drawing.Size(103, 91);
             this.neutralStandBoxRedo.TabIndex = 114;
@@ -1663,7 +1587,7 @@
             // psychopunchBoxRedo
             // 
             this.psychopunchBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.psychopunchBoxRedo.Location = new System.Drawing.Point(637, 237);
+            this.psychopunchBoxRedo.Location = new System.Drawing.Point(8, 124);
             this.psychopunchBoxRedo.Name = "psychopunchBoxRedo";
             this.psychopunchBoxRedo.Size = new System.Drawing.Size(80, 84);
             this.psychopunchBoxRedo.TabIndex = 115;
@@ -1672,7 +1596,7 @@
             // psychoprepBoxRedo
             // 
             this.psychoprepBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.psychoprepBoxRedo.Location = new System.Drawing.Point(529, 382);
+            this.psychoprepBoxRedo.Location = new System.Drawing.Point(117, 27);
             this.psychoprepBoxRedo.Name = "psychoprepBoxRedo";
             this.psychoprepBoxRedo.Size = new System.Drawing.Size(149, 67);
             this.psychoprepBoxRedo.TabIndex = 116;
@@ -1681,7 +1605,7 @@
             // crushertopBoxRedo
             // 
             this.crushertopBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.crushertopBoxRedo.Location = new System.Drawing.Point(529, 455);
+            this.crushertopBoxRedo.Location = new System.Drawing.Point(115, 109);
             this.crushertopBoxRedo.Name = "crushertopBoxRedo";
             this.crushertopBoxRedo.Size = new System.Drawing.Size(168, 47);
             this.crushertopBoxRedo.TabIndex = 117;
@@ -1690,7 +1614,7 @@
             // crusherbottomBoxRedo
             // 
             this.crusherbottomBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.crusherbottomBoxRedo.Location = new System.Drawing.Point(529, 507);
+            this.crusherbottomBoxRedo.Location = new System.Drawing.Point(115, 162);
             this.crusherbottomBoxRedo.Name = "crusherbottomBoxRedo";
             this.crusherbottomBoxRedo.Size = new System.Drawing.Size(170, 46);
             this.crusherbottomBoxRedo.TabIndex = 118;
@@ -1699,7 +1623,7 @@
             // portraitVictoryBoxRedo
             // 
             this.portraitVictoryBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.portraitVictoryBoxRedo.Location = new System.Drawing.Point(758, 357);
+            this.portraitVictoryBoxRedo.Location = new System.Drawing.Point(342, 27);
             this.portraitVictoryBoxRedo.Name = "portraitVictoryBoxRedo";
             this.portraitVictoryBoxRedo.Size = new System.Drawing.Size(128, 112);
             this.portraitVictoryBoxRedo.TabIndex = 119;
@@ -1708,18 +1632,11 @@
             // portraitLossBoxRedo
             // 
             this.portraitLossBoxRedo.BackColor = System.Drawing.Color.Black;
-            this.portraitLossBoxRedo.Location = new System.Drawing.Point(758, 479);
+            this.portraitLossBoxRedo.Location = new System.Drawing.Point(484, 27);
             this.portraitLossBoxRedo.Name = "portraitLossBoxRedo";
             this.portraitLossBoxRedo.Size = new System.Drawing.Size(128, 112);
             this.portraitLossBoxRedo.TabIndex = 120;
             this.portraitLossBoxRedo.TabStop = false;
-            // 
-            // savePatchedRomRedoToolStripMenuItem
-            // 
-            this.savePatchedRomRedoToolStripMenuItem.Name = "savePatchedRomRedoToolStripMenuItem";
-            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
-            this.savePatchedRomRedoToolStripMenuItem.Text = "Save Patched Rom Redo";
-            this.savePatchedRomRedoToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomRedoToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -1800,11 +1717,6 @@
             this.Controls.Add(this.portrait_skin2);
             this.Controls.Add(this.portrait_skin1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.crusherBox2);
-            this.Controls.Add(this.crusherBox1);
-            this.Controls.Add(this.psychoprepBox);
-            this.Controls.Add(this.psychopunchBox);
-            this.Controls.Add(this.portraitLossBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -1835,9 +1747,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.colorSelectorBox);
-            this.Controls.Add(this.portraitVictoryBox);
             this.Controls.Add(this.colorSwapBG);
-            this.Controls.Add(this.neutralStandBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -1896,11 +1806,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.portrait_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crusherBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crusherBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_stripe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_costume4)).EndInit();
@@ -1916,8 +1821,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.neutralStandBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBoxRedo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBoxRedo)).EndInit();
@@ -1931,9 +1834,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox neutralStandBox;
         private System.Windows.Forms.Button colorSwapBG;
-        private System.Windows.Forms.PictureBox portraitVictoryBox;
         private System.Windows.Forms.ComboBox colorSelectorBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -1964,11 +1865,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox portraitLossBox;
-        private System.Windows.Forms.PictureBox psychopunchBox;
-        private System.Windows.Forms.PictureBox psychoprepBox;
-        private System.Windows.Forms.PictureBox crusherBox1;
-        private System.Windows.Forms.PictureBox crusherBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox portrait_skin1;
         private System.Windows.Forms.PictureBox portrait_skin2;

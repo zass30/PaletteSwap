@@ -43,7 +43,7 @@ namespace PaletteSwap
 
         private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            ColorMap[] remapTable = new ColorMap[0];
+/*            ColorMap[] remapTable = new ColorMap[0];
             switch (zoomed_img)
             {
                 case img_type.neutral:
@@ -79,6 +79,7 @@ namespace PaletteSwap
                     return;
             }
             mainform.imagepaint(e, magnified_sprite, remapTable);
+            */
         }
 
         public void refreshZoomBox()
