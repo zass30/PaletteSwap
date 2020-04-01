@@ -70,47 +70,35 @@ namespace PaletteSwap
                         break;
                 }
                 s.loadStream(sprite_bytestream);
-                AssignDicatatorSpriteImages(s);
-
                 p.loadStream(portrait_bytestream);
-                var portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
-                portrait.palette = p;
-                p.SetImage("victory", portrait);
 
-                portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossTopBasePaletteImage();
-                portrait.palette = p;
-                p.SetImage("losstop", portrait);
-
-                portrait = ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossBottomBasePaletteImage();
-                portrait.palette = p;
-                p.SetImage("lossbottom", portrait);
+                AssignDicatatorSpriteImages(s);
+                AssignDicatatorPortraitImages(p);
             }
             return c;
-        }        
+        }
 
-        private static void AssignDicatatorSpriteImages(Palette s)
+        private static void AssignDicatatorPortraitImages(Palette p)
         {
-            // neutral sprite image
-            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage(), "neutral");
-
-            // psychopunch image
-            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPunchBasePaletteImage(), "psychopunch");
-
-            // psychoprep image
-            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
-
-            // crushertop image
-            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
-
-            // crusherbottom image
-            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
+            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage(), "victory");
+            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossTopBasePaletteImage(), "losstop");
+            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossBottomBasePaletteImage(), "lossbottom");
 
         }
 
-        private static void AssignImage(Palette sprite, PaletteImage p, string label)
+        private static void AssignDicatatorSpriteImages(Palette s)
         {
-            p.palette = sprite;
-            sprite.SetImage(label, p);
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage(), "neutral");
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPunchBasePaletteImage(), "psychopunch");
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
+        }
+
+        private static void AssignImage(Palette palette, PaletteImage paletteImage, string label)
+        {
+            paletteImage.palette = palette;
+            palette.SetImage(label, paletteImage);
         }
     }
 }
