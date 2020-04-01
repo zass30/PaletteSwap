@@ -23,7 +23,7 @@ namespace PaletteSwap
         public static CharacterSet GenerateDictatorCharacterSet()
         {
             CharacterSet cs = new CharacterSet();
-            cs.sprite_offset = 0x00042E7D;
+            cs.sprite_offset = 0x00042E7E;
             cs.sprite_length = 0xA2;
             cs.portrait_offset = 0x34448;
             cs.portrait2_offset = 0x394FE;
@@ -40,8 +40,23 @@ namespace PaletteSwap
 
         public byte[] sprites_stream04()
         {
-            byte[] b = new byte[0];
-           // return b;
+            byte[] b = Resources.sfxe04a;
+            for (int i = 0; i < 10; i++)
+            {
+                if (characterColors[i] == null)
+                    continue;
+                if (characterColors[i].sprite == null)
+                    continue;
+                var s = characterColors[i].sprite;
+                byte[] color_bytes = s.ToByteStream();
+                for (int j = 0; j < color_bytes.Length; j++)
+                {
+                    b[sprite_offset + i * sprite_length + j] = color_bytes[j];
+                }
+
+            }
+            return b;
+            // return b;
             return Resources.sfxe04a;
         }
     }
