@@ -82,43 +82,43 @@ namespace PaletteSwap
 
         private void load_sprite_neutralstandredo()
         {
-            neutralStandBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+            neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
         }
 
         private void load_sprite_load_sprite_psychopunchredo()
         {
-            psychopunchBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("psychopunch");
+            psychopunchBox.BackgroundImage = currentCharacter.sprite.GetBitmap("psychopunch");
         }
 
         private void load_sprite_load_sprite_psychoprepredo()
         {
-            psychoprepBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("psychoprep");
+            psychoprepBox.BackgroundImage = currentCharacter.sprite.GetBitmap("psychoprep");
         }
 
         private void load_sprite_load_sprite_crushertopredo()
         {
-            crushertopBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("crushertop");
+            crushertopBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crushertop");
         }
 
         private void load_sprite_load_sprite_crusherbottomredo()
         {
-            crusherbottomBoxRedo.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
+            crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
         }
 
         private void load_portrait_victoryredo()
         {
-            portraitVictoryBoxRedo.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+            portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
         }
 
         private void load_portrait_lossredo()
         {
-            Bitmap result = new Bitmap(portraitLossBoxRedo.Width, portraitLossBoxRedo.Height);
+            Bitmap result = new Bitmap(portraitLossBox.Width, portraitLossBox.Height);
             using (Graphics g = Graphics.FromImage(result))
             {
                 g.DrawImage(currentCharacter.portrait.GetBitmap("losstop"), Point.Empty);
                 g.DrawImage(currentCharacter.portrait.GetBitmap("lossbottom"), Point.Empty);
             }
-            portraitLossBoxRedo.BackgroundImage = result;
+            portraitLossBox.BackgroundImage = result;
         }
        
 
@@ -316,7 +316,7 @@ namespace PaletteSwap
                     i = img_type.lossportrait;
                     break;
             }
-            z.displayZoomImage((Bitmap)p.Image, i);
+            z.displayZoomImage((Bitmap)p.BackgroundImage, i);
 
             z.refreshZoomBox();
         }
@@ -559,19 +559,12 @@ namespace PaletteSwap
 
         private void saveCharacterColorToSet()
         {
-//            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s = currentSprite;
-//            characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p = currentPortrait;
             characterSet.characterColors[colorSelectorBox.SelectedIndex] = currentCharacter;
         }
 
 
         private void resetCurrentCharacterColorFromDropDown()
         {
-/*            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s != null)
-                currentSprite = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].s;
-            if (characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p != null)
-                currentPortrait = characterColorSet.characterColors[colorSelectorBox.SelectedIndex].p;
-                */
             currentCharacter = characterSet.characterColors[colorSelectorBox.SelectedIndex];
         }
 
@@ -722,7 +715,7 @@ namespace PaletteSwap
             c.Show();
         }
 
-        private void savePatchedRomRedoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void savePatchedRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ROMSTYLE r = ROMSTYLE.us;
             // Displays a SaveFileDialog so the user can save the Image
