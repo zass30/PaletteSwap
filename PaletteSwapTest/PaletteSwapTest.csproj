@@ -59,7 +59,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SpriteTest.cs" />
     <Compile Include="PortraitTest.cs" />
     <Compile Include="CharacterColorSetTest.cs" />
     <Compile Include="PaletteTest.cs" />
