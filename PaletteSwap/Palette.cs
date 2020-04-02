@@ -135,6 +135,5 @@ namespace PaletteSwap
 
             return b;
         }
-
     }    
 }

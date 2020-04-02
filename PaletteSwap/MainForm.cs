@@ -434,9 +434,9 @@ namespace PaletteSwap
 
         private string extractLabel(string s)
         {
-            Match m = rx.Match(s);
-            string label = m.Value;
-            return label;
+                Match m = rx.Match(s);
+                string label = m.Value;
+                return label;
         }
 
         private void updateSpriteColor(Color c, PictureBox p)
@@ -450,9 +450,12 @@ namespace PaletteSwap
         private void load_sprites()
         {
             load_sprite_neutralstandredo();
-            load_sprite_load_sprite_psychopunch();
-            load_sprite_load_sprite_psychoprep();
-            load_sprite_load_sprite_crushertop();
+            if (currentCharacterType == Character.CHARACTERS.Dictator)
+            {
+                load_sprite_load_sprite_psychopunch();
+                load_sprite_load_sprite_psychoprep();
+                load_sprite_load_sprite_crushertop();
+            }
         }
 
         private void updateSpriteCrusherColor(Color c, PictureBox p)

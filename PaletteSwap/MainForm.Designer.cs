@@ -1964,6 +1964,7 @@
             this.sprite_claw_stripe.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_stripe.TabIndex = 140;
             this.sprite_claw_stripe.TabStop = false;
+            this.sprite_claw_stripe.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_stripe.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_outline
@@ -1975,6 +1976,7 @@
             this.sprite_claw_outline.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_outline.TabIndex = 141;
             this.sprite_claw_outline.TabStop = false;
+            this.sprite_claw_outline.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_outline.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label23
@@ -2006,6 +2008,7 @@
             this.sprite_claw_costume1.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_costume1.TabIndex = 132;
             this.sprite_claw_costume1.TabStop = false;
+            this.sprite_claw_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_costume2
@@ -2017,6 +2020,7 @@
             this.sprite_claw_costume2.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_costume2.TabIndex = 133;
             this.sprite_claw_costume2.TabStop = false;
+            this.sprite_claw_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_costume3
@@ -2028,6 +2032,7 @@
             this.sprite_claw_costume3.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_costume3.TabIndex = 134;
             this.sprite_claw_costume3.TabStop = false;
+            this.sprite_claw_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_costume4
@@ -2039,6 +2044,7 @@
             this.sprite_claw_costume4.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_costume4.TabIndex = 135;
             this.sprite_claw_costume4.TabStop = false;
+            this.sprite_claw_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_sash1
@@ -2050,6 +2056,7 @@
             this.sprite_claw_sash1.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_sash1.TabIndex = 137;
             this.sprite_claw_sash1.TabStop = false;
+            this.sprite_claw_sash1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_sash1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_sash2
@@ -2061,6 +2068,7 @@
             this.sprite_claw_sash2.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_sash2.TabIndex = 138;
             this.sprite_claw_sash2.TabStop = false;
+            this.sprite_claw_sash2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_sash2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin5
@@ -2072,6 +2080,7 @@
             this.sprite_claw_skin5.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin5.TabIndex = 128;
             this.sprite_claw_skin5.TabStop = false;
+            this.sprite_claw_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin6
@@ -2083,6 +2092,7 @@
             this.sprite_claw_skin6.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin6.TabIndex = 129;
             this.sprite_claw_skin6.TabStop = false;
+            this.sprite_claw_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin6.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin7
@@ -2094,6 +2104,7 @@
             this.sprite_claw_skin7.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin7.TabIndex = 130;
             this.sprite_claw_skin7.TabStop = false;
+            this.sprite_claw_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin7.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label16
@@ -2115,6 +2126,7 @@
             this.sprite_claw_skin1.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin1.TabIndex = 124;
             this.sprite_claw_skin1.TabStop = false;
+            this.sprite_claw_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin2
@@ -2126,6 +2138,7 @@
             this.sprite_claw_skin2.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin2.TabIndex = 125;
             this.sprite_claw_skin2.TabStop = false;
+            this.sprite_claw_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin3
@@ -2137,6 +2150,7 @@
             this.sprite_claw_skin3.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin3.TabIndex = 126;
             this.sprite_claw_skin3.TabStop = false;
+            this.sprite_claw_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin4
@@ -2148,6 +2162,7 @@
             this.sprite_claw_skin4.Size = new System.Drawing.Size(46, 44);
             this.sprite_claw_skin4.TabIndex = 127;
             this.sprite_claw_skin4.TabStop = false;
+            this.sprite_claw_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CLAW_neutralStandBox
