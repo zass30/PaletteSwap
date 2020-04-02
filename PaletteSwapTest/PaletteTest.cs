@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaletteSwap;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace PaletteSwapTest
 {
