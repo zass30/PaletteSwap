@@ -19,7 +19,7 @@ namespace PaletteSwap
             CharacterSet cs = new CharacterSet();
             cs.sprite_offset = 0x00042E7E;
             cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x34448;
+            cs.portrait_offset = 0x34448;  // character id = 8
             cs.portrait2_offset = 0x394FE;
             cs.portrait_length = 0x80;
             cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
@@ -38,14 +38,30 @@ namespace PaletteSwap
          * losing portrait additional paletes
          31C48 + (Char_ID * 0x500) + (Palette_ID * 0x80) and this is for the normal portrait, 
          just in case
+         // ryu 0
+         // eho 1
+         // bla 2
+         // gui 3
+         // ken 4
+         // chu 5
+         // zan 6
+         // dha 7
+         // dic 8
+         // sag 9
+         // box A
+         // cla B
+         // cam c
+         // tha d
+         // fei e
+         // dee f
 */
         public static CharacterSet GenerateClawCharacterSet()
         {
             CharacterSet cs = new CharacterSet();
             cs.sprite_offset = 0x000441C2;
             cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x34448;//old
-            cs.portrait2_offset = 0x394FE;//old
+            cs.portrait_offset = 35348;//character id B
+            cs.portrait2_offset = 0x3A3FE;//old
             cs.portrait_length = 0x80;
             cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.lp);
             cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.mp);
