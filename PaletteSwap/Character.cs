@@ -161,45 +161,63 @@ namespace PaletteSwap
                 AssignDicatatorPortraitImages(p);
             }
             else if (characater == CHARACTERS.Claw) {
-                PaletteConfig clawSpriteConfig = PaletteConfig.CLAW.GenerateClawSpriteConfig();
-                Palette s = Palette.PaletteFromConfig(clawSpriteConfig);
+                PaletteConfig claSpriteConfig = PaletteConfig.CLAW.GenerateClawSpriteConfig();
+                PaletteConfig claPortraitConfig = PaletteConfig.CLAW.GenerateClawPortraitConfig();
+                Palette s = Palette.PaletteFromConfig(claSpriteConfig);
+                Palette p = Palette.PaletteFromConfig(claPortraitConfig);
                 c.sprite = s;
+                c.portrait = p;
                 byte[] sprite_bytestream = new byte[0];
+                byte[] portrait_bytestream = new byte[0];
+
                 switch (button)
                 {
                     case BUTTONS.lp:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0portrait);
                         break;
                     case BUTTONS.mp:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1portrait);
                         break;
                     case BUTTONS.hp:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2portrait);
                         break;
                     case BUTTONS.lk:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3portrait);
                         break;
                     case BUTTONS.mk:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4portrait);
                         break;
                     case BUTTONS.hk:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5portrait);
                         break;
                     case BUTTONS.start:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6portrait);
                         break;
                     case BUTTONS.hold:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7portrait);
                         break;
                     case BUTTONS.old1:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8portrait);
                         break;
                     case BUTTONS.old2:
                         sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9sprite);
+                        portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9portrait);
                         break;
                 }
                 s.loadStream(sprite_bytestream);
+                p.loadStream(portrait_bytestream);
+
                 AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
+                AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
             }
             return c;
         }

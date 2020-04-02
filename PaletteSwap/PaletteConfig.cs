@@ -69,6 +69,56 @@ namespace PaletteSwap
            };
                 return spriteOffsets;
             }
+
+            public static Dictionary<string, List<int>> GenerateClawPortraitOffsets()
+            {
+                int ROWLEN = 32;
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+        {
+            { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+            { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+            { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+            { "hair1", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+            { "hair2", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+            { "hair3", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+            { "hair4", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+            { "metal1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 2 + 14, ROWLEN * 3 + 14, } },
+            { "metal2", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 2 + 16, ROWLEN * 3 + 16, } },
+            { "metal3", new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 2 + 18, ROWLEN * 3 + 18, } },
+            { "metal4", new List<int>() { 20, ROWLEN * 1 + 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20, } },
+            { "metal5", new List<int>() { 22, ROWLEN * 1 + 22, ROWLEN * 2 + 22, ROWLEN * 3 + 22, } },
+            { "costume1", new List<int>() { 24 } },
+            { "costume2", new List<int>() { 26 } },
+            { "costume3", new List<int>() { 28 } },
+            { "iris", new List<int>() { ROWLEN * 1 + 28 } },
+        };
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateClawPortraitConfig()
+            {
+                int ROWLEN = 32;
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+//                ColorOffset co = new ColorOffset();
+//                co.c = PaletteHelper.MemFormatToColor("0008");
+//                co.position = 20 + ROWLEN * 2;
+//                defaultColorOffsets.Add(co);
+                Dictionary<string, List<int>> clawPortraitOffsets = GenerateClawPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = clawPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
         }
         public struct DICTATOR
         {
@@ -225,6 +275,38 @@ namespace PaletteSwap
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.CLAW.GeneratClawSpriteOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+            }
+
+            public struct PORTRAIT
+            {
+                public static List<string> ClawVictoryPortraitLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3",
+                        "hair1", "hair2", "hair3", "hair4",
+                        "metal1", "metal2", "metal3", "metal4", "metal5",
+                "costume1", "costume2", "costume3", "iris", };
+                }
+                
+                public static Bitmap ClawVictoryPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.clawportrait7);
+                }
+
+                public static PaletteImage GenerateClawVictoryBasePaletteImage()
+                {
+                    return GenerateClawPortraitPaletteImage(ClawVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.cla7portrait, ClawVictoryPortraitLabels());
+                }
+
+                public static PaletteImage GenerateClawPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.CLAW.GenerateClawPortraitOffsets(),
                         labels);
                     PaletteImage p = new PaletteImage(base_image, c);
                     p.labels = labels;
