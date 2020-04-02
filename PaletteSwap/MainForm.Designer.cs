@@ -2107,6 +2107,7 @@
             this.CLAW_neutralStandBox.Size = new System.Drawing.Size(75, 118);
             this.CLAW_neutralStandBox.TabIndex = 122;
             this.CLAW_neutralStandBox.TabStop = false;
+            this.CLAW_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // CLA_portraitVictoryBox
             // 
@@ -2116,6 +2117,7 @@
             this.CLA_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.CLA_portraitVictoryBox.TabIndex = 144;
             this.CLA_portraitVictoryBox.TabStop = false;
+            this.CLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // portrait_claw_skin1
             // 
