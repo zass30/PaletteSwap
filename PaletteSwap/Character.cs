@@ -103,8 +103,8 @@ namespace PaletteSwap
             var c = new Character();
             if (characater == CHARACTERS.Dictator)
             {
-                PaletteConfig dicSpriteConfig = PaletteConfig.GenerateDictatorSpriteConfig();
-                PaletteConfig dicPortraitConfig = PaletteConfig.GenerateDictatorPortraitConfig();
+                PaletteConfig dicSpriteConfig = PaletteConfig.DICTATOR.GenerateDictatorSpriteConfig();
+                PaletteConfig dicPortraitConfig = PaletteConfig.DICTATOR.GenerateDictatorPortraitConfig();
                 Palette s = Palette.PaletteFromConfig(dicSpriteConfig);
                 Palette p = Palette.PaletteFromConfig(dicPortraitConfig);
                 c.sprite = s;

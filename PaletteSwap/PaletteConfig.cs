@@ -31,27 +31,28 @@ namespace PaletteSwap
                 this.defaultColorOffsets.Add(cp);
             }
         }
-
-        public static PaletteConfig GenerateDictatorSpriteConfig()
+        public struct DICTATOR
         {
-            int MEMLEN = 160;
-            var dictatorSpriteOffsets = GenerateDictatorSpriteOffsets();
-            PaletteConfig pc = new PaletteConfig();
-            pc.labelOffsets = dictatorSpriteOffsets;
-            pc.unusedOffsets = new List<int>() { 66, 67, 92, 93 };
-            string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
-            int defaultsOffset = 32;
-            pc.createColorOffsets(defaults, defaultsOffset);
-            pc.streamLength = MEMLEN;
-            return pc;
-        }
+            public static PaletteConfig GenerateDictatorSpriteConfig()
+            {
+                int MEMLEN = 160;
+                var dictatorSpriteOffsets = GenerateDictatorSpriteOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = dictatorSpriteOffsets;
+                pc.unusedOffsets = new List<int>() { 66, 67, 92, 93 };
+                string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
+                int defaultsOffset = 32;
+                pc.createColorOffsets(defaults, defaultsOffset);
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
 
-        public static Dictionary<string, List<int>> GenerateDictatorSpriteOffsets()
-        {
-            int ROWLEN = 32;
-            Dictionary<string, List<int>> dictatorSpriteOffsets =
-               new Dictionary<string, List<int>>
-       {
+            public static Dictionary<string, List<int>> GenerateDictatorSpriteOffsets()
+            {
+                int ROWLEN = 32;
+                Dictionary<string, List<int>> dictatorSpriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
             { "pads5", new List<int>() { 0, ROWLEN * 3 + 0, ROWLEN * 4 + 0 } },
             { "costume5", new List<int>() { 2, ROWLEN * 3 + 2, ROWLEN * 4 + 2 } },
             { "costume4", new List<int>() { 4, ROWLEN * 3 + 4, ROWLEN * 4 + 4 } },
@@ -87,66 +88,14 @@ namespace PaletteSwap
             { "psychopunch3", new List<int>() { ROWLEN * 4 + 16 } },
             { "psychopunch4", new List<int>() { ROWLEN * 4 + 18 } },
             { "psychopunch5", new List<int>() { ROWLEN * 4 + 20 } },
-       };
-            return dictatorSpriteOffsets;
-        }
-
-        public static Dictionary<string, List<int>> GenerateDictatorPortraitOffsets()
-        {
-            int ROWLEN = 32;
-            Dictionary<string, List<int>> dictatorPortraitOffsets = new Dictionary<string, List<int>>
-        {
-            { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
-            { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
-            { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
-            { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
-            { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
-            { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
-            { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
-            { "piping1", new List<int>() { 14, ROWLEN * 1 + 14 } },
-            { "piping2", new List<int>() { 16, ROWLEN * 1 + 16 } },
-            { "piping3", new List<int>() { 18, ROWLEN * 1 + 18 } },
-            { "piping4", new List<int>() { 20, ROWLEN * 1 + 20 } },
-            { "costume1", new List<int>() { 22 } },
-            { "costume2", new List<int>() { 24 } },
-            { "costume3", new List<int>() { 26 } },
-            { "costume4", new List<int>() { 28 } },
-            { "teeth1", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
-            { "teeth2", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
-            { "teeth3", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
-            { "teeth4", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
-            { "blood1", new List<int>() { ROWLEN * 2 + 14 } },
-            { "blood2", new List<int>() { ROWLEN * 2 + 16 } },
-            { "blood3", new List<int>() { ROWLEN * 2 + 18 } },
-            { "pipingloss1", new List<int>() { ROWLEN * 3 + 14 } },
-            { "pipingloss2", new List<int>() { ROWLEN * 3 + 16 } },
-            { "pipingloss3", new List<int>() { ROWLEN * 3 + 18 } },
-            { "pipingloss4", new List<int>() { ROWLEN * 3 + 20 } },
-            { "costumeloss1", new List<int>() { ROWLEN * 3 + 22 } },
-            { "costumeloss2", new List<int>() { ROWLEN * 3 + 24 } },
-            { "costumeloss3", new List<int>() { ROWLEN * 3 + 26 } },
-            { "costumeloss4", new List<int>() { ROWLEN * 3 + 28 } },
-        };
-            return dictatorPortraitOffsets;
-        }
-
-        public static PaletteConfig GenerateDictatorPortraitConfig()
-        {
-            int ROWLEN = 32;
-            int MEMLEN = ROWLEN * 4;
-            List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
-            for (int i = 0; i < 4; i++)
-            {
-                ColorOffset dco = new ColorOffset();
-                dco.c = PaletteHelper.MemFormatToColor("0A00");
-                dco.position = 30 + ROWLEN * i;
-                defaultColorOffsets.Add(dco);
+           };
+                return dictatorSpriteOffsets;
             }
-            ColorOffset co = new ColorOffset();
-            co.c = PaletteHelper.MemFormatToColor("0008");
-            co.position = 20 + ROWLEN * 2;
-            defaultColorOffsets.Add(co);
-            Dictionary<string, List<int>> dictatorPortraitOffsets = new Dictionary<string, List<int>>
+
+            public static Dictionary<string, List<int>> GenerateDictatorPortraitOffsets()
+            {
+                int ROWLEN = 32;
+                Dictionary<string, List<int>> dictatorPortraitOffsets = new Dictionary<string, List<int>>
         {
             { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
             { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
@@ -179,13 +128,33 @@ namespace PaletteSwap
             { "costumeloss3", new List<int>() { ROWLEN * 3 + 26 } },
             { "costumeloss4", new List<int>() { ROWLEN * 3 + 28 } },
         };
+                return dictatorPortraitOffsets;
+            }
 
-            PaletteConfig pc = new PaletteConfig();
-            pc.labelOffsets = dictatorPortraitOffsets;
-            pc.defaultColorOffsets = defaultColorOffsets;
-            pc.unusedOffsets = new List<int>() { };
-            pc.streamLength = MEMLEN;
-            return pc;
+            public static PaletteConfig GenerateDictatorPortraitConfig()
+            {
+                int ROWLEN = 32;
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+                ColorOffset co = new ColorOffset();
+                co.c = PaletteHelper.MemFormatToColor("0008");
+                co.position = 20 + ROWLEN * 2;
+                defaultColorOffsets.Add(co);
+                Dictionary<string, List<int>> dictatorPortraitOffsets = GenerateDictatorPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = dictatorPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
         }
     }
 
@@ -280,7 +249,7 @@ namespace PaletteSwap
                 {
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
-                        PaletteConfig.GenerateDictatorSpriteOffsets(),
+                        PaletteConfig.DICTATOR.GenerateDictatorSpriteOffsets(),
                         labels);
                     PaletteImage p = new PaletteImage(base_image, c);
                     p.labels = labels;
@@ -348,7 +317,7 @@ namespace PaletteSwap
                 {
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
-                        PaletteConfig.GenerateDictatorPortraitOffsets(),
+                        PaletteConfig.DICTATOR.GenerateDictatorPortraitOffsets(),
                         labels);
                     PaletteImage p = new PaletteImage(base_image, c);
                     p.labels = labels;

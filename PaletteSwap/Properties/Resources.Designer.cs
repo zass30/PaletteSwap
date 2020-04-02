@@ -19,7 +19,7 @@ namespace PaletteSwap.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -243,6 +243,69 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 2202 FD0F DB0F B90E 970C 750A 5308 3106 F00F 900F 600D 400A 3008 000F 0007.
         /// </summary>
+        public static string cla0sprite {
+            get {
+                return ResourceManager.GetString("cla0sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 FF0F FA0F D70F B50E 930D 520B 2109 F80F E90B B605 8403 5302 F40F A20C.
+        /// </summary>
+        public static string cla1sprite {
+            get {
+                return ResourceManager.GetString("cla1sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 FF0F EB0F C90E A70C 840A 6008 4006 F60F 8808 6606 4404 0000 E000 9000.
+        /// </summary>
+        public static string cla2sprite {
+            get {
+                return ResourceManager.GetString("cla2sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 ED0E B70E 750B 520A 4209 2106 0000 B70F 550F 000E 000A 0005 6606 0000.
+        /// </summary>
+        public static string cla3sprite {
+            get {
+                return ResourceManager.GetString("cla3sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FF0F EB0F D80F A60F 730D 400A 0008 F80F 9D0F 5B0E 280B 0508 A00F.
+        /// </summary>
+        public static string cla4sprite {
+            get {
+                return ResourceManager.GetString("cla4sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 DB0D C80D 960D 740C 5309 4207 3006 D80F AF07 7D05 4B02 2700 5E0A 1A06.
+        /// </summary>
+        public static string cla5sprite {
+            get {
+                return ResourceManager.GetString("cla5sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 FE0E CA0F 980F 760E 550C 3409 2005 CA0F FF0F DE0D AD0A 6806 6606 2202.
+        /// </summary>
+        public static string cla6sprite {
+            get {
+                return ResourceManager.GetString("cla6sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 FE0F DA0F AB0F 750D 430B 3409 2007 F00E C00F A00D 800B 6009 6F00 0B00.
+        /// </summary>
         public static string cla7sprite {
             get {
                 return ResourceManager.GetString("cla7sprite", resourceCulture);
@@ -250,11 +313,20 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2202 FF0F FA0F D70F B50E 930D 520B 2109 F80F E90B B605 8403 5302 F40F A20C.
+        ///   Looks up a localized string similar to 2202 FE0F EA0F B80F 960E 750C 5409 4007 F00F 9F0B 7E09 5B07 2904 800F 000C.
         /// </summary>
         public static string cla8sprite {
             get {
                 return ResourceManager.GetString("cla8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 FE0F EA0F B80F 960E 750C 5409 4007 F00F BF09 9E07 7B05 4904 A00F 500C.
+        /// </summary>
+        public static string cla9sprite {
+            get {
+                return ResourceManager.GetString("cla9sprite", resourceCulture);
             }
         }
         

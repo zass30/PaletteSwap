@@ -23,5 +23,19 @@ namespace PaletteSwapTest
             remapped_img = s.GetBitmap("neutral");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand1, remapped_img));
         }
+
+        [TestMethod]
+        public void GetDictatorPsychoPunchImageTest()
+        {
+            var dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            var s = dic.sprite;
+            var remapped_img = s.GetBitmap("psychopunch");
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp1, remapped_img));
+
+            dic = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            s = dic.sprite;
+            remapped_img = s.GetBitmap("psychopunch");
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp5, remapped_img));
+        }
     }
 }
