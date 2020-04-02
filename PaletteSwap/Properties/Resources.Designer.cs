@@ -243,6 +243,26 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap clawneutral7 {
+            get {
+                object obj = ResourceManager.GetObject("clawneutral7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap clawportrait7 {
+            get {
+                object obj = ResourceManager.GetObject("clawportrait7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap diccrusher1_0 {
             get {
                 object obj = ResourceManager.GetObject("diccrusher1_0", resourceCulture);

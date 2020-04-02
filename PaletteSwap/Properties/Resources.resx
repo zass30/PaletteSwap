@@ -277,4 +277,10 @@
   <data name="bis9portrait" xml:space="preserve">
     <value>FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 870F 650E 320C 0009 0A00 FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00</value>
   </data>
+  <data name="clawneutral7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\claw\clawneutral7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clawportrait7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\claw\clawportrait7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
