@@ -7,13 +7,6 @@ using System.Threading.Tasks;
 
 namespace PaletteSwap
 {
-    // palette has label->color
-
-    // stream: object that can print out stream and load stream
-    // stream can go to string and back
-
-    // image: can print image from palette  
-
     public struct ColorOffset
     {
         public Color c;
@@ -26,10 +19,8 @@ namespace PaletteSwap
         public List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
         public List<int> unusedOffsets = new List<int>();
         public Dictionary<string, PaletteImage> images = new Dictionary<string, PaletteImage>();
-        
-        private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>
-        {
-        };
+
+        private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>();
 
         public Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
         {
@@ -92,7 +83,6 @@ namespace PaletteSwap
             return labelsToMemOffsets[s];
         }
 
-
         public Color GetColor(string s)
         {
             if (labelsToColors.ContainsKey(s))
@@ -120,7 +110,6 @@ namespace PaletteSwap
         {
             images[s] = p;
         }
-
 
         public byte[] ToByteStream()
         {
