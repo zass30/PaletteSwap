@@ -160,6 +160,47 @@ namespace PaletteSwap
                 AssignDicatatorSpriteImages(s);
                 AssignDicatatorPortraitImages(p);
             }
+            else if (characater == CHARACTERS.Claw) {
+                PaletteConfig clawSpriteConfig = PaletteConfig.CLAW.GenerateClawSpriteConfig();
+                Palette s = Palette.PaletteFromConfig(clawSpriteConfig);
+                c.sprite = s;
+                byte[] sprite_bytestream = new byte[0];
+                switch (button)
+                {
+                    case BUTTONS.lp:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0sprite);
+                        break;
+                    case BUTTONS.mp:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1sprite);
+                        break;
+                    case BUTTONS.hp:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2sprite);
+                        break;
+                    case BUTTONS.lk:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3sprite);
+                        break;
+                    case BUTTONS.mk:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4sprite);
+                        break;
+                    case BUTTONS.hk:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5sprite);
+                        break;
+                    case BUTTONS.start:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6sprite);
+                        break;
+                    case BUTTONS.hold:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7sprite);
+                        break;
+                    case BUTTONS.old1:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8sprite);
+                        break;
+                    case BUTTONS.old2:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9sprite);
+                        break;
+                }
+                s.loadStream(sprite_bytestream);
+                AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
+            }
             return c;
         }
 

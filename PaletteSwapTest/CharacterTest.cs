@@ -37,5 +37,14 @@ namespace PaletteSwapTest
             remapped_img = s.GetBitmap("psychopunch");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp5, remapped_img));
         }
+
+        [TestMethod]
+        public void GetClawStandingNeutralImageTest()
+        {
+            var claw = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hold);
+            var s = claw.sprite;
+            var pal = s.GetImage("neutral");
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.clawneutral7, pal.baseImage));
+        }
     }
 }
