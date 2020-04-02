@@ -31,6 +31,44 @@ namespace PaletteSwap
                 this.defaultColorOffsets.Add(cp);
             }
         }
+
+        public struct CLAW
+        {
+            public static PaletteConfig GenerateClawSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GeneratClawSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GeneratClawSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "outline", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "skin5", new List<int>() { 10 } },
+            { "skin6", new List<int>() { 12 } },
+            { "skin7", new List<int>() { 14} },
+            { "stripe", new List<int>() { 16 } },
+            { "costume1", new List<int>() { 18 } },
+            { "costume2", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume4", new List<int>() { 24 } },
+            { "sash1", new List<int>() { 26 } },
+            { "sash2", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+        }
         public struct DICTATOR
         {
             public static PaletteConfig GenerateDictatorSpriteConfig()
@@ -160,6 +198,40 @@ namespace PaletteSwap
 
     public struct ImageConfig
     {
+        public struct CLAW
+        {
+            public struct SPRITE
+            {
+                public static List<string> ClawStandNeutralLabels()
+                {
+                    return new List<string> { "outline", "skin1", "skin2", "skin3", "skin4",
+                "skin5", "skin6", "skin7", "stripe", 
+                "costume1", "costume2", "costume3", "costume4", "sash1", "sash2" };
+                }
+
+                public static Bitmap ClawStandNeutralBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.clawneutral7);
+                }
+
+                public static PaletteImage GenerateClawStandingNeutralBasePaletteImage()
+                {
+                    return GenerateClawPaletteImage(ClawStandNeutralBaseImage(), PaletteSwap.Properties.Resources.cla7sprite, ClawStandNeutralLabels());
+                }
+
+                public static PaletteImage GenerateClawPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.CLAW.GeneratClawSpriteOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+            }
+        }
+
         public struct Dictator
         {
             public struct SPRITE
@@ -193,7 +265,6 @@ namespace PaletteSwap
                 "crusherflame1", "crusherflame2", "crusherhands1", "crusherhands2",
                 "crusherpads1", "crusherpads2", "crusherpads3", "crusherpads4", "crusherpads5" };
                 }
-
 
                 public static Bitmap DictatorStandNeutralBaseImage()
                 {
