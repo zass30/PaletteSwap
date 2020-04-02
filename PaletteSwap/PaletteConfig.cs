@@ -8,6 +8,7 @@ using System.Windows.Forms.ComponentModel.Com2Interop;
 
 namespace PaletteSwap
 {
+
     public struct PaletteConfig
     {
         public Dictionary<string, List<int>> labelOffsets;

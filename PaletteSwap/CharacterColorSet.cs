@@ -34,7 +34,11 @@ namespace PaletteSwap
             cs.characterColors[9] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
             return cs;
         }
-
+        /*36CFE + (Char_ID * 0x500) + (Palette_ID * 0x80)formula to get the address of the 
+         * losing portrait additional paletes
+         31C48 + (Char_ID * 0x500) + (Palette_ID * 0x80) and this is for the normal portrait, 
+         just in case
+*/
         public static CharacterSet GenerateClawCharacterSet()
         {
             CharacterSet cs = new CharacterSet();

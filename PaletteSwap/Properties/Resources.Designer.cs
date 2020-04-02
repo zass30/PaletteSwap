@@ -241,11 +241,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 700E 500B 3008 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla0portrait {
+            get {
+                return ResourceManager.GetString("cla0portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 2202 FD0F DB0F B90E 970C 750A 5308 3106 F00F 900F 600D 400A 3008 000F 0007.
         /// </summary>
         public static string cla0sprite {
             get {
                 return ResourceManager.GetString("cla0sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F FA0F C70E A50D 840C 630B 2108 FF0F DE0C BD0A 9C08 7B07 D70B B506 8305 0A00 FE0F FA0F C70E A50D 840C 630B 2108 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FE0F FA0F C70E A50D 840C 630B 2108 FF0F DE0C BD0A 9C08 7B07 760F 650C 5409 0A00.
+        /// </summary>
+        public static string cla1portrait {
+            get {
+                return ResourceManager.GetString("cla1portrait", resourceCulture);
             }
         }
         
@@ -259,11 +277,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FF0F EB0F C90E A70C 840A 6008 4006 FF0F DE0C BD0A 9C08 7B07 8808 6606 4404 0A00 FF0F EB0F C90E A70C 840A 6008 4006 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FF0F EB0F C90E A70C 840A 6008 4006 FF0F DE0C BD0A 9C08 7B07 800F 700C 600A 0A00.
+        /// </summary>
+        public static string cla2portrait {
+            get {
+                return ResourceManager.GetString("cla2portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 2202 FF0F EB0F C90E A70C 840A 6008 4006 F60F 8808 6606 4404 0000 E000 9000.
         /// </summary>
         public static string cla2sprite {
             get {
                 return ResourceManager.GetString("cla2sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DA0F B80D 960C 750B 530A 3208 2106 FF0F DE0C BD0A 9C08 7B07 000E 000A 0007 0A00 DA0F B80D 960C 750B 530A 3208 2106 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 DA0F B80D 960C 750B 530A 3208 2106 FF0F DE0C BD0A 9C08 7B07 000E 000A 0007 0A00 DA0F B80D 960C 750B 530A 3208 2106 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla3portrait {
+            get {
+                return ResourceManager.GetString("cla3portrait", resourceCulture);
             }
         }
         
@@ -277,11 +313,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F EB0F D80F A60F 730D 400A 0008 FF0F DE0C BD0A 9C08 7B07 9D0F 5B0E 280B 0A00 FE0F EB0F D80F A60F 730D 400A 0008 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FE0F EB0F D80F A50E 730D 400B 0008 FF0F DE0C BD0A 9C08 7B07 870F 760C 6509 0A00.
+        /// </summary>
+        public static string cla4portrait {
+            get {
+                return ResourceManager.GetString("cla4portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1101 FF0F EB0F D80F A60F 730D 400A 0008 F80F 9D0F 5B0E 280B 0508 A00F 700F.
         /// </summary>
         public static string cla4sprite {
             get {
                 return ResourceManager.GetString("cla4sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DB0D C80D 960D 740C 5309 4207 3006 FF0F DE0C BD0A 9C08 7B07 7F05 5D03 3A00 0A00 DB0D C80D 960D 740C 5309 4207 3006 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 DB0D C80D 960D 740C 5309 4207 3006 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 DB0D C80D 960D 740C 5309 4207 3006 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla5portrait {
+            get {
+                return ResourceManager.GetString("cla5portrait", resourceCulture);
             }
         }
         
@@ -295,11 +349,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F DB0F B90F 980F 760E 550C 3409 FF0F DE0C BD0A 9C08 7B07 FF0F CE0C 9C09 0A00 FE0F DB0F B90F 980F 760E 550C 3409 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 FE0F DB0F B90F 980F 760E 550C 3409 FF0F DE0C BD0A 9C08 7B07 7707 5505 4404 0A00 FE0F DB0F B90F 980F 760E 550C 3409 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla6portrait {
+            get {
+                return ResourceManager.GetString("cla6portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 2202 FE0E CA0F 980F 760E 550C 3409 2005 CA0F FF0F DE0D AD0A 6806 6606 2202.
         /// </summary>
         public static string cla6sprite {
             get {
                 return ResourceManager.GetString("cla6sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F CB0F A90F 760D 430B 3409 2007 FF0F DE0C BD0A 9C08 7B07 C00F 900C 700A 0A00 FE0F CB0F A90F 760D 430B 3409 2007 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 FE0F CB0F A90F 760D 430B 3409 2007 FF0F DE0C BD0A 9C08 7B07 C00F 900C 700A 0A00 FE0F CB0F A90F 760D 430B 3409 2007 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla7portrait {
+            get {
+                return ResourceManager.GetString("cla7portrait", resourceCulture);
             }
         }
         
@@ -313,11 +385,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 9F0B 7E09 5B07 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla8portrait {
+            get {
+                return ResourceManager.GetString("cla8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 2202 FE0F EA0F B80F 960E 750C 5409 4007 F00F 9F0B 7E09 5B07 2904 800F 000C.
         /// </summary>
         public static string cla8sprite {
             get {
                 return ResourceManager.GetString("cla8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 9F0B 7E09 5B07 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00.
+        /// </summary>
+        public static string cla9portrait {
+            get {
+                return ResourceManager.GetString("cla9portrait", resourceCulture);
             }
         }
         
