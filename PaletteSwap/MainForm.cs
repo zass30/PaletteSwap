@@ -73,12 +73,12 @@ namespace PaletteSwap
             load_sprite_neutralstandredo();
             if (currentCharacterType == Character.CHARACTERS.Dictator)
             {
-                load_sprite_load_sprite_psychopunchredo();
-                load_sprite_load_sprite_psychoprepredo();
-                load_sprite_load_sprite_crushertopredo();
-                load_sprite_load_sprite_crusherbottomredo();
-                load_portrait_victoryredo();
-                load_portrait_lossredo();
+                load_sprite_load_sprite_psychopunch();
+                load_sprite_load_sprite_psychoprep();
+                load_sprite_load_sprite_crushertop();
+                load_sprite_load_sprite_crusherbottom();
+                load_portrait_victory();
+                load_portrait_loss();
             }
 
             refreshZoom();
@@ -94,32 +94,32 @@ namespace PaletteSwap
 
         }
 
-        private void load_sprite_load_sprite_psychopunchredo()
+        private void load_sprite_load_sprite_psychopunch()
         {
             psychopunchBox.BackgroundImage = currentCharacter.sprite.GetBitmap("psychopunch");
         }
 
-        private void load_sprite_load_sprite_psychoprepredo()
+        private void load_sprite_load_sprite_psychoprep()
         {
             psychoprepBox.BackgroundImage = currentCharacter.sprite.GetBitmap("psychoprep");
         }
 
-        private void load_sprite_load_sprite_crushertopredo()
+        private void load_sprite_load_sprite_crushertop()
         {
             crushertopBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crushertop");
         }
 
-        private void load_sprite_load_sprite_crusherbottomredo()
+        private void load_sprite_load_sprite_crusherbottom()
         {
             crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
         }
 
-        private void load_portrait_victoryredo()
+        private void load_portrait_victory()
         {
             portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
         }
 
-        private void load_portrait_lossredo()
+        private void load_portrait_loss()
         {
             Bitmap result = new Bitmap(portraitLossBox.Width, portraitLossBox.Height);
             using (Graphics g = Graphics.FromImage(result))
@@ -128,54 +128,80 @@ namespace PaletteSwap
                 g.DrawImage(currentCharacter.portrait.GetBitmap("lossbottom"), Point.Empty);
             }
             portraitLossBox.BackgroundImage = result;
-        }
-       
+        }       
 
         private void load_sprite_buttons()
         {
-            pal_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
-            pal_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
-            pal_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
-            pal_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+            switch (currentCharacterType) {
+                case Character.CHARACTERS.Dictator:
+                    pal_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    pal_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    pal_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    pal_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
 
-            pal_sprite_stripe.BackColor = currentCharacter.sprite.GetColor("stripe");
+                    pal_sprite_stripe.BackColor = currentCharacter.sprite.GetColor("stripe");
 
-            pal_sprite_pads1.BackColor = currentCharacter.sprite.GetColor("pads1");
-            pal_sprite_pads2.BackColor = currentCharacter.sprite.GetColor("pads2");
-            pal_sprite_pads3.BackColor = currentCharacter.sprite.GetColor("pads3");
-            pal_sprite_pads4.BackColor = currentCharacter.sprite.GetColor("pads4");
-            pal_sprite_pads5.BackColor = currentCharacter.sprite.GetColor("pads5");
+                    pal_sprite_pads1.BackColor = currentCharacter.sprite.GetColor("pads1");
+                    pal_sprite_pads2.BackColor = currentCharacter.sprite.GetColor("pads2");
+                    pal_sprite_pads3.BackColor = currentCharacter.sprite.GetColor("pads3");
+                    pal_sprite_pads4.BackColor = currentCharacter.sprite.GetColor("pads4");
+                    pal_sprite_pads5.BackColor = currentCharacter.sprite.GetColor("pads5");
 
-            pal_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
-            pal_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
-            pal_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
-            pal_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
-            pal_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    pal_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    pal_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    pal_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    pal_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    pal_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
 
-            pal_sprite_psychoglow.BackColor = currentCharacter.sprite.GetColor("psychoglow");
+                    pal_sprite_psychoglow.BackColor = currentCharacter.sprite.GetColor("psychoglow");
 
-            pal_sprite_psychopunch1.BackColor = currentCharacter.sprite.GetColor("psychopunch1");
-            pal_sprite_psychopunch2.BackColor = currentCharacter.sprite.GetColor("psychopunch2");
-            pal_sprite_psychopunch3.BackColor = currentCharacter.sprite.GetColor("psychopunch3");
-            pal_sprite_psychopunch4.BackColor = currentCharacter.sprite.GetColor("psychopunch4");
-            pal_sprite_psychopunch5.BackColor = currentCharacter.sprite.GetColor("psychopunch5");
+                    pal_sprite_psychopunch1.BackColor = currentCharacter.sprite.GetColor("psychopunch1");
+                    pal_sprite_psychopunch2.BackColor = currentCharacter.sprite.GetColor("psychopunch2");
+                    pal_sprite_psychopunch3.BackColor = currentCharacter.sprite.GetColor("psychopunch3");
+                    pal_sprite_psychopunch4.BackColor = currentCharacter.sprite.GetColor("psychopunch4");
+                    pal_sprite_psychopunch5.BackColor = currentCharacter.sprite.GetColor("psychopunch5");
 
-            pal_sprite_crusherpads1.BackColor = currentCharacter.sprite.GetColor("crusherpads1");
-            pal_sprite_crusherpads2.BackColor = currentCharacter.sprite.GetColor("crusherpads2");
-            pal_sprite_crusherpads3.BackColor = currentCharacter.sprite.GetColor("crusherpads3");
-            pal_sprite_crusherpads4.BackColor = currentCharacter.sprite.GetColor("crusherpads4");
-            pal_sprite_crusherpads5.BackColor = currentCharacter.sprite.GetColor("crusherpads5");
+                    pal_sprite_crusherpads1.BackColor = currentCharacter.sprite.GetColor("crusherpads1");
+                    pal_sprite_crusherpads2.BackColor = currentCharacter.sprite.GetColor("crusherpads2");
+                    pal_sprite_crusherpads3.BackColor = currentCharacter.sprite.GetColor("crusherpads3");
+                    pal_sprite_crusherpads4.BackColor = currentCharacter.sprite.GetColor("crusherpads4");
+                    pal_sprite_crusherpads5.BackColor = currentCharacter.sprite.GetColor("crusherpads5");
 
-            pal_sprite_crushercostume1.BackColor = currentCharacter.sprite.GetColor("crushercostume1");
-            pal_sprite_crushercostume2.BackColor = currentCharacter.sprite.GetColor("crushercostume2");
-            pal_sprite_crushercostume3.BackColor = currentCharacter.sprite.GetColor("crushercostume3");
-            pal_sprite_crushercostume4.BackColor = currentCharacter.sprite.GetColor("crushercostume4");
+                    pal_sprite_crushercostume1.BackColor = currentCharacter.sprite.GetColor("crushercostume1");
+                    pal_sprite_crushercostume2.BackColor = currentCharacter.sprite.GetColor("crushercostume2");
+                    pal_sprite_crushercostume3.BackColor = currentCharacter.sprite.GetColor("crushercostume3");
+                    pal_sprite_crushercostume4.BackColor = currentCharacter.sprite.GetColor("crushercostume4");
 
-            pal_sprite_crusherflame1.BackColor = currentCharacter.sprite.GetColor("crusherflame1");
-            pal_sprite_crusherflame2.BackColor = currentCharacter.sprite.GetColor("crusherflame2");
+                    pal_sprite_crusherflame1.BackColor = currentCharacter.sprite.GetColor("crusherflame1");
+                    pal_sprite_crusherflame2.BackColor = currentCharacter.sprite.GetColor("crusherflame2");
 
-            pal_sprite_crusherhands1.BackColor = currentCharacter.sprite.GetColor("crusherhands1");
-            pal_sprite_crusherhands2.BackColor = currentCharacter.sprite.GetColor("crusherhands2");
+                    pal_sprite_crusherhands1.BackColor = currentCharacter.sprite.GetColor("crusherhands1");
+                    pal_sprite_crusherhands2.BackColor = currentCharacter.sprite.GetColor("crusherhands2");
+
+                    break;
+                case Character.CHARACTERS.Claw:
+                    sprite_claw_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    sprite_claw_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    sprite_claw_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    sprite_claw_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    sprite_claw_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    sprite_claw_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+                    sprite_claw_skin7.BackColor = currentCharacter.sprite.GetColor("skin7");
+
+                    sprite_claw_sash1.BackColor = currentCharacter.sprite.GetColor("sash1");
+                    sprite_claw_sash2.BackColor = currentCharacter.sprite.GetColor("sash2");
+
+                    sprite_claw_stripe.BackColor = currentCharacter.sprite.GetColor("stripe");
+                    sprite_claw_outline.BackColor = currentCharacter.sprite.GetColor("outline");
+
+                    sprite_claw_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    sprite_claw_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    sprite_claw_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    sprite_claw_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    break;
+
+            }
+
         }
 
         private void load_portrait_buttons()
@@ -407,8 +433,8 @@ namespace PaletteSwap
             string label = extractLabel(p.Name);
             currentCharacter.portrait.SetColor(label, c);
 
-            load_portrait_victoryredo();
-            load_portrait_lossredo();
+            load_portrait_victory();
+            load_portrait_loss();
         }
 
         private string extractLabel(string s)
@@ -429,9 +455,9 @@ namespace PaletteSwap
         private void load_sprites()
         {
             load_sprite_neutralstandredo();
-            load_sprite_load_sprite_psychopunchredo();
-            load_sprite_load_sprite_psychoprepredo();
-            load_sprite_load_sprite_crushertopredo();
+            load_sprite_load_sprite_psychopunch();
+            load_sprite_load_sprite_psychoprep();
+            load_sprite_load_sprite_crushertop();
         }
 
         private void updateSpriteCrusherColor(Color c, PictureBox p)
@@ -440,8 +466,8 @@ namespace PaletteSwap
             string label = extractLabel(p.Name);
             currentCharacter.sprite.SetColor(label, c);
 
-            load_sprite_load_sprite_crushertopredo();
-            load_sprite_load_sprite_crusherbottomredo();
+            load_sprite_load_sprite_crushertop();
+            load_sprite_load_sprite_crusherbottom();
         }
 
         private void portrait_BackColorChanged(object sender, EventArgs e)

@@ -175,7 +175,7 @@
             this.TabPageClaw = new System.Windows.Forms.TabPage();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.stripe = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_stripe = new System.Windows.Forms.PictureBox();
             this.sprite_claw_outline = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -183,8 +183,8 @@
             this.sprite_claw_costume2 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_costume3 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_costume4 = new System.Windows.Forms.PictureBox();
-            this.sash1 = new System.Windows.Forms.PictureBox();
-            this.sash2 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_sash1 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_sash2 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin5 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin6 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin7 = new System.Windows.Forms.PictureBox();
@@ -272,14 +272,14 @@
             this.tabControl1.SuspendLayout();
             this.TabPageDictator.SuspendLayout();
             this.TabPageClaw.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.stripe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_stripe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_outline)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sash1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sash2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_sash1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_sash2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin7)).BeginInit();
@@ -631,7 +631,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -641,7 +640,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1990, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1990, 48);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -663,7 +662,7 @@
             this.saveJapaneseRomToolStripMenuItem,
             this.savePatchedRomRedoToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 44);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -776,7 +775,7 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.colorSetToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 36);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 44);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // colorSetToolStripMenuItem
@@ -890,7 +889,7 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 44);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
@@ -1908,7 +1907,7 @@
             // 
             this.TabPageClaw.Controls.Add(this.label25);
             this.TabPageClaw.Controls.Add(this.label24);
-            this.TabPageClaw.Controls.Add(this.stripe);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_stripe);
             this.TabPageClaw.Controls.Add(this.sprite_claw_outline);
             this.TabPageClaw.Controls.Add(this.label23);
             this.TabPageClaw.Controls.Add(this.label22);
@@ -1916,8 +1915,8 @@
             this.TabPageClaw.Controls.Add(this.sprite_claw_costume2);
             this.TabPageClaw.Controls.Add(this.sprite_claw_costume3);
             this.TabPageClaw.Controls.Add(this.sprite_claw_costume4);
-            this.TabPageClaw.Controls.Add(this.sash1);
-            this.TabPageClaw.Controls.Add(this.sash2);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_sash1);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_sash2);
             this.TabPageClaw.Controls.Add(this.sprite_claw_skin5);
             this.TabPageClaw.Controls.Add(this.sprite_claw_skin6);
             this.TabPageClaw.Controls.Add(this.sprite_claw_skin7);
@@ -1956,16 +1955,16 @@
             this.label24.TabIndex = 142;
             this.label24.Text = "stripe";
             // 
-            // stripe
+            // sprite_claw_stripe
             // 
-            this.stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.stripe.Location = new System.Drawing.Point(215, 655);
-            this.stripe.Margin = new System.Windows.Forms.Padding(6);
-            this.stripe.Name = "stripe";
-            this.stripe.Size = new System.Drawing.Size(46, 44);
-            this.stripe.TabIndex = 140;
-            this.stripe.TabStop = false;
-            this.stripe.Click += new System.EventHandler(this.pal_square_click);
+            this.sprite_claw_stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_stripe.Location = new System.Drawing.Point(215, 655);
+            this.sprite_claw_stripe.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_stripe.Name = "sprite_claw_stripe";
+            this.sprite_claw_stripe.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_stripe.TabIndex = 140;
+            this.sprite_claw_stripe.TabStop = false;
+            this.sprite_claw_stripe.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_outline
             // 
@@ -2042,27 +2041,27 @@
             this.sprite_claw_costume4.TabStop = false;
             this.sprite_claw_costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // sash1
+            // sprite_claw_sash1
             // 
-            this.sash1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sash1.Location = new System.Drawing.Point(215, 582);
-            this.sash1.Margin = new System.Windows.Forms.Padding(6);
-            this.sash1.Name = "sash1";
-            this.sash1.Size = new System.Drawing.Size(46, 44);
-            this.sash1.TabIndex = 137;
-            this.sash1.TabStop = false;
-            this.sash1.Click += new System.EventHandler(this.pal_square_click);
+            this.sprite_claw_sash1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_sash1.Location = new System.Drawing.Point(215, 582);
+            this.sprite_claw_sash1.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_sash1.Name = "sprite_claw_sash1";
+            this.sprite_claw_sash1.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_sash1.TabIndex = 137;
+            this.sprite_claw_sash1.TabStop = false;
+            this.sprite_claw_sash1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // sash2
+            // sprite_claw_sash2
             // 
-            this.sash2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sash2.Location = new System.Drawing.Point(275, 582);
-            this.sash2.Margin = new System.Windows.Forms.Padding(6);
-            this.sash2.Name = "sash2";
-            this.sash2.Size = new System.Drawing.Size(46, 44);
-            this.sash2.TabIndex = 138;
-            this.sash2.TabStop = false;
-            this.sash2.Click += new System.EventHandler(this.pal_square_click);
+            this.sprite_claw_sash2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_sash2.Location = new System.Drawing.Point(275, 582);
+            this.sprite_claw_sash2.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_sash2.Name = "sprite_claw_sash2";
+            this.sprite_claw_sash2.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_sash2.TabIndex = 138;
+            this.sprite_claw_sash2.TabStop = false;
+            this.sprite_claw_sash2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // sprite_claw_skin5
             // 
@@ -2270,14 +2269,14 @@
             this.TabPageDictator.PerformLayout();
             this.TabPageClaw.ResumeLayout(false);
             this.TabPageClaw.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.stripe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_stripe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_outline)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sash1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sash2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_sash1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_sash2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin7)).EndInit();
@@ -2442,8 +2441,8 @@
         private System.Windows.Forms.PictureBox sprite_claw_costume2;
         private System.Windows.Forms.PictureBox sprite_claw_costume3;
         private System.Windows.Forms.PictureBox sprite_claw_costume4;
-        private System.Windows.Forms.PictureBox sash1;
-        private System.Windows.Forms.PictureBox sash2;
+        private System.Windows.Forms.PictureBox sprite_claw_sash1;
+        private System.Windows.Forms.PictureBox sprite_claw_sash2;
         private System.Windows.Forms.PictureBox sprite_claw_skin5;
         private System.Windows.Forms.PictureBox sprite_claw_skin6;
         private System.Windows.Forms.PictureBox sprite_claw_skin7;
@@ -2455,7 +2454,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.PictureBox stripe;
+        private System.Windows.Forms.PictureBox sprite_claw_stripe;
         private System.Windows.Forms.PictureBox sprite_claw_outline;
     }
 }
