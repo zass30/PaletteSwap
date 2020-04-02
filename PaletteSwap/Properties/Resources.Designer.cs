@@ -277,7 +277,7 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1101 FF0F EB0F D80F A60F 730D 400A 0008 F80F 9D0F 5B0E 280B 0508 A00F.
+        ///   Looks up a localized string similar to 1101 FF0F EB0F D80F A60F 730D 400A 0008 F80F 9D0F 5B0E 280B 0508 A00F 700F.
         /// </summary>
         public static string cla4sprite {
             get {

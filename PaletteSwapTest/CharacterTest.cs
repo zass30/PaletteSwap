@@ -43,7 +43,7 @@ namespace PaletteSwapTest
         {
             var claw = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hold);
             var s = claw.sprite;
-            var pal = s.GetImage("neutral");
+            var pal = s.GetImage("neutral"); //113 h  by 75 w
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.clawneutral7, pal.baseImage));
         }
     }

@@ -5,13 +5,6 @@ using System.IO;
 
 namespace PaletteSwap
 {
-    /*
-    public struct CharacterColor
-    {
-        public Sprite s;
-        public Portrait p;
-    }*/
-
     public class CharacterSet
     {
         public Character[] characterColors = new Character[10];
@@ -50,16 +43,16 @@ namespace PaletteSwap
             cs.portrait_offset = 0x34448;//old
             cs.portrait2_offset = 0x394FE;//old
             cs.portrait_length = 0x80;
-            cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
-            cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
-            cs.characterColors[2] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hp);
-            cs.characterColors[3] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lk);
-            cs.characterColors[4] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mk);
-            cs.characterColors[5] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
-            cs.characterColors[6] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.start);
-            cs.characterColors[7] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hold);
-            cs.characterColors[8] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old1);
-            cs.characterColors[9] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
+            cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.lp);
+            cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.mp);
+            cs.characterColors[2] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hp);
+            cs.characterColors[3] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.lk);
+            cs.characterColors[4] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.mk);
+            cs.characterColors[5] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hk);
+            cs.characterColors[6] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.start);
+            cs.characterColors[7] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hold);
+            cs.characterColors[8] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.old1);
+            cs.characterColors[9] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.old2);
             return cs;
         }
 

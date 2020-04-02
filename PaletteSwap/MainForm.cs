@@ -18,6 +18,7 @@ namespace PaletteSwap
     {
         ZoomForm z;
         ColorSetForm c;
+        public Character.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
@@ -31,6 +32,8 @@ namespace PaletteSwap
         public MainForm()
         {
             InitializeComponent();
+            currentCharacterType = Character.CHARACTERS.Dictator;
+            characterSet = CharacterSet.GenerateDictatorCharacterSet();
             EnableDragAndDrop();
             Setup();
             loadSpritesAndPalettesFromDropDown();
@@ -38,7 +41,6 @@ namespace PaletteSwap
 
         public void Setup()
         {
-            characterSet = CharacterSet.GenerateDictatorCharacterSet();
             for (int i = 0; i < 10; i++)
             {
                 colorSelectorBox.SelectedIndex = i;
@@ -69,12 +71,15 @@ namespace PaletteSwap
             load_portrait_buttons();
             load_sprite_buttons();
             load_sprite_neutralstandredo();
-            load_sprite_load_sprite_psychopunchredo();
-            load_sprite_load_sprite_psychoprepredo();
-            load_sprite_load_sprite_crushertopredo();
-            load_sprite_load_sprite_crusherbottomredo();
-            load_portrait_victoryredo();
-            load_portrait_lossredo();
+            if (currentCharacterType == Character.CHARACTERS.Dictator)
+            {
+                load_sprite_load_sprite_psychopunchredo();
+                load_sprite_load_sprite_psychoprepredo();
+                load_sprite_load_sprite_crushertopredo();
+                load_sprite_load_sprite_crusherbottomredo();
+                load_portrait_victoryredo();
+                load_portrait_lossredo();
+            }
 
             refreshZoom();
             skip_image_recolors = false;
@@ -82,7 +87,11 @@ namespace PaletteSwap
 
         private void load_sprite_neutralstandredo()
         {
-            neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+            if (currentCharacterType == Character.CHARACTERS.Dictator)
+                neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+            if (currentCharacterType == Character.CHARACTERS.Claw)
+                CLAW_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+
         }
 
         private void load_sprite_load_sprite_psychopunchredo()
@@ -171,42 +180,45 @@ namespace PaletteSwap
 
         private void load_portrait_buttons()
         {
-            portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
-            portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
-            portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
-            portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
-            portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
-            portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
-            portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+            if (currentCharacterType == Character.CHARACTERS.Dictator)
+            {
+                portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
 
-            portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
-            portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
-            portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
-            portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
+                portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+                portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
 
-            portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
-            portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
-            portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
-            portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+                portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
 
-            portrait_costumeloss1.BackColor = currentCharacter.portrait.GetColor("costumeloss1");
-            portrait_costumeloss2.BackColor = currentCharacter.portrait.GetColor("costumeloss2");
-            portrait_costumeloss3.BackColor = currentCharacter.portrait.GetColor("costumeloss3");
-            portrait_costumeloss4.BackColor = currentCharacter.portrait.GetColor("costumeloss4");
+                portrait_costumeloss1.BackColor = currentCharacter.portrait.GetColor("costumeloss1");
+                portrait_costumeloss2.BackColor = currentCharacter.portrait.GetColor("costumeloss2");
+                portrait_costumeloss3.BackColor = currentCharacter.portrait.GetColor("costumeloss3");
+                portrait_costumeloss4.BackColor = currentCharacter.portrait.GetColor("costumeloss4");
 
-            portrait_piping1.BackColor = currentCharacter.portrait.GetColor("piping1");
-            portrait_piping2.BackColor = currentCharacter.portrait.GetColor("piping2");
-            portrait_piping3.BackColor = currentCharacter.portrait.GetColor("piping3");
-            portrait_piping4.BackColor = currentCharacter.portrait.GetColor("piping4");
+                portrait_piping1.BackColor = currentCharacter.portrait.GetColor("piping1");
+                portrait_piping2.BackColor = currentCharacter.portrait.GetColor("piping2");
+                portrait_piping3.BackColor = currentCharacter.portrait.GetColor("piping3");
+                portrait_piping4.BackColor = currentCharacter.portrait.GetColor("piping4");
 
-            portrait_pipingloss1.BackColor = currentCharacter.portrait.GetColor("pipingloss1");
-            portrait_pipingloss2.BackColor = currentCharacter.portrait.GetColor("pipingloss2");
-            portrait_pipingloss3.BackColor = currentCharacter.portrait.GetColor("pipingloss3");
-            portrait_pipingloss4.BackColor = currentCharacter.portrait.GetColor("pipingloss4");
+                portrait_pipingloss1.BackColor = currentCharacter.portrait.GetColor("pipingloss1");
+                portrait_pipingloss2.BackColor = currentCharacter.portrait.GetColor("pipingloss2");
+                portrait_pipingloss3.BackColor = currentCharacter.portrait.GetColor("pipingloss3");
+                portrait_pipingloss4.BackColor = currentCharacter.portrait.GetColor("pipingloss4");
 
-            portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
-            portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
-            portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+                portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+            }
         }
 
         public Bitmap magnify_sprite(Image img, int factor)
@@ -514,6 +526,7 @@ namespace PaletteSwap
             pal_val_B.Text = (17 - b).ToString();
         }
 
+        // todo fix this for new col format
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {/*
             // Displays a SaveFileDialog so the user can save the Image
@@ -770,6 +783,24 @@ namespace PaletteSwap
                         }*/
                     }
                 }
+            }
+        }
+
+        private void tabSelectedIndexChanged(object sender, EventArgs e)
+        {
+            var tabControl = (TabControl)sender;
+            var selt = tabControl.SelectedTab;
+            if (selt.Name == "TabPageClaw")
+            {
+                currentCharacterType = Character.CHARACTERS.Claw;
+                characterSet = CharacterSet.GenerateClawCharacterSet();
+                Setup();
+            }
+            else if (selt.Name == "TabPageDictator")
+            {
+                currentCharacterType = Character.CHARACTERS.Dictator;
+                characterSet = CharacterSet.GenerateDictatorCharacterSet();
+                Setup();
             }
         }
     }

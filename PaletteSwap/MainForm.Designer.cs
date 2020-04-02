@@ -171,8 +171,29 @@
             this.portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.portraitLossBox = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Dictator = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TabPageDictator = new System.Windows.Forms.TabPage();
+            this.TabPageClaw = new System.Windows.Forms.TabPage();
+            this.CLAW_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.sprite_claw_skin1 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_skin2 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_skin3 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_skin4 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_skin5 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_skin6 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_skin7 = new System.Windows.Forms.PictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.sprite_claw_costume1 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_costume2 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_costume3 = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_costume4 = new System.Windows.Forms.PictureBox();
+            this.sash1 = new System.Windows.Forms.PictureBox();
+            this.sash2 = new System.Windows.Forms.PictureBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.stripe = new System.Windows.Forms.PictureBox();
+            this.sprite_claw_outline = new System.Windows.Forms.PictureBox();
+            this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -249,7 +270,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.Dictator.SuspendLayout();
+            this.TabPageDictator.SuspendLayout();
+            this.TabPageClaw.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sash1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sash2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stripe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_outline)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -593,7 +631,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -603,7 +640,6 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1990, 40);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
@@ -1758,124 +1794,371 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.Dictator);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(24, 52);
+            this.tabControl1.Controls.Add(this.TabPageDictator);
+            this.tabControl1.Controls.Add(this.TabPageClaw);
+            this.tabControl1.Location = new System.Drawing.Point(24, 46);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1210, 1125);
             this.tabControl1.TabIndex = 121;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabSelectedIndexChanged);
             // 
-            // Dictator
+            // TabPageDictator
             // 
-            this.Dictator.BackColor = System.Drawing.SystemColors.Control;
-            this.Dictator.Controls.Add(this.neutralStandBox);
-            this.Dictator.Controls.Add(this.portraitLossBox);
-            this.Dictator.Controls.Add(this.psychopunchBox);
-            this.Dictator.Controls.Add(this.portraitVictoryBox);
-            this.Dictator.Controls.Add(this.psychoprepBox);
-            this.Dictator.Controls.Add(this.crusherbottomBox);
-            this.Dictator.Controls.Add(this.checkBox1);
-            this.Dictator.Controls.Add(this.crushertopBox);
-            this.Dictator.Controls.Add(this.label15);
-            this.Dictator.Controls.Add(this.label21);
-            this.Dictator.Controls.Add(this.portrait_blood3);
-            this.Dictator.Controls.Add(this.label2);
-            this.Dictator.Controls.Add(this.portrait_blood2);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherhands2);
-            this.Dictator.Controls.Add(this.portrait_blood1);
-            this.Dictator.Controls.Add(this.label3);
-            this.Dictator.Controls.Add(this.label14);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherhands1);
-            this.Dictator.Controls.Add(this.portrait_pipingloss4);
-            this.Dictator.Controls.Add(this.label4);
-            this.Dictator.Controls.Add(this.portrait_pipingloss3);
-            this.Dictator.Controls.Add(this.label20);
-            this.Dictator.Controls.Add(this.portrait_pipingloss2);
-            this.Dictator.Controls.Add(this.label5);
-            this.Dictator.Controls.Add(this.portrait_pipingloss1);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherflame2);
-            this.Dictator.Controls.Add(this.label13);
-            this.Dictator.Controls.Add(this.pal_sprite_skin1);
-            this.Dictator.Controls.Add(this.portrait_piping4);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherflame1);
-            this.Dictator.Controls.Add(this.portrait_piping3);
-            this.Dictator.Controls.Add(this.pal_sprite_skin2);
-            this.Dictator.Controls.Add(this.portrait_piping2);
-            this.Dictator.Controls.Add(this.label19);
-            this.Dictator.Controls.Add(this.portrait_piping1);
-            this.Dictator.Controls.Add(this.pal_sprite_skin3);
-            this.Dictator.Controls.Add(this.label12);
-            this.Dictator.Controls.Add(this.pal_sprite_crushercostume4);
-            this.Dictator.Controls.Add(this.portrait_costumeloss4);
-            this.Dictator.Controls.Add(this.pal_sprite_skin4);
-            this.Dictator.Controls.Add(this.portrait_costumeloss3);
-            this.Dictator.Controls.Add(this.pal_sprite_crushercostume3);
-            this.Dictator.Controls.Add(this.portrait_costumeloss2);
-            this.Dictator.Controls.Add(this.pal_sprite_pads1);
-            this.Dictator.Controls.Add(this.portrait_costumeloss1);
-            this.Dictator.Controls.Add(this.pal_sprite_crushercostume2);
-            this.Dictator.Controls.Add(this.label11);
-            this.Dictator.Controls.Add(this.pal_sprite_pads2);
-            this.Dictator.Controls.Add(this.portrait_costume4);
-            this.Dictator.Controls.Add(this.pal_sprite_crushercostume1);
-            this.Dictator.Controls.Add(this.portrait_costume3);
-            this.Dictator.Controls.Add(this.pal_sprite_pads3);
-            this.Dictator.Controls.Add(this.portrait_costume2);
-            this.Dictator.Controls.Add(this.label18);
-            this.Dictator.Controls.Add(this.portrait_costume1);
-            this.Dictator.Controls.Add(this.pal_sprite_pads4);
-            this.Dictator.Controls.Add(this.portrait_teeth4);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherpads5);
-            this.Dictator.Controls.Add(this.portrait_teeth3);
-            this.Dictator.Controls.Add(this.pal_sprite_pads5);
-            this.Dictator.Controls.Add(this.portrait_teeth2);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherpads4);
-            this.Dictator.Controls.Add(this.portrait_teeth1);
-            this.Dictator.Controls.Add(this.pal_sprite_costume1);
-            this.Dictator.Controls.Add(this.label10);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherpads3);
-            this.Dictator.Controls.Add(this.portrait_skin7);
-            this.Dictator.Controls.Add(this.pal_sprite_costume2);
-            this.Dictator.Controls.Add(this.portrait_skin6);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherpads2);
-            this.Dictator.Controls.Add(this.portrait_skin5);
-            this.Dictator.Controls.Add(this.pal_sprite_costume3);
-            this.Dictator.Controls.Add(this.portrait_skin4);
-            this.Dictator.Controls.Add(this.pal_sprite_crusherpads1);
-            this.Dictator.Controls.Add(this.portrait_skin3);
-            this.Dictator.Controls.Add(this.pal_sprite_costume4);
-            this.Dictator.Controls.Add(this.portrait_skin2);
-            this.Dictator.Controls.Add(this.label17);
-            this.Dictator.Controls.Add(this.portrait_skin1);
-            this.Dictator.Controls.Add(this.pal_sprite_costume5);
-            this.Dictator.Controls.Add(this.label9);
-            this.Dictator.Controls.Add(this.pal_sprite_psychopunch5);
-            this.Dictator.Controls.Add(this.pal_sprite_stripe);
-            this.Dictator.Controls.Add(this.pal_sprite_psychopunch4);
-            this.Dictator.Controls.Add(this.pal_sprite_psychoglow);
-            this.Dictator.Controls.Add(this.pal_sprite_psychopunch3);
-            this.Dictator.Controls.Add(this.pal_sprite_psychopunch1);
-            this.Dictator.Controls.Add(this.pal_sprite_psychopunch2);
-            this.Dictator.Location = new System.Drawing.Point(8, 39);
-            this.Dictator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Dictator.Name = "Dictator";
-            this.Dictator.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Dictator.Size = new System.Drawing.Size(1194, 1078);
-            this.Dictator.TabIndex = 0;
-            this.Dictator.Text = "Dictator";
+            this.TabPageDictator.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPageDictator.Controls.Add(this.neutralStandBox);
+            this.TabPageDictator.Controls.Add(this.portraitLossBox);
+            this.TabPageDictator.Controls.Add(this.psychopunchBox);
+            this.TabPageDictator.Controls.Add(this.portraitVictoryBox);
+            this.TabPageDictator.Controls.Add(this.psychoprepBox);
+            this.TabPageDictator.Controls.Add(this.crusherbottomBox);
+            this.TabPageDictator.Controls.Add(this.checkBox1);
+            this.TabPageDictator.Controls.Add(this.crushertopBox);
+            this.TabPageDictator.Controls.Add(this.label15);
+            this.TabPageDictator.Controls.Add(this.label21);
+            this.TabPageDictator.Controls.Add(this.portrait_blood3);
+            this.TabPageDictator.Controls.Add(this.label2);
+            this.TabPageDictator.Controls.Add(this.portrait_blood2);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherhands2);
+            this.TabPageDictator.Controls.Add(this.portrait_blood1);
+            this.TabPageDictator.Controls.Add(this.label3);
+            this.TabPageDictator.Controls.Add(this.label14);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherhands1);
+            this.TabPageDictator.Controls.Add(this.portrait_pipingloss4);
+            this.TabPageDictator.Controls.Add(this.label4);
+            this.TabPageDictator.Controls.Add(this.portrait_pipingloss3);
+            this.TabPageDictator.Controls.Add(this.label20);
+            this.TabPageDictator.Controls.Add(this.portrait_pipingloss2);
+            this.TabPageDictator.Controls.Add(this.label5);
+            this.TabPageDictator.Controls.Add(this.portrait_pipingloss1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherflame2);
+            this.TabPageDictator.Controls.Add(this.label13);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_skin1);
+            this.TabPageDictator.Controls.Add(this.portrait_piping4);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherflame1);
+            this.TabPageDictator.Controls.Add(this.portrait_piping3);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_skin2);
+            this.TabPageDictator.Controls.Add(this.portrait_piping2);
+            this.TabPageDictator.Controls.Add(this.label19);
+            this.TabPageDictator.Controls.Add(this.portrait_piping1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_skin3);
+            this.TabPageDictator.Controls.Add(this.label12);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume4);
+            this.TabPageDictator.Controls.Add(this.portrait_costumeloss4);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_skin4);
+            this.TabPageDictator.Controls.Add(this.portrait_costumeloss3);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume3);
+            this.TabPageDictator.Controls.Add(this.portrait_costumeloss2);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_pads1);
+            this.TabPageDictator.Controls.Add(this.portrait_costumeloss1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume2);
+            this.TabPageDictator.Controls.Add(this.label11);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_pads2);
+            this.TabPageDictator.Controls.Add(this.portrait_costume4);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume1);
+            this.TabPageDictator.Controls.Add(this.portrait_costume3);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_pads3);
+            this.TabPageDictator.Controls.Add(this.portrait_costume2);
+            this.TabPageDictator.Controls.Add(this.label18);
+            this.TabPageDictator.Controls.Add(this.portrait_costume1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_pads4);
+            this.TabPageDictator.Controls.Add(this.portrait_teeth4);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherpads5);
+            this.TabPageDictator.Controls.Add(this.portrait_teeth3);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_pads5);
+            this.TabPageDictator.Controls.Add(this.portrait_teeth2);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherpads4);
+            this.TabPageDictator.Controls.Add(this.portrait_teeth1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_costume1);
+            this.TabPageDictator.Controls.Add(this.label10);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherpads3);
+            this.TabPageDictator.Controls.Add(this.portrait_skin7);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_costume2);
+            this.TabPageDictator.Controls.Add(this.portrait_skin6);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherpads2);
+            this.TabPageDictator.Controls.Add(this.portrait_skin5);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_costume3);
+            this.TabPageDictator.Controls.Add(this.portrait_skin4);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_crusherpads1);
+            this.TabPageDictator.Controls.Add(this.portrait_skin3);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_costume4);
+            this.TabPageDictator.Controls.Add(this.portrait_skin2);
+            this.TabPageDictator.Controls.Add(this.label17);
+            this.TabPageDictator.Controls.Add(this.portrait_skin1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_costume5);
+            this.TabPageDictator.Controls.Add(this.label9);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch5);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_stripe);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch4);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_psychoglow);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch3);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch1);
+            this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch2);
+            this.TabPageDictator.Location = new System.Drawing.Point(8, 39);
+            this.TabPageDictator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TabPageDictator.Name = "TabPageDictator";
+            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TabPageDictator.Size = new System.Drawing.Size(1194, 1078);
+            this.TabPageDictator.TabIndex = 0;
+            this.TabPageDictator.Text = "Dictator";
             // 
-            // tabPage2
+            // TabPageClaw
             // 
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tabPage2.Size = new System.Drawing.Size(1194, 1078);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Claw";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.TabPageClaw.Controls.Add(this.label25);
+            this.TabPageClaw.Controls.Add(this.label24);
+            this.TabPageClaw.Controls.Add(this.stripe);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_outline);
+            this.TabPageClaw.Controls.Add(this.label23);
+            this.TabPageClaw.Controls.Add(this.label22);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_costume1);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_costume2);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_costume3);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_costume4);
+            this.TabPageClaw.Controls.Add(this.sash1);
+            this.TabPageClaw.Controls.Add(this.sash2);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin5);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin6);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin7);
+            this.TabPageClaw.Controls.Add(this.label16);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin1);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin2);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin3);
+            this.TabPageClaw.Controls.Add(this.sprite_claw_skin4);
+            this.TabPageClaw.Controls.Add(this.CLAW_neutralStandBox);
+            this.TabPageClaw.Location = new System.Drawing.Point(8, 39);
+            this.TabPageClaw.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TabPageClaw.Name = "TabPageClaw";
+            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TabPageClaw.Size = new System.Drawing.Size(1194, 1078);
+            this.TabPageClaw.TabIndex = 1;
+            this.TabPageClaw.Text = "Claw";
+            this.TabPageClaw.UseVisualStyleBackColor = true;
+            // 
+            // CLAW_neutralStandBox
+            // 
+            this.CLAW_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.CLAW_neutralStandBox.Location = new System.Drawing.Point(22, 23);
+            this.CLAW_neutralStandBox.Margin = new System.Windows.Forms.Padding(6);
+            this.CLAW_neutralStandBox.Name = "CLAW_neutralStandBox";
+            this.CLAW_neutralStandBox.Size = new System.Drawing.Size(75, 113);
+            this.CLAW_neutralStandBox.TabIndex = 122;
+            this.CLAW_neutralStandBox.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(17, 234);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(51, 25);
+            this.label16.TabIndex = 123;
+            this.label16.Text = "skin";
+            // 
+            // sprite_claw_skin1
+            // 
+            this.sprite_claw_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin1.Location = new System.Drawing.Point(195, 211);
+            this.sprite_claw_skin1.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin1.Name = "sprite_claw_skin1";
+            this.sprite_claw_skin1.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin1.TabIndex = 124;
+            this.sprite_claw_skin1.TabStop = false;
+            this.sprite_claw_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_skin2
+            // 
+            this.sprite_claw_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin2.Location = new System.Drawing.Point(253, 211);
+            this.sprite_claw_skin2.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin2.Name = "sprite_claw_skin2";
+            this.sprite_claw_skin2.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin2.TabIndex = 125;
+            this.sprite_claw_skin2.TabStop = false;
+            this.sprite_claw_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_skin3
+            // 
+            this.sprite_claw_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin3.Location = new System.Drawing.Point(319, 211);
+            this.sprite_claw_skin3.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin3.Name = "sprite_claw_skin3";
+            this.sprite_claw_skin3.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin3.TabIndex = 126;
+            this.sprite_claw_skin3.TabStop = false;
+            this.sprite_claw_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_skin4
+            // 
+            this.sprite_claw_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin4.Location = new System.Drawing.Point(381, 211);
+            this.sprite_claw_skin4.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin4.Name = "sprite_claw_skin4";
+            this.sprite_claw_skin4.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin4.TabIndex = 127;
+            this.sprite_claw_skin4.TabStop = false;
+            this.sprite_claw_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_skin5
+            // 
+            this.sprite_claw_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin5.Location = new System.Drawing.Point(195, 274);
+            this.sprite_claw_skin5.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin5.Name = "sprite_claw_skin5";
+            this.sprite_claw_skin5.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin5.TabIndex = 128;
+            this.sprite_claw_skin5.TabStop = false;
+            this.sprite_claw_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_skin6
+            // 
+            this.sprite_claw_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin6.Location = new System.Drawing.Point(261, 274);
+            this.sprite_claw_skin6.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin6.Name = "sprite_claw_skin6";
+            this.sprite_claw_skin6.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin6.TabIndex = 129;
+            this.sprite_claw_skin6.TabStop = false;
+            this.sprite_claw_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_skin7
+            // 
+            this.sprite_claw_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_skin7.Location = new System.Drawing.Point(323, 274);
+            this.sprite_claw_skin7.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_skin7.Name = "sprite_claw_skin7";
+            this.sprite_claw_skin7.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_skin7.TabIndex = 130;
+            this.sprite_claw_skin7.TabStop = false;
+            this.sprite_claw_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(12, 456);
+            this.label22.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(93, 25);
+            this.label22.TabIndex = 131;
+            this.label22.Text = "costume";
+            // 
+            // sprite_claw_costume1
+            // 
+            this.sprite_claw_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_costume1.Location = new System.Drawing.Point(190, 437);
+            this.sprite_claw_costume1.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_costume1.Name = "sprite_claw_costume1";
+            this.sprite_claw_costume1.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_costume1.TabIndex = 132;
+            this.sprite_claw_costume1.TabStop = false;
+            this.sprite_claw_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_costume2
+            // 
+            this.sprite_claw_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_costume2.Location = new System.Drawing.Point(250, 437);
+            this.sprite_claw_costume2.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_costume2.Name = "sprite_claw_costume2";
+            this.sprite_claw_costume2.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_costume2.TabIndex = 133;
+            this.sprite_claw_costume2.TabStop = false;
+            this.sprite_claw_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_costume3
+            // 
+            this.sprite_claw_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_costume3.Location = new System.Drawing.Point(314, 437);
+            this.sprite_claw_costume3.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_costume3.Name = "sprite_claw_costume3";
+            this.sprite_claw_costume3.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_costume3.TabIndex = 134;
+            this.sprite_claw_costume3.TabStop = false;
+            this.sprite_claw_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_costume4
+            // 
+            this.sprite_claw_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_costume4.Location = new System.Drawing.Point(376, 437);
+            this.sprite_claw_costume4.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_costume4.Name = "sprite_claw_costume4";
+            this.sprite_claw_costume4.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_costume4.TabIndex = 135;
+            this.sprite_claw_costume4.TabStop = false;
+            this.sprite_claw_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sash1
+            // 
+            this.sash1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sash1.Location = new System.Drawing.Point(190, 493);
+            this.sash1.Margin = new System.Windows.Forms.Padding(6);
+            this.sash1.Name = "sash1";
+            this.sash1.Size = new System.Drawing.Size(46, 44);
+            this.sash1.TabIndex = 137;
+            this.sash1.TabStop = false;
+            this.sash1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sash2
+            // 
+            this.sash2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sash2.Location = new System.Drawing.Point(250, 493);
+            this.sash2.Margin = new System.Windows.Forms.Padding(6);
+            this.sash2.Name = "sash2";
+            this.sash2.Size = new System.Drawing.Size(46, 44);
+            this.sash2.TabIndex = 138;
+            this.sash2.TabStop = false;
+            this.sash2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(17, 512);
+            this.label23.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(58, 25);
+            this.label23.TabIndex = 139;
+            this.label23.Text = "sash";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(17, 585);
+            this.label24.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(65, 25);
+            this.label24.TabIndex = 142;
+            this.label24.Text = "stripe";
+            // 
+            // stripe
+            // 
+            this.stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stripe.Location = new System.Drawing.Point(190, 566);
+            this.stripe.Margin = new System.Windows.Forms.Padding(6);
+            this.stripe.Name = "stripe";
+            this.stripe.Size = new System.Drawing.Size(46, 44);
+            this.stripe.TabIndex = 140;
+            this.stripe.TabStop = false;
+            this.stripe.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // sprite_claw_outline
+            // 
+            this.sprite_claw_outline.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite_claw_outline.Location = new System.Drawing.Point(190, 348);
+            this.sprite_claw_outline.Margin = new System.Windows.Forms.Padding(6);
+            this.sprite_claw_outline.Name = "sprite_claw_outline";
+            this.sprite_claw_outline.Size = new System.Drawing.Size(46, 44);
+            this.sprite_claw_outline.TabIndex = 141;
+            this.sprite_claw_outline.TabStop = false;
+            this.sprite_claw_outline.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(17, 348);
+            this.label25.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(76, 25);
+            this.label25.TabIndex = 143;
+            this.label25.Text = "outline";
             // 
             // MainForm
             // 
@@ -1982,8 +2265,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.Dictator.ResumeLayout(false);
-            this.Dictator.PerformLayout();
+            this.TabPageDictator.ResumeLayout(false);
+            this.TabPageDictator.PerformLayout();
+            this.TabPageClaw.ResumeLayout(false);
+            this.TabPageClaw.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sash1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sash2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stripe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_outline)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2132,8 +2433,29 @@
         private System.Windows.Forms.PictureBox portraitLossBox;
         private System.Windows.Forms.ToolStripMenuItem savePatchedRomRedoToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage Dictator;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage TabPageDictator;
+        private System.Windows.Forms.TabPage TabPageClaw;
+        private System.Windows.Forms.PictureBox CLAW_neutralStandBox;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox sprite_claw_costume1;
+        private System.Windows.Forms.PictureBox sprite_claw_costume2;
+        private System.Windows.Forms.PictureBox sprite_claw_costume3;
+        private System.Windows.Forms.PictureBox sprite_claw_costume4;
+        private System.Windows.Forms.PictureBox sash1;
+        private System.Windows.Forms.PictureBox sash2;
+        private System.Windows.Forms.PictureBox sprite_claw_skin5;
+        private System.Windows.Forms.PictureBox sprite_claw_skin6;
+        private System.Windows.Forms.PictureBox sprite_claw_skin7;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox sprite_claw_skin1;
+        private System.Windows.Forms.PictureBox sprite_claw_skin2;
+        private System.Windows.Forms.PictureBox sprite_claw_skin3;
+        private System.Windows.Forms.PictureBox sprite_claw_skin4;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.PictureBox stripe;
+        private System.Windows.Forms.PictureBox sprite_claw_outline;
     }
 }
 

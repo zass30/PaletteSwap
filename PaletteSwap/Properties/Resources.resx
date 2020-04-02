@@ -302,7 +302,7 @@
     <value>2202 ED0E B70E 750B 520A 4209 2106 0000 B70F 550F 000E 000A 0005 6606 0000</value>
   </data>
   <data name="cla4sprite" xml:space="preserve">
-    <value>1101 FF0F EB0F D80F A60F 730D 400A 0008 F80F 9D0F 5B0E 280B 0508 A00F</value>
+    <value>1101 FF0F EB0F D80F A60F 730D 400A 0008 F80F 9D0F 5B0E 280B 0508 A00F 700F</value>
   </data>
   <data name="cla5sprite" xml:space="preserve">
     <value>2202 DB0D C80D 960D 740C 5309 4207 3006 D80F AF07 7D05 4B02 2700 5E0A 1A06</value>
