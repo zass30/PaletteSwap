@@ -8,7 +8,7 @@ using System.IO;
 namespace PaletteSwapTest
 {
     [TestClass]
-    public class CharacterColorSetTest
+    public class CharacterSetTest
     {
         [TestMethod]
         public void CharacterSetGenericByteStreamTest()
