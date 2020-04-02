@@ -241,6 +241,24 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 2202 FD0F DB0F B90E 970C 750A 5308 3106 F00F 900F 600D 400A 3008 000F 0007.
+        /// </summary>
+        public static string cla7sprite {
+            get {
+                return ResourceManager.GetString("cla7sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2202 FF0F FA0F D70F B50E 930D 520B 2109 F80F E90B B605 8403 5302 F40F A20C.
+        /// </summary>
+        public static string cla8sprite {
+            get {
+                return ResourceManager.GetString("cla8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap clawneutral7 {

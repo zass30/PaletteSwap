@@ -277,6 +277,12 @@
   <data name="bis9portrait" xml:space="preserve">
     <value>FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 870F 650E 320C 0009 0A00 FF0F D90F 960E 750C 640A 5408 4306 EF0E AD0A 7906 5705 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 000F 000C 000A 0008 FF0F CC0C 9909 7707 0A00 FF0F D90F 960E 750C 640A 5408 4306 7F00 0D00 0B00 0900 320C 0009 0007 0005 0A00</value>
   </data>
+  <data name="cla7sprite" xml:space="preserve">
+    <value>2202 FD0F DB0F B90E 970C 750A 5308 3106 F00F 900F 600D 400A 3008 000F 0007</value>
+  </data>
+  <data name="cla8sprite" xml:space="preserve">
+    <value>2202 FF0F FA0F D70F B50E 930D 520B 2109 F80F E90B B605 8403 5302 F40F A20C</value>
+  </data>
   <data name="clawneutral7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\claw\clawneutral7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
