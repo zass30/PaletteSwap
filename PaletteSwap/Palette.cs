@@ -135,5 +135,10 @@ namespace PaletteSwap
 
             return b;
         }
+
+        public string ToColFormat()
+        {
+            return "";
+        }
     }    
 }

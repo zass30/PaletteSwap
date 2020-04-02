@@ -264,5 +264,20 @@ namespace PaletteSwapTest
             Assert.AreEqual(expected_colors[0], result_colors[0]);
             Assert.AreEqual(expected_colors[1], result_colors[1]);
         }
+
+        [TestMethod]
+        public void ToColFormatTest()
+        {
+            var pal = new Palette();
+            var c1 = Color.FromArgb(255, 17, 34, 51);
+            var c2 = Color.FromArgb(255, 51, 17, 34);
+            var c3 = Color.FromArgb(255, 34, 51, 17);
+            pal.SetColor("foo", c1);
+            pal.SetColor("bar", c2);
+            pal.SetColor("baz", c3);
+
+            var s_expected = "";
+            var s_result = pal.ToColFormat();
+        }
     }
 }
