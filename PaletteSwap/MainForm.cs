@@ -60,6 +60,8 @@ namespace PaletteSwap
             // drag and drop functionality
             label1.DragDrop += new DragEventHandler(label1_DragDrop);
             label1.DragEnter += new DragEventHandler(label1_DragEnter);
+            COLlabel.DragDrop += new DragEventHandler(COLlabel_DragDrop);
+            COLlabel.DragEnter += new DragEventHandler(COLlabel_DragEnter);
         }
 
         private void loadSpritesAndPalettesFromDropDown()
@@ -325,6 +327,14 @@ namespace PaletteSwap
                 e.Effect = DragDropEffects.None;
         }
 
+        private void COLlabel_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.All;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
         private void label1_DragDrop(object sender, DragEventArgs e)
         {
             string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
@@ -334,6 +344,19 @@ namespace PaletteSwap
             currentCharacter.loadFromColFormat(colstr);
             reload_everything();
         }
+
+        private void COLlabel_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            byte[] lineasbytes = File.ReadAllBytes(s[0]);
+            string colstr = System.Text.Encoding.UTF8.GetString(lineasbytes);
+            currentCharacter = Character.CharacterFromColFormat(colstr);
+            reload_everything();
+            //            var v = colstr.Split(':');
+            //            currentCharacter.loadFromColFormat(colstr);
+            //            reload_everything();
+        }
+
 
         private void pal_square_click(object sender, EventArgs e)
         {

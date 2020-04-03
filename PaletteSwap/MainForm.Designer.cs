@@ -173,6 +173,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TabPageDictator = new System.Windows.Forms.TabPage();
             this.TabPageClaw = new System.Windows.Forms.TabPage();
+            this.CLA_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.portrait_claw_blood3 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_blood2 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_blood1 = new System.Windows.Forms.PictureBox();
             this.portrait_claw_metal5 = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.portrait_claw_iris = new System.Windows.Forms.PictureBox();
@@ -216,11 +221,7 @@
             this.sprite_claw_skin3 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin4 = new System.Windows.Forms.PictureBox();
             this.CLAW_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.portrait_claw_blood3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_blood2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_blood1 = new System.Windows.Forms.PictureBox();
-            this.CLA_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -299,6 +300,10 @@
             this.tabControl1.SuspendLayout();
             this.TabPageDictator.SuspendLayout();
             this.TabPageClaw.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).BeginInit();
@@ -332,10 +337,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -372,11 +373,11 @@
             // 
             this.label1.AllowDrop = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(338, 663);
+            this.label1.Location = new System.Drawing.Point(475, 663);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 49);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Drag COL file";
+            this.label1.Text = "Drag COL file (legacy)";
             // 
             // label2
             // 
@@ -688,7 +689,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -698,14 +699,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(199, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -713,21 +714,21 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -735,7 +736,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -744,46 +745,46 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(199, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // savePatchedRomToolStripMenuItem1
             // 
             this.savePatchedRomToolStripMenuItem1.Name = "savePatchedRomToolStripMenuItem1";
-            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(218, 38);
+            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
             this.savePatchedRomToolStripMenuItem1.Text = "Save Patched Rom";
             this.savePatchedRomToolStripMenuItem1.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // savePhoenixRomToolStripMenuItem1
             // 
             this.savePhoenixRomToolStripMenuItem1.Name = "savePhoenixRomToolStripMenuItem1";
-            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(218, 38);
+            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
             this.savePhoenixRomToolStripMenuItem1.Text = "Save Phoenix Rom";
             this.savePhoenixRomToolStripMenuItem1.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // saveJapaneseRomToolStripMenuItem
             // 
             this.saveJapaneseRomToolStripMenuItem.Name = "saveJapaneseRomToolStripMenuItem";
-            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.saveJapaneseRomToolStripMenuItem.Text = "Save Japanese Rom";
             this.saveJapaneseRomToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // savePatchedRomRedoToolStripMenuItem
             // 
             this.savePatchedRomRedoToolStripMenuItem.Name = "savePatchedRomRedoToolStripMenuItem";
-            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
+            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.savePatchedRomRedoToolStripMenuItem.Text = "Save Patched Rom Redo";
             this.savePatchedRomRedoToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem_Click);
             // 
@@ -1903,6 +1904,58 @@
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
             // 
+            // CLA_portraitLossBox
+            // 
+            this.CLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.CLA_portraitLossBox.Location = new System.Drawing.Point(421, 18);
+            this.CLA_portraitLossBox.Name = "CLA_portraitLossBox";
+            this.CLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.CLA_portraitLossBox.TabIndex = 171;
+            this.CLA_portraitLossBox.TabStop = false;
+            this.CLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(281, 314);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(33, 13);
+            this.label31.TabIndex = 170;
+            this.label31.Text = "blood";
+            // 
+            // portrait_claw_blood3
+            // 
+            this.portrait_claw_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_blood3.Location = new System.Drawing.Point(391, 306);
+            this.portrait_claw_blood3.Name = "portrait_claw_blood3";
+            this.portrait_claw_blood3.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_blood3.TabIndex = 169;
+            this.portrait_claw_blood3.TabStop = false;
+            this.portrait_claw_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_blood2
+            // 
+            this.portrait_claw_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_blood2.Location = new System.Drawing.Point(361, 306);
+            this.portrait_claw_blood2.Name = "portrait_claw_blood2";
+            this.portrait_claw_blood2.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_blood2.TabIndex = 168;
+            this.portrait_claw_blood2.TabStop = false;
+            this.portrait_claw_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_blood1
+            // 
+            this.portrait_claw_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_blood1.Location = new System.Drawing.Point(331, 306);
+            this.portrait_claw_blood1.Name = "portrait_claw_blood1";
+            this.portrait_claw_blood1.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_blood1.TabIndex = 167;
+            this.portrait_claw_blood1.TabStop = false;
+            this.portrait_claw_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
             // portrait_claw_metal5
             // 
             this.portrait_claw_metal5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2354,63 +2407,22 @@
             this.CLAW_neutralStandBox.TabStop = false;
             this.CLAW_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
-            // label31
+            // COLlabel
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(281, 314);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(33, 13);
-            this.label31.TabIndex = 170;
-            this.label31.Text = "blood";
-            // 
-            // portrait_claw_blood3
-            // 
-            this.portrait_claw_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood3.Location = new System.Drawing.Point(391, 306);
-            this.portrait_claw_blood3.Name = "portrait_claw_blood3";
-            this.portrait_claw_blood3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_blood3.TabIndex = 169;
-            this.portrait_claw_blood3.TabStop = false;
-            this.portrait_claw_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_blood3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_blood2
-            // 
-            this.portrait_claw_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood2.Location = new System.Drawing.Point(361, 306);
-            this.portrait_claw_blood2.Name = "portrait_claw_blood2";
-            this.portrait_claw_blood2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_blood2.TabIndex = 168;
-            this.portrait_claw_blood2.TabStop = false;
-            this.portrait_claw_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_blood2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_blood1
-            // 
-            this.portrait_claw_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood1.Location = new System.Drawing.Point(331, 306);
-            this.portrait_claw_blood1.Name = "portrait_claw_blood1";
-            this.portrait_claw_blood1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_blood1.TabIndex = 167;
-            this.portrait_claw_blood1.TabStop = false;
-            this.portrait_claw_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_blood1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // CLA_portraitLossBox
-            // 
-            this.CLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
-            this.CLA_portraitLossBox.Location = new System.Drawing.Point(421, 18);
-            this.CLA_portraitLossBox.Name = "CLA_portraitLossBox";
-            this.CLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
-            this.CLA_portraitLossBox.TabIndex = 171;
-            this.CLA_portraitLossBox.TabStop = false;
-            this.CLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            this.COLlabel.AllowDrop = true;
+            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.COLlabel.Location = new System.Drawing.Point(341, 663);
+            this.COLlabel.Name = "COLlabel";
+            this.COLlabel.Size = new System.Drawing.Size(90, 49);
+            this.COLlabel.TabIndex = 122;
+            this.COLlabel.Text = "Drag COL file";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 773);
+            this.Controls.Add(this.COLlabel);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.colorCycleRBG);
             this.Controls.Add(this.colorCycleRGB);
@@ -2514,6 +2526,10 @@
             this.TabPageDictator.PerformLayout();
             this.TabPageClaw.ResumeLayout(false);
             this.TabPageClaw.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).EndInit();
@@ -2547,10 +2563,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2749,6 +2761,7 @@
         private System.Windows.Forms.PictureBox portrait_claw_blood3;
         private System.Windows.Forms.PictureBox portrait_claw_blood2;
         private System.Windows.Forms.PictureBox portrait_claw_blood1;
+        private System.Windows.Forms.Label COLlabel;
     }
 }
 
