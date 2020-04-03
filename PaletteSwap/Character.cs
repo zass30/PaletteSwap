@@ -154,8 +154,8 @@ namespace PaletteSwap
                         portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.bis9portrait);
                         break;
                 }
-                s.loadStream(sprite_bytestream);
-                p.loadStream(portrait_bytestream);
+                s.LoadStream(sprite_bytestream);
+                p.LoadStream(portrait_bytestream);
 
                 AssignDicatatorSpriteImages(s);
                 AssignDicatatorPortraitImages(p);
@@ -213,8 +213,8 @@ namespace PaletteSwap
                         portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9portrait);
                         break;
                 }
-                s.loadStream(sprite_bytestream);
-                p.loadStream(portrait_bytestream);
+                s.LoadStream(sprite_bytestream);
+                p.LoadStream(portrait_bytestream);
 
                 AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");

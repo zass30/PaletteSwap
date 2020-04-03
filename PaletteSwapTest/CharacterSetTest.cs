@@ -88,8 +88,8 @@ namespace PaletteSwapTest
         {
             // create a color set with bis5 as jab
             var cs = CharacterSet.GenerateDictatorCharacterSet();
-            cs.characterColors[0].sprite.loadStream(cs.characterColors[5].sprite.ToByteStream());
-            cs.characterColors[0].portrait.loadStream(cs.characterColors[5].portrait.ToByteStream());
+            cs.characterColors[0].sprite.LoadStream(cs.characterColors[5].sprite.ToByteStream());
+            cs.characterColors[0].portrait.LoadStream(cs.characterColors[5].portrait.ToByteStream());
             byte[] portraits_stream = cs.portraits_stream03();
             byte[] sprites_stream = cs.sprites_stream04();
             var s = cs.characterColors[0].sprite;

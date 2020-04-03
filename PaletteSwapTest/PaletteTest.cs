@@ -20,8 +20,8 @@ namespace PaletteSwapTest
             var result = s.GetColor("skin1");
             Assert.AreEqual(c, result);
 
-            s.setOffsets("skin1", new List<int>() { 0, 4, 6});
-            var r_offset = s.getOffsets("skin1");
+            s.SetOffsets("skin1", new List<int>() { 0, 4, 6});
+            var r_offset = s.GetOffsets("skin1");
             Assert.AreEqual(0, r_offset[0]);
             Assert.AreEqual(6, r_offset[2]);
 
@@ -49,8 +49,8 @@ namespace PaletteSwapTest
             Assert.AreEqual(c, result_color);
 
             var s2 = new Palette();
-            s2.setOffsets("skin1", new List<int>() { 0, 4, 6 });
-            s2.loadStream(b_result);
+            s2.SetOffsets("skin1", new List<int>() { 0, 4, 6 });
+            s2.LoadStream(b_result);
             Assert.AreEqual(s.GetColor("skin1"), s2.GetColor("skin1"));
 
         }
@@ -281,11 +281,16 @@ namespace PaletteSwapTest
 
             var expected_result = "foo:" + PaletteHelper.ColorFormatToRGB(c1) + System.Environment.NewLine +
                 "bar:" + PaletteHelper.ColorFormatToRGB(c2) + System.Environment.NewLine +
-                "baz:" + PaletteHelper.ColorFormatToRGB(c3) + System.Environment.NewLine;
-
+                "baz:" + PaletteHelper.ColorFormatToRGB(c3);
 
             var result = pal.ToColFormat();
             Assert.AreEqual(expected_result, result);
+
+            var pal2 = new Palette();
+            pal2.LoadColFormat(result);
+            Assert.AreEqual(c1, pal2.GetColor("foo"));
+            Assert.AreEqual(c2, pal2.GetColor("bar"));
+            Assert.AreEqual(c3, pal2.GetColor("baz"));
         }
     }
 }

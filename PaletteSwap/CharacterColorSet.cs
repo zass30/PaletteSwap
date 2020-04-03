@@ -86,8 +86,8 @@ namespace PaletteSwap
             {
                 Array.Copy(sprites, cs.sprite_offset + i * cs.sprite_length, sprite_bytes, 0, cs.sprite_length);
                 Array.Copy(portraits, cs.portrait_offset + i * cs.portrait_length, portrait_bytes, 0, cs.portrait_length);
-                cs.characterColors[i].sprite.loadStream(sprite_bytes);
-                cs.characterColors[i].portrait.loadStream(portrait_bytes);
+                cs.characterColors[i].sprite.LoadStream(sprite_bytes);
+                cs.characterColors[i].portrait.LoadStream(portrait_bytes);
             }
             return cs;
         }

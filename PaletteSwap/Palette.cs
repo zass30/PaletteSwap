@@ -29,7 +29,7 @@ namespace PaletteSwap
         public static Palette PaletteFromConfig(PaletteConfig pc)
         {
             Palette p = new Palette();
-            p.setAllOffSets(pc.labelOffsets);
+            p.SetAllOffSets(pc.labelOffsets);
             p.defaultColorOffsets = new List<ColorOffset>(pc.defaultColorOffsets);
             p.streamLength = pc.streamLength;
             p.unusedOffsets = new List<int>(pc.unusedOffsets);
@@ -51,7 +51,7 @@ namespace PaletteSwap
 
         }
 
-        public void loadStream(byte[] b)
+        public void LoadStream(byte[] b)
         {
             byte[] col_byte = new byte[2];
             foreach (var k in labelsToMemOffsets.Keys)
@@ -64,21 +64,21 @@ namespace PaletteSwap
             }
         }
 
-        public void setAllOffSets(Dictionary<string, List<int>> offsets)
+        public void SetAllOffSets(Dictionary<string, List<int>> offsets)
         {
             foreach (var k in offsets.Keys)
             {
                 var l = new List<int>(offsets[k]);
-                setOffsets(k, l);
+                SetOffsets(k, l);
             }
         }
 
-        public void setOffsets(string s, List<int> l)
+        public void SetOffsets(string s, List<int> l)
         {
             labelsToMemOffsets[s] = l;
         }
 
-        public List<int> getOffsets(string s)
+        public List<int> GetOffsets(string s)
         {
             return labelsToMemOffsets[s];
         }
@@ -145,7 +145,19 @@ namespace PaletteSwap
                 var c = k.Value;
                 s.Append(label + ":" + c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + System.Environment.NewLine);
             }
-            return s.ToString();
+            return s.ToString().Trim();
+        }
+
+        public void LoadColFormat(string s)
+        {
+            var v = s.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.None);
+            foreach (var line in v)
+            {
+                var s1 = line.Split(':');
+                var label = s1[0];
+                var c = PaletteHelper.RGBFormatToColor(s1[1]);
+                this.SetColor(label, c);
+            }
         }
     }    
 }
