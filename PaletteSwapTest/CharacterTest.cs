@@ -46,5 +46,16 @@ namespace PaletteSwapTest
             var pal = s.GetImage("neutral"); //113 h  by 75 w
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.clawneutral7, pal.baseImage));
         }
+
+        [TestMethod]
+        public void ToColFormatTest()
+        {
+            var claw = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hold);
+            var s_expected = claw.ToColFormat();
+
+            var result = Character.CharacterFromColFormat(s_expected);
+            var s_result = result.ToColFormat();
+            Assert.AreEqual(s_expected, s_result);
+        }
     }
 }

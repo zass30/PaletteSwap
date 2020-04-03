@@ -150,6 +150,7 @@ namespace PaletteSwap
 
         public void LoadColFormat(string s)
         {
+            s = s.Trim();
             var v = s.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.None);
             foreach (var line in v)
             {

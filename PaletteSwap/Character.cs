@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,60 @@ namespace PaletteSwap
         public Palette sprite;
         public Palette portrait;
         public enum CHARACTERS { Dictator, Claw };
+        public CHARACTERS characterType;
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
+
+        public static string CodeFromCharacterEnum(CHARACTERS c)
+        {
+            switch (c) {
+                case CHARACTERS.Dictator:
+                    return "DIC";
+                case CHARACTERS.Claw:
+                    return "CLA";
+            }
+            return "";
+        }
+
+        public static CHARACTERS CharacterEnumFromCode(string s)
+        {
+            switch (s)
+            {
+                case "CLA":
+                    return CHARACTERS.Claw;
+                case "DIC":
+                    return CHARACTERS.Dictator;
+            }
+            throw new ArgumentException("Invalid Character type");
+        }
+
+        public string ToColFormat()
+        {
+            StringBuilder s = new StringBuilder();
+            s.Append(CodeFromCharacterEnum(characterType));
+            s.Append(System.Environment.NewLine);
+            s.Append("SPRITE" + System.Environment.NewLine);
+            s.Append(this.sprite.ToColFormat() + System.Environment.NewLine);
+            s.Append("PORTRAIT" + System.Environment.NewLine);
+            s.Append(this.portrait.ToColFormat());
+            return s.ToString();
+        }
+
+        public static Character CharacterFromColFormat(string s)
+        {
+            var sr = new StringReader(s);
+            string first = sr.ReadLine();
+            var characterType = CharacterEnumFromCode(first);
+            Character character = createDefaultCharacter(characterType, BUTTONS.lp);
+            var sprite = sr.ReadLine(); // SPRITE
+            var rest = sr.ReadToEnd();
+            var v = rest.Split(new string[] { "PORTRAIT" + System.Environment.NewLine }, StringSplitOptions.None);
+            var sprites = v[0];
+            var portraits = v[1];
+            character.sprite.LoadColFormat(sprites);
+            character.portrait.LoadColFormat(portraits);
+
+            return character;
+        }
 
         // legacy function to delete eventually after old cols are convereted
         public void loadFromColFormat(string colstr)
@@ -98,10 +152,11 @@ namespace PaletteSwap
 
         }
 
-        public static Character createDefaultCharacter(CHARACTERS characater, BUTTONS button)
+        public static Character createDefaultCharacter(CHARACTERS character, BUTTONS button)
         {
             var c = new Character();
-            if (characater == CHARACTERS.Dictator)
+            c.characterType = character;
+            if (character == CHARACTERS.Dictator)
             {
                 PaletteConfig dicSpriteConfig = PaletteConfig.DICTATOR.GenerateDictatorSpriteConfig();
                 PaletteConfig dicPortraitConfig = PaletteConfig.DICTATOR.GenerateDictatorPortraitConfig();
@@ -160,7 +215,7 @@ namespace PaletteSwap
                 AssignDicatatorSpriteImages(s);
                 AssignDicatatorPortraitImages(p);
             }
-            else if (characater == CHARACTERS.Claw) {
+            else if (character == CHARACTERS.Claw) {
                 PaletteConfig claSpriteConfig = PaletteConfig.CLAW.GenerateClawSpriteConfig();
                 PaletteConfig claPortraitConfig = PaletteConfig.CLAW.GenerateClawPortraitConfig();
                 Palette s = Palette.PaletteFromConfig(claSpriteConfig);
