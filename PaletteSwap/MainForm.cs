@@ -22,6 +22,7 @@ namespace PaletteSwap
         PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
+        public GameSet gameSet = new GameSet();
         public CharacterSet characterSet;
         public Character currentCharacter;
         bool skip_image_recolors = false;
@@ -34,6 +35,8 @@ namespace PaletteSwap
             InitializeComponent();
             currentCharacterType = Character.CHARACTERS.Dictator;
             characterSet = CharacterSet.GenerateDictatorCharacterSet();
+            gameSet.characters.Add(characterSet);
+            gameSet.characters.Add(CharacterSet.GenerateClawCharacterSet());
             EnableDragAndDrop();
             Setup();
             loadSpritesAndPalettesFromDropDown();
@@ -817,8 +820,8 @@ namespace PaletteSwap
                         _03filename = "sfxe.03c";
                         _04filename = "sfxe.04a";
 
-                        p_stream = characterSet.portraits_stream03();
-                        s_stream = characterSet.sprites_stream04();
+                        p_stream = gameSet.portraits_stream03();
+                        s_stream = gameSet.sprites_stream04();
 
                         var _03file = archive.CreateEntry(_03filename);
                         using (var entryStream = _03file.Open())
@@ -855,13 +858,13 @@ namespace PaletteSwap
             if (selt.Name == "TabPageClaw")
             {
                 currentCharacterType = Character.CHARACTERS.Claw;
-                characterSet = CharacterSet.GenerateClawCharacterSet();
+                characterSet = gameSet.characters[1];
                 Setup();
             }
             else if (selt.Name == "TabPageDictator")
             {
                 currentCharacterType = Character.CHARACTERS.Dictator;
-                characterSet = CharacterSet.GenerateDictatorCharacterSet();
+                characterSet = gameSet.characters[0];
                 Setup();
             }
         }
