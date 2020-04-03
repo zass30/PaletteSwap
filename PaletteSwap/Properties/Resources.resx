@@ -343,4 +343,10 @@
   <data name="cla9portrait" xml:space="preserve">
     <value>FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 9F0B 7E09 5B07 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 0000 0000 0A06 0A00 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0A00 FE0F EA0F B80F 960E 750C 5409 4007 FF0F DE0C BD0A 9C08 7B07 700F 500D 000B 0A00</value>
   </data>
+  <data name="CLA_portraitloss7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\claw\CLA_portraitloss7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLA_portraitwin7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\claw\CLA_portraitwin7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

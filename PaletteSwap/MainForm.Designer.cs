@@ -173,6 +173,28 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TabPageDictator = new System.Windows.Forms.TabPage();
             this.TabPageClaw = new System.Windows.Forms.TabPage();
+            this.portrait_claw_metal5 = new System.Windows.Forms.PictureBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.portrait_claw_iris = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.portrait_claw_costume3 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_costume2 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_costume1 = new System.Windows.Forms.PictureBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.portrait_claw_metal4 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_metal3 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_metal2 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_metal1 = new System.Windows.Forms.PictureBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.portrait_claw_hair4 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_hair3 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_hair2 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_hair1 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.portrait_claw_skin3 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_skin2 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_skin1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.sprite_claw_stripe = new System.Windows.Forms.PictureBox();
@@ -194,28 +216,11 @@
             this.sprite_claw_skin3 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin4 = new System.Windows.Forms.PictureBox();
             this.CLAW_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.CLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_skin1 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_skin2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_skin3 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.portrait_claw_hair1 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair4 = new System.Windows.Forms.PictureBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.portrait_claw_metal4 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal1 = new System.Windows.Forms.PictureBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.portrait_claw_costume3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_costume2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_costume1 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.portrait_claw_iris = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal5 = new System.Windows.Forms.PictureBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.portrait_claw_blood3 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_blood2 = new System.Windows.Forms.PictureBox();
+            this.portrait_claw_blood1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portraitLossBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -294,6 +299,23 @@
             this.tabControl1.SuspendLayout();
             this.TabPageDictator.SuspendLayout();
             this.TabPageClaw.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_stripe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_outline)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume1)).BeginInit();
@@ -310,23 +332,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -679,7 +688,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -689,14 +698,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(215, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -704,21 +713,21 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(215, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -726,7 +735,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -735,46 +744,46 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(215, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // savePatchedRomToolStripMenuItem1
             // 
             this.savePatchedRomToolStripMenuItem1.Name = "savePatchedRomToolStripMenuItem1";
-            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
+            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(218, 38);
             this.savePatchedRomToolStripMenuItem1.Text = "Save Patched Rom";
             this.savePatchedRomToolStripMenuItem1.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // savePhoenixRomToolStripMenuItem1
             // 
             this.savePhoenixRomToolStripMenuItem1.Name = "savePhoenixRomToolStripMenuItem1";
-            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
+            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(218, 38);
             this.savePhoenixRomToolStripMenuItem1.Text = "Save Phoenix Rom";
             this.savePhoenixRomToolStripMenuItem1.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // saveJapaneseRomToolStripMenuItem
             // 
             this.saveJapaneseRomToolStripMenuItem.Name = "saveJapaneseRomToolStripMenuItem";
-            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.saveJapaneseRomToolStripMenuItem.Text = "Save Japanese Rom";
             this.saveJapaneseRomToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // savePatchedRomRedoToolStripMenuItem
             // 
             this.savePatchedRomRedoToolStripMenuItem.Name = "savePatchedRomRedoToolStripMenuItem";
-            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.savePatchedRomRedoToolStripMenuItem.Size = new System.Drawing.Size(218, 38);
             this.savePatchedRomRedoToolStripMenuItem.Text = "Save Patched Rom Redo";
             this.savePatchedRomRedoToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem_Click);
             // 
@@ -1831,13 +1840,18 @@
             this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch2);
             this.TabPageDictator.Location = new System.Drawing.Point(4, 22);
             this.TabPageDictator.Name = "TabPageDictator";
-            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageDictator.Size = new System.Drawing.Size(597, 559);
             this.TabPageDictator.TabIndex = 0;
             this.TabPageDictator.Text = "Dictator";
             // 
             // TabPageClaw
             // 
+            this.TabPageClaw.Controls.Add(this.CLA_portraitLossBox);
+            this.TabPageClaw.Controls.Add(this.label31);
+            this.TabPageClaw.Controls.Add(this.portrait_claw_blood3);
+            this.TabPageClaw.Controls.Add(this.portrait_claw_blood2);
+            this.TabPageClaw.Controls.Add(this.portrait_claw_blood1);
             this.TabPageClaw.Controls.Add(this.portrait_claw_metal5);
             this.TabPageClaw.Controls.Add(this.label30);
             this.TabPageClaw.Controls.Add(this.portrait_claw_iris);
@@ -1883,11 +1897,242 @@
             this.TabPageClaw.Controls.Add(this.CLAW_neutralStandBox);
             this.TabPageClaw.Location = new System.Drawing.Point(4, 22);
             this.TabPageClaw.Name = "TabPageClaw";
-            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageClaw.Size = new System.Drawing.Size(597, 559);
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
             this.TabPageClaw.UseVisualStyleBackColor = true;
+            // 
+            // portrait_claw_metal5
+            // 
+            this.portrait_claw_metal5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_metal5.Location = new System.Drawing.Point(451, 249);
+            this.portrait_claw_metal5.Name = "portrait_claw_metal5";
+            this.portrait_claw_metal5.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_metal5.TabIndex = 166;
+            this.portrait_claw_metal5.TabStop = false;
+            this.portrait_claw_metal5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_metal5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(281, 285);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(19, 13);
+            this.label30.TabIndex = 165;
+            this.label30.Text = "iris";
+            // 
+            // portrait_claw_iris
+            // 
+            this.portrait_claw_iris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_iris.Location = new System.Drawing.Point(331, 277);
+            this.portrait_claw_iris.Name = "portrait_claw_iris";
+            this.portrait_claw_iris.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_iris.TabIndex = 164;
+            this.portrait_claw_iris.TabStop = false;
+            this.portrait_claw_iris.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_iris.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(281, 227);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(47, 13);
+            this.label29.TabIndex = 163;
+            this.label29.Text = "costume";
+            // 
+            // portrait_claw_costume3
+            // 
+            this.portrait_claw_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_costume3.Location = new System.Drawing.Point(391, 219);
+            this.portrait_claw_costume3.Name = "portrait_claw_costume3";
+            this.portrait_claw_costume3.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_costume3.TabIndex = 161;
+            this.portrait_claw_costume3.TabStop = false;
+            this.portrait_claw_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_costume2
+            // 
+            this.portrait_claw_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_costume2.Location = new System.Drawing.Point(361, 219);
+            this.portrait_claw_costume2.Name = "portrait_claw_costume2";
+            this.portrait_claw_costume2.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_costume2.TabIndex = 160;
+            this.portrait_claw_costume2.TabStop = false;
+            this.portrait_claw_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_costume1
+            // 
+            this.portrait_claw_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_costume1.Location = new System.Drawing.Point(331, 219);
+            this.portrait_claw_costume1.Name = "portrait_claw_costume1";
+            this.portrait_claw_costume1.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_costume1.TabIndex = 159;
+            this.portrait_claw_costume1.TabStop = false;
+            this.portrait_claw_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(281, 257);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(32, 13);
+            this.label28.TabIndex = 158;
+            this.label28.Text = "metal";
+            // 
+            // portrait_claw_metal4
+            // 
+            this.portrait_claw_metal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_metal4.Location = new System.Drawing.Point(421, 249);
+            this.portrait_claw_metal4.Name = "portrait_claw_metal4";
+            this.portrait_claw_metal4.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_metal4.TabIndex = 157;
+            this.portrait_claw_metal4.TabStop = false;
+            this.portrait_claw_metal4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_metal4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_metal3
+            // 
+            this.portrait_claw_metal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_metal3.Location = new System.Drawing.Point(391, 249);
+            this.portrait_claw_metal3.Name = "portrait_claw_metal3";
+            this.portrait_claw_metal3.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_metal3.TabIndex = 156;
+            this.portrait_claw_metal3.TabStop = false;
+            this.portrait_claw_metal3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_metal3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_metal2
+            // 
+            this.portrait_claw_metal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_metal2.Location = new System.Drawing.Point(361, 249);
+            this.portrait_claw_metal2.Name = "portrait_claw_metal2";
+            this.portrait_claw_metal2.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_metal2.TabIndex = 155;
+            this.portrait_claw_metal2.TabStop = false;
+            this.portrait_claw_metal2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_metal2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_metal1
+            // 
+            this.portrait_claw_metal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_metal1.Location = new System.Drawing.Point(331, 249);
+            this.portrait_claw_metal1.Name = "portrait_claw_metal1";
+            this.portrait_claw_metal1.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_metal1.TabIndex = 154;
+            this.portrait_claw_metal1.TabStop = false;
+            this.portrait_claw_metal1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_metal1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(281, 197);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(24, 13);
+            this.label27.TabIndex = 153;
+            this.label27.Text = "hair";
+            // 
+            // portrait_claw_hair4
+            // 
+            this.portrait_claw_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_hair4.Location = new System.Drawing.Point(421, 189);
+            this.portrait_claw_hair4.Name = "portrait_claw_hair4";
+            this.portrait_claw_hair4.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_hair4.TabIndex = 152;
+            this.portrait_claw_hair4.TabStop = false;
+            this.portrait_claw_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_hair4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_hair3
+            // 
+            this.portrait_claw_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_hair3.Location = new System.Drawing.Point(391, 189);
+            this.portrait_claw_hair3.Name = "portrait_claw_hair3";
+            this.portrait_claw_hair3.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_hair3.TabIndex = 151;
+            this.portrait_claw_hair3.TabStop = false;
+            this.portrait_claw_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_hair2
+            // 
+            this.portrait_claw_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_hair2.Location = new System.Drawing.Point(361, 189);
+            this.portrait_claw_hair2.Name = "portrait_claw_hair2";
+            this.portrait_claw_hair2.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_hair2.TabIndex = 150;
+            this.portrait_claw_hair2.TabStop = false;
+            this.portrait_claw_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_hair1
+            // 
+            this.portrait_claw_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_hair1.Location = new System.Drawing.Point(331, 189);
+            this.portrait_claw_hair1.Name = "portrait_claw_hair1";
+            this.portrait_claw_hair1.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_hair1.TabIndex = 149;
+            this.portrait_claw_hair1.TabStop = false;
+            this.portrait_claw_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(281, 167);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(26, 13);
+            this.label26.TabIndex = 148;
+            this.label26.Text = "skin";
+            // 
+            // portrait_claw_skin3
+            // 
+            this.portrait_claw_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_skin3.Location = new System.Drawing.Point(391, 156);
+            this.portrait_claw_skin3.Name = "portrait_claw_skin3";
+            this.portrait_claw_skin3.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_skin3.TabIndex = 147;
+            this.portrait_claw_skin3.TabStop = false;
+            this.portrait_claw_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_skin2
+            // 
+            this.portrait_claw_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_skin2.Location = new System.Drawing.Point(361, 156);
+            this.portrait_claw_skin2.Name = "portrait_claw_skin2";
+            this.portrait_claw_skin2.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_skin2.TabIndex = 146;
+            this.portrait_claw_skin2.TabStop = false;
+            this.portrait_claw_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // portrait_claw_skin1
+            // 
+            this.portrait_claw_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_skin1.Location = new System.Drawing.Point(331, 156);
+            this.portrait_claw_skin1.Name = "portrait_claw_skin1";
+            this.portrait_claw_skin1.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_skin1.TabIndex = 145;
+            this.portrait_claw_skin1.TabStop = false;
+            this.portrait_claw_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CLA_portraitVictoryBox
+            // 
+            this.CLA_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.CLA_portraitVictoryBox.Location = new System.Drawing.Point(284, 18);
+            this.CLA_portraitVictoryBox.Name = "CLA_portraitVictoryBox";
+            this.CLA_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.CLA_portraitVictoryBox.TabIndex = 144;
+            this.CLA_portraitVictoryBox.TabStop = false;
+            this.CLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // label25
             // 
@@ -2109,236 +2354,57 @@
             this.CLAW_neutralStandBox.TabStop = false;
             this.CLAW_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
-            // CLA_portraitVictoryBox
+            // label31
             // 
-            this.CLA_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.CLA_portraitVictoryBox.Location = new System.Drawing.Point(284, 18);
-            this.CLA_portraitVictoryBox.Name = "CLA_portraitVictoryBox";
-            this.CLA_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
-            this.CLA_portraitVictoryBox.TabIndex = 144;
-            this.CLA_portraitVictoryBox.TabStop = false;
-            this.CLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(281, 314);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(33, 13);
+            this.label31.TabIndex = 170;
+            this.label31.Text = "blood";
             // 
-            // portrait_claw_skin1
+            // portrait_claw_blood3
             // 
-            this.portrait_claw_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin1.Location = new System.Drawing.Point(331, 156);
-            this.portrait_claw_skin1.Name = "portrait_claw_skin1";
-            this.portrait_claw_skin1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_skin1.TabIndex = 145;
-            this.portrait_claw_skin1.TabStop = false;
-            this.portrait_claw_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_skin1.Click += new System.EventHandler(this.pal_square_click);
+            this.portrait_claw_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_blood3.Location = new System.Drawing.Point(391, 306);
+            this.portrait_claw_blood3.Name = "portrait_claw_blood3";
+            this.portrait_claw_blood3.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_blood3.TabIndex = 169;
+            this.portrait_claw_blood3.TabStop = false;
+            this.portrait_claw_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_blood3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_skin2
+            // portrait_claw_blood2
             // 
-            this.portrait_claw_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin2.Location = new System.Drawing.Point(361, 156);
-            this.portrait_claw_skin2.Name = "portrait_claw_skin2";
-            this.portrait_claw_skin2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_skin2.TabIndex = 146;
-            this.portrait_claw_skin2.TabStop = false;
-            this.portrait_claw_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_skin2.Click += new System.EventHandler(this.pal_square_click);
+            this.portrait_claw_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_blood2.Location = new System.Drawing.Point(361, 306);
+            this.portrait_claw_blood2.Name = "portrait_claw_blood2";
+            this.portrait_claw_blood2.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_blood2.TabIndex = 168;
+            this.portrait_claw_blood2.TabStop = false;
+            this.portrait_claw_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_blood2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_skin3
+            // portrait_claw_blood1
             // 
-            this.portrait_claw_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin3.Location = new System.Drawing.Point(391, 156);
-            this.portrait_claw_skin3.Name = "portrait_claw_skin3";
-            this.portrait_claw_skin3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_skin3.TabIndex = 147;
-            this.portrait_claw_skin3.TabStop = false;
-            this.portrait_claw_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_skin3.Click += new System.EventHandler(this.pal_square_click);
+            this.portrait_claw_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.portrait_claw_blood1.Location = new System.Drawing.Point(331, 306);
+            this.portrait_claw_blood1.Name = "portrait_claw_blood1";
+            this.portrait_claw_blood1.Size = new System.Drawing.Size(24, 24);
+            this.portrait_claw_blood1.TabIndex = 167;
+            this.portrait_claw_blood1.TabStop = false;
+            this.portrait_claw_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.portrait_claw_blood1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // label26
+            // CLA_portraitLossBox
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(281, 167);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(26, 13);
-            this.label26.TabIndex = 148;
-            this.label26.Text = "skin";
-            // 
-            // portrait_claw_hair1
-            // 
-            this.portrait_claw_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair1.Location = new System.Drawing.Point(331, 189);
-            this.portrait_claw_hair1.Name = "portrait_claw_hair1";
-            this.portrait_claw_hair1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair1.TabIndex = 149;
-            this.portrait_claw_hair1.TabStop = false;
-            this.portrait_claw_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_hair2
-            // 
-            this.portrait_claw_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair2.Location = new System.Drawing.Point(361, 189);
-            this.portrait_claw_hair2.Name = "portrait_claw_hair2";
-            this.portrait_claw_hair2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair2.TabIndex = 150;
-            this.portrait_claw_hair2.TabStop = false;
-            this.portrait_claw_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_hair3
-            // 
-            this.portrait_claw_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair3.Location = new System.Drawing.Point(391, 189);
-            this.portrait_claw_hair3.Name = "portrait_claw_hair3";
-            this.portrait_claw_hair3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair3.TabIndex = 151;
-            this.portrait_claw_hair3.TabStop = false;
-            this.portrait_claw_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_hair4
-            // 
-            this.portrait_claw_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair4.Location = new System.Drawing.Point(421, 189);
-            this.portrait_claw_hair4.Name = "portrait_claw_hair4";
-            this.portrait_claw_hair4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair4.TabIndex = 152;
-            this.portrait_claw_hair4.TabStop = false;
-            this.portrait_claw_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(281, 197);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(24, 13);
-            this.label27.TabIndex = 153;
-            this.label27.Text = "hair";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(281, 257);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 13);
-            this.label28.TabIndex = 158;
-            this.label28.Text = "metal";
-            // 
-            // portrait_claw_metal4
-            // 
-            this.portrait_claw_metal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal4.Location = new System.Drawing.Point(421, 249);
-            this.portrait_claw_metal4.Name = "portrait_claw_metal4";
-            this.portrait_claw_metal4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal4.TabIndex = 157;
-            this.portrait_claw_metal4.TabStop = false;
-            this.portrait_claw_metal4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_metal3
-            // 
-            this.portrait_claw_metal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal3.Location = new System.Drawing.Point(391, 249);
-            this.portrait_claw_metal3.Name = "portrait_claw_metal3";
-            this.portrait_claw_metal3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal3.TabIndex = 156;
-            this.portrait_claw_metal3.TabStop = false;
-            this.portrait_claw_metal3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_metal2
-            // 
-            this.portrait_claw_metal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal2.Location = new System.Drawing.Point(361, 249);
-            this.portrait_claw_metal2.Name = "portrait_claw_metal2";
-            this.portrait_claw_metal2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal2.TabIndex = 155;
-            this.portrait_claw_metal2.TabStop = false;
-            this.portrait_claw_metal2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_metal1
-            // 
-            this.portrait_claw_metal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal1.Location = new System.Drawing.Point(331, 249);
-            this.portrait_claw_metal1.Name = "portrait_claw_metal1";
-            this.portrait_claw_metal1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal1.TabIndex = 154;
-            this.portrait_claw_metal1.TabStop = false;
-            this.portrait_claw_metal1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(281, 227);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(47, 13);
-            this.label29.TabIndex = 163;
-            this.label29.Text = "costume";
-            // 
-            // portrait_claw_costume3
-            // 
-            this.portrait_claw_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume3.Location = new System.Drawing.Point(391, 219);
-            this.portrait_claw_costume3.Name = "portrait_claw_costume3";
-            this.portrait_claw_costume3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_costume3.TabIndex = 161;
-            this.portrait_claw_costume3.TabStop = false;
-            this.portrait_claw_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_costume3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_costume2
-            // 
-            this.portrait_claw_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume2.Location = new System.Drawing.Point(361, 219);
-            this.portrait_claw_costume2.Name = "portrait_claw_costume2";
-            this.portrait_claw_costume2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_costume2.TabIndex = 160;
-            this.portrait_claw_costume2.TabStop = false;
-            this.portrait_claw_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_costume2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_costume1
-            // 
-            this.portrait_claw_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume1.Location = new System.Drawing.Point(331, 219);
-            this.portrait_claw_costume1.Name = "portrait_claw_costume1";
-            this.portrait_claw_costume1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_costume1.TabIndex = 159;
-            this.portrait_claw_costume1.TabStop = false;
-            this.portrait_claw_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_costume1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(281, 285);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(19, 13);
-            this.label30.TabIndex = 165;
-            this.label30.Text = "iris";
-            // 
-            // portrait_claw_iris
-            // 
-            this.portrait_claw_iris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_iris.Location = new System.Drawing.Point(331, 277);
-            this.portrait_claw_iris.Name = "portrait_claw_iris";
-            this.portrait_claw_iris.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_iris.TabIndex = 164;
-            this.portrait_claw_iris.TabStop = false;
-            this.portrait_claw_iris.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_iris.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // portrait_claw_metal5
-            // 
-            this.portrait_claw_metal5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal5.Location = new System.Drawing.Point(451, 249);
-            this.portrait_claw_metal5.Name = "portrait_claw_metal5";
-            this.portrait_claw_metal5.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal5.TabIndex = 166;
-            this.portrait_claw_metal5.TabStop = false;
-            this.portrait_claw_metal5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal5.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.CLA_portraitLossBox.Location = new System.Drawing.Point(421, 18);
+            this.CLA_portraitLossBox.Name = "CLA_portraitLossBox";
+            this.CLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.CLA_portraitLossBox.TabIndex = 171;
+            this.CLA_portraitLossBox.TabStop = false;
+            this.CLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // MainForm
             // 
@@ -2448,6 +2514,23 @@
             this.TabPageDictator.PerformLayout();
             this.TabPageClaw.ResumeLayout(false);
             this.TabPageClaw.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_stripe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_outline)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_costume1)).EndInit();
@@ -2464,23 +2547,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2674,6 +2744,11 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.PictureBox portrait_claw_iris;
         private System.Windows.Forms.PictureBox portrait_claw_metal5;
+        private System.Windows.Forms.PictureBox CLA_portraitLossBox;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.PictureBox portrait_claw_blood3;
+        private System.Windows.Forms.PictureBox portrait_claw_blood2;
+        private System.Windows.Forms.PictureBox portrait_claw_blood1;
     }
 }
 

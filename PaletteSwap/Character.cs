@@ -218,6 +218,7 @@ namespace PaletteSwap
 
                 AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
+                AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
             }
             return c;
         }

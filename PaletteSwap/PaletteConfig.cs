@@ -91,6 +91,9 @@ namespace PaletteSwap
             { "costume2", new List<int>() { 26 } },
             { "costume3", new List<int>() { 28 } },
             { "iris", new List<int>() { ROWLEN * 1 + 28 } },
+            { "blood1", new List<int>() { ROWLEN * 3 + 24 } },
+            { "blood2", new List<int>() { ROWLEN * 3 + 26 } },
+            { "blood3", new List<int>() { ROWLEN * 3 + 28 } },
         };
                 return portraitOffsets;
             }
@@ -291,15 +294,35 @@ namespace PaletteSwap
                         "metal1", "metal2", "metal3", "metal4", "metal5",
                 "costume1", "costume2", "costume3", "iris", };
                 }
-                
+
+                public static List<string> ClawLossPortraitLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3",
+                        "hair1", "hair2", "hair3", "hair4",
+                        "metal1", "metal2", "metal3", "metal4", "metal5",
+                "costume1", "costume2", "costume3", 
+                "blood1", "blood2", "blood3" };
+                }
+
+
                 public static Bitmap ClawVictoryPortraitBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.clawportrait7);
+                    return new Bitmap(Properties.Resources.CLA_portraitwin7);
+                }
+
+                public static Bitmap ClawLossPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.CLA_portraitloss7);
                 }
 
                 public static PaletteImage GenerateClawVictoryBasePaletteImage()
                 {
                     return GenerateClawPortraitPaletteImage(ClawVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.cla7portrait, ClawVictoryPortraitLabels());
+                }
+
+                public static PaletteImage GenerateClawLossBasePaletteImage()
+                {
+                    return GenerateClawPortraitPaletteImage(ClawLossPortraitBaseImage(), PaletteSwap.Properties.Resources.cla7portrait, ClawLossPortraitLabels());
                 }
 
                 public static PaletteImage GenerateClawPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)

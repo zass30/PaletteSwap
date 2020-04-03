@@ -72,13 +72,13 @@ namespace PaletteSwap
             load_sprite_buttons();
             load_sprite_neutralstandredo();
             load_portrait_victory();
+            load_portrait_loss();
             if (currentCharacterType == Character.CHARACTERS.Dictator)
             {
                 load_sprite_load_sprite_psychopunch();
                 load_sprite_load_sprite_psychoprep();
                 load_sprite_load_sprite_crushertop();
                 load_sprite_load_sprite_crusherbottom();
-                load_portrait_loss();
             }
 
             refreshZoom();
@@ -124,6 +124,7 @@ namespace PaletteSwap
 
         private void load_portrait_loss()
         {
+            if (currentCharacterType == Character.CHARACTERS.Dictator) { 
             Bitmap result = new Bitmap(portraitLossBox.Width, portraitLossBox.Height);
             using (Graphics g = Graphics.FromImage(result))
             {
@@ -131,7 +132,11 @@ namespace PaletteSwap
                 g.DrawImage(currentCharacter.portrait.GetBitmap("lossbottom"), Point.Empty);
             }
             portraitLossBox.BackgroundImage = result;
-        }       
+        }
+            else if (currentCharacterType == Character.CHARACTERS.Claw)
+                CLA_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
+
+        }
 
         private void load_sprite_buttons()
         {
@@ -270,6 +275,11 @@ namespace PaletteSwap
                     portrait_claw_metal5.BackColor = currentCharacter.portrait.GetColor("metal5");
 
                     portrait_claw_iris.BackColor = currentCharacter.portrait.GetColor("iris");
+
+                    portrait_claw_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    portrait_claw_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    portrait_claw_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
                     break;
             }
         }
@@ -457,8 +467,6 @@ namespace PaletteSwap
             currentCharacter.portrait.SetColor(label, c);
 
             load_portrait_victory();
-
-            if (currentCharacterType == Character.CHARACTERS.Dictator)
                 load_portrait_loss();
         }
 
