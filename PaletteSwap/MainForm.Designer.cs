@@ -1740,7 +1740,7 @@
             // 
             this.tabControl1.Controls.Add(this.TabPageDictator);
             this.tabControl1.Controls.Add(this.TabPageClaw);
-            this.tabControl1.Location = new System.Drawing.Point(12, 24);
+            this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(605, 585);
