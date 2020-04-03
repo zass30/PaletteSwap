@@ -20,7 +20,7 @@ namespace PaletteSwap
         public List<int> unusedOffsets = new List<int>();
         public Dictionary<string, PaletteImage> images = new Dictionary<string, PaletteImage>();
 
-        private Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>();
+        public Dictionary<string, Color> labelsToColors = new Dictionary<string, Color>();
 
         public Dictionary<string, List<int>> labelsToMemOffsets = new Dictionary<string, List<int>>
         {
