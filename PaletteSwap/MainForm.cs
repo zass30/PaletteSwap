@@ -693,21 +693,16 @@ namespace PaletteSwap
         private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             savePatchedRomToolStripMenuItem2_Click(sender, e, ROMSTYLE.us);
-//            savePatchedRomToolFormat(sender, e, ROMSTYLE.us);
         }
 
         private void savePhoenixRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             savePatchedRomToolStripMenuItem2_Click(sender, e, ROMSTYLE.phoenix);
-
-            // savePatchedRomToolFormat(sender, e, ROMSTYLE.phoenix);
         }
 
         private void saveJapaneseRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             savePatchedRomToolStripMenuItem2_Click(sender, e, ROMSTYLE.japanese);
-
-           // savePatchedRomToolFormat(sender, e, ROMSTYLE.japanese);
         }
 
         // would like to encapsulate in object 
@@ -888,84 +883,7 @@ namespace PaletteSwap
                 }
             }
         }
-        /*
-        private void savePatchedRomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ROMSTYLE r = ROMSTYLE.us;
-            // Displays a SaveFileDialog so the user can save the Image
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-            saveFileDialog1.Title = "Save a rom";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                using (System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile())
-                {
-                    using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
-                    {
-                        string _03filename;
-                        string _04filename;
-
-                        byte[] p_stream;
-                        byte[] s_stream;
-
-                        switch (r) {
-                            case ROMSTYLE.japanese:
-                                _03filename = "sfxj.03c";
-                                _04filename = "sfxj.04a";
-
-                                p_stream = gameSet.portraits_stream03();
-                                s_stream = gameSet.sprites_stream04();
-                                break;
-                            case ROMSTYLE.phoenix:
-                                _03filename = "sfxjd.03c";
-                                _04filename = "sfxjd.04a";
-
-                                p_stream = gameSet.portraits_stream03();
-                                s_stream = gameSet.sprites_stream04();
-                                break;
-                            default:
-                            case ROMSTYLE.us:
-                                _03filename = "sfxe.03c";
-                                _04filename = "sfxe.04a";
-
-                                p_stream = gameSet.portraits_stream03();
-                                s_stream = gameSet.sprites_stream04();
-                                break;
-                        }
-
-                        var _03file = archive.CreateEntry(_03filename);
-                        using (var entryStream = _03file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(p_stream, 0, p_stream.Length);
-                        }
-
-                        var _04file = archive.CreateEntry(_04filename);
-                        using (var entryStream = _04file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(s_stream, 0, s_stream.Length);
-                        }
-
-                        /*var _06file = archive.CreateEntry(_06filename);
-                        using (var entryStream = _06file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(punches_stream, 0, punches_stream.Length);
-                        }
-                    }
-                }
-            }
-        }
-        */
+   
         private void tabSelectedIndexChanged(object sender, EventArgs e)
         {
             var tabControl = (TabControl)sender;
