@@ -155,6 +155,11 @@ namespace PaletteSwap
             return Color.FromArgb(255, R, G, B);
         }
 
+        public static string ColorFormatToRGB(Color c)
+        {
+            return c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString();
+        }
+
         public static bool areBitmapsSame(Bitmap a, Bitmap b)
         {
             if (a.Width != b.Width || a.Height != b.Height)

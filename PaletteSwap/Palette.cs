@@ -138,7 +138,14 @@ namespace PaletteSwap
 
         public string ToColFormat()
         {
-            return "";
+            StringBuilder s = new StringBuilder();
+            foreach (var k in labelsToColors)
+            {
+                var label = k.Key;
+                var c = k.Value;
+                s.Append(label + ":" + c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + System.Environment.NewLine);
+            }
+            return s.ToString();
         }
     }    
 }

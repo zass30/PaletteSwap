@@ -279,17 +279,13 @@ namespace PaletteSwapTest
             pal.SetColor("bar", c2);
             pal.SetColor("baz", c3);
 
-            var labelstocolors = pal.labelsToColors;
+            var expected_result = "foo:" + PaletteHelper.ColorFormatToRGB(c1) + System.Environment.NewLine +
+                "bar:" + PaletteHelper.ColorFormatToRGB(c2) + System.Environment.NewLine +
+                "baz:" + PaletteHelper.ColorFormatToRGB(c3) + System.Environment.NewLine;
 
-            var jsonString = JsonSerializer.Serialize<Dictionary<string, Color>>(labelstocolors);
-            // var s_result = pal.ToColFormat();
 
-            var newlabelstocolors = JsonSerializer.Deserialize<Dictionary<string, Color>>(jsonString);
-            var pal2 = new Palette();
-            pal2.labelsToColors = newlabelstocolors;
-
-            Assert.AreEqual(pal.GetColor("foo"), pal2.GetColor("foo"));
-
+            var result = pal.ToColFormat();
+            Assert.AreEqual(expected_result, result);
         }
     }
 }
