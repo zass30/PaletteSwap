@@ -61,7 +61,7 @@ namespace PaletteSwap
             cs.sprite_offset = 0x000441C2;
             cs.sprite_length = 0xA2;
             cs.portrait_offset = 35348;//character id B
-            cs.portrait2_offset = 0x3A3FE;//old
+            cs.portrait2_offset = 0x3A3FE;
             cs.portrait_length = 0x80;
             cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.lp);
             cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.mp);
