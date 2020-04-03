@@ -373,7 +373,7 @@
             // 
             this.label1.AllowDrop = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(475, 663);
+            this.label1.Location = new System.Drawing.Point(265, 479);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 49);
             this.label1.TabIndex = 7;
@@ -1767,6 +1767,7 @@
             this.TabPageDictator.Controls.Add(this.pal_sprite_crusherhands2);
             this.TabPageDictator.Controls.Add(this.portrait_blood1);
             this.TabPageDictator.Controls.Add(this.label3);
+            this.TabPageDictator.Controls.Add(this.label1);
             this.TabPageDictator.Controls.Add(this.label14);
             this.TabPageDictator.Controls.Add(this.pal_sprite_crusherhands1);
             this.TabPageDictator.Controls.Add(this.portrait_pipingloss4);
@@ -2438,7 +2439,6 @@
             this.Controls.Add(this.trackBarB);
             this.Controls.Add(this.trackBarG);
             this.Controls.Add(this.trackBarR);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.colorSelectorBox);
             this.Controls.Add(this.colorSwapBG);
             this.Controls.Add(this.menuStrip1);

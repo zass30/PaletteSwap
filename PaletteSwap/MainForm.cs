@@ -350,8 +350,14 @@ namespace PaletteSwap
             string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
             byte[] lineasbytes = File.ReadAllBytes(s[0]);
             string colstr = System.Text.Encoding.UTF8.GetString(lineasbytes);
-            currentCharacter = Character.CharacterFromColFormat(colstr);
-            reload_everything();
+            var colCharacter = Character.CharacterFromColFormat(colstr);
+            if (colCharacter.characterType == currentCharacter.characterType)
+            {
+                currentCharacter = Character.CharacterFromColFormat(colstr);
+                reload_everything();
+            }
+            else
+                MessageBox.Show("Incorrect character type");
             //            var v = colstr.Split(':');
             //            currentCharacter.loadFromColFormat(colstr);
             //            reload_everything();
