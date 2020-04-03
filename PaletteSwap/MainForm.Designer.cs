@@ -340,7 +340,7 @@
             // 
             // colorSwapBG
             // 
-            this.colorSwapBG.Location = new System.Drawing.Point(746, 250);
+            this.colorSwapBG.Location = new System.Drawing.Point(72, 613);
             this.colorSwapBG.Name = "colorSwapBG";
             this.colorSwapBG.Size = new System.Drawing.Size(34, 23);
             this.colorSwapBG.TabIndex = 2;
@@ -362,7 +362,7 @@
             "hold",
             "old 1",
             "old 2"});
-            this.colorSelectorBox.Location = new System.Drawing.Point(798, 133);
+            this.colorSelectorBox.Location = new System.Drawing.Point(338, 618);
             this.colorSelectorBox.Name = "colorSelectorBox";
             this.colorSelectorBox.Size = new System.Drawing.Size(121, 21);
             this.colorSelectorBox.TabIndex = 5;
@@ -372,7 +372,7 @@
             // 
             this.label1.AllowDrop = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(809, 56);
+            this.label1.Location = new System.Drawing.Point(338, 663);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 49);
             this.label1.TabIndex = 7;
@@ -417,7 +417,7 @@
             // trackBarR
             // 
             this.trackBarR.LargeChange = 2;
-            this.trackBarR.Location = new System.Drawing.Point(819, 192);
+            this.trackBarR.Location = new System.Drawing.Point(149, 616);
             this.trackBarR.Maximum = 15;
             this.trackBarR.Name = "trackBarR";
             this.trackBarR.Size = new System.Drawing.Size(104, 45);
@@ -427,7 +427,7 @@
             // trackBarG
             // 
             this.trackBarG.LargeChange = 2;
-            this.trackBarG.Location = new System.Drawing.Point(819, 243);
+            this.trackBarG.Location = new System.Drawing.Point(149, 667);
             this.trackBarG.Maximum = 15;
             this.trackBarG.Name = "trackBarG";
             this.trackBarG.Size = new System.Drawing.Size(104, 45);
@@ -437,7 +437,7 @@
             // trackBarB
             // 
             this.trackBarB.LargeChange = 2;
-            this.trackBarB.Location = new System.Drawing.Point(819, 295);
+            this.trackBarB.Location = new System.Drawing.Point(149, 719);
             this.trackBarB.Maximum = 15;
             this.trackBarB.Name = "trackBarB";
             this.trackBarB.Size = new System.Drawing.Size(104, 45);
@@ -446,7 +446,7 @@
             // 
             // pal_val_R
             // 
-            this.pal_val_R.Location = new System.Drawing.Point(929, 190);
+            this.pal_val_R.Location = new System.Drawing.Point(259, 614);
             this.pal_val_R.Name = "pal_val_R";
             this.pal_val_R.Size = new System.Drawing.Size(37, 20);
             this.pal_val_R.TabIndex = 31;
@@ -454,7 +454,7 @@
             // 
             // pal_val_G
             // 
-            this.pal_val_G.Location = new System.Drawing.Point(929, 243);
+            this.pal_val_G.Location = new System.Drawing.Point(259, 667);
             this.pal_val_G.Name = "pal_val_G";
             this.pal_val_G.Size = new System.Drawing.Size(37, 20);
             this.pal_val_G.TabIndex = 32;
@@ -462,7 +462,7 @@
             // 
             // pal_val_B
             // 
-            this.pal_val_B.Location = new System.Drawing.Point(929, 295);
+            this.pal_val_B.Location = new System.Drawing.Point(259, 719);
             this.pal_val_B.Name = "pal_val_B";
             this.pal_val_B.Size = new System.Drawing.Size(37, 20);
             this.pal_val_B.TabIndex = 33;
@@ -471,7 +471,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(795, 197);
+            this.label6.Location = new System.Drawing.Point(129, 618);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(15, 13);
             this.label6.TabIndex = 34;
@@ -480,7 +480,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(796, 246);
+            this.label7.Location = new System.Drawing.Point(130, 667);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 13);
             this.label7.TabIndex = 35;
@@ -489,7 +489,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(795, 298);
+            this.label8.Location = new System.Drawing.Point(129, 719);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(14, 13);
             this.label8.TabIndex = 36;
@@ -617,7 +617,7 @@
             // 
             // colorSwapRB
             // 
-            this.colorSwapRB.Location = new System.Drawing.Point(746, 279);
+            this.colorSwapRB.Location = new System.Drawing.Point(72, 642);
             this.colorSwapRB.Name = "colorSwapRB";
             this.colorSwapRB.Size = new System.Drawing.Size(34, 23);
             this.colorSwapRB.TabIndex = 108;
@@ -627,7 +627,7 @@
             // 
             // colorSwapGR
             // 
-            this.colorSwapGR.Location = new System.Drawing.Point(746, 308);
+            this.colorSwapGR.Location = new System.Drawing.Point(72, 671);
             this.colorSwapGR.Name = "colorSwapGR";
             this.colorSwapGR.Size = new System.Drawing.Size(34, 23);
             this.colorSwapGR.TabIndex = 109;
@@ -637,7 +637,7 @@
             // 
             // invertColorsButton
             // 
-            this.invertColorsButton.Location = new System.Drawing.Point(696, 250);
+            this.invertColorsButton.Location = new System.Drawing.Point(22, 613);
             this.invertColorsButton.Name = "invertColorsButton";
             this.invertColorsButton.Size = new System.Drawing.Size(44, 23);
             this.invertColorsButton.TabIndex = 110;
@@ -657,7 +657,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(842, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(664, 24);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1648,7 +1648,7 @@
             // 
             // colorCycleRGB
             // 
-            this.colorCycleRGB.Location = new System.Drawing.Point(696, 279);
+            this.colorCycleRGB.Location = new System.Drawing.Point(22, 642);
             this.colorCycleRGB.Name = "colorCycleRGB";
             this.colorCycleRGB.Size = new System.Drawing.Size(47, 23);
             this.colorCycleRGB.TabIndex = 112;
@@ -1658,7 +1658,7 @@
             // 
             // colorCycleRBG
             // 
-            this.colorCycleRBG.Location = new System.Drawing.Point(696, 308);
+            this.colorCycleRBG.Location = new System.Drawing.Point(22, 671);
             this.colorCycleRBG.Name = "colorCycleRBG";
             this.colorCycleRBG.Size = new System.Drawing.Size(47, 23);
             this.colorCycleRBG.TabIndex = 113;
@@ -1847,6 +1847,7 @@
             // 
             // TabPageClaw
             // 
+            this.TabPageClaw.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageClaw.Controls.Add(this.CLA_portraitLossBox);
             this.TabPageClaw.Controls.Add(this.label31);
             this.TabPageClaw.Controls.Add(this.portrait_claw_blood3);
@@ -1901,7 +1902,6 @@
             this.TabPageClaw.Size = new System.Drawing.Size(597, 559);
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
-            this.TabPageClaw.UseVisualStyleBackColor = true;
             // 
             // portrait_claw_metal5
             // 
@@ -2410,7 +2410,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 537);
+            this.ClientSize = new System.Drawing.Size(664, 773);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.colorCycleRBG);
             this.Controls.Add(this.colorCycleRGB);
