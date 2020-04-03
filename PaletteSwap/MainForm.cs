@@ -592,8 +592,8 @@ namespace PaletteSwap
         }
 
         // todo fix this for new col format
-        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {/*
+        private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -604,30 +604,14 @@ namespace PaletteSwap
             // If the file name is not an empty string open it for saving.
             if (saveFileDialog1.FileName != "")
             {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile();
-                // Saves the Image in the appropriate ImageFormat based upon the
-                // File type selected in the dialog box.
-                // NOTE that the FilterIndex property is one-based.
-                switch (saveFileDialog1.FilterIndex)
+                using (System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile())
                 {
-                    case 1:
-                        string s = currentSprite.ToColFormat();
-                        var b = Encoding.ASCII.GetBytes(s);
-                        fs.Seek(0, SeekOrigin.End);
-                        await fs.WriteAsync(b, 0, b.Length);
-                        s = ":";
-                        b = Encoding.ASCII.GetBytes(s);
-                        await fs.WriteAsync(b, 0, b.Length);
-                        s = currentPortrait.ToColFormat();
-                        b = Encoding.ASCII.GetBytes(s);
-                        await fs.WriteAsync(b, 0, b.Length);
-                        break;
+                    string s = currentCharacter.ToColFormat();
+                    var b = Encoding.ASCII.GetBytes(s); // todo can we replace the palettehelper method with this?
+                    fs.Seek(0, SeekOrigin.End);
+                    await fs.WriteAsync(b, 0, b.Length);
                 }
-
-                fs.Close();
-            }*/
+            }
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
