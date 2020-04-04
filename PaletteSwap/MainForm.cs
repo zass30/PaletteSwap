@@ -681,8 +681,11 @@ namespace PaletteSwap
 
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
-//                    characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
-                    characterSet = CharacterSet.CharacterColorSetFromZipStream(fileStream);
+                    //                    characterColorSet = CharacterColorSet.CharacterColorSetFromZipStream(fileStream);
+                    gameSet = GameSet.GameSetFromZipStream(fileStream);
+                    characterSet = gameSet.characters[0];
+                    currentCharacterType = Character.CHARACTERS.Dictator;
+                    //                    characterSet = CharacterSet.CharacterColorSetFromZipStream(fileStream);
                     resetCurrentCharacterColorFromDropDown();
                     reload_everything();
                     fileStream.Close();
@@ -692,17 +695,17 @@ namespace PaletteSwap
 
         private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            savePatchedRomToolStripMenuItem2_Click(sender, e, ROMSTYLE.us);
+            savePatchedRom(sender, e, ROMSTYLE.us);
         }
 
         private void savePhoenixRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            savePatchedRomToolStripMenuItem2_Click(sender, e, ROMSTYLE.phoenix);
+            savePatchedRom(sender, e, ROMSTYLE.phoenix);
         }
 
         private void saveJapaneseRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            savePatchedRomToolStripMenuItem2_Click(sender, e, ROMSTYLE.japanese);
+            savePatchedRom(sender, e, ROMSTYLE.japanese);
         }
 
         // would like to encapsulate in object 
@@ -806,7 +809,7 @@ namespace PaletteSwap
             c.Show();
         }
 
-        private void savePatchedRomToolStripMenuItem2_Click(object sender, EventArgs e, ROMSTYLE r)
+        private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
         {
 //            ROMSTYLE r = ROMSTYLE.us;
             // Displays a SaveFileDialog so the user can save the Image

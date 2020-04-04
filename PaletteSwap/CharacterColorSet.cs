@@ -92,6 +92,75 @@ namespace PaletteSwap
             return cs;
         }
 
+        public static CharacterSet CharacterColorSetFromStreamsChar(byte[] sprites, byte[] portraits, Character.CHARACTERS characterType)
+        {
+            CharacterSet cs = new CharacterSet();
+            switch (characterType)
+            {
+                case Character.CHARACTERS.Dictator:
+                    cs = GenerateDictatorCharacterSet();
+                    break;
+                case Character.CHARACTERS.Claw:
+                    cs = GenerateClawCharacterSet();
+                    break;
+            }
+            byte[] sprite_bytes = new byte[cs.sprite_length];
+            byte[] portrait_bytes = new byte[cs.portrait_length];
+            for (int i = 0; i < 10; i++)
+            {
+                Array.Copy(sprites, cs.sprite_offset + i * cs.sprite_length, sprite_bytes, 0, cs.sprite_length);
+                Array.Copy(portraits, cs.portrait_offset + i * cs.portrait_length, portrait_bytes, 0, cs.portrait_length);
+                cs.characterColors[i].sprite.LoadStream(sprite_bytes);
+                cs.characterColors[i].portrait.LoadStream(portrait_bytes);
+            }
+            return cs;
+        }
+
+        public static CharacterSet CharacterColorSetFromZipStreamChar(Stream fileStream, Character.CHARACTERS characterType)
+        {
+            CharacterSet cs = new CharacterSet();
+            switch (characterType) {
+                case Character.CHARACTERS.Dictator:
+                    cs = GenerateDictatorCharacterSet();
+                    break;
+                case Character.CHARACTERS.Claw:
+                    cs = GenerateClawCharacterSet();
+                    break;
+            }
+
+            byte[] sprites = new byte[cs.sprite_length];
+            byte[] portraits = new byte[cs.portrait_length];
+
+            var zip = new ZipArchive(fileStream, ZipArchiveMode.Read);
+            foreach (var entry in zip.Entries)
+            {
+                using (var stream = entry.Open())
+                {
+                    if (entry.Name == "sfxe.03c" ||
+                        entry.Name == "sfxjd.03c")
+                    {
+                        using (var memorySubStream = new MemoryStream())
+                        {
+                            stream.CopyTo(memorySubStream);
+                            portraits = memorySubStream.ToArray();
+                        }
+                    }
+
+                    if (entry.Name == "sfxe.04a" ||
+                        entry.Name == "sfxjd.04a")
+                    {
+                        using (var memorySubStream = new MemoryStream())
+                        {
+                            stream.CopyTo(memorySubStream);
+                            sprites = memorySubStream.ToArray();
+                        }
+                    }
+                }
+            }
+
+            return CharacterColorSetFromStreamsChar(sprites, portraits, characterType);
+        }
+
         public static CharacterSet CharacterColorSetFromZipStream(Stream fileStream)
         {
             var cs = GenerateDictatorCharacterSet();
@@ -202,6 +271,13 @@ namespace PaletteSwap
             }
             return b;
         }
-    }
 
+        public static GameSet GameSetFromZipStream(Stream fileStream)
+        {
+            var gs = new GameSet();
+            gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Dictator));
+            gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Claw));
+            return gs;
+        }
+    }
 }
