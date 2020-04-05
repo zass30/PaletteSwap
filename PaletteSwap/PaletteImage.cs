@@ -37,18 +37,6 @@ namespace PaletteSwap
         public Bitmap RemappedImage()
         {
             return RemappedImageFromImage(baseImage);
-            var remap = palette.ColorsFromListOfLabels(labels);
-            SetRemapColorArray(remap);
-            Bitmap b = new Bitmap(baseImage);
-            int width = b.Width;
-            int height = b.Height;
-            Graphics gfb = Graphics.FromImage(b);
-            ImageAttributes imageAttributes = new ImageAttributes();
-            imageAttributes.SetRemapTable(remapTable, ColorAdjustType.Bitmap);
-            gfb.DrawImage(b, new Rectangle(0, 0, width, height),
-                                    0, 0, width, height,
-                                    GraphicsUnit.Pixel, imageAttributes);
-            return b;
         }
 
         public Bitmap RemappedScaledImage()
