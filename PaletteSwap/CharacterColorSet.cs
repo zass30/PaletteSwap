@@ -272,6 +272,46 @@ namespace PaletteSwap
             return b;
         }
 
+        public byte[] sprites_stream04phoenix()
+        {
+            byte[] b = Resources.sfxjd04a;
+            foreach (var character in characters)
+            {
+                b = character.patch_sprites_stream04(b);
+            }
+            return b;
+        }
+
+        public byte[] portraits_stream03phoenix()
+        {
+            byte[] b = Resources.sfxjd03c;
+            foreach (var character in characters)
+            {
+                b = character.patch_portraits_stream03(b);
+            }
+            return b;
+        }
+
+        public byte[] sprites_stream04japanese()
+        {
+            byte[] b = Resources.sfxj04a;
+            foreach (var character in characters)
+            {
+                b = character.patch_sprites_stream04(b);
+            }
+            return b;
+        }
+
+        public byte[] portraits_stream03japanese()
+        {
+            byte[] b = Resources.sfxj03c;
+            foreach (var character in characters)
+            {
+                b = character.patch_portraits_stream03(b);
+            }
+            return b;
+        }
+
         public static GameSet GameSetFromZipStream(Stream fileStream)
         {
             var gs = new GameSet();

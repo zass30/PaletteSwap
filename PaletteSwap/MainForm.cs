@@ -845,15 +845,15 @@ namespace PaletteSwap
                                 _03filename = "sfxj.03c";
                                 _04filename = "sfxj.04a";
 
-                                p_stream = gameSet.portraits_stream03();
-                                s_stream = gameSet.sprites_stream04();
+                                p_stream = gameSet.portraits_stream03japanese();
+                                s_stream = gameSet.sprites_stream04japanese();
                                 break;
                             case ROMSTYLE.phoenix:
                                 _03filename = "sfxjd.03c";
                                 _04filename = "sfxjd.04a";
 
-                                p_stream = gameSet.portraits_stream03();
-                                s_stream = gameSet.sprites_stream04();
+                                p_stream = gameSet.portraits_stream03phoenix();
+                                s_stream = gameSet.sprites_stream04phoenix();
                                 break;
                             default:
                             case ROMSTYLE.us:
