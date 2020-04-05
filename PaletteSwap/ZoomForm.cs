@@ -31,6 +31,7 @@ namespace PaletteSwap
         Bitmap magnified_losstop;
         Bitmap magnified_lossbottom; // special case for loss portrait which is made of two bitmaps
         img_type zoomed_img;
+        PaletteImage currentImage;
 
         public ZoomForm(MainForm parentform)
         {
@@ -43,8 +44,33 @@ namespace PaletteSwap
 
         private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-/*            ColorMap[] remapTable = new ColorMap[0];
+            ColorMap[] remapTable = new ColorMap[0];
             switch (zoomed_img)
+            {
+                case img_type.neutral:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.sprite.GetImage("neutral").RemappedScaledImage();
+                    break;
+                case img_type.psychopunch:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.sprite.GetImage("psychopunch").RemappedScaledImage();
+                    break;
+                case img_type.psychoprep:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.sprite.GetImage("psychoprep").RemappedScaledImage();
+                    break;
+                case img_type.crushertop:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.sprite.GetImage("crushertop").RemappedScaledImage();
+                    break;
+                case img_type.crusherside:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.sprite.GetImage("crusherbottom").RemappedScaledImage();
+                    break;
+                case img_type.victoryportrait:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.portrait.GetImage("victory").RemappedScaledImage();
+                    break;
+                case img_type.lossportrait:
+                    zoomBox.BackgroundImage = mainform.currentCharacter.portrait.GetImage("losstop").RemappedScaledImage();
+                    break;
+            }
+            
+/*            switch (zoomed_img)
             {
                 case img_type.neutral:
                     remapTable = mainform.currentSprite.StandingSpriteColorsRemapTable();

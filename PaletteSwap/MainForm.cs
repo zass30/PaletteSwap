@@ -395,28 +395,36 @@ namespace PaletteSwap
                 z = new ZoomForm(this);
             z.Show();
             img_type i = img_type.neutral;
+            string label;
             switch (p.Name)
             {
                 case "neutralStandBox":
                     i = img_type.neutral;
+                    label = "neutral";
                     break;
                 case "psychopunchBox":
                     i = img_type.psychopunch;
+                    label = "psychopunch";
                     break;
                 case "psychoprepBox":
                     i = img_type.psychoprep;
+                    label = "psychoprep";
                     break;
                 case "crusherBox1":
                     i = img_type.crushertop;
+                    label = "crushertop";
                     break;
                 case "crusherBox2":
                     i = img_type.crushertop;
+                    label = "crusherbottom";
                     break;
                 case "portraitVictoryBox":
                     i = img_type.victoryportrait;
+                    label = "victoryportrait";
                     break;
                 case "portraitLossBox":
                     i = img_type.lossportrait;
+                    label = "lossportrait";
                     break;
             }
             z.displayZoomImage((Bitmap)p.BackgroundImage, i);
