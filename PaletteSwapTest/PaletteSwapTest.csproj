@@ -91,6 +91,7 @@
     <Compile Include="PaletteTest.cs" />
     <Compile Include="PaletteImageTest.cs" />
     <Compile Include="CharacterTest.cs" />
+    <Compile Include="GameSetTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
