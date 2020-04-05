@@ -43,5 +43,40 @@ namespace PaletteSwapTest
             }
         }
 
+        [TestMethod]
+        public void PortraitsStream04Test()
+        {
+            var gs = new GameSet();
+            var bytes_expected = PaletteSwap.Properties.Resources.sfxe03c;
+            var bytes_result = gs.portraits_stream03();
+            for (int i = 0; i < bytes_expected.Length; i++)
+            {
+                Assert.AreEqual(bytes_expected[i], bytes_result[i]);
+            }
+        }
+
+        [TestMethod]
+        public void PortraitsStream04PhoenixTest()
+        {
+            var gs = new GameSet();
+            var bytes_expected = PaletteSwap.Properties.Resources.sfxjd03c;
+            var bytes_result = gs.portraits_stream03phoenix();
+            for (int i = 0; i < bytes_expected.Length; i++)
+            {
+                Assert.AreEqual(bytes_expected[i], bytes_result[i]);
+            }
+        }
+
+        [TestMethod]
+        public void PortraitsStream04JapaneseTest()
+        {
+            var gs = new GameSet();
+            var bytes_expected = PaletteSwap.Properties.Resources.sfxj03c;
+            var bytes_result = gs.portraits_stream03japanese();
+            for (int i = 0; i < bytes_expected.Length; i++)
+            {
+                Assert.AreEqual(bytes_expected[i], bytes_result[i]);
+            }
+        }
     }
 }
