@@ -33,24 +33,29 @@ namespace PaletteSwap
         public MainForm()
         {
             InitializeComponent();
+            CreateCharacterSet();
+            EnableDragAndDrop();
+            SetDefaultDropDown();
+            CreateZoomAndColorForms();
+            loadSpritesAndPalettesFromDropDown();
+        }
+
+        public void CreateCharacterSet()
+        {
             currentCharacterType = Character.CHARACTERS.Dictator;
             characterSet = CharacterSet.GenerateDictatorCharacterSet();
             gameSet.characters.Add(characterSet);
             gameSet.characters.Add(CharacterSet.GenerateClawCharacterSet());
-            EnableDragAndDrop();
-            Setup();
-            loadSpritesAndPalettesFromDropDown();
         }
 
-        public void Setup()
+
+        public void SetDefaultDropDown()
         {
-            for (int i = 0; i < 10; i++)
-            {
-                colorSelectorBox.SelectedIndex = i;
-                loadSpritesAndPalettesFromDropDown();
-                saveCharacterColorToSet();
-            }
             colorSelectorBox.SelectedIndex = DEFAULT_DROPDOWN_INDEX;
+        }
+        
+        public void CreateZoomAndColorForms()
+        {
             z = new ZoomForm(this);
             c = new ColorSetForm(this);
         }
@@ -901,13 +906,13 @@ namespace PaletteSwap
             {
                 currentCharacterType = Character.CHARACTERS.Claw;
                 characterSet = gameSet.characters[1];
-                Setup();
+                SetDefaultDropDown();
             }
             else if (selt.Name == "TabPageDictator")
             {
                 currentCharacterType = Character.CHARACTERS.Dictator;
                 characterSet = gameSet.characters[0];
-                Setup();
+                SetDefaultDropDown();
             }
         }
     }
