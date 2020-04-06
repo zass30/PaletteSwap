@@ -119,8 +119,9 @@ namespace PaletteSwap
             zoomBox.Width = b.Width * scale;
             this.Height = (int) (b.Height * factor * scale);
             this.Width = (int)(b.Width * factor * scale);
-            magnified_sprite = mainform.magnify_sprite(b, scale);
-            zoomBox.BackgroundImage = magnified_sprite;
+            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+//            magnified_sprite = mainform.magnify_sprite(b, scale);
+//            zoomBox.BackgroundImage = magnified_sprite;
             zoomed_img = i;
         }
     }

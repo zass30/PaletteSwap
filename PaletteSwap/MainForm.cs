@@ -432,7 +432,7 @@ namespace PaletteSwap
                 case "portraitVictoryBox":
                     i = img_type.victoryportrait;
                     label = "victoryportrait";
-                    currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victoryportrait");
+                    currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victory");
                     break;
                 case "portraitLossBox": // fix this
                     i = img_type.lossportrait;
