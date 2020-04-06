@@ -52,10 +52,11 @@ namespace PaletteSwap
 
         public void displayZoomImage(Bitmap b, img_type i)
         {
-            zoomBox.Height = b.Height * scale;
-            zoomBox.Width = b.Width * scale;
-            this.Height = (int) (b.Height * factor * scale);
-            this.Width = (int)(b.Width * factor * scale);
+            var scaledImg = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            zoomBox.Height = scaledImg.Height;
+            zoomBox.Width = scaledImg.Width;
+            this.Height = (int)(zoomBox.Height * factor);
+            this.Width = (int)(zoomBox.Width * factor);
             zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
             zoomed_img = i;
         }
