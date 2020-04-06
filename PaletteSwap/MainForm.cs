@@ -410,10 +410,10 @@ namespace PaletteSwap
                 case "psychoprepBox":
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychoprep");
                     break;
-                case "crusherBox1":
+                case "crushertopBox":
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crushertop");
                     break;
-                case "crusherBox2":
+                case "crusherbottomBox":
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crusherbottom");
                     break;
                 case "portraitVictoryBox":

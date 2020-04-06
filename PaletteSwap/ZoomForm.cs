@@ -11,17 +11,6 @@ using System.Windows.Forms;
 
 namespace PaletteSwap
 {
-    public enum img_type
-    {
-        neutral,
-        psychopunch,
-        psychoprep,
-        crushertop,
-        crusherside,
-        victoryportrait,
-        lossportrait
-    }
-
     public partial class ZoomForm : Form
     {
         MainForm mainform;
@@ -45,7 +34,7 @@ namespace PaletteSwap
             zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
         }
 
-        public void displayZoomImage()//Bitmap b, img_type i)
+        public void displayZoomImage()
         {
             var scaledImg = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
             zoomBox.Height = scaledImg.Height;
