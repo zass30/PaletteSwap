@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace PaletteSwap
 {
+
     public partial class ZoomForm : Form
     {
         MainForm mainform;
@@ -31,7 +32,7 @@ namespace PaletteSwap
 
         public void refreshZoomBox()
         {
-            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            //zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
         }
 
         public void displayZoomImage()

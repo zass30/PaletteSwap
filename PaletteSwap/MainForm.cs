@@ -434,12 +434,11 @@ namespace PaletteSwap
                     break;
             }
             z.displayZoomImage();
-
-            z.refreshZoomBox();
         }
 
         private void refreshZoom()
         {
+            return;
             if (currentlySelectedZoomImage == null)
                 return;
             z.refreshZoomBox();
