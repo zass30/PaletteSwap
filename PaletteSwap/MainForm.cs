@@ -21,7 +21,6 @@ namespace PaletteSwap
         public PaletteImage currentlySelectedZoomPaletteImage;
         public Character.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
-        PictureBox currentlySelectedZoomImage;
         PictureBox currentlySelectedColor;
         public GameSet gameSet = new GameSet();
         public CharacterSet characterSet;
@@ -44,9 +43,9 @@ namespace PaletteSwap
         public void CreateCharacterSet()
         {
             currentCharacterType = Character.CHARACTERS.Dictator;
-            characterSet = CharacterSet.GenerateDictatorCharacterSet();
-            gameSet.characters.Add(characterSet);
-            gameSet.characters.Add(CharacterSet.GenerateClawCharacterSet());
+            gameSet.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
+            gameSet.characterDictionary[Character.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
+            characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
         }
 
 
@@ -893,7 +892,7 @@ namespace PaletteSwap
             if (selt.Name == "TabPageClaw")
             {
                 currentCharacterType = Character.CHARACTERS.Claw;
-                characterSet = gameSet.characters[1];
+                characterSet = gameSet.characterDictionary[Character.CHARACTERS.Claw];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();
@@ -901,7 +900,7 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageDictator")
             {
                 currentCharacterType = Character.CHARACTERS.Dictator;
-                characterSet = gameSet.characters[0];
+                characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();

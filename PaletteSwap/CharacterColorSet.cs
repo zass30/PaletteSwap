@@ -247,16 +247,17 @@ namespace PaletteSwap
         }
     }
 
-    // test this
     public class GameSet
     {
         public List<CharacterSet> characters = new List<CharacterSet>();
+        public Dictionary <Character.CHARACTERS, CharacterSet> characterDictionary = new Dictionary<Character.CHARACTERS, CharacterSet>();
 
         public byte[] sprites_stream04()
         {
             byte[] b = Resources.sfxe04a;
-            foreach (var character in characters)
+            foreach (var k in characterDictionary)
             {
+                var character = k.Value;
                 b = character.patch_sprites_stream04(b);
             }
             return b;
@@ -265,49 +266,58 @@ namespace PaletteSwap
         public byte[] portraits_stream03()
         {
             byte[] b = Resources.sfxe03c;
-            foreach (var character in characters)
+            foreach (var k in characterDictionary)
             {
-                b = character.patch_portraits_stream03(b);
+                var character = k.Value;
+                b = character.patch_sprites_stream04(b);
             }
             return b;
+
         }
 
         public byte[] sprites_stream04phoenix()
         {
             byte[] b = Resources.sfxjd04a;
-            foreach (var character in characters)
+            foreach (var k in characterDictionary)
             {
+                var character = k.Value;
                 b = character.patch_sprites_stream04(b);
             }
             return b;
+
         }
 
         public byte[] portraits_stream03phoenix()
         {
             byte[] b = Resources.sfxjd03c;
-            foreach (var character in characters)
+            foreach (var k in characterDictionary)
             {
-                b = character.patch_portraits_stream03(b);
+                var character = k.Value;
+                b = character.patch_sprites_stream04(b);
             }
             return b;
+
         }
 
         public byte[] sprites_stream04japanese()
         {
             byte[] b = Resources.sfxj04a;
-            foreach (var character in characters)
+            foreach (var k in characterDictionary)
             {
+                var character = k.Value;
                 b = character.patch_sprites_stream04(b);
             }
             return b;
+
         }
 
         public byte[] portraits_stream03japanese()
         {
             byte[] b = Resources.sfxj03c;
-            foreach (var character in characters)
+            foreach (var k in characterDictionary)
             {
-                b = character.patch_portraits_stream03(b);
+                var character = k.Value;
+                b = character.patch_sprites_stream04(b);
             }
             return b;
         }
@@ -317,6 +327,8 @@ namespace PaletteSwap
             var gs = new GameSet();
             gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Dictator));
             gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Claw));
+            gs.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Dictator);
+            gs.characterDictionary[Character.CHARACTERS.Claw] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Claw);
             return gs;
         }
     }
