@@ -906,13 +906,17 @@ namespace PaletteSwap
             {
                 currentCharacterType = Character.CHARACTERS.Claw;
                 characterSet = gameSet.characters[1];
+                currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
+                reload_everything();
             }
             else if (selt.Name == "TabPageDictator")
             {
                 currentCharacterType = Character.CHARACTERS.Dictator;
                 characterSet = gameSet.characters[0];
+                currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
+                reload_everything();
             }
         }
     }
