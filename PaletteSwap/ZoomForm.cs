@@ -30,11 +30,6 @@ namespace PaletteSwap
             return;
         }
 
-        public void refreshZoomBox()
-        {
-            //zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
-        }
-
         public void displayZoomImage()
         {
             var scaledImg = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();

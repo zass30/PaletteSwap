@@ -92,7 +92,6 @@ namespace PaletteSwap
                 load_sprite_load_sprite_crusherbottom();
             }
 
-            refreshZoom();
             skip_image_recolors = false;
         }
 
@@ -436,14 +435,6 @@ namespace PaletteSwap
             z.displayZoomImage();
         }
 
-        private void refreshZoom()
-        {
-            return;
-            if (currentlySelectedZoomImage == null)
-                return;
-            z.refreshZoomBox();
-        }
-
         private void trackBarR_Scroll(object sender, EventArgs e)
         {
             pal_val_R.Text = "" + trackBarR.Value;
@@ -558,7 +549,6 @@ namespace PaletteSwap
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updatePortraitColor(c, p);
-            refreshZoom();
         }
 
         private void sprite_BackColorChanged(object sender, EventArgs e)
@@ -568,7 +558,6 @@ namespace PaletteSwap
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updateSpriteColor(c, p);
-            refreshZoom();
         }
 
         private void spriteCrusher_BackColorChanged(object sender, EventArgs e)
@@ -578,7 +567,6 @@ namespace PaletteSwap
             var p = (PictureBox)sender;
             var c = p.BackColor;
             updateSpriteCrusherColor(c, p);
-            refreshZoom();
         }
 
         private void colorSwapBG_Click(object sender, EventArgs e)
