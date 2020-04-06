@@ -11,7 +11,7 @@ namespace PaletteSwap
     {
         public Palette sprite;
         public Palette portrait;
-        public enum CHARACTERS { Dictator, Claw };
+        public enum CHARACTERS { Dictator, Claw, Guile };
         public CHARACTERS characterType;
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
 
@@ -22,8 +22,10 @@ namespace PaletteSwap
                     return "DIC";
                 case CHARACTERS.Claw:
                     return "CLA";
+                case CHARACTERS.Guile:
+                    return "GUI";                    
             }
-            return "";
+            throw new ArgumentException("Invalid Character type");
         }
 
         public static CHARACTERS CharacterEnumFromCode(string s)
@@ -34,6 +36,8 @@ namespace PaletteSwap
                     return CHARACTERS.Claw;
                 case "DIC":
                     return CHARACTERS.Dictator;
+                case "GUI":
+                    return CHARACTERS.Guile;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -274,6 +278,67 @@ namespace PaletteSwap
                 AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
+            }
+            else if (character == CHARACTERS.Guile)
+            {
+                PaletteConfig claSpriteConfig = PaletteConfig.GUILE.GenerateGuileSpriteConfig();
+//                PaletteConfig claPortraitConfig = PaletteConfig.CLAW.GenerateClawPortraitConfig();
+                Palette s = Palette.PaletteFromConfig(claSpriteConfig);
+ //               Palette p = Palette.PaletteFromConfig(claPortraitConfig);
+                c.sprite = s;
+ //               c.portrait = p;
+                byte[] sprite_bytestream = new byte[0];
+  //              byte[] portrait_bytestream = new byte[0];
+
+                switch (button)
+                {
+                    case BUTTONS.lp:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui0sprite);
+              //          portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0portrait);
+                        break;
+                    case BUTTONS.mp:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui1sprite);
+              //          portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1portrait);
+                        break;
+                    case BUTTONS.hp:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui2sprite);
+             //           portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2portrait);
+                        break;
+                    case BUTTONS.lk:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui3sprite);
+            //            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3portrait);
+                        break;
+                    case BUTTONS.mk:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui4sprite);
+             //           portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4portrait);
+                        break;
+                    case BUTTONS.hk:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui5sprite);
+             //           portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5portrait);
+                        break;
+                    case BUTTONS.start:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui6sprite);
+             //           portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6portrait);
+                        break;
+                    case BUTTONS.hold:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui7sprite);
+             //           portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7portrait);
+                        break;
+                    case BUTTONS.old1:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui8sprite);
+             //           portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8portrait);
+                        break;
+                    case BUTTONS.old2:
+                        sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.gui9sprite);
+              //          portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9portrait);
+                        break;
+                }
+                s.LoadStream(sprite_bytestream);
+             //   p.LoadStream(portrait_bytestream);
+
+                AssignImage(s, ImageConfig.GUILE.SPRITE.GenerateGuileStandingNeutralBasePaletteImage(), "neutral");
+            //    AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
+            //    AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
             }
             return c;
         }

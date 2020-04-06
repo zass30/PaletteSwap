@@ -33,6 +33,44 @@ namespace PaletteSwap
             }
         }
 
+        public struct GUILE
+        {
+            public static PaletteConfig GenerateGuileSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateGuileSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateGuileSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "darkcamo2", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "skin5", new List<int>() { 10 } },
+            { "costume1", new List<int>() { 12 } },
+            { "costume2", new List<int>() { 14} },
+            { "costume3", new List<int>() { 16 } },
+            { "costume4", new List<int>() { 18 } },
+            { "flag1", new List<int>() { 20 } },
+            { "flag2", new List<int>() { 22 } },
+            { "hair", new List<int>() { 24 } },
+            { "darkcamo1", new List<int>() { 26 } },
+            { "costume5", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+        }
+
         public struct CLAW
         {
             public static PaletteConfig GenerateClawSpriteConfig()
@@ -110,10 +148,7 @@ namespace PaletteSwap
                     dco.position = 30 + ROWLEN * i;
                     defaultColorOffsets.Add(dco);
                 }
-//                ColorOffset co = new ColorOffset();
-//                co.c = PaletteHelper.MemFormatToColor("0008");
-//                co.position = 20 + ROWLEN * 2;
-//                defaultColorOffsets.Add(co);
+
                 Dictionary<string, List<int>> clawPortraitOffsets = GenerateClawPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = clawPortraitOffsets;
@@ -252,6 +287,41 @@ namespace PaletteSwap
 
     public struct ImageConfig
     {
+        public struct GUILE
+        {
+            public struct SPRITE {
+                public static List<string> GuileStandNeutralLabels()
+                {
+                    return new List<string> { "darkcamo1", "darkcamo2",
+                    "skin1", "skin2", "skin3", "skin4", "skin5",
+                "costume1", "costume2", "costume3", "costume4", "costume5",
+                    "flag1", "flag2", "hair" };
+                }
+
+
+                public static Bitmap GuileStandNeutralBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.GUI_neutral2);
+                }
+
+                public static PaletteImage GenerateGuileStandingNeutralBasePaletteImage()
+                {
+                    return GenerateGuilePaletteImage(GuileStandNeutralBaseImage(), PaletteSwap.Properties.Resources.gui2sprite, GuileStandNeutralLabels());
+                }
+
+                public static PaletteImage GenerateGuilePaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.GUILE.GenerateGuileSpriteOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+            }
+        }
+
         public struct CLAW
         {
             public struct SPRITE

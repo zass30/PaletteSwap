@@ -35,6 +35,39 @@ namespace PaletteSwap
             cs.characterColors[9] = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.old2);
             return cs;
         }
+
+        public static CharacterSet GenerateGuileCharacterSet()
+        {
+            CharacterSet cs = new CharacterSet();
+            cs.sprite_offset = 0x00040E60; // 0x00042E7E - 0x5*0xa2*0xA =40EDA
+            cs.sprite_length = 0xA2;
+            cs.portrait_offset = 0x32B49;  // character id = 3
+            cs.portrait2_offset = 0x34448; 
+            cs.portrait_length = 0x80;
+            cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.lp);
+            cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.mp);
+            cs.characterColors[2] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.hp);
+            cs.characterColors[3] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.lk);
+            cs.characterColors[4] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.mk);
+            cs.characterColors[5] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.hk);
+            cs.characterColors[6] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.start);
+            cs.characterColors[7] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.hold);
+            cs.characterColors[8] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.old1);
+            cs.characterColors[9] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.old2);
+
+            return cs;
+        }
+        // sprite block length
+        // GUI - 40E60
+        // KEN - 414CC
+        // CHU - 41B38
+        // ZAN - 421A4
+        // DHA - 42810
+        // DIC - 42E7C
+        // SAG = 0x434E8
+        // BOX - 0x43B54
+        // CLW00 = 0x441C0 - step of 66C
+        // CAM00 = 0x4482C
         /*36CFE + (Char_ID * 0x500) + (Palette_ID * 0x80)formula to get the address of the 
          * losing portrait additional paletes
          31C48 + (Char_ID * 0x500) + (Palette_ID * 0x80) and this is for the normal portrait, 

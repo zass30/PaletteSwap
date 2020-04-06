@@ -45,6 +45,7 @@ namespace PaletteSwap
             currentCharacterType = Character.CHARACTERS.Dictator;
             gameSet.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
             gameSet.characterDictionary[Character.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
+            gameSet.characterDictionary[Character.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
             characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
         }
 
@@ -80,7 +81,7 @@ namespace PaletteSwap
             skip_image_recolors = true;
             load_portrait_buttons();
             load_sprite_buttons();
-            load_sprite_neutralstandredo();
+            load_sprite_neutralstand();
             load_portrait_victory();
             load_portrait_loss();
             if (currentCharacterType == Character.CHARACTERS.Dictator)
@@ -94,13 +95,26 @@ namespace PaletteSwap
             skip_image_recolors = false;
         }
 
-        private void load_sprite_neutralstandredo()
+        private void load_sprite_neutralstand()
         {
+            switch (currentCharacterType)
+            {
+                case Character.CHARACTERS.Dictator:
+                    neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    break;
+                case Character.CHARACTERS.Claw:
+                    CLA_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    break;
+                case Character.CHARACTERS.Guile:
+                    var s = currentCharacter.sprite.GetBitmap("neutral");
+                    GUI_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    break;
+            }/*
             if (currentCharacterType == Character.CHARACTERS.Dictator)
                 neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
             else if (currentCharacterType == Character.CHARACTERS.Claw)
                 CLA_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
-
+*/           
         }
 
         private void load_sprite_load_sprite_psychopunch()
@@ -522,7 +536,7 @@ namespace PaletteSwap
 
         private void load_sprites()
         {
-            load_sprite_neutralstandredo();
+            load_sprite_neutralstand();
             if (currentCharacterType == Character.CHARACTERS.Dictator)
             {
                 load_sprite_load_sprite_psychopunch();
@@ -901,6 +915,14 @@ namespace PaletteSwap
             {
                 currentCharacterType = Character.CHARACTERS.Dictator;
                 characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+            else if (selt.Name == "TabPageGuile")
+            {
+                currentCharacterType = Character.CHARACTERS.Guile;
+                characterSet = gameSet.characterDictionary[Character.CHARACTERS.Guile];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();

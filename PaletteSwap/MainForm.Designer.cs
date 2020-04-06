@@ -221,6 +221,8 @@
             this.sprite_claw_skin4 = new System.Windows.Forms.PictureBox();
             this.CLA_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
+            this.TabPageGuile = new System.Windows.Forms.TabPage();
+            this.GUI_neutralStandBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -336,6 +338,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_neutralStandBox)).BeginInit();
+            this.TabPageGuile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1732,6 +1736,7 @@
             // 
             this.tabControl1.Controls.Add(this.TabPageDictator);
             this.tabControl1.Controls.Add(this.TabPageClaw);
+            this.tabControl1.Controls.Add(this.TabPageGuile);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -2409,6 +2414,25 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
+            // TabPageGuile
+            // 
+            this.TabPageGuile.Controls.Add(this.GUI_neutralStandBox);
+            this.TabPageGuile.Location = new System.Drawing.Point(4, 22);
+            this.TabPageGuile.Name = "TabPageGuile";
+            this.TabPageGuile.Size = new System.Drawing.Size(597, 559);
+            this.TabPageGuile.TabIndex = 2;
+            this.TabPageGuile.Text = "Guile";
+            this.TabPageGuile.UseVisualStyleBackColor = true;
+            // 
+            // GUI_neutralStandBox
+            // 
+            this.GUI_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox.Location = new System.Drawing.Point(15, 17);
+            this.GUI_neutralStandBox.Name = "GUI_neutralStandBox";
+            this.GUI_neutralStandBox.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox.TabIndex = 123;
+            this.GUI_neutralStandBox.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2554,6 +2578,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_neutralStandBox)).EndInit();
+            this.TabPageGuile.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2752,6 +2778,8 @@
         private System.Windows.Forms.PictureBox portrait_claw_blood2;
         private System.Windows.Forms.PictureBox portrait_claw_blood1;
         private System.Windows.Forms.Label COLlabel;
+        private System.Windows.Forms.TabPage TabPageGuile;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox;
     }
 }
 

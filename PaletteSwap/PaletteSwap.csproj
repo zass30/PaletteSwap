@@ -146,6 +146,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\guile\GUI_neutral2.png" />
+    <Content Include="Resources\guile\GUI_portraitloss2.png" />
+    <Content Include="Resources\guile\GUI_portraitwin2.png" />
     <None Include="Resources\dicportraitloss4.png" />
     <None Include="Resources\dicmp1.png" />
     <None Include="Resources\diccrusher1-5.png" />
