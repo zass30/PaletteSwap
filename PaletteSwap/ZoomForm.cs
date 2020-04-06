@@ -44,6 +44,8 @@ namespace PaletteSwap
 
         private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
+            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            return;
             ColorMap[] remapTable = new ColorMap[0];
             switch (zoomed_img)
             {
@@ -110,7 +112,8 @@ namespace PaletteSwap
 
         public void refreshZoomBox()
         {
-            zoomBox.Refresh();
+            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            //zoomBox.Refresh();
         }
 
         public void displayZoomImage(Bitmap b, img_type i)
