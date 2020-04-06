@@ -18,6 +18,7 @@ namespace PaletteSwap
     {
         ZoomForm z;
         ColorSetForm c;
+        public PaletteImage currentlySelectedZoomPaletteImage;
         public Character.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedZoomImage;
@@ -100,7 +101,7 @@ namespace PaletteSwap
             if (currentCharacterType == Character.CHARACTERS.Dictator)
                 neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
             else if (currentCharacterType == Character.CHARACTERS.Claw)
-                CLAW_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                CLA_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
 
         }
 
@@ -406,30 +407,45 @@ namespace PaletteSwap
                 case "neutralStandBox":
                     i = img_type.neutral;
                     label = "neutral";
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
                     break;
                 case "psychopunchBox":
                     i = img_type.psychopunch;
                     label = "psychopunch";
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychopunch");
                     break;
                 case "psychoprepBox":
                     i = img_type.psychoprep;
                     label = "psychoprep";
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychoprep");
                     break;
                 case "crusherBox1":
                     i = img_type.crushertop;
                     label = "crushertop";
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crushertop");
                     break;
                 case "crusherBox2":
                     i = img_type.crushertop;
                     label = "crusherbottom";
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crusherbottom");
                     break;
                 case "portraitVictoryBox":
                     i = img_type.victoryportrait;
                     label = "victoryportrait";
+                    currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victoryportrait");
                     break;
-                case "portraitLossBox":
+                case "portraitLossBox": // fix this
                     i = img_type.lossportrait;
                     label = "lossportrait";
+                    break;
+                case "CLA_neutralStandBox":
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
+                    break;
+                case "CLA_portraitVictoryBox":
+                    currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victory");
+                    break;
+                case "CLA_portraitLossBox":
+                    currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("loss");
                     break;
             }
             z.displayZoomImage((Bitmap)p.BackgroundImage, i);

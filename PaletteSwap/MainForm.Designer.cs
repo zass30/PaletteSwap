@@ -219,7 +219,7 @@
             this.sprite_claw_skin2 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin3 = new System.Windows.Forms.PictureBox();
             this.sprite_claw_skin4 = new System.Windows.Forms.PictureBox();
-            this.CLAW_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.CLA_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
@@ -335,7 +335,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1833,7 +1833,7 @@
             this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch2);
             this.TabPageDictator.Location = new System.Drawing.Point(4, 22);
             this.TabPageDictator.Name = "TabPageDictator";
-            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageDictator.Size = new System.Drawing.Size(597, 559);
             this.TabPageDictator.TabIndex = 0;
             this.TabPageDictator.Text = "Dictator";
@@ -1888,10 +1888,10 @@
             this.TabPageClaw.Controls.Add(this.sprite_claw_skin2);
             this.TabPageClaw.Controls.Add(this.sprite_claw_skin3);
             this.TabPageClaw.Controls.Add(this.sprite_claw_skin4);
-            this.TabPageClaw.Controls.Add(this.CLAW_neutralStandBox);
+            this.TabPageClaw.Controls.Add(this.CLA_neutralStandBox);
             this.TabPageClaw.Location = new System.Drawing.Point(4, 22);
             this.TabPageClaw.Name = "TabPageClaw";
-            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageClaw.Size = new System.Drawing.Size(597, 559);
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
@@ -2389,15 +2389,15 @@
             this.sprite_claw_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.sprite_claw_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // CLAW_neutralStandBox
+            // CLA_neutralStandBox
             // 
-            this.CLAW_neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.CLAW_neutralStandBox.Location = new System.Drawing.Point(11, 12);
-            this.CLAW_neutralStandBox.Name = "CLAW_neutralStandBox";
-            this.CLAW_neutralStandBox.Size = new System.Drawing.Size(75, 113);
-            this.CLAW_neutralStandBox.TabIndex = 122;
-            this.CLAW_neutralStandBox.TabStop = false;
-            this.CLAW_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            this.CLA_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.CLA_neutralStandBox.Location = new System.Drawing.Point(11, 12);
+            this.CLA_neutralStandBox.Name = "CLA_neutralStandBox";
+            this.CLA_neutralStandBox.Size = new System.Drawing.Size(75, 113);
+            this.CLA_neutralStandBox.TabIndex = 122;
+            this.CLA_neutralStandBox.TabStop = false;
+            this.CLA_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // COLlabel
             // 
@@ -2553,7 +2553,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprite_claw_skin4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2703,7 +2703,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage TabPageDictator;
         private System.Windows.Forms.TabPage TabPageClaw;
-        private System.Windows.Forms.PictureBox CLAW_neutralStandBox;
+        private System.Windows.Forms.PictureBox CLA_neutralStandBox;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox sprite_claw_costume1;
         private System.Windows.Forms.PictureBox sprite_claw_costume2;
