@@ -25,17 +25,12 @@ namespace PaletteSwap
     public partial class ZoomForm : Form
     {
         MainForm mainform;
-        int scale; // how much is image zoomed
         double factor = 1.3; // how much buffer around window and image
-        Bitmap magnified_sprite;
-        img_type zoomed_img;
 
         public ZoomForm(MainForm parentform)
         {
             InitializeComponent();
             mainform = parentform;
-            scale = 4;
-            magnified_sprite = parentform.magnify_sprite(Properties.Resources.dicstand1, scale);
             zoomBox.Paint += new System.Windows.Forms.PaintEventHandler(this.zoomBox_Paint);
         }
 
@@ -50,7 +45,7 @@ namespace PaletteSwap
             zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
         }
 
-        public void displayZoomImage(Bitmap b, img_type i)
+        public void displayZoomImage()//Bitmap b, img_type i)
         {
             var scaledImg = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
             zoomBox.Height = scaledImg.Height;
@@ -58,7 +53,6 @@ namespace PaletteSwap
             this.Height = (int)(zoomBox.Height * factor);
             this.Width = (int)(zoomBox.Width * factor);
             zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
-            zoomed_img = i;
         }
     }
 }

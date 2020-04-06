@@ -396,47 +396,32 @@ namespace PaletteSwap
         private void zoom(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
-            currentlySelectedZoomImage = p;
             if (z.IsDisposed)
                 z = new ZoomForm(this);
             z.Show();
-            img_type i = img_type.neutral;
-            string label;
             switch (p.Name)
             {
                 case "neutralStandBox":
-                    i = img_type.neutral;
-                    label = "neutral";
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
                     break;
                 case "psychopunchBox":
-                    i = img_type.psychopunch;
-                    label = "psychopunch";
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychopunch");
                     break;
                 case "psychoprepBox":
-                    i = img_type.psychoprep;
-                    label = "psychoprep";
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychoprep");
                     break;
                 case "crusherBox1":
-                    i = img_type.crushertop;
-                    label = "crushertop";
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crushertop");
                     break;
                 case "crusherBox2":
-                    i = img_type.crushertop;
-                    label = "crusherbottom";
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crusherbottom");
                     break;
                 case "portraitVictoryBox":
-                    i = img_type.victoryportrait;
-                    label = "victoryportrait";
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victory");
                     break;
                 case "portraitLossBox": // fix this
-                    i = img_type.lossportrait;
-                    label = "lossportrait";
+                //    i = img_type.lossportrait;
+                //    label = "lossportrait";
                     break;
                 case "CLA_neutralStandBox":
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
@@ -448,7 +433,7 @@ namespace PaletteSwap
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("loss");
                     break;
             }
-            z.displayZoomImage((Bitmap)p.BackgroundImage, i);
+            z.displayZoomImage();
 
             z.refreshZoomBox();
         }
