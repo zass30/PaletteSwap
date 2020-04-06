@@ -48,6 +48,17 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void GetClawScaledStandingNeutralImageTest()
+        {
+            var claw = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hold);
+            var s = claw.sprite;
+            var image = s.GetImage("neutral").RemappedImage();
+            var scaledImage = s.GetImage("neutral").RemappedScaledImage();
+            Assert.AreEqual(image.Height * 4, scaledImage.Height);
+            Assert.AreEqual(image.Width * 4, scaledImage.Width);
+        }
+
+        [TestMethod]
         public void ToColFormatTest()
         {
             var claw = Character.createDefaultCharacter(Character.CHARACTERS.Claw, Character.BUTTONS.hold);
