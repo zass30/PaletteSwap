@@ -393,9 +393,6 @@ namespace PaletteSwap
             }
             else
                 MessageBox.Show("Incorrect character type");
-            //            var v = colstr.Split(':');
-            //            currentCharacter.loadFromColFormat(colstr);
-            //            reload_everything();
         }
 
 

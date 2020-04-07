@@ -728,7 +728,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1330, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1320, 40);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2677,6 +2677,7 @@
             this.GUI_sprite_costume5.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_costume5.TabIndex = 160;
             this.GUI_sprite_costume5.TabStop = false;
+            this.GUI_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_hair
@@ -2688,6 +2689,7 @@
             this.GUI_sprite_hair.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_hair.TabIndex = 161;
             this.GUI_sprite_hair.TabStop = false;
+            this.GUI_sprite_hair.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_hair.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label34
@@ -2719,6 +2721,7 @@
             this.GUI_sprite_costume1.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_costume1.TabIndex = 153;
             this.GUI_sprite_costume1.TabStop = false;
+            this.GUI_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_costume2
@@ -2730,6 +2733,7 @@
             this.GUI_sprite_costume2.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_costume2.TabIndex = 154;
             this.GUI_sprite_costume2.TabStop = false;
+            this.GUI_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_costume3
@@ -2741,6 +2745,7 @@
             this.GUI_sprite_costume3.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_costume3.TabIndex = 155;
             this.GUI_sprite_costume3.TabStop = false;
+            this.GUI_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_costume4
@@ -2752,6 +2757,7 @@
             this.GUI_sprite_costume4.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_costume4.TabIndex = 156;
             this.GUI_sprite_costume4.TabStop = false;
+            this.GUI_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_flag1
@@ -2763,6 +2769,7 @@
             this.GUI_sprite_flag1.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_flag1.TabIndex = 157;
             this.GUI_sprite_flag1.TabStop = false;
+            this.GUI_sprite_flag1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_flag1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_flag2
@@ -2774,6 +2781,7 @@
             this.GUI_sprite_flag2.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_flag2.TabIndex = 158;
             this.GUI_sprite_flag2.TabStop = false;
+            this.GUI_sprite_flag2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_flag2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_skin5
@@ -2785,6 +2793,7 @@
             this.GUI_sprite_skin5.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_skin5.TabIndex = 149;
             this.GUI_sprite_skin5.TabStop = false;
+            this.GUI_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_darkcamo1
@@ -2796,6 +2805,7 @@
             this.GUI_sprite_darkcamo1.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_darkcamo1.TabIndex = 150;
             this.GUI_sprite_darkcamo1.TabStop = false;
+            this.GUI_sprite_darkcamo1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_darkcamo1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_darkcamo2
@@ -2807,6 +2817,7 @@
             this.GUI_sprite_darkcamo2.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_darkcamo2.TabIndex = 151;
             this.GUI_sprite_darkcamo2.TabStop = false;
+            this.GUI_sprite_darkcamo2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_darkcamo2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label36
@@ -2828,6 +2839,7 @@
             this.GUI_sprite_skin1.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_skin1.TabIndex = 145;
             this.GUI_sprite_skin1.TabStop = false;
+            this.GUI_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_skin2
@@ -2839,6 +2851,7 @@
             this.GUI_sprite_skin2.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_skin2.TabIndex = 146;
             this.GUI_sprite_skin2.TabStop = false;
+            this.GUI_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_skin3
@@ -2850,6 +2863,7 @@
             this.GUI_sprite_skin3.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_skin3.TabIndex = 147;
             this.GUI_sprite_skin3.TabStop = false;
+            this.GUI_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GUI_sprite_skin4
@@ -2861,13 +2875,14 @@
             this.GUI_sprite_skin4.Size = new System.Drawing.Size(46, 44);
             this.GUI_sprite_skin4.TabIndex = 148;
             this.GUI_sprite_skin4.TabStop = false;
+            this.GUI_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GUI_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1330, 1477);
+            this.ClientSize = new System.Drawing.Size(1320, 1429);
             this.Controls.Add(this.COLlabel);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.colorCycleRBG);
@@ -2889,6 +2904,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MinimumSize = new System.Drawing.Size(1346, 1500);
             this.Name = "MainForm";
             this.Text = "PaletteSwapper";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
