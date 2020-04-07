@@ -36,8 +36,8 @@ namespace PaletteSwap
             CreateCharacterSet();
             EnableDragAndDrop();
             SetDefaultDropDown();
-            CreateZoomAndColorForms();
             loadSpritesAndPalettesFromDropDown();
+            CreateZoomAndColorForms();
         }
 
         public void CreateCharacterSet()
@@ -335,6 +335,8 @@ namespace PaletteSwap
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadSpritesAndPalettesFromDropDown();
+            if (z != null) // not working for some reason, should reload
+            z.displayZoomImage();
         }
 
         private void label1_DragEnter(object sender, DragEventArgs e)
@@ -443,6 +445,9 @@ namespace PaletteSwap
                     break;
                 case "CLA_portraitLossBox":
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("loss");
+                    break;
+                case "GUI_neutralStandBox":
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
                     break;
             }
             z.displayZoomImage();

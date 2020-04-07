@@ -2432,6 +2432,7 @@
             this.GUI_neutralStandBox.Size = new System.Drawing.Size(75, 90);
             this.GUI_neutralStandBox.TabIndex = 123;
             this.GUI_neutralStandBox.TabStop = false;
+            this.GUI_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // MainForm
             // 
