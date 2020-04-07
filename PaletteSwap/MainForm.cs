@@ -764,7 +764,8 @@ namespace PaletteSwap
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
                     gameSet = GameSet.GameSetFromZipStream(fileStream);
-                    characterSet = gameSet.characters[0];
+//                    characterSet = gameSet.characters[0];
+                    characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
                     currentCharacterType = Character.CHARACTERS.Dictator;
                     resetCurrentCharacterColorFromDropDown();
                     reload_everything();

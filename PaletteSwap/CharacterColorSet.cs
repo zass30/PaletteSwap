@@ -136,6 +136,9 @@ namespace PaletteSwap
                 case Character.CHARACTERS.Claw:
                     cs = GenerateClawCharacterSet();
                     break;
+                case Character.CHARACTERS.Guile:
+                    cs = GenerateGuileCharacterSet();
+                    break;
             }
             byte[] sprite_bytes = new byte[cs.sprite_length];
             byte[] portrait_bytes = new byte[cs.portrait_length];
@@ -358,10 +361,11 @@ namespace PaletteSwap
         public static GameSet GameSetFromZipStream(Stream fileStream)
         {
             var gs = new GameSet();
-            gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Dictator));
-            gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Claw));
+//            gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Dictator));
+//            gs.characters.Add(CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Claw));
             gs.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Dictator);
             gs.characterDictionary[Character.CHARACTERS.Claw] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Claw);
+            gs.characterDictionary[Character.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, Character.CHARACTERS.Guile);
             return gs;
         }
     }
