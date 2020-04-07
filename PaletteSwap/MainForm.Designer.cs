@@ -694,7 +694,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1328, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1330, 40);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2598,7 +2598,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1328, 1458);
+            this.ClientSize = new System.Drawing.Size(1330, 1477);
             this.Controls.Add(this.COLlabel);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.colorCycleRBG);

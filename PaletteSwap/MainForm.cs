@@ -18,6 +18,8 @@ namespace PaletteSwap
     {
         ZoomForm z;
         ColorSetForm c;
+        public Palette currentlyZoomedPalette;
+        public string currentlyZoomedLabel;
         public PaletteImage currentlySelectedZoomPaletteImage;
         public Character.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
@@ -335,6 +337,8 @@ namespace PaletteSwap
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadSpritesAndPalettesFromDropDown();
+            if (currentlyZoomedLabel != null)
+                z.displayZoomImage();
         }
 
         private void label1_DragEnter(object sender, DragEventArgs e)
@@ -414,21 +418,33 @@ namespace PaletteSwap
             switch (p.Name)
             {
                 case "neutralStandBox":
+                    currentlyZoomedLabel = "neutral";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
                     break;
                 case "psychopunchBox":
+                    currentlyZoomedLabel = "psychopunch";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychopunch");
                     break;
                 case "psychoprepBox":
+                    currentlyZoomedLabel = "psychoprep";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("psychoprep");
                     break;
                 case "crushertopBox":
+                    currentlyZoomedLabel = "crushertop";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crushertop");
                     break;
                 case "crusherbottomBox":
+                    currentlyZoomedLabel = "crusherbottom";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("crusherbottom");
                     break;
                 case "portraitVictoryBox":
+                    currentlyZoomedLabel = "victory";
+                    currentlyZoomedPalette = currentCharacter.portrait;
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victory");
                     break;
                 case "portraitLossBox": // fix this
@@ -436,15 +452,23 @@ namespace PaletteSwap
                 //    label = "lossportrait";
                     break;
                 case "CLA_neutralStandBox":
+                    currentlyZoomedLabel = "neutral";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
                     break;
                 case "CLA_portraitVictoryBox":
+                    currentlyZoomedLabel = "victory";
+                    currentlyZoomedPalette = currentCharacter.portrait;
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("victory");
                     break;
                 case "CLA_portraitLossBox":
+                    currentlyZoomedLabel = "loss";
+                    currentlyZoomedPalette = currentCharacter.portrait;
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("loss");
                     break;
                 case "GUI_neutralStandBox":
+                    currentlyZoomedLabel = "neutral";
+                    currentlyZoomedPalette = currentCharacter.sprite;
                     currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
                     break;
 
