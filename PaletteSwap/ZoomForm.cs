@@ -26,18 +26,38 @@ namespace PaletteSwap
 
         private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            //var scaledImg = mainform.currentCharacter.portrait.GetImage(mainform.currentlyZoomedLabel).RemappedScaledImage();
+            var scaledImg = getZoomedImage();
+            zoomBox.BackgroundImage = scaledImg;
+//            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
             return;
+        }
+
+        private Bitmap getZoomedImage()
+        {
+            var label = mainform.currentlyZoomedLabel;
+            Palette palette;
+            if (label == "victory" || label == "loss")
+            {
+                palette = mainform.currentCharacter.portrait;
+            }
+            else
+            {
+                palette = mainform.currentCharacter.sprite;
+            }
+
+            var scaledImg = palette.GetImage(mainform.currentlyZoomedLabel).RemappedScaledImage();
+            return scaledImg;
         }
 
         public void displayZoomImage()
         {
-            var scaledImg = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            var scaledImg = getZoomedImage();
             zoomBox.Height = scaledImg.Height;
             zoomBox.Width = scaledImg.Width;
             this.Height = (int)(zoomBox.Height * factor);
             this.Width = (int)(zoomBox.Width * factor);
-            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
+            zoomBox.BackgroundImage = scaledImg;
         }
     }
 }
