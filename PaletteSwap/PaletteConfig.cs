@@ -8,7 +8,8 @@ using System.Windows.Forms.ComponentModel.Com2Interop;
 
 namespace PaletteSwap
 {
-
+    // new character config that contains
+    // addresses in rom for sprites/portraits
     public struct PaletteConfig
     {
         public Dictionary<string, List<int>> labelOffsets;
@@ -69,6 +70,65 @@ namespace PaletteSwap
            };
                 return spriteOffsets;
             }
+
+            public static PaletteConfig GenerateGuilePortraitConfig()
+            {
+                int ROWLEN = 32;
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9900");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> guilePortraitOffsets = GenerateGuilePortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = guilePortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateGuilePortraitOffsets()
+            {
+                int ROWLEN = 32;
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+        {
+            { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+            { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+            { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+            { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+            { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+            { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+            { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+            { "chain1", new List<int>() { 14, ROWLEN * 3 + 14, } },
+            { "chain2", new List<int>() { 16, ROWLEN * 3 + 16, } },
+            { "chain3", new List<int>() { 18, ROWLEN * 3 + 18, } },
+            { "chain4", new List<int>() { 20, ROWLEN * 3 + 20, } },
+            { "chain5", new List<int>() { 22, ROWLEN * 3 + 22, } },
+            { "shirt1", new List<int>() { 24 } },
+            { "shirt2", new List<int>() { 26 } },
+            { "shirt3", new List<int>() { 28 } },
+            { "hair1", new List<int>() { ROWLEN * 1 + 14 } },
+            { "hair2", new List<int>() { ROWLEN * 1 + 16 } },
+            { "hair3", new List<int>() { ROWLEN * 1 + 18 } },
+            { "hair4", new List<int>() { ROWLEN * 1 + 20 } },
+            { "hair5", new List<int>() { ROWLEN * 1 + 22 } },
+            { "bruise1", new List<int>() { ROWLEN * 2 + 14 } },
+            { "bruise2", new List<int>() { ROWLEN * 2 + 16 } },
+            { "bruise3", new List<int>() { ROWLEN * 2 + 18 } },
+            { "bruise4", new List<int>() { ROWLEN * 2 + 20 } },
+            { "bruise5", new List<int>() { ROWLEN * 2 + 22 } },
+            { "blood1", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+            { "blood2", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+            { "blood3", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+        };
+                return portraitOffsets;
+            }
         }
 
         public struct CLAW
@@ -108,6 +168,28 @@ namespace PaletteSwap
                 return spriteOffsets;
             }
 
+            public static PaletteConfig GenerateClawPortraitConfig()
+            {
+                int ROWLEN = 32;
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> clawPortraitOffsets = GenerateClawPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = clawPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
             public static Dictionary<string, List<int>> GenerateClawPortraitOffsets()
             {
                 int ROWLEN = 32;
@@ -135,29 +217,8 @@ namespace PaletteSwap
         };
                 return portraitOffsets;
             }
-
-            public static PaletteConfig GenerateClawPortraitConfig()
-            {
-                int ROWLEN = 32;
-                int MEMLEN = ROWLEN * 4;
-                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
-                for (int i = 0; i < 4; i++)
-                {
-                    ColorOffset dco = new ColorOffset();
-                    dco.c = PaletteHelper.MemFormatToColor("0A00");
-                    dco.position = 30 + ROWLEN * i;
-                    defaultColorOffsets.Add(dco);
-                }
-
-                Dictionary<string, List<int>> clawPortraitOffsets = GenerateClawPortraitOffsets();
-                PaletteConfig pc = new PaletteConfig();
-                pc.labelOffsets = clawPortraitOffsets;
-                pc.defaultColorOffsets = defaultColorOffsets;
-                pc.unusedOffsets = new List<int>() { };
-                pc.streamLength = MEMLEN;
-                return pc;
-            }
         }
+
         public struct DICTATOR
         {
             public static PaletteConfig GenerateDictatorSpriteConfig()
@@ -314,6 +375,51 @@ namespace PaletteSwap
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.GUILE.GenerateGuileSpriteOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+            }
+
+            public struct PORTRAIT
+            {
+                public static List<string> GuilePortraitLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4",
+                        "skin5", "skin6", "skin7",
+                        "chain1", "chain2", "chain3", "chain4", "chain5",
+                        "shirt1","shirt2", "shirt3",
+                        "hair1", "hair2", "hair3", "hair4", "hair5",
+                        "bruise1", "bruise2", "bruise3", "bruise4", "bruise5",
+                "blood1", "blood2", "blood3", };
+                }                
+
+                public static Bitmap GuileVictoryPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.GUI_portraitwin2);
+                }
+
+                public static Bitmap GuileLossPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.GUI_portraitloss2);
+                }
+
+                public static PaletteImage GenerateGuileVictoryBasePaletteImage()
+                {
+                    return GenerateGuilePortraitPaletteImage(GuileVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.gui2portrait, GuilePortraitLabels());
+                }
+
+                public static PaletteImage GenerateGuileLossBasePaletteImage()
+                {
+                    return GenerateGuilePortraitPaletteImage(GuileLossPortraitBaseImage(), PaletteSwap.Properties.Resources.gui2portrait, GuilePortraitLabels());
+                }
+
+                public static PaletteImage GenerateGuilePortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.GUILE.GenerateGuilePortraitOffsets(),
                         labels);
                     PaletteImage p = new PaletteImage(base_image, c);
                     p.labels = labels;

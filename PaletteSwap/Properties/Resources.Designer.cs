@@ -731,11 +731,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FF0F CA0F 980F 760E 550C 440A 2308 FF0F CC0C AA0A 8808 6606 9C0E 690B 3608 0A00 FF0F CA0F 980F 760E 550C 440A 2308 FB0F E70F C00F A00E 900C 000E 000C 0009 0A00 FF0F CA0F 980F 760E 550C 440A 2308 BC0F AB0D 890B 6709 4506 000E 000C 0009 0000 FF0F CA0F 980F 760E 550C 440A 2308 FF0F CC0C AA0A 8808 6606 000E 000C 0009 0000.
+        /// </summary>
+        public static string gui0portrait {
+            get {
+                return ResourceManager.GetString("gui0portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0000 CA0F 980F 760E 550C 3409 CE0F 9C0E 690B 4608 400F 7F04 D80F 2005 2306 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 0B00 9B09 8B08 7B07 6B06 5B05 8B08 6B06 4B04 2B02 5B05 CB0C 8B08 4B04 0B00 0000 0800 7807 6806 5805 4804 3803 6806 4804 2802 0800 3803 A80A 6806 2802 0800 0000 0400 5705 4604 3603 2502 1501 4604 2502 0400 0400 1501 6806 4604 0400 0400 0000.
         /// </summary>
         public static string gui0sprite {
             get {
                 return ResourceManager.GetString("gui0sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F DA0F B80F 860D 640A 5008 4006 FF0F CC0C AA0A 8808 6606 860D 640A 2108 9900 FD0F DA0F B80F 860D 640A 5008 4006 FA0F E00F C00F A00E 900C 000E 000C 0009 9900 FD0F DA0F B80F 860D 640A 5008 4006 BC0F AA0D 880B 6709 4506 000E 000C 0009 9900 FD0F DA0F B80F 860D 640A 5008 4006 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui1portrait {
+            get {
+                return ResourceManager.GetString("gui1portrait", resourceCulture);
             }
         }
         
@@ -749,11 +767,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FD0F DA0F B80E 960D 740B 5008 4106 FF0F CC0C AA0A 8808 6606 9F04 6D02 3901 9900 FD0F DA0F B80E 960D 740B 5008 4106 FA0F D00F B00E 900D 800B 000E 000C 0009 9900 FD0F DA0F B80E 960D 740B 5008 4106 BC0F AB0D 890B 6709 4506 000E 000C 0009 9900 FD0F DA0F B80E 960D 740B 5008 4106 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui2portrait {
+            get {
+                return ResourceManager.GetString("gui2portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3006 FD0F DA0F B80F 860D 640A CF07 9F04 6D02 3901 000C 7F04 D00F 4209 2601 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 0B00 9B09 8B08 7B07 6B06 5B05 8B08 6B06 4B04 2B02 5B05 CB0C 8B08 4B04 0B00 0000 0800 7807 6806 5805 4804 3803 6806 4804 2802 0800 3803 A80A 6806 2802 0800 0000 0400 5705 4604 3603 2502 1501 4604 2502 0400 0400 1501 6806 4604 0400 0400 0000.
         /// </summary>
         public static string gui2sprite {
             get {
                 return ResourceManager.GetString("gui2sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F C90F A70F 840E 620C 4009 0007 FF0F CC0C AA0A 8808 6606 780F 450E 000B 9900 FD0F C90F A70F 840E 620C 4009 0007 FC0F D80F C70F A60E 840C 000E 000C 0009 9900 FD0F C90F A70F 840E 620C 4009 0007 BC0F 9A0E 780B 5709 4507 000E 000C 0009 9900 FD0F C90F A70F 840E 620C 4009 0007 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui3portrait {
+            get {
+                return ResourceManager.GetString("gui3portrait", resourceCulture);
             }
         }
         
@@ -767,11 +803,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FD0F DA0F B80E 960D 740B 5008 4106 FF0F CC0C AA0A 8808 6606 7906 6704 5603 9900 FD0F DA0F B80E 960D 740B 5008 4106 ED0F DB0F B90E 960D 840C 000E 000C 0009 9900 FD0F DA0F B80E 960D 740B 5008 4106 BC0F AB0D 890B 6709 4506 000E 000C 0009 9900 FD0F DA0F B80E 960D 740B 5008 4106 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui4portrait {
+            get {
+                return ResourceManager.GetString("gui4portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 4006 FD0F DA0F B80F 860D 640A AC09 7906 5603 2302 000C 7F04 ED0E 5308 1101 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 0B00 9B09 8B08 7B07 6B06 5B05 8B08 6B06 4B04 2B02 5B05 CB0C 8B08 4B04 0B00 0000 0800 7807 6806 5805 4804 3803 6806 4804 2802 0800 3803 A80A 6806 2802 0800 0000 0400 5705 4604 3603 2502 1501 4604 2502 0400 0400 1501 6806 4604 0400 0400 0000.
         /// </summary>
         public static string gui4sprite {
             get {
                 return ResourceManager.GetString("gui4sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F CB0F A70F 860E 750D 640B 4108 FF0F CC0C AA0A 8808 6606 B10E 810D 610B 9900 FE0F CB0F A70F 860E 750D 640B 4108 CD0F AB0F 990E 870D 750C 000E 000C 0009 9900 FE0F CB0F A70F 860E 750D 640B 4108 BC0F 9A0E 780B 5709 4507 000E 000C 0009 9900 FE0F CB0F A70F 860E 750D 640B 4108 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui5portrait {
+            get {
+                return ResourceManager.GetString("gui5portrait", resourceCulture);
             }
         }
         
@@ -785,11 +839,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EA0F C90F A70E 860C 650A 5008 4106 FF0F CC0C AA0A 8808 6606 DC0E BA0C 980A 9900 EA0F C90F A70E 860C 650A 5008 4106 FC0F E90F C80F A60E 840C 000E 000C 0009 9900 EA0F C90F A70E 860C 650A 5008 4106 CA0F A90D 880B 6709 4506 000E 000C 0009 9900 EA0F C90F A70E 860C 650A 5008 4106 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui6portrait {
+            get {
+                return ResourceManager.GetString("gui6portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 4006 EA0F C90F A70E 860C 650A FF0F DC0D BA0C A90B 320E AB04 E90F 5008 8609 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 0B00 9B09 8B08 7B07 6B06 5B05 8B08 6B06 4B04 2B02 5B05 CB0C 8B08 4B04 0B00 0000 0800 7807 6806 5805 4804 3803 6806 4804 2802 0800 3803 A80A 6806 2802 0800 0000 0400 5705 4604 3603 2502 1501 4604 2502 0400 0400 1501 6806 4604 0400 0400 0000.
         /// </summary>
         public static string gui6sprite {
             get {
                 return ResourceManager.GetString("gui6sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DB0F B90E 970C 750A 6009 5008 3106 FF0F CC0C AA0A 8808 6606 AE0A 8B07 6805 9900 DB0F B90E 970C 750A 6009 5008 3106 B90F 970F 850E 640D 500B 000E 000C 0009 9900 DB0F B90E 970C 750A 6009 5008 3106 AA0E 990C 780A 5708 4607 000E 000C 0009 9900 DB0F B90E 970C 750A 6009 5008 3106 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui7portrait {
+            get {
+                return ResourceManager.GetString("gui7portrait", resourceCulture);
             }
         }
         
@@ -803,11 +875,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FF0F DB0F B80E 970D 750B 6309 4106 FF0F CC0C AA0A 8808 6606 D908 9706 7404 9900 FF0F DB0F B80E 970D 750B 6309 4106 FB0F E70F C00F A00E 900C 000E 000C 0009 9900 FF0F DB0F B80E 970D 750B 6309 4106 BC0F AB0D 890B 6709 4506 000E 000C 0009 9900 FF0F DB0F B80E 970D 750B 6309 4106 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui8portrait {
+            get {
+                return ResourceManager.GetString("gui8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 4006 FF0F D90F B80F 970E 750B FA0D D908 9706 7404 500F 7D00 E00F 6409 5000 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 0B00 9B09 8B08 7B07 6B06 5B05 8B08 6B06 4B04 2B02 5B05 CB0C 8B08 4B04 0B00 0000 0800 7807 6806 5805 4804 3803 6806 4804 2802 0800 3803 A80A 6806 2802 0800 0000 0400 5705 4604 3603 2502 1501 4604 2502 0400 0400 1501 6806 4604 0400 0400 0000.
         /// </summary>
         public static string gui8sprite {
             get {
                 return ResourceManager.GetString("gui8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F DB0F B80E 970D 750B 6309 4106 FF0F CC0C AA0A 8808 6606 D908 9706 7404 9900 FF0F DB0F B80E 970D 750B 6309 4106 FB0F E70F C00F A00E 900C 000E 000C 0009 9900 FF0F DB0F B80E 970D 750B 6309 4106 BC0F AB0D 890B 6709 4506 000E 000C 0009 9900 FF0F DB0F B80E 970D 750B 6309 4106 FF0F CC0C AA0A 8808 6606 000E 000C 0009 9900.
+        /// </summary>
+        public static string gui9portrait {
+            get {
+                return ResourceManager.GetString("gui9portrait", resourceCulture);
             }
         }
         

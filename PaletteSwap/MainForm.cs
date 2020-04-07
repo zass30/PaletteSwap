@@ -134,10 +134,23 @@ namespace PaletteSwap
 
         private void load_portrait_victory()
         {
+            switch (currentCharacterType)
+            {
+                case Character.CHARACTERS.Dictator:
+                    portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                    break;
+                case Character.CHARACTERS.Claw:
+                    CLA_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory"); 
+                    break;
+                case Character.CHARACTERS.Guile:
+                    GUI_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                    break;
+            }
+            /*
             if (currentCharacterType == Character.CHARACTERS.Dictator)
                 portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
             else if (currentCharacterType == Character.CHARACTERS.Claw)
-                CLA_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                CLA_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");*/
         }
 
         private void load_portrait_loss()
@@ -153,7 +166,8 @@ namespace PaletteSwap
         }
             else if (currentCharacterType == Character.CHARACTERS.Claw)
                 CLA_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
-
+            else if (currentCharacterType == Character.CHARACTERS.Guile)
+                GUI_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
         }
 
         private void load_sprite_buttons()
@@ -317,6 +331,42 @@ namespace PaletteSwap
                     portrait_claw_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
                     portrait_claw_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
                     portrait_claw_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+                    break;
+
+                case Character.CHARACTERS.Guile:
+                    GUI_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    GUI_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    GUI_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    GUI_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    GUI_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    GUI_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    GUI_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    GUI_portrait_chain1.BackColor = currentCharacter.portrait.GetColor("chain1");
+                    GUI_portrait_chain2.BackColor = currentCharacter.portrait.GetColor("chain2");
+                    GUI_portrait_chain3.BackColor = currentCharacter.portrait.GetColor("chain3");
+                    GUI_portrait_chain4.BackColor = currentCharacter.portrait.GetColor("chain4");
+                    GUI_portrait_chain5.BackColor = currentCharacter.portrait.GetColor("chain5");
+
+                    GUI_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
+                    GUI_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
+                    GUI_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
+                    GUI_portrait_hair4.BackColor = currentCharacter.portrait.GetColor("hair4");
+                    GUI_portrait_hair5.BackColor = currentCharacter.portrait.GetColor("hair5");
+
+                    GUI_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
+                    GUI_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
+                    GUI_portrait_bruise3.BackColor = currentCharacter.portrait.GetColor("bruise3");
+                    GUI_portrait_bruise4.BackColor = currentCharacter.portrait.GetColor("bruise4");
+                    GUI_portrait_bruise5.BackColor = currentCharacter.portrait.GetColor("bruise5");
+
+                    GUI_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    GUI_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    GUI_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
+                    GUI_portrait_shirt1.BackColor = currentCharacter.portrait.GetColor("shirt1");
+                    GUI_portrait_shirt2.BackColor = currentCharacter.portrait.GetColor("shirt2");
+                    GUI_portrait_shirt3.BackColor = currentCharacter.portrait.GetColor("shirt3");
 
                     break;
             }
@@ -451,16 +501,16 @@ namespace PaletteSwap
                 //    label = "lossportrait";
                     break;
                 case "CLA_neutralStandBox":
+                case "GUI_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "CLA_portraitVictoryBox":
+                case "GUI_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "CLA_portraitLossBox":
+                case "GUI_portraitLossBox":
                     currentlyZoomedLabel = "loss";
-                    break;
-                case "GUI_neutralStandBox":
-                    currentlyZoomedLabel = "neutral";
                     break;
             }
             z.displayZoomImage();
@@ -534,14 +584,14 @@ namespace PaletteSwap
             currentCharacter.portrait.SetColor(label, c);
 
             load_portrait_victory();
-                load_portrait_loss();
+            load_portrait_loss();
         }
 
         private string extractLabel(string s)
         {
-                Match m = rx.Match(s);
-                string label = m.Value;
-                return label;
+            Match m = rx.Match(s);
+            string label = m.Value;
+            return label;
         }
 
         private void updateSpriteColor(Color c, PictureBox p)

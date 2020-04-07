@@ -39,9 +39,9 @@ namespace PaletteSwap
         public static CharacterSet GenerateGuileCharacterSet()
         {
             CharacterSet cs = new CharacterSet();
-            cs.sprite_offset = 0x00040E60; // 0x00042E7E - 0x5*0xa2*0xA =40EDA
+            cs.sprite_offset = 0x00040E60; // move this to a config
             cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x32B49;  // character id = 3
+            cs.portrait_offset = 0x32B49;  
             cs.portrait2_offset = 0x34448; 
             cs.portrait_length = 0x80;
             cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.lp);
