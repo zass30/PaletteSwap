@@ -36,8 +36,8 @@ namespace PaletteSwap
             CreateCharacterSet();
             EnableDragAndDrop();
             SetDefaultDropDown();
-            CreateZoomAndColorForms();
             loadSpritesAndPalettesFromDropDown();
+            CreateZoomAndColorForms();
         }
 
         public void CreateCharacterSet()
@@ -444,6 +444,10 @@ namespace PaletteSwap
                 case "CLA_portraitLossBox":
                     currentlySelectedZoomPaletteImage = currentCharacter.portrait.GetImage("loss");
                     break;
+                case "GUI_neutralStandBox":
+                    currentlySelectedZoomPaletteImage = currentCharacter.sprite.GetImage("neutral");
+                    break;
+
             }
             z.displayZoomImage();
         }
