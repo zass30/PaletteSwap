@@ -152,21 +152,11 @@ namespace PaletteSwapTest
         {
             byte[] expected = new byte[] { 0x00, 0x00, 0x00, 0x0F };
             byte[] result = PaletteHelper.StringToByteStream("0000 000F");
-
-            for (int i = 0; i < result.Length; i++)
-            {
-                Assert.AreEqual(expected[i], result[i]);
-            }
-
+            CollectionAssert.AreEqual(expected, result);
 
             expected = new byte[] { 0x05, 0x00, 0x00, 0x07, 0x08, 0x00, 0x2A, 0x02 };
             result = PaletteHelper.StringToByteStream("0500 0007 0800 2A02");
-
-            for (int i = 0; i < result.Length; i++)
-            {
-                Assert.AreEqual(expected[i], result[i]);
-            }
-
+            CollectionAssert.AreEqual(expected, result);
         }
 
         [TestMethod]
