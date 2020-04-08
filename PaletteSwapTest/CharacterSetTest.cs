@@ -16,17 +16,11 @@ namespace PaletteSwapTest
             var characterSet = new CharacterSet();
             byte[] b = characterSet.sprites_stream04();
             byte[] b_expected = Resources.sfxe04a;
-            for (int i = 0; i < b_expected.Length; i++)
-            {
-                Assert.AreEqual(b_expected[i], b[i]);
-            }
+            CollectionAssert.AreEqual(b_expected, b);
 
             b = characterSet.portraits_stream03();
             b_expected = Resources.sfxe03c;
-            for (int i = 0; i < b_expected.Length; i++)
-            {
-                Assert.AreEqual(b_expected[i], b[i]);
-            }
+            CollectionAssert.AreEqual(b_expected, b);
         }
 
         [TestMethod]
@@ -38,22 +32,13 @@ namespace PaletteSwapTest
             var byte_result = new Byte[byte_expected.Length];
             Array.Copy(characterSet.sprites_stream04(), characterSet.sprite_offset,
                 byte_result, 0, byte_result.Length);
-
-            for (int i = 0; i< byte_expected.Length; i++)
-            {
-                Assert.AreEqual(byte_expected[i], byte_result[i]);
-            }
+            CollectionAssert.AreEqual(byte_expected, byte_result);
 
             byte_expected = characterSet.characterColors[0].portrait.ToByteStream();
             byte_result = new Byte[byte_expected.Length];
             Array.Copy(characterSet.portraits_stream03(), characterSet.portrait_offset,
                 byte_result, 0, byte_result.Length);
-
-            for (int i = 0; i < byte_expected.Length; i++)
-            {
-                Assert.AreEqual(byte_expected[i], byte_result[i]);
-            }
-
+            CollectionAssert.AreEqual(byte_expected, byte_result);
         }
 
         [TestMethod]
@@ -65,22 +50,13 @@ namespace PaletteSwapTest
             var byte_result = new Byte[byte_expected.Length];
             Array.Copy(characterSet.sprites_stream04(), characterSet.sprite_offset,
                 byte_result, 0, byte_result.Length);
-
-            for (int i = 0; i < byte_expected.Length; i++)
-            {
-                Assert.AreEqual(byte_expected[i], byte_result[i]);
-            }
+            CollectionAssert.AreEqual(byte_expected, byte_result);
 
             byte_expected = characterSet.characterColors[0].portrait.ToByteStream();
             byte_result = new Byte[byte_expected.Length];
             Array.Copy(characterSet.portraits_stream03(), characterSet.portrait_offset,
                 byte_result, 0, byte_result.Length);
-
-            for (int i = 0; i < byte_expected.Length; i++)
-            {
-                Assert.AreEqual(byte_expected[i], byte_result[i]);
-            }
-
+            CollectionAssert.AreEqual(byte_expected, byte_result);
         }
 
         [TestMethod]
@@ -104,16 +80,6 @@ namespace PaletteSwapTest
             Assert.IsNotNull(portrait_result);
             Assert.AreEqual(s.GetColor("costume1"), sprite_result.GetColor("costume1"));
             Assert.AreEqual(p.GetColor("costume1"), portrait_result.GetColor("costume1"));
-            /*
-            cc_result = cs_result.characterColors[6];
-            Assert.IsNotNull(cc_result);
-            sprite_result = cc_result.s;
-            portrait_result = cc_result.p;
-            Assert.IsNotNull(sprite_result);
-            Assert.IsNotNull(portrait_result);
-            Assert.AreEqual(s.costume1, sprite_result.costume1);
-            Assert.AreEqual(p.costume1, portrait_result.costume1);*/
-
         }
     }
 }

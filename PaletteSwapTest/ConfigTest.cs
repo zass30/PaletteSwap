@@ -54,5 +54,14 @@ namespace PaletteSwapTest
             offset_expected = 0x3A3FE;
             Assert.AreEqual(offset_expected, offset_result);
         }
+
+        [TestMethod]
+        public void GetByteStreamPairTest()
+        {
+            var stream_result = CharacterConfig.GetByteStreamPair(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
+            var sprite_result = stream_result.spriteStream;
+            var sprite_expected = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis0sprite);
+            CollectionAssert.AreEqual(sprite_expected, sprite_result);
+        }
     }
 }
