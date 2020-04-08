@@ -39,5 +39,20 @@ namespace PaletteSwapTest
             Assert.AreEqual(offset_expected, offset_result);
         }
 
+        [TestMethod]
+        public void GetPortrait2BeginOffsetTest()
+        {
+            var offset_result = CharacterConfig.GetPortrait2BeginOffset(PaletteSwap.CharacterConfig.CHARACTERS.Dictator);
+            int offset_expected = 0x394FE;
+            Assert.AreEqual(offset_expected, offset_result);
+
+            offset_result = CharacterConfig.GetPortrait2BeginOffset(PaletteSwap.CharacterConfig.CHARACTERS.Guile);
+            offset_expected = 0x37BFE;
+            Assert.AreEqual(offset_expected, offset_result);
+
+            offset_result = CharacterConfig.GetPortrait2BeginOffset(PaletteSwap.CharacterConfig.CHARACTERS.Claw);
+            offset_expected = 0x3A3FE;
+            Assert.AreEqual(offset_expected, offset_result);
+        }
     }
 }

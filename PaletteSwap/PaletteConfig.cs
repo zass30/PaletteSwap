@@ -16,7 +16,7 @@ namespace PaletteSwap
         static public int spriteBeginOffset = 0x3FB1E;
         static public int spriteStep = 0x66c;
         static public int portrait1BeginOffset = 0x31C48;
-        static public int portrait2BeginOffset = 0;
+        static public int portrait2BeginOffset = 0x36CFE;
         static public int portraitStep = 0x500;
         public enum CHARACTERS { Dictator, Claw, Guile };
 
@@ -42,6 +42,11 @@ namespace PaletteSwap
         public static int GetPortrait1BeginOffset(CHARACTERS c)
         {
             return portrait1BeginOffset + GetCharIdFromCharacter(c) * portraitStep;
+        }
+
+        public static int GetPortrait2BeginOffset(CHARACTERS c)
+        {
+            return portrait2BeginOffset + GetCharIdFromCharacter(c) * portraitStep;
         }
 
     }
