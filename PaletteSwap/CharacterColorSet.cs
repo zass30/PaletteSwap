@@ -285,7 +285,7 @@ namespace PaletteSwap
 
     public class GameSet
     {
-        public List<CharacterSet> characters = new List<CharacterSet>();
+//        public List<CharacterSet> characters = new List<CharacterSet>();
         public Dictionary <Character.CHARACTERS, CharacterSet> characterDictionary = new Dictionary<Character.CHARACTERS, CharacterSet>();
 
         public byte[] sprites_stream04()
@@ -305,7 +305,7 @@ namespace PaletteSwap
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
-                b = character.patch_sprites_stream04(b);
+                b = character.patch_portraits_stream03(b);
             }
             return b;
 
@@ -329,7 +329,7 @@ namespace PaletteSwap
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
-                b = character.patch_sprites_stream04(b);
+                b = character.patch_portraits_stream03(b);
             }
             return b;
 
@@ -353,7 +353,7 @@ namespace PaletteSwap
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
-                b = character.patch_sprites_stream04(b);
+                b = character.patch_portraits_stream03(b);
             }
             return b;
         }
