@@ -620,22 +620,6 @@ namespace PaletteSwap
                 "piping1", "piping2", "piping3", "piping4" };
                 }
 
-       /*         public static List<string> DictatorLossTopPortraitLabels()
-                {
-                    return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
-                "teeth1", "teeth2", "teeth3", "teeth4",
-                "blood1", "blood2", "blood3",
-                "costumeloss1", "costumeloss2", "costumeloss3", "costumeloss4",
-                "pipingloss1", "pipingloss2", "pipingloss3", "pipingloss4", };
-                }
-
-                public static List<string> DictatorLossBottomPortraitLabels()
-                {
-                    return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
-                "costume1", "costume2", "costume3", "costume4",
-                "piping1", "piping2", "piping3", "piping4", };
-                }*/
-
                 public static List<string> DictatorLossPortraitLabels()
                 {
                     return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
@@ -651,16 +635,6 @@ namespace PaletteSwap
                 {
                     return new Bitmap(Properties.Resources.dicportraitwin5);
                 }
-                /*
-                public static Bitmap DictatorLossTopPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.dicportraitlosstop5);
-                }
-
-                public static Bitmap DictatorLossBottomPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.dicportraitlossbottom5);
-                }*/
 
                 public static Bitmap DictatorLossPortraitBaseImage()
                 {
@@ -671,22 +645,12 @@ namespace PaletteSwap
                 {
                     return GenerateDicatatorPortraitPaletteImage(DictatorVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorVictoryPortraitLabels());
                 }
-                /*
-                public static PaletteImage GenerateDictatorLossTopBasePaletteImage()
-                {
-                    return GenerateDicatatorPortraitPaletteImage(DictatorLossTopPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorLossTopPortraitLabels());
-                }*/
 
                 public static PaletteImage GenerateDictatorLossBasePaletteImage()
                 {
                     return GenerateDicatatorPortraitPaletteImage(DictatorLossPortraitBaseImage(), PaletteSwap.Properties.Resources.bis0portrait, DictatorLossPortraitLabels());
                 }
-                /*
-                public static PaletteImage GenerateDictatorLossBottomBasePaletteImage()
-                {
-                    return GenerateDicatatorPortraitPaletteImage(DictatorLossBottomPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorLossBottomPortraitLabels());
-                }
-                */
+
                 public static PaletteImage GenerateDicatatorPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
