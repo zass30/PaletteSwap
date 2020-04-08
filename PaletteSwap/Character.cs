@@ -347,9 +347,6 @@ namespace PaletteSwap
         {
             AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage(), "victory");
             AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage(), "loss");
-//            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossTopBasePaletteImage(), "losstop");
-//            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossBottomBasePaletteImage(), "lossbottom");
-
         }
 
         private static void AssignDicatatorSpriteImages(Palette s)

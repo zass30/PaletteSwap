@@ -10,6 +10,13 @@ namespace PaletteSwap
 {
     // new character config that contains
     // addresses in rom for sprites/portraits
+
+    public struct CharacterConfig
+    {
+        static public int spriteBeginOffset = 0;
+        static public int portrait1BeginOffset = 0;
+        static public int portrait2BeginOffset = 0;
+    }
     public struct PaletteConfig
     {
         public Dictionary<string, List<int>> labelOffsets;
