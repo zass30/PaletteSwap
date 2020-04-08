@@ -9,9 +9,9 @@ namespace PaletteSwapTest
         [TestMethod]
         public void CharacterConfigTest()
         {
-            // check ryu config start correct
+            // check ryu sprite rom start correct
 
-            // check dictator config start correct
+            // check dictator sprite rom  start correct
         }
     }
 }

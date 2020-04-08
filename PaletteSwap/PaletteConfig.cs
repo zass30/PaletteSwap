@@ -16,6 +16,8 @@ namespace PaletteSwap
         static public int spriteBeginOffset = 0;
         static public int portrait1BeginOffset = 0;
         static public int portrait2BeginOffset = 0;
+        public enum CHARACTERS { Dictator, Claw, Guile };
+
     }
     public struct PaletteConfig
     {
