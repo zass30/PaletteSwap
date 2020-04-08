@@ -48,6 +48,16 @@
             this.CLAW_neutralStandBox05 = new System.Windows.Forms.PictureBox();
             this.CLAW_neutralStandBox07 = new System.Windows.Forms.PictureBox();
             this.CLAW_neutralStandBox09 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox00 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox01 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox02 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox06 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox08 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox03 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox04 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox05 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox09 = new System.Windows.Forms.PictureBox();
+            this.GUI_neutralStandBox07 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this._09psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._08psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._07psychopunchBox)).BeginInit();
@@ -68,6 +78,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox07)).BeginInit();
             this.SuspendLayout();
             // 
             // _09psychopunchBox
@@ -250,11 +270,111 @@
             this.CLAW_neutralStandBox09.TabIndex = 132;
             this.CLAW_neutralStandBox09.TabStop = false;
             // 
+            // GUI_neutralStandBox00
+            // 
+            this.GUI_neutralStandBox00.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox00.Location = new System.Drawing.Point(12, 466);
+            this.GUI_neutralStandBox00.Name = "GUI_neutralStandBox00";
+            this.GUI_neutralStandBox00.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox00.TabIndex = 133;
+            this.GUI_neutralStandBox00.TabStop = false;
+            // 
+            // GUI_neutralStandBox01
+            // 
+            this.GUI_neutralStandBox01.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox01.Location = new System.Drawing.Point(98, 466);
+            this.GUI_neutralStandBox01.Name = "GUI_neutralStandBox01";
+            this.GUI_neutralStandBox01.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox01.TabIndex = 134;
+            this.GUI_neutralStandBox01.TabStop = false;
+            // 
+            // GUI_neutralStandBox02
+            // 
+            this.GUI_neutralStandBox02.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox02.Location = new System.Drawing.Point(184, 466);
+            this.GUI_neutralStandBox02.Name = "GUI_neutralStandBox02";
+            this.GUI_neutralStandBox02.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox02.TabIndex = 135;
+            this.GUI_neutralStandBox02.TabStop = false;
+            // 
+            // GUI_neutralStandBox06
+            // 
+            this.GUI_neutralStandBox06.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox06.Location = new System.Drawing.Point(270, 466);
+            this.GUI_neutralStandBox06.Name = "GUI_neutralStandBox06";
+            this.GUI_neutralStandBox06.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox06.TabIndex = 136;
+            this.GUI_neutralStandBox06.TabStop = false;
+            // 
+            // GUI_neutralStandBox08
+            // 
+            this.GUI_neutralStandBox08.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox08.Location = new System.Drawing.Point(356, 466);
+            this.GUI_neutralStandBox08.Name = "GUI_neutralStandBox08";
+            this.GUI_neutralStandBox08.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox08.TabIndex = 137;
+            this.GUI_neutralStandBox08.TabStop = false;
+            // 
+            // GUI_neutralStandBox03
+            // 
+            this.GUI_neutralStandBox03.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox03.Location = new System.Drawing.Point(12, 562);
+            this.GUI_neutralStandBox03.Name = "GUI_neutralStandBox03";
+            this.GUI_neutralStandBox03.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox03.TabIndex = 138;
+            this.GUI_neutralStandBox03.TabStop = false;
+            // 
+            // GUI_neutralStandBox04
+            // 
+            this.GUI_neutralStandBox04.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox04.Location = new System.Drawing.Point(98, 562);
+            this.GUI_neutralStandBox04.Name = "GUI_neutralStandBox04";
+            this.GUI_neutralStandBox04.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox04.TabIndex = 139;
+            this.GUI_neutralStandBox04.TabStop = false;
+            // 
+            // GUI_neutralStandBox05
+            // 
+            this.GUI_neutralStandBox05.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox05.Location = new System.Drawing.Point(184, 562);
+            this.GUI_neutralStandBox05.Name = "GUI_neutralStandBox05";
+            this.GUI_neutralStandBox05.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox05.TabIndex = 140;
+            this.GUI_neutralStandBox05.TabStop = false;
+            // 
+            // GUI_neutralStandBox09
+            // 
+            this.GUI_neutralStandBox09.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox09.Location = new System.Drawing.Point(356, 562);
+            this.GUI_neutralStandBox09.Name = "GUI_neutralStandBox09";
+            this.GUI_neutralStandBox09.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox09.TabIndex = 141;
+            this.GUI_neutralStandBox09.TabStop = false;
+            // 
+            // GUI_neutralStandBox07
+            // 
+            this.GUI_neutralStandBox07.BackColor = System.Drawing.Color.Black;
+            this.GUI_neutralStandBox07.Location = new System.Drawing.Point(270, 562);
+            this.GUI_neutralStandBox07.Name = "GUI_neutralStandBox07";
+            this.GUI_neutralStandBox07.Size = new System.Drawing.Size(75, 90);
+            this.GUI_neutralStandBox07.TabIndex = 142;
+            this.GUI_neutralStandBox07.TabStop = false;
+            // 
             // ColorSetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 530);
+            this.ClientSize = new System.Drawing.Size(712, 651);
+            this.Controls.Add(this.GUI_neutralStandBox07);
+            this.Controls.Add(this.GUI_neutralStandBox09);
+            this.Controls.Add(this.GUI_neutralStandBox05);
+            this.Controls.Add(this.GUI_neutralStandBox04);
+            this.Controls.Add(this.GUI_neutralStandBox03);
+            this.Controls.Add(this.GUI_neutralStandBox08);
+            this.Controls.Add(this.GUI_neutralStandBox06);
+            this.Controls.Add(this.GUI_neutralStandBox02);
+            this.Controls.Add(this.GUI_neutralStandBox01);
+            this.Controls.Add(this.GUI_neutralStandBox00);
             this.Controls.Add(this.CLAW_neutralStandBox09);
             this.Controls.Add(this.CLAW_neutralStandBox07);
             this.Controls.Add(this.CLAW_neutralStandBox05);
@@ -297,6 +417,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox07)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLAW_neutralStandBox09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox07)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,5 +453,15 @@
         private System.Windows.Forms.PictureBox CLAW_neutralStandBox05;
         private System.Windows.Forms.PictureBox CLAW_neutralStandBox07;
         private System.Windows.Forms.PictureBox CLAW_neutralStandBox09;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox00;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox01;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox02;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox06;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox08;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox03;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox04;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox05;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox09;
+        private System.Windows.Forms.PictureBox GUI_neutralStandBox07;
     }
 }
