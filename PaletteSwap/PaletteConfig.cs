@@ -15,10 +15,40 @@ namespace PaletteSwap
     {
         static public int spriteBeginOffset = 0x3FB1E;
         static public int spriteStep = 0x66c;
+        static public int spriteColorLength = 0xA2;
         static public int portrait1BeginOffset = 0x31C48;
         static public int portrait2BeginOffset = 0x36CFE;
         static public int portraitStep = 0x500;
+        static public int portraitColorLength = 0x80;
         public enum CHARACTERS { Dictator, Claw, Guile };
+
+        public static string CodeFromCharacterEnum(CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CHARACTERS.Dictator:
+                    return "DIC";
+                case CHARACTERS.Claw:
+                    return "CLA";
+                case CHARACTERS.Guile:
+                    return "GUI";
+            }
+            throw new ArgumentException("Invalid Character type");
+        }
+
+        public static CHARACTERS CharacterEnumFromCode(string s)
+        {
+            switch (s)
+            {
+                case "CLA":
+                    return CHARACTERS.Claw;
+                case "DIC":
+                    return CHARACTERS.Dictator;
+                case "GUI":
+                    return CHARACTERS.Guile;
+            }
+            throw new ArgumentException("Invalid Character type");
+        }
 
         public static int GetCharIdFromCharacter(CHARACTERS c)
         {
