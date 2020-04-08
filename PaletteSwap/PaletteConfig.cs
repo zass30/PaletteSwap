@@ -145,7 +145,6 @@ namespace PaletteSwap
 
             public static PaletteConfig GenerateGuilePortraitConfig()
             {
-                //int ROWLEN = 32;
                 int MEMLEN = ROWLEN * 4;
                 List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
                 for (int i = 0; i < 4; i++)
@@ -167,7 +166,6 @@ namespace PaletteSwap
 
             public static Dictionary<string, List<int>> GenerateGuilePortraitOffsets()
             {
-               // int ROWLEN = 32;
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
         {
             { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
@@ -242,7 +240,6 @@ namespace PaletteSwap
 
             public static PaletteConfig GenerateClawPortraitConfig()
             {
-               // int ROWLEN = 32;
                 int MEMLEN = ROWLEN * 4;
                 List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
                 for (int i = 0; i < 4; i++)
@@ -264,7 +261,6 @@ namespace PaletteSwap
 
             public static Dictionary<string, List<int>> GenerateClawPortraitOffsets()
             {
-               // int ROWLEN = 32;
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
         {
             { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
@@ -309,7 +305,6 @@ namespace PaletteSwap
 
             public static Dictionary<string, List<int>> GenerateDictatorSpriteOffsets()
             {
-                //int ROWLEN = 32;
                 Dictionary<string, List<int>> dictatorSpriteOffsets =
                    new Dictionary<string, List<int>>
            {
@@ -354,7 +349,6 @@ namespace PaletteSwap
 
             public static Dictionary<string, List<int>> GenerateDictatorPortraitOffsets()
             {
-               // int ROWLEN = 32;
                 Dictionary<string, List<int>> dictatorPortraitOffsets = new Dictionary<string, List<int>>
         {
             { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
@@ -393,7 +387,6 @@ namespace PaletteSwap
 
             public static PaletteConfig GenerateDictatorPortraitConfig()
             {
-               // int ROWLEN = 32;
                 int MEMLEN = ROWLEN * 4;
                 List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
                 for (int i = 0; i < 4; i++)

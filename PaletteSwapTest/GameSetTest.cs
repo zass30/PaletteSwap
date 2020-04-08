@@ -60,8 +60,8 @@ namespace PaletteSwapTest
         public void PortraitsDictatorStream04Test()
         {
             var gs = new GameSet();
-            gs.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
-            gs.characterDictionary[Character.CHARACTERS.Dictator].characterColors[0].portrait.SetColor("skin1", Color.FromArgb(0, 17, 17, 17));
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator].characterColors[0].portrait.SetColor("skin1", Color.FromArgb(0, 17, 17, 17));
             var bytes_expected = PaletteSwap.Properties.Resources.sfxe03c;
             var bytes_result = gs.portraits_stream03();
             for (int i = 0; i < 0x34448; i++)
@@ -81,8 +81,8 @@ namespace PaletteSwapTest
         public void SpritesDictatorStream04Test()
         {
             var gs = new GameSet();
-            gs.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
-            gs.characterDictionary[Character.CHARACTERS.Dictator].characterColors[0].sprite.SetColor("pads5", Color.FromArgb(0,17,17,17));
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator].characterColors[0].sprite.SetColor("pads5", Color.FromArgb(0,17,17,17));
             var bytes_expected = PaletteSwap.Properties.Resources.sfxe03c;
             var bytes_result = gs.portraits_stream03();
             for (int i = 0; i < 0x00042E7E; i++)

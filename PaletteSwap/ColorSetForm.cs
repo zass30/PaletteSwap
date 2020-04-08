@@ -23,9 +23,9 @@ namespace PaletteSwap
 
         public void Reload()
         {
-            var DIC = mainform.gameSet.characterDictionary[Character.CHARACTERS.Dictator];
-            var CLA = mainform.gameSet.characterDictionary[Character.CHARACTERS.Claw];
-            var GUI = mainform.gameSet.characterDictionary[Character.CHARACTERS.Guile];
+            var DIC = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
+            var CLA = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw];
+            var GUI = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile];
 
             if (DIC.characterColors[0].sprite != null)
                     _00psychopunchBox.Image = DIC.characterColors[0].sprite.GetBitmap("psychopunch");

@@ -19,7 +19,7 @@ namespace PaletteSwap
         ZoomForm z;
         ColorSetForm c;
         public string currentlyZoomedLabel;
-        public Character.CHARACTERS currentCharacterType;
+        public CharacterConfig.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
         PictureBox currentlySelectedColor;
         public GameSet gameSet = new GameSet();
@@ -42,11 +42,11 @@ namespace PaletteSwap
 
         public void CreateCharacterSet()
         {
-            currentCharacterType = Character.CHARACTERS.Dictator;
-            gameSet.characterDictionary[Character.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
-            gameSet.characterDictionary[Character.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
-            gameSet.characterDictionary[Character.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
-            characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
+            currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
+            characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
 
 
@@ -84,7 +84,7 @@ namespace PaletteSwap
             load_sprite_neutralstand();
             load_portrait_victory();
             load_portrait_loss();
-            if (currentCharacterType == Character.CHARACTERS.Dictator)
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
                 load_sprite_load_sprite_psychopunch();
                 load_sprite_load_sprite_psychoprep();
@@ -99,13 +99,13 @@ namespace PaletteSwap
         {
             switch (currentCharacterType)
             {
-                case Character.CHARACTERS.Dictator:
+                case CharacterConfig.CHARACTERS.Dictator:
                     neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
                     break;
-                case Character.CHARACTERS.Claw:
+                case CharacterConfig.CHARACTERS.Claw:
                     CLA_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
                     break;
-                case Character.CHARACTERS.Guile:
+                case CharacterConfig.CHARACTERS.Guile:
                     var s = currentCharacter.sprite.GetBitmap("neutral");
                     GUI_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
                     break;
@@ -136,13 +136,13 @@ namespace PaletteSwap
         {
             switch (currentCharacterType)
             {
-                case Character.CHARACTERS.Dictator:
+                case CharacterConfig.CHARACTERS.Dictator:
                     portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
                     break;
-                case Character.CHARACTERS.Claw:
+                case CharacterConfig.CHARACTERS.Claw:
                     CLA_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory"); 
                     break;
-                case Character.CHARACTERS.Guile:
+                case CharacterConfig.CHARACTERS.Guile:
                     GUI_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
                     break;
             }
@@ -150,19 +150,19 @@ namespace PaletteSwap
 
         private void load_portrait_loss()
         {
-            if (currentCharacterType == Character.CHARACTERS.Dictator) { 
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator) { 
                 portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
             }
-            else if (currentCharacterType == Character.CHARACTERS.Claw)
+            else if (currentCharacterType == CharacterConfig.CHARACTERS.Claw)
                 CLA_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
-            else if (currentCharacterType == Character.CHARACTERS.Guile)
+            else if (currentCharacterType == CharacterConfig.CHARACTERS.Guile)
                 GUI_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
         }
 
         private void load_sprite_buttons()
         {
             switch (currentCharacterType) {
-                case Character.CHARACTERS.Dictator:
+                case CharacterConfig.CHARACTERS.Dictator:
                     pal_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
                     pal_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
                     pal_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
@@ -208,7 +208,7 @@ namespace PaletteSwap
                     pal_sprite_crusherhands2.BackColor = currentCharacter.sprite.GetColor("crusherhands2");
 
                     break;
-                case Character.CHARACTERS.Claw:
+                case CharacterConfig.CHARACTERS.Claw:
                     sprite_claw_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
                     sprite_claw_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
                     sprite_claw_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
@@ -228,7 +228,7 @@ namespace PaletteSwap
                     sprite_claw_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
                     sprite_claw_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     break;
-                case Character.CHARACTERS.Guile:
+                case CharacterConfig.CHARACTERS.Guile:
                     GUI_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
                     GUI_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
                     GUI_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
@@ -256,7 +256,7 @@ namespace PaletteSwap
         {
             switch (currentCharacterType)
             {
-                case Character.CHARACTERS.Dictator:
+                case CharacterConfig.CHARACTERS.Dictator:
                     portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
                     portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
                     portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
@@ -295,7 +295,7 @@ namespace PaletteSwap
                     portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
                     break;
 
-                case Character.CHARACTERS.Claw:
+                case CharacterConfig.CHARACTERS.Claw:
                     portrait_claw_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
                     portrait_claw_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
                     portrait_claw_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
@@ -322,7 +322,7 @@ namespace PaletteSwap
                     portrait_claw_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
                     break;
 
-                case Character.CHARACTERS.Guile:
+                case CharacterConfig.CHARACTERS.Guile:
                     GUI_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
                     GUI_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
                     GUI_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
@@ -591,7 +591,7 @@ namespace PaletteSwap
         private void load_sprites()
         {
             load_sprite_neutralstand();
-            if (currentCharacterType == Character.CHARACTERS.Dictator)
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
                 load_sprite_load_sprite_psychopunch();
                 load_sprite_load_sprite_psychoprep();
@@ -750,9 +750,8 @@ namespace PaletteSwap
                     //Read the contents of the file into a stream
                     FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
                     gameSet = GameSet.GameSetFromZipStream(fileStream);
-//                    characterSet = gameSet.characters[0];
-                    characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
-                    currentCharacterType = Character.CHARACTERS.Dictator;
+                    characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
+                    currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
                     resetCurrentCharacterColorFromDropDown();
                     reload_everything();
                     fileStream.Close();
@@ -960,24 +959,24 @@ namespace PaletteSwap
             var selt = tabControl.SelectedTab;
             if (selt.Name == "TabPageClaw")
             {
-                currentCharacterType = Character.CHARACTERS.Claw;
-                characterSet = gameSet.characterDictionary[Character.CHARACTERS.Claw];
+                currentCharacterType = CharacterConfig.CHARACTERS.Claw;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();
             }
             else if (selt.Name == "TabPageDictator")
             {
-                currentCharacterType = Character.CHARACTERS.Dictator;
-                characterSet = gameSet.characterDictionary[Character.CHARACTERS.Dictator];
+                currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();
             }
             else if (selt.Name == "TabPageGuile")
             {
-                currentCharacterType = Character.CHARACTERS.Guile;
-                characterSet = gameSet.characterDictionary[Character.CHARACTERS.Guile];
+                currentCharacterType = CharacterConfig.CHARACTERS.Guile;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();

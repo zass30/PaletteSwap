@@ -11,33 +11,33 @@ namespace PaletteSwap
     {
         public Palette sprite;
         public Palette portrait;
-        public enum CHARACTERS { Dictator, Claw, Guile };
-        public CHARACTERS characterType;
+  //      public enum CHARACTERS { Dictator, Claw, Guile };
+        public CharacterConfig.CHARACTERS characterType;
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
 
-        public static string CodeFromCharacterEnum(CHARACTERS c)
+        public static string CodeFromCharacterEnum(CharacterConfig.CHARACTERS c)
         {
             switch (c) {
-                case CHARACTERS.Dictator:
+                case CharacterConfig.CHARACTERS.Dictator:
                     return "DIC";
-                case CHARACTERS.Claw:
+                case CharacterConfig.CHARACTERS.Claw:
                     return "CLA";
-                case CHARACTERS.Guile:
+                case CharacterConfig.CHARACTERS.Guile:
                     return "GUI";                    
             }
             throw new ArgumentException("Invalid Character type");
         }
 
-        public static CHARACTERS CharacterEnumFromCode(string s)
+        public static CharacterConfig.CHARACTERS CharacterEnumFromCode(string s)
         {
             switch (s)
             {
                 case "CLA":
-                    return CHARACTERS.Claw;
+                    return CharacterConfig.CHARACTERS.Claw;
                 case "DIC":
-                    return CHARACTERS.Dictator;
+                    return CharacterConfig.CHARACTERS.Dictator;
                 case "GUI":
-                    return CHARACTERS.Guile;
+                    return CharacterConfig.CHARACTERS.Guile;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -157,11 +157,11 @@ namespace PaletteSwap
         }
         // end legacy function block
 
-        public static Character createDefaultCharacter(CHARACTERS character, BUTTONS button)
+        public static Character createDefaultCharacter(CharacterConfig.CHARACTERS character, BUTTONS button)
         {
             var c = new Character();
             c.characterType = character;
-            if (character == CHARACTERS.Dictator)
+            if (character == CharacterConfig.CHARACTERS.Dictator)
             {
                 PaletteConfig dicSpriteConfig = PaletteConfig.DICTATOR.GenerateDictatorSpriteConfig();
                 PaletteConfig dicPortraitConfig = PaletteConfig.DICTATOR.GenerateDictatorPortraitConfig();
@@ -220,7 +220,7 @@ namespace PaletteSwap
                 AssignDicatatorSpriteImages(s);
                 AssignDicatatorPortraitImages(p);
             }
-            else if (character == CHARACTERS.Claw) {
+            else if (character == CharacterConfig.CHARACTERS.Claw) {
                 PaletteConfig claSpriteConfig = PaletteConfig.CLAW.GenerateClawSpriteConfig();
                 PaletteConfig claPortraitConfig = PaletteConfig.CLAW.GenerateClawPortraitConfig();
                 Palette s = Palette.PaletteFromConfig(claSpriteConfig);
@@ -280,7 +280,7 @@ namespace PaletteSwap
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
             }
-            else if (character == CHARACTERS.Guile)
+            else if (character == CharacterConfig.CHARACTERS.Guile)
             {
                 PaletteConfig claSpriteConfig = PaletteConfig.GUILE.GenerateGuileSpriteConfig();
                 PaletteConfig claPortraitConfig = PaletteConfig.GUILE.GenerateGuilePortraitConfig();

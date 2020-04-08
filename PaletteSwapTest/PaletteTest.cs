@@ -58,7 +58,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void CreateDefaultCharacterTest()
         {
-            Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            Character d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var s = d.sprite;
             Assert.IsNotNull(s);
             Assert.AreEqual("FD0A", PaletteHelper.ColorToMemFormat(s.GetColor("pads1")));
@@ -105,7 +105,7 @@ namespace PaletteSwapTest
             Assert.AreEqual("EF0D", PaletteHelper.ColorToMemFormat(s.GetColor("crusherflame1")));
             Assert.AreEqual("F80E", PaletteHelper.ColorToMemFormat(s.GetColor("crusherflame2")));
 
-            d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.mp);
             s = d.sprite;
             Assert.IsNotNull(s);
 
@@ -124,7 +124,7 @@ namespace PaletteSwapTest
             string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
             var data_expected = PaletteHelper.StringToByteStream(s_expected);
 
-            var d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var s = d.sprite;
             var data_result = s.ToByteStream();
             for (int i = 0; i < data_expected.Length; i++)
@@ -136,7 +136,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void WriteByteStreamChangeFieldsTest()
         {
-            var d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var sprite = d.sprite;
             string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
             var data_expected = PaletteHelper.StringToByteStream(s_expected);
@@ -174,10 +174,10 @@ namespace PaletteSwapTest
         [TestMethod]
         public void WriteSpriteByteStreamChangeSpriteTest()
         {
-            var d_lp = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var d_lp = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var sprite_lp = d_lp.sprite;
 
-            var d_hk = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            var d_hk = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.hk);
             var sprite_hk = d_hk.sprite;
 
             Assert.AreNotEqual(sprite_hk.GetColor("costume1"), sprite_lp.GetColor("costume1"));
@@ -206,7 +206,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void CreateDicPortraitFromConfigTest()
         {
-            Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            Character d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var p = d.portrait;
             Assert.IsNotNull(p);
             Assert.AreEqual("FF0F", PaletteHelper.ColorToMemFormat(p.GetColor("skin1")));
@@ -258,7 +258,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void ColorsFromListOfLabelsTest()
         {
-            Character d = Character.createDefaultCharacter(Character.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            Character d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
             var p = d.portrait;
             Assert.IsNotNull(p);
             Color[] expected_colors = new Color[] { p.GetColor("skin1"), p.GetColor("blood1") };
