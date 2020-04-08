@@ -20,6 +20,7 @@ namespace PaletteSwap
         static public int portrait2BeginOffset = 0x36CFE;
         static public int portraitStep = 0x500;
         static public int portraitColorLength = 0x80;
+        public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
         public enum CHARACTERS { Dictator, Claw, Guile };
 
         public static string CodeFromCharacterEnum(CHARACTERS c)
@@ -78,8 +79,8 @@ namespace PaletteSwap
         {
             return portrait2BeginOffset + GetCharIdFromCharacter(c) * portraitStep;
         }
-
     }
+
     public struct PaletteConfig
     {
         public Dictionary<string, List<int>> labelOffsets;
@@ -418,6 +419,17 @@ namespace PaletteSwap
 
     public struct ImageConfig
     {
+        public static PaletteImage GeneratePaletteImage(Bitmap base_image, string resource, List<string> labels, Dictionary<string, List<int>> offsets)
+        {
+            byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+            Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                offsets,
+                labels);
+            PaletteImage p = new PaletteImage(base_image, c);
+            p.labels = labels;
+            return p;
+        }
+
         public struct GUILE
         {
             public struct SPRITE {
@@ -442,6 +454,7 @@ namespace PaletteSwap
 
                 public static PaletteImage GenerateGuilePaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.GUILE.GenerateGuileSpriteOffsets(),
@@ -450,6 +463,55 @@ namespace PaletteSwap
                     p.labels = labels;
                     return p;
                 }
+                /*
+                 * 
+                 * Dictionary<string, List<int>> offsets
+                 * 
+                 * public static PaletteImage GeneratePaletteImage(Bitmap base_image, string resource, List<string> labels, Dictionary<string, List<int>> offsets)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        offsets,
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+                 * 
+                 * 
+                 *  public static PaletteImage GenerateGuilePortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.GUILE.GenerateGuilePortraitOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+
+                 public static PaletteImage GenerateClawPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.CLAW.GeneratClawSpriteOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+
+                public static PaletteImage GenerateClawPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+                    Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                        PaletteConfig.CLAW.GenerateClawPortraitOffsets(),
+                        labels);
+                    PaletteImage p = new PaletteImage(base_image, c);
+                    p.labels = labels;
+                    return p;
+                }
+                 */
             }
 
             public struct PORTRAIT
@@ -487,6 +549,7 @@ namespace PaletteSwap
 
                 public static PaletteImage GenerateGuilePortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.GUILE.GenerateGuilePortraitOffsets(),
@@ -521,6 +584,8 @@ namespace PaletteSwap
 
                 public static PaletteImage GenerateClawPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.CLAW.GeneratClawSpriteOffsets());
+
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.CLAW.GeneratClawSpriteOffsets(),
@@ -573,6 +638,8 @@ namespace PaletteSwap
 
                 public static PaletteImage GenerateClawPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.CLAW.GenerateClawPortraitOffsets(),
@@ -670,6 +737,7 @@ namespace PaletteSwap
 
                 public static PaletteImage GenerateDicatatorPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.DICTATOR.GenerateDictatorSpriteOffsets());
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.DICTATOR.GenerateDictatorSpriteOffsets(),
@@ -723,6 +791,7 @@ namespace PaletteSwap
 
                 public static PaletteImage GenerateDicatatorPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.DICTATOR.GenerateDictatorPortraitOffsets());
                     byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
                     Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
                         PaletteConfig.DICTATOR.GenerateDictatorPortraitOffsets(),

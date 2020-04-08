@@ -155,6 +155,7 @@ namespace PaletteSwap
             sp.SetColor("crusherflame2", PaletteHelper.RGBFormatToColor(v[33]));
 
         }
+        // end legacy function block
 
         public static Character createDefaultCharacter(CHARACTERS character, BUTTONS button)
         {
