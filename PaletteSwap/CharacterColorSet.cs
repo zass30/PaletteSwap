@@ -41,8 +41,8 @@ namespace PaletteSwap
             CharacterSet cs = new CharacterSet();
             cs.sprite_offset = 0x00040E62; // move this to a config
             cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x32B48;  
-            cs.portrait2_offset = 0x34448; 
+            cs.portrait_offset = 0x32B48;
+            cs.portrait2_offset = 0x37BFE;//0x34448; 
             cs.portrait_length = 0x80;
             cs.characterColors[0] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.lp);
             cs.characterColors[1] = Character.createDefaultCharacter(Character.CHARACTERS.Guile, Character.BUTTONS.mp);

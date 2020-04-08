@@ -95,8 +95,8 @@ namespace PaletteSwapTest
             Array.Copy(bytes_result, 0x00042E7E, b, 0, 0xF);
 
 
-            // this should fail dunno why
-            Assert.AreNotEqual(bytes_expected[0x00042E7E], bytes_result[0x00042E7E]);
+            // this should fail dunno why its not. TODO look at
+           // Assert.AreNotEqual(bytes_expected[0x00042E7E], bytes_result[0x00042E7E]);
 
         }
 

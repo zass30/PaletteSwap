@@ -13,10 +13,30 @@ namespace PaletteSwap
 
     public struct CharacterConfig
     {
-        static public int spriteBeginOffset = 0;
+        static public int spriteBeginOffset = 0x4067E;
         static public int portrait1BeginOffset = 0;
         static public int portrait2BeginOffset = 0;
         public enum CHARACTERS { Dictator, Claw, Guile };
+
+        public static int GetCharIdFromCharacter(CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CHARACTERS.Guile:
+                    return 3;
+                case CHARACTERS.Dictator:
+                    return 8;
+                case CHARACTERS.Claw:
+                    return 11;
+            }
+            return 0;
+        }
+
+        public static int GetSpriteBeginOffset(CHARACTERS c)
+        {
+            return spriteBeginOffset + GetCharIdFromCharacter(c) * 0x500;
+//            31C48 + (Char_ID * 0x500);
+        }
 
     }
     public struct PaletteConfig
