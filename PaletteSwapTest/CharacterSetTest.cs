@@ -33,7 +33,7 @@ namespace PaletteSwapTest
         public void CharacterSetDefaultColorByteStreamTest()
         {
             var characterSet = CharacterSet.GenerateDictatorCharacterSet();
-            characterSet.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            characterSet.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var byte_expected = characterSet.characterColors[0].sprite.ToByteStream();
             var byte_result = new Byte[byte_expected.Length];
             Array.Copy(characterSet.sprites_stream04(), characterSet.sprite_offset,
@@ -60,7 +60,7 @@ namespace PaletteSwapTest
         public void CharacterSetChangeColorByteStreamTest()
         {
             var characterSet = CharacterSet.GenerateDictatorCharacterSet();
-            characterSet.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            characterSet.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk);
             var byte_expected = characterSet.characterColors[0].sprite.ToByteStream();
             var byte_result = new Byte[byte_expected.Length];
             Array.Copy(characterSet.sprites_stream04(), characterSet.sprite_offset,

@@ -10,7 +10,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GetDictatorStandingNeutralImageTest()
         {
-            var dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.lp);
+            var dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var s = dic.sprite;
             var pal = s.GetImage("neutral");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand1, pal.baseImage));
@@ -18,7 +18,7 @@ namespace PaletteSwapTest
             var remapped_img = s.GetBitmap("neutral");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand0, remapped_img));
 
-            dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp);
             s = dic.sprite;
             remapped_img = s.GetBitmap("neutral");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand1, remapped_img));
@@ -27,12 +27,12 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GetDictatorPsychoPunchImageTest()
         {
-            var dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.mp);
+            var dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp);
             var s = dic.sprite;
             var remapped_img = s.GetBitmap("psychopunch");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp1, remapped_img));
 
-            dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, Character.BUTTONS.hk);
+            dic = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk);
             s = dic.sprite;
             remapped_img = s.GetBitmap("psychopunch");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp5, remapped_img));
@@ -41,7 +41,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GetClawStandingNeutralImageTest()
         {
-            var claw = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, Character.BUTTONS.hold);
+            var claw = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold);
             var s = claw.sprite;
             var pal = s.GetImage("neutral");
             Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.clawneutral7, pal.baseImage));
@@ -50,7 +50,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void GetClawScaledStandingNeutralImageTest()
         {
-            var claw = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, Character.BUTTONS.hold);
+            var claw = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold);
             var s = claw.sprite;
             var image = s.GetImage("neutral").RemappedImage();
             var scaledImage = s.GetImage("neutral").RemappedScaledImage();
@@ -61,7 +61,7 @@ namespace PaletteSwapTest
         [TestMethod]
         public void ToColFormatTest()
         {
-            var claw = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, Character.BUTTONS.hold);
+            var claw = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold);
             var s_expected = claw.ToColFormat();
 
             var result = Character.CharacterFromColFormat(s_expected);
