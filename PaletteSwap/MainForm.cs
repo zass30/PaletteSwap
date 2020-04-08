@@ -156,14 +156,15 @@ namespace PaletteSwap
         private void load_portrait_loss()
         {
             if (currentCharacterType == Character.CHARACTERS.Dictator) { 
-            Bitmap result = new Bitmap(portraitLossBox.Width, portraitLossBox.Height);
+         /*   Bitmap result = new Bitmap(portraitLossBox.Width, portraitLossBox.Height);
             using (Graphics g = Graphics.FromImage(result))
             {
                 g.DrawImage(currentCharacter.portrait.GetBitmap("losstop"), Point.Empty);
                 g.DrawImage(currentCharacter.portrait.GetBitmap("lossbottom"), Point.Empty);
             }
-            portraitLossBox.BackgroundImage = result;
-        }
+            portraitLossBox.BackgroundImage = result;*/
+                portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
+            }
             else if (currentCharacterType == Character.CHARACTERS.Claw)
                 CLA_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
             else if (currentCharacterType == Character.CHARACTERS.Guile)
@@ -496,10 +497,6 @@ namespace PaletteSwap
                 case "portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
-                case "portraitLossBox": // fix this
-                //    i = img_type.lossportrait;
-                //    label = "lossportrait";
-                    break;
                 case "CLA_neutralStandBox":
                 case "GUI_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
@@ -508,6 +505,7 @@ namespace PaletteSwap
                 case "GUI_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
+                case "portraitLossBox":
                 case "CLA_portraitLossBox":
                 case "GUI_portraitLossBox":
                     currentlyZoomedLabel = "loss";
