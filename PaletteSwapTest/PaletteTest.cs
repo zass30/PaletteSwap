@@ -127,10 +127,11 @@ namespace PaletteSwapTest
             var d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var s = d.sprite;
             var data_result = s.ToByteStream();
-            CollectionAssert.AreEqual(data_expected, data_result);
            for (int i = 0; i < data_expected.Length; i++)
             {
-                Assert.AreEqual(data_expected[0], data_result[0]);
+                if (s.unusedOffsets.Contains(i))
+                    continue;
+                Assert.AreEqual(data_expected[i], data_result[i]);
             }
         }
 
