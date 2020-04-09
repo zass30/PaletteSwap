@@ -242,6 +242,36 @@ namespace PaletteSwap
         public int streamLength;
         static readonly int ROWLEN = 32;
 
+        public static PaletteConfig GenerateSpriteConfig(CharacterConfig.CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.GenerateGuileSpriteConfig();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.GenerateClawSpriteConfig();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return DICTATOR.GenerateDictatorSpriteConfig();
+
+            }
+            throw new Exception("Invalid character");
+        }
+
+        public static PaletteConfig GeneratePortraitConfig(CharacterConfig.CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.GenerateGuilePortraitConfig();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.GenerateClawPortraitConfig();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return DICTATOR.GenerateDictatorPortraitConfig();
+
+            }
+            throw new Exception("Invalid character");
+        }
+
         public void createColorOffsets(string defaults, int offset)
         {
             byte[] colordefaults = PaletteHelper.StringToByteStream(defaults);
