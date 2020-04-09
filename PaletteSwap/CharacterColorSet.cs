@@ -163,6 +163,9 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Claw:
                     cs = GenerateClawCharacterSet();
                     break;
+                case CharacterConfig.CHARACTERS.Guile:
+                    cs = GenerateGuileCharacterSet();
+                    break;
             }
 
             byte[] sprites = new byte[cs.sprite_length];
