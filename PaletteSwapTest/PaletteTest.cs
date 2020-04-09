@@ -127,7 +127,8 @@ namespace PaletteSwapTest
             var d = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var s = d.sprite;
             var data_result = s.ToByteStream();
-            for (int i = 0; i < data_expected.Length; i++)
+            CollectionAssert.AreEqual(data_expected, data_result);
+           for (int i = 0; i < data_expected.Length; i++)
             {
                 Assert.AreEqual(data_expected[0], data_result[0]);
             }
@@ -248,11 +249,11 @@ namespace PaletteSwapTest
 
             var portrait_bytestream_expected = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis0portrait);
             var portrait_bytestream_result = p.ToByteStream();
-
-            for (int i = 0; i < portrait_bytestream_expected.Length; i++)
+            CollectionAssert.AreEqual(portrait_bytestream_expected, portrait_bytestream_result);
+        /*    for (int i = 0; i < portrait_bytestream_expected.Length; i++)
             {
                 Assert.AreEqual(portrait_bytestream_expected[i], portrait_bytestream_result[i]);
-            }
+            }*/
         }
 
         [TestMethod]
