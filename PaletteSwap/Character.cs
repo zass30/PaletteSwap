@@ -162,46 +162,29 @@ namespace PaletteSwap
             var c = new Character();
             c.characterType = character;
             ByteStreamPair bsp = CharacterConfig.GetByteStreamPair(character, button);
+            PaletteConfig spriteConfig = PaletteConfig.GenerateSpriteConfig(character);
+            PaletteConfig portraitConfig = PaletteConfig.GeneratePortraitConfig(character);
+            Palette s = Palette.PaletteFromConfig(spriteConfig);
+            Palette p = Palette.PaletteFromConfig(portraitConfig);
+            c.sprite = s;
+            c.portrait = p;
+
+            s.LoadStream(bsp.spriteStream);
+            p.LoadStream(bsp.portraitStream);
+
 
             if (character == CharacterConfig.CHARACTERS.Dictator)
             {
-                PaletteConfig dicSpriteConfig = PaletteConfig.DICTATOR.GenerateDictatorSpriteConfig();
-                PaletteConfig dicPortraitConfig = PaletteConfig.DICTATOR.GenerateDictatorPortraitConfig();
-                Palette s = Palette.PaletteFromConfig(dicSpriteConfig);
-                Palette p = Palette.PaletteFromConfig(dicPortraitConfig);
-                c.sprite = s;
-                c.portrait = p;
-
-                s.LoadStream(bsp.spriteStream); 
-                p.LoadStream(bsp.portraitStream); 
-
                 AssignDicatatorSpriteImages(s);
                 AssignDicatatorPortraitImages(p);
             }
             else if (character == CharacterConfig.CHARACTERS.Claw) {
-                PaletteConfig claSpriteConfig = PaletteConfig.CLAW.GenerateClawSpriteConfig();
-                PaletteConfig claPortraitConfig = PaletteConfig.CLAW.GenerateClawPortraitConfig();
-                Palette s = Palette.PaletteFromConfig(claSpriteConfig);
-                Palette p = Palette.PaletteFromConfig(claPortraitConfig);
-                c.sprite = s;
-                c.portrait = p;
-
-                s.LoadStream(bsp.spriteStream);
-                p.LoadStream(bsp.portraitStream);
-
                 AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
             }
             else if (character == CharacterConfig.CHARACTERS.Guile)
             {
-                PaletteConfig claSpriteConfig = PaletteConfig.GUILE.GenerateGuileSpriteConfig();
-                PaletteConfig claPortraitConfig = PaletteConfig.GUILE.GenerateGuilePortraitConfig();
-                Palette s = Palette.PaletteFromConfig(claSpriteConfig);
-                Palette p = Palette.PaletteFromConfig(claPortraitConfig);
-                c.sprite = s;
-                c.portrait = p;
-
                 s.LoadStream(bsp.spriteStream);
                 p.LoadStream(bsp.portraitStream);
 
