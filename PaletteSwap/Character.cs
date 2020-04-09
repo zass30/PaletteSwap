@@ -171,7 +171,7 @@ namespace PaletteSwap
 
             s.LoadStream(bsp.spriteStream);
             p.LoadStream(bsp.portraitStream);
-
+            AssignImage(s, ImageConfig.GenerateNeutralBasePalette(character), "neutral");
 
             if (character == CharacterConfig.CHARACTERS.Dictator)
             {
@@ -179,16 +179,11 @@ namespace PaletteSwap
                 AssignDicatatorPortraitImages(p);
             }
             else if (character == CharacterConfig.CHARACTERS.Claw) {
-                AssignImage(s, ImageConfig.CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage(), "neutral");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
                 AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
             }
             else if (character == CharacterConfig.CHARACTERS.Guile)
             {
-                s.LoadStream(bsp.spriteStream);
-                p.LoadStream(bsp.portraitStream);
-
-                AssignImage(s, ImageConfig.GUILE.SPRITE.GenerateGuileStandingNeutralBasePaletteImage(), "neutral");
                 AssignImage(p, ImageConfig.GUILE.PORTRAIT.GenerateGuileVictoryBasePaletteImage(), "victory");
                 AssignImage(p, ImageConfig.GUILE.PORTRAIT.GenerateGuileLossBasePaletteImage(), "loss");
             }
@@ -203,7 +198,6 @@ namespace PaletteSwap
 
         private static void AssignDicatatorSpriteImages(Palette s)
         {
-            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage(), "neutral");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPunchBasePaletteImage(), "psychopunch");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");

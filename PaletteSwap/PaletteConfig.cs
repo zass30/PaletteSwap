@@ -596,6 +596,21 @@ namespace PaletteSwap
 
     public struct ImageConfig
     {
+        public static PaletteImage GenerateNeutralBasePalette(CharacterConfig.CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.SPRITE.GenerateGuileStandingNeutralBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
+
+            }
+            throw new Exception("Invalid character");
+        }
+
         public static PaletteImage GeneratePaletteImage(Bitmap base_image, string resource, List<string> labels, Dictionary<string, List<int>> offsets)
         {
             byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
