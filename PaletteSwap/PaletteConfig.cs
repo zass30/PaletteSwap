@@ -176,6 +176,7 @@ namespace PaletteSwap
             p.portraitStream = portrait_bytestream;
             return p;
         }
+        
         public static string CodeFromCharacterEnum(CHARACTERS c)
         {
             switch (c)
@@ -189,7 +190,7 @@ namespace PaletteSwap
             }
             throw new ArgumentException("Invalid Character type");
         }
-
+        
         public static CHARACTERS CharacterEnumFromCode(string s)
         {
             switch (s)

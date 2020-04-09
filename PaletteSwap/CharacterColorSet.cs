@@ -15,47 +15,39 @@ namespace PaletteSwap
         public int portrait2_offset;
         public int portrait_length;
 
+        public CharacterSet(CharacterConfig.CHARACTERS character)
+        {
+            this.sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
+            this.sprite_length = CharacterConfig.spriteColorLength;
+            this.portrait_offset = CharacterConfig.GetPortrait1BeginOffset(character);
+            this.portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
+            this.portrait_length = CharacterConfig.portraitColorLength;
+
+            characterColors[0] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.lp);
+            characterColors[1] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.mp);
+            characterColors[2] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.hp);
+            characterColors[3] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.lk);
+            characterColors[4] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.mk);
+            characterColors[5] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.hk);
+            characterColors[6] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.start);
+            characterColors[7] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.hold);
+            characterColors[8] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.old1);
+            characterColors[9] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.old2);
+        }
+
+        public CharacterSet()
+        {
+
+        }
+
         public static CharacterSet GenerateDictatorCharacterSet()
         {
-            CharacterSet cs = new CharacterSet();
-            cs.sprite_offset = 0x00042E7E;
-            cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x34448;  // character id = 8
-            cs.portrait2_offset = 0x394FE;
-            cs.portrait_length = 0x80;
-            cs.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
-            cs.characterColors[1] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp);
-            cs.characterColors[2] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hp);
-            cs.characterColors[3] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lk);
-            cs.characterColors[4] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mk);
-            cs.characterColors[5] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk);
-            cs.characterColors[6] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.start);
-            cs.characterColors[7] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hold);
-            cs.characterColors[8] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.old1);
-            cs.characterColors[9] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.old2);
-            return cs;
+            return new CharacterSet(CharacterConfig.CHARACTERS.Dictator);
         }
 
         public static CharacterSet GenerateGuileCharacterSet()
         {
-            CharacterSet cs = new CharacterSet();
-            cs.sprite_offset = 0x00040E62; // move this to a config
-            cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x32B48;
-            cs.portrait2_offset = 0x37BFE;//0x34448; 
-            cs.portrait_length = 0x80;
-            cs.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.lp);
-            cs.characterColors[1] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.mp);
-            cs.characterColors[2] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.hp);
-            cs.characterColors[3] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.lk);
-            cs.characterColors[4] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.mk);
-            cs.characterColors[5] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.hk);
-            cs.characterColors[6] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.start);
-            cs.characterColors[7] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.hold);
-            cs.characterColors[8] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.old1);
-            cs.characterColors[9] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.old2);
-
-            return cs;
+            return new CharacterSet(CharacterConfig.CHARACTERS.Guile);
         }
         // sprite block length
         // GUI - 40E60
@@ -91,23 +83,7 @@ namespace PaletteSwap
 */
         public static CharacterSet GenerateClawCharacterSet()
         {
-            CharacterSet cs = new CharacterSet();
-            cs.sprite_offset = 0x000441C2;
-            cs.sprite_length = 0xA2;
-            cs.portrait_offset = 0x35348;//character id B
-            cs.portrait2_offset = 0x3A3FE;
-            cs.portrait_length = 0x80;
-            cs.characterColors[0] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.lp);
-            cs.characterColors[1] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.mp);
-            cs.characterColors[2] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hp);
-            cs.characterColors[3] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.lk);
-            cs.characterColors[4] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.mk);
-            cs.characterColors[5] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hk);
-            cs.characterColors[6] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.start);
-            cs.characterColors[7] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold);
-            cs.characterColors[8] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.old1);
-            cs.characterColors[9] = Character.createDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.old2);
-            return cs;
+            return new CharacterSet(CharacterConfig.CHARACTERS.Claw);
         }
 
         public static CharacterSet CharacterColorSetFromStreams(byte[] sprites, byte[] portraits)
@@ -127,19 +103,8 @@ namespace PaletteSwap
 
         public static CharacterSet CharacterColorSetFromStreamsChar(byte[] sprites, byte[] portraits, CharacterConfig.CHARACTERS characterType)
         {
-            CharacterSet cs = new CharacterSet();
-            switch (characterType)
-            {
-                case CharacterConfig.CHARACTERS.Dictator:
-                    cs = GenerateDictatorCharacterSet();
-                    break;
-                case CharacterConfig.CHARACTERS.Claw:
-                    cs = GenerateClawCharacterSet();
-                    break;
-                case CharacterConfig.CHARACTERS.Guile:
-                    cs = GenerateGuileCharacterSet();
-                    break;
-            }
+            CharacterSet cs = new CharacterSet(characterType);
+
             byte[] sprite_bytes = new byte[cs.sprite_length];
             byte[] portrait_bytes = new byte[cs.portrait_length];
             for (int i = 0; i < 10; i++)
@@ -155,18 +120,7 @@ namespace PaletteSwap
         // todo, delete this. is it old?
         public static CharacterSet CharacterColorSetFromZipStreamChar(Stream fileStream, CharacterConfig.CHARACTERS characterType)
         {
-            CharacterSet cs = new CharacterSet();
-            switch (characterType) {
-                case CharacterConfig.CHARACTERS.Dictator:
-                    cs = GenerateDictatorCharacterSet();
-                    break;
-                case CharacterConfig.CHARACTERS.Claw:
-                    cs = GenerateClawCharacterSet();
-                    break;
-                case CharacterConfig.CHARACTERS.Guile:
-                    cs = GenerateGuileCharacterSet();
-                    break;
-            }
+            CharacterSet cs = new CharacterSet(characterType);
 
             byte[] sprites = new byte[cs.sprite_length];
             byte[] portraits = new byte[cs.portrait_length];
