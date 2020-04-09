@@ -421,4 +421,13 @@
   <data name="DIC_portraitloss0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dictator\DIC_portraitloss0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RYU_neutral2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu\RYU_neutral2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RYU_portraitloss2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu\RYU_portraitloss2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RYU_portraitwin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu\RYU_portraitwin2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

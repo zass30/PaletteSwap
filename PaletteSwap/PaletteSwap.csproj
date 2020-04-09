@@ -146,6 +146,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ryu\RYU_portraitwin2.png" />
+    <None Include="Resources\ryu\RYU_portraitloss2.png" />
+    <None Include="Resources\ryu\RYU_neutral2.png" />
     <None Include="Resources\dictator\DIC_portraitloss0.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
