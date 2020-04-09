@@ -611,6 +611,37 @@ namespace PaletteSwap
             throw new Exception("Invalid character");
         }
 
+        public static PaletteImage GenerateVictoryBasePalette(CharacterConfig.CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.PORTRAIT.GenerateGuileVictoryBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
+
+            }
+            throw new Exception("Invalid character");
+        }
+
+        public static PaletteImage GenerateLossBasePalette(CharacterConfig.CHARACTERS c)
+        {
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.PORTRAIT.GenerateGuileLossBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.PORTRAIT.GenerateClawLossBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
+
+            }
+            throw new Exception("Invalid character");
+        }
+
+
         public static PaletteImage GeneratePaletteImage(Bitmap base_image, string resource, List<string> labels, Dictionary<string, List<int>> offsets)
         {
             byte[] byte_stream = PaletteHelper.StringToByteStream(resource);

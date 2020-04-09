@@ -172,28 +172,13 @@ namespace PaletteSwap
             s.LoadStream(bsp.spriteStream);
             p.LoadStream(bsp.portraitStream);
             AssignImage(s, ImageConfig.GenerateNeutralBasePalette(character), "neutral");
+            AssignImage(p, ImageConfig.GenerateVictoryBasePalette(character), "victory");
+            AssignImage(p, ImageConfig.GenerateLossBasePalette(character), "loss");
 
             if (character == CharacterConfig.CHARACTERS.Dictator)
-            {
                 AssignDicatatorSpriteImages(s);
-                AssignDicatatorPortraitImages(p);
-            }
-            else if (character == CharacterConfig.CHARACTERS.Claw) {
-                AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage(), "victory");
-                AssignImage(p, ImageConfig.CLAW.PORTRAIT.GenerateClawLossBasePaletteImage(), "loss");
-            }
-            else if (character == CharacterConfig.CHARACTERS.Guile)
-            {
-                AssignImage(p, ImageConfig.GUILE.PORTRAIT.GenerateGuileVictoryBasePaletteImage(), "victory");
-                AssignImage(p, ImageConfig.GUILE.PORTRAIT.GenerateGuileLossBasePaletteImage(), "loss");
-            }
+            
             return c;
-        }
-
-        private static void AssignDicatatorPortraitImages(Palette p)
-        {
-            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage(), "victory");
-            AssignImage(p, ImageConfig.Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage(), "loss");
         }
 
         private static void AssignDicatatorSpriteImages(Palette s)
