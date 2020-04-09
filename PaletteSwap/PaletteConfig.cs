@@ -27,7 +27,7 @@ namespace PaletteSwap
         static public int portraitStep = 0x500;
         static public int portraitColorLength = 0x80;
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
-        public enum CHARACTERS { Dictator, Claw, Guile };
+        public enum CHARACTERS { Dictator, Claw, Guile, Ryu };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
         {
@@ -187,6 +187,8 @@ namespace PaletteSwap
                     return "CLA";
                 case CHARACTERS.Guile:
                     return "GUI";
+                case CHARACTERS.Ryu:
+                    return "RYU";
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -201,6 +203,8 @@ namespace PaletteSwap
                     return CHARACTERS.Dictator;
                 case "GUI":
                     return CHARACTERS.Guile;
+                case "RYU":
+                    return CHARACTERS.Ryu;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -209,6 +213,8 @@ namespace PaletteSwap
         {
             switch (c)
             {
+                case CHARACTERS.Ryu:
+                    return 0;
                 case CHARACTERS.Guile:
                     return 3;
                 case CHARACTERS.Dictator:

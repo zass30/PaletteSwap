@@ -11,9 +11,7 @@ namespace PaletteSwap
     {
         public Palette sprite;
         public Palette portrait;
-  //      public enum CHARACTERS { Dictator, Claw, Guile };
         public CharacterConfig.CHARACTERS characterType;
-        //public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
 
         public static string CodeFromCharacterEnum(CharacterConfig.CHARACTERS c)
         {
