@@ -214,7 +214,33 @@ namespace PaletteSwap
                 b = character.patch_portraits_stream03(b);
             }
             return b;
+        }
 
+        private byte[] PatchOldBisonPunchesStream(byte[] b)
+        {
+            foreach (int offset in CharacterConfig.bisonPunchesAddresses)
+            {
+                b[offset] = (byte)CharacterConfig.bisonPunchesValue;
+            }
+            return b;
+        }
+
+        public byte[] PatchOldBisonPunches06()
+        {
+            byte[] b = Resources.sfxe06a;
+            return PatchOldBisonPunchesStream(b);
+        }
+
+        public byte[] PatchOldBisonPunches06phoenix()
+        {
+            byte[] b = Resources.sfxjd06a;
+            return PatchOldBisonPunchesStream(b);
+        }
+
+        public byte[] PatchOldBisonPunches06japanese()
+        {
+            byte[] b = Resources.sfxj06a;
+            return PatchOldBisonPunchesStream(b);
         }
 
         public byte[] sprites_stream04phoenix()

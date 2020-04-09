@@ -895,33 +895,41 @@ namespace PaletteSwap
                     {
                         string _03filename;
                         string _04filename;
+                        string _06filename;
 
                         byte[] p_stream;
                         byte[] s_stream;
+                        byte[] oldbisonpunches_stream;
 
                         switch (r)
                         {
                             case ROMSTYLE.japanese:
                                 _03filename = "sfxj.03c";
                                 _04filename = "sfxj.04a";
+                                _06filename = "sfxj.06a";
 
                                 p_stream = gameSet.portraits_stream03japanese();
                                 s_stream = gameSet.sprites_stream04japanese();
+                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06japanese();
                                 break;
                             case ROMSTYLE.phoenix:
                                 _03filename = "sfxjd.03c";
                                 _04filename = "sfxjd.04a";
+                                _06filename = "sfxjd.06a";
 
                                 p_stream = gameSet.portraits_stream03phoenix();
                                 s_stream = gameSet.sprites_stream04phoenix();
+                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06phoenix();
                                 break;
                             default:
                             case ROMSTYLE.us:
                                 _03filename = "sfxe.03c";
                                 _04filename = "sfxe.04a";
+                                _06filename = "sfxe.06a";
 
                                 p_stream = gameSet.portraits_stream03();
                                 s_stream = gameSet.sprites_stream04();
+                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06();
                                 break;
                         }
 
@@ -941,13 +949,13 @@ namespace PaletteSwap
                             entryStream.Write(s_stream, 0, s_stream.Length);
                         }
 
-                        /*var _06file = archive.CreateEntry(_06filename);
+                        var _06file = archive.CreateEntry(_06filename);
                         using (var entryStream = _06file.Open())
                         using (var streamWriter = new StreamWriter(entryStream))
                         {
                             var c = entryStream.CanSeek;
-                            entryStream.Write(punches_stream, 0, punches_stream.Length);
-                        }*/
+                            entryStream.Write(oldbisonpunches_stream, 0, oldbisonpunches_stream.Length);
+                        }
                     }
                 }
             }

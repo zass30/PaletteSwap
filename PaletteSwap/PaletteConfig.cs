@@ -26,6 +26,10 @@ namespace PaletteSwap
         static public int portrait2BeginOffset = 0x36CFE;
         static public int portraitStep = 0x500;
         static public int portraitColorLength = 0x80;
+        static public List<int> bisonPunchesAddresses = 
+            new List<int>() { 0x6BD1A, 0x6BD1E, 0x6BFB6, 0x6C024, 0x6C038, 0x6C03C, 0x6C04C, 0x6C050 };
+        static public int bisonPunchesValue = 0x14;
+
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
         public enum CHARACTERS { Dictator, Claw, Guile, Ryu };
 
