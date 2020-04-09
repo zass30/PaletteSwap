@@ -71,7 +71,7 @@ namespace PaletteSwapTest
             var s = cs.characterColors[0].sprite;
             var p = cs.characterColors[0].portrait;
 
-            var cs_result = CharacterSet.CharacterColorSetFromStreams(sprites_stream, portraits_stream);
+            var cs_result = CharacterSet.CharacterColorSetFromStreamsChar(sprites_stream, portraits_stream, CharacterConfig.CHARACTERS.Dictator);
             var cc_result = cs_result.characterColors[0];
             Assert.IsNotNull(cc_result);
             var sprite_result = cc_result.sprite;
