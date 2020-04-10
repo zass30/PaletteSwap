@@ -257,6 +257,8 @@ namespace PaletteSwap
         {
             switch (c)
             {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.GenerateRyuSpriteConfig();
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUILE.GenerateGuileSpriteConfig();
                 case CharacterConfig.CHARACTERS.Claw:
@@ -272,6 +274,8 @@ namespace PaletteSwap
         {
             switch (c)
             {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.GenerateRyuPortraitConfig();
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUILE.GenerateGuilePortraitConfig();
                 case CharacterConfig.CHARACTERS.Claw:
@@ -333,6 +337,59 @@ namespace PaletteSwap
                 pc.labelOffsets = GenerateRyuSpriteOffsets();
                 pc.unusedOffsets = new List<int>();
                 pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateRyuPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "hair1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+        { "hair2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+        { "hair3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+        { "hair4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+        { "hair5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+        { "hair6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+        { "hair7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+        { "eyes1", new List<int>() { 14 } },
+        { "eyes2", new List<int>() { 16 } },
+        { "eyes3", new List<int>() { 18 } },
+        { "headband1", new List<int>() { 24, ROWLEN * 1 + 24, } },
+        { "headband1", new List<int>() { 26, ROWLEN * 1 + 26, } },
+        { "headband1", new List<int>() { 28, ROWLEN * 1 + 28, } },
+        { "gi1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
+        { "gi2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
+        { "gi3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
+        { "gi4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
+        { "gi5", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
+        { "blood1", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "blood2", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "blood3", new List<int>() { ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+        { "teeth1", new List<int>() { ROWLEN * 2 + 14 } },
+        { "teeth2", new List<int>() { ROWLEN * 2 + 16 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateRyuPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> guilePortraitOffsets = GenerateRyuPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = guilePortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;
             }
@@ -727,6 +784,46 @@ namespace PaletteSwap
                 public static PaletteImage GenerateRyuPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
                     return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
+                }
+            }
+
+            public struct PORTRAIT
+            {
+                public static List<string> RyuPortraitLabels()
+                {
+                    return new List<string> {
+                        "hair1", "hair2", "hair3", "hair4", "hair5", "hair6", "hair7",
+                        "eyes1", "eyes2", "eyes3",
+                        "headband1", "headband2", "headband3",
+                        "gi1", "gi2", "gi3", "gi4", "gi5",
+                        "blood1", "blood2", "blood3",
+                        "shirt1","shirt2", "shirt3",
+                        "teeth1", "teeth2",};
+                }
+
+                public static Bitmap RyuVictoryPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.RYU_portraitwin2);
+                }
+
+                public static Bitmap RyuLossPortraitBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.RYU_portraitloss2);
+                }
+
+                public static PaletteImage GenerateRYUVictoryBasePaletteImage()
+                {
+                    return GenerateRyuPortraitPaletteImage(RyuVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.ryu2portrait, RyuPortraitLabels());
+                }
+
+                public static PaletteImage GenerateRyuLossBasePaletteImage()
+                {
+                    return GenerateRyuPortraitPaletteImage(RyuLossPortraitBaseImage(), PaletteSwap.Properties.Resources.ryu2portrait, RyuPortraitLabels());
+                }
+
+                public static PaletteImage GenerateRyuPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
                 }
             }
         }
