@@ -325,6 +325,17 @@ namespace PaletteSwap
            };
                 return spriteOffsets;
             }
+
+            public static PaletteConfig GenerateRyuSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateRyuSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
         }
 
         public struct GUILE
@@ -679,7 +690,6 @@ namespace PaletteSwap
             throw new Exception("Invalid character");
         }
 
-
         public static PaletteImage GeneratePaletteImage(Bitmap base_image, string resource, List<string> labels, Dictionary<string, List<int>> offsets)
         {
             byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
@@ -689,6 +699,36 @@ namespace PaletteSwap
             PaletteImage p = new PaletteImage(base_image, c);
             p.labels = labels;
             return p;
+        }
+
+        public struct RYU
+        {
+            public struct SPRITE
+            {
+                public static List<string> RyuStandNeutralLabels()
+                {
+                    return new List<string> { 
+                    "skin1", "skin2", "skin3", "skin4", 
+                    "hair1", "hair2", "belt1", "belt2",
+                "costume1", "costume2", "costume3", "costume4", "costume5", "costume6" };
+                }
+
+
+                public static Bitmap RyuStandNeutralBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.RYU_neutral2);
+                }
+
+                public static PaletteImage GenerateRyuStandingNeutralBasePaletteImage()
+                {
+                    return GenerateRyuPaletteImage(RyuStandNeutralBaseImage(), PaletteSwap.Properties.Resources.ryu2sprite, RyuStandNeutralLabels());
+                }
+
+                public static PaletteImage GenerateRyuPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
+                }
+            }
         }
 
         public struct GUILE
@@ -701,7 +741,6 @@ namespace PaletteSwap
                 "costume1", "costume2", "costume3", "costume4", "costume5",
                     "flag1", "flag2", "hair" };
                 }
-
 
                 public static Bitmap GuileStandNeutralBaseImage()
                 {
