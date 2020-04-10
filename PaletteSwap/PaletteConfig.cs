@@ -300,6 +300,33 @@ namespace PaletteSwap
             }
         }
 
+        public struct RYU
+        {
+            public static Dictionary<string, List<int>> GenerateRyuSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "belt", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "hair1", new List<int>() { 10 } },
+            { "hair2", new List<int>() { 12 } },
+            { "belt2", new List<int>() { 14} },
+            { "costume1", new List<int>() { 16 } },
+            { "costume2", new List<int>() { 18 } },
+            { "costume3", new List<int>() { 20 } },
+            { "costume4", new List<int>() { 22 } },
+            { "costume5", new List<int>() { 24 } },
+            { "costume6", new List<int>() { 26 } },
+            { "belt1", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+        }
+
         public struct GUILE
         {
             public static PaletteConfig GenerateGuileSpriteConfig()
