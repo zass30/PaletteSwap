@@ -21,7 +21,9 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Claw:
                     return "CLA";
                 case CharacterConfig.CHARACTERS.Guile:
-                    return "GUI";                    
+                    return "GUI";
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return "RYU";
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -36,6 +38,8 @@ namespace PaletteSwap
                     return CharacterConfig.CHARACTERS.Dictator;
                 case "GUI":
                     return CharacterConfig.CHARACTERS.Guile;
+                case "RYU":
+                    return CharacterConfig.CHARACTERS.Ryu;
             }
             throw new ArgumentException("Invalid Character type");
         }

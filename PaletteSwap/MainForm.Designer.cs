@@ -283,6 +283,55 @@
             this.RYU_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.RYU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.RYU_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.RYU_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.RYU_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.RYU_portrait_headband3 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_headband2 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_headband1 = new System.Windows.Forms.PictureBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.RYU_portrait_eyes3 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_eyes2 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_eyes1 = new System.Windows.Forms.PictureBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.RYU_portrait_gi5 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_gi4 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_gi3 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_gi2 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_gi1 = new System.Windows.Forms.PictureBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.RYU_portrait_skin7 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.RYU_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.RYU_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_belt = new System.Windows.Forms.PictureBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.RYU_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_headband1 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_headband2 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_costume6 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_hair1 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_hair2 = new System.Windows.Forms.PictureBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.RYU_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.RYU_sprite_skin4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -449,6 +498,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_headband3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_headband2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_headband1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_eyes3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_eyes2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_eyes1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_belt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_headband1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_headband2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2974,7 +3061,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(21, 330);
+            this.label33.Location = new System.Drawing.Point(22, 321);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(24, 13);
             this.label33.TabIndex = 162;
@@ -3005,7 +3092,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(25, 392);
+            this.label34.Location = new System.Drawing.Point(24, 381);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(24, 13);
             this.label34.TabIndex = 159;
@@ -3014,7 +3101,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(22, 362);
+            this.label35.Location = new System.Drawing.Point(21, 351);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(47, 13);
             this.label35.TabIndex = 152;
@@ -3194,6 +3281,55 @@
             // 
             // TabPageRyu
             // 
+            this.TabPageRyu.Controls.Add(this.label43);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_teeth2);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_teeth1);
+            this.TabPageRyu.Controls.Add(this.label44);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_blood3);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_blood2);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_blood1);
+            this.TabPageRyu.Controls.Add(this.label45);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_headband3);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_headband2);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_headband1);
+            this.TabPageRyu.Controls.Add(this.label46);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_eyes3);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_eyes2);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_eyes1);
+            this.TabPageRyu.Controls.Add(this.label47);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_gi5);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_gi4);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_gi3);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_gi2);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_gi1);
+            this.TabPageRyu.Controls.Add(this.label48);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin7);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin6);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin5);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin4);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin3);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin2);
+            this.TabPageRyu.Controls.Add(this.RYU_portrait_skin1);
+            this.TabPageRyu.Controls.Add(this.label49);
+            this.TabPageRyu.Controls.Add(this.label50);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_costume5);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_belt);
+            this.TabPageRyu.Controls.Add(this.label51);
+            this.TabPageRyu.Controls.Add(this.label52);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_costume1);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_costume2);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_costume3);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_costume4);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_headband1);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_headband2);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_costume6);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_hair1);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_hair2);
+            this.TabPageRyu.Controls.Add(this.label53);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_skin1);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_skin2);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_skin3);
+            this.TabPageRyu.Controls.Add(this.RYU_sprite_skin4);
             this.TabPageRyu.Controls.Add(this.RYU_neutralStandBox);
             this.TabPageRyu.Controls.Add(this.RYU_portraitLossBox);
             this.TabPageRyu.Controls.Add(this.RYU_portraitVictoryBox);
@@ -3212,6 +3348,7 @@
             this.RYU_portraitLossBox.Size = new System.Drawing.Size(128, 112);
             this.RYU_portraitLossBox.TabIndex = 175;
             this.RYU_portraitLossBox.TabStop = false;
+            this.RYU_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // RYU_portraitVictoryBox
             // 
@@ -3221,6 +3358,7 @@
             this.RYU_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.RYU_portraitVictoryBox.TabIndex = 174;
             this.RYU_portraitVictoryBox.TabStop = false;
+            this.RYU_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // RYU_neutralStandBox
             // 
@@ -3230,6 +3368,524 @@
             this.RYU_neutralStandBox.Size = new System.Drawing.Size(59, 90);
             this.RYU_neutralStandBox.TabIndex = 176;
             this.RYU_neutralStandBox.TabStop = false;
+            this.RYU_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(286, 350);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(31, 13);
+            this.label43.TabIndex = 262;
+            this.label43.Text = "teeth";
+            // 
+            // RYU_portrait_teeth2
+            // 
+            this.RYU_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_teeth2.Location = new System.Drawing.Point(371, 339);
+            this.RYU_portrait_teeth2.Name = "RYU_portrait_teeth2";
+            this.RYU_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_teeth2.TabIndex = 260;
+            this.RYU_portrait_teeth2.TabStop = false;
+            this.RYU_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_teeth1
+            // 
+            this.RYU_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_teeth1.Location = new System.Drawing.Point(341, 339);
+            this.RYU_portrait_teeth1.Name = "RYU_portrait_teeth1";
+            this.RYU_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_teeth1.TabIndex = 259;
+            this.RYU_portrait_teeth1.TabStop = false;
+            this.RYU_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(286, 320);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(33, 13);
+            this.label44.TabIndex = 258;
+            this.label44.Text = "blood";
+            // 
+            // RYU_portrait_blood3
+            // 
+            this.RYU_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_blood3.Location = new System.Drawing.Point(401, 309);
+            this.RYU_portrait_blood3.Name = "RYU_portrait_blood3";
+            this.RYU_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_blood3.TabIndex = 257;
+            this.RYU_portrait_blood3.TabStop = false;
+            this.RYU_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_blood2
+            // 
+            this.RYU_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_blood2.Location = new System.Drawing.Point(371, 309);
+            this.RYU_portrait_blood2.Name = "RYU_portrait_blood2";
+            this.RYU_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_blood2.TabIndex = 256;
+            this.RYU_portrait_blood2.TabStop = false;
+            this.RYU_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_blood1
+            // 
+            this.RYU_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_blood1.Location = new System.Drawing.Point(341, 309);
+            this.RYU_portrait_blood1.Name = "RYU_portrait_blood1";
+            this.RYU_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_blood1.TabIndex = 255;
+            this.RYU_portrait_blood1.TabStop = false;
+            this.RYU_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(286, 260);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(55, 13);
+            this.label45.TabIndex = 254;
+            this.label45.Text = "headband";
+            // 
+            // RYU_portrait_headband3
+            // 
+            this.RYU_portrait_headband3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_headband3.Location = new System.Drawing.Point(401, 249);
+            this.RYU_portrait_headband3.Name = "RYU_portrait_headband3";
+            this.RYU_portrait_headband3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_headband3.TabIndex = 251;
+            this.RYU_portrait_headband3.TabStop = false;
+            this.RYU_portrait_headband3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_headband3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_headband2
+            // 
+            this.RYU_portrait_headband2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_headband2.Location = new System.Drawing.Point(371, 249);
+            this.RYU_portrait_headband2.Name = "RYU_portrait_headband2";
+            this.RYU_portrait_headband2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_headband2.TabIndex = 250;
+            this.RYU_portrait_headband2.TabStop = false;
+            this.RYU_portrait_headband2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_headband2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_headband1
+            // 
+            this.RYU_portrait_headband1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_headband1.Location = new System.Drawing.Point(341, 249);
+            this.RYU_portrait_headband1.Name = "RYU_portrait_headband1";
+            this.RYU_portrait_headband1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_headband1.TabIndex = 249;
+            this.RYU_portrait_headband1.TabStop = false;
+            this.RYU_portrait_headband1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_headband1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(286, 290);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(29, 13);
+            this.label46.TabIndex = 248;
+            this.label46.Text = "eyes";
+            // 
+            // RYU_portrait_eyes3
+            // 
+            this.RYU_portrait_eyes3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_eyes3.Location = new System.Drawing.Point(401, 279);
+            this.RYU_portrait_eyes3.Name = "RYU_portrait_eyes3";
+            this.RYU_portrait_eyes3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_eyes3.TabIndex = 245;
+            this.RYU_portrait_eyes3.TabStop = false;
+            this.RYU_portrait_eyes3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_eyes3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_eyes2
+            // 
+            this.RYU_portrait_eyes2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_eyes2.Location = new System.Drawing.Point(371, 279);
+            this.RYU_portrait_eyes2.Name = "RYU_portrait_eyes2";
+            this.RYU_portrait_eyes2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_eyes2.TabIndex = 244;
+            this.RYU_portrait_eyes2.TabStop = false;
+            this.RYU_portrait_eyes2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_eyes2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_eyes1
+            // 
+            this.RYU_portrait_eyes1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_eyes1.Location = new System.Drawing.Point(341, 279);
+            this.RYU_portrait_eyes1.Name = "RYU_portrait_eyes1";
+            this.RYU_portrait_eyes1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_eyes1.TabIndex = 243;
+            this.RYU_portrait_eyes1.TabStop = false;
+            this.RYU_portrait_eyes1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_eyes1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(286, 230);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(15, 13);
+            this.label47.TabIndex = 242;
+            this.label47.Text = "gi";
+            // 
+            // RYU_portrait_gi5
+            // 
+            this.RYU_portrait_gi5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_gi5.Location = new System.Drawing.Point(461, 219);
+            this.RYU_portrait_gi5.Name = "RYU_portrait_gi5";
+            this.RYU_portrait_gi5.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_gi5.TabIndex = 241;
+            this.RYU_portrait_gi5.TabStop = false;
+            this.RYU_portrait_gi5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_gi5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_gi4
+            // 
+            this.RYU_portrait_gi4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_gi4.Location = new System.Drawing.Point(431, 219);
+            this.RYU_portrait_gi4.Name = "RYU_portrait_gi4";
+            this.RYU_portrait_gi4.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_gi4.TabIndex = 240;
+            this.RYU_portrait_gi4.TabStop = false;
+            this.RYU_portrait_gi4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_gi4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_gi3
+            // 
+            this.RYU_portrait_gi3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_gi3.Location = new System.Drawing.Point(401, 219);
+            this.RYU_portrait_gi3.Name = "RYU_portrait_gi3";
+            this.RYU_portrait_gi3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_gi3.TabIndex = 239;
+            this.RYU_portrait_gi3.TabStop = false;
+            this.RYU_portrait_gi3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_gi3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_gi2
+            // 
+            this.RYU_portrait_gi2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_gi2.Location = new System.Drawing.Point(371, 219);
+            this.RYU_portrait_gi2.Name = "RYU_portrait_gi2";
+            this.RYU_portrait_gi2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_gi2.TabIndex = 238;
+            this.RYU_portrait_gi2.TabStop = false;
+            this.RYU_portrait_gi2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_gi2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_gi1
+            // 
+            this.RYU_portrait_gi1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_gi1.Location = new System.Drawing.Point(341, 219);
+            this.RYU_portrait_gi1.Name = "RYU_portrait_gi1";
+            this.RYU_portrait_gi1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_gi1.TabIndex = 237;
+            this.RYU_portrait_gi1.TabStop = false;
+            this.RYU_portrait_gi1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_gi1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(286, 200);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(26, 13);
+            this.label48.TabIndex = 236;
+            this.label48.Text = "skin";
+            // 
+            // RYU_portrait_skin7
+            // 
+            this.RYU_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin7.Location = new System.Drawing.Point(521, 189);
+            this.RYU_portrait_skin7.Name = "RYU_portrait_skin7";
+            this.RYU_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin7.TabIndex = 235;
+            this.RYU_portrait_skin7.TabStop = false;
+            this.RYU_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_skin6
+            // 
+            this.RYU_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin6.Location = new System.Drawing.Point(491, 189);
+            this.RYU_portrait_skin6.Name = "RYU_portrait_skin6";
+            this.RYU_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin6.TabIndex = 234;
+            this.RYU_portrait_skin6.TabStop = false;
+            this.RYU_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_skin5
+            // 
+            this.RYU_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin5.Location = new System.Drawing.Point(461, 189);
+            this.RYU_portrait_skin5.Name = "RYU_portrait_skin5";
+            this.RYU_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin5.TabIndex = 233;
+            this.RYU_portrait_skin5.TabStop = false;
+            this.RYU_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_skin4
+            // 
+            this.RYU_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin4.Location = new System.Drawing.Point(431, 189);
+            this.RYU_portrait_skin4.Name = "RYU_portrait_skin4";
+            this.RYU_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin4.TabIndex = 232;
+            this.RYU_portrait_skin4.TabStop = false;
+            this.RYU_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_skin3
+            // 
+            this.RYU_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin3.Location = new System.Drawing.Point(401, 189);
+            this.RYU_portrait_skin3.Name = "RYU_portrait_skin3";
+            this.RYU_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin3.TabIndex = 231;
+            this.RYU_portrait_skin3.TabStop = false;
+            this.RYU_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_skin2
+            // 
+            this.RYU_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin2.Location = new System.Drawing.Point(371, 189);
+            this.RYU_portrait_skin2.Name = "RYU_portrait_skin2";
+            this.RYU_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin2.TabIndex = 230;
+            this.RYU_portrait_skin2.TabStop = false;
+            this.RYU_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_portrait_skin1
+            // 
+            this.RYU_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_portrait_skin1.Location = new System.Drawing.Point(341, 189);
+            this.RYU_portrait_skin1.Name = "RYU_portrait_skin1";
+            this.RYU_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_portrait_skin1.TabIndex = 229;
+            this.RYU_portrait_skin1.TabStop = false;
+            this.RYU_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.RYU_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(23, 230);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(24, 13);
+            this.label49.TabIndex = 228;
+            this.label49.Text = "hair";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(23, 260);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(24, 13);
+            this.label50.TabIndex = 227;
+            this.label50.Text = "belt";
+            // 
+            // RYU_sprite_costume5
+            // 
+            this.RYU_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_costume5.Location = new System.Drawing.Point(211, 279);
+            this.RYU_sprite_costume5.Name = "RYU_sprite_costume5";
+            this.RYU_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_costume5.TabIndex = 225;
+            this.RYU_sprite_costume5.TabStop = false;
+            this.RYU_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_belt
+            // 
+            this.RYU_sprite_belt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_belt.Location = new System.Drawing.Point(91, 249);
+            this.RYU_sprite_belt.Name = "RYU_sprite_belt";
+            this.RYU_sprite_belt.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_belt.TabIndex = 226;
+            this.RYU_sprite_belt.TabStop = false;
+            this.RYU_sprite_belt.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_belt.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(26, 320);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(55, 13);
+            this.label51.TabIndex = 224;
+            this.label51.Text = "headband";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(23, 290);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(47, 13);
+            this.label52.TabIndex = 217;
+            this.label52.Text = "costume";
+            // 
+            // RYU_sprite_costume1
+            // 
+            this.RYU_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_costume1.Location = new System.Drawing.Point(91, 279);
+            this.RYU_sprite_costume1.Name = "RYU_sprite_costume1";
+            this.RYU_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_costume1.TabIndex = 218;
+            this.RYU_sprite_costume1.TabStop = false;
+            this.RYU_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_costume2
+            // 
+            this.RYU_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_costume2.Location = new System.Drawing.Point(121, 279);
+            this.RYU_sprite_costume2.Name = "RYU_sprite_costume2";
+            this.RYU_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_costume2.TabIndex = 219;
+            this.RYU_sprite_costume2.TabStop = false;
+            this.RYU_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_costume3
+            // 
+            this.RYU_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_costume3.Location = new System.Drawing.Point(151, 279);
+            this.RYU_sprite_costume3.Name = "RYU_sprite_costume3";
+            this.RYU_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_costume3.TabIndex = 220;
+            this.RYU_sprite_costume3.TabStop = false;
+            this.RYU_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_costume4
+            // 
+            this.RYU_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_costume4.Location = new System.Drawing.Point(181, 279);
+            this.RYU_sprite_costume4.Name = "RYU_sprite_costume4";
+            this.RYU_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_costume4.TabIndex = 221;
+            this.RYU_sprite_costume4.TabStop = false;
+            this.RYU_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_headband1
+            // 
+            this.RYU_sprite_headband1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_headband1.Location = new System.Drawing.Point(91, 309);
+            this.RYU_sprite_headband1.Name = "RYU_sprite_headband1";
+            this.RYU_sprite_headband1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_headband1.TabIndex = 222;
+            this.RYU_sprite_headband1.TabStop = false;
+            this.RYU_sprite_headband1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_headband1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_headband2
+            // 
+            this.RYU_sprite_headband2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_headband2.Location = new System.Drawing.Point(121, 309);
+            this.RYU_sprite_headband2.Name = "RYU_sprite_headband2";
+            this.RYU_sprite_headband2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_headband2.TabIndex = 223;
+            this.RYU_sprite_headband2.TabStop = false;
+            this.RYU_sprite_headband2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_headband2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_costume6
+            // 
+            this.RYU_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_costume6.Location = new System.Drawing.Point(241, 279);
+            this.RYU_sprite_costume6.Name = "RYU_sprite_costume6";
+            this.RYU_sprite_costume6.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_costume6.TabIndex = 214;
+            this.RYU_sprite_costume6.TabStop = false;
+            this.RYU_sprite_costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_costume6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_hair1
+            // 
+            this.RYU_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_hair1.Location = new System.Drawing.Point(91, 219);
+            this.RYU_sprite_hair1.Name = "RYU_sprite_hair1";
+            this.RYU_sprite_hair1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_hair1.TabIndex = 215;
+            this.RYU_sprite_hair1.TabStop = false;
+            this.RYU_sprite_hair1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_hair2
+            // 
+            this.RYU_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_hair2.Location = new System.Drawing.Point(121, 219);
+            this.RYU_sprite_hair2.Name = "RYU_sprite_hair2";
+            this.RYU_sprite_hair2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_hair2.TabIndex = 216;
+            this.RYU_sprite_hair2.TabStop = false;
+            this.RYU_sprite_hair2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(24, 200);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(26, 13);
+            this.label53.TabIndex = 209;
+            this.label53.Text = "skin";
+            // 
+            // RYU_sprite_skin1
+            // 
+            this.RYU_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_skin1.Location = new System.Drawing.Point(91, 189);
+            this.RYU_sprite_skin1.Name = "RYU_sprite_skin1";
+            this.RYU_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_skin1.TabIndex = 210;
+            this.RYU_sprite_skin1.TabStop = false;
+            this.RYU_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_skin2
+            // 
+            this.RYU_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_skin2.Location = new System.Drawing.Point(121, 189);
+            this.RYU_sprite_skin2.Name = "RYU_sprite_skin2";
+            this.RYU_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_skin2.TabIndex = 211;
+            this.RYU_sprite_skin2.TabStop = false;
+            this.RYU_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_skin3
+            // 
+            this.RYU_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_skin3.Location = new System.Drawing.Point(151, 189);
+            this.RYU_sprite_skin3.Name = "RYU_sprite_skin3";
+            this.RYU_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_skin3.TabIndex = 212;
+            this.RYU_sprite_skin3.TabStop = false;
+            this.RYU_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // RYU_sprite_skin4
+            // 
+            this.RYU_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RYU_sprite_skin4.Location = new System.Drawing.Point(181, 189);
+            this.RYU_sprite_skin4.Name = "RYU_sprite_skin4";
+            this.RYU_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.RYU_sprite_skin4.TabIndex = 213;
+            this.RYU_sprite_skin4.TabStop = false;
+            this.RYU_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.RYU_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -3426,9 +4082,48 @@
             ((System.ComponentModel.ISupportInitialize)(this.GUI_sprite_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox)).EndInit();
             this.TabPageRyu.ResumeLayout(false);
+            this.TabPageRyu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_headband3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_headband2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_headband1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_eyes3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_eyes2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_eyes1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_gi1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_belt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_headband1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_headband2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_costume6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_sprite_skin4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3689,6 +4384,55 @@
         private System.Windows.Forms.PictureBox RYU_neutralStandBox;
         private System.Windows.Forms.PictureBox RYU_portraitLossBox;
         private System.Windows.Forms.PictureBox RYU_portraitVictoryBox;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.PictureBox RYU_portrait_teeth2;
+        private System.Windows.Forms.PictureBox RYU_portrait_teeth1;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.PictureBox RYU_portrait_blood3;
+        private System.Windows.Forms.PictureBox RYU_portrait_blood2;
+        private System.Windows.Forms.PictureBox RYU_portrait_blood1;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.PictureBox RYU_portrait_headband3;
+        private System.Windows.Forms.PictureBox RYU_portrait_headband2;
+        private System.Windows.Forms.PictureBox RYU_portrait_headband1;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.PictureBox RYU_portrait_eyes3;
+        private System.Windows.Forms.PictureBox RYU_portrait_eyes2;
+        private System.Windows.Forms.PictureBox RYU_portrait_eyes1;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.PictureBox RYU_portrait_gi5;
+        private System.Windows.Forms.PictureBox RYU_portrait_gi4;
+        private System.Windows.Forms.PictureBox RYU_portrait_gi3;
+        private System.Windows.Forms.PictureBox RYU_portrait_gi2;
+        private System.Windows.Forms.PictureBox RYU_portrait_gi1;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin7;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin6;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin5;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin4;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin3;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin2;
+        private System.Windows.Forms.PictureBox RYU_portrait_skin1;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.PictureBox RYU_sprite_costume5;
+        private System.Windows.Forms.PictureBox RYU_sprite_belt;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.PictureBox RYU_sprite_costume1;
+        private System.Windows.Forms.PictureBox RYU_sprite_costume2;
+        private System.Windows.Forms.PictureBox RYU_sprite_costume3;
+        private System.Windows.Forms.PictureBox RYU_sprite_costume4;
+        private System.Windows.Forms.PictureBox RYU_sprite_headband1;
+        private System.Windows.Forms.PictureBox RYU_sprite_headband2;
+        private System.Windows.Forms.PictureBox RYU_sprite_costume6;
+        private System.Windows.Forms.PictureBox RYU_sprite_hair1;
+        private System.Windows.Forms.PictureBox RYU_sprite_hair2;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.PictureBox RYU_sprite_skin1;
+        private System.Windows.Forms.PictureBox RYU_sprite_skin2;
+        private System.Windows.Forms.PictureBox RYU_sprite_skin3;
+        private System.Windows.Forms.PictureBox RYU_sprite_skin4;
     }
 }
 

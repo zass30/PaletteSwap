@@ -257,6 +257,27 @@ namespace PaletteSwap
                     GUI_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     GUI_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
                     break;
+                case CharacterConfig.CHARACTERS.Ryu:
+                    RYU_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    RYU_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    RYU_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    RYU_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+
+                    RYU_sprite_hair1.BackColor = currentCharacter.sprite.GetColor("hair1");
+                    RYU_sprite_hair2.BackColor = currentCharacter.sprite.GetColor("hair2");
+
+                    RYU_sprite_belt.BackColor = currentCharacter.sprite.GetColor("belt");
+
+                    RYU_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    RYU_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    RYU_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    RYU_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    RYU_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    RYU_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
+
+                    RYU_sprite_headband1.BackColor = currentCharacter.sprite.GetColor("headband1");
+                    RYU_sprite_headband2.BackColor = currentCharacter.sprite.GetColor("headband2");
+                    break;
             }
 
         }
@@ -365,7 +386,37 @@ namespace PaletteSwap
                     GUI_portrait_shirt1.BackColor = currentCharacter.portrait.GetColor("shirt1");
                     GUI_portrait_shirt2.BackColor = currentCharacter.portrait.GetColor("shirt2");
                     GUI_portrait_shirt3.BackColor = currentCharacter.portrait.GetColor("shirt3");
+                    break;
 
+                case CharacterConfig.CHARACTERS.Ryu:
+                    RYU_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    RYU_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    RYU_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    RYU_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    RYU_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    RYU_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    RYU_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    RYU_portrait_gi1.BackColor = currentCharacter.portrait.GetColor("gi1");
+                    RYU_portrait_gi2.BackColor = currentCharacter.portrait.GetColor("gi2");
+                    RYU_portrait_gi3.BackColor = currentCharacter.portrait.GetColor("gi3");
+                    RYU_portrait_gi4.BackColor = currentCharacter.portrait.GetColor("gi4");
+                    RYU_portrait_gi5.BackColor = currentCharacter.portrait.GetColor("gi5");
+
+                    RYU_portrait_eyes1.BackColor = currentCharacter.portrait.GetColor("eyes1");
+                    RYU_portrait_eyes2.BackColor = currentCharacter.portrait.GetColor("eyes2");
+                    RYU_portrait_eyes3.BackColor = currentCharacter.portrait.GetColor("eyes3");
+
+                    RYU_portrait_headband1.BackColor = currentCharacter.portrait.GetColor("headband1");
+                    RYU_portrait_headband2.BackColor = currentCharacter.portrait.GetColor("headband2");
+                    RYU_portrait_headband3.BackColor = currentCharacter.portrait.GetColor("headband3");
+
+                    RYU_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    RYU_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    RYU_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
+                    RYU_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    RYU_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
                     break;
             }
         }
@@ -496,15 +547,18 @@ namespace PaletteSwap
                     break;
                 case "CLA_neutralStandBox":
                 case "GUI_neutralStandBox":
+                case "RYU_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "CLA_portraitVictoryBox":
                 case "GUI_portraitVictoryBox":
+                case "RYU_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "portraitLossBox":
                 case "CLA_portraitLossBox":
                 case "GUI_portraitLossBox":
+                case "RYU_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }

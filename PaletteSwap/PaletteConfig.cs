@@ -363,14 +363,14 @@ namespace PaletteSwap
             { "skin4", new List<int>() { 8 } },
             { "hair1", new List<int>() { 10 } },
             { "hair2", new List<int>() { 12 } },
-            { "belt2", new List<int>() { 14} },
+            { "headband2", new List<int>() { 14} },
             { "costume1", new List<int>() { 16 } },
             { "costume2", new List<int>() { 18 } },
             { "costume3", new List<int>() { 20 } },
             { "costume4", new List<int>() { 22 } },
             { "costume5", new List<int>() { 24 } },
             { "costume6", new List<int>() { 26 } },
-            { "belt1", new List<int>() { 28 } },
+            { "headband1", new List<int>() { 28 } },
            };
                 return spriteOffsets;
             }
@@ -390,13 +390,13 @@ namespace PaletteSwap
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
-        { "hair1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
-        { "hair2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
-        { "hair3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
-        { "hair4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
-        { "hair5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
-        { "hair6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
-        { "hair7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
         { "eyes1", new List<int>() { 14 } },
         { "eyes2", new List<int>() { 16 } },
         { "eyes3", new List<int>() { 18 } },
@@ -817,7 +817,7 @@ namespace PaletteSwap
                 {
                     return new List<string> { 
                     "skin1", "skin2", "skin3", "skin4", 
-                    "hair1", "hair2", "belt1", "belt2",
+                    "hair1", "hair2", "belt", "headband1", "headband2",
                 "costume1", "costume2", "costume3", "costume4", "costume5", "costume6" };
                 }
 
@@ -843,7 +843,7 @@ namespace PaletteSwap
                 public static List<string> RyuPortraitLabels()
                 {
                     return new List<string> {
-                        "hair1", "hair2", "hair3", "hair4", "hair5", "hair6", "hair7",
+                        "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
                         "eyes1", "eyes2", "eyes3",
                         "headband1", "headband2", "headband3",
                         "gi1", "gi2", "gi3", "gi4", "gi5",
