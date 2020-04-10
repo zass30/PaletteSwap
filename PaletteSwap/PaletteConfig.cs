@@ -276,6 +276,8 @@ namespace PaletteSwap
 
         public static int GetSpriteBeginOffset(CHARACTERS c)
         {
+            if (c == CHARACTERS.Ryu)
+                return 0x3FB2E;
             return spriteBeginOffset + GetCharIdFromCharacter(c) * spriteStep;
         }
 
