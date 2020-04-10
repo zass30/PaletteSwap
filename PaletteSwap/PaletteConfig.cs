@@ -173,6 +173,51 @@ namespace PaletteSwap
                             break;
                     }
                     break;
+                case CHARACTERS.Ryu:
+                    switch (b)
+                    {
+                        case CharacterConfig.BUTTONS.lp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu0sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu0portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu1sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu1portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu2sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu2portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.lk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu3sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu3portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu4sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu4portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu5sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu5portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.start:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu6sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu6portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hold:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu7sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu7portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old1:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu8sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu8portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old2:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu9sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ryu9portrait);
+                            break;
+                    }
+                    break;
             }
 
             ByteStreamPair p = new ByteStreamPair();
@@ -356,8 +401,8 @@ namespace PaletteSwap
         { "eyes2", new List<int>() { 16 } },
         { "eyes3", new List<int>() { 18 } },
         { "headband1", new List<int>() { 24, ROWLEN * 1 + 24, } },
-        { "headband1", new List<int>() { 26, ROWLEN * 1 + 26, } },
-        { "headband1", new List<int>() { 28, ROWLEN * 1 + 28, } },
+        { "headband2", new List<int>() { 26, ROWLEN * 1 + 26, } },
+        { "headband3", new List<int>() { 28, ROWLEN * 1 + 28, } },
         { "gi1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
         { "gi2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
         { "gi3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
@@ -712,6 +757,8 @@ namespace PaletteSwap
                     return CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.SPRITE.GenerateRyuStandingNeutralBasePaletteImage();
 
             }
             throw new Exception("Invalid character");
@@ -727,6 +774,8 @@ namespace PaletteSwap
                     return CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.PORTRAIT.GenerateRyuVictoryBasePaletteImage();
 
             }
             throw new Exception("Invalid character");
@@ -742,6 +791,8 @@ namespace PaletteSwap
                     return CLAW.PORTRAIT.GenerateClawLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.PORTRAIT.GenerateRyuLossBasePaletteImage();
 
             }
             throw new Exception("Invalid character");
@@ -797,7 +848,6 @@ namespace PaletteSwap
                         "headband1", "headband2", "headband3",
                         "gi1", "gi2", "gi3", "gi4", "gi5",
                         "blood1", "blood2", "blood3",
-                        "shirt1","shirt2", "shirt3",
                         "teeth1", "teeth2",};
                 }
 
@@ -811,7 +861,7 @@ namespace PaletteSwap
                     return new Bitmap(Properties.Resources.RYU_portraitloss2);
                 }
 
-                public static PaletteImage GenerateRYUVictoryBasePaletteImage()
+                public static PaletteImage GenerateRyuVictoryBasePaletteImage()
                 {
                     return GenerateRyuPortraitPaletteImage(RyuVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.ryu2portrait, RyuPortraitLabels());
                 }

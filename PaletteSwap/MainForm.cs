@@ -46,6 +46,7 @@ namespace PaletteSwap
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
             characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
 
@@ -109,6 +110,9 @@ namespace PaletteSwap
                     var s = currentCharacter.sprite.GetBitmap("neutral");
                     GUI_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
                     break;
+                case CharacterConfig.CHARACTERS.Ryu:
+                    RYU_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    break;
             }
         }
 
@@ -145,6 +149,9 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Guile:
                     GUI_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
                     break;
+                case CharacterConfig.CHARACTERS.Ryu:
+                    RYU_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                    break;
             }
         }
 
@@ -157,6 +164,8 @@ namespace PaletteSwap
                 CLA_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Guile)
                 GUI_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
+            else if (currentCharacterType == CharacterConfig.CHARACTERS.Ryu)
+                RYU_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
         }
 
         private void load_sprite_buttons()
@@ -989,6 +998,15 @@ namespace PaletteSwap
                 SetDefaultDropDown();
                 reload_everything();
             }
+            else if (selt.Name == "TabPageRyu")
+            {
+                currentCharacterType = CharacterConfig.CHARACTERS.Ryu;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+
         }
     }
 }

@@ -279,6 +279,10 @@
             this.GUI_sprite_skin4 = new System.Windows.Forms.PictureBox();
             this.GUI_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
+            this.TabPageRyu = new System.Windows.Forms.TabPage();
+            this.RYU_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.RYU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.RYU_neutralStandBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -441,6 +445,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.GUI_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GUI_sprite_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox)).BeginInit();
+            this.TabPageRyu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1838,6 +1846,7 @@
             this.tabControl1.Controls.Add(this.TabPageDictator);
             this.tabControl1.Controls.Add(this.TabPageClaw);
             this.tabControl1.Controls.Add(this.TabPageGuile);
+            this.tabControl1.Controls.Add(this.TabPageRyu);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -2507,6 +2516,7 @@
             // 
             // TabPageGuile
             // 
+            this.TabPageGuile.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageGuile.Controls.Add(this.label42);
             this.TabPageGuile.Controls.Add(this.GUI_portrait_shirt3);
             this.TabPageGuile.Controls.Add(this.GUI_portrait_shirt2);
@@ -2569,7 +2579,6 @@
             this.TabPageGuile.Size = new System.Drawing.Size(597, 559);
             this.TabPageGuile.TabIndex = 2;
             this.TabPageGuile.Text = "Guile";
-            this.TabPageGuile.UseVisualStyleBackColor = true;
             // 
             // label42
             // 
@@ -3183,6 +3192,45 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
+            // TabPageRyu
+            // 
+            this.TabPageRyu.Controls.Add(this.RYU_neutralStandBox);
+            this.TabPageRyu.Controls.Add(this.RYU_portraitLossBox);
+            this.TabPageRyu.Controls.Add(this.RYU_portraitVictoryBox);
+            this.TabPageRyu.Location = new System.Drawing.Point(4, 22);
+            this.TabPageRyu.Name = "TabPageRyu";
+            this.TabPageRyu.Size = new System.Drawing.Size(597, 559);
+            this.TabPageRyu.TabIndex = 3;
+            this.TabPageRyu.Text = "Ryu";
+            this.TabPageRyu.UseVisualStyleBackColor = true;
+            // 
+            // RYU_portraitLossBox
+            // 
+            this.RYU_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.RYU_portraitLossBox.Location = new System.Drawing.Point(424, 25);
+            this.RYU_portraitLossBox.Name = "RYU_portraitLossBox";
+            this.RYU_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.RYU_portraitLossBox.TabIndex = 175;
+            this.RYU_portraitLossBox.TabStop = false;
+            // 
+            // RYU_portraitVictoryBox
+            // 
+            this.RYU_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.RYU_portraitVictoryBox.Location = new System.Drawing.Point(287, 25);
+            this.RYU_portraitVictoryBox.Name = "RYU_portraitVictoryBox";
+            this.RYU_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.RYU_portraitVictoryBox.TabIndex = 174;
+            this.RYU_portraitVictoryBox.TabStop = false;
+            // 
+            // RYU_neutralStandBox
+            // 
+            this.RYU_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.RYU_neutralStandBox.Location = new System.Drawing.Point(15, 25);
+            this.RYU_neutralStandBox.Name = "RYU_neutralStandBox";
+            this.RYU_neutralStandBox.Size = new System.Drawing.Size(59, 90);
+            this.RYU_neutralStandBox.TabIndex = 176;
+            this.RYU_neutralStandBox.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3377,6 +3425,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.GUI_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GUI_sprite_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GUI_neutralStandBox)).EndInit();
+            this.TabPageRyu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3633,6 +3685,10 @@
         private System.Windows.Forms.PictureBox GUI_portrait_blood3;
         private System.Windows.Forms.PictureBox GUI_portrait_blood2;
         private System.Windows.Forms.PictureBox GUI_portrait_blood1;
+        private System.Windows.Forms.TabPage TabPageRyu;
+        private System.Windows.Forms.PictureBox RYU_neutralStandBox;
+        private System.Windows.Forms.PictureBox RYU_portraitLossBox;
+        private System.Windows.Forms.PictureBox RYU_portraitVictoryBox;
     }
 }
 
