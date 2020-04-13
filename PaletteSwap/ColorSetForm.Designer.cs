@@ -78,6 +78,7 @@
             this.RYU_neutralStandBox07 = new System.Windows.Forms.PictureBox();
             this.RYU_neutralStandBox08 = new System.Windows.Forms.PictureBox();
             this.RYU_neutralStandBox09 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this._09psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._08psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._07psychopunchBox)).BeginInit();
@@ -118,13 +119,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox08)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // _09psychopunchBox
             // 
             this._09psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._09psychopunchBox.Location = new System.Drawing.Point(712, 196);
-            this._09psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._09psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._09psychopunchBox.Name = "_09psychopunchBox";
             this._09psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._09psychopunchBox.TabIndex = 48;
@@ -134,7 +136,7 @@
             // 
             this._08psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._08psychopunchBox.Location = new System.Drawing.Point(712, 23);
-            this._08psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._08psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._08psychopunchBox.Name = "_08psychopunchBox";
             this._08psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._08psychopunchBox.TabIndex = 47;
@@ -144,7 +146,7 @@
             // 
             this._07psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._07psychopunchBox.Location = new System.Drawing.Point(540, 196);
-            this._07psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._07psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._07psychopunchBox.Name = "_07psychopunchBox";
             this._07psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._07psychopunchBox.TabIndex = 46;
@@ -154,7 +156,7 @@
             // 
             this._06psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._06psychopunchBox.Location = new System.Drawing.Point(540, 23);
-            this._06psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._06psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._06psychopunchBox.Name = "_06psychopunchBox";
             this._06psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._06psychopunchBox.TabIndex = 45;
@@ -164,7 +166,7 @@
             // 
             this._05psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._05psychopunchBox.Location = new System.Drawing.Point(368, 196);
-            this._05psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._05psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._05psychopunchBox.Name = "_05psychopunchBox";
             this._05psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._05psychopunchBox.TabIndex = 44;
@@ -174,7 +176,7 @@
             // 
             this._04psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._04psychopunchBox.Location = new System.Drawing.Point(196, 196);
-            this._04psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._04psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._04psychopunchBox.Name = "_04psychopunchBox";
             this._04psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._04psychopunchBox.TabIndex = 43;
@@ -184,7 +186,7 @@
             // 
             this._03psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._03psychopunchBox.Location = new System.Drawing.Point(24, 196);
-            this._03psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._03psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._03psychopunchBox.Name = "_03psychopunchBox";
             this._03psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._03psychopunchBox.TabIndex = 42;
@@ -194,7 +196,7 @@
             // 
             this._02psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._02psychopunchBox.Location = new System.Drawing.Point(368, 23);
-            this._02psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._02psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._02psychopunchBox.Name = "_02psychopunchBox";
             this._02psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._02psychopunchBox.TabIndex = 41;
@@ -204,7 +206,7 @@
             // 
             this._01psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._01psychopunchBox.Location = new System.Drawing.Point(196, 23);
-            this._01psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._01psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._01psychopunchBox.Name = "_01psychopunchBox";
             this._01psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._01psychopunchBox.TabIndex = 40;
@@ -214,7 +216,7 @@
             // 
             this._00psychopunchBox.BackColor = System.Drawing.Color.Black;
             this._00psychopunchBox.Location = new System.Drawing.Point(24, 23);
-            this._00psychopunchBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._00psychopunchBox.Margin = new System.Windows.Forms.Padding(6);
             this._00psychopunchBox.Name = "_00psychopunchBox";
             this._00psychopunchBox.Size = new System.Drawing.Size(160, 162);
             this._00psychopunchBox.TabIndex = 39;
@@ -224,7 +226,7 @@
             // 
             this.CLAW_neutralStandBox00.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox00.Location = new System.Drawing.Point(24, 402);
-            this.CLAW_neutralStandBox00.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox00.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox00.Name = "CLAW_neutralStandBox00";
             this.CLAW_neutralStandBox00.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox00.TabIndex = 123;
@@ -234,7 +236,7 @@
             // 
             this.CLAW_neutralStandBox01.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox01.Location = new System.Drawing.Point(196, 402);
-            this.CLAW_neutralStandBox01.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox01.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox01.Name = "CLAW_neutralStandBox01";
             this.CLAW_neutralStandBox01.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox01.TabIndex = 124;
@@ -244,7 +246,7 @@
             // 
             this.CLAW_neutralStandBox02.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox02.Location = new System.Drawing.Point(368, 402);
-            this.CLAW_neutralStandBox02.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox02.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox02.Name = "CLAW_neutralStandBox02";
             this.CLAW_neutralStandBox02.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox02.TabIndex = 125;
@@ -254,7 +256,7 @@
             // 
             this.CLAW_neutralStandBox06.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox06.Location = new System.Drawing.Point(540, 402);
-            this.CLAW_neutralStandBox06.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox06.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox06.Name = "CLAW_neutralStandBox06";
             this.CLAW_neutralStandBox06.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox06.TabIndex = 126;
@@ -264,7 +266,7 @@
             // 
             this.CLAW_neutralStandBox08.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox08.Location = new System.Drawing.Point(712, 402);
-            this.CLAW_neutralStandBox08.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox08.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox08.Name = "CLAW_neutralStandBox08";
             this.CLAW_neutralStandBox08.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox08.TabIndex = 127;
@@ -274,7 +276,7 @@
             // 
             this.CLAW_neutralStandBox03.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox03.Location = new System.Drawing.Point(24, 631);
-            this.CLAW_neutralStandBox03.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox03.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox03.Name = "CLAW_neutralStandBox03";
             this.CLAW_neutralStandBox03.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox03.TabIndex = 128;
@@ -284,7 +286,7 @@
             // 
             this.CLAW_neutralStandBox04.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox04.Location = new System.Drawing.Point(196, 631);
-            this.CLAW_neutralStandBox04.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox04.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox04.Name = "CLAW_neutralStandBox04";
             this.CLAW_neutralStandBox04.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox04.TabIndex = 129;
@@ -294,7 +296,7 @@
             // 
             this.CLAW_neutralStandBox05.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox05.Location = new System.Drawing.Point(368, 631);
-            this.CLAW_neutralStandBox05.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox05.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox05.Name = "CLAW_neutralStandBox05";
             this.CLAW_neutralStandBox05.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox05.TabIndex = 130;
@@ -304,7 +306,7 @@
             // 
             this.CLAW_neutralStandBox07.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox07.Location = new System.Drawing.Point(540, 631);
-            this.CLAW_neutralStandBox07.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox07.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox07.Name = "CLAW_neutralStandBox07";
             this.CLAW_neutralStandBox07.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox07.TabIndex = 131;
@@ -314,7 +316,7 @@
             // 
             this.CLAW_neutralStandBox09.BackColor = System.Drawing.Color.Black;
             this.CLAW_neutralStandBox09.Location = new System.Drawing.Point(712, 631);
-            this.CLAW_neutralStandBox09.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CLAW_neutralStandBox09.Margin = new System.Windows.Forms.Padding(6);
             this.CLAW_neutralStandBox09.Name = "CLAW_neutralStandBox09";
             this.CLAW_neutralStandBox09.Size = new System.Drawing.Size(150, 217);
             this.CLAW_neutralStandBox09.TabIndex = 132;
@@ -324,7 +326,7 @@
             // 
             this.GUI_neutralStandBox00.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox00.Location = new System.Drawing.Point(24, 896);
-            this.GUI_neutralStandBox00.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox00.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox00.Name = "GUI_neutralStandBox00";
             this.GUI_neutralStandBox00.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox00.TabIndex = 133;
@@ -334,7 +336,7 @@
             // 
             this.GUI_neutralStandBox01.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox01.Location = new System.Drawing.Point(196, 896);
-            this.GUI_neutralStandBox01.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox01.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox01.Name = "GUI_neutralStandBox01";
             this.GUI_neutralStandBox01.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox01.TabIndex = 134;
@@ -344,7 +346,7 @@
             // 
             this.GUI_neutralStandBox02.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox02.Location = new System.Drawing.Point(368, 896);
-            this.GUI_neutralStandBox02.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox02.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox02.Name = "GUI_neutralStandBox02";
             this.GUI_neutralStandBox02.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox02.TabIndex = 135;
@@ -354,7 +356,7 @@
             // 
             this.GUI_neutralStandBox06.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox06.Location = new System.Drawing.Point(540, 896);
-            this.GUI_neutralStandBox06.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox06.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox06.Name = "GUI_neutralStandBox06";
             this.GUI_neutralStandBox06.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox06.TabIndex = 136;
@@ -364,7 +366,7 @@
             // 
             this.GUI_neutralStandBox08.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox08.Location = new System.Drawing.Point(712, 896);
-            this.GUI_neutralStandBox08.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox08.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox08.Name = "GUI_neutralStandBox08";
             this.GUI_neutralStandBox08.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox08.TabIndex = 137;
@@ -374,7 +376,7 @@
             // 
             this.GUI_neutralStandBox03.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox03.Location = new System.Drawing.Point(24, 1081);
-            this.GUI_neutralStandBox03.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox03.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox03.Name = "GUI_neutralStandBox03";
             this.GUI_neutralStandBox03.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox03.TabIndex = 138;
@@ -384,7 +386,7 @@
             // 
             this.GUI_neutralStandBox04.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox04.Location = new System.Drawing.Point(196, 1081);
-            this.GUI_neutralStandBox04.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox04.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox04.Name = "GUI_neutralStandBox04";
             this.GUI_neutralStandBox04.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox04.TabIndex = 139;
@@ -394,7 +396,7 @@
             // 
             this.GUI_neutralStandBox05.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox05.Location = new System.Drawing.Point(368, 1081);
-            this.GUI_neutralStandBox05.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox05.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox05.Name = "GUI_neutralStandBox05";
             this.GUI_neutralStandBox05.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox05.TabIndex = 140;
@@ -404,7 +406,7 @@
             // 
             this.GUI_neutralStandBox09.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox09.Location = new System.Drawing.Point(712, 1081);
-            this.GUI_neutralStandBox09.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox09.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox09.Name = "GUI_neutralStandBox09";
             this.GUI_neutralStandBox09.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox09.TabIndex = 141;
@@ -414,7 +416,7 @@
             // 
             this.GUI_neutralStandBox07.BackColor = System.Drawing.Color.Black;
             this.GUI_neutralStandBox07.Location = new System.Drawing.Point(540, 1081);
-            this.GUI_neutralStandBox07.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GUI_neutralStandBox07.Margin = new System.Windows.Forms.Padding(6);
             this.GUI_neutralStandBox07.Name = "GUI_neutralStandBox07";
             this.GUI_neutralStandBox07.Size = new System.Drawing.Size(150, 173);
             this.GUI_neutralStandBox07.TabIndex = 142;
@@ -620,11 +622,22 @@
             this.RYU_neutralStandBox09.TabIndex = 186;
             this.RYU_neutralStandBox09.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(953, 446);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(118, 173);
+            this.pictureBox1.TabIndex = 187;
+            this.pictureBox1.TabStop = false;
+            // 
             // ColorSetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1750, 1375);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.RYU_neutralStandBox09);
             this.Controls.Add(this.RYU_neutralStandBox08);
             this.Controls.Add(this.RYU_neutralStandBox07);
@@ -675,7 +688,7 @@
             this.Controls.Add(this._02psychopunchBox);
             this.Controls.Add(this._01psychopunchBox);
             this.Controls.Add(this._00psychopunchBox);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ColorSetForm";
             this.Text = "ColorSetForm";
             ((System.ComponentModel.ISupportInitialize)(this._09psychopunchBox)).EndInit();
@@ -718,6 +731,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox07)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox08)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_neutralStandBox09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -775,5 +789,6 @@
         private System.Windows.Forms.PictureBox RYU_neutralStandBox07;
         private System.Windows.Forms.PictureBox RYU_neutralStandBox08;
         private System.Windows.Forms.PictureBox RYU_neutralStandBox09;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
