@@ -397,11 +397,11 @@ namespace PaletteSwap
                     RYU_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
                     RYU_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
 
-                    RYU_portrait_gi1.BackColor = currentCharacter.portrait.GetColor("gi1");
-                    RYU_portrait_gi2.BackColor = currentCharacter.portrait.GetColor("gi2");
-                    RYU_portrait_gi3.BackColor = currentCharacter.portrait.GetColor("gi3");
-                    RYU_portrait_gi4.BackColor = currentCharacter.portrait.GetColor("gi4");
-                    RYU_portrait_gi5.BackColor = currentCharacter.portrait.GetColor("gi5");
+                    RYU_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    RYU_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    RYU_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    RYU_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+                    RYU_portrait_costume5.BackColor = currentCharacter.portrait.GetColor("costume5");
 
                     RYU_portrait_eyes1.BackColor = currentCharacter.portrait.GetColor("eyes1");
                     RYU_portrait_eyes2.BackColor = currentCharacter.portrait.GetColor("eyes2");

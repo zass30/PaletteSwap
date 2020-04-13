@@ -26,6 +26,7 @@ namespace PaletteSwap
             var DIC = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
             var CLA = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw];
             var GUI = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile];
+            var RYU = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu];
 
             if (DIC.characterColors[0].sprite != null)
                 _00psychopunchBox.Image = DIC.characterColors[0].sprite.GetBitmap("psychopunch");
@@ -90,6 +91,26 @@ namespace PaletteSwap
             if (GUI.characterColors[9].sprite != null)
                 GUI_neutralStandBox09.Image = GUI.characterColors[9].sprite.GetBitmap("neutral");
 
+            if (RYU.characterColors[0].sprite != null)
+                RYU_neutralStandBox00.Image = RYU.characterColors[0].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[1].sprite != null)
+                RYU_neutralStandBox01.Image = RYU.characterColors[1].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[2].sprite != null)
+                RYU_neutralStandBox02.Image = RYU.characterColors[2].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[3].sprite != null)
+                RYU_neutralStandBox03.Image = RYU.characterColors[3].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[4].sprite != null)
+                RYU_neutralStandBox04.Image = RYU.characterColors[4].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[5].sprite != null)
+                RYU_neutralStandBox05.Image = RYU.characterColors[5].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[6].sprite != null)
+                RYU_neutralStandBox06.Image = RYU.characterColors[6].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[7].sprite != null)
+                RYU_neutralStandBox07.Image = RYU.characterColors[7].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[8].sprite != null)
+                RYU_neutralStandBox08.Image = RYU.characterColors[8].sprite.GetBitmap("neutral");
+            if (RYU.characterColors[9].sprite != null)
+                RYU_neutralStandBox09.Image = RYU.characterColors[9].sprite.GetBitmap("neutral");
 
         }
     }
