@@ -112,6 +112,27 @@ namespace PaletteSwap
             if (RYU.characterColors[9].sprite != null)
                 RYU_neutralStandBox09.Image = RYU.characterColors[9].sprite.GetBitmap("neutral");
 
+            if (RYU.characterColors[0].portrait != null)
+                RYU_portraitVictoryBox00.Image = RYU.characterColors[0].portrait.GetBitmap("victory");
+            if (RYU.characterColors[1].portrait != null)
+                RYU_portraitVictoryBox01.Image = RYU.characterColors[1].portrait.GetBitmap("victory");
+            if (RYU.characterColors[2].portrait != null)
+                RYU_portraitVictoryBox02.Image = RYU.characterColors[2].portrait.GetBitmap("victory");
+            if (RYU.characterColors[3].portrait != null)
+                RYU_portraitVictoryBox03.Image = RYU.characterColors[3].portrait.GetBitmap("victory");
+            if (RYU.characterColors[4].portrait != null)
+                RYU_portraitVictoryBox04.Image = RYU.characterColors[4].portrait.GetBitmap("victory");
+            if (RYU.characterColors[5].portrait != null)
+                RYU_portraitVictoryBox05.Image = RYU.characterColors[5].portrait.GetBitmap("victory");
+            if (RYU.characterColors[6].portrait != null)
+                RYU_portraitVictoryBox06.Image = RYU.characterColors[6].portrait.GetBitmap("victory");
+            if (RYU.characterColors[7].portrait != null)
+                RYU_portraitVictoryBox07.Image = RYU.characterColors[7].portrait.GetBitmap("victory");
+            if (RYU.characterColors[8].portrait != null)
+                RYU_portraitVictoryBox08.Image = RYU.characterColors[8].portrait.GetBitmap("victory");
+            if (RYU.characterColors[9].portrait != null)
+                RYU_portraitVictoryBox09.Image = RYU.characterColors[9].portrait.GetBitmap("victory");
+
         }
     }
 }
