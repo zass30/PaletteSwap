@@ -218,6 +218,51 @@ namespace PaletteSwap
                             break;
                     }
                     break;
+                case CHARACTERS.Chun:
+                    switch (b)
+                    {
+                        case CharacterConfig.BUTTONS.lp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu0sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu0portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu1sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu1portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu2sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu2portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.lk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu3sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu3portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu4sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu4portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu5sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu5portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.start:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu6sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu6portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hold:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu7sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu7portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old1:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu8sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu8portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old2:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu9sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.chu9portrait);
+                            break;
+                    }
+                    break;
             }
 
             ByteStreamPair p = new ByteStreamPair();
@@ -329,6 +374,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU.GenerateRyuSpriteConfig();
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHUN.GenerateChunSpriteConfig();
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUILE.GenerateGuileSpriteConfig();
                 case CharacterConfig.CHARACTERS.Claw:
@@ -346,6 +393,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU.GenerateRyuPortraitConfig();
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHUN.GenerateRyuPortraitConfig();
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUILE.GenerateGuilePortraitConfig();
                 case CharacterConfig.CHARACTERS.Claw:
@@ -384,8 +433,8 @@ namespace PaletteSwap
             { "hair6", new List<int>() { 0 } },
             { "skin2", new List<int>() { 2 } },
             { "skin3", new List<int>() { 4 } },
-            { "skin3", new List<int>() { 6 } },
-            { "skin4", new List<int>() { 8 } },
+            { "skin4", new List<int>() { 6 } },
+            { "skin5", new List<int>() { 8 } },
             { "hair1", new List<int>() { 10 } },
             { "hair2", new List<int>() { 12 } },
             { "hair3", new List<int>() { 14} },
@@ -894,6 +943,9 @@ PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpri
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_neutral2),
     PaletteSwap.Properties.Resources.ryu2sprite, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Chun:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_neutral1),
+    PaletteSwap.Properties.Resources.chu1sprite, PaletteConfig.CHUN.GenerateChunSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -913,6 +965,9 @@ PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPo
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitwin2),
     PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Chun:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitwin1),
+    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -932,6 +987,9 @@ PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPo
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitloss2),
 PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Chun:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitloss1),
+    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }

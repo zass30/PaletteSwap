@@ -298,6 +298,7 @@ namespace PaletteSwap
             gs.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Claw);
             gs.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Guile);
             gs.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Ryu);
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Chun] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Chun);
             return gs;
         }
     }

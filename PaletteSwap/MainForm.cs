@@ -47,6 +47,7 @@ namespace PaletteSwap
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun] = new CharacterSet(CharacterConfig.CHARACTERS.Chun);
             characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
 
@@ -143,6 +144,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHU_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Claw:
@@ -158,6 +161,8 @@ namespace PaletteSwap
             switch (currentCharacterType){
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Claw:
@@ -174,6 +179,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHU_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Claw:
@@ -562,17 +569,20 @@ namespace PaletteSwap
                     currentlyZoomedLabel = "victory";
                     break;
                 case "CLA_neutralStandBox":
+                case "CHU_neutralStandBox":
                 case "GUI_neutralStandBox":
                 case "RYU_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "CLA_portraitVictoryBox":
+                case "CHU_portraitVictoryBox":
                 case "GUI_portraitVictoryBox":
                 case "RYU_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "portraitLossBox":
                 case "CLA_portraitLossBox":
+                case "CHU_portraitLossBox":
                 case "GUI_portraitLossBox":
                 case "RYU_portraitLossBox":
                     currentlyZoomedLabel = "loss";
@@ -1072,6 +1082,14 @@ namespace PaletteSwap
             {
                 currentCharacterType = CharacterConfig.CHARACTERS.Ryu;
                 characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+            else if (selt.Name == "TabPageChun")
+            {
+                currentCharacterType = CharacterConfig.CHARACTERS.Chun;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();

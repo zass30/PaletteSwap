@@ -19,7 +19,7 @@ namespace PaletteSwap.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -271,11 +271,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F EC0F CA0F A80E 860C 650A 4007 FF0F CF0C AD0A 8C08 6A06 760E A70F D80F 0A00 FE0F EC0F CA0F A80E 860C 650A 4007 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 0000 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6705 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 0000.
+        /// </summary>
+        public static string chu0portrait {
+            get {
+                return ResourceManager.GetString("chu0portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0000 EA0F C90F 970E 860C 650A 5008 4007 0005 4804 6A06 8C08 AD0A CF0C FF0F 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 3B03 2B02 2B02 4B04 6B06 8B08 9B09 AB0A 0000 1801 7807 6806 5805 4804 3803 2802 1801 0800 0800 2802 4804 6806 7807 7807 0000 4604 4604 3603 2602 1601 0600 0600 0600 0600 0600 0600 1601 3603 4604 5605 0000.
         /// </summary>
         public static string chu0sprite {
             get {
                 return ResourceManager.GetString("chu0sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F EC0F CA0F A80E 860C 650A 4007 FF0F BB0F 770E 440D 000A 760E A70F D80F 6407 FE0F EC0F CA0F A80E 860C 650A 4007 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu1portrait {
+            get {
+                return ResourceManager.GetString("chu1portrait", resourceCulture);
             }
         }
         
@@ -289,11 +307,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FF0F EC0F D90F A70E 850C 5008 3006 FF0F EE0E CC0C AA0A 8808 850C A70F CB0F 6407 FF0F EC0F D90F A70E 850C 5008 3006 CC0F BB0E AA0D 990C 880B 850C A70F CB0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu2portrait {
+            get {
+                return ResourceManager.GetString("chu2portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0004 EB0F D90F C80F A70E 850C 640A 5008 3006 6606 8808 AA0A CC0C EE0E FF0F 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 3B03 2B02 2B02 4B04 6B06 8B08 9B09 AB0A 0000 1801 7807 6806 5805 4804 3803 2802 1801 0800 0800 2802 4804 6806 7807 7807 0000 4604 4604 3603 2602 1601 0600 0600 0600 0600 0600 0600 1601 3603 4604 5605 0000.
         /// </summary>
         public static string chu2sprite {
             get {
                 return ResourceManager.GetString("chu2sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EC0F CA0F 980E 760C 540A 4306 FF0F CC0C 9909 7707 5505 760E A70F D80F 6407 FF0F FD0F DA0E A70C 860A 6408 4306 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 6407 FF0F FD0F DA0E A70C 860A 6408 4306 FE0F DD09 AA07 8805 6603 870D A80E DA0F 6407 FF0F FD0F DA0E A70C 860A 6408 4306 FE0F DD09 AA07 8805 6603 870D A80E DA0F 6407.
+        /// </summary>
+        public static string chu3portrait {
+            get {
+                return ResourceManager.GetString("chu3portrait", resourceCulture);
             }
         }
         
@@ -307,11 +343,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F FE0F DC0F A90E 870D 6509 4306 FF0F FA0F C00F 900E 700D 770D 990F DC0F 6407 FE0F FE0F DC0F A90E 870D 6509 4306 CD0F BC0E AB0D 9A0C 890B 770D 990F DC0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu4portrait {
+            get {
+                return ResourceManager.GetString("chu4portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0006 FE0F DC0F BA0F 980E 870D 760B 6509 4307 500A 700D 900E C00F FA0F FF0F 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 3B03 2B02 2B02 4B04 6B06 8B08 9B09 AB0A 0000 1801 7807 6806 5805 4804 3803 2802 1801 0800 0800 2802 4804 6806 7807 7807 0000 4604 4604 3603 2602 1601 0600 0600 0600 0600 0600 0600 1601 3603 4604 5605 0000.
         /// </summary>
         public static string chu4sprite {
             get {
                 return ResourceManager.GetString("chu4sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F ED0F CB0F 980E 760D 540A 4308 FE0F DA0C A709 8507 6305 760D A70F D80F 6407 FF0F ED0F CB0F 980E 760D 540A 4308 CD0F BC0E AB0D 9A0C 890B 760D A70F D80F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu5portrait {
+            get {
+                return ResourceManager.GetString("chu5portrait", resourceCulture);
             }
         }
         
@@ -325,11 +379,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FF0F EC0F CA0F A80E 860D 540A 4306 FF0F CF0F AD0E 8B0C 690A 760E A70F D80F 6407 FF0F EC0F CA0F A80E 860D 540A 4306 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu6portrait {
+            get {
+                return ResourceManager.GetString("chu6portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0004 EC0F CA0F A80E 860D 650C 540A 4308 2006 4607 690A 8B0C AD0E CF0F FF0F 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 3B03 2B02 2B02 4B04 6B06 8B08 9B09 AB0A 0000 1801 7807 6806 5805 4804 3803 2802 1801 0800 0800 2802 4804 6806 7807 7807 0000 4604 4604 3603 2602 1601 0600 0600 0600 0600 0600 0600 1601 3603 4604 5605 0000.
         /// </summary>
         public static string chu6sprite {
             get {
                 return ResourceManager.GetString("chu6sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EC0F CA0E A80C 750A 5308 3106 FF0F FE0B EB00 B800 8400 850C A70F DA0F 6407 FF0F EC0F CA0E A80C 750A 5308 3106 CD0F BC0E AB0D 9A0C 890B 850C A70F DA0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu7portrait {
+            get {
+                return ResourceManager.GetString("chu7portrait", resourceCulture);
             }
         }
         
@@ -343,11 +415,29 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FE0F EC0F CA0F A80E 860C 650A 4007 FF0F CF0A AE07 8D05 5B00 760E A70F D80F 6407 FE0F EC0F CA0F A80E 860C 650A 4007 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu8portrait {
+            get {
+                return ResourceManager.GetString("chu8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0000 EA0F C90F 970E 860C 650A 5008 4007 0005 0900 5B00 8D05 AE07 CF0A FF0F 0000 0000 FF0F FC0F F90F F60F B00F 800F 500E FF0F FF0C EF09 CF07 AE05 8D00 6C00 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 3B03 2B02 2B02 4B04 6B06 8B08 9B09 AB0A 0000 1801 7807 6806 5805 4804 3803 2802 1801 0800 0800 2802 4804 6806 7807 7807 0000 4604 4604 3603 2602 1601 0600 0600 0600 0600 0600 0600 1601 3603 4604 5605 0000.
         /// </summary>
         public static string chu8sprite {
             get {
                 return ResourceManager.GetString("chu8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F EC0F CA0F A80E 860C 650A 4007 FF0F CF0A AE07 8D05 5B00 760E A70F D80F 6407 FE0F EC0F CA0F A80E 860C 650A 4007 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407.
+        /// </summary>
+        public static string chu9portrait {
+            get {
+                return ResourceManager.GetString("chu9portrait", resourceCulture);
             }
         }
         
