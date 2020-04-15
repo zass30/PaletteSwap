@@ -767,7 +767,8 @@ namespace PaletteSwap
             switch (c)
             {
                 case CharacterConfig.CHARACTERS.Guile:
-                    return GUILE.SPRITE.GenerateGuileStandingNeutralBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_neutral2),
+PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -785,7 +786,8 @@ namespace PaletteSwap
             switch (c)
             {
                 case CharacterConfig.CHARACTERS.Guile:
-                    return GUILE.PORTRAIT.GenerateGuileVictoryBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_portraitwin2),
+PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -802,7 +804,8 @@ namespace PaletteSwap
             switch (c)
             {
                 case CharacterConfig.CHARACTERS.Guile:
-                    return GUILE.PORTRAIT.GenerateGuileLossBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_portraitloss2),
+PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLAW.PORTRAIT.GenerateClawLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -842,73 +845,6 @@ PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPort
             PaletteImage p = new PaletteImage(base_image, c);
             p.labels = labels;
             return p;
-        }
-
-        public struct GUILE
-        {
-            public struct SPRITE {
-                public static List<string> GuileStandNeutralLabels()
-                {
-                    return new List<string> { "darkcamo1", "darkcamo2",
-                    "skin1", "skin2", "skin3", "skin4", "skin5",
-                "costume1", "costume2", "costume3", "costume4", "costume5",
-                    "flag1", "flag2", "hair" };
-                }
-
-                public static Bitmap GuileStandNeutralBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.GUI_neutral2);
-                }
-
-                public static PaletteImage GenerateGuileStandingNeutralBasePaletteImage()
-                {
-                    return GenerateGuilePaletteImage(GuileStandNeutralBaseImage(), PaletteSwap.Properties.Resources.gui2sprite, GuileStandNeutralLabels());
-                }
-
-                public static PaletteImage GenerateGuilePaletteImage(Bitmap base_image, string resource, List<string> labels)
-                {
-                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
-                }
-            }
-
-            public struct PORTRAIT
-            {
-                public static List<string> GuilePortraitLabels()
-                {
-                    return new List<string> { "skin1", "skin2", "skin3", "skin4",
-                        "skin5", "skin6", "skin7",
-                        "chain1", "chain2", "chain3", "chain4", "chain5",
-                        "shirt1","shirt2", "shirt3",
-                        "hair1", "hair2", "hair3", "hair4", "hair5",
-                        "bruise1", "bruise2", "bruise3", "bruise4", "bruise5",
-                "blood1", "blood2", "blood3", };
-                }                
-
-                public static Bitmap GuileVictoryPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.GUI_portraitwin2);
-                }
-
-                public static Bitmap GuileLossPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.GUI_portraitloss2);
-                }
-
-                public static PaletteImage GenerateGuileVictoryBasePaletteImage()
-                {
-                    return GenerateGuilePortraitPaletteImage(GuileVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.gui2portrait, GuilePortraitLabels());
-                }
-
-                public static PaletteImage GenerateGuileLossBasePaletteImage()
-                {
-                    return GenerateGuilePortraitPaletteImage(GuileLossPortraitBaseImage(), PaletteSwap.Properties.Resources.gui2portrait, GuilePortraitLabels());
-                }
-
-                public static PaletteImage GenerateGuilePortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
-                {
-                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
-                }
-            }
         }
 
         public struct CLAW
