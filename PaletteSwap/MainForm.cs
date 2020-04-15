@@ -99,21 +99,8 @@ namespace PaletteSwap
         private void load_sprite_neutralstand()
         {
             var n = currentCharacter.GetBitmap("neutral");
-            switch (currentCharacterType)
-            {
-                case CharacterConfig.CHARACTERS.Dictator:
-                    neutralStandBox.BackgroundImage = n;
-                    break;
-                case CharacterConfig.CHARACTERS.Claw:
-                    CLA_neutralStandBox.BackgroundImage = n;
-                    break;
-                case CharacterConfig.CHARACTERS.Guile:
-                    GUI_neutralStandBox.BackgroundImage = n;
-                    break;
-                case CharacterConfig.CHARACTERS.Ryu:
-                    RYU_neutralStandBox.BackgroundImage = n;
-                    break;
-            }
+            var p = GetSpriteNeutralBox();
+            p.BackgroundImage = n;
         }
 
         private void load_sprite_load_sprite_psychopunch()
@@ -150,6 +137,22 @@ namespace PaletteSwap
             p.BackgroundImage = l;
         }
 
+        private PictureBox GetSpriteNeutralBox()
+        {
+            switch (currentCharacterType)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUI_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLA_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return neutralStandBox;
+            }
+            throw new Exception("Invalid character");
+        }
+
         private PictureBox GetPortraitLossBox()
         {
             switch (currentCharacterType){
@@ -164,7 +167,6 @@ namespace PaletteSwap
             }
             throw new Exception("Invalid character");
         }
-
 
         private PictureBox GetPortraitVictoryBox()
         {
@@ -181,6 +183,7 @@ namespace PaletteSwap
             }
             throw new Exception("Invalid character");
         }
+
         private void load_sprite_buttons()
         {
             switch (currentCharacterType) {
