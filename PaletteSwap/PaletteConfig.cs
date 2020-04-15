@@ -435,7 +435,7 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> guilePortraitOffsets = GenerateRyuPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = guilePortraitOffsets;
-                string defaults = "F00F F00F";// 3403 5605 6706 7807 8A08 9B09";
+                string defaults = "F00F F00F";//just a test to flush out unknown spot
                 int defaultsOffset = 20;
                 pc.createColorOffsets(defaults, defaultsOffset);
 //                pc.defaultColorOffsets = defaultColorOffsets;
@@ -750,6 +750,16 @@ namespace PaletteSwap
         }
     }
 
+    // a character config has
+    // neutral sprite base image Properties.Resources.RYU_neutral2
+    // neutral sprite colors Properties.Resources.ryu2sprite
+    // list of keys from sprite
+    // victory base image
+    // victory sprite colors
+    // loss base image
+    // loss sprite colors
+    // list of keys from portrait
+
     public struct ImageConfig
     {
         public static PaletteImage GenerateNeutralBasePalette(CharacterConfig.CHARACTERS c)
@@ -763,7 +773,8 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU.SPRITE.GenerateRyuStandingNeutralBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_neutral2),
+    PaletteSwap.Properties.Resources.ryu2sprite, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
 
             }
             throw new Exception("Invalid character");
@@ -780,8 +791,8 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU.PORTRAIT.GenerateRyuVictoryBasePaletteImage();
-
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitwin2),
+    PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -797,7 +808,10 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU.PORTRAIT.GenerateRyuLossBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitloss2),
+PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+
+
 
             }
             throw new Exception("Invalid character");
@@ -814,73 +828,20 @@ namespace PaletteSwap
             return p;
         }
 
-        public struct RYU
+        public static PaletteImage GeneratePaletteImage2(Bitmap base_image, string resource, Dictionary<string, List<int>> offsets)
         {
-            public struct SPRITE
+            List<string> labels = new List<string>();
+            foreach (var k in offsets)
             {
-                public static List<string> RyuStandNeutralLabels()
-                {
-                    return new List<string> { 
-                    "skin1", "skin2", "skin3", "skin4", 
-                    "hair1", "hair2", "belt", "headband1", "headband2",
-                "costume1", "costume2", "costume3", "costume4", "costume5", "costume6" };
-                }
-
-
-                public static Bitmap RyuStandNeutralBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.RYU_neutral2);
-                }
-
-                public static PaletteImage GenerateRyuStandingNeutralBasePaletteImage()
-                {
-                    return GenerateRyuPaletteImage(RyuStandNeutralBaseImage(), PaletteSwap.Properties.Resources.ryu2sprite, RyuStandNeutralLabels());
-                }
-
-                public static PaletteImage GenerateRyuPaletteImage(Bitmap base_image, string resource, List<string> labels)
-                {
-                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
-                }
+                labels.Add(k.Key);
             }
-
-            public struct PORTRAIT
-            {
-                public static List<string> RyuPortraitLabels()
-                {
-                    return new List<string> {
-                        "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
-                        "eyes1", "eyes2", "eyes3",
-                        "headband1", "headband2", "headband3",
-                        "costume1", "costume2", "costume3", "costume4", "costume5",
-                        "blood1", "blood2", "blood3",
-                        "teeth1", "teeth2",};
-                }
-
-                public static Bitmap RyuVictoryPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.RYU_portraitwin2);
-                }
-
-                public static Bitmap RyuLossPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.RYU_portraitloss2);
-                }
-
-                public static PaletteImage GenerateRyuVictoryBasePaletteImage()
-                {
-                    return GenerateRyuPortraitPaletteImage(RyuVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.ryu2portrait, RyuPortraitLabels());
-                }
-
-                public static PaletteImage GenerateRyuLossBasePaletteImage()
-                {
-                    return GenerateRyuPortraitPaletteImage(RyuLossPortraitBaseImage(), PaletteSwap.Properties.Resources.ryu2portrait, RyuPortraitLabels());
-                }
-
-                public static PaletteImage GenerateRyuPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
-                {
-                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
-                }
-            }
+            byte[] byte_stream = PaletteHelper.StringToByteStream(resource);
+            Color[] c = PaletteHelper.ColorsFromLabelsAndStream(byte_stream,
+                offsets,
+                labels);
+            PaletteImage p = new PaletteImage(base_image, c);
+            p.labels = labels;
+            return p;
         }
 
         public struct GUILE
