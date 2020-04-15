@@ -270,6 +270,8 @@ namespace PaletteSwap
                     return 0;
                 case CHARACTERS.Guile:
                     return 3;
+                case CHARACTERS.Chun:
+                    return 5;
                 case CHARACTERS.Dictator:
                     return 8;
                 case CHARACTERS.Claw:
@@ -277,6 +279,23 @@ namespace PaletteSwap
             }
             return 0;
         }
+
+        // ryu 0
+        // eho 1
+        // bla 2
+        // gui 3
+        // ken 4
+        // chu 5
+        // zan 6
+        // dha 7
+        // dic 8
+        // sag 9
+        // box A
+        // cla B
+        // cam c
+        // tha d
+        // fei e
+        // dee f
 
         public static int GetSpriteBeginOffset(CHARACTERS c)
         {
@@ -352,6 +371,100 @@ namespace PaletteSwap
                 cp.c = defaultcolor;
                 cp.position = offset + i;
                 this.defaultColorOffsets.Add(cp);
+            }
+        }
+
+        public struct CHUN
+        {
+            public static Dictionary<string, List<int>> GenerateChunSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "hair6", new List<int>() { 0 } },
+            { "skin2", new List<int>() { 2 } },
+            { "skin3", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "hair1", new List<int>() { 10 } },
+            { "hair2", new List<int>() { 12 } },
+            { "hair3", new List<int>() { 14} },
+            { "hair4", new List<int>() { 16 } },
+            { "hair5", new List<int>() { 18 } },
+            { "costume4", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume2", new List<int>() { 24 } },
+            { "costume1", new List<int>() { 26 } },
+            { "skin1", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateChunSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateChunSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateRyuPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+        { "eyes1", new List<int>() { 14 } },
+        { "eyes2", new List<int>() { 16 } },
+        { "eyes3", new List<int>() { 18 } },
+        { "headband1", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 2 + 18 } },
+        { "headband2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 20 } },
+        { "headband3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 2 + 22 } },
+        { "costume1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
+        { "costume2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
+        { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
+        { "costume4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
+        { "costume5", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
+        { "blood1", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "blood2", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "blood3", new List<int>() { ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+        { "teeth1", new List<int>() { ROWLEN * 2 + 14 } },
+        { "teeth2", new List<int>() { ROWLEN * 2 + 16 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateRyuPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> guilePortraitOffsets = GenerateRyuPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = guilePortraitOffsets;
+                string defaults = "F00F F00F";//just a test to flush out unknown spot
+                int defaultsOffset = 20;
+                pc.createColorOffsets(defaults, defaultsOffset);
+                //                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
             }
         }
 
