@@ -770,7 +770,8 @@ namespace PaletteSwap
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_neutral2),
 PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
-                    return CLAW.SPRITE.GenerateClawStandingNeutralBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.clawneutral7),
+PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -789,7 +790,8 @@ PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSp
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_portraitwin2),
 PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
-                    return CLAW.PORTRAIT.GenerateClawVictoryBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitwin7),
+PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -807,7 +809,8 @@ PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuile
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_portraitloss2),
 PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
-                    return CLAW.PORTRAIT.GenerateClawLossBasePaletteImage();
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitloss7),
+PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -846,81 +849,7 @@ PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPort
             p.labels = labels;
             return p;
         }
-
-        public struct CLAW
-        {
-            public struct SPRITE
-            {
-                public static List<string> ClawStandNeutralLabels()
-                {
-                    return new List<string> { "outline", "skin1", "skin2", "skin3", "skin4",
-                "skin5", "skin6", "skin7", "stripe", 
-                "costume1", "costume2", "costume3", "costume4", "sash1", "sash2" };
-                }
-
-                public static Bitmap ClawStandNeutralBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.clawneutral7);
-                }
-
-                public static PaletteImage GenerateClawStandingNeutralBasePaletteImage()
-                {
-                    return GenerateClawPaletteImage(ClawStandNeutralBaseImage(), PaletteSwap.Properties.Resources.cla7sprite, ClawStandNeutralLabels());
-                }
-
-                public static PaletteImage GenerateClawPaletteImage(Bitmap base_image, string resource, List<string> labels)
-                {
-                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.CLAW.GenerateClawSpriteOffsets());
-                }
-            }
-
-            public struct PORTRAIT
-            {
-                public static List<string> ClawVictoryPortraitLabels()
-                {
-                    return new List<string> { "skin1", "skin2", "skin3",
-                        "hair1", "hair2", "hair3", "hair4",
-                        "metal1", "metal2", "metal3", "metal4", "metal5",
-                "costume1", "costume2", "costume3", "iris", };
-                }
-
-                public static List<string> ClawLossPortraitLabels()
-                {
-                    return new List<string> { "skin1", "skin2", "skin3",
-                        "hair1", "hair2", "hair3", "hair4",
-                        "metal1", "metal2", "metal3", "metal4", "metal5",
-                "costume1", "costume2", "costume3", 
-                "blood1", "blood2", "blood3" };
-                }
-
-
-                public static Bitmap ClawVictoryPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.CLA_portraitwin7);
-                }
-
-                public static Bitmap ClawLossPortraitBaseImage()
-                {
-                    return new Bitmap(Properties.Resources.CLA_portraitloss7);
-                }
-
-                public static PaletteImage GenerateClawVictoryBasePaletteImage()
-                {
-                    return GenerateClawPortraitPaletteImage(ClawVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.cla7portrait, ClawVictoryPortraitLabels());
-                }
-
-                public static PaletteImage GenerateClawLossBasePaletteImage()
-                {
-                    return GenerateClawPortraitPaletteImage(ClawLossPortraitBaseImage(), PaletteSwap.Properties.Resources.cla7portrait, ClawLossPortraitLabels());
-                }
-
-                public static PaletteImage GenerateClawPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
-                {
-                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
-                }
-            }
-        }
-
+    
         public struct Dictator
         {
             public struct SPRITE
