@@ -162,13 +162,13 @@
             this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
             this.colorCycleRGB = new System.Windows.Forms.Button();
             this.colorCycleRBG = new System.Windows.Forms.Button();
-            this.neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.DIC_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.psychopunchBox = new System.Windows.Forms.PictureBox();
             this.psychoprepBox = new System.Windows.Forms.PictureBox();
             this.crushertopBox = new System.Windows.Forms.PictureBox();
             this.crusherbottomBox = new System.Windows.Forms.PictureBox();
-            this.portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.DIC_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.DIC_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TabPageDictator = new System.Windows.Forms.TabPage();
             this.TabPageClaw = new System.Windows.Forms.TabPage();
@@ -400,13 +400,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crushertopBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portraitLossBox)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.TabPageDictator.SuspendLayout();
             this.TabPageClaw.SuspendLayout();
@@ -1957,16 +1957,16 @@
             this.colorCycleRBG.UseVisualStyleBackColor = true;
             this.colorCycleRBG.Click += new System.EventHandler(this.colorCycleRBG_Click);
             // 
-            // neutralStandBox
+            // DIC_neutralStandBox
             // 
-            this.neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.neutralStandBox.Location = new System.Drawing.Point(12, 27);
-            this.neutralStandBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.neutralStandBox.Name = "neutralStandBox";
-            this.neutralStandBox.Size = new System.Drawing.Size(206, 175);
-            this.neutralStandBox.TabIndex = 114;
-            this.neutralStandBox.TabStop = false;
-            this.neutralStandBox.Click += new System.EventHandler(this.zoom);
+            this.DIC_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.DIC_neutralStandBox.Location = new System.Drawing.Point(12, 27);
+            this.DIC_neutralStandBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_neutralStandBox.Name = "DIC_neutralStandBox";
+            this.DIC_neutralStandBox.Size = new System.Drawing.Size(206, 175);
+            this.DIC_neutralStandBox.TabIndex = 114;
+            this.DIC_neutralStandBox.TabStop = false;
+            this.DIC_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // psychopunchBox
             // 
@@ -2012,27 +2012,27 @@
             this.crusherbottomBox.TabStop = false;
             this.crusherbottomBox.Click += new System.EventHandler(this.zoom);
             // 
-            // portraitVictoryBox
+            // DIC_portraitVictoryBox
             // 
-            this.portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.portraitVictoryBox.Location = new System.Drawing.Point(644, 12);
-            this.portraitVictoryBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.portraitVictoryBox.Name = "portraitVictoryBox";
-            this.portraitVictoryBox.Size = new System.Drawing.Size(256, 215);
-            this.portraitVictoryBox.TabIndex = 119;
-            this.portraitVictoryBox.TabStop = false;
-            this.portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            this.DIC_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.DIC_portraitVictoryBox.Location = new System.Drawing.Point(644, 12);
+            this.DIC_portraitVictoryBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_portraitVictoryBox.Name = "DIC_portraitVictoryBox";
+            this.DIC_portraitVictoryBox.Size = new System.Drawing.Size(256, 215);
+            this.DIC_portraitVictoryBox.TabIndex = 119;
+            this.DIC_portraitVictoryBox.TabStop = false;
+            this.DIC_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
-            // portraitLossBox
+            // DIC_portraitLossBox
             // 
-            this.portraitLossBox.BackColor = System.Drawing.Color.Black;
-            this.portraitLossBox.Location = new System.Drawing.Point(922, 12);
-            this.portraitLossBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.portraitLossBox.Name = "portraitLossBox";
-            this.portraitLossBox.Size = new System.Drawing.Size(256, 215);
-            this.portraitLossBox.TabIndex = 120;
-            this.portraitLossBox.TabStop = false;
-            this.portraitLossBox.Click += new System.EventHandler(this.zoom);
+            this.DIC_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.DIC_portraitLossBox.Location = new System.Drawing.Point(922, 12);
+            this.DIC_portraitLossBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_portraitLossBox.Name = "DIC_portraitLossBox";
+            this.DIC_portraitLossBox.Size = new System.Drawing.Size(256, 215);
+            this.DIC_portraitLossBox.TabIndex = 120;
+            this.DIC_portraitLossBox.TabStop = false;
+            this.DIC_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // tabControl1
             // 
@@ -2051,10 +2051,10 @@
             // TabPageDictator
             // 
             this.TabPageDictator.BackColor = System.Drawing.SystemColors.Control;
-            this.TabPageDictator.Controls.Add(this.neutralStandBox);
-            this.TabPageDictator.Controls.Add(this.portraitLossBox);
+            this.TabPageDictator.Controls.Add(this.DIC_neutralStandBox);
+            this.TabPageDictator.Controls.Add(this.DIC_portraitLossBox);
             this.TabPageDictator.Controls.Add(this.psychopunchBox);
-            this.TabPageDictator.Controls.Add(this.portraitVictoryBox);
+            this.TabPageDictator.Controls.Add(this.DIC_portraitVictoryBox);
             this.TabPageDictator.Controls.Add(this.psychoprepBox);
             this.TabPageDictator.Controls.Add(this.crusherbottomBox);
             this.TabPageDictator.Controls.Add(this.checkBox1);
@@ -4253,13 +4253,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crushertopBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portraitLossBox)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.TabPageDictator.ResumeLayout(false);
             this.TabPageDictator.PerformLayout();
@@ -4532,13 +4532,13 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveJapaneseRomToolStripMenuItem;
-        private System.Windows.Forms.PictureBox neutralStandBox;
+        private System.Windows.Forms.PictureBox DIC_neutralStandBox;
         private System.Windows.Forms.PictureBox psychopunchBox;
         private System.Windows.Forms.PictureBox psychoprepBox;
         private System.Windows.Forms.PictureBox crushertopBox;
         private System.Windows.Forms.PictureBox crusherbottomBox;
-        private System.Windows.Forms.PictureBox portraitVictoryBox;
-        private System.Windows.Forms.PictureBox portraitLossBox;
+        private System.Windows.Forms.PictureBox DIC_portraitVictoryBox;
+        private System.Windows.Forms.PictureBox DIC_portraitLossBox;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage TabPageDictator;
         private System.Windows.Forms.TabPage TabPageClaw;

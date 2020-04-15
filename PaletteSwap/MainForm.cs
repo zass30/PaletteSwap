@@ -148,7 +148,7 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Dictator:
-                    return neutralStandBox;
+                    return DIC_neutralStandBox;
             }
             throw new Exception("Invalid character");
         }
@@ -163,7 +163,7 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dictator:
-                    return portraitLossBox;
+                    return DIC_portraitLossBox;
             }
             throw new Exception("Invalid character");
         }
@@ -179,7 +179,7 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dictator:
-                    return portraitVictoryBox;
+                    return DIC_portraitVictoryBox;
             }
             throw new Exception("Invalid character");
         }
