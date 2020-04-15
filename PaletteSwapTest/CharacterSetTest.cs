@@ -81,5 +81,15 @@ namespace PaletteSwapTest
             Assert.AreEqual(s.GetColor("costume1"), sprite_result.GetColor("costume1"));
             Assert.AreEqual(p.GetColor("costume1"), portrait_result.GetColor("costume1"));
         }
+
+        [TestMethod]
+        public void GetBitmapTest()
+        {
+            var d = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
+            var b = d.GetBitmap("neutral");
+            var b_expected = d.sprite.GetBitmap("neutral");
+            Assert.AreEqual(b_expected.Width, b.Width);
+
+        }
     }
 }

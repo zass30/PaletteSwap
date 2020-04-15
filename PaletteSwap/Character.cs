@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -103,6 +104,20 @@ namespace PaletteSwap
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
+        }
+
+        public Bitmap GetBitmap(string s)
+        {
+            switch (s)
+            {
+                case "neutral":
+                    return sprite.GetBitmap("neutral");
+                case "victory":
+                    return portrait.GetBitmap("victory");
+                case "loss":
+                    return portrait.GetBitmap("loss");
+            }
+            throw new Exception("invalid bitmap");
         }
 
         private static void AssignImage(Palette palette, PaletteImage paletteImage, string label)
