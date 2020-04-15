@@ -402,9 +402,9 @@ namespace PaletteSwap
         { "eyes1", new List<int>() { 14 } },
         { "eyes2", new List<int>() { 16 } },
         { "eyes3", new List<int>() { 18 } },
-        { "headband1", new List<int>() { 24, ROWLEN * 1 + 24, } },
-        { "headband2", new List<int>() { 26, ROWLEN * 1 + 26, } },
-        { "headband3", new List<int>() { 28, ROWLEN * 1 + 28, } },
+        { "headband1", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 2 + 18 } },
+        { "headband2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 20 } },
+        { "headband3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 2 + 22 } },
         { "costume1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
         { "costume2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
         { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
@@ -435,7 +435,10 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> guilePortraitOffsets = GenerateRyuPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = guilePortraitOffsets;
-                pc.defaultColorOffsets = defaultColorOffsets;
+                string defaults = "F00F F00F";// 3403 5605 6706 7807 8A08 9B09";
+                int defaultsOffset = 20;
+                pc.createColorOffsets(defaults, defaultsOffset);
+//                pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;

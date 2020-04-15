@@ -153,6 +153,7 @@ namespace PaletteSwap
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
                     b[portrait_offset + i * portrait_length + j] = color_bytes[j];
+                    b[portrait2_offset + i * portrait_length + j] = color_bytes[j];
                 }
             }
             return b;
