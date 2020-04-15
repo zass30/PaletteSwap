@@ -23,16 +23,16 @@ namespace PaletteSwap
             this.portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
             this.portrait_length = CharacterConfig.portraitColorLength;
 
-            characterColors[0] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.lp);
-            characterColors[1] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.mp);
-            characterColors[2] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.hp);
-            characterColors[3] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.lk);
-            characterColors[4] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.mk);
-            characterColors[5] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.hk);
-            characterColors[6] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.start);
-            characterColors[7] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.hold);
-            characterColors[8] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.old1);
-            characterColors[9] = Character.createDefaultCharacter(character, CharacterConfig.BUTTONS.old2);
+            characterColors[0] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.lp);
+            characterColors[1] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.mp);
+            characterColors[2] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.hp);
+            characterColors[3] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.lk);
+            characterColors[4] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.mk);
+            characterColors[5] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.hk);
+            characterColors[6] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.start);
+            characterColors[7] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.hold);
+            characterColors[8] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.old1);
+            characterColors[9] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.old2);
         }
 
         public CharacterSet()

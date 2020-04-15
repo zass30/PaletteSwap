@@ -61,7 +61,7 @@ namespace PaletteSwap
             var sr = new StringReader(s);
             string first = sr.ReadLine();
             var characterType = CharacterEnumFromCode(first);
-            Character character = createDefaultCharacter(characterType, CharacterConfig.BUTTONS.lp);
+            Character character = CreateDefaultCharacter(characterType, CharacterConfig.BUTTONS.lp);
             var sprite = sr.ReadLine(); // SPRITE
             var rest = sr.ReadToEnd();
             var v = rest.Split(new string[] { "PORTRAIT" + System.Environment.NewLine }, StringSplitOptions.None);
@@ -73,7 +73,7 @@ namespace PaletteSwap
             return character;
         }
 
-        public static Character createDefaultCharacter(CharacterConfig.CHARACTERS character, CharacterConfig.BUTTONS button)
+        public static Character CreateDefaultCharacter(CharacterConfig.CHARACTERS character, CharacterConfig.BUTTONS button)
         {
             var c = new Character();
             c.characterType = character;
