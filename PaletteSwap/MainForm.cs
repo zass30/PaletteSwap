@@ -188,14 +188,14 @@ namespace PaletteSwap
         {
             switch (currentCharacterType) {
                 case CharacterConfig.CHARACTERS.Dictator:
-                    pal_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
-                    pal_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
-                    pal_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
-                    pal_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    DIC_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    DIC_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    DIC_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    DIC_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
 
                     pal_sprite_stripe.BackColor = currentCharacter.sprite.GetColor("stripe");
 
-                    pal_sprite_pads1.BackColor = currentCharacter.sprite.GetColor("pads1");
+                    DIC_sprite_pads1.BackColor = currentCharacter.sprite.GetColor("pads1");
                     pal_sprite_pads2.BackColor = currentCharacter.sprite.GetColor("pads2");
                     pal_sprite_pads3.BackColor = currentCharacter.sprite.GetColor("pads3");
                     pal_sprite_pads4.BackColor = currentCharacter.sprite.GetColor("pads4");

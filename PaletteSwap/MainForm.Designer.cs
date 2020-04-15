@@ -155,11 +155,11 @@
             this.pal_sprite_pads4 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_pads3 = new System.Windows.Forms.PictureBox();
             this.pal_sprite_pads2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_pads1 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_skin4 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_skin3 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_skin2 = new System.Windows.Forms.PictureBox();
-            this.pal_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.DIC_sprite_pads1 = new System.Windows.Forms.PictureBox();
+            this.DIC_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.DIC_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.DIC_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.DIC_sprite_skin1 = new System.Windows.Forms.PictureBox();
             this.colorCycleRGB = new System.Windows.Forms.Button();
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.DIC_neutralStandBox = new System.Windows.Forms.PictureBox();
@@ -395,11 +395,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_pads1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
@@ -890,7 +890,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1488, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1488, 48);
             this.menuStrip1.TabIndex = 111;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -911,7 +911,7 @@
             this.saveJapaneseRomToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 44);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -1017,7 +1017,7 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.colorSetToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 36);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 44);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // colorSetToolStripMenuItem
@@ -1131,7 +1131,7 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 44);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
@@ -1875,65 +1875,65 @@
             this.pal_sprite_pads2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.pal_sprite_pads2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_pads1
+            // DIC_sprite_pads1
             // 
-            this.pal_sprite_pads1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_pads1.Location = new System.Drawing.Point(208, 512);
-            this.pal_sprite_pads1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pal_sprite_pads1.Name = "pal_sprite_pads1";
-            this.pal_sprite_pads1.Size = new System.Drawing.Size(46, 44);
-            this.pal_sprite_pads1.TabIndex = 17;
-            this.pal_sprite_pads1.TabStop = false;
-            this.pal_sprite_pads1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_pads1.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_sprite_pads1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_pads1.Location = new System.Drawing.Point(208, 512);
+            this.DIC_sprite_pads1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_sprite_pads1.Name = "DIC_sprite_pads1";
+            this.DIC_sprite_pads1.Size = new System.Drawing.Size(46, 44);
+            this.DIC_sprite_pads1.TabIndex = 17;
+            this.DIC_sprite_pads1.TabStop = false;
+            this.DIC_sprite_pads1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DIC_sprite_pads1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_skin4
+            // DIC_sprite_skin4
             // 
-            this.pal_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_skin4.Location = new System.Drawing.Point(394, 456);
-            this.pal_sprite_skin4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pal_sprite_skin4.Name = "pal_sprite_skin4";
-            this.pal_sprite_skin4.Size = new System.Drawing.Size(46, 44);
-            this.pal_sprite_skin4.TabIndex = 16;
-            this.pal_sprite_skin4.TabStop = false;
-            this.pal_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_skin4.Location = new System.Drawing.Point(394, 456);
+            this.DIC_sprite_skin4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_sprite_skin4.Name = "DIC_sprite_skin4";
+            this.DIC_sprite_skin4.Size = new System.Drawing.Size(46, 44);
+            this.DIC_sprite_skin4.TabIndex = 16;
+            this.DIC_sprite_skin4.TabStop = false;
+            this.DIC_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DIC_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_skin3
+            // DIC_sprite_skin3
             // 
-            this.pal_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_skin3.Location = new System.Drawing.Point(332, 456);
-            this.pal_sprite_skin3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pal_sprite_skin3.Name = "pal_sprite_skin3";
-            this.pal_sprite_skin3.Size = new System.Drawing.Size(46, 44);
-            this.pal_sprite_skin3.TabIndex = 15;
-            this.pal_sprite_skin3.TabStop = false;
-            this.pal_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_skin3.Location = new System.Drawing.Point(332, 456);
+            this.DIC_sprite_skin3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_sprite_skin3.Name = "DIC_sprite_skin3";
+            this.DIC_sprite_skin3.Size = new System.Drawing.Size(46, 44);
+            this.DIC_sprite_skin3.TabIndex = 15;
+            this.DIC_sprite_skin3.TabStop = false;
+            this.DIC_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DIC_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_skin2
+            // DIC_sprite_skin2
             // 
-            this.pal_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_skin2.Location = new System.Drawing.Point(266, 456);
-            this.pal_sprite_skin2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pal_sprite_skin2.Name = "pal_sprite_skin2";
-            this.pal_sprite_skin2.Size = new System.Drawing.Size(46, 44);
-            this.pal_sprite_skin2.TabIndex = 14;
-            this.pal_sprite_skin2.TabStop = false;
-            this.pal_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_skin2.Location = new System.Drawing.Point(266, 456);
+            this.DIC_sprite_skin2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_sprite_skin2.Name = "DIC_sprite_skin2";
+            this.DIC_sprite_skin2.Size = new System.Drawing.Size(46, 44);
+            this.DIC_sprite_skin2.TabIndex = 14;
+            this.DIC_sprite_skin2.TabStop = false;
+            this.DIC_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DIC_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // pal_sprite_skin1
+            // DIC_sprite_skin1
             // 
-            this.pal_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_skin1.Location = new System.Drawing.Point(206, 456);
-            this.pal_sprite_skin1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pal_sprite_skin1.Name = "pal_sprite_skin1";
-            this.pal_sprite_skin1.Size = new System.Drawing.Size(46, 44);
-            this.pal_sprite_skin1.TabIndex = 13;
-            this.pal_sprite_skin1.TabStop = false;
-            this.pal_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.pal_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_skin1.Location = new System.Drawing.Point(206, 456);
+            this.DIC_sprite_skin1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DIC_sprite_skin1.Name = "DIC_sprite_skin1";
+            this.DIC_sprite_skin1.Size = new System.Drawing.Size(46, 44);
+            this.DIC_sprite_skin1.TabIndex = 13;
+            this.DIC_sprite_skin1.TabStop = false;
+            this.DIC_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DIC_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // colorCycleRGB
             // 
@@ -2079,23 +2079,23 @@
             this.TabPageDictator.Controls.Add(this.portrait_pipingloss1);
             this.TabPageDictator.Controls.Add(this.pal_sprite_crusherflame2);
             this.TabPageDictator.Controls.Add(this.label13);
-            this.TabPageDictator.Controls.Add(this.pal_sprite_skin1);
+            this.TabPageDictator.Controls.Add(this.DIC_sprite_skin1);
             this.TabPageDictator.Controls.Add(this.portrait_piping4);
             this.TabPageDictator.Controls.Add(this.pal_sprite_crusherflame1);
             this.TabPageDictator.Controls.Add(this.portrait_piping3);
-            this.TabPageDictator.Controls.Add(this.pal_sprite_skin2);
+            this.TabPageDictator.Controls.Add(this.DIC_sprite_skin2);
             this.TabPageDictator.Controls.Add(this.portrait_piping2);
             this.TabPageDictator.Controls.Add(this.label19);
             this.TabPageDictator.Controls.Add(this.portrait_piping1);
-            this.TabPageDictator.Controls.Add(this.pal_sprite_skin3);
+            this.TabPageDictator.Controls.Add(this.DIC_sprite_skin3);
             this.TabPageDictator.Controls.Add(this.label12);
             this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume4);
             this.TabPageDictator.Controls.Add(this.portrait_costumeloss4);
-            this.TabPageDictator.Controls.Add(this.pal_sprite_skin4);
+            this.TabPageDictator.Controls.Add(this.DIC_sprite_skin4);
             this.TabPageDictator.Controls.Add(this.portrait_costumeloss3);
             this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume3);
             this.TabPageDictator.Controls.Add(this.portrait_costumeloss2);
-            this.TabPageDictator.Controls.Add(this.pal_sprite_pads1);
+            this.TabPageDictator.Controls.Add(this.DIC_sprite_pads1);
             this.TabPageDictator.Controls.Add(this.portrait_costumeloss1);
             this.TabPageDictator.Controls.Add(this.pal_sprite_crushercostume2);
             this.TabPageDictator.Controls.Add(this.label11);
@@ -4248,11 +4248,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_pads1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pal_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_pads1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
@@ -4406,11 +4406,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pal_sprite_skin1;
-        private System.Windows.Forms.PictureBox pal_sprite_skin2;
-        private System.Windows.Forms.PictureBox pal_sprite_skin3;
-        private System.Windows.Forms.PictureBox pal_sprite_skin4;
-        private System.Windows.Forms.PictureBox pal_sprite_pads1;
+        private System.Windows.Forms.PictureBox DIC_sprite_skin1;
+        private System.Windows.Forms.PictureBox DIC_sprite_skin2;
+        private System.Windows.Forms.PictureBox DIC_sprite_skin3;
+        private System.Windows.Forms.PictureBox DIC_sprite_skin4;
+        private System.Windows.Forms.PictureBox DIC_sprite_pads1;
         private System.Windows.Forms.PictureBox pal_sprite_pads2;
         private System.Windows.Forms.PictureBox pal_sprite_pads3;
         private System.Windows.Forms.PictureBox pal_sprite_pads4;
