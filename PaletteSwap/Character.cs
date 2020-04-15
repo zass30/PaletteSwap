@@ -14,41 +14,10 @@ namespace PaletteSwap
         public Palette portrait;
         public CharacterConfig.CHARACTERS characterType;
 
-        public static string CodeFromCharacterEnum(CharacterConfig.CHARACTERS c)
-        {
-            switch (c) {
-                case CharacterConfig.CHARACTERS.Dictator:
-                    return "DIC";
-                case CharacterConfig.CHARACTERS.Claw:
-                    return "CLA";
-                case CharacterConfig.CHARACTERS.Guile:
-                    return "GUI";
-                case CharacterConfig.CHARACTERS.Ryu:
-                    return "RYU";
-            }
-            throw new ArgumentException("Invalid Character type");
-        }
-
-        public static CharacterConfig.CHARACTERS CharacterEnumFromCode(string s)
-        {
-            switch (s)
-            {
-                case "CLA":
-                    return CharacterConfig.CHARACTERS.Claw;
-                case "DIC":
-                    return CharacterConfig.CHARACTERS.Dictator;
-                case "GUI":
-                    return CharacterConfig.CHARACTERS.Guile;
-                case "RYU":
-                    return CharacterConfig.CHARACTERS.Ryu;
-            }
-            throw new ArgumentException("Invalid Character type");
-        }
-
         public string ToColFormat()
         {
             StringBuilder s = new StringBuilder();
-            s.Append(CodeFromCharacterEnum(characterType));
+            s.Append(CharacterConfig.CodeFromCharacterEnum(characterType));
             s.Append(System.Environment.NewLine);
             s.Append("SPRITE" + System.Environment.NewLine);
             s.Append(this.sprite.ToColFormat() + System.Environment.NewLine);
@@ -61,7 +30,7 @@ namespace PaletteSwap
         {
             var sr = new StringReader(s);
             string first = sr.ReadLine();
-            var characterType = CharacterEnumFromCode(first);
+            var characterType = CharacterConfig.CharacterEnumFromCode(first);
             Character character = CreateDefaultCharacter(characterType, CharacterConfig.BUTTONS.lp);
             var sprite = sr.ReadLine(); // SPRITE
             var rest = sr.ReadToEnd();

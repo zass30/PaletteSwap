@@ -151,6 +151,9 @@
     <None Include="Resources\ryu\RYU_portraitloss2.png" />
     <None Include="Resources\ryu\RYU_neutral2.png" />
     <None Include="Resources\dictator\DIC_portraitloss0.png" />
+    <None Include="Resources\chun\CHU_neutral1.png" />
+    <None Include="Resources\chun\CHU_portraitloss1.png" />
+    <None Include="Resources\chun\CHU_portraitwin1.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />

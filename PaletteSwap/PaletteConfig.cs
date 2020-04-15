@@ -31,7 +31,7 @@ namespace PaletteSwap
         static public int bisonPunchesValue = 0x14;
 
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
-        public enum CHARACTERS { Dictator, Claw, Guile, Ryu };
+        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
         {
@@ -238,6 +238,8 @@ namespace PaletteSwap
                     return "GUI";
                 case CHARACTERS.Ryu:
                     return "RYU";
+                case CHARACTERS.Chun:
+                    return "CHU";
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -254,6 +256,8 @@ namespace PaletteSwap
                     return CHARACTERS.Guile;
                 case "RYU":
                     return CHARACTERS.Ryu;
+                case "CHU":
+                    return CHARACTERS.Chun;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -777,7 +781,6 @@ PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpri
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_neutral2),
     PaletteSwap.Properties.Resources.ryu2sprite, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
-
             }
             throw new Exception("Invalid character");
         }
@@ -816,9 +819,6 @@ PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPo
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitloss2),
 PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
-
-
-
             }
             throw new Exception("Invalid character");
         }
