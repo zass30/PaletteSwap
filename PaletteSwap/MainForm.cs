@@ -138,22 +138,9 @@ namespace PaletteSwap
 
         private void load_portrait_victory()
         {
-            var i = currentCharacter.portrait.GetBitmap("victory"); ;
-            switch (currentCharacterType)
-            {
-                case CharacterConfig.CHARACTERS.Dictator:
-                    portraitVictoryBox.BackgroundImage = i;
-                    break;
-                case CharacterConfig.CHARACTERS.Claw:
-                    CLA_portraitVictoryBox.BackgroundImage = i; 
-                    break;
-                case CharacterConfig.CHARACTERS.Guile:
-                    GUI_portraitVictoryBox.BackgroundImage = i;
-                    break;
-                case CharacterConfig.CHARACTERS.Ryu:
-                    RYU_portraitVictoryBox.BackgroundImage = i;
-                    break;
-            }
+            var v = currentCharacter.portrait.GetBitmap("victory");
+            var p = GetPortraitVictoryBox();
+            p.BackgroundImage = v;
         }
 
         private void load_portrait_loss()
@@ -161,14 +148,6 @@ namespace PaletteSwap
             var l = currentCharacter.GetBitmap("loss");
             var p = GetPortraitLossBox();
             p.BackgroundImage = l;
-/*            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
-                portraitLossBox.BackgroundImage = l;
-            else if (currentCharacterType == CharacterConfig.CHARACTERS.Claw)
-                CLA_portraitLossBox.BackgroundImage = l;
-            else if (currentCharacterType == CharacterConfig.CHARACTERS.Guile)
-                GUI_portraitLossBox.BackgroundImage = l;
-            else if (currentCharacterType == CharacterConfig.CHARACTERS.Ryu)
-                RYU_portraitLossBox.BackgroundImage = l;*/
         }
 
         private PictureBox GetPortraitLossBox()
@@ -182,6 +161,23 @@ namespace PaletteSwap
                     return CLA_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dictator:
                     return portraitLossBox;
+            }
+            throw new Exception("Invalid character");
+        }
+
+
+        private PictureBox GetPortraitVictoryBox()
+        {
+            switch (currentCharacterType)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUI_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLA_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return portraitVictoryBox;
             }
             throw new Exception("Invalid character");
         }
@@ -1077,12 +1073,6 @@ namespace PaletteSwap
                 SetDefaultDropDown();
                 reload_everything();
             }
-
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
