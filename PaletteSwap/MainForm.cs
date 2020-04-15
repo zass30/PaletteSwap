@@ -159,16 +159,32 @@ namespace PaletteSwap
         private void load_portrait_loss()
         {
             var l = currentCharacter.GetBitmap("loss");
-            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
+            var p = GetPortraitLossBox();
+            p.BackgroundImage = l;
+/*            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
                 portraitLossBox.BackgroundImage = l;
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Claw)
                 CLA_portraitLossBox.BackgroundImage = l;
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Guile)
                 GUI_portraitLossBox.BackgroundImage = l;
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Ryu)
-                RYU_portraitLossBox.BackgroundImage = l;
+                RYU_portraitLossBox.BackgroundImage = l;*/
         }
 
+        private PictureBox GetPortraitLossBox()
+        {
+            switch (currentCharacterType){
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUI_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLA_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return portraitLossBox;
+            }
+            throw new Exception("Invalid character");
+        }
         private void load_sprite_buttons()
         {
             switch (currentCharacterType) {
@@ -1061,6 +1077,11 @@ namespace PaletteSwap
                 SetDefaultDropDown();
                 reload_everything();
             }
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

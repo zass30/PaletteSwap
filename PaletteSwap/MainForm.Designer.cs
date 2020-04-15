@@ -4184,7 +4184,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MinimumSize = new System.Drawing.Size(1326, 946);
             this.Name = "MainForm";
-            this.Text = "7";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
