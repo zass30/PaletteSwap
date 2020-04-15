@@ -26,10 +26,8 @@ namespace PaletteSwap
 
         private void zoomBox_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
-            //var scaledImg = mainform.currentCharacter.portrait.GetImage(mainform.currentlyZoomedLabel).RemappedScaledImage();
             var scaledImg = getZoomedImage();
             zoomBox.BackgroundImage = scaledImg;
-//            zoomBox.BackgroundImage = mainform.currentlySelectedZoomPaletteImage.RemappedScaledImage();
             return;
         }
 

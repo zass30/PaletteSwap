@@ -98,20 +98,20 @@ namespace PaletteSwap
 
         private void load_sprite_neutralstand()
         {
+            var n = currentCharacter.GetBitmap("neutral");
             switch (currentCharacterType)
             {
                 case CharacterConfig.CHARACTERS.Dictator:
-                    neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    neutralStandBox.BackgroundImage = n;
                     break;
                 case CharacterConfig.CHARACTERS.Claw:
-                    CLA_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    CLA_neutralStandBox.BackgroundImage = n;
                     break;
                 case CharacterConfig.CHARACTERS.Guile:
-                    var s = currentCharacter.sprite.GetBitmap("neutral");
-                    GUI_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    GUI_neutralStandBox.BackgroundImage = n;
                     break;
                 case CharacterConfig.CHARACTERS.Ryu:
-                    RYU_neutralStandBox.BackgroundImage = currentCharacter.sprite.GetBitmap("neutral");
+                    RYU_neutralStandBox.BackgroundImage = n;
                     break;
             }
         }
@@ -138,34 +138,35 @@ namespace PaletteSwap
 
         private void load_portrait_victory()
         {
+            var i = currentCharacter.portrait.GetBitmap("victory"); ;
             switch (currentCharacterType)
             {
                 case CharacterConfig.CHARACTERS.Dictator:
-                    portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                    portraitVictoryBox.BackgroundImage = i;
                     break;
                 case CharacterConfig.CHARACTERS.Claw:
-                    CLA_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory"); 
+                    CLA_portraitVictoryBox.BackgroundImage = i; 
                     break;
                 case CharacterConfig.CHARACTERS.Guile:
-                    GUI_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                    GUI_portraitVictoryBox.BackgroundImage = i;
                     break;
                 case CharacterConfig.CHARACTERS.Ryu:
-                    RYU_portraitVictoryBox.BackgroundImage = currentCharacter.portrait.GetBitmap("victory");
+                    RYU_portraitVictoryBox.BackgroundImage = i;
                     break;
             }
         }
 
         private void load_portrait_loss()
         {
-            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator) { 
-                portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
-            }
+            var l = currentCharacter.GetBitmap("loss");
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
+                portraitLossBox.BackgroundImage = l;
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Claw)
-                CLA_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
+                CLA_portraitLossBox.BackgroundImage = l;
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Guile)
-                GUI_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
+                GUI_portraitLossBox.BackgroundImage = l;
             else if (currentCharacterType == CharacterConfig.CHARACTERS.Ryu)
-                RYU_portraitLossBox.BackgroundImage = currentCharacter.portrait.GetBitmap("loss");
+                RYU_portraitLossBox.BackgroundImage = l;
         }
 
         private void load_sprite_buttons()
