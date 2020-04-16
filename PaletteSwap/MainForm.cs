@@ -301,8 +301,26 @@ namespace PaletteSwap
                     RYU_sprite_headband1.BackColor = currentCharacter.sprite.GetColor("headband1");
                     RYU_sprite_headband2.BackColor = currentCharacter.sprite.GetColor("headband2");
                     break;
-            }
+                case CharacterConfig.CHARACTERS.Chun:
+                    CHU_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    CHU_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    CHU_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    CHU_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    CHU_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
 
+                    CHU_sprite_hair1.BackColor = currentCharacter.sprite.GetColor("hair1");
+                    CHU_sprite_hair2.BackColor = currentCharacter.sprite.GetColor("hair2");
+                    CHU_sprite_hair3.BackColor = currentCharacter.sprite.GetColor("hair3");
+                    CHU_sprite_hair4.BackColor = currentCharacter.sprite.GetColor("hair4");
+                    CHU_sprite_hair5.BackColor = currentCharacter.sprite.GetColor("hair5");
+
+                    CHU_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    CHU_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    CHU_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    CHU_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    CHU_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    break;
+            }
         }
 
         private void load_portrait_buttons()

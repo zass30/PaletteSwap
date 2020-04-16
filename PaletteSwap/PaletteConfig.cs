@@ -430,16 +430,16 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> spriteOffsets =
                    new Dictionary<string, List<int>>
            {
-            { "hair6", new List<int>() { 0 } },
+            { "hair5", new List<int>() { 0 } },
             { "skin2", new List<int>() { 2 } },
             { "skin3", new List<int>() { 4 } },
             { "skin4", new List<int>() { 6 } },
             { "skin5", new List<int>() { 8 } },
             { "hair1", new List<int>() { 10 } },
             { "hair2", new List<int>() { 12 } },
-            { "hair3", new List<int>() { 14} },
+            { "hair3", new List<int>() { 14 } },
             { "hair4", new List<int>() { 16 } },
-            { "hair5", new List<int>() { 18 } },
+            { "costume5", new List<int>() { 18 } },
             { "costume4", new List<int>() { 20 } },
             { "costume3", new List<int>() { 22 } },
             { "costume2", new List<int>() { 24 } },

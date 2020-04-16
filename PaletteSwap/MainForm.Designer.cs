@@ -332,30 +332,28 @@
             this.RYU_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.RYU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.TabPageChun = new System.Windows.Forms.TabPage();
-            this.CHU_portraitLossBox = new System.Windows.Forms.PictureBox();
-            this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.COLlabel = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label56 = new System.Windows.Forms.Label();
+            this.CHU_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_hair3 = new System.Windows.Forms.PictureBox();
             this.label57 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_hair4 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_hair5 = new System.Windows.Forms.PictureBox();
             this.CHU_sprite_skin5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_hair1 = new System.Windows.Forms.PictureBox();
+            this.CHU_sprite_hair2 = new System.Windows.Forms.PictureBox();
             this.label58 = new System.Windows.Forms.Label();
             this.CHU_sprite_skin1 = new System.Windows.Forms.PictureBox();
             this.CHU_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.CHU_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.CHU_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.CHU_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -561,24 +559,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitVictoryBox)).BeginInit();
             this.TabPageChun.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2079,7 +2077,7 @@
             this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch2);
             this.TabPageDictator.Location = new System.Drawing.Point(4, 22);
             this.TabPageDictator.Name = "TabPageDictator";
-            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageDictator.Size = new System.Drawing.Size(597, 559);
             this.TabPageDictator.TabIndex = 0;
             this.TabPageDictator.Text = "Dictator";
@@ -2137,7 +2135,7 @@
             this.TabPageClaw.Controls.Add(this.CLA_neutralStandBox);
             this.TabPageClaw.Location = new System.Drawing.Point(4, 22);
             this.TabPageClaw.Name = "TabPageClaw";
-            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageClaw.Size = new System.Drawing.Size(597, 559);
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
@@ -3925,20 +3923,18 @@
             // 
             this.TabPageChun.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageChun.Controls.Add(this.label54);
-            this.TabPageChun.Controls.Add(this.label55);
-            this.TabPageChun.Controls.Add(this.pictureBox1);
-            this.TabPageChun.Controls.Add(this.pictureBox2);
-            this.TabPageChun.Controls.Add(this.label56);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_costume5);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_hair3);
             this.TabPageChun.Controls.Add(this.label57);
-            this.TabPageChun.Controls.Add(this.pictureBox3);
-            this.TabPageChun.Controls.Add(this.pictureBox4);
-            this.TabPageChun.Controls.Add(this.pictureBox5);
-            this.TabPageChun.Controls.Add(this.pictureBox6);
-            this.TabPageChun.Controls.Add(this.pictureBox7);
-            this.TabPageChun.Controls.Add(this.pictureBox8);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_costume1);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_costume2);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_costume3);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_costume4);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_hair4);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_hair5);
             this.TabPageChun.Controls.Add(this.CHU_sprite_skin5);
-            this.TabPageChun.Controls.Add(this.pictureBox10);
-            this.TabPageChun.Controls.Add(this.pictureBox11);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_hair1);
+            this.TabPageChun.Controls.Add(this.CHU_sprite_hair2);
             this.TabPageChun.Controls.Add(this.label58);
             this.TabPageChun.Controls.Add(this.CHU_sprite_skin1);
             this.TabPageChun.Controls.Add(this.CHU_sprite_skin2);
@@ -3948,11 +3944,203 @@
             this.TabPageChun.Controls.Add(this.CHU_portraitVictoryBox);
             this.TabPageChun.Controls.Add(this.CHU_neutralStandBox);
             this.TabPageChun.Location = new System.Drawing.Point(4, 22);
-            this.TabPageChun.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TabPageChun.Margin = new System.Windows.Forms.Padding(2);
             this.TabPageChun.Name = "TabPageChun";
             this.TabPageChun.Size = new System.Drawing.Size(597, 559);
             this.TabPageChun.TabIndex = 4;
             this.TabPageChun.Text = "Chun";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(23, 194);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(24, 13);
+            this.label54.TabIndex = 248;
+            this.label54.Text = "hair";
+            // 
+            // CHU_sprite_costume5
+            // 
+            this.CHU_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_costume5.Location = new System.Drawing.Point(211, 213);
+            this.CHU_sprite_costume5.Name = "CHU_sprite_costume5";
+            this.CHU_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_costume5.TabIndex = 245;
+            this.CHU_sprite_costume5.TabStop = false;
+            this.CHU_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_hair3
+            // 
+            this.CHU_sprite_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_hair3.Location = new System.Drawing.Point(151, 183);
+            this.CHU_sprite_hair3.Name = "CHU_sprite_hair3";
+            this.CHU_sprite_hair3.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_hair3.TabIndex = 246;
+            this.CHU_sprite_hair3.TabStop = false;
+            this.CHU_sprite_hair3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(23, 223);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(47, 13);
+            this.label57.TabIndex = 237;
+            this.label57.Text = "costume";
+            // 
+            // CHU_sprite_costume1
+            // 
+            this.CHU_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_costume1.Location = new System.Drawing.Point(91, 212);
+            this.CHU_sprite_costume1.Name = "CHU_sprite_costume1";
+            this.CHU_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_costume1.TabIndex = 238;
+            this.CHU_sprite_costume1.TabStop = false;
+            this.CHU_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_costume2
+            // 
+            this.CHU_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_costume2.Location = new System.Drawing.Point(121, 212);
+            this.CHU_sprite_costume2.Name = "CHU_sprite_costume2";
+            this.CHU_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_costume2.TabIndex = 239;
+            this.CHU_sprite_costume2.TabStop = false;
+            this.CHU_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_costume3
+            // 
+            this.CHU_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_costume3.Location = new System.Drawing.Point(151, 212);
+            this.CHU_sprite_costume3.Name = "CHU_sprite_costume3";
+            this.CHU_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_costume3.TabIndex = 240;
+            this.CHU_sprite_costume3.TabStop = false;
+            this.CHU_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_costume4
+            // 
+            this.CHU_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_costume4.Location = new System.Drawing.Point(181, 212);
+            this.CHU_sprite_costume4.Name = "CHU_sprite_costume4";
+            this.CHU_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_costume4.TabIndex = 241;
+            this.CHU_sprite_costume4.TabStop = false;
+            this.CHU_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_hair4
+            // 
+            this.CHU_sprite_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_hair4.Location = new System.Drawing.Point(181, 183);
+            this.CHU_sprite_hair4.Name = "CHU_sprite_hair4";
+            this.CHU_sprite_hair4.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_hair4.TabIndex = 242;
+            this.CHU_sprite_hair4.TabStop = false;
+            this.CHU_sprite_hair4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_hair4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_hair5
+            // 
+            this.CHU_sprite_hair5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_hair5.Location = new System.Drawing.Point(211, 183);
+            this.CHU_sprite_hair5.Name = "CHU_sprite_hair5";
+            this.CHU_sprite_hair5.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_hair5.TabIndex = 243;
+            this.CHU_sprite_hair5.TabStop = false;
+            this.CHU_sprite_hair5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_hair5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_skin5
+            // 
+            this.CHU_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_skin5.Location = new System.Drawing.Point(211, 153);
+            this.CHU_sprite_skin5.Name = "CHU_sprite_skin5";
+            this.CHU_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_skin5.TabIndex = 234;
+            this.CHU_sprite_skin5.TabStop = false;
+            this.CHU_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_hair1
+            // 
+            this.CHU_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_hair1.Location = new System.Drawing.Point(91, 183);
+            this.CHU_sprite_hair1.Name = "CHU_sprite_hair1";
+            this.CHU_sprite_hair1.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_hair1.TabIndex = 235;
+            this.CHU_sprite_hair1.TabStop = false;
+            this.CHU_sprite_hair1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_hair2
+            // 
+            this.CHU_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_hair2.Location = new System.Drawing.Point(121, 183);
+            this.CHU_sprite_hair2.Name = "CHU_sprite_hair2";
+            this.CHU_sprite_hair2.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_hair2.TabIndex = 236;
+            this.CHU_sprite_hair2.TabStop = false;
+            this.CHU_sprite_hair2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(24, 164);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(26, 13);
+            this.label58.TabIndex = 229;
+            this.label58.Text = "skin";
+            // 
+            // CHU_sprite_skin1
+            // 
+            this.CHU_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_skin1.Location = new System.Drawing.Point(91, 153);
+            this.CHU_sprite_skin1.Name = "CHU_sprite_skin1";
+            this.CHU_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_skin1.TabIndex = 230;
+            this.CHU_sprite_skin1.TabStop = false;
+            this.CHU_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_skin2
+            // 
+            this.CHU_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_skin2.Location = new System.Drawing.Point(121, 153);
+            this.CHU_sprite_skin2.Name = "CHU_sprite_skin2";
+            this.CHU_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_skin2.TabIndex = 231;
+            this.CHU_sprite_skin2.TabStop = false;
+            this.CHU_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_skin3
+            // 
+            this.CHU_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_skin3.Location = new System.Drawing.Point(151, 153);
+            this.CHU_sprite_skin3.Name = "CHU_sprite_skin3";
+            this.CHU_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_skin3.TabIndex = 232;
+            this.CHU_sprite_skin3.TabStop = false;
+            this.CHU_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CHU_sprite_skin4
+            // 
+            this.CHU_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CHU_sprite_skin4.Location = new System.Drawing.Point(181, 153);
+            this.CHU_sprite_skin4.Name = "CHU_sprite_skin4";
+            this.CHU_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.CHU_sprite_skin4.TabIndex = 233;
+            this.CHU_sprite_skin4.TabStop = false;
+            this.CHU_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CHU_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CHU_portraitLossBox
             // 
@@ -3991,186 +4179,6 @@
             this.COLlabel.Size = new System.Drawing.Size(90, 49);
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(23, 194);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(24, 13);
-            this.label54.TabIndex = 248;
-            this.label54.Text = "hair";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(23, 224);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(24, 13);
-            this.label55.TabIndex = 247;
-            this.label55.Text = "belt";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(211, 243);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 245;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(91, 213);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 246;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(23, 283);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(55, 13);
-            this.label56.TabIndex = 244;
-            this.label56.Text = "headband";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(23, 253);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(47, 13);
-            this.label57.TabIndex = 237;
-            this.label57.Text = "costume";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(91, 243);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 238;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(121, 243);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 239;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(151, 243);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.TabIndex = 240;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(181, 243);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.TabIndex = 241;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(91, 273);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox7.TabIndex = 242;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(121, 273);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox8.TabIndex = 243;
-            this.pictureBox8.TabStop = false;
-            // 
-            // CHU_sprite_skin5
-            // 
-            this.CHU_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CHU_sprite_skin5.Location = new System.Drawing.Point(211, 153);
-            this.CHU_sprite_skin5.Name = "CHU_sprite_skin5";
-            this.CHU_sprite_skin5.Size = new System.Drawing.Size(24, 24);
-            this.CHU_sprite_skin5.TabIndex = 234;
-            this.CHU_sprite_skin5.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(91, 183);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox10.TabIndex = 235;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(121, 183);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox11.TabIndex = 236;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(24, 164);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(26, 13);
-            this.label58.TabIndex = 229;
-            this.label58.Text = "skin";
-            // 
-            // CHU_sprite_skin1
-            // 
-            this.CHU_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CHU_sprite_skin1.Location = new System.Drawing.Point(91, 153);
-            this.CHU_sprite_skin1.Name = "CHU_sprite_skin1";
-            this.CHU_sprite_skin1.Size = new System.Drawing.Size(24, 24);
-            this.CHU_sprite_skin1.TabIndex = 230;
-            this.CHU_sprite_skin1.TabStop = false;
-            // 
-            // CHU_sprite_skin2
-            // 
-            this.CHU_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CHU_sprite_skin2.Location = new System.Drawing.Point(121, 153);
-            this.CHU_sprite_skin2.Name = "CHU_sprite_skin2";
-            this.CHU_sprite_skin2.Size = new System.Drawing.Size(24, 24);
-            this.CHU_sprite_skin2.TabIndex = 231;
-            this.CHU_sprite_skin2.TabStop = false;
-            // 
-            // CHU_sprite_skin3
-            // 
-            this.CHU_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CHU_sprite_skin3.Location = new System.Drawing.Point(151, 153);
-            this.CHU_sprite_skin3.Name = "CHU_sprite_skin3";
-            this.CHU_sprite_skin3.Size = new System.Drawing.Size(24, 24);
-            this.CHU_sprite_skin3.TabIndex = 232;
-            this.CHU_sprite_skin3.TabStop = false;
-            // 
-            // CHU_sprite_skin4
-            // 
-            this.CHU_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CHU_sprite_skin4.Location = new System.Drawing.Point(181, 153);
-            this.CHU_sprite_skin4.Name = "CHU_sprite_skin4";
-            this.CHU_sprite_skin4.Size = new System.Drawing.Size(24, 24);
-            this.CHU_sprite_skin4.TabIndex = 233;
-            this.CHU_sprite_skin4.TabStop = false;
             // 
             // MainForm
             // 
@@ -4410,24 +4418,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.RYU_portraitVictoryBox)).EndInit();
             this.TabPageChun.ResumeLayout(false);
             this.TabPageChun.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_hair2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4742,20 +4750,18 @@
         private System.Windows.Forms.PictureBox CHU_portraitLossBox;
         private System.Windows.Forms.PictureBox CHU_portraitVictoryBox;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.PictureBox CHU_sprite_costume5;
+        private System.Windows.Forms.PictureBox CHU_sprite_hair3;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox CHU_sprite_costume1;
+        private System.Windows.Forms.PictureBox CHU_sprite_costume2;
+        private System.Windows.Forms.PictureBox CHU_sprite_costume3;
+        private System.Windows.Forms.PictureBox CHU_sprite_costume4;
+        private System.Windows.Forms.PictureBox CHU_sprite_hair4;
+        private System.Windows.Forms.PictureBox CHU_sprite_hair5;
         private System.Windows.Forms.PictureBox CHU_sprite_skin5;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox CHU_sprite_hair1;
+        private System.Windows.Forms.PictureBox CHU_sprite_hair2;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.PictureBox CHU_sprite_skin1;
         private System.Windows.Forms.PictureBox CHU_sprite_skin2;
