@@ -659,7 +659,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 280);
+            this.label3.Location = new System.Drawing.Point(20, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 10;
@@ -677,7 +677,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 340);
+            this.label5.Location = new System.Drawing.Point(15, 339);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 12;
@@ -776,7 +776,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(299, 268);
+            this.label10.Location = new System.Drawing.Point(299, 279);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 50;
@@ -785,7 +785,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(299, 299);
+            this.label11.Location = new System.Drawing.Point(295, 309);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(47, 13);
             this.label11.TabIndex = 59;
@@ -794,7 +794,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(299, 328);
+            this.label12.Location = new System.Drawing.Point(295, 339);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 13);
             this.label12.TabIndex = 64;
@@ -803,7 +803,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(299, 357);
+            this.label13.Location = new System.Drawing.Point(299, 369);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 69;
@@ -812,7 +812,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(299, 390);
+            this.label14.Location = new System.Drawing.Point(295, 399);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 13);
             this.label14.TabIndex = 74;
@@ -821,7 +821,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(300, 421);
+            this.label15.Location = new System.Drawing.Point(301, 429);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(33, 13);
             this.label15.TabIndex = 78;
@@ -830,7 +830,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(14, 371);
+            this.label17.Location = new System.Drawing.Point(15, 369);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 13);
             this.label17.TabIndex = 86;
@@ -839,7 +839,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(14, 402);
+            this.label18.Location = new System.Drawing.Point(12, 399);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(68, 13);
             this.label18.TabIndex = 92;
@@ -848,7 +848,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(13, 431);
+            this.label19.Location = new System.Drawing.Point(8, 429);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 13);
             this.label19.TabIndex = 98;
@@ -857,7 +857,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(13, 462);
+            this.label20.Location = new System.Drawing.Point(11, 459);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(75, 13);
             this.label20.TabIndex = 103;
@@ -866,7 +866,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(14, 491);
+            this.label21.Location = new System.Drawing.Point(6, 490);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(74, 13);
             this.label21.TabIndex = 106;
@@ -877,7 +877,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(399, 462);
+            this.checkBox1.Location = new System.Drawing.Point(440, 521);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(122, 17);
             this.checkBox1.TabIndex = 107;
@@ -1206,7 +1206,7 @@
             // pal_sprite_crusherhands2
             // 
             this.pal_sprite_crusherhands2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(133, 479);
+            this.pal_sprite_crusherhands2.Location = new System.Drawing.Point(137, 479);
             this.pal_sprite_crusherhands2.Name = "pal_sprite_crusherhands2";
             this.pal_sprite_crusherhands2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherhands2.TabIndex = 105;
@@ -1217,7 +1217,7 @@
             // pal_sprite_crusherhands1
             // 
             this.pal_sprite_crusherhands1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(104, 479);
+            this.pal_sprite_crusherhands1.Location = new System.Drawing.Point(107, 478);
             this.pal_sprite_crusherhands1.Name = "pal_sprite_crusherhands1";
             this.pal_sprite_crusherhands1.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherhands1.TabIndex = 104;
@@ -1228,7 +1228,7 @@
             // pal_sprite_crusherflame2
             // 
             this.pal_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(133, 450);
+            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(137, 448);
             this.pal_sprite_crusherflame2.Name = "pal_sprite_crusherflame2";
             this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherflame2.TabIndex = 100;
@@ -1239,7 +1239,7 @@
             // pal_sprite_crusherflame1
             // 
             this.pal_sprite_crusherflame1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(104, 448);
+            this.pal_sprite_crusherflame1.Location = new System.Drawing.Point(107, 448);
             this.pal_sprite_crusherflame1.Name = "pal_sprite_crusherflame1";
             this.pal_sprite_crusherflame1.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherflame1.TabIndex = 99;
@@ -1250,7 +1250,7 @@
             // pal_sprite_crushercostume4
             // 
             this.pal_sprite_crushercostume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crushercostume4.Location = new System.Drawing.Point(195, 419);
+            this.pal_sprite_crushercostume4.Location = new System.Drawing.Point(197, 418);
             this.pal_sprite_crushercostume4.Name = "pal_sprite_crushercostume4";
             this.pal_sprite_crushercostume4.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crushercostume4.TabIndex = 96;
@@ -1261,7 +1261,7 @@
             // pal_sprite_crushercostume3
             // 
             this.pal_sprite_crushercostume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crushercostume3.Location = new System.Drawing.Point(165, 419);
+            this.pal_sprite_crushercostume3.Location = new System.Drawing.Point(167, 418);
             this.pal_sprite_crushercostume3.Name = "pal_sprite_crushercostume3";
             this.pal_sprite_crushercostume3.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crushercostume3.TabIndex = 95;
@@ -1272,7 +1272,7 @@
             // pal_sprite_crushercostume2
             // 
             this.pal_sprite_crushercostume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crushercostume2.Location = new System.Drawing.Point(133, 419);
+            this.pal_sprite_crushercostume2.Location = new System.Drawing.Point(137, 418);
             this.pal_sprite_crushercostume2.Name = "pal_sprite_crushercostume2";
             this.pal_sprite_crushercostume2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crushercostume2.TabIndex = 94;
@@ -1283,7 +1283,7 @@
             // pal_sprite_crushercostume1
             // 
             this.pal_sprite_crushercostume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crushercostume1.Location = new System.Drawing.Point(104, 419);
+            this.pal_sprite_crushercostume1.Location = new System.Drawing.Point(107, 418);
             this.pal_sprite_crushercostume1.Name = "pal_sprite_crushercostume1";
             this.pal_sprite_crushercostume1.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crushercostume1.TabIndex = 93;
@@ -1294,7 +1294,7 @@
             // pal_sprite_crusherpads5
             // 
             this.pal_sprite_crusherpads5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherpads5.Location = new System.Drawing.Point(227, 390);
+            this.pal_sprite_crusherpads5.Location = new System.Drawing.Point(227, 388);
             this.pal_sprite_crusherpads5.Name = "pal_sprite_crusherpads5";
             this.pal_sprite_crusherpads5.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherpads5.TabIndex = 91;
@@ -1305,7 +1305,7 @@
             // pal_sprite_crusherpads4
             // 
             this.pal_sprite_crusherpads4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherpads4.Location = new System.Drawing.Point(196, 390);
+            this.pal_sprite_crusherpads4.Location = new System.Drawing.Point(197, 388);
             this.pal_sprite_crusherpads4.Name = "pal_sprite_crusherpads4";
             this.pal_sprite_crusherpads4.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherpads4.TabIndex = 90;
@@ -1316,7 +1316,7 @@
             // pal_sprite_crusherpads3
             // 
             this.pal_sprite_crusherpads3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherpads3.Location = new System.Drawing.Point(165, 390);
+            this.pal_sprite_crusherpads3.Location = new System.Drawing.Point(167, 388);
             this.pal_sprite_crusherpads3.Name = "pal_sprite_crusherpads3";
             this.pal_sprite_crusherpads3.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherpads3.TabIndex = 89;
@@ -1327,7 +1327,7 @@
             // pal_sprite_crusherpads2
             // 
             this.pal_sprite_crusherpads2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherpads2.Location = new System.Drawing.Point(134, 388);
+            this.pal_sprite_crusherpads2.Location = new System.Drawing.Point(137, 388);
             this.pal_sprite_crusherpads2.Name = "pal_sprite_crusherpads2";
             this.pal_sprite_crusherpads2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherpads2.TabIndex = 88;
@@ -1338,7 +1338,7 @@
             // pal_sprite_crusherpads1
             // 
             this.pal_sprite_crusherpads1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherpads1.Location = new System.Drawing.Point(104, 390);
+            this.pal_sprite_crusherpads1.Location = new System.Drawing.Point(107, 388);
             this.pal_sprite_crusherpads1.Name = "pal_sprite_crusherpads1";
             this.pal_sprite_crusherpads1.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherpads1.TabIndex = 87;
@@ -1349,7 +1349,7 @@
             // pal_sprite_psychopunch5
             // 
             this.pal_sprite_psychopunch5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_psychopunch5.Location = new System.Drawing.Point(227, 359);
+            this.pal_sprite_psychopunch5.Location = new System.Drawing.Point(227, 358);
             this.pal_sprite_psychopunch5.Name = "pal_sprite_psychopunch5";
             this.pal_sprite_psychopunch5.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_psychopunch5.TabIndex = 85;
@@ -1360,7 +1360,7 @@
             // pal_sprite_psychopunch4
             // 
             this.pal_sprite_psychopunch4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_psychopunch4.Location = new System.Drawing.Point(196, 359);
+            this.pal_sprite_psychopunch4.Location = new System.Drawing.Point(197, 358);
             this.pal_sprite_psychopunch4.Name = "pal_sprite_psychopunch4";
             this.pal_sprite_psychopunch4.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_psychopunch4.TabIndex = 84;
@@ -1371,7 +1371,7 @@
             // pal_sprite_psychopunch3
             // 
             this.pal_sprite_psychopunch3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_psychopunch3.Location = new System.Drawing.Point(165, 359);
+            this.pal_sprite_psychopunch3.Location = new System.Drawing.Point(167, 358);
             this.pal_sprite_psychopunch3.Name = "pal_sprite_psychopunch3";
             this.pal_sprite_psychopunch3.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_psychopunch3.TabIndex = 83;
@@ -1382,7 +1382,7 @@
             // pal_sprite_psychopunch2
             // 
             this.pal_sprite_psychopunch2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_psychopunch2.Location = new System.Drawing.Point(134, 359);
+            this.pal_sprite_psychopunch2.Location = new System.Drawing.Point(137, 358);
             this.pal_sprite_psychopunch2.Name = "pal_sprite_psychopunch2";
             this.pal_sprite_psychopunch2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_psychopunch2.TabIndex = 82;
@@ -1393,7 +1393,7 @@
             // pal_sprite_psychopunch1
             // 
             this.pal_sprite_psychopunch1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_psychopunch1.Location = new System.Drawing.Point(104, 359);
+            this.pal_sprite_psychopunch1.Location = new System.Drawing.Point(107, 358);
             this.pal_sprite_psychopunch1.Name = "pal_sprite_psychopunch1";
             this.pal_sprite_psychopunch1.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_psychopunch1.TabIndex = 81;
@@ -1404,7 +1404,7 @@
             // pal_sprite_psychoglow
             // 
             this.pal_sprite_psychoglow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(134, 328);
+            this.pal_sprite_psychoglow.Location = new System.Drawing.Point(137, 328);
             this.pal_sprite_psychoglow.Name = "pal_sprite_psychoglow";
             this.pal_sprite_psychoglow.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_psychoglow.TabIndex = 79;
@@ -1415,7 +1415,7 @@
             // portrait_blood3
             // 
             this.portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_blood3.Location = new System.Drawing.Point(431, 421);
+            this.portrait_blood3.Location = new System.Drawing.Point(429, 418);
             this.portrait_blood3.Name = "portrait_blood3";
             this.portrait_blood3.Size = new System.Drawing.Size(24, 24);
             this.portrait_blood3.TabIndex = 77;
@@ -1426,7 +1426,7 @@
             // portrait_blood2
             // 
             this.portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_blood2.Location = new System.Drawing.Point(400, 421);
+            this.portrait_blood2.Location = new System.Drawing.Point(399, 418);
             this.portrait_blood2.Name = "portrait_blood2";
             this.portrait_blood2.Size = new System.Drawing.Size(24, 24);
             this.portrait_blood2.TabIndex = 76;
@@ -1437,7 +1437,7 @@
             // portrait_blood1
             // 
             this.portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_blood1.Location = new System.Drawing.Point(368, 421);
+            this.portrait_blood1.Location = new System.Drawing.Point(369, 418);
             this.portrait_blood1.Name = "portrait_blood1";
             this.portrait_blood1.Size = new System.Drawing.Size(24, 24);
             this.portrait_blood1.TabIndex = 75;
@@ -1448,7 +1448,7 @@
             // portrait_pipingloss4
             // 
             this.portrait_pipingloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss4.Location = new System.Drawing.Point(463, 390);
+            this.portrait_pipingloss4.Location = new System.Drawing.Point(459, 388);
             this.portrait_pipingloss4.Name = "portrait_pipingloss4";
             this.portrait_pipingloss4.Size = new System.Drawing.Size(24, 24);
             this.portrait_pipingloss4.TabIndex = 73;
@@ -1459,7 +1459,7 @@
             // portrait_pipingloss3
             // 
             this.portrait_pipingloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss3.Location = new System.Drawing.Point(430, 390);
+            this.portrait_pipingloss3.Location = new System.Drawing.Point(429, 388);
             this.portrait_pipingloss3.Name = "portrait_pipingloss3";
             this.portrait_pipingloss3.Size = new System.Drawing.Size(24, 24);
             this.portrait_pipingloss3.TabIndex = 72;
@@ -1470,7 +1470,7 @@
             // portrait_pipingloss2
             // 
             this.portrait_pipingloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss2.Location = new System.Drawing.Point(399, 390);
+            this.portrait_pipingloss2.Location = new System.Drawing.Point(399, 388);
             this.portrait_pipingloss2.Name = "portrait_pipingloss2";
             this.portrait_pipingloss2.Size = new System.Drawing.Size(24, 24);
             this.portrait_pipingloss2.TabIndex = 71;
@@ -1481,7 +1481,7 @@
             // portrait_pipingloss1
             // 
             this.portrait_pipingloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss1.Location = new System.Drawing.Point(368, 390);
+            this.portrait_pipingloss1.Location = new System.Drawing.Point(369, 388);
             this.portrait_pipingloss1.Name = "portrait_pipingloss1";
             this.portrait_pipingloss1.Size = new System.Drawing.Size(24, 24);
             this.portrait_pipingloss1.TabIndex = 70;
@@ -1492,7 +1492,7 @@
             // portrait_piping4
             // 
             this.portrait_piping4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping4.Location = new System.Drawing.Point(463, 359);
+            this.portrait_piping4.Location = new System.Drawing.Point(459, 358);
             this.portrait_piping4.Name = "portrait_piping4";
             this.portrait_piping4.Size = new System.Drawing.Size(24, 24);
             this.portrait_piping4.TabIndex = 68;
@@ -1503,7 +1503,7 @@
             // portrait_piping3
             // 
             this.portrait_piping3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping3.Location = new System.Drawing.Point(430, 359);
+            this.portrait_piping3.Location = new System.Drawing.Point(429, 358);
             this.portrait_piping3.Name = "portrait_piping3";
             this.portrait_piping3.Size = new System.Drawing.Size(24, 24);
             this.portrait_piping3.TabIndex = 67;
@@ -1514,7 +1514,7 @@
             // portrait_piping2
             // 
             this.portrait_piping2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping2.Location = new System.Drawing.Point(399, 359);
+            this.portrait_piping2.Location = new System.Drawing.Point(399, 358);
             this.portrait_piping2.Name = "portrait_piping2";
             this.portrait_piping2.Size = new System.Drawing.Size(24, 24);
             this.portrait_piping2.TabIndex = 66;
@@ -1525,7 +1525,7 @@
             // portrait_piping1
             // 
             this.portrait_piping1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping1.Location = new System.Drawing.Point(368, 359);
+            this.portrait_piping1.Location = new System.Drawing.Point(369, 358);
             this.portrait_piping1.Name = "portrait_piping1";
             this.portrait_piping1.Size = new System.Drawing.Size(24, 24);
             this.portrait_piping1.TabIndex = 65;
@@ -1536,7 +1536,7 @@
             // portrait_costumeloss4
             // 
             this.portrait_costumeloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss4.Location = new System.Drawing.Point(463, 328);
+            this.portrait_costumeloss4.Location = new System.Drawing.Point(459, 328);
             this.portrait_costumeloss4.Name = "portrait_costumeloss4";
             this.portrait_costumeloss4.Size = new System.Drawing.Size(24, 24);
             this.portrait_costumeloss4.TabIndex = 63;
@@ -1547,7 +1547,7 @@
             // portrait_costumeloss3
             // 
             this.portrait_costumeloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss3.Location = new System.Drawing.Point(430, 328);
+            this.portrait_costumeloss3.Location = new System.Drawing.Point(429, 328);
             this.portrait_costumeloss3.Name = "portrait_costumeloss3";
             this.portrait_costumeloss3.Size = new System.Drawing.Size(24, 24);
             this.portrait_costumeloss3.TabIndex = 62;
@@ -1569,7 +1569,7 @@
             // portrait_costumeloss1
             // 
             this.portrait_costumeloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss1.Location = new System.Drawing.Point(368, 328);
+            this.portrait_costumeloss1.Location = new System.Drawing.Point(369, 328);
             this.portrait_costumeloss1.Name = "portrait_costumeloss1";
             this.portrait_costumeloss1.Size = new System.Drawing.Size(24, 24);
             this.portrait_costumeloss1.TabIndex = 60;
@@ -1580,7 +1580,7 @@
             // portrait_costume4
             // 
             this.portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costume4.Location = new System.Drawing.Point(463, 299);
+            this.portrait_costume4.Location = new System.Drawing.Point(459, 298);
             this.portrait_costume4.Name = "portrait_costume4";
             this.portrait_costume4.Size = new System.Drawing.Size(24, 24);
             this.portrait_costume4.TabIndex = 58;
@@ -1591,7 +1591,7 @@
             // portrait_costume3
             // 
             this.portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costume3.Location = new System.Drawing.Point(430, 299);
+            this.portrait_costume3.Location = new System.Drawing.Point(429, 298);
             this.portrait_costume3.Name = "portrait_costume3";
             this.portrait_costume3.Size = new System.Drawing.Size(24, 24);
             this.portrait_costume3.TabIndex = 57;
@@ -1602,7 +1602,7 @@
             // portrait_costume2
             // 
             this.portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costume2.Location = new System.Drawing.Point(399, 299);
+            this.portrait_costume2.Location = new System.Drawing.Point(399, 298);
             this.portrait_costume2.Name = "portrait_costume2";
             this.portrait_costume2.Size = new System.Drawing.Size(24, 24);
             this.portrait_costume2.TabIndex = 56;
@@ -1613,7 +1613,7 @@
             // portrait_costume1
             // 
             this.portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costume1.Location = new System.Drawing.Point(368, 299);
+            this.portrait_costume1.Location = new System.Drawing.Point(369, 298);
             this.portrait_costume1.Name = "portrait_costume1";
             this.portrait_costume1.Size = new System.Drawing.Size(24, 24);
             this.portrait_costume1.TabIndex = 55;
@@ -1624,7 +1624,7 @@
             // portrait_teeth4
             // 
             this.portrait_teeth4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_teeth4.Location = new System.Drawing.Point(463, 268);
+            this.portrait_teeth4.Location = new System.Drawing.Point(459, 268);
             this.portrait_teeth4.Name = "portrait_teeth4";
             this.portrait_teeth4.Size = new System.Drawing.Size(24, 24);
             this.portrait_teeth4.TabIndex = 54;
@@ -1635,7 +1635,7 @@
             // portrait_teeth3
             // 
             this.portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_teeth3.Location = new System.Drawing.Point(430, 268);
+            this.portrait_teeth3.Location = new System.Drawing.Point(429, 268);
             this.portrait_teeth3.Name = "portrait_teeth3";
             this.portrait_teeth3.Size = new System.Drawing.Size(24, 24);
             this.portrait_teeth3.TabIndex = 53;
@@ -1657,7 +1657,7 @@
             // portrait_teeth1
             // 
             this.portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_teeth1.Location = new System.Drawing.Point(368, 268);
+            this.portrait_teeth1.Location = new System.Drawing.Point(369, 268);
             this.portrait_teeth1.Name = "portrait_teeth1";
             this.portrait_teeth1.Size = new System.Drawing.Size(24, 24);
             this.portrait_teeth1.TabIndex = 51;
@@ -1668,7 +1668,7 @@
             // portrait_skin7
             // 
             this.portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin7.Location = new System.Drawing.Point(556, 237);
+            this.portrait_skin7.Location = new System.Drawing.Point(549, 238);
             this.portrait_skin7.Name = "portrait_skin7";
             this.portrait_skin7.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin7.TabIndex = 49;
@@ -1679,7 +1679,7 @@
             // portrait_skin6
             // 
             this.portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin6.Location = new System.Drawing.Point(525, 237);
+            this.portrait_skin6.Location = new System.Drawing.Point(519, 238);
             this.portrait_skin6.Name = "portrait_skin6";
             this.portrait_skin6.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin6.TabIndex = 48;
@@ -1690,7 +1690,7 @@
             // portrait_skin5
             // 
             this.portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin5.Location = new System.Drawing.Point(494, 237);
+            this.portrait_skin5.Location = new System.Drawing.Point(489, 238);
             this.portrait_skin5.Name = "portrait_skin5";
             this.portrait_skin5.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin5.TabIndex = 47;
@@ -1701,7 +1701,7 @@
             // portrait_skin4
             // 
             this.portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin4.Location = new System.Drawing.Point(463, 237);
+            this.portrait_skin4.Location = new System.Drawing.Point(459, 238);
             this.portrait_skin4.Name = "portrait_skin4";
             this.portrait_skin4.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin4.TabIndex = 46;
@@ -1712,7 +1712,7 @@
             // portrait_skin3
             // 
             this.portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin3.Location = new System.Drawing.Point(430, 237);
+            this.portrait_skin3.Location = new System.Drawing.Point(429, 238);
             this.portrait_skin3.Name = "portrait_skin3";
             this.portrait_skin3.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin3.TabIndex = 45;
@@ -1723,7 +1723,7 @@
             // portrait_skin2
             // 
             this.portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin2.Location = new System.Drawing.Point(399, 237);
+            this.portrait_skin2.Location = new System.Drawing.Point(399, 238);
             this.portrait_skin2.Name = "portrait_skin2";
             this.portrait_skin2.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin2.TabIndex = 44;
@@ -1734,7 +1734,7 @@
             // portrait_skin1
             // 
             this.portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_skin1.Location = new System.Drawing.Point(368, 237);
+            this.portrait_skin1.Location = new System.Drawing.Point(369, 238);
             this.portrait_skin1.Name = "portrait_skin1";
             this.portrait_skin1.Size = new System.Drawing.Size(24, 24);
             this.portrait_skin1.TabIndex = 43;
@@ -1745,7 +1745,7 @@
             // pal_sprite_stripe
             // 
             this.pal_sprite_stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_stripe.Location = new System.Drawing.Point(104, 328);
+            this.pal_sprite_stripe.Location = new System.Drawing.Point(107, 328);
             this.pal_sprite_stripe.Name = "pal_sprite_stripe";
             this.pal_sprite_stripe.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_stripe.TabIndex = 27;
@@ -1756,7 +1756,7 @@
             // pal_sprite_costume5
             // 
             this.pal_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_costume5.Location = new System.Drawing.Point(228, 299);
+            this.pal_sprite_costume5.Location = new System.Drawing.Point(227, 298);
             this.pal_sprite_costume5.Name = "pal_sprite_costume5";
             this.pal_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_costume5.TabIndex = 26;
@@ -1767,7 +1767,7 @@
             // pal_sprite_costume4
             // 
             this.pal_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_costume4.Location = new System.Drawing.Point(197, 299);
+            this.pal_sprite_costume4.Location = new System.Drawing.Point(197, 298);
             this.pal_sprite_costume4.Name = "pal_sprite_costume4";
             this.pal_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_costume4.TabIndex = 25;
@@ -1778,7 +1778,7 @@
             // pal_sprite_costume3
             // 
             this.pal_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_costume3.Location = new System.Drawing.Point(166, 299);
+            this.pal_sprite_costume3.Location = new System.Drawing.Point(167, 298);
             this.pal_sprite_costume3.Name = "pal_sprite_costume3";
             this.pal_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_costume3.TabIndex = 24;
@@ -1789,7 +1789,7 @@
             // pal_sprite_costume2
             // 
             this.pal_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_costume2.Location = new System.Drawing.Point(134, 299);
+            this.pal_sprite_costume2.Location = new System.Drawing.Point(137, 298);
             this.pal_sprite_costume2.Name = "pal_sprite_costume2";
             this.pal_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_costume2.TabIndex = 23;
@@ -1800,7 +1800,7 @@
             // pal_sprite_costume1
             // 
             this.pal_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_costume1.Location = new System.Drawing.Point(103, 299);
+            this.pal_sprite_costume1.Location = new System.Drawing.Point(107, 298);
             this.pal_sprite_costume1.Name = "pal_sprite_costume1";
             this.pal_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_costume1.TabIndex = 22;
@@ -1811,7 +1811,7 @@
             // pal_sprite_pads5
             // 
             this.pal_sprite_pads5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_pads5.Location = new System.Drawing.Point(228, 268);
+            this.pal_sprite_pads5.Location = new System.Drawing.Point(227, 268);
             this.pal_sprite_pads5.Name = "pal_sprite_pads5";
             this.pal_sprite_pads5.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_pads5.TabIndex = 21;
@@ -1833,7 +1833,7 @@
             // pal_sprite_pads3
             // 
             this.pal_sprite_pads3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_pads3.Location = new System.Drawing.Point(166, 268);
+            this.pal_sprite_pads3.Location = new System.Drawing.Point(167, 268);
             this.pal_sprite_pads3.Name = "pal_sprite_pads3";
             this.pal_sprite_pads3.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_pads3.TabIndex = 19;
@@ -1844,7 +1844,7 @@
             // pal_sprite_pads2
             // 
             this.pal_sprite_pads2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_pads2.Location = new System.Drawing.Point(135, 268);
+            this.pal_sprite_pads2.Location = new System.Drawing.Point(137, 268);
             this.pal_sprite_pads2.Name = "pal_sprite_pads2";
             this.pal_sprite_pads2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_pads2.TabIndex = 18;
@@ -1855,7 +1855,7 @@
             // DIC_sprite_pads1
             // 
             this.DIC_sprite_pads1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_pads1.Location = new System.Drawing.Point(104, 266);
+            this.DIC_sprite_pads1.Location = new System.Drawing.Point(107, 268);
             this.DIC_sprite_pads1.Name = "DIC_sprite_pads1";
             this.DIC_sprite_pads1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_pads1.TabIndex = 17;
@@ -1866,7 +1866,7 @@
             // DIC_sprite_skin4
             // 
             this.DIC_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin4.Location = new System.Drawing.Point(197, 237);
+            this.DIC_sprite_skin4.Location = new System.Drawing.Point(197, 238);
             this.DIC_sprite_skin4.Name = "DIC_sprite_skin4";
             this.DIC_sprite_skin4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin4.TabIndex = 16;
@@ -1877,7 +1877,7 @@
             // DIC_sprite_skin3
             // 
             this.DIC_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin3.Location = new System.Drawing.Point(166, 237);
+            this.DIC_sprite_skin3.Location = new System.Drawing.Point(167, 238);
             this.DIC_sprite_skin3.Name = "DIC_sprite_skin3";
             this.DIC_sprite_skin3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin3.TabIndex = 15;
@@ -1888,7 +1888,7 @@
             // DIC_sprite_skin2
             // 
             this.DIC_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin2.Location = new System.Drawing.Point(133, 237);
+            this.DIC_sprite_skin2.Location = new System.Drawing.Point(137, 238);
             this.DIC_sprite_skin2.Name = "DIC_sprite_skin2";
             this.DIC_sprite_skin2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin2.TabIndex = 14;
@@ -1899,7 +1899,7 @@
             // DIC_sprite_skin1
             // 
             this.DIC_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin1.Location = new System.Drawing.Point(103, 237);
+            this.DIC_sprite_skin1.Location = new System.Drawing.Point(107, 238);
             this.DIC_sprite_skin1.Name = "DIC_sprite_skin1";
             this.DIC_sprite_skin1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin1.TabIndex = 13;
