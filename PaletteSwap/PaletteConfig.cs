@@ -394,7 +394,7 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU.GenerateRyuPortraitConfig();
                 case CharacterConfig.CHARACTERS.Chun:
-                    return CHUN.GenerateRyuPortraitConfig();
+                    return CHUN.GenerateChunPortraitConfig();
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUILE.GenerateGuilePortraitConfig();
                 case CharacterConfig.CHARACTERS.Claw:
@@ -460,57 +460,50 @@ namespace PaletteSwap
                 return pc;
             }
 
-            public static Dictionary<string, List<int>> GenerateRyuPortraitOffsets()
+            public static Dictionary<string, List<int>> GenerateChunPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
-        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
-        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
-        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
-        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
-        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
-        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
-        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
-        { "eyes1", new List<int>() { 14 } },
-        { "eyes2", new List<int>() { 16 } },
-        { "eyes3", new List<int>() { 18 } },
-        { "headband1", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 2 + 18 } },
-        { "headband2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 20 } },
-        { "headband3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 2 + 22 } },
-        { "costume1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
-        { "costume2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
-        { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
-        { "costume4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
-        { "costume5", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
-        { "blood1", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
-        { "blood2", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
-        { "blood3", new List<int>() { ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
-        { "teeth1", new List<int>() { ROWLEN * 2 + 14 } },
-        { "teeth2", new List<int>() { ROWLEN * 2 + 16 } },
-                };
+        { "lips1", new List<int>() { 0, ROWLEN * 1 + 0 } },
+        { "skin1", new List<int>() { 2, ROWLEN * 1 + 2 } },
+        { "skin2", new List<int>() { 4, ROWLEN * 1 + 4 } },
+        { "hair1", new List<int>() { 6, ROWLEN * 1 + 6 } },
+        { "hair2", new List<int>() { 8, ROWLEN * 1 + 8 } },
+        { "hair3", new List<int>() { 10, ROWLEN * 1 + 12 } },
+        { "costume1", new List<int>() { 14 } },
+        { "costume2", new List<int>() { 16 } },
+        { "costume3", new List<int>() { 18 } },
+        { "costume4", new List<int>() { 20 } },
+        { "costume5", new List<int>() { 22 } },
+        { "lips2", new List<int>() { 24, ROWLEN * 1 + 24 } },
+        { "lips3", new List<int>() { 26, ROWLEN * 1 + 26 } },
+        { "lips4", new List<int>() { 28, ROWLEN * 1 + 28 } },
+        { "bruise", new List<int>() { ROWLEN * 1 + 16 } },                };
 
                 return portraitOffsets;
             }
 
-            public static PaletteConfig GenerateRyuPortraitConfig()
+            public static PaletteConfig GenerateChunPortraitConfig()
             {
                 int MEMLEN = ROWLEN * 4;
                 List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
                 for (int i = 0; i < 4; i++)
                 {
                     ColorOffset dco = new ColorOffset();
-                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.c = PaletteHelper.MemFormatToColor("6407");
                     dco.position = 30 + ROWLEN * i;
                     defaultColorOffsets.Add(dco);
                 }
 
-                Dictionary<string, List<int>> guilePortraitOffsets = GenerateRyuPortraitOffsets();
+                ColorOffset dco1 = new ColorOffset();
+                dco1.c = PaletteHelper.MemFormatToColor("FF00");
+                dco1.position = 10;
+                defaultColorOffsets.Add(dco1);
+
+                Dictionary<string, List<int>> guilePortraitOffsets = GenerateChunPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = guilePortraitOffsets;
-                string defaults = "F00F F00F";//just a test to flush out unknown spot
-                int defaultsOffset = 20;
-                pc.createColorOffsets(defaults, defaultsOffset);
-                //                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;
@@ -967,7 +960,7 @@ PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPo
     PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitwin1),
-    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -989,7 +982,7 @@ PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPo
 PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitloss1),
-    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
