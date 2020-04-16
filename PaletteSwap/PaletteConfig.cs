@@ -475,9 +475,9 @@ namespace PaletteSwap
         { "costume3", new List<int>() { 18 } },
         { "costume4", new List<int>() { 20 } },
         { "costume5", new List<int>() { 22 } },
-        { "lips2", new List<int>() { 24, ROWLEN * 1 + 24 } },
+        { "lips4", new List<int>() { 24, ROWLEN * 1 + 24 } },
         { "lips3", new List<int>() { 26, ROWLEN * 1 + 26 } },
-        { "lips4", new List<int>() { 28, ROWLEN * 1 + 28 } },
+        { "lips2", new List<int>() { 28, ROWLEN * 1 + 28 } },
         { "bruise", new List<int>() { ROWLEN * 1 + 16 } },                };
 
                 return portraitOffsets;

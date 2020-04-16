@@ -459,6 +459,24 @@ namespace PaletteSwap
                     RYU_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
                     RYU_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
                     break;
+
+                case CharacterConfig.CHARACTERS.Chun:
+                    CHU_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    CHU_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+
+                    CHU_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    CHU_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    CHU_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    CHU_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+                    CHU_portrait_costume5.BackColor = currentCharacter.portrait.GetColor("costume5");
+
+                    CHU_portrait_lips1.BackColor = currentCharacter.portrait.GetColor("lips1");
+                    CHU_portrait_lips2.BackColor = currentCharacter.portrait.GetColor("lips2");
+                    CHU_portrait_lips3.BackColor = currentCharacter.portrait.GetColor("lips3");
+                    CHU_portrait_lips4.BackColor = currentCharacter.portrait.GetColor("lips4");
+
+                    CHU_portrait_bruise.BackColor = currentCharacter.portrait.GetColor("bruise");
+                    break;
             }
         }
 
