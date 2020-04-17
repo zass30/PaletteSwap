@@ -27,6 +27,7 @@ namespace PaletteSwap
             var CLA = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw];
             var GUI = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile];
             var RYU = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu];
+            var CHU = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun];
 
             if (DIC.characterColors[0].sprite != null)
                 _00psychopunchBox.Image = DIC.characterColors[0].sprite.GetBitmap("psychopunch");
@@ -132,6 +133,27 @@ namespace PaletteSwap
                 RYU_portraitVictoryBox08.Image = RYU.characterColors[8].portrait.GetBitmap("victory");
             if (RYU.characterColors[9].portrait != null)
                 RYU_portraitVictoryBox09.Image = RYU.characterColors[9].portrait.GetBitmap("victory");
+
+            if (CHU.characterColors[0].sprite != null)
+                CHU_neutralStandBox00.Image = CHU.characterColors[0].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[1].sprite != null)
+                CHU_neutralStandBox01.Image = CHU.characterColors[1].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[2].sprite != null)
+                CHU_neutralStandBox02.Image = CHU.characterColors[2].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[3].sprite != null)
+                CHU_neutralStandBox03.Image = CHU.characterColors[3].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[4].sprite != null)
+                CHU_neutralStandBox04.Image = CHU.characterColors[4].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[5].sprite != null)
+                CHU_neutralStandBox05.Image = CHU.characterColors[5].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[6].sprite != null)
+                CHU_neutralStandBox06.Image = CHU.characterColors[6].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[7].sprite != null)
+                CHU_neutralStandBox07.Image = CHU.characterColors[7].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[8].sprite != null)
+                CHU_neutralStandBox08.Image = CHU.characterColors[8].sprite.GetBitmap("neutral");
+            if (CHU.characterColors[9].sprite != null)
+                CHU_neutralStandBox09.Image = CHU.characterColors[9].sprite.GetBitmap("neutral");
 
         }
     }
