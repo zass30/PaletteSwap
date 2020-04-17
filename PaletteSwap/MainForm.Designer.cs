@@ -376,6 +376,7 @@
             this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
+            this.saveGameColorSetAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -949,6 +950,7 @@
             this.toolStripSeparator,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
+            this.saveGameColorSetAsToolStripMenuItem,
             this.toolStripSeparator1,
             this.printToolStripMenuItem,
             this.printPreviewToolStripMenuItem,
@@ -967,7 +969,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -4470,6 +4472,13 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
+            // saveGameColorSetAsToolStripMenuItem
+            // 
+            this.saveGameColorSetAsToolStripMenuItem.Name = "saveGameColorSetAsToolStripMenuItem";
+            this.saveGameColorSetAsToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.saveGameColorSetAsToolStripMenuItem.Text = "Save Game ColorSet As";
+            this.saveGameColorSetAsToolStripMenuItem.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5096,6 +5105,7 @@
         private System.Windows.Forms.PictureBox CHU_portrait_hair1;
         private System.Windows.Forms.PictureBox CHU_portrait_hair4;
         private System.Windows.Forms.PictureBox CHU_portrait_bruise2;
+        private System.Windows.Forms.ToolStripMenuItem saveGameColorSetAsToolStripMenuItem;
     }
 }
 

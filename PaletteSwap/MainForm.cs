@@ -1042,5 +1042,48 @@ namespace PaletteSwap
                 reload_everything();
             }
         }
+
+        private void saveGameColorSetAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Displays a SaveFileDialog so the user can save the Image
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+            saveFileDialog1.Title = "Save a rom";
+            saveFileDialog1.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog1.FileName != "")
+            {
+                // Saves the Image via a FileStream created by the OpenFile method.
+                using (System.IO.FileStream fs =
+                    (System.IO.FileStream)saveFileDialog1.OpenFile())
+                {
+                    using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
+                    {
+                        // for each character
+                        // create an folder with the 3 letter code
+                        // in that folder
+                        // for each of the 10 colors, create a a file
+                        // 01.col, 02.col... 10.col
+
+                        foreach (var charType in gameSet.characterDictionary.Keys)
+                        {
+                            var charCode = CharacterConfig.CodeFromCharacterEnum(charType);
+                            for (int i = 0; i < 10; i++){
+                                var entry = archive.CreateEntry(charCode + @"/" + "0" + i.ToString() + ".col");
+
+                                using (var entryStream = entry.Open())
+                                {
+                                    using (var streamWriter = new StreamWriter(entryStream))
+                                    {
+                                        streamWriter.Write(gameSet.characterDictionary[charType].characterColors[i].ToColFormat());
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
