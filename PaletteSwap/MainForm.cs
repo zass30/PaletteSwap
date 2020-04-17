@@ -475,7 +475,13 @@ namespace PaletteSwap
                     CHU_portrait_lips3.BackColor = currentCharacter.portrait.GetColor("lips3");
                     CHU_portrait_lips4.BackColor = currentCharacter.portrait.GetColor("lips4");
 
-                    CHU_portrait_bruise.BackColor = currentCharacter.portrait.GetColor("bruise");
+                    CHU_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
+                    CHU_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
+                    CHU_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
+                    CHU_portrait_hair4.BackColor = currentCharacter.portrait.GetColor("hair4");
+
+                    CHU_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
+                    CHU_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
                     break;
             }
         }

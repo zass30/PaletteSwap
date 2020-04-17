@@ -469,7 +469,8 @@ namespace PaletteSwap
         { "skin2", new List<int>() { 4, ROWLEN * 1 + 4 } },
         { "hair1", new List<int>() { 6, ROWLEN * 1 + 6 } },
         { "hair2", new List<int>() { 8, ROWLEN * 1 + 8 } },
-        { "hair3", new List<int>() { 10, ROWLEN * 1 + 12 } },
+        { "hair3", new List<int>() { 10, ROWLEN * 1 + 10 } },
+        { "hair4", new List<int>() { 10, ROWLEN * 1 + 12 } },
         { "costume1", new List<int>() { 14 } },
         { "costume2", new List<int>() { 16 } },
         { "costume3", new List<int>() { 18 } },
@@ -478,7 +479,8 @@ namespace PaletteSwap
         { "lips4", new List<int>() { 24, ROWLEN * 1 + 24 } },
         { "lips3", new List<int>() { 26, ROWLEN * 1 + 26 } },
         { "lips2", new List<int>() { 28, ROWLEN * 1 + 28 } },
-        { "bruise", new List<int>() { ROWLEN * 1 + 16 } },                };
+        { "bruise1", new List<int>() { ROWLEN * 1 + 14 } },
+        { "bruise2", new List<int>() { ROWLEN * 1 + 16 } },                };
 
                 return portraitOffsets;
             }
