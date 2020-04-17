@@ -902,100 +902,7 @@ namespace PaletteSwap
         private void saveJapaneseRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             savePatchedRom(sender, e, ROMSTYLE.japanese);
-        }
-
-        // would like to encapsulate in object 
-        private void savePatchedRomToolFormat(object sender, EventArgs e, ROMSTYLE r)
-        {/*
-            // Displays a SaveFileDialog so the user can save the Image
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-            saveFileDialog1.Title = "Save a rom";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                using (System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile())
-                {
-                    using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
-                    {
-                        string _03filename;
-                        string _04filename;
-                        string _06filename;
-
-                        byte[] p_stream;
-                        byte[] s_stream;
-                        byte[] punches_stream;
-
-                        if (r == ROMSTYLE.phoenix)
-                        {
-                            _03filename = "sfxjd.03c";
-                            _04filename = "sfxjd.04a";
-                            _06filename = "sfxjd.06a";
-                            p_stream = characterColorSet.portraits_stream03phoenix();
-                            s_stream = characterColorSet.sprites_stream04phoenix();
-                            punches_stream = characterColorSet.old_bison_punches_stream06phoenix();
-                        }
-                        else if (r == ROMSTYLE.us)
-                        {
-                            _03filename = "sfxe.03c";
-                            _04filename = "sfxe.04a";
-                            _06filename = "sfxe.06a";
-
-                            p_stream = characterColorSet.portraits_stream03();
-                            s_stream = characterColorSet.sprites_stream04();
-                            punches_stream = characterColorSet.old_bison_punches_stream06();
-                        }
-                        else if (r == ROMSTYLE.japanese)
-                        {
-                            _03filename = "sfxj.03c";
-                            _04filename = "sfxj.04a";
-                            _06filename = "sfxj.06a";
-
-                            p_stream = characterColorSet.portraits_stream03japanese();
-                            s_stream = characterColorSet.sprites_stream04japanese();
-                            punches_stream = characterColorSet.old_bison_punches_stream06japanese();
-                        }
-                        else
-                        {
-                                _03filename = "sfxj.03c";
-                                _04filename = "sfxj.04a";
-                                _06filename = "sfxj.06a";
-
-                                p_stream = characterColorSet.portraits_stream03japanese();
-                                s_stream = characterColorSet.sprites_stream04japanese();
-                                punches_stream = characterColorSet.old_bison_punches_stream06japanese();
-                        }
-                        var _03file = archive.CreateEntry(_03filename);
-                        using (var entryStream = _03file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(p_stream, 0, p_stream.Length);
-                        }
-
-                        var _04file = archive.CreateEntry(_04filename);
-                        using (var entryStream = _04file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(s_stream, 0, s_stream.Length);
-                        }
-
-                        var _06file = archive.CreateEntry(_06filename);
-                        using (var entryStream = _06file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(punches_stream, 0, punches_stream.Length);
-                        }
-                    }
-                }
-            }*/
-        }
+        }        
 
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1007,7 +914,6 @@ namespace PaletteSwap
 
         private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
         {
-//            ROMSTYLE r = ROMSTYLE.us;
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
