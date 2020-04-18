@@ -98,7 +98,7 @@ namespace PaletteSwapTest
         {
             var r = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
             var b = r.GenerateSpriteKey();
-            b.Save(@"temp/foo.png");
+           // b.Save(@"C:/temp/foo.png");
 
         }
     }

@@ -43,11 +43,26 @@ namespace PaletteSwap
 
         public Bitmap GenerateSpriteKey()
         {
+            return GenerateKey("neutral");
+        }
+
+        private Bitmap GenerateKey(String s)
+        {
             int buffer = 10;
-            var sample = characterColors[0].GetBitmap("neutral");
-            Bitmap b = new Bitmap(sample.Width * 10 + 9*buffer, sample.Height * 10 + 9 * buffer);
+            var sample = characterColors[0].GetBitmap(s);
+            Bitmap b = new Bitmap(sample.Width * 5 + 4 * buffer, sample.Height * 2 + buffer);
             Graphics gfb = Graphics.FromImage(b);
-            gfb.DrawImage(sample, new Point(0, 0));
+            for (int i = 0; i < 3; i++)
+            {
+                gfb.DrawImage(characterColors[i].GetBitmap(s), new Point(sample.Width * i + i * buffer, 0));
+                gfb.DrawImage(characterColors[i + 3].GetBitmap(s), new Point(sample.Width * i + i * buffer, sample.Height + buffer));
+            }
+
+            gfb.DrawImage(characterColors[6].GetBitmap(s), new Point(sample.Width * 3 + 3 * buffer, 0));
+            gfb.DrawImage(characterColors[7].GetBitmap(s), new Point(sample.Width * 3 + 3 * buffer, sample.Height + buffer));
+            gfb.DrawImage(characterColors[8].GetBitmap(s), new Point(sample.Width * 4 + 4 * buffer, 0));
+            gfb.DrawImage(characterColors[9].GetBitmap(s), new Point(sample.Width * 4 + 4 * buffer, sample.Height + buffer));
+
             return b;
         }
 
