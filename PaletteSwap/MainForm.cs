@@ -1069,6 +1069,7 @@ namespace PaletteSwap
                         foreach (var charType in gameSet.characterDictionary.Keys)
                         {
                             var charCode = CharacterConfig.CodeFromCharacterEnum(charType);
+                            // add colorset key
                             for (int i = 0; i < 10; i++){
                                 var entry = archive.CreateEntry(charCode + @"/" + "0" + i.ToString() + ".col");
 

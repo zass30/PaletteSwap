@@ -91,5 +91,15 @@ namespace PaletteSwapTest
             Assert.AreEqual(b_expected.Width, b.Width);
 
         }
+
+
+        [TestMethod]
+        public void GenerateSpriteKeyTest()
+        {
+            var r = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
+            var b = r.GenerateSpriteKey();
+            b.Save(@"temp/foo.png");
+
+        }
     }
 }

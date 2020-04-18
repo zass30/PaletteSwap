@@ -3,6 +3,7 @@ using System;
 using System.IO.Compression;
 using System.IO;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace PaletteSwap
 {
@@ -38,6 +39,22 @@ namespace PaletteSwap
         public CharacterSet()
         {
 
+        }
+
+        public Bitmap GenerateSpriteKey()
+        {
+            int buffer = 10;
+            var sample = characterColors[0].GetBitmap("neutral");
+            Bitmap b = new Bitmap(sample.Width * 10 + 9*buffer, sample.Height * 10 + 9 * buffer);
+            Graphics gfb = Graphics.FromImage(b);
+            gfb.DrawImage(sample, new Point(0, 0));
+            return b;
+        }
+
+        public Bitmap GeneratePortraitKey()
+        {
+            Bitmap b = new Bitmap(0,0);
+            return b;
         }
 
         public static CharacterSet GenerateDictatorCharacterSet()
