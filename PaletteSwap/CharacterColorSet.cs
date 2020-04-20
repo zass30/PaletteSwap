@@ -68,8 +68,12 @@ namespace PaletteSwap
 
         public Bitmap GeneratePortraitKey()
         {
-            Bitmap b = new Bitmap(0,0);
-            return b;
+            return GenerateKey("victory");
+        }
+
+        public Bitmap GenerateLossKey()
+        {
+            return GenerateKey("loss");
         }
 
         public static CharacterSet GenerateDictatorCharacterSet()
