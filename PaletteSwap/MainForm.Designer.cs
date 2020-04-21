@@ -666,7 +666,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 249);
+            this.label2.Location = new System.Drawing.Point(16, 249);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 9;
@@ -675,7 +675,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 279);
+            this.label3.Location = new System.Drawing.Point(16, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 10;
@@ -684,7 +684,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 309);
+            this.label4.Location = new System.Drawing.Point(16, 309);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 11;
@@ -693,7 +693,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 339);
+            this.label5.Location = new System.Drawing.Point(16, 339);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 12;
@@ -783,7 +783,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(299, 237);
+            this.label9.Location = new System.Drawing.Point(295, 249);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 13);
             this.label9.TabIndex = 42;
@@ -792,7 +792,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(299, 279);
+            this.label10.Location = new System.Drawing.Point(295, 279);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 50;
@@ -819,7 +819,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(299, 369);
+            this.label13.Location = new System.Drawing.Point(295, 369);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 69;
@@ -837,7 +837,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(301, 429);
+            this.label15.Location = new System.Drawing.Point(295, 429);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(33, 13);
             this.label15.TabIndex = 78;
@@ -846,7 +846,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(15, 369);
+            this.label17.Location = new System.Drawing.Point(16, 369);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 13);
             this.label17.TabIndex = 86;
@@ -855,7 +855,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(12, 399);
+            this.label18.Location = new System.Drawing.Point(16, 399);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(68, 13);
             this.label18.TabIndex = 92;
@@ -864,7 +864,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(8, 429);
+            this.label19.Location = new System.Drawing.Point(16, 429);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 13);
             this.label19.TabIndex = 98;
@@ -873,7 +873,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 459);
+            this.label20.Location = new System.Drawing.Point(16, 459);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(75, 13);
             this.label20.TabIndex = 103;
@@ -882,7 +882,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 490);
+            this.label21.Location = new System.Drawing.Point(16, 489);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(74, 13);
             this.label21.TabIndex = 106;
@@ -1226,7 +1226,7 @@
             // pal_sprite_crusherflame2
             // 
             this.pal_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(137, 448);
+            this.pal_sprite_crusherflame2.Location = new System.Drawing.Point(137, 449);
             this.pal_sprite_crusherflame2.Name = "pal_sprite_crusherflame2";
             this.pal_sprite_crusherflame2.Size = new System.Drawing.Size(24, 24);
             this.pal_sprite_crusherflame2.TabIndex = 100;
@@ -2179,7 +2179,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(308, 316);
+            this.label31.Location = new System.Drawing.Point(278, 288);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(33, 13);
             this.label31.TabIndex = 170;
@@ -2188,7 +2188,7 @@
             // portrait_claw_blood3
             // 
             this.portrait_claw_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood3.Location = new System.Drawing.Point(407, 305);
+            this.portrait_claw_blood3.Location = new System.Drawing.Point(391, 277);
             this.portrait_claw_blood3.Name = "portrait_claw_blood3";
             this.portrait_claw_blood3.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_blood3.TabIndex = 169;
@@ -2199,7 +2199,7 @@
             // portrait_claw_blood2
             // 
             this.portrait_claw_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood2.Location = new System.Drawing.Point(377, 305);
+            this.portrait_claw_blood2.Location = new System.Drawing.Point(361, 277);
             this.portrait_claw_blood2.Name = "portrait_claw_blood2";
             this.portrait_claw_blood2.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_blood2.TabIndex = 168;
@@ -2210,7 +2210,7 @@
             // portrait_claw_blood1
             // 
             this.portrait_claw_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood1.Location = new System.Drawing.Point(347, 305);
+            this.portrait_claw_blood1.Location = new System.Drawing.Point(331, 277);
             this.portrait_claw_blood1.Name = "portrait_claw_blood1";
             this.portrait_claw_blood1.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_blood1.TabIndex = 167;
@@ -2221,7 +2221,7 @@
             // portrait_claw_metal5
             // 
             this.portrait_claw_metal5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal5.Location = new System.Drawing.Point(467, 245);
+            this.portrait_claw_metal5.Location = new System.Drawing.Point(451, 247);
             this.portrait_claw_metal5.Name = "portrait_claw_metal5";
             this.portrait_claw_metal5.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_metal5.TabIndex = 166;
@@ -2232,7 +2232,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(319, 286);
+            this.label30.Location = new System.Drawing.Point(278, 307);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(19, 13);
             this.label30.TabIndex = 165;
@@ -2241,7 +2241,7 @@
             // portrait_claw_iris
             // 
             this.portrait_claw_iris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_iris.Location = new System.Drawing.Point(347, 275);
+            this.portrait_claw_iris.Location = new System.Drawing.Point(331, 307);
             this.portrait_claw_iris.Name = "portrait_claw_iris";
             this.portrait_claw_iris.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_iris.TabIndex = 164;
@@ -2252,7 +2252,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(294, 226);
+            this.label29.Location = new System.Drawing.Point(278, 228);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(47, 13);
             this.label29.TabIndex = 163;
@@ -2261,7 +2261,7 @@
             // portrait_claw_costume3
             // 
             this.portrait_claw_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume3.Location = new System.Drawing.Point(407, 215);
+            this.portrait_claw_costume3.Location = new System.Drawing.Point(391, 217);
             this.portrait_claw_costume3.Name = "portrait_claw_costume3";
             this.portrait_claw_costume3.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_costume3.TabIndex = 161;
@@ -2272,7 +2272,7 @@
             // portrait_claw_costume2
             // 
             this.portrait_claw_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume2.Location = new System.Drawing.Point(377, 215);
+            this.portrait_claw_costume2.Location = new System.Drawing.Point(361, 217);
             this.portrait_claw_costume2.Name = "portrait_claw_costume2";
             this.portrait_claw_costume2.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_costume2.TabIndex = 160;
@@ -2283,7 +2283,7 @@
             // portrait_claw_costume1
             // 
             this.portrait_claw_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume1.Location = new System.Drawing.Point(347, 215);
+            this.portrait_claw_costume1.Location = new System.Drawing.Point(331, 217);
             this.portrait_claw_costume1.Name = "portrait_claw_costume1";
             this.portrait_claw_costume1.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_costume1.TabIndex = 159;
@@ -2294,7 +2294,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(307, 256);
+            this.label28.Location = new System.Drawing.Point(278, 258);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(32, 13);
             this.label28.TabIndex = 158;
@@ -2303,7 +2303,7 @@
             // portrait_claw_metal4
             // 
             this.portrait_claw_metal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal4.Location = new System.Drawing.Point(437, 245);
+            this.portrait_claw_metal4.Location = new System.Drawing.Point(421, 247);
             this.portrait_claw_metal4.Name = "portrait_claw_metal4";
             this.portrait_claw_metal4.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_metal4.TabIndex = 157;
@@ -2314,7 +2314,7 @@
             // portrait_claw_metal3
             // 
             this.portrait_claw_metal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal3.Location = new System.Drawing.Point(407, 245);
+            this.portrait_claw_metal3.Location = new System.Drawing.Point(391, 247);
             this.portrait_claw_metal3.Name = "portrait_claw_metal3";
             this.portrait_claw_metal3.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_metal3.TabIndex = 156;
@@ -2325,7 +2325,7 @@
             // portrait_claw_metal2
             // 
             this.portrait_claw_metal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal2.Location = new System.Drawing.Point(377, 245);
+            this.portrait_claw_metal2.Location = new System.Drawing.Point(361, 247);
             this.portrait_claw_metal2.Name = "portrait_claw_metal2";
             this.portrait_claw_metal2.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_metal2.TabIndex = 155;
@@ -2336,7 +2336,7 @@
             // portrait_claw_metal1
             // 
             this.portrait_claw_metal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal1.Location = new System.Drawing.Point(347, 245);
+            this.portrait_claw_metal1.Location = new System.Drawing.Point(331, 247);
             this.portrait_claw_metal1.Name = "portrait_claw_metal1";
             this.portrait_claw_metal1.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_metal1.TabIndex = 154;
@@ -2347,7 +2347,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(315, 196);
+            this.label27.Location = new System.Drawing.Point(278, 198);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(24, 13);
             this.label27.TabIndex = 153;
@@ -2356,7 +2356,7 @@
             // portrait_claw_hair4
             // 
             this.portrait_claw_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair4.Location = new System.Drawing.Point(437, 185);
+            this.portrait_claw_hair4.Location = new System.Drawing.Point(421, 187);
             this.portrait_claw_hair4.Name = "portrait_claw_hair4";
             this.portrait_claw_hair4.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_hair4.TabIndex = 152;
@@ -2367,7 +2367,7 @@
             // portrait_claw_hair3
             // 
             this.portrait_claw_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair3.Location = new System.Drawing.Point(407, 185);
+            this.portrait_claw_hair3.Location = new System.Drawing.Point(391, 187);
             this.portrait_claw_hair3.Name = "portrait_claw_hair3";
             this.portrait_claw_hair3.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_hair3.TabIndex = 151;
@@ -2378,7 +2378,7 @@
             // portrait_claw_hair2
             // 
             this.portrait_claw_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair2.Location = new System.Drawing.Point(377, 185);
+            this.portrait_claw_hair2.Location = new System.Drawing.Point(361, 187);
             this.portrait_claw_hair2.Name = "portrait_claw_hair2";
             this.portrait_claw_hair2.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_hair2.TabIndex = 150;
@@ -2389,7 +2389,7 @@
             // portrait_claw_hair1
             // 
             this.portrait_claw_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair1.Location = new System.Drawing.Point(347, 185);
+            this.portrait_claw_hair1.Location = new System.Drawing.Point(331, 187);
             this.portrait_claw_hair1.Name = "portrait_claw_hair1";
             this.portrait_claw_hair1.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_hair1.TabIndex = 149;
@@ -2400,7 +2400,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(313, 166);
+            this.label26.Location = new System.Drawing.Point(278, 168);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(26, 13);
             this.label26.TabIndex = 148;
@@ -2409,7 +2409,7 @@
             // portrait_claw_skin3
             // 
             this.portrait_claw_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin3.Location = new System.Drawing.Point(407, 155);
+            this.portrait_claw_skin3.Location = new System.Drawing.Point(391, 157);
             this.portrait_claw_skin3.Name = "portrait_claw_skin3";
             this.portrait_claw_skin3.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_skin3.TabIndex = 147;
@@ -2420,7 +2420,7 @@
             // portrait_claw_skin2
             // 
             this.portrait_claw_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin2.Location = new System.Drawing.Point(377, 155);
+            this.portrait_claw_skin2.Location = new System.Drawing.Point(361, 157);
             this.portrait_claw_skin2.Name = "portrait_claw_skin2";
             this.portrait_claw_skin2.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_skin2.TabIndex = 146;
@@ -2431,7 +2431,7 @@
             // portrait_claw_skin1
             // 
             this.portrait_claw_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin1.Location = new System.Drawing.Point(347, 155);
+            this.portrait_claw_skin1.Location = new System.Drawing.Point(331, 157);
             this.portrait_claw_skin1.Name = "portrait_claw_skin1";
             this.portrait_claw_skin1.Size = new System.Drawing.Size(24, 24);
             this.portrait_claw_skin1.TabIndex = 145;
@@ -2452,7 +2452,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(11, 226);
+            this.label25.Location = new System.Drawing.Point(27, 228);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(38, 13);
             this.label25.TabIndex = 143;
@@ -2461,7 +2461,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(11, 316);
+            this.label24.Location = new System.Drawing.Point(27, 318);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(32, 13);
             this.label24.TabIndex = 142;
@@ -2470,7 +2470,7 @@
             // sprite_claw_stripe
             // 
             this.sprite_claw_stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_stripe.Location = new System.Drawing.Point(97, 305);
+            this.sprite_claw_stripe.Location = new System.Drawing.Point(81, 307);
             this.sprite_claw_stripe.Name = "sprite_claw_stripe";
             this.sprite_claw_stripe.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_stripe.TabIndex = 140;
@@ -2481,7 +2481,7 @@
             // sprite_claw_outline
             // 
             this.sprite_claw_outline.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_outline.Location = new System.Drawing.Point(97, 215);
+            this.sprite_claw_outline.Location = new System.Drawing.Point(81, 217);
             this.sprite_claw_outline.Name = "sprite_claw_outline";
             this.sprite_claw_outline.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_outline.TabIndex = 141;
@@ -2492,7 +2492,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 286);
+            this.label23.Location = new System.Drawing.Point(27, 288);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(29, 13);
             this.label23.TabIndex = 139;
@@ -2501,7 +2501,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(11, 256);
+            this.label22.Location = new System.Drawing.Point(27, 258);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(47, 13);
             this.label22.TabIndex = 131;
@@ -2510,7 +2510,7 @@
             // sprite_claw_costume1
             // 
             this.sprite_claw_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_costume1.Location = new System.Drawing.Point(97, 245);
+            this.sprite_claw_costume1.Location = new System.Drawing.Point(81, 247);
             this.sprite_claw_costume1.Name = "sprite_claw_costume1";
             this.sprite_claw_costume1.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_costume1.TabIndex = 132;
@@ -2521,7 +2521,7 @@
             // sprite_claw_costume2
             // 
             this.sprite_claw_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_costume2.Location = new System.Drawing.Point(127, 245);
+            this.sprite_claw_costume2.Location = new System.Drawing.Point(111, 247);
             this.sprite_claw_costume2.Name = "sprite_claw_costume2";
             this.sprite_claw_costume2.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_costume2.TabIndex = 133;
@@ -2532,7 +2532,7 @@
             // sprite_claw_costume3
             // 
             this.sprite_claw_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_costume3.Location = new System.Drawing.Point(157, 245);
+            this.sprite_claw_costume3.Location = new System.Drawing.Point(141, 247);
             this.sprite_claw_costume3.Name = "sprite_claw_costume3";
             this.sprite_claw_costume3.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_costume3.TabIndex = 134;
@@ -2543,7 +2543,7 @@
             // sprite_claw_costume4
             // 
             this.sprite_claw_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_costume4.Location = new System.Drawing.Point(187, 245);
+            this.sprite_claw_costume4.Location = new System.Drawing.Point(171, 247);
             this.sprite_claw_costume4.Name = "sprite_claw_costume4";
             this.sprite_claw_costume4.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_costume4.TabIndex = 135;
@@ -2554,7 +2554,7 @@
             // sprite_claw_sash1
             // 
             this.sprite_claw_sash1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_sash1.Location = new System.Drawing.Point(97, 275);
+            this.sprite_claw_sash1.Location = new System.Drawing.Point(81, 277);
             this.sprite_claw_sash1.Name = "sprite_claw_sash1";
             this.sprite_claw_sash1.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_sash1.TabIndex = 137;
@@ -2565,7 +2565,7 @@
             // sprite_claw_sash2
             // 
             this.sprite_claw_sash2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_sash2.Location = new System.Drawing.Point(127, 275);
+            this.sprite_claw_sash2.Location = new System.Drawing.Point(111, 277);
             this.sprite_claw_sash2.Name = "sprite_claw_sash2";
             this.sprite_claw_sash2.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_sash2.TabIndex = 138;
@@ -2576,7 +2576,7 @@
             // sprite_claw_skin5
             // 
             this.sprite_claw_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin5.Location = new System.Drawing.Point(97, 185);
+            this.sprite_claw_skin5.Location = new System.Drawing.Point(81, 187);
             this.sprite_claw_skin5.Name = "sprite_claw_skin5";
             this.sprite_claw_skin5.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin5.TabIndex = 128;
@@ -2587,7 +2587,7 @@
             // sprite_claw_skin6
             // 
             this.sprite_claw_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin6.Location = new System.Drawing.Point(127, 185);
+            this.sprite_claw_skin6.Location = new System.Drawing.Point(111, 187);
             this.sprite_claw_skin6.Name = "sprite_claw_skin6";
             this.sprite_claw_skin6.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin6.TabIndex = 129;
@@ -2598,7 +2598,7 @@
             // sprite_claw_skin7
             // 
             this.sprite_claw_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin7.Location = new System.Drawing.Point(157, 185);
+            this.sprite_claw_skin7.Location = new System.Drawing.Point(141, 187);
             this.sprite_claw_skin7.Name = "sprite_claw_skin7";
             this.sprite_claw_skin7.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin7.TabIndex = 130;
@@ -2609,7 +2609,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 166);
+            this.label16.Location = new System.Drawing.Point(27, 168);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(26, 13);
             this.label16.TabIndex = 123;
@@ -2618,7 +2618,7 @@
             // sprite_claw_skin1
             // 
             this.sprite_claw_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin1.Location = new System.Drawing.Point(97, 155);
+            this.sprite_claw_skin1.Location = new System.Drawing.Point(81, 157);
             this.sprite_claw_skin1.Name = "sprite_claw_skin1";
             this.sprite_claw_skin1.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin1.TabIndex = 124;
@@ -2629,7 +2629,7 @@
             // sprite_claw_skin2
             // 
             this.sprite_claw_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin2.Location = new System.Drawing.Point(127, 155);
+            this.sprite_claw_skin2.Location = new System.Drawing.Point(111, 157);
             this.sprite_claw_skin2.Name = "sprite_claw_skin2";
             this.sprite_claw_skin2.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin2.TabIndex = 125;
@@ -2640,7 +2640,7 @@
             // sprite_claw_skin3
             // 
             this.sprite_claw_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin3.Location = new System.Drawing.Point(157, 155);
+            this.sprite_claw_skin3.Location = new System.Drawing.Point(141, 157);
             this.sprite_claw_skin3.Name = "sprite_claw_skin3";
             this.sprite_claw_skin3.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin3.TabIndex = 126;
@@ -2651,7 +2651,7 @@
             // sprite_claw_skin4
             // 
             this.sprite_claw_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite_claw_skin4.Location = new System.Drawing.Point(187, 155);
+            this.sprite_claw_skin4.Location = new System.Drawing.Point(171, 157);
             this.sprite_claw_skin4.Name = "sprite_claw_skin4";
             this.sprite_claw_skin4.Size = new System.Drawing.Size(24, 24);
             this.sprite_claw_skin4.TabIndex = 127;
@@ -2738,7 +2738,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(284, 411);
+            this.label42.Location = new System.Drawing.Point(286, 323);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(26, 13);
             this.label42.TabIndex = 208;
@@ -2747,7 +2747,7 @@
             // GUI_portrait_shirt3
             // 
             this.GUI_portrait_shirt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_shirt3.Location = new System.Drawing.Point(382, 400);
+            this.GUI_portrait_shirt3.Location = new System.Drawing.Point(384, 312);
             this.GUI_portrait_shirt3.Name = "GUI_portrait_shirt3";
             this.GUI_portrait_shirt3.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_shirt3.TabIndex = 207;
@@ -2758,7 +2758,7 @@
             // GUI_portrait_shirt2
             // 
             this.GUI_portrait_shirt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_shirt2.Location = new System.Drawing.Point(352, 400);
+            this.GUI_portrait_shirt2.Location = new System.Drawing.Point(354, 312);
             this.GUI_portrait_shirt2.Name = "GUI_portrait_shirt2";
             this.GUI_portrait_shirt2.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_shirt2.TabIndex = 206;
@@ -2769,7 +2769,7 @@
             // GUI_portrait_shirt1
             // 
             this.GUI_portrait_shirt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_shirt1.Location = new System.Drawing.Point(322, 400);
+            this.GUI_portrait_shirt1.Location = new System.Drawing.Point(324, 312);
             this.GUI_portrait_shirt1.Name = "GUI_portrait_shirt1";
             this.GUI_portrait_shirt1.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_shirt1.TabIndex = 205;
@@ -2780,7 +2780,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(284, 381);
+            this.label41.Location = new System.Drawing.Point(286, 293);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(33, 13);
             this.label41.TabIndex = 204;
@@ -2789,7 +2789,7 @@
             // GUI_portrait_blood3
             // 
             this.GUI_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_blood3.Location = new System.Drawing.Point(382, 370);
+            this.GUI_portrait_blood3.Location = new System.Drawing.Point(384, 282);
             this.GUI_portrait_blood3.Name = "GUI_portrait_blood3";
             this.GUI_portrait_blood3.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_blood3.TabIndex = 202;
@@ -2800,7 +2800,7 @@
             // GUI_portrait_blood2
             // 
             this.GUI_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_blood2.Location = new System.Drawing.Point(352, 370);
+            this.GUI_portrait_blood2.Location = new System.Drawing.Point(354, 282);
             this.GUI_portrait_blood2.Name = "GUI_portrait_blood2";
             this.GUI_portrait_blood2.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_blood2.TabIndex = 201;
@@ -2811,7 +2811,7 @@
             // GUI_portrait_blood1
             // 
             this.GUI_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_blood1.Location = new System.Drawing.Point(322, 370);
+            this.GUI_portrait_blood1.Location = new System.Drawing.Point(324, 282);
             this.GUI_portrait_blood1.Name = "GUI_portrait_blood1";
             this.GUI_portrait_blood1.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_blood1.TabIndex = 200;
@@ -2822,7 +2822,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(284, 351);
+            this.label40.Location = new System.Drawing.Point(286, 263);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(35, 13);
             this.label40.TabIndex = 199;
@@ -2831,7 +2831,7 @@
             // GUI_portrait_bruise5
             // 
             this.GUI_portrait_bruise5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_bruise5.Location = new System.Drawing.Point(442, 340);
+            this.GUI_portrait_bruise5.Location = new System.Drawing.Point(444, 252);
             this.GUI_portrait_bruise5.Name = "GUI_portrait_bruise5";
             this.GUI_portrait_bruise5.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_bruise5.TabIndex = 198;
@@ -2842,7 +2842,7 @@
             // GUI_portrait_bruise4
             // 
             this.GUI_portrait_bruise4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_bruise4.Location = new System.Drawing.Point(412, 340);
+            this.GUI_portrait_bruise4.Location = new System.Drawing.Point(414, 252);
             this.GUI_portrait_bruise4.Name = "GUI_portrait_bruise4";
             this.GUI_portrait_bruise4.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_bruise4.TabIndex = 197;
@@ -2853,7 +2853,7 @@
             // GUI_portrait_bruise3
             // 
             this.GUI_portrait_bruise3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_bruise3.Location = new System.Drawing.Point(382, 340);
+            this.GUI_portrait_bruise3.Location = new System.Drawing.Point(384, 252);
             this.GUI_portrait_bruise3.Name = "GUI_portrait_bruise3";
             this.GUI_portrait_bruise3.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_bruise3.TabIndex = 196;
@@ -2864,7 +2864,7 @@
             // GUI_portrait_bruise2
             // 
             this.GUI_portrait_bruise2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_bruise2.Location = new System.Drawing.Point(352, 340);
+            this.GUI_portrait_bruise2.Location = new System.Drawing.Point(354, 252);
             this.GUI_portrait_bruise2.Name = "GUI_portrait_bruise2";
             this.GUI_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_bruise2.TabIndex = 195;
@@ -2875,7 +2875,7 @@
             // GUI_portrait_bruise1
             // 
             this.GUI_portrait_bruise1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_bruise1.Location = new System.Drawing.Point(322, 340);
+            this.GUI_portrait_bruise1.Location = new System.Drawing.Point(324, 252);
             this.GUI_portrait_bruise1.Name = "GUI_portrait_bruise1";
             this.GUI_portrait_bruise1.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_bruise1.TabIndex = 194;
@@ -2886,7 +2886,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(284, 321);
+            this.label39.Location = new System.Drawing.Point(286, 233);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(24, 13);
             this.label39.TabIndex = 193;
@@ -2895,7 +2895,7 @@
             // GUI_portrait_hair5
             // 
             this.GUI_portrait_hair5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_hair5.Location = new System.Drawing.Point(442, 310);
+            this.GUI_portrait_hair5.Location = new System.Drawing.Point(444, 222);
             this.GUI_portrait_hair5.Name = "GUI_portrait_hair5";
             this.GUI_portrait_hair5.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_hair5.TabIndex = 192;
@@ -2906,7 +2906,7 @@
             // GUI_portrait_hair4
             // 
             this.GUI_portrait_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_hair4.Location = new System.Drawing.Point(412, 310);
+            this.GUI_portrait_hair4.Location = new System.Drawing.Point(414, 222);
             this.GUI_portrait_hair4.Name = "GUI_portrait_hair4";
             this.GUI_portrait_hair4.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_hair4.TabIndex = 191;
@@ -2917,7 +2917,7 @@
             // GUI_portrait_hair3
             // 
             this.GUI_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_hair3.Location = new System.Drawing.Point(382, 310);
+            this.GUI_portrait_hair3.Location = new System.Drawing.Point(384, 222);
             this.GUI_portrait_hair3.Name = "GUI_portrait_hair3";
             this.GUI_portrait_hair3.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_hair3.TabIndex = 190;
@@ -2928,7 +2928,7 @@
             // GUI_portrait_hair2
             // 
             this.GUI_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_hair2.Location = new System.Drawing.Point(352, 310);
+            this.GUI_portrait_hair2.Location = new System.Drawing.Point(354, 222);
             this.GUI_portrait_hair2.Name = "GUI_portrait_hair2";
             this.GUI_portrait_hair2.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_hair2.TabIndex = 189;
@@ -2939,7 +2939,7 @@
             // GUI_portrait_hair1
             // 
             this.GUI_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_hair1.Location = new System.Drawing.Point(322, 310);
+            this.GUI_portrait_hair1.Location = new System.Drawing.Point(324, 222);
             this.GUI_portrait_hair1.Name = "GUI_portrait_hair1";
             this.GUI_portrait_hair1.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_hair1.TabIndex = 188;
@@ -2950,7 +2950,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(284, 291);
+            this.label38.Location = new System.Drawing.Point(286, 203);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(33, 13);
             this.label38.TabIndex = 187;
@@ -2959,7 +2959,7 @@
             // GUI_portrait_chain5
             // 
             this.GUI_portrait_chain5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_chain5.Location = new System.Drawing.Point(442, 280);
+            this.GUI_portrait_chain5.Location = new System.Drawing.Point(444, 192);
             this.GUI_portrait_chain5.Name = "GUI_portrait_chain5";
             this.GUI_portrait_chain5.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_chain5.TabIndex = 186;
@@ -2970,7 +2970,7 @@
             // GUI_portrait_chain4
             // 
             this.GUI_portrait_chain4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_chain4.Location = new System.Drawing.Point(412, 280);
+            this.GUI_portrait_chain4.Location = new System.Drawing.Point(414, 192);
             this.GUI_portrait_chain4.Name = "GUI_portrait_chain4";
             this.GUI_portrait_chain4.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_chain4.TabIndex = 185;
@@ -2981,7 +2981,7 @@
             // GUI_portrait_chain3
             // 
             this.GUI_portrait_chain3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_chain3.Location = new System.Drawing.Point(382, 280);
+            this.GUI_portrait_chain3.Location = new System.Drawing.Point(384, 192);
             this.GUI_portrait_chain3.Name = "GUI_portrait_chain3";
             this.GUI_portrait_chain3.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_chain3.TabIndex = 184;
@@ -2992,7 +2992,7 @@
             // GUI_portrait_chain2
             // 
             this.GUI_portrait_chain2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_chain2.Location = new System.Drawing.Point(352, 280);
+            this.GUI_portrait_chain2.Location = new System.Drawing.Point(354, 192);
             this.GUI_portrait_chain2.Name = "GUI_portrait_chain2";
             this.GUI_portrait_chain2.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_chain2.TabIndex = 183;
@@ -3003,7 +3003,7 @@
             // GUI_portrait_chain1
             // 
             this.GUI_portrait_chain1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_chain1.Location = new System.Drawing.Point(322, 280);
+            this.GUI_portrait_chain1.Location = new System.Drawing.Point(324, 192);
             this.GUI_portrait_chain1.Name = "GUI_portrait_chain1";
             this.GUI_portrait_chain1.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_chain1.TabIndex = 182;
@@ -3014,7 +3014,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(284, 261);
+            this.label37.Location = new System.Drawing.Point(286, 173);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(26, 13);
             this.label37.TabIndex = 181;
@@ -3023,7 +3023,7 @@
             // GUI_portrait_skin7
             // 
             this.GUI_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin7.Location = new System.Drawing.Point(502, 250);
+            this.GUI_portrait_skin7.Location = new System.Drawing.Point(504, 162);
             this.GUI_portrait_skin7.Name = "GUI_portrait_skin7";
             this.GUI_portrait_skin7.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin7.TabIndex = 180;
@@ -3034,7 +3034,7 @@
             // GUI_portrait_skin6
             // 
             this.GUI_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin6.Location = new System.Drawing.Point(472, 250);
+            this.GUI_portrait_skin6.Location = new System.Drawing.Point(474, 162);
             this.GUI_portrait_skin6.Name = "GUI_portrait_skin6";
             this.GUI_portrait_skin6.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin6.TabIndex = 179;
@@ -3045,7 +3045,7 @@
             // GUI_portrait_skin5
             // 
             this.GUI_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin5.Location = new System.Drawing.Point(442, 250);
+            this.GUI_portrait_skin5.Location = new System.Drawing.Point(444, 162);
             this.GUI_portrait_skin5.Name = "GUI_portrait_skin5";
             this.GUI_portrait_skin5.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin5.TabIndex = 178;
@@ -3056,7 +3056,7 @@
             // GUI_portrait_skin4
             // 
             this.GUI_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin4.Location = new System.Drawing.Point(412, 250);
+            this.GUI_portrait_skin4.Location = new System.Drawing.Point(414, 162);
             this.GUI_portrait_skin4.Name = "GUI_portrait_skin4";
             this.GUI_portrait_skin4.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin4.TabIndex = 177;
@@ -3067,7 +3067,7 @@
             // GUI_portrait_skin3
             // 
             this.GUI_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin3.Location = new System.Drawing.Point(382, 250);
+            this.GUI_portrait_skin3.Location = new System.Drawing.Point(384, 162);
             this.GUI_portrait_skin3.Name = "GUI_portrait_skin3";
             this.GUI_portrait_skin3.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin3.TabIndex = 176;
@@ -3078,7 +3078,7 @@
             // GUI_portrait_skin2
             // 
             this.GUI_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin2.Location = new System.Drawing.Point(352, 250);
+            this.GUI_portrait_skin2.Location = new System.Drawing.Point(354, 162);
             this.GUI_portrait_skin2.Name = "GUI_portrait_skin2";
             this.GUI_portrait_skin2.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin2.TabIndex = 175;
@@ -3089,7 +3089,7 @@
             // GUI_portrait_skin1
             // 
             this.GUI_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_portrait_skin1.Location = new System.Drawing.Point(322, 250);
+            this.GUI_portrait_skin1.Location = new System.Drawing.Point(324, 162);
             this.GUI_portrait_skin1.Name = "GUI_portrait_skin1";
             this.GUI_portrait_skin1.Size = new System.Drawing.Size(24, 24);
             this.GUI_portrait_skin1.TabIndex = 174;
@@ -3120,7 +3120,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(21, 291);
+            this.label32.Location = new System.Drawing.Point(24, 203);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(57, 13);
             this.label32.TabIndex = 163;
@@ -3129,7 +3129,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(22, 321);
+            this.label33.Location = new System.Drawing.Point(24, 233);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(24, 13);
             this.label33.TabIndex = 162;
@@ -3138,7 +3138,7 @@
             // GUI_sprite_costume5
             // 
             this.GUI_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_costume5.Location = new System.Drawing.Point(209, 340);
+            this.GUI_sprite_costume5.Location = new System.Drawing.Point(211, 252);
             this.GUI_sprite_costume5.Name = "GUI_sprite_costume5";
             this.GUI_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_costume5.TabIndex = 160;
@@ -3149,7 +3149,7 @@
             // GUI_sprite_hair
             // 
             this.GUI_sprite_hair.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_hair.Location = new System.Drawing.Point(89, 310);
+            this.GUI_sprite_hair.Location = new System.Drawing.Point(91, 222);
             this.GUI_sprite_hair.Name = "GUI_sprite_hair";
             this.GUI_sprite_hair.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_hair.TabIndex = 161;
@@ -3160,7 +3160,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(24, 381);
+            this.label34.Location = new System.Drawing.Point(24, 293);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(24, 13);
             this.label34.TabIndex = 159;
@@ -3169,7 +3169,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(21, 351);
+            this.label35.Location = new System.Drawing.Point(24, 263);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(47, 13);
             this.label35.TabIndex = 152;
@@ -3178,7 +3178,7 @@
             // GUI_sprite_costume1
             // 
             this.GUI_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_costume1.Location = new System.Drawing.Point(89, 340);
+            this.GUI_sprite_costume1.Location = new System.Drawing.Point(91, 252);
             this.GUI_sprite_costume1.Name = "GUI_sprite_costume1";
             this.GUI_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_costume1.TabIndex = 153;
@@ -3189,7 +3189,7 @@
             // GUI_sprite_costume2
             // 
             this.GUI_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_costume2.Location = new System.Drawing.Point(119, 340);
+            this.GUI_sprite_costume2.Location = new System.Drawing.Point(121, 252);
             this.GUI_sprite_costume2.Name = "GUI_sprite_costume2";
             this.GUI_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_costume2.TabIndex = 154;
@@ -3200,7 +3200,7 @@
             // GUI_sprite_costume3
             // 
             this.GUI_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_costume3.Location = new System.Drawing.Point(149, 340);
+            this.GUI_sprite_costume3.Location = new System.Drawing.Point(151, 252);
             this.GUI_sprite_costume3.Name = "GUI_sprite_costume3";
             this.GUI_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_costume3.TabIndex = 155;
@@ -3211,7 +3211,7 @@
             // GUI_sprite_costume4
             // 
             this.GUI_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_costume4.Location = new System.Drawing.Point(179, 340);
+            this.GUI_sprite_costume4.Location = new System.Drawing.Point(181, 252);
             this.GUI_sprite_costume4.Name = "GUI_sprite_costume4";
             this.GUI_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_costume4.TabIndex = 156;
@@ -3222,7 +3222,7 @@
             // GUI_sprite_flag1
             // 
             this.GUI_sprite_flag1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_flag1.Location = new System.Drawing.Point(89, 370);
+            this.GUI_sprite_flag1.Location = new System.Drawing.Point(91, 282);
             this.GUI_sprite_flag1.Name = "GUI_sprite_flag1";
             this.GUI_sprite_flag1.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_flag1.TabIndex = 157;
@@ -3233,7 +3233,7 @@
             // GUI_sprite_flag2
             // 
             this.GUI_sprite_flag2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_flag2.Location = new System.Drawing.Point(119, 370);
+            this.GUI_sprite_flag2.Location = new System.Drawing.Point(121, 282);
             this.GUI_sprite_flag2.Name = "GUI_sprite_flag2";
             this.GUI_sprite_flag2.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_flag2.TabIndex = 158;
@@ -3244,7 +3244,7 @@
             // GUI_sprite_skin5
             // 
             this.GUI_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_skin5.Location = new System.Drawing.Point(209, 250);
+            this.GUI_sprite_skin5.Location = new System.Drawing.Point(211, 162);
             this.GUI_sprite_skin5.Name = "GUI_sprite_skin5";
             this.GUI_sprite_skin5.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_skin5.TabIndex = 149;
@@ -3255,7 +3255,7 @@
             // GUI_sprite_darkcamo1
             // 
             this.GUI_sprite_darkcamo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_darkcamo1.Location = new System.Drawing.Point(89, 280);
+            this.GUI_sprite_darkcamo1.Location = new System.Drawing.Point(91, 192);
             this.GUI_sprite_darkcamo1.Name = "GUI_sprite_darkcamo1";
             this.GUI_sprite_darkcamo1.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_darkcamo1.TabIndex = 150;
@@ -3266,7 +3266,7 @@
             // GUI_sprite_darkcamo2
             // 
             this.GUI_sprite_darkcamo2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_darkcamo2.Location = new System.Drawing.Point(119, 280);
+            this.GUI_sprite_darkcamo2.Location = new System.Drawing.Point(121, 192);
             this.GUI_sprite_darkcamo2.Name = "GUI_sprite_darkcamo2";
             this.GUI_sprite_darkcamo2.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_darkcamo2.TabIndex = 151;
@@ -3277,7 +3277,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(22, 261);
+            this.label36.Location = new System.Drawing.Point(24, 173);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(26, 13);
             this.label36.TabIndex = 144;
@@ -3286,7 +3286,7 @@
             // GUI_sprite_skin1
             // 
             this.GUI_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_skin1.Location = new System.Drawing.Point(89, 250);
+            this.GUI_sprite_skin1.Location = new System.Drawing.Point(91, 162);
             this.GUI_sprite_skin1.Name = "GUI_sprite_skin1";
             this.GUI_sprite_skin1.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_skin1.TabIndex = 145;
@@ -3297,7 +3297,7 @@
             // GUI_sprite_skin2
             // 
             this.GUI_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_skin2.Location = new System.Drawing.Point(119, 250);
+            this.GUI_sprite_skin2.Location = new System.Drawing.Point(121, 162);
             this.GUI_sprite_skin2.Name = "GUI_sprite_skin2";
             this.GUI_sprite_skin2.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_skin2.TabIndex = 146;
@@ -3308,7 +3308,7 @@
             // GUI_sprite_skin3
             // 
             this.GUI_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_skin3.Location = new System.Drawing.Point(149, 250);
+            this.GUI_sprite_skin3.Location = new System.Drawing.Point(151, 162);
             this.GUI_sprite_skin3.Name = "GUI_sprite_skin3";
             this.GUI_sprite_skin3.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_skin3.TabIndex = 147;
@@ -3319,7 +3319,7 @@
             // GUI_sprite_skin4
             // 
             this.GUI_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GUI_sprite_skin4.Location = new System.Drawing.Point(179, 250);
+            this.GUI_sprite_skin4.Location = new System.Drawing.Point(181, 162);
             this.GUI_sprite_skin4.Name = "GUI_sprite_skin4";
             this.GUI_sprite_skin4.Size = new System.Drawing.Size(24, 24);
             this.GUI_sprite_skin4.TabIndex = 148;
@@ -3401,7 +3401,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(286, 350);
+            this.label43.Location = new System.Drawing.Point(286, 338);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(31, 13);
             this.label43.TabIndex = 262;
@@ -3410,7 +3410,7 @@
             // RYU_portrait_teeth2
             // 
             this.RYU_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_teeth2.Location = new System.Drawing.Point(371, 339);
+            this.RYU_portrait_teeth2.Location = new System.Drawing.Point(371, 327);
             this.RYU_portrait_teeth2.Name = "RYU_portrait_teeth2";
             this.RYU_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_teeth2.TabIndex = 260;
@@ -3421,7 +3421,7 @@
             // RYU_portrait_teeth1
             // 
             this.RYU_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_teeth1.Location = new System.Drawing.Point(341, 339);
+            this.RYU_portrait_teeth1.Location = new System.Drawing.Point(341, 327);
             this.RYU_portrait_teeth1.Name = "RYU_portrait_teeth1";
             this.RYU_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_teeth1.TabIndex = 259;
@@ -3432,7 +3432,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(286, 320);
+            this.label44.Location = new System.Drawing.Point(286, 308);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(33, 13);
             this.label44.TabIndex = 258;
@@ -3441,7 +3441,7 @@
             // RYU_portrait_blood3
             // 
             this.RYU_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_blood3.Location = new System.Drawing.Point(401, 309);
+            this.RYU_portrait_blood3.Location = new System.Drawing.Point(401, 297);
             this.RYU_portrait_blood3.Name = "RYU_portrait_blood3";
             this.RYU_portrait_blood3.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_blood3.TabIndex = 257;
@@ -3452,7 +3452,7 @@
             // RYU_portrait_blood2
             // 
             this.RYU_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_blood2.Location = new System.Drawing.Point(371, 309);
+            this.RYU_portrait_blood2.Location = new System.Drawing.Point(371, 297);
             this.RYU_portrait_blood2.Name = "RYU_portrait_blood2";
             this.RYU_portrait_blood2.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_blood2.TabIndex = 256;
@@ -3463,7 +3463,7 @@
             // RYU_portrait_blood1
             // 
             this.RYU_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_blood1.Location = new System.Drawing.Point(341, 309);
+            this.RYU_portrait_blood1.Location = new System.Drawing.Point(341, 297);
             this.RYU_portrait_blood1.Name = "RYU_portrait_blood1";
             this.RYU_portrait_blood1.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_blood1.TabIndex = 255;
@@ -3474,7 +3474,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(286, 260);
+            this.label45.Location = new System.Drawing.Point(286, 248);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(55, 13);
             this.label45.TabIndex = 254;
@@ -3483,7 +3483,7 @@
             // RYU_portrait_headband3
             // 
             this.RYU_portrait_headband3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_headband3.Location = new System.Drawing.Point(401, 249);
+            this.RYU_portrait_headband3.Location = new System.Drawing.Point(401, 237);
             this.RYU_portrait_headband3.Name = "RYU_portrait_headband3";
             this.RYU_portrait_headband3.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_headband3.TabIndex = 251;
@@ -3494,7 +3494,7 @@
             // RYU_portrait_headband2
             // 
             this.RYU_portrait_headband2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_headband2.Location = new System.Drawing.Point(371, 249);
+            this.RYU_portrait_headband2.Location = new System.Drawing.Point(371, 237);
             this.RYU_portrait_headband2.Name = "RYU_portrait_headband2";
             this.RYU_portrait_headband2.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_headband2.TabIndex = 250;
@@ -3505,7 +3505,7 @@
             // RYU_portrait_headband1
             // 
             this.RYU_portrait_headband1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_headband1.Location = new System.Drawing.Point(341, 249);
+            this.RYU_portrait_headband1.Location = new System.Drawing.Point(341, 237);
             this.RYU_portrait_headband1.Name = "RYU_portrait_headband1";
             this.RYU_portrait_headband1.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_headband1.TabIndex = 249;
@@ -3516,7 +3516,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(286, 290);
+            this.label46.Location = new System.Drawing.Point(286, 278);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(29, 13);
             this.label46.TabIndex = 248;
@@ -3525,7 +3525,7 @@
             // RYU_portrait_eyes3
             // 
             this.RYU_portrait_eyes3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_eyes3.Location = new System.Drawing.Point(401, 279);
+            this.RYU_portrait_eyes3.Location = new System.Drawing.Point(401, 267);
             this.RYU_portrait_eyes3.Name = "RYU_portrait_eyes3";
             this.RYU_portrait_eyes3.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_eyes3.TabIndex = 245;
@@ -3536,7 +3536,7 @@
             // RYU_portrait_eyes2
             // 
             this.RYU_portrait_eyes2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_eyes2.Location = new System.Drawing.Point(371, 279);
+            this.RYU_portrait_eyes2.Location = new System.Drawing.Point(371, 267);
             this.RYU_portrait_eyes2.Name = "RYU_portrait_eyes2";
             this.RYU_portrait_eyes2.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_eyes2.TabIndex = 244;
@@ -3547,7 +3547,7 @@
             // RYU_portrait_eyes1
             // 
             this.RYU_portrait_eyes1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_eyes1.Location = new System.Drawing.Point(341, 279);
+            this.RYU_portrait_eyes1.Location = new System.Drawing.Point(341, 267);
             this.RYU_portrait_eyes1.Name = "RYU_portrait_eyes1";
             this.RYU_portrait_eyes1.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_eyes1.TabIndex = 243;
@@ -3558,7 +3558,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(286, 230);
+            this.label47.Location = new System.Drawing.Point(286, 218);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(47, 13);
             this.label47.TabIndex = 242;
@@ -3567,7 +3567,7 @@
             // RYU_portrait_costume5
             // 
             this.RYU_portrait_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_costume5.Location = new System.Drawing.Point(461, 219);
+            this.RYU_portrait_costume5.Location = new System.Drawing.Point(461, 207);
             this.RYU_portrait_costume5.Name = "RYU_portrait_costume5";
             this.RYU_portrait_costume5.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_costume5.TabIndex = 241;
@@ -3578,7 +3578,7 @@
             // RYU_portrait_costume4
             // 
             this.RYU_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_costume4.Location = new System.Drawing.Point(431, 219);
+            this.RYU_portrait_costume4.Location = new System.Drawing.Point(431, 207);
             this.RYU_portrait_costume4.Name = "RYU_portrait_costume4";
             this.RYU_portrait_costume4.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_costume4.TabIndex = 240;
@@ -3589,7 +3589,7 @@
             // RYU_portrait_costume3
             // 
             this.RYU_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_costume3.Location = new System.Drawing.Point(401, 219);
+            this.RYU_portrait_costume3.Location = new System.Drawing.Point(401, 207);
             this.RYU_portrait_costume3.Name = "RYU_portrait_costume3";
             this.RYU_portrait_costume3.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_costume3.TabIndex = 239;
@@ -3600,7 +3600,7 @@
             // RYU_portrait_costume2
             // 
             this.RYU_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_costume2.Location = new System.Drawing.Point(371, 219);
+            this.RYU_portrait_costume2.Location = new System.Drawing.Point(371, 207);
             this.RYU_portrait_costume2.Name = "RYU_portrait_costume2";
             this.RYU_portrait_costume2.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_costume2.TabIndex = 238;
@@ -3611,7 +3611,7 @@
             // RYU_portrait_costume1
             // 
             this.RYU_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_costume1.Location = new System.Drawing.Point(341, 219);
+            this.RYU_portrait_costume1.Location = new System.Drawing.Point(341, 207);
             this.RYU_portrait_costume1.Name = "RYU_portrait_costume1";
             this.RYU_portrait_costume1.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_costume1.TabIndex = 237;
@@ -3622,7 +3622,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(286, 200);
+            this.label48.Location = new System.Drawing.Point(286, 188);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(26, 13);
             this.label48.TabIndex = 236;
@@ -3631,7 +3631,7 @@
             // RYU_portrait_skin7
             // 
             this.RYU_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin7.Location = new System.Drawing.Point(521, 189);
+            this.RYU_portrait_skin7.Location = new System.Drawing.Point(521, 177);
             this.RYU_portrait_skin7.Name = "RYU_portrait_skin7";
             this.RYU_portrait_skin7.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin7.TabIndex = 235;
@@ -3642,7 +3642,7 @@
             // RYU_portrait_skin6
             // 
             this.RYU_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin6.Location = new System.Drawing.Point(491, 189);
+            this.RYU_portrait_skin6.Location = new System.Drawing.Point(491, 177);
             this.RYU_portrait_skin6.Name = "RYU_portrait_skin6";
             this.RYU_portrait_skin6.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin6.TabIndex = 234;
@@ -3653,7 +3653,7 @@
             // RYU_portrait_skin5
             // 
             this.RYU_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin5.Location = new System.Drawing.Point(461, 189);
+            this.RYU_portrait_skin5.Location = new System.Drawing.Point(461, 177);
             this.RYU_portrait_skin5.Name = "RYU_portrait_skin5";
             this.RYU_portrait_skin5.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin5.TabIndex = 233;
@@ -3664,7 +3664,7 @@
             // RYU_portrait_skin4
             // 
             this.RYU_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin4.Location = new System.Drawing.Point(431, 189);
+            this.RYU_portrait_skin4.Location = new System.Drawing.Point(431, 177);
             this.RYU_portrait_skin4.Name = "RYU_portrait_skin4";
             this.RYU_portrait_skin4.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin4.TabIndex = 232;
@@ -3675,7 +3675,7 @@
             // RYU_portrait_skin3
             // 
             this.RYU_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin3.Location = new System.Drawing.Point(401, 189);
+            this.RYU_portrait_skin3.Location = new System.Drawing.Point(401, 177);
             this.RYU_portrait_skin3.Name = "RYU_portrait_skin3";
             this.RYU_portrait_skin3.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin3.TabIndex = 231;
@@ -3686,7 +3686,7 @@
             // RYU_portrait_skin2
             // 
             this.RYU_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin2.Location = new System.Drawing.Point(371, 189);
+            this.RYU_portrait_skin2.Location = new System.Drawing.Point(371, 177);
             this.RYU_portrait_skin2.Name = "RYU_portrait_skin2";
             this.RYU_portrait_skin2.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin2.TabIndex = 230;
@@ -3697,7 +3697,7 @@
             // RYU_portrait_skin1
             // 
             this.RYU_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_portrait_skin1.Location = new System.Drawing.Point(341, 189);
+            this.RYU_portrait_skin1.Location = new System.Drawing.Point(341, 177);
             this.RYU_portrait_skin1.Name = "RYU_portrait_skin1";
             this.RYU_portrait_skin1.Size = new System.Drawing.Size(24, 24);
             this.RYU_portrait_skin1.TabIndex = 229;
@@ -3708,7 +3708,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(23, 230);
+            this.label49.Location = new System.Drawing.Point(23, 218);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(24, 13);
             this.label49.TabIndex = 228;
@@ -3717,7 +3717,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(23, 260);
+            this.label50.Location = new System.Drawing.Point(23, 248);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(24, 13);
             this.label50.TabIndex = 227;
@@ -3726,7 +3726,7 @@
             // RYU_sprite_costume5
             // 
             this.RYU_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_costume5.Location = new System.Drawing.Point(211, 279);
+            this.RYU_sprite_costume5.Location = new System.Drawing.Point(211, 267);
             this.RYU_sprite_costume5.Name = "RYU_sprite_costume5";
             this.RYU_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_costume5.TabIndex = 225;
@@ -3737,7 +3737,7 @@
             // RYU_sprite_belt
             // 
             this.RYU_sprite_belt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_belt.Location = new System.Drawing.Point(91, 249);
+            this.RYU_sprite_belt.Location = new System.Drawing.Point(91, 237);
             this.RYU_sprite_belt.Name = "RYU_sprite_belt";
             this.RYU_sprite_belt.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_belt.TabIndex = 226;
@@ -3748,7 +3748,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(23, 319);
+            this.label51.Location = new System.Drawing.Point(23, 307);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(55, 13);
             this.label51.TabIndex = 224;
@@ -3757,7 +3757,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(23, 289);
+            this.label52.Location = new System.Drawing.Point(23, 277);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(47, 13);
             this.label52.TabIndex = 217;
@@ -3766,7 +3766,7 @@
             // RYU_sprite_costume1
             // 
             this.RYU_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_costume1.Location = new System.Drawing.Point(91, 279);
+            this.RYU_sprite_costume1.Location = new System.Drawing.Point(91, 267);
             this.RYU_sprite_costume1.Name = "RYU_sprite_costume1";
             this.RYU_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_costume1.TabIndex = 218;
@@ -3777,7 +3777,7 @@
             // RYU_sprite_costume2
             // 
             this.RYU_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_costume2.Location = new System.Drawing.Point(121, 279);
+            this.RYU_sprite_costume2.Location = new System.Drawing.Point(121, 267);
             this.RYU_sprite_costume2.Name = "RYU_sprite_costume2";
             this.RYU_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_costume2.TabIndex = 219;
@@ -3788,7 +3788,7 @@
             // RYU_sprite_costume3
             // 
             this.RYU_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_costume3.Location = new System.Drawing.Point(151, 279);
+            this.RYU_sprite_costume3.Location = new System.Drawing.Point(151, 267);
             this.RYU_sprite_costume3.Name = "RYU_sprite_costume3";
             this.RYU_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_costume3.TabIndex = 220;
@@ -3799,7 +3799,7 @@
             // RYU_sprite_costume4
             // 
             this.RYU_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_costume4.Location = new System.Drawing.Point(181, 279);
+            this.RYU_sprite_costume4.Location = new System.Drawing.Point(181, 267);
             this.RYU_sprite_costume4.Name = "RYU_sprite_costume4";
             this.RYU_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_costume4.TabIndex = 221;
@@ -3810,7 +3810,7 @@
             // RYU_sprite_headband1
             // 
             this.RYU_sprite_headband1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_headband1.Location = new System.Drawing.Point(91, 309);
+            this.RYU_sprite_headband1.Location = new System.Drawing.Point(91, 297);
             this.RYU_sprite_headband1.Name = "RYU_sprite_headband1";
             this.RYU_sprite_headband1.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_headband1.TabIndex = 222;
@@ -3821,7 +3821,7 @@
             // RYU_sprite_headband2
             // 
             this.RYU_sprite_headband2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_headband2.Location = new System.Drawing.Point(121, 309);
+            this.RYU_sprite_headband2.Location = new System.Drawing.Point(121, 297);
             this.RYU_sprite_headband2.Name = "RYU_sprite_headband2";
             this.RYU_sprite_headband2.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_headband2.TabIndex = 223;
@@ -3832,7 +3832,7 @@
             // RYU_sprite_costume6
             // 
             this.RYU_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_costume6.Location = new System.Drawing.Point(241, 279);
+            this.RYU_sprite_costume6.Location = new System.Drawing.Point(241, 267);
             this.RYU_sprite_costume6.Name = "RYU_sprite_costume6";
             this.RYU_sprite_costume6.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_costume6.TabIndex = 214;
@@ -3843,7 +3843,7 @@
             // RYU_sprite_hair1
             // 
             this.RYU_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_hair1.Location = new System.Drawing.Point(91, 219);
+            this.RYU_sprite_hair1.Location = new System.Drawing.Point(91, 207);
             this.RYU_sprite_hair1.Name = "RYU_sprite_hair1";
             this.RYU_sprite_hair1.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_hair1.TabIndex = 215;
@@ -3854,7 +3854,7 @@
             // RYU_sprite_hair2
             // 
             this.RYU_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_hair2.Location = new System.Drawing.Point(121, 219);
+            this.RYU_sprite_hair2.Location = new System.Drawing.Point(121, 207);
             this.RYU_sprite_hair2.Name = "RYU_sprite_hair2";
             this.RYU_sprite_hair2.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_hair2.TabIndex = 216;
@@ -3865,7 +3865,7 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(24, 200);
+            this.label53.Location = new System.Drawing.Point(24, 188);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(26, 13);
             this.label53.TabIndex = 209;
@@ -3874,7 +3874,7 @@
             // RYU_sprite_skin1
             // 
             this.RYU_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_skin1.Location = new System.Drawing.Point(91, 189);
+            this.RYU_sprite_skin1.Location = new System.Drawing.Point(91, 177);
             this.RYU_sprite_skin1.Name = "RYU_sprite_skin1";
             this.RYU_sprite_skin1.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_skin1.TabIndex = 210;
@@ -3885,7 +3885,7 @@
             // RYU_sprite_skin2
             // 
             this.RYU_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_skin2.Location = new System.Drawing.Point(121, 189);
+            this.RYU_sprite_skin2.Location = new System.Drawing.Point(121, 177);
             this.RYU_sprite_skin2.Name = "RYU_sprite_skin2";
             this.RYU_sprite_skin2.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_skin2.TabIndex = 211;
@@ -3896,7 +3896,7 @@
             // RYU_sprite_skin3
             // 
             this.RYU_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_skin3.Location = new System.Drawing.Point(151, 189);
+            this.RYU_sprite_skin3.Location = new System.Drawing.Point(151, 177);
             this.RYU_sprite_skin3.Name = "RYU_sprite_skin3";
             this.RYU_sprite_skin3.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_skin3.TabIndex = 212;
@@ -3907,7 +3907,7 @@
             // RYU_sprite_skin4
             // 
             this.RYU_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RYU_sprite_skin4.Location = new System.Drawing.Point(181, 189);
+            this.RYU_sprite_skin4.Location = new System.Drawing.Point(181, 177);
             this.RYU_sprite_skin4.Name = "RYU_sprite_skin4";
             this.RYU_sprite_skin4.Size = new System.Drawing.Size(24, 24);
             this.RYU_sprite_skin4.TabIndex = 213;
