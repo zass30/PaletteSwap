@@ -72,9 +72,6 @@
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.savePatchedRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePhoenixRomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveJapaneseRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -380,6 +377,10 @@
             this.colorSetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.patchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.standardROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phoenixROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.japaneseROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -957,9 +958,7 @@
             this.printToolStripMenuItem,
             this.printPreviewToolStripMenuItem,
             this.toolStripSeparator2,
-            this.savePatchedRomToolStripMenuItem1,
-            this.savePhoenixRomToolStripMenuItem1,
-            this.saveJapaneseRomToolStripMenuItem,
+            this.patchToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
@@ -1040,27 +1039,6 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(209, 6);
-            // 
-            // savePatchedRomToolStripMenuItem1
-            // 
-            this.savePatchedRomToolStripMenuItem1.Name = "savePatchedRomToolStripMenuItem1";
-            this.savePatchedRomToolStripMenuItem1.Size = new System.Drawing.Size(212, 38);
-            this.savePatchedRomToolStripMenuItem1.Text = "Save Patched Rom";
-            this.savePatchedRomToolStripMenuItem1.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
-            // 
-            // savePhoenixRomToolStripMenuItem1
-            // 
-            this.savePhoenixRomToolStripMenuItem1.Name = "savePhoenixRomToolStripMenuItem1";
-            this.savePhoenixRomToolStripMenuItem1.Size = new System.Drawing.Size(212, 38);
-            this.savePhoenixRomToolStripMenuItem1.Text = "Save Phoenix Rom";
-            this.savePhoenixRomToolStripMenuItem1.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
-            // 
-            // saveJapaneseRomToolStripMenuItem
-            // 
-            this.saveJapaneseRomToolStripMenuItem.Name = "saveJapaneseRomToolStripMenuItem";
-            this.saveJapaneseRomToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
-            this.saveJapaneseRomToolStripMenuItem.Text = "Save Japanese Rom";
-            this.saveJapaneseRomToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -4507,6 +4485,37 @@
             this.colorSetToolStripMenuItem2.Text = "Color Set";
             this.colorSetToolStripMenuItem2.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
             // 
+            // patchToolStripMenuItem
+            // 
+            this.patchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.standardROMToolStripMenuItem,
+            this.phoenixROMToolStripMenuItem,
+            this.japaneseROMToolStripMenuItem});
+            this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Text = "Patch";
+            // 
+            // standardROMToolStripMenuItem
+            // 
+            this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.standardROMToolStripMenuItem.Text = "Standard ROM";
+            this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
+            // 
+            // phoenixROMToolStripMenuItem
+            // 
+            this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
+            this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
+            // 
+            // japaneseROMToolStripMenuItem
+            // 
+            this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
+            this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4914,11 +4923,8 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button colorCycleRGB;
         private System.Windows.Forms.Button colorCycleRBG;
-        private System.Windows.Forms.ToolStripMenuItem savePatchedRomToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem savePhoenixRomToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveJapaneseRomToolStripMenuItem;
         private System.Windows.Forms.PictureBox DIC_neutralStandBox;
         private System.Windows.Forms.PictureBox psychopunchBox;
         private System.Windows.Forms.PictureBox psychoprepBox;
@@ -5137,6 +5143,10 @@
         private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem patchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem standardROMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phoenixROMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem japaneseROMToolStripMenuItem;
     }
 }
 
