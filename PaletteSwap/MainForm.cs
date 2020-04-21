@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using System.Drawing.Imaging;
 using System.IO.Compression;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace PaletteSwap
 {
@@ -914,6 +908,7 @@ namespace PaletteSwap
 
         private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
         {
+//            return;
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
@@ -1070,6 +1065,27 @@ namespace PaletteSwap
                         {
                             var charCode = CharacterConfig.CodeFromCharacterEnum(charType);
                             // add colorset key
+                            var keyentry = archive.CreateEntry(charCode + @"/" + "NeutralKey.png");
+                            using (var entryStream = keyentry.Open())
+                            {
+                                var b = gameSet.characterDictionary[charType].GenerateSpriteKey();
+                                b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
+                            }
+
+                            keyentry = archive.CreateEntry(charCode + @"/" + "PortraitKey.png");
+                            using (var entryStream = keyentry.Open())
+                            {
+                                var b = gameSet.characterDictionary[charType].GeneratePortraitKey();
+                                b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
+                            }
+
+                            keyentry = archive.CreateEntry(charCode + @"/" + "LossKey.png");
+                            using (var entryStream = keyentry.Open())
+                            {
+                                var b = gameSet.characterDictionary[charType].GenerateLossKey();
+                                b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
+                            }
+
                             for (int i = 0; i < 10; i++){
                                 var entry = archive.CreateEntry(charCode + @"/" + "0" + i.ToString() + ".col");
 
