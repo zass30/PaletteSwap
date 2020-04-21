@@ -857,7 +857,7 @@ namespace PaletteSwap
             MessageBox.Show("Palette Swapper, by Zass");
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void openROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
             var filePath = string.Empty;
