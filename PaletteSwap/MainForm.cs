@@ -1101,5 +1101,31 @@ namespace PaletteSwap
                 }
             }
         }
+
+        private void colorSetToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
+                    gameSet = GameSet.GameSetFromZipColorSet(fileStream);
+                    characterSet = gameSet.characterDictionary[currentCharacterType];
+                    resetCurrentCharacterColorFromDropDown();
+                    reload_everything();
+                    fileStream.Close();
+                }
+            }
+        }
     }
 }

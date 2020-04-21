@@ -378,6 +378,7 @@
             this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
             this.rOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorSetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -977,7 +978,8 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rOMToolStripMenuItem});
+            this.rOMToolStripMenuItem,
+            this.colorSetToolStripMenuItem1});
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
@@ -4488,6 +4490,13 @@
             this.rOMToolStripMenuItem.Text = "ROM";
             this.rOMToolStripMenuItem.Click += new System.EventHandler(this.openROMToolStripMenuItem_Click);
             // 
+            // colorSetToolStripMenuItem1
+            // 
+            this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
+            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.colorSetToolStripMenuItem1.Text = "ColorSet";
+            this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5116,6 +5125,7 @@
         private System.Windows.Forms.PictureBox CHU_portrait_bruise2;
         private System.Windows.Forms.ToolStripMenuItem saveGameColorSetAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rOMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem1;
     }
 }
 

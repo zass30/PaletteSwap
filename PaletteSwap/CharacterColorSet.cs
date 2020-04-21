@@ -138,7 +138,6 @@ namespace PaletteSwap
             return cs;
         }
 
-        // todo, delete this. is it old?
         public static CharacterSet CharacterColorSetFromZipStreamChar(Stream fileStream, CharacterConfig.CHARACTERS characterType)
         {
             CharacterSet cs = new CharacterSet(characterType);
@@ -174,6 +173,32 @@ namespace PaletteSwap
             }
 
             return CharacterColorSetFromStreamsChar(sprites, portraits, characterType);
+        }
+
+        public static CharacterSet CharacterColorSetFromZipColorSetChar(Stream fileStream, CharacterConfig.CHARACTERS characterType)
+        {
+            CharacterSet cs = new CharacterSet(characterType);
+
+            var zip = new ZipArchive(fileStream, ZipArchiveMode.Read);
+            foreach (var entry in zip.Entries)
+            {
+                using (var stream = entry.Open())
+                {
+                    for (int i = 0; i < 10; i++) {
+                        var charCode = CharacterConfig.CodeFromCharacterEnum(characterType);
+                        var fileName = charCode + @"/" + "0" + i.ToString() + ".col";
+                        if (entry.FullName == fileName)
+                        {
+                            using (var textSubStream = new StreamReader(stream))
+                            {
+                                var colText = textSubStream.ReadToEnd();
+                                cs.characterColors[i] = Character.CharacterFromColFormat(colText);
+                            }
+                        }
+                    }
+                }
+            }
+            return cs;
         }
 
         public byte[] patch_portraits_stream03(byte[] b)
@@ -335,6 +360,17 @@ namespace PaletteSwap
             gs.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Guile);
             gs.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Ryu);
             gs.characterDictionary[CharacterConfig.CHARACTERS.Chun] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Chun);
+            return gs;
+        }
+
+        public static GameSet GameSetFromZipColorSet(Stream fileStream)
+        {
+            var gs = new GameSet();
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Dictator);
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Claw);
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Guile);
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Ryu);
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Chun] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Chun);
             return gs;
         }
     }
