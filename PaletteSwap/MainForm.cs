@@ -10,6 +10,7 @@ namespace PaletteSwap
 {
     public partial class MainForm : Form
     {
+        bool DISABLE_PATCHING = true;
         ZoomForm z;
         ColorSetForm c;
         public string currentlyZoomedLabel;
@@ -908,6 +909,8 @@ namespace PaletteSwap
 
         private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
         {
+            if (DISABLE_PATCHING == true)
+                return;
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
