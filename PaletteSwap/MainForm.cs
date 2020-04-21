@@ -908,7 +908,6 @@ namespace PaletteSwap
 
         private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
         {
-//            return;
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
