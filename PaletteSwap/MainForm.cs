@@ -587,9 +587,6 @@ namespace PaletteSwap
             // todo replace this with a regex
             switch (p.Name)
             {
-                case "neutralStandBox":
-                    currentlyZoomedLabel = "neutral";
-                    break;
                 case "psychopunchBox":
                     currentlyZoomedLabel = "psychopunch";
                     break;
@@ -602,22 +599,21 @@ namespace PaletteSwap
                 case "crusherbottomBox":
                     currentlyZoomedLabel = "crusherbottom";
                     break;
-                case "portraitVictoryBox":
-                    currentlyZoomedLabel = "victory";
-                    break;
+                case "DIC_neutralStandBox":
                 case "CLA_neutralStandBox":
                 case "CHU_neutralStandBox":
                 case "GUI_neutralStandBox":
                 case "RYU_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
+                case "DIC_portraitVictoryBox":
                 case "CLA_portraitVictoryBox":
                 case "CHU_portraitVictoryBox":
                 case "GUI_portraitVictoryBox":
                 case "RYU_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
-                case "portraitLossBox":
+                case "DIC_portraitLossBox":
                 case "CLA_portraitLossBox":
                 case "CHU_portraitLossBox":
                 case "GUI_portraitLossBox":
