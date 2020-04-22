@@ -388,7 +388,8 @@ namespace PaletteSwap
                     return CLAW.GenerateClawSpriteConfig();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DICTATOR.GenerateDictatorSpriteConfig();
-
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOXER.GenerateBoxerSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -407,6 +408,8 @@ namespace PaletteSwap
                     return CLAW.GenerateClawPortraitConfig();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DICTATOR.GenerateDictatorPortraitConfig();
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOXER.GenerateBoxerPortraitConfig();
 
             }
             throw new Exception("Invalid character");
@@ -466,7 +469,7 @@ namespace PaletteSwap
                 return pc;
             }
 
-            public static Dictionary<string, List<int>> GenerateChunPortraitOffsets()
+            public static Dictionary<string, List<int>> GenerateBoxerPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
@@ -523,7 +526,7 @@ namespace PaletteSwap
                 dco1.position = 10;
                 defaultColorOffsets.Add(dco1);
                 */
-                Dictionary<string, List<int>> boxerPortraitOffsets = GenerateChunPortraitOffsets();
+                Dictionary<string, List<int>> boxerPortraitOffsets = GenerateBoxerPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = boxerPortraitOffsets;
                 pc.defaultColorOffsets = defaultColorOffsets;
@@ -1043,6 +1046,9 @@ PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSp
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_neutral7),
 PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_neutral0),
+PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -1065,6 +1071,9 @@ PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuile
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitwin7),
 PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_portraitwin0),
+PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -1087,6 +1096,9 @@ PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuile
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitloss7),
 PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_portraitloss0),
+PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:

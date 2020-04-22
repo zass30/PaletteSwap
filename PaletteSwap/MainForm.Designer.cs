@@ -65,13 +65,21 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorSetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorSetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.patchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.standardROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phoenixROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.japaneseROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -373,14 +381,10 @@
             this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
-            this.rOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorSetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorSetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.patchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phoenixROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.japaneseROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TabPageBoxer = new System.Windows.Forms.TabPage();
+            this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitLossBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -621,6 +625,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).BeginInit();
+            this.TabPageBoxer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -933,12 +941,6 @@
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.viewToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
@@ -970,7 +972,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -983,13 +985,27 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
+            // 
+            // rOMToolStripMenuItem
+            // 
+            this.rOMToolStripMenuItem.Name = "rOMToolStripMenuItem";
+            this.rOMToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.rOMToolStripMenuItem.Text = "ROM";
+            this.rOMToolStripMenuItem.Click += new System.EventHandler(this.openROMToolStripMenuItem_Click);
+            // 
+            // colorSetToolStripMenuItem1
+            // 
+            this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
+            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
+            this.colorSetToolStripMenuItem1.Text = "ColorSet";
+            this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -997,7 +1013,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -1007,13 +1023,27 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.colorToolStripMenuItem.Text = "Single Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            // 
+            // colorSetToolStripMenuItem2
+            // 
+            this.colorSetToolStripMenuItem2.Name = "colorSetToolStripMenuItem2";
+            this.colorSetToolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
+            this.colorSetToolStripMenuItem2.Text = "Color Set";
+            this.colorSetToolStripMenuItem2.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -1022,7 +1052,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -1031,19 +1061,50 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            // 
+            // patchToolStripMenuItem
+            // 
+            this.patchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.standardROMToolStripMenuItem,
+            this.phoenixROMToolStripMenuItem,
+            this.japaneseROMToolStripMenuItem});
+            this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Text = "Patch";
+            // 
+            // standardROMToolStripMenuItem
+            // 
+            this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.standardROMToolStripMenuItem.Text = "Standard ROM";
+            this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
+            // 
+            // phoenixROMToolStripMenuItem
+            // 
+            this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
+            this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
+            // 
+            // japaneseROMToolStripMenuItem
+            // 
+            this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
+            this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2002,6 +2063,7 @@
             this.tabControl1.Controls.Add(this.TabPageGuile);
             this.tabControl1.Controls.Add(this.TabPageRyu);
             this.tabControl1.Controls.Add(this.TabPageChun);
+            this.tabControl1.Controls.Add(this.TabPageBoxer);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -4457,64 +4519,44 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
-            // rOMToolStripMenuItem
+            // TabPageBoxer
             // 
-            this.rOMToolStripMenuItem.Name = "rOMToolStripMenuItem";
-            this.rOMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.rOMToolStripMenuItem.Text = "ROM";
-            this.rOMToolStripMenuItem.Click += new System.EventHandler(this.openROMToolStripMenuItem_Click);
+            this.TabPageBoxer.Controls.Add(this.BOX_portraitLossBox);
+            this.TabPageBoxer.Controls.Add(this.BOX_portraitVictoryBox);
+            this.TabPageBoxer.Controls.Add(this.BOX_neutralStandBox);
+            this.TabPageBoxer.Location = new System.Drawing.Point(4, 22);
+            this.TabPageBoxer.Name = "TabPageBoxer";
+            this.TabPageBoxer.Size = new System.Drawing.Size(597, 559);
+            this.TabPageBoxer.TabIndex = 5;
+            this.TabPageBoxer.Text = "Boxer";
+            this.TabPageBoxer.UseVisualStyleBackColor = true;
             // 
-            // colorSetToolStripMenuItem1
+            // BOX_neutralStandBox
             // 
-            this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
-            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.colorSetToolStripMenuItem1.Text = "ColorSet";
-            this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
+            this.BOX_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_neutralStandBox.Location = new System.Drawing.Point(18, 23);
+            this.BOX_neutralStandBox.Name = "BOX_neutralStandBox";
+            this.BOX_neutralStandBox.Size = new System.Drawing.Size(64, 110);
+            this.BOX_neutralStandBox.TabIndex = 178;
+            this.BOX_neutralStandBox.TabStop = false;
             // 
-            // colorToolStripMenuItem
+            // BOX_portraitVictoryBox
             // 
-            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.colorToolStripMenuItem.Text = "Single Color";
-            this.colorToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            this.BOX_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_portraitVictoryBox.Location = new System.Drawing.Point(307, 24);
+            this.BOX_portraitVictoryBox.Name = "BOX_portraitVictoryBox";
+            this.BOX_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.BOX_portraitVictoryBox.TabIndex = 179;
+            this.BOX_portraitVictoryBox.TabStop = false;
             // 
-            // colorSetToolStripMenuItem2
+            // BOX_portraitLossBox
             // 
-            this.colorSetToolStripMenuItem2.Name = "colorSetToolStripMenuItem2";
-            this.colorSetToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.colorSetToolStripMenuItem2.Text = "Color Set";
-            this.colorSetToolStripMenuItem2.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
-            // 
-            // patchToolStripMenuItem
-            // 
-            this.patchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.standardROMToolStripMenuItem,
-            this.phoenixROMToolStripMenuItem,
-            this.japaneseROMToolStripMenuItem});
-            this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.patchToolStripMenuItem.Text = "Patch";
-            // 
-            // standardROMToolStripMenuItem
-            // 
-            this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.standardROMToolStripMenuItem.Text = "Standard ROM";
-            this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
-            // 
-            // phoenixROMToolStripMenuItem
-            // 
-            this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
-            this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
-            // 
-            // japaneseROMToolStripMenuItem
-            // 
-            this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
-            this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
+            this.BOX_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_portraitLossBox.Location = new System.Drawing.Point(444, 24);
+            this.BOX_portraitLossBox.Name = "BOX_portraitLossBox";
+            this.BOX_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.BOX_portraitLossBox.TabIndex = 180;
+            this.BOX_portraitLossBox.TabStop = false;
             // 
             // MainForm
             // 
@@ -4789,6 +4831,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).EndInit();
+            this.TabPageBoxer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5147,6 +5193,10 @@
         private System.Windows.Forms.ToolStripMenuItem standardROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phoenixROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem japaneseROMToolStripMenuItem;
+        private System.Windows.Forms.TabPage TabPageBoxer;
+        private System.Windows.Forms.PictureBox BOX_neutralStandBox;
+        private System.Windows.Forms.PictureBox BOX_portraitLossBox;
+        private System.Windows.Forms.PictureBox BOX_portraitVictoryBox;
     }
 }
 

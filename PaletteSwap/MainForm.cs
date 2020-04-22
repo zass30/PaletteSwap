@@ -143,6 +143,8 @@ namespace PaletteSwap
                     return CHU_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOX_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -160,6 +162,8 @@ namespace PaletteSwap
                     return CHU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOX_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -178,6 +182,8 @@ namespace PaletteSwap
                     return CHU_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOX_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -599,6 +605,7 @@ namespace PaletteSwap
                 case "crusherbottomBox":
                     currentlyZoomedLabel = "crusherbottom";
                     break;
+                case "BOX_neutralStandBox":
                 case "DIC_neutralStandBox":
                 case "CLA_neutralStandBox":
                 case "CHU_neutralStandBox":
@@ -606,6 +613,7 @@ namespace PaletteSwap
                 case "RYU_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
+                case "BOX_portraitVictoryBox":
                 case "DIC_portraitVictoryBox":
                 case "CLA_portraitVictoryBox":
                 case "CHU_portraitVictoryBox":
@@ -613,6 +621,7 @@ namespace PaletteSwap
                 case "RYU_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
+                case "BOX_portraitLossBox":
                 case "DIC_portraitLossBox":
                 case "CLA_portraitLossBox":
                 case "CHU_portraitLossBox":
