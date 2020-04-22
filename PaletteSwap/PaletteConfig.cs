@@ -31,7 +31,7 @@ namespace PaletteSwap
         static public int bisonPunchesValue = 0x14;
 
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
-        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun };
+        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun, Boxer };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
         {
@@ -285,6 +285,8 @@ namespace PaletteSwap
                     return "RYU";
                 case CHARACTERS.Chun:
                     return "CHU";
+                case CHARACTERS.Boxer:
+                    return "BOX";
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -303,6 +305,8 @@ namespace PaletteSwap
                     return CHARACTERS.Ryu;
                 case "CHU":
                     return CHARACTERS.Chun;
+                case "BOX":
+                    return CHARACTERS.Boxer;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -319,6 +323,8 @@ namespace PaletteSwap
                     return 5;
                 case CHARACTERS.Dictator:
                     return 8;
+                case CHARACTERS.Boxer:
+                    return 10;
                 case CHARACTERS.Claw:
                     return 11;
             }

@@ -154,6 +154,9 @@
     <None Include="Resources\chun\CHU_neutral1.png" />
     <None Include="Resources\chun\CHU_portraitloss1.png" />
     <None Include="Resources\chun\CHU_portraitwin1.png" />
+    <None Include="Resources\boxer\BOX_neutral0.png" />
+    <None Include="Resources\boxer\BOX_portraitloss0.png" />
+    <None Include="Resources\boxer\BOX_portraitwin0.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />

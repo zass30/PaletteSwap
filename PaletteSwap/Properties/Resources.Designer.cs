@@ -243,6 +243,216 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BOX_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("BOX_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BOX_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("BOX_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BOX_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("BOX_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F C90F A80D 960B 7409 5307 3005 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9A00 FF0F C90F A80D 960B 7409 5307 3005 CF00 AE00 8D00 5A00 7B0F 470E 250B 000A 9A00 FF0F DF0F CE0F AD0F 9C0F 8B0F 7A0F CF00 AE00 8D00 5A00 7B0F 470E 250B 000A 0A00 FF0F C90F A80D 960B 7409 5307 3005 CF00 AE00 8D00 5A00 9C08 000C 000A 0008 9A00.
+        /// </summary>
+        public static string box0portrait {
+            get {
+                return ResourceManager.GetString("box0portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 250B 4006 5408 760C 980E CA0F EC0F 470E 7B0F 4900 5A00 8D00 AE00 CF00 FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 000.
+        /// </summary>
+        public static string box0sprite {
+            get {
+                return ResourceManager.GetString("box0sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F D90F B70F 960E 750C 540A 3106 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F D90F B70F 960E 750C 540A 3106 FC0F E70E C40D 900A 800E 600E 500D 000C 9009 FF0F FE0F FC0F EA0F D80F C60F A40F FC0F E70E C40D 900A 800E 600E 500D 000C 9009 BD0A D90F B70F 960E 750C 540A 3106 FC0F E70E C40D 900A 9C08 000C 000A 0008 9009.
+        /// </summary>
+        public static string box1portrait {
+            get {
+                return ResourceManager.GetString("box1portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 500F 3106 540A 750C 960E B70F D90F 800F C00F 7008 900A C40D E70E FC0F FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box1sprite {
+            get {
+                return ResourceManager.GetString("box1sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F D90F A60D 740B 5209 4007 2105 FF0F DE0C BD0A 9C08 AB0D 890B 6709 4507 9009 FF0F D90F A60D 740B 5209 4007 2105 E80F B60F 840E 500D D005 A002 8000 6000 9009 FF0F FF0E FF0D FD0C FA0B F70A F009 E80F B60F 840E 500D D005 A002 8000 6000 9009 BD0A D90F A60D 740B 5209 4007 2105 E80F B60F 840E 500D 9C08 600F 000D 000B 9009.
+        /// </summary>
+        public static string box2portrait {
+            get {
+                return ResourceManager.GetString("box2portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A002 1003 2105 3007 5209 840C B70E D005 F009 200C 500E A40F C60F E80F FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box2sprite {
+            get {
+                return ResourceManager.GetString("box2sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EA0F B70E 960C 750B 5309 2105 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F EA0F B70E 960C 750B 5309 2105 FC0E F90B B608 8406 500E 000C 000A 0008 9009 FF0F FF0F FA0F E40F B30F 920F 700F FC0E F90B B608 8406 500E 000C 000A 0008 9009 BD0A EA0F B70E 960C 750B 5309 2105 FC0E F90B B608 8406 9C08 000C 000A 0008 9009.
+        /// </summary>
+        public static string box3portrait {
+            get {
+                return ResourceManager.GetString("box3portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 200C 2105 5309 750B 960C B70E EA0F 430D 850F 7204 A507 C709 F90B FC0E FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box3sprite {
+            get {
+                return ResourceManager.GetString("box3sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EA0F B70E 960C 750B 4309 3106 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F EA0F B70E 960C 750B 4309 3106 CB0F 980F 640D 110B 6802 5701 4500 3200 9009 FF0F EF0E DF0C BD0A 9B07 8A04 7903 CB0F 980F 640D 110B 6802 5701 4500 3200 9009 BD0A EA0F B70E 960C 750B 4309 3106 CB0F 980F 640D 110B 9C08 600F 000D 000B 9009.
+        /// </summary>
+        public static string box4portrait {
+            get {
+                return ResourceManager.GetString("box4portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4402 1103 4107 750B 960C B70E EA0F 5603 8A04 1109 320D 640F 980F BA0F FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box4sprite {
+            get {
+                return ResourceManager.GetString("box4sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EA0F B70E 960C 750B 5309 2105 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F EA0F B70E 960C 750B 5309 2105 CF0F 9E0C 6E0A 5A06 500C 000A 0009 0008 9009 FF0F EE0F CD0F AB0F 880F 740E 600D CF0F 9E0C 6E0A 5A06 500C 000A 0009 0008 9009 BD0A EA0F B70E 960C 750B 5309 2105 CF0F 9E0C 6E0A 5A06 9C08 600F 000D 000B 9009.
+        /// </summary>
+        public static string box5portrait {
+            get {
+                return ResourceManager.GetString("box5portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 200C 2105 5309 750B 960C B70E EA0F 430D 850F 5A06 6E0A 9E0C CF0F EF0F FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box5sprite {
+            get {
+                return ResourceManager.GetString("box5sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EA0F B70E 960C 750B 5309 2105 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F EA0F B70E 960C 750B 5309 2105 DA0F A70D 850A 6308 500C 000A 0009 0008 9009 FF0F EE0F CD0F AB0F 880F 740E 600D DA0F A70D 850A 6308 500C 000A 0009 0008 9009 BD0A EA0F B70E 960C 750B 5309 2105 DA0F A70D 850A 6308 9C08 000C 000A 0008 9009.
+        /// </summary>
+        public static string box6portrait {
+            get {
+                return ResourceManager.GetString("box6portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 200C 2105 5309 750B 960C B70E EA0F 430D 850F 3004 5307 850A A70D DA0F FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box6sprite {
+            get {
+                return ResourceManager.GetString("box6sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F D90F B70F 960E 750C 540A 3106 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F D90F B70F 960E 750C 540A 3106 CD0C 8908 6706 4504 660F 440C 330A 0008 9009 FF0F FE0F DD0F CC0F BB0F 990F 880F CD0C 8908 6706 4504 660F 440C 330A 0008 9009 BD0A D90F B70F 960E 750C 540A 3106 CD0C 8908 6706 4504 9C08 000C 000A 0008 9009.
+        /// </summary>
+        public static string box7portrait {
+            get {
+                return ResourceManager.GetString("box7portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 330D 3106 540A 750C 960E B70F D90F 440E 770F 2202 4404 6606 8808 AA0A FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box7sprite {
+            get {
+                return ResourceManager.GetString("box7sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EA0F B70E 960C 750B 5309 3106 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F EA0F B70E 960C 750B 5309 3106 EF0D BE09 9D06 7906 880E 660E 550D 000A 9009 FF0F EE0F DD0F CC0F BB0F AA0F 990F EF0D BE09 9D06 7906 880E 660E 550D 000A 9009 BD0A EA0F B70E 960C 750B 5309 3106 EF0D BE09 9D06 7906 9C08 600F 000D 000B 9009.
+        /// </summary>
+        public static string box8portrait {
+            get {
+                return ResourceManager.GetString("box8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 550D 3106 5309 750B 960C B70E EA0F 660E 990F 7906 9D06 BE09 DE0B EF0D FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box8sprite {
+            get {
+                return ResourceManager.GetString("box8sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FF0F EA0F B70E 960C 750B 5309 3106 FF0F DE0C BD0A 9C08 BC0E 9A0C 780A 5608 9009 FF0F EA0F B70E 960C 750B 5309 3106 EF0D BE09 9D06 7906 880E 660E 550D 000A 9009 FF0F EE0F DD0F CC0F BB0F AA0F 990F EF0D BE09 9D06 7906 880E 660E 550D 000A 9009 BD0A EA0F B70E 960C 750B 5309 3106 EF0D BE09 9D06 7906 9C08 600F 000D 000B 9009.
+        /// </summary>
+        public static string box9portrait {
+            get {
+                return ResourceManager.GetString("box9portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 500D 3106 5309 750B 960C B70E EA0F 700E A00E 8905 AD05 CE08 EE0A FF0C FF0F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 4B04 4B04 5B05 6B06 7B07 8B08 9B09 6B06 8B08 5B05 6B06 7B07 8B08 9B09 AB0A 0000 2802 2802 3803 4804 5805 6806 7807 4804 6806 3803 4804 5805 6806 7807 8808 0000 0600 0600 1601 2602 3603 4604 5605 2602 4604 1601 2602 3603 4604 5605 6606 0000.
+        /// </summary>
+        public static string box9sprite {
+            get {
+                return ResourceManager.GetString("box9sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap CHU_neutral1 {
             get {
                 object obj = ResourceManager.GetObject("CHU_neutral1", resourceCulture);
