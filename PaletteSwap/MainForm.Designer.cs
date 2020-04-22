@@ -4539,6 +4539,7 @@
             this.BOX_neutralStandBox.Size = new System.Drawing.Size(64, 110);
             this.BOX_neutralStandBox.TabIndex = 178;
             this.BOX_neutralStandBox.TabStop = false;
+            this.BOX_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // BOX_portraitVictoryBox
             // 
@@ -4548,6 +4549,7 @@
             this.BOX_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.BOX_portraitVictoryBox.TabIndex = 179;
             this.BOX_portraitVictoryBox.TabStop = false;
+            this.BOX_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // BOX_portraitLossBox
             // 
@@ -4557,6 +4559,7 @@
             this.BOX_portraitLossBox.Size = new System.Drawing.Size(128, 112);
             this.BOX_portraitLossBox.TabIndex = 180;
             this.BOX_portraitLossBox.TabStop = false;
+            this.BOX_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // MainForm
             // 

@@ -43,6 +43,7 @@ namespace PaletteSwap
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun] = new CharacterSet(CharacterConfig.CHARACTERS.Chun);
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = new CharacterSet(CharacterConfig.CHARACTERS.Boxer);
             characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
 
@@ -1039,6 +1040,14 @@ namespace PaletteSwap
             {
                 currentCharacterType = CharacterConfig.CHARACTERS.Chun;
                 characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+            else if (selt.Name == "TabPageBoxer")
+            {
+                currentCharacterType = CharacterConfig.CHARACTERS.Boxer;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();
