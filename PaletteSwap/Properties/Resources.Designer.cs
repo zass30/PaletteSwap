@@ -663,16 +663,6 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap clawportrait7 {
-            get {
-                object obj = ResourceManager.GetObject("clawportrait7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap DIC_portraitloss0 {
             get {
                 object obj = ResourceManager.GetObject("DIC_portraitloss0", resourceCulture);
