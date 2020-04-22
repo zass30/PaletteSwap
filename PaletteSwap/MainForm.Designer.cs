@@ -380,11 +380,7 @@
             this.CHU_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.COLlabel = new System.Windows.Forms.Label();
             this.TabPageBoxer = new System.Windows.Forms.TabPage();
-            this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.BOX_portraitLossBox = new System.Windows.Forms.PictureBox();
-            this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.BOX_sprite_costume5 = new System.Windows.Forms.PictureBox();
             this.BOX_sprite_costume3 = new System.Windows.Forms.PictureBox();
             this.BOX_sprite_gloves1 = new System.Windows.Forms.PictureBox();
@@ -400,6 +396,14 @@
             this.BOX_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.BOX_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.BOX_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -641,9 +645,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).BeginInit();
             this.TabPageBoxer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves1)).BeginInit();
@@ -659,6 +660,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -4545,18 +4549,12 @@
             this.CHU_neutralStandBox.TabStop = false;
             this.CHU_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
-            // COLlabel
-            // 
-            this.COLlabel.AllowDrop = true;
-            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.COLlabel.Location = new System.Drawing.Point(341, 663);
-            this.COLlabel.Name = "COLlabel";
-            this.COLlabel.Size = new System.Drawing.Size(90, 49);
-            this.COLlabel.TabIndex = 122;
-            this.COLlabel.Text = "Drag COL file";
-            // 
             // TabPageBoxer
             // 
+            this.TabPageBoxer.Controls.Add(this.label65);
+            this.TabPageBoxer.Controls.Add(this.label56);
+            this.TabPageBoxer.Controls.Add(this.label63);
+            this.TabPageBoxer.Controls.Add(this.label64);
             this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume5);
             this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume3);
             this.TabPageBoxer.Controls.Add(this.BOX_sprite_gloves1);
@@ -4581,33 +4579,6 @@
             this.TabPageBoxer.TabIndex = 5;
             this.TabPageBoxer.Text = "Boxer";
             this.TabPageBoxer.UseVisualStyleBackColor = true;
-            // 
-            // BOX_neutralStandBox
-            // 
-            this.BOX_neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.BOX_neutralStandBox.Location = new System.Drawing.Point(18, 16);
-            this.BOX_neutralStandBox.Name = "BOX_neutralStandBox";
-            this.BOX_neutralStandBox.Size = new System.Drawing.Size(72, 85);
-            this.BOX_neutralStandBox.TabIndex = 178;
-            this.BOX_neutralStandBox.TabStop = false;
-            // 
-            // BOX_portraitLossBox
-            // 
-            this.BOX_portraitLossBox.BackColor = System.Drawing.Color.Black;
-            this.BOX_portraitLossBox.Location = new System.Drawing.Point(440, 16);
-            this.BOX_portraitLossBox.Name = "BOX_portraitLossBox";
-            this.BOX_portraitLossBox.Size = new System.Drawing.Size(128, 112);
-            this.BOX_portraitLossBox.TabIndex = 181;
-            this.BOX_portraitLossBox.TabStop = false;
-            // 
-            // BOX_portraitVictoryBox
-            // 
-            this.BOX_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.BOX_portraitVictoryBox.Location = new System.Drawing.Point(303, 16);
-            this.BOX_portraitVictoryBox.Name = "BOX_portraitVictoryBox";
-            this.BOX_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
-            this.BOX_portraitVictoryBox.TabIndex = 180;
-            this.BOX_portraitVictoryBox.TabStop = false;
             // 
             // BOX_sprite_costume5
             // 
@@ -4773,6 +4744,82 @@
             this.BOX_sprite_skin4.TabStop = false;
             this.BOX_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portraitLossBox
+            // 
+            this.BOX_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_portraitLossBox.Location = new System.Drawing.Point(440, 16);
+            this.BOX_portraitLossBox.Name = "BOX_portraitLossBox";
+            this.BOX_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.BOX_portraitLossBox.TabIndex = 181;
+            this.BOX_portraitLossBox.TabStop = false;
+            this.BOX_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // BOX_portraitVictoryBox
+            // 
+            this.BOX_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_portraitVictoryBox.Location = new System.Drawing.Point(303, 16);
+            this.BOX_portraitVictoryBox.Name = "BOX_portraitVictoryBox";
+            this.BOX_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.BOX_portraitVictoryBox.TabIndex = 180;
+            this.BOX_portraitVictoryBox.TabStop = false;
+            this.BOX_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // BOX_neutralStandBox
+            // 
+            this.BOX_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_neutralStandBox.Location = new System.Drawing.Point(18, 16);
+            this.BOX_neutralStandBox.Name = "BOX_neutralStandBox";
+            this.BOX_neutralStandBox.Size = new System.Drawing.Size(64, 110);
+            this.BOX_neutralStandBox.TabIndex = 178;
+            this.BOX_neutralStandBox.TabStop = false;
+            this.BOX_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // COLlabel
+            // 
+            this.COLlabel.AllowDrop = true;
+            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.COLlabel.Location = new System.Drawing.Point(341, 663);
+            this.COLlabel.Name = "COLlabel";
+            this.COLlabel.Size = new System.Drawing.Size(90, 49);
+            this.COLlabel.TabIndex = 122;
+            this.COLlabel.Text = "Drag COL file";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(15, 199);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(47, 13);
+            this.label56.TabIndex = 264;
+            this.label56.Text = "costume";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(15, 228);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(38, 13);
+            this.label63.TabIndex = 263;
+            this.label63.Text = "gloves";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(16, 169);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(26, 13);
+            this.label64.TabIndex = 262;
+            this.label64.Text = "skin";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(15, 259);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(32, 13);
+            this.label65.TabIndex = 265;
+            this.label65.Text = "shine";
             // 
             // MainForm
             // 
@@ -5048,9 +5095,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).EndInit();
             this.TabPageBoxer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
+            this.TabPageBoxer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves1)).EndInit();
@@ -5066,6 +5111,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5443,6 +5491,10 @@
         private System.Windows.Forms.PictureBox BOX_sprite_skin2;
         private System.Windows.Forms.PictureBox BOX_sprite_skin3;
         private System.Windows.Forms.PictureBox BOX_sprite_skin4;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
     }
 }
 
