@@ -65,13 +65,21 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorSetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorSetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.patchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.standardROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phoenixROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.japaneseROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -373,14 +381,25 @@
             this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
-            this.rOMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorSetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorSetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.patchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phoenixROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.japaneseROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TabPageBoxer = new System.Windows.Forms.TabPage();
+            this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_gloves1 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_gloves2 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_gloves3 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_shine = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -621,6 +640,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).BeginInit();
+            this.TabPageBoxer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_shine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -970,7 +1008,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -983,13 +1021,27 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
+            // 
+            // rOMToolStripMenuItem
+            // 
+            this.rOMToolStripMenuItem.Name = "rOMToolStripMenuItem";
+            this.rOMToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.rOMToolStripMenuItem.Text = "ROM";
+            this.rOMToolStripMenuItem.Click += new System.EventHandler(this.openROMToolStripMenuItem_Click);
+            // 
+            // colorSetToolStripMenuItem1
+            // 
+            this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
+            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
+            this.colorSetToolStripMenuItem1.Text = "ColorSet";
+            this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -997,7 +1049,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -1007,13 +1059,27 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.colorToolStripMenuItem.Text = "Single Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            // 
+            // colorSetToolStripMenuItem2
+            // 
+            this.colorSetToolStripMenuItem2.Name = "colorSetToolStripMenuItem2";
+            this.colorSetToolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
+            this.colorSetToolStripMenuItem2.Text = "Color Set";
+            this.colorSetToolStripMenuItem2.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -1022,7 +1088,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -1031,19 +1097,50 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            // 
+            // patchToolStripMenuItem
+            // 
+            this.patchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.standardROMToolStripMenuItem,
+            this.phoenixROMToolStripMenuItem,
+            this.japaneseROMToolStripMenuItem});
+            this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Text = "Patch";
+            // 
+            // standardROMToolStripMenuItem
+            // 
+            this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.standardROMToolStripMenuItem.Text = "Standard ROM";
+            this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
+            // 
+            // phoenixROMToolStripMenuItem
+            // 
+            this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
+            this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
+            // 
+            // japaneseROMToolStripMenuItem
+            // 
+            this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
+            this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2002,6 +2099,7 @@
             this.tabControl1.Controls.Add(this.TabPageGuile);
             this.tabControl1.Controls.Add(this.TabPageRyu);
             this.tabControl1.Controls.Add(this.TabPageChun);
+            this.tabControl1.Controls.Add(this.TabPageBoxer);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -4457,64 +4555,224 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
-            // rOMToolStripMenuItem
+            // TabPageBoxer
             // 
-            this.rOMToolStripMenuItem.Name = "rOMToolStripMenuItem";
-            this.rOMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.rOMToolStripMenuItem.Text = "ROM";
-            this.rOMToolStripMenuItem.Click += new System.EventHandler(this.openROMToolStripMenuItem_Click);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume5);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume3);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_gloves1);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_gloves2);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_gloves3);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_shine);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume4);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_skin6);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_skin5);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume1);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_costume2);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_skin1);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_skin2);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_skin3);
+            this.TabPageBoxer.Controls.Add(this.BOX_sprite_skin4);
+            this.TabPageBoxer.Controls.Add(this.BOX_portraitLossBox);
+            this.TabPageBoxer.Controls.Add(this.BOX_portraitVictoryBox);
+            this.TabPageBoxer.Controls.Add(this.BOX_neutralStandBox);
+            this.TabPageBoxer.Location = new System.Drawing.Point(4, 22);
+            this.TabPageBoxer.Name = "TabPageBoxer";
+            this.TabPageBoxer.Size = new System.Drawing.Size(597, 559);
+            this.TabPageBoxer.TabIndex = 5;
+            this.TabPageBoxer.Text = "Boxer";
+            this.TabPageBoxer.UseVisualStyleBackColor = true;
             // 
-            // colorSetToolStripMenuItem1
+            // BOX_neutralStandBox
             // 
-            this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
-            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.colorSetToolStripMenuItem1.Text = "ColorSet";
-            this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
+            this.BOX_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_neutralStandBox.Location = new System.Drawing.Point(18, 16);
+            this.BOX_neutralStandBox.Name = "BOX_neutralStandBox";
+            this.BOX_neutralStandBox.Size = new System.Drawing.Size(72, 85);
+            this.BOX_neutralStandBox.TabIndex = 178;
+            this.BOX_neutralStandBox.TabStop = false;
             // 
-            // colorToolStripMenuItem
+            // BOX_portraitLossBox
             // 
-            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.colorToolStripMenuItem.Text = "Single Color";
-            this.colorToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            this.BOX_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_portraitLossBox.Location = new System.Drawing.Point(440, 16);
+            this.BOX_portraitLossBox.Name = "BOX_portraitLossBox";
+            this.BOX_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.BOX_portraitLossBox.TabIndex = 181;
+            this.BOX_portraitLossBox.TabStop = false;
             // 
-            // colorSetToolStripMenuItem2
+            // BOX_portraitVictoryBox
             // 
-            this.colorSetToolStripMenuItem2.Name = "colorSetToolStripMenuItem2";
-            this.colorSetToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.colorSetToolStripMenuItem2.Text = "Color Set";
-            this.colorSetToolStripMenuItem2.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
+            this.BOX_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.BOX_portraitVictoryBox.Location = new System.Drawing.Point(303, 16);
+            this.BOX_portraitVictoryBox.Name = "BOX_portraitVictoryBox";
+            this.BOX_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.BOX_portraitVictoryBox.TabIndex = 180;
+            this.BOX_portraitVictoryBox.TabStop = false;
             // 
-            // patchToolStripMenuItem
+            // BOX_sprite_costume5
             // 
-            this.patchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.standardROMToolStripMenuItem,
-            this.phoenixROMToolStripMenuItem,
-            this.japaneseROMToolStripMenuItem});
-            this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.patchToolStripMenuItem.Text = "Patch";
+            this.BOX_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_costume5.Location = new System.Drawing.Point(182, 188);
+            this.BOX_sprite_costume5.Name = "BOX_sprite_costume5";
+            this.BOX_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_costume5.TabIndex = 260;
+            this.BOX_sprite_costume5.TabStop = false;
+            this.BOX_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // standardROMToolStripMenuItem
+            // BOX_sprite_costume3
             // 
-            this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.standardROMToolStripMenuItem.Text = "Standard ROM";
-            this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
+            this.BOX_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_costume3.Location = new System.Drawing.Point(122, 188);
+            this.BOX_sprite_costume3.Name = "BOX_sprite_costume3";
+            this.BOX_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_costume3.TabIndex = 261;
+            this.BOX_sprite_costume3.TabStop = false;
+            this.BOX_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // phoenixROMToolStripMenuItem
+            // BOX_sprite_gloves1
             // 
-            this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
-            this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
+            this.BOX_sprite_gloves1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_gloves1.Location = new System.Drawing.Point(62, 218);
+            this.BOX_sprite_gloves1.Name = "BOX_sprite_gloves1";
+            this.BOX_sprite_gloves1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_gloves1.TabIndex = 254;
+            this.BOX_sprite_gloves1.TabStop = false;
+            this.BOX_sprite_gloves1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_gloves1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // japaneseROMToolStripMenuItem
+            // BOX_sprite_gloves2
             // 
-            this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
-            this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
+            this.BOX_sprite_gloves2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_gloves2.Location = new System.Drawing.Point(92, 218);
+            this.BOX_sprite_gloves2.Name = "BOX_sprite_gloves2";
+            this.BOX_sprite_gloves2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_gloves2.TabIndex = 255;
+            this.BOX_sprite_gloves2.TabStop = false;
+            this.BOX_sprite_gloves2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_gloves2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_gloves3
+            // 
+            this.BOX_sprite_gloves3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_gloves3.Location = new System.Drawing.Point(122, 218);
+            this.BOX_sprite_gloves3.Name = "BOX_sprite_gloves3";
+            this.BOX_sprite_gloves3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_gloves3.TabIndex = 256;
+            this.BOX_sprite_gloves3.TabStop = false;
+            this.BOX_sprite_gloves3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_gloves3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_shine
+            // 
+            this.BOX_sprite_shine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_shine.Location = new System.Drawing.Point(62, 248);
+            this.BOX_sprite_shine.Name = "BOX_sprite_shine";
+            this.BOX_sprite_shine.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_shine.TabIndex = 257;
+            this.BOX_sprite_shine.TabStop = false;
+            this.BOX_sprite_shine.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_shine.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_costume4
+            // 
+            this.BOX_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_costume4.Location = new System.Drawing.Point(152, 188);
+            this.BOX_sprite_costume4.Name = "BOX_sprite_costume4";
+            this.BOX_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_costume4.TabIndex = 258;
+            this.BOX_sprite_costume4.TabStop = false;
+            this.BOX_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_skin6
+            // 
+            this.BOX_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_skin6.Location = new System.Drawing.Point(212, 158);
+            this.BOX_sprite_skin6.Name = "BOX_sprite_skin6";
+            this.BOX_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_skin6.TabIndex = 259;
+            this.BOX_sprite_skin6.TabStop = false;
+            this.BOX_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_skin5
+            // 
+            this.BOX_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_skin5.Location = new System.Drawing.Point(182, 158);
+            this.BOX_sprite_skin5.Name = "BOX_sprite_skin5";
+            this.BOX_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_skin5.TabIndex = 251;
+            this.BOX_sprite_skin5.TabStop = false;
+            this.BOX_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_costume1
+            // 
+            this.BOX_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_costume1.Location = new System.Drawing.Point(62, 188);
+            this.BOX_sprite_costume1.Name = "BOX_sprite_costume1";
+            this.BOX_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_costume1.TabIndex = 252;
+            this.BOX_sprite_costume1.TabStop = false;
+            this.BOX_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_costume2
+            // 
+            this.BOX_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_costume2.Location = new System.Drawing.Point(92, 188);
+            this.BOX_sprite_costume2.Name = "BOX_sprite_costume2";
+            this.BOX_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_costume2.TabIndex = 253;
+            this.BOX_sprite_costume2.TabStop = false;
+            this.BOX_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_skin1
+            // 
+            this.BOX_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_skin1.Location = new System.Drawing.Point(62, 158);
+            this.BOX_sprite_skin1.Name = "BOX_sprite_skin1";
+            this.BOX_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_skin1.TabIndex = 247;
+            this.BOX_sprite_skin1.TabStop = false;
+            this.BOX_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_skin2
+            // 
+            this.BOX_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_skin2.Location = new System.Drawing.Point(92, 158);
+            this.BOX_sprite_skin2.Name = "BOX_sprite_skin2";
+            this.BOX_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_skin2.TabIndex = 248;
+            this.BOX_sprite_skin2.TabStop = false;
+            this.BOX_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_skin3
+            // 
+            this.BOX_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_skin3.Location = new System.Drawing.Point(122, 158);
+            this.BOX_sprite_skin3.Name = "BOX_sprite_skin3";
+            this.BOX_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_skin3.TabIndex = 249;
+            this.BOX_sprite_skin3.TabStop = false;
+            this.BOX_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_sprite_skin4
+            // 
+            this.BOX_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_sprite_skin4.Location = new System.Drawing.Point(152, 158);
+            this.BOX_sprite_skin4.Name = "BOX_sprite_skin4";
+            this.BOX_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_sprite_skin4.TabIndex = 250;
+            this.BOX_sprite_skin4.TabStop = false;
+            this.BOX_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BOX_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -4789,6 +5047,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).EndInit();
+            this.TabPageBoxer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_shine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_skin4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5147,6 +5424,25 @@
         private System.Windows.Forms.ToolStripMenuItem standardROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phoenixROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem japaneseROMToolStripMenuItem;
+        private System.Windows.Forms.TabPage TabPageBoxer;
+        private System.Windows.Forms.PictureBox BOX_portraitLossBox;
+        private System.Windows.Forms.PictureBox BOX_portraitVictoryBox;
+        private System.Windows.Forms.PictureBox BOX_neutralStandBox;
+        private System.Windows.Forms.PictureBox BOX_sprite_costume5;
+        private System.Windows.Forms.PictureBox BOX_sprite_costume3;
+        private System.Windows.Forms.PictureBox BOX_sprite_gloves1;
+        private System.Windows.Forms.PictureBox BOX_sprite_gloves2;
+        private System.Windows.Forms.PictureBox BOX_sprite_gloves3;
+        private System.Windows.Forms.PictureBox BOX_sprite_shine;
+        private System.Windows.Forms.PictureBox BOX_sprite_costume4;
+        private System.Windows.Forms.PictureBox BOX_sprite_skin6;
+        private System.Windows.Forms.PictureBox BOX_sprite_skin5;
+        private System.Windows.Forms.PictureBox BOX_sprite_costume1;
+        private System.Windows.Forms.PictureBox BOX_sprite_costume2;
+        private System.Windows.Forms.PictureBox BOX_sprite_skin1;
+        private System.Windows.Forms.PictureBox BOX_sprite_skin2;
+        private System.Windows.Forms.PictureBox BOX_sprite_skin3;
+        private System.Windows.Forms.PictureBox BOX_sprite_skin4;
     }
 }
 

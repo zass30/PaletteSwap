@@ -26,7 +26,7 @@ namespace PaletteSwap
         static public int portrait2BeginOffset = 0x36CFE;
         static public int portraitStep = 0x500;
         static public int portraitColorLength = 0x80;
-        static public List<int> bisonPunchesAddresses = 
+        static public List<int> bisonPunchesAddresses =
             new List<int>() { 0x6BD1A, 0x6BD1E, 0x6BFB6, 0x6C024, 0x6C038, 0x6C03C, 0x6C04C, 0x6C050 };
         static public int bisonPunchesValue = 0x14;
 
@@ -37,51 +37,97 @@ namespace PaletteSwap
         {
             byte[] sprite_bytestream = new byte[0];
             byte[] portrait_bytestream = new byte[0];
-            switch (c) {
+            switch (c)
+            {
                 case CHARACTERS.Claw:
                     switch (b)
-            {
-                case CharacterConfig.BUTTONS.lp:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0portrait);
+                    {
+                        case CharacterConfig.BUTTONS.lp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla0portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.lk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.start:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hold:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old1:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old2:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9portrait);
+                            break;
+                    }
                     break;
-                case CharacterConfig.BUTTONS.mp:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla1portrait);
-                    break;
-                case CharacterConfig.BUTTONS.hp:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla2portrait);
-                    break;
-                case CharacterConfig.BUTTONS.lk:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla3portrait);
-                    break;
-                case CharacterConfig.BUTTONS.mk:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla4portrait);
-                    break;
-                case CharacterConfig.BUTTONS.hk:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla5portrait);
-                    break;
-                case CharacterConfig.BUTTONS.start:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla6portrait);
-                    break;
-                case CharacterConfig.BUTTONS.hold:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla7portrait);
-                    break;
-                case CharacterConfig.BUTTONS.old1:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla8portrait);
-                    break;
-                case CharacterConfig.BUTTONS.old2:
-                    sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9sprite);
-                    portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.cla9portrait);
-                    break;
-            }
+                case CHARACTERS.Boxer:
+                    switch (b)
+                    {
+                        case CharacterConfig.BUTTONS.lp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box0sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box0portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box1sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box1portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box2sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box2portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.lk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box3sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box3portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box4sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box4portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box5sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box5portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.start:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box6sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box6portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hold:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box7sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box7portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old1:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box8sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box8portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old2:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box9sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.box9portrait);
+                            break;
+                    }
                     break;
                 case CHARACTERS.Dictator:
                     switch (b)
@@ -270,7 +316,7 @@ namespace PaletteSwap
             p.portraitStream = portrait_bytestream;
             return p;
         }
-        
+
         public static string CodeFromCharacterEnum(CHARACTERS c)
         {
             switch (c)
@@ -290,7 +336,7 @@ namespace PaletteSwap
             }
             throw new ArgumentException("Invalid Character type");
         }
-        
+
         public static CHARACTERS CharacterEnumFromCode(string s)
         {
             switch (s)
@@ -388,7 +434,8 @@ namespace PaletteSwap
                     return CLAW.GenerateClawSpriteConfig();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DICTATOR.GenerateDictatorSpriteConfig();
-
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOXER.GenerateBoxerSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -407,6 +454,8 @@ namespace PaletteSwap
                     return CLAW.GenerateClawPortraitConfig();
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DICTATOR.GenerateDictatorPortraitConfig();
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOXER.GenerateBoxerPortraitConfig();
 
             }
             throw new Exception("Invalid character");
@@ -466,7 +515,7 @@ namespace PaletteSwap
                 return pc;
             }
 
-            public static Dictionary<string, List<int>> GenerateChunPortraitOffsets()
+            public static Dictionary<string, List<int>> GenerateBoxerPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
@@ -493,14 +542,21 @@ namespace PaletteSwap
         { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
         { "costume4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
 
-        { "gloves1", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
-        { "gloves2", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
-        { "gloves3", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
-        { "gloves4", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
+        { "gloves7", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
+        { "gloves8", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
+        { "gloves9", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
+        { "gloves10", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
 
         { "blood1", new List<int>() { ROWLEN * 3 + 24 } },
         { "blood2", new List<int>() { ROWLEN * 3 + 26 } },
         { "blood3", new List<int>() { ROWLEN * 3 + 28 } },
+
+        { "gloves1", new List<int>() { ROWLEN * 2 + 2 } },
+        { "gloves2", new List<int>() { ROWLEN * 2 + 4 } },
+        { "gloves3", new List<int>() { ROWLEN * 2 + 6 } },
+        { "gloves4", new List<int>() { ROWLEN * 2 + 8 } },
+        { "gloves5", new List<int>() { ROWLEN * 2 + 10 } },
+        { "gloves6", new List<int>() { ROWLEN * 2 + 12 } },
                 };
 
                 return portraitOffsets;
@@ -518,12 +574,12 @@ namespace PaletteSwap
                     defaultColorOffsets.Add(dco);
                 }
 
-            /*    ColorOffset dco1 = new ColorOffset();
-                dco1.c = PaletteHelper.MemFormatToColor("FF00");
-                dco1.position = 10;
-                defaultColorOffsets.Add(dco1);
-                */
-                Dictionary<string, List<int>> boxerPortraitOffsets = GenerateChunPortraitOffsets();
+                /*    ColorOffset dco1 = new ColorOffset();
+                    dco1.c = PaletteHelper.MemFormatToColor("FF00");
+                    dco1.position = 10;
+                    defaultColorOffsets.Add(dco1);
+                    */
+                Dictionary<string, List<int>> boxerPortraitOffsets = GenerateBoxerPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = boxerPortraitOffsets;
                 pc.defaultColorOffsets = defaultColorOffsets;
@@ -709,7 +765,7 @@ namespace PaletteSwap
                 string defaults = "F00F F00F";//just a test to flush out unknown spot
                 int defaultsOffset = 20;
                 pc.createColorOffsets(defaults, defaultsOffset);
-//                pc.defaultColorOffsets = defaultColorOffsets;
+                //                pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;
@@ -1043,6 +1099,9 @@ PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSp
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_neutral7),
 PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_neutral0),
+PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -1065,6 +1124,9 @@ PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuile
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitwin7),
 PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_portraitwin0),
+PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -1087,6 +1149,9 @@ PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuile
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitloss7),
 PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_portraitloss0),
+PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -1125,7 +1190,7 @@ PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPort
             p.labels = labels;
             return p;
         }
-    
+
         public struct Dictator
         {
             public struct SPRITE

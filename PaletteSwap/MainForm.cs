@@ -43,6 +43,7 @@ namespace PaletteSwap
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun] = new CharacterSet(CharacterConfig.CHARACTERS.Chun);
+            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = new CharacterSet(CharacterConfig.CHARACTERS.Boxer);
             characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
 
@@ -51,7 +52,7 @@ namespace PaletteSwap
         {
             colorSelectorBox.SelectedIndex = DEFAULT_DROPDOWN_INDEX;
         }
-        
+
         public void CreateZoomAndColorForms()
         {
             z = new ZoomForm(this);
@@ -143,6 +144,8 @@ namespace PaletteSwap
                     return CHU_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOX_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -153,13 +156,16 @@ namespace PaletteSwap
 
         private PictureBox GetPortraitLossBox()
         {
-            switch (currentCharacterType){
+            switch (currentCharacterType)
+            {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOX_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -178,6 +184,8 @@ namespace PaletteSwap
                     return CHU_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Guile:
                     return GUI_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOX_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dictator:
@@ -188,7 +196,8 @@ namespace PaletteSwap
 
         private void load_sprite_buttons()
         {
-            switch (currentCharacterType) {
+            switch (currentCharacterType)
+            {
                 case CharacterConfig.CHARACTERS.Dictator:
                     DIC_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
                     DIC_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
@@ -254,6 +263,26 @@ namespace PaletteSwap
                     sprite_claw_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
                     sprite_claw_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
                     sprite_claw_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    break;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    BOX_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    BOX_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    BOX_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    BOX_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    BOX_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    BOX_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+
+                    BOX_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    BOX_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    BOX_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    BOX_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    BOX_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+
+                    BOX_sprite_gloves1.BackColor = currentCharacter.sprite.GetColor("gloves1");
+                    BOX_sprite_gloves2.BackColor = currentCharacter.sprite.GetColor("gloves2");
+                    BOX_sprite_gloves3.BackColor = currentCharacter.sprite.GetColor("gloves3");
+
+                    BOX_sprite_shine.BackColor = currentCharacter.sprite.GetColor("shine");
                     break;
                 case CharacterConfig.CHARACTERS.Guile:
                     GUI_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
@@ -497,7 +526,7 @@ namespace PaletteSwap
                     {
                         for (int j = 0; j < factor; j++)
                         {
-                            newbmp.SetPixel(factor * x+i, factor * y+j, gotColor);
+                            newbmp.SetPixel(factor * x + i, factor * y + j, gotColor);
                         }
                     }
                 }
@@ -583,7 +612,7 @@ namespace PaletteSwap
             PictureBox p = (PictureBox)sender;
             if (z.IsDisposed)
                 z = new ZoomForm(this);
-            z.Show(); 
+            z.Show();
             // todo replace this with a regex
             switch (p.Name)
             {
@@ -599,6 +628,7 @@ namespace PaletteSwap
                 case "crusherbottomBox":
                     currentlyZoomedLabel = "crusherbottom";
                     break;
+                case "BOX_neutralStandBox":
                 case "DIC_neutralStandBox":
                 case "CLA_neutralStandBox":
                 case "CHU_neutralStandBox":
@@ -606,6 +636,7 @@ namespace PaletteSwap
                 case "RYU_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
+                case "BOX_portraitVictoryBox":
                 case "DIC_portraitVictoryBox":
                 case "CLA_portraitVictoryBox":
                 case "CHU_portraitVictoryBox":
@@ -613,6 +644,7 @@ namespace PaletteSwap
                 case "RYU_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
+                case "BOX_portraitLossBox":
                 case "DIC_portraitLossBox":
                 case "CLA_portraitLossBox":
                 case "CHU_portraitLossBox":
@@ -684,7 +716,7 @@ namespace PaletteSwap
             }
             currentlySelectedColor.BackColor = newcolor;
         }
-        
+
         private void updatePortraitColor(Color c, PictureBox p)
         {
             currentlySelectedColor = p;
@@ -893,7 +925,7 @@ namespace PaletteSwap
         private void saveJapaneseRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             savePatchedRom(sender, e, ROMSTYLE.japanese);
-        }        
+        }
 
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -989,7 +1021,7 @@ namespace PaletteSwap
                 }
             }
         }
-   
+
         private void tabSelectedIndexChanged(object sender, EventArgs e)
         {
             var tabControl = (TabControl)sender;
@@ -1030,6 +1062,14 @@ namespace PaletteSwap
             {
                 currentCharacterType = CharacterConfig.CHARACTERS.Chun;
                 characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+            else if (selt.Name == "TabPageBoxer")
+            {
+                currentCharacterType = CharacterConfig.CHARACTERS.Boxer;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();
@@ -1084,7 +1124,8 @@ namespace PaletteSwap
                                 b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
                             }
 
-                            for (int i = 0; i < 10; i++){
+                            for (int i = 0; i < 10; i++)
+                            {
                                 var entry = archive.CreateEntry(charCode + @"/" + "0" + i.ToString() + ".col");
 
                                 using (var entryStream = entry.Open())
