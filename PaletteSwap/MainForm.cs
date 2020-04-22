@@ -262,6 +262,26 @@ namespace PaletteSwap
                     sprite_claw_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
                     sprite_claw_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     break;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    BOX_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    BOX_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    BOX_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    BOX_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    BOX_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    BOX_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+
+                    BOX_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    BOX_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    BOX_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    BOX_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    BOX_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+
+                    BOX_sprite_gloves1.BackColor = currentCharacter.sprite.GetColor("gloves1");
+                    BOX_sprite_gloves2.BackColor = currentCharacter.sprite.GetColor("gloves2");
+                    BOX_sprite_gloves3.BackColor = currentCharacter.sprite.GetColor("gloves3");
+
+                    BOX_sprite_shine.BackColor = currentCharacter.sprite.GetColor("shine");
+                    break;
                 case CharacterConfig.CHARACTERS.Guile:
                     GUI_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
                     GUI_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
