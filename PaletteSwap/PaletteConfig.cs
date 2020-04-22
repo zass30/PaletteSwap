@@ -541,14 +541,21 @@ namespace PaletteSwap
         { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
         { "costume4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
 
-        { "gloves1", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
-        { "gloves2", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
-        { "gloves3", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
-        { "gloves4", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
+        { "gloves7", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
+        { "gloves8", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
+        { "gloves9", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
+        { "gloves10", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
 
         { "blood1", new List<int>() { ROWLEN * 3 + 24 } },
         { "blood2", new List<int>() { ROWLEN * 3 + 26 } },
         { "blood3", new List<int>() { ROWLEN * 3 + 28 } },
+
+        { "gloves1", new List<int>() { ROWLEN * 2 + 2 } },
+        { "gloves2", new List<int>() { ROWLEN * 2 + 4 } },
+        { "gloves3", new List<int>() { ROWLEN * 2 + 6 } },
+        { "gloves4", new List<int>() { ROWLEN * 2 + 8 } },
+        { "gloves5", new List<int>() { ROWLEN * 2 + 10 } },
+        { "gloves6", new List<int>() { ROWLEN * 2 + 12 } },
                 };
 
                 return portraitOffsets;
