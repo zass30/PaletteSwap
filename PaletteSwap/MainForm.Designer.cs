@@ -61,7 +61,6 @@
             this.colorSwapRB = new System.Windows.Forms.Button();
             this.colorSwapGR = new System.Windows.Forms.Button();
             this.invertColorsButton = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -404,6 +403,7 @@
             this.BOX_sprite_gloves3 = new System.Windows.Forms.PictureBox();
             this.BOX_sprite_shine = new System.Windows.Forms.PictureBox();
             this.label65 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -970,16 +970,6 @@
             this.invertColorsButton.Text = "Invert";
             this.invertColorsButton.UseVisualStyleBackColor = true;
             this.invertColorsButton.Click += new System.EventHandler(this.invertColorsButton_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(821, 24);
-            this.menuStrip1.TabIndex = 111;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -2082,7 +2072,7 @@
             // DIC_portraitLossBox
             // 
             this.DIC_portraitLossBox.BackColor = System.Drawing.Color.Black;
-            this.DIC_portraitLossBox.Location = new System.Drawing.Point(461, 6);
+            this.DIC_portraitLossBox.Location = new System.Drawing.Point(463, 6);
             this.DIC_portraitLossBox.Name = "DIC_portraitLossBox";
             this.DIC_portraitLossBox.Size = new System.Drawing.Size(128, 112);
             this.DIC_portraitLossBox.TabIndex = 120;
@@ -2097,10 +2087,10 @@
             this.tabControl1.Controls.Add(this.TabPageRyu);
             this.tabControl1.Controls.Add(this.TabPageChun);
             this.tabControl1.Controls.Add(this.TabPageBoxer);
-            this.tabControl1.Location = new System.Drawing.Point(12, 23);
+            this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(605, 585);
+            this.tabControl1.Size = new System.Drawing.Size(605, 581);
             this.tabControl1.TabIndex = 121;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabSelectedIndexChanged);
             // 
@@ -2199,7 +2189,7 @@
             this.TabPageDictator.Location = new System.Drawing.Point(4, 22);
             this.TabPageDictator.Name = "TabPageDictator";
             this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageDictator.Size = new System.Drawing.Size(597, 559);
+            this.TabPageDictator.Size = new System.Drawing.Size(597, 555);
             this.TabPageDictator.TabIndex = 0;
             this.TabPageDictator.Text = "Dictator";
             // 
@@ -2257,7 +2247,7 @@
             this.TabPageClaw.Location = new System.Drawing.Point(4, 22);
             this.TabPageClaw.Name = "TabPageClaw";
             this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageClaw.Size = new System.Drawing.Size(597, 559);
+            this.TabPageClaw.Size = new System.Drawing.Size(597, 555);
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
             // 
@@ -2826,7 +2816,7 @@
             this.TabPageGuile.Controls.Add(this.GUI_neutralStandBox);
             this.TabPageGuile.Location = new System.Drawing.Point(4, 22);
             this.TabPageGuile.Name = "TabPageGuile";
-            this.TabPageGuile.Size = new System.Drawing.Size(597, 559);
+            this.TabPageGuile.Size = new System.Drawing.Size(597, 555);
             this.TabPageGuile.TabIndex = 2;
             this.TabPageGuile.Text = "Guile";
             // 
@@ -3489,7 +3479,7 @@
             this.TabPageRyu.Controls.Add(this.RYU_portraitVictoryBox);
             this.TabPageRyu.Location = new System.Drawing.Point(4, 22);
             this.TabPageRyu.Name = "TabPageRyu";
-            this.TabPageRyu.Size = new System.Drawing.Size(597, 559);
+            this.TabPageRyu.Size = new System.Drawing.Size(597, 555);
             this.TabPageRyu.TabIndex = 3;
             this.TabPageRyu.Text = "Ryu";
             // 
@@ -4089,7 +4079,7 @@
             this.TabPageChun.Location = new System.Drawing.Point(4, 22);
             this.TabPageChun.Margin = new System.Windows.Forms.Padding(2);
             this.TabPageChun.Name = "TabPageChun";
-            this.TabPageChun.Size = new System.Drawing.Size(597, 559);
+            this.TabPageChun.Size = new System.Drawing.Size(597, 555);
             this.TabPageChun.TabIndex = 4;
             this.TabPageChun.Text = "Chun";
             // 
@@ -4568,7 +4558,7 @@
             this.TabPageBoxer.Controls.Add(this.BOX_neutralStandBox);
             this.TabPageBoxer.Location = new System.Drawing.Point(4, 22);
             this.TabPageBoxer.Name = "TabPageBoxer";
-            this.TabPageBoxer.Size = new System.Drawing.Size(597, 559);
+            this.TabPageBoxer.Size = new System.Drawing.Size(597, 555);
             this.TabPageBoxer.TabIndex = 5;
             this.TabPageBoxer.Text = "Boxer";
             this.TabPageBoxer.UseVisualStyleBackColor = true;
@@ -4648,6 +4638,7 @@
             this.BOX_sprite_skin2.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_skin2.TabIndex = 268;
             this.BOX_sprite_skin2.TabStop = false;
+            this.BOX_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_skin3
@@ -4658,6 +4649,7 @@
             this.BOX_sprite_skin3.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_skin3.TabIndex = 269;
             this.BOX_sprite_skin3.TabStop = false;
+            this.BOX_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_skin4
@@ -4668,6 +4660,7 @@
             this.BOX_sprite_skin4.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_skin4.TabIndex = 270;
             this.BOX_sprite_skin4.TabStop = false;
+            this.BOX_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_skin5
@@ -4678,6 +4671,7 @@
             this.BOX_sprite_skin5.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_skin5.TabIndex = 271;
             this.BOX_sprite_skin5.TabStop = false;
+            this.BOX_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_skin6
@@ -4688,6 +4682,7 @@
             this.BOX_sprite_skin6.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_skin6.TabIndex = 272;
             this.BOX_sprite_skin6.TabStop = false;
+            this.BOX_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_skin1
@@ -4698,6 +4693,7 @@
             this.BOX_sprite_skin1.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_skin1.TabIndex = 273;
             this.BOX_sprite_skin1.TabStop = false;
+            this.BOX_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_costume1
@@ -4708,6 +4704,7 @@
             this.BOX_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_costume1.TabIndex = 274;
             this.BOX_sprite_costume1.TabStop = false;
+            this.BOX_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_costume2
@@ -4718,6 +4715,7 @@
             this.BOX_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_costume2.TabIndex = 275;
             this.BOX_sprite_costume2.TabStop = false;
+            this.BOX_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_costume3
@@ -4728,6 +4726,7 @@
             this.BOX_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_costume3.TabIndex = 276;
             this.BOX_sprite_costume3.TabStop = false;
+            this.BOX_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_costume4
@@ -4738,6 +4737,7 @@
             this.BOX_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_costume4.TabIndex = 277;
             this.BOX_sprite_costume4.TabStop = false;
+            this.BOX_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_costume5
@@ -4748,6 +4748,7 @@
             this.BOX_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_costume5.TabIndex = 278;
             this.BOX_sprite_costume5.TabStop = false;
+            this.BOX_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_gloves1
@@ -4758,6 +4759,7 @@
             this.BOX_sprite_gloves1.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_gloves1.TabIndex = 279;
             this.BOX_sprite_gloves1.TabStop = false;
+            this.BOX_sprite_gloves1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_gloves1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_gloves2
@@ -4768,6 +4770,7 @@
             this.BOX_sprite_gloves2.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_gloves2.TabIndex = 280;
             this.BOX_sprite_gloves2.TabStop = false;
+            this.BOX_sprite_gloves2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_gloves2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_gloves3
@@ -4778,6 +4781,7 @@
             this.BOX_sprite_gloves3.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_gloves3.TabIndex = 281;
             this.BOX_sprite_gloves3.TabStop = false;
+            this.BOX_sprite_gloves3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_gloves3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_sprite_shine
@@ -4788,6 +4792,7 @@
             this.BOX_sprite_shine.Size = new System.Drawing.Size(24, 24);
             this.BOX_sprite_shine.TabIndex = 282;
             this.BOX_sprite_shine.TabStop = false;
+            this.BOX_sprite_shine.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.BOX_sprite_shine.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label65
@@ -4798,6 +4803,14 @@
             this.label65.Size = new System.Drawing.Size(32, 13);
             this.label65.TabIndex = 283;
             this.label65.Text = "shine";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(821, 24);
+            this.menuStrip1.TabIndex = 123;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // MainForm
             // 
@@ -4823,7 +4836,6 @@
             this.Controls.Add(this.colorSelectorBox);
             this.Controls.Add(this.colorSwapBG);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(666, 494);
             this.Name = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
@@ -5192,7 +5204,6 @@
         private System.Windows.Forms.Button colorSwapRB;
         private System.Windows.Forms.Button colorSwapGR;
         private System.Windows.Forms.Button invertColorsButton;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
@@ -5471,6 +5482,7 @@
         private System.Windows.Forms.PictureBox BOX_sprite_gloves3;
         private System.Windows.Forms.PictureBox BOX_sprite_gloves2;
         private System.Windows.Forms.PictureBox BOX_sprite_gloves1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 
