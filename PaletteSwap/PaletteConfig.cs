@@ -931,7 +931,7 @@ namespace PaletteSwap
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_neutral2),
 PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
-                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.clawneutral7),
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_neutral7),
 PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();

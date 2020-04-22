@@ -283,9 +283,6 @@
   <data name="cla8sprite" xml:space="preserve">
     <value>2202 FE0F EA0F B80F 960E 750C 5409 4007 F00F 9F0B 7E09 5B07 2904 800F 000C</value>
   </data>
-  <data name="clawneutral7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\claw\clawneutral7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="clawportrait7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\claw\clawportrait7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -558,5 +555,8 @@
   </data>
   <data name="chu9portrait" xml:space="preserve">
     <value>FE0F EC0F CA0F A80E 860C 650A 4007 FF0F CF0A AE07 8D05 5B00 760E A70F D80F 6407 FE0F EC0F CA0F A80E 860C 650A 4007 CD0F BC0E AB0D 9A0C 890B 760E A70F D80F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 6407</value>
+  </data>
+  <data name="CLA_neutral7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\claw\CLA_neutral7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

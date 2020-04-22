@@ -44,7 +44,7 @@ namespace PaletteSwapTest
             var claw = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold);
             var s = claw.sprite;
             var pal = s.GetImage("neutral");
-            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.clawneutral7, pal.baseImage));
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.CLA_neutral7, pal.baseImage));
         }
 
         [TestMethod]

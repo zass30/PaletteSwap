@@ -19,7 +19,7 @@ namespace PaletteSwap.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -453,6 +453,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap CLA_neutral7 {
+            get {
+                object obj = ResourceManager.GetObject("CLA_neutral7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap CLA_portraitloss7 {
             get {
                 object obj = ResourceManager.GetObject("CLA_portraitloss7", resourceCulture);
@@ -647,16 +657,6 @@ namespace PaletteSwap.Properties {
         public static string cla9sprite {
             get {
                 return ResourceManager.GetString("cla9sprite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap clawneutral7 {
-            get {
-                object obj = ResourceManager.GetObject("clawneutral7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

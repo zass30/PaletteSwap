@@ -165,7 +165,7 @@
     <None Include="Resources\diccrusher1-0.png" />
     <None Include="Resources\diccrusher2-0.png" />
     <None Include="Resources\diccrusher2-1.png" />
-    <None Include="Resources\claw\clawneutral7.png" />
+    <None Include="Resources\claw\CLA_neutral7.png" />
     <None Include="Resources\claw\clawportrait7.png" />
     <None Include="Resources\claw\CLA_portraitwin7.png" />
     <None Include="Resources\claw\CLA_portraitloss7.png" />
