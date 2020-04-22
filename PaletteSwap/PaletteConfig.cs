@@ -429,6 +429,110 @@ namespace PaletteSwap
             }
         }
 
+        public struct BOXER
+        {
+            public static Dictionary<string, List<int>> GenerateBoxerSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "gloves3", new List<int>() { 0 } },
+            { "skin6", new List<int>() { 2 } },
+            { "skin5", new List<int>() { 4 } },
+            { "skin4", new List<int>() { 6 } },
+            { "skin3", new List<int>() { 8 } },
+            { "skin2", new List<int>() { 10 } },
+            { "skin1", new List<int>() { 12 } },
+            { "gloves2", new List<int>() { 14 } },
+            { "gloves1", new List<int>() { 16 } },
+            { "costume5", new List<int>() { 18 } },
+            { "costume4", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume2", new List<int>() { 24 } },
+            { "costume1", new List<int>() { 26 } },
+            { "shine", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateBoxerSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateBoxerSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateChunPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "teeth1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "skin1", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 3 + 2 } },
+        { "skin2", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 3 + 4 } },
+        { "skin3", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 3 + 6 } },
+        { "skin4", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 3 + 8 } },
+        { "skin5", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 3 + 10 } },
+        { "skin6", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 3 + 12 } },
+
+        { "teeth2", new List<int>() { 14 } },
+        { "teeth3", new List<int>() { 16 } },
+        { "teeth4", new List<int>() { 18 } },
+        { "teeth5", new List<int>() { 20, ROWLEN * 3 + 22 } },
+
+        { "bruise1", new List<int>() { 22 } },
+        { "bruise2", new List<int>() { 24 } },
+        { "bruise3", new List<int>() { 26 } },
+        { "bruise4", new List<int>() { 28 } },
+
+        { "costume1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 2 + 14, ROWLEN * 3 + 14 } },
+        { "costume2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 2 + 16, ROWLEN * 3 + 16 } },
+        { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
+        { "costume4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
+
+        { "gloves1", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
+        { "gloves2", new List<int>() { ROWLEN * 1 + 24, ROWLEN * 2 + 24 } },
+        { "gloves3", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 2 + 26 } },
+        { "gloves4", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 2 + 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 3 + 24 } },
+        { "blood2", new List<int>() { ROWLEN * 3 + 26 } },
+        { "blood3", new List<int>() { ROWLEN * 3 + 28 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateBoxerPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+            /*    ColorOffset dco1 = new ColorOffset();
+                dco1.c = PaletteHelper.MemFormatToColor("FF00");
+                dco1.position = 10;
+                defaultColorOffsets.Add(dco1);
+                */
+                Dictionary<string, List<int>> boxerPortraitOffsets = GenerateChunPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = boxerPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+        }
+
         public struct CHUN
         {
             public static Dictionary<string, List<int>> GenerateChunSpriteOffsets()
@@ -508,9 +612,9 @@ namespace PaletteSwap
                 dco1.position = 10;
                 defaultColorOffsets.Add(dco1);
 
-                Dictionary<string, List<int>> guilePortraitOffsets = GenerateChunPortraitOffsets();
+                Dictionary<string, List<int>> chunPortraitOffsets = GenerateChunPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
-                pc.labelOffsets = guilePortraitOffsets;
+                pc.labelOffsets = chunPortraitOffsets;
                 pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
