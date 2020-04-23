@@ -23,7 +23,8 @@ namespace PaletteSwap
 
         public void Reload()
         {
-            var neutralKey = mainform.gameSet.GenerateNeutralKey();
+            //            var neutralKey = mainform.gameSet.GenerateNeutralKey();
+            var neutralKey = mainform.gameSet.characterDictionary[mainform.currentCharacterType].GenerateSpriteKey();
             spriteKeyBox.Height = neutralKey.Height;
             spriteKeyBox.Width = neutralKey.Width;
             spriteKeyBox.BackgroundImage = neutralKey;
