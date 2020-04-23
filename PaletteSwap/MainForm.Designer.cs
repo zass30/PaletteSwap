@@ -404,6 +404,40 @@
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.BOX_portrait_bruise4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_costume3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_bruise1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_bruise2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_bruise3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_costume4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_costume1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_costume2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth5 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves5 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -663,6 +697,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -4551,6 +4615,40 @@
             // 
             // TabPageBoxer
             // 
+            this.TabPageBoxer.Controls.Add(this.pictureBox7);
+            this.TabPageBoxer.Controls.Add(this.pictureBox8);
+            this.TabPageBoxer.Controls.Add(this.pictureBox9);
+            this.TabPageBoxer.Controls.Add(this.pictureBox10);
+            this.TabPageBoxer.Controls.Add(this.pictureBox11);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves5);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves2);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves3);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves4);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves1);
+            this.TabPageBoxer.Controls.Add(this.pictureBox1);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth5);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth2);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth3);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth4);
+            this.TabPageBoxer.Controls.Add(this.label70);
+            this.TabPageBoxer.Controls.Add(this.label67);
+            this.TabPageBoxer.Controls.Add(this.label68);
+            this.TabPageBoxer.Controls.Add(this.label69);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_bruise4);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_costume3);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_bruise1);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_bruise2);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_bruise3);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth1);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_costume4);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_skin6);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_skin5);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_costume1);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_costume2);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_skin1);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_skin2);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_skin3);
+            this.TabPageBoxer.Controls.Add(this.BOX_portrait_skin4);
             this.TabPageBoxer.Controls.Add(this.label65);
             this.TabPageBoxer.Controls.Add(this.label56);
             this.TabPageBoxer.Controls.Add(this.label63);
@@ -4820,6 +4918,312 @@
             this.label65.Size = new System.Drawing.Size(32, 13);
             this.label65.TabIndex = 265;
             this.label65.Text = "shine";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(311, 259);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(31, 13);
+            this.label70.TabIndex = 284;
+            this.label70.Text = "teeth";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(311, 199);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(47, 13);
+            this.label67.TabIndex = 283;
+            this.label67.Text = "costume";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(311, 228);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(35, 13);
+            this.label68.TabIndex = 282;
+            this.label68.Text = "bruise";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(312, 169);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(26, 13);
+            this.label69.TabIndex = 281;
+            this.label69.Text = "skin";
+            // 
+            // BOX_portrait_bruise4
+            // 
+            this.BOX_portrait_bruise4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise4.Location = new System.Drawing.Point(448, 218);
+            this.BOX_portrait_bruise4.Name = "BOX_portrait_bruise4";
+            this.BOX_portrait_bruise4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise4.TabIndex = 279;
+            this.BOX_portrait_bruise4.TabStop = false;
+            // 
+            // BOX_portrait_costume3
+            // 
+            this.BOX_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume3.Location = new System.Drawing.Point(418, 188);
+            this.BOX_portrait_costume3.Name = "BOX_portrait_costume3";
+            this.BOX_portrait_costume3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume3.TabIndex = 280;
+            this.BOX_portrait_costume3.TabStop = false;
+            // 
+            // BOX_portrait_bruise1
+            // 
+            this.BOX_portrait_bruise1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise1.Location = new System.Drawing.Point(358, 218);
+            this.BOX_portrait_bruise1.Name = "BOX_portrait_bruise1";
+            this.BOX_portrait_bruise1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise1.TabIndex = 273;
+            this.BOX_portrait_bruise1.TabStop = false;
+            // 
+            // BOX_portrait_bruise2
+            // 
+            this.BOX_portrait_bruise2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise2.Location = new System.Drawing.Point(388, 218);
+            this.BOX_portrait_bruise2.Name = "BOX_portrait_bruise2";
+            this.BOX_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise2.TabIndex = 274;
+            this.BOX_portrait_bruise2.TabStop = false;
+            // 
+            // BOX_portrait_bruise3
+            // 
+            this.BOX_portrait_bruise3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise3.Location = new System.Drawing.Point(418, 218);
+            this.BOX_portrait_bruise3.Name = "BOX_portrait_bruise3";
+            this.BOX_portrait_bruise3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise3.TabIndex = 275;
+            this.BOX_portrait_bruise3.TabStop = false;
+            // 
+            // BOX_portrait_teeth1
+            // 
+            this.BOX_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth1.Location = new System.Drawing.Point(358, 248);
+            this.BOX_portrait_teeth1.Name = "BOX_portrait_teeth1";
+            this.BOX_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth1.TabIndex = 276;
+            this.BOX_portrait_teeth1.TabStop = false;
+            // 
+            // BOX_portrait_costume4
+            // 
+            this.BOX_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume4.Location = new System.Drawing.Point(448, 188);
+            this.BOX_portrait_costume4.Name = "BOX_portrait_costume4";
+            this.BOX_portrait_costume4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume4.TabIndex = 277;
+            this.BOX_portrait_costume4.TabStop = false;
+            // 
+            // BOX_portrait_skin6
+            // 
+            this.BOX_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin6.Location = new System.Drawing.Point(508, 158);
+            this.BOX_portrait_skin6.Name = "BOX_portrait_skin6";
+            this.BOX_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin6.TabIndex = 278;
+            this.BOX_portrait_skin6.TabStop = false;
+            // 
+            // BOX_portrait_skin5
+            // 
+            this.BOX_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin5.Location = new System.Drawing.Point(478, 158);
+            this.BOX_portrait_skin5.Name = "BOX_portrait_skin5";
+            this.BOX_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin5.TabIndex = 270;
+            this.BOX_portrait_skin5.TabStop = false;
+            // 
+            // BOX_portrait_costume1
+            // 
+            this.BOX_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume1.Location = new System.Drawing.Point(358, 188);
+            this.BOX_portrait_costume1.Name = "BOX_portrait_costume1";
+            this.BOX_portrait_costume1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume1.TabIndex = 271;
+            this.BOX_portrait_costume1.TabStop = false;
+            // 
+            // BOX_portrait_costume2
+            // 
+            this.BOX_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume2.Location = new System.Drawing.Point(388, 188);
+            this.BOX_portrait_costume2.Name = "BOX_portrait_costume2";
+            this.BOX_portrait_costume2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume2.TabIndex = 272;
+            this.BOX_portrait_costume2.TabStop = false;
+            // 
+            // BOX_portrait_skin1
+            // 
+            this.BOX_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin1.Location = new System.Drawing.Point(358, 158);
+            this.BOX_portrait_skin1.Name = "BOX_portrait_skin1";
+            this.BOX_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin1.TabIndex = 266;
+            this.BOX_portrait_skin1.TabStop = false;
+            // 
+            // BOX_portrait_skin2
+            // 
+            this.BOX_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin2.Location = new System.Drawing.Point(388, 158);
+            this.BOX_portrait_skin2.Name = "BOX_portrait_skin2";
+            this.BOX_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin2.TabIndex = 267;
+            this.BOX_portrait_skin2.TabStop = false;
+            // 
+            // BOX_portrait_skin3
+            // 
+            this.BOX_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin3.Location = new System.Drawing.Point(418, 158);
+            this.BOX_portrait_skin3.Name = "BOX_portrait_skin3";
+            this.BOX_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin3.TabIndex = 268;
+            this.BOX_portrait_skin3.TabStop = false;
+            // 
+            // BOX_portrait_skin4
+            // 
+            this.BOX_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin4.Location = new System.Drawing.Point(448, 158);
+            this.BOX_portrait_skin4.Name = "BOX_portrait_skin4";
+            this.BOX_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin4.TabIndex = 269;
+            this.BOX_portrait_skin4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(508, 248);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 289;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BOX_portrait_teeth5
+            // 
+            this.BOX_portrait_teeth5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth5.Location = new System.Drawing.Point(478, 248);
+            this.BOX_portrait_teeth5.Name = "BOX_portrait_teeth5";
+            this.BOX_portrait_teeth5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth5.TabIndex = 288;
+            this.BOX_portrait_teeth5.TabStop = false;
+            // 
+            // BOX_portrait_teeth2
+            // 
+            this.BOX_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth2.Location = new System.Drawing.Point(388, 248);
+            this.BOX_portrait_teeth2.Name = "BOX_portrait_teeth2";
+            this.BOX_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth2.TabIndex = 285;
+            this.BOX_portrait_teeth2.TabStop = false;
+            // 
+            // BOX_portrait_teeth3
+            // 
+            this.BOX_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth3.Location = new System.Drawing.Point(418, 248);
+            this.BOX_portrait_teeth3.Name = "BOX_portrait_teeth3";
+            this.BOX_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth3.TabIndex = 286;
+            this.BOX_portrait_teeth3.TabStop = false;
+            // 
+            // BOX_portrait_teeth4
+            // 
+            this.BOX_portrait_teeth4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth4.Location = new System.Drawing.Point(448, 248);
+            this.BOX_portrait_teeth4.Name = "BOX_portrait_teeth4";
+            this.BOX_portrait_teeth4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth4.TabIndex = 287;
+            this.BOX_portrait_teeth4.TabStop = false;
+            // 
+            // BOX_portrait_gloves5
+            // 
+            this.BOX_portrait_gloves5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves5.Location = new System.Drawing.Point(478, 278);
+            this.BOX_portrait_gloves5.Name = "BOX_portrait_gloves5";
+            this.BOX_portrait_gloves5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves5.TabIndex = 294;
+            this.BOX_portrait_gloves5.TabStop = false;
+            // 
+            // BOX_portrait_gloves2
+            // 
+            this.BOX_portrait_gloves2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves2.Location = new System.Drawing.Point(388, 278);
+            this.BOX_portrait_gloves2.Name = "BOX_portrait_gloves2";
+            this.BOX_portrait_gloves2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves2.TabIndex = 291;
+            this.BOX_portrait_gloves2.TabStop = false;
+            // 
+            // BOX_portrait_gloves3
+            // 
+            this.BOX_portrait_gloves3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves3.Location = new System.Drawing.Point(418, 278);
+            this.BOX_portrait_gloves3.Name = "BOX_portrait_gloves3";
+            this.BOX_portrait_gloves3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves3.TabIndex = 292;
+            this.BOX_portrait_gloves3.TabStop = false;
+            // 
+            // BOX_portrait_gloves4
+            // 
+            this.BOX_portrait_gloves4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves4.Location = new System.Drawing.Point(448, 278);
+            this.BOX_portrait_gloves4.Name = "BOX_portrait_gloves4";
+            this.BOX_portrait_gloves4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves4.TabIndex = 293;
+            this.BOX_portrait_gloves4.TabStop = false;
+            // 
+            // BOX_portrait_gloves1
+            // 
+            this.BOX_portrait_gloves1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves1.Location = new System.Drawing.Point(358, 278);
+            this.BOX_portrait_gloves1.Name = "BOX_portrait_gloves1";
+            this.BOX_portrait_gloves1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves1.TabIndex = 290;
+            this.BOX_portrait_gloves1.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Location = new System.Drawing.Point(478, 308);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox7.TabIndex = 299;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Location = new System.Drawing.Point(388, 308);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox8.TabIndex = 296;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.Location = new System.Drawing.Point(418, 308);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox9.TabIndex = 297;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.Location = new System.Drawing.Point(448, 308);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox10.TabIndex = 298;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox11.Location = new System.Drawing.Point(358, 308);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox11.TabIndex = 295;
+            this.pictureBox11.TabStop = false;
             // 
             // MainForm
             // 
@@ -5114,6 +5518,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5495,6 +5929,40 @@
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.PictureBox BOX_portrait_bruise4;
+        private System.Windows.Forms.PictureBox BOX_portrait_costume3;
+        private System.Windows.Forms.PictureBox BOX_portrait_bruise1;
+        private System.Windows.Forms.PictureBox BOX_portrait_bruise2;
+        private System.Windows.Forms.PictureBox BOX_portrait_bruise3;
+        private System.Windows.Forms.PictureBox BOX_portrait_teeth1;
+        private System.Windows.Forms.PictureBox BOX_portrait_costume4;
+        private System.Windows.Forms.PictureBox BOX_portrait_skin6;
+        private System.Windows.Forms.PictureBox BOX_portrait_skin5;
+        private System.Windows.Forms.PictureBox BOX_portrait_costume1;
+        private System.Windows.Forms.PictureBox BOX_portrait_costume2;
+        private System.Windows.Forms.PictureBox BOX_portrait_skin1;
+        private System.Windows.Forms.PictureBox BOX_portrait_skin2;
+        private System.Windows.Forms.PictureBox BOX_portrait_skin3;
+        private System.Windows.Forms.PictureBox BOX_portrait_skin4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox BOX_portrait_teeth5;
+        private System.Windows.Forms.PictureBox BOX_portrait_teeth2;
+        private System.Windows.Forms.PictureBox BOX_portrait_teeth3;
+        private System.Windows.Forms.PictureBox BOX_portrait_teeth4;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox BOX_portrait_gloves5;
+        private System.Windows.Forms.PictureBox BOX_portrait_gloves2;
+        private System.Windows.Forms.PictureBox BOX_portrait_gloves3;
+        private System.Windows.Forms.PictureBox BOX_portrait_gloves4;
+        private System.Windows.Forms.PictureBox BOX_portrait_gloves1;
     }
 }
 
