@@ -256,6 +256,36 @@ namespace PaletteSwap
     {
         public Dictionary <CharacterConfig.CHARACTERS, CharacterSet> characterDictionary = new Dictionary<CharacterConfig.CHARACTERS, CharacterSet>();
 
+        public Bitmap GenerateNeutralKey()
+        {
+            int buffer = 10;
+            int h = 0;
+            int w = 0;
+            List<Bitmap> spriteKeyList = new List<Bitmap>();
+            foreach (var k in characterDictionary)
+            {
+                var spriteKey = k.Value.GenerateSpriteKey();
+                h = h + spriteKey.Height + buffer;
+                if (w < spriteKey.Width)
+                    w = spriteKey.Width + buffer * 2;
+                spriteKeyList.Add(spriteKey);
+            }
+            Bitmap b = new Bitmap(w * 2 + buffer, h );
+            Graphics gfb = Graphics.FromImage(b);
+
+            int x = 0;
+            int y = 0;
+            for (int i = 0; i < spriteKeyList.Count; i = i+2)
+            {
+
+                gfb.DrawImage(spriteKeyList[i], new Point(x, y));
+                gfb.DrawImage(spriteKeyList[i+1], new Point(spriteKeyList[i].Width + buffer, y));
+                y += Math.Max(spriteKeyList[i].Height, spriteKeyList[i+1].Height) + buffer;
+
+            }
+            return b;
+        }
+
         public byte[] sprites_stream04()
         {
             byte[] b = Resources.sfxe04a;

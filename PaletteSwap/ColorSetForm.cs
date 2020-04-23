@@ -23,6 +23,11 @@ namespace PaletteSwap
 
         public void Reload()
         {
+            var neutralKey = mainform.gameSet.GenerateNeutralKey();
+            spriteKeyBox.Height = neutralKey.Height;
+            spriteKeyBox.Width = neutralKey.Width;
+            spriteKeyBox.BackgroundImage = neutralKey;
+            /*
             var DIC = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
             var CLA = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw];
             var GUI = mainform.gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile];
@@ -156,7 +161,7 @@ namespace PaletteSwap
                 BOX_neutralStandBox08.Image = BOX.characterColors[8].sprite.GetBitmap("neutral");
             if (BOX.characterColors[9].sprite != null)
                 BOX_neutralStandBox09.Image = BOX.characterColors[9].sprite.GetBitmap("neutral");
-
+            */
         }
     }
 }
