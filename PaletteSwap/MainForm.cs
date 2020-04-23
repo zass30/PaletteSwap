@@ -10,7 +10,7 @@ namespace PaletteSwap
 {
     public partial class MainForm : Form
     {
-        bool DISABLE_PATCHING = false;
+        bool DISABLE_PATCHING = true;
         ZoomForm z;
         ColorSetForm c;
         public string currentlyZoomedLabel;

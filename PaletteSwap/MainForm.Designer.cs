@@ -381,29 +381,26 @@
             this.CHU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.CHU_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.TabPageBoxer = new System.Windows.Forms.TabPage();
-            this.BOX_sprite_costume5 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_costume3 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_gloves1 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_gloves2 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_gloves3 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_shine = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_costume4 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_skin6 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_skin5 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_costume1 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_costume2 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_skin1 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_skin2 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_skin3 = new System.Windows.Forms.PictureBox();
-            this.BOX_sprite_skin4 = new System.Windows.Forms.PictureBox();
-            this.BOX_portraitLossBox = new System.Windows.Forms.PictureBox();
-            this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.COLlabel = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.BOX_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.BOX_portrait_gloves10 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves7 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves8 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves9 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves6 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves5 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_gloves1 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth6 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth5 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.BOX_portrait_teeth4 = new System.Windows.Forms.PictureBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
@@ -423,26 +420,29 @@
             this.BOX_portrait_skin2 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_skin3 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_skin4 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth6 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth5 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth2 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth3 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth4 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves5 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves2 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves3 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves4 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves1 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves10 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves7 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves8 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves9 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_gloves6 = new System.Windows.Forms.PictureBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.BOX_portrait_blood1 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_blood2 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.BOX_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_gloves1 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_gloves2 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_gloves3 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_shine = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.BOX_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -684,6 +684,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).BeginInit();
             this.TabPageBoxer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves1)).BeginInit();
@@ -702,39 +735,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood3)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -776,6 +776,7 @@
             this.label1.Size = new System.Drawing.Size(90, 49);
             this.label1.TabIndex = 7;
             this.label1.Text = "Drag COL file (legacy)";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -1084,7 +1085,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1189,8 +1190,9 @@
             this.phoenixROMToolStripMenuItem,
             this.japaneseROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
+            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
@@ -1230,7 +1232,7 @@
             // colorSetToolStripMenuItem
             // 
             this.colorSetToolStripMenuItem.Name = "colorSetToolStripMenuItem";
-            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorSetToolStripMenuItem.Text = "Color Set";
             this.colorSetToolStripMenuItem.Click += new System.EventHandler(this.colorSetToolStripMenuItem_Click);
             // 
@@ -4623,6 +4625,7 @@
             // 
             // TabPageBoxer
             // 
+            this.TabPageBoxer.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageBoxer.Controls.Add(this.label71);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_blood1);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_blood2);
@@ -4689,7 +4692,459 @@
             this.TabPageBoxer.Size = new System.Drawing.Size(597, 559);
             this.TabPageBoxer.TabIndex = 5;
             this.TabPageBoxer.Text = "Boxer";
-            this.TabPageBoxer.UseVisualStyleBackColor = true;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(311, 348);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(33, 13);
+            this.label71.TabIndex = 304;
+            this.label71.Text = "blood";
+            // 
+            // BOX_portrait_blood1
+            // 
+            this.BOX_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_blood1.Location = new System.Drawing.Point(358, 338);
+            this.BOX_portrait_blood1.Name = "BOX_portrait_blood1";
+            this.BOX_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_blood1.TabIndex = 301;
+            this.BOX_portrait_blood1.TabStop = false;
+            this.BOX_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_blood2
+            // 
+            this.BOX_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_blood2.Location = new System.Drawing.Point(388, 338);
+            this.BOX_portrait_blood2.Name = "BOX_portrait_blood2";
+            this.BOX_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_blood2.TabIndex = 302;
+            this.BOX_portrait_blood2.TabStop = false;
+            this.BOX_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_blood3
+            // 
+            this.BOX_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_blood3.Location = new System.Drawing.Point(418, 338);
+            this.BOX_portrait_blood3.Name = "BOX_portrait_blood3";
+            this.BOX_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_blood3.TabIndex = 303;
+            this.BOX_portrait_blood3.TabStop = false;
+            this.BOX_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(312, 289);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(38, 13);
+            this.label66.TabIndex = 300;
+            this.label66.Text = "gloves";
+            // 
+            // BOX_portrait_gloves10
+            // 
+            this.BOX_portrait_gloves10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves10.Location = new System.Drawing.Point(478, 308);
+            this.BOX_portrait_gloves10.Name = "BOX_portrait_gloves10";
+            this.BOX_portrait_gloves10.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves10.TabIndex = 299;
+            this.BOX_portrait_gloves10.TabStop = false;
+            this.BOX_portrait_gloves10.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves10.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves7
+            // 
+            this.BOX_portrait_gloves7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves7.Location = new System.Drawing.Point(388, 308);
+            this.BOX_portrait_gloves7.Name = "BOX_portrait_gloves7";
+            this.BOX_portrait_gloves7.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves7.TabIndex = 296;
+            this.BOX_portrait_gloves7.TabStop = false;
+            this.BOX_portrait_gloves7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves8
+            // 
+            this.BOX_portrait_gloves8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves8.Location = new System.Drawing.Point(418, 308);
+            this.BOX_portrait_gloves8.Name = "BOX_portrait_gloves8";
+            this.BOX_portrait_gloves8.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves8.TabIndex = 297;
+            this.BOX_portrait_gloves8.TabStop = false;
+            this.BOX_portrait_gloves8.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves8.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves9
+            // 
+            this.BOX_portrait_gloves9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves9.Location = new System.Drawing.Point(448, 308);
+            this.BOX_portrait_gloves9.Name = "BOX_portrait_gloves9";
+            this.BOX_portrait_gloves9.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves9.TabIndex = 298;
+            this.BOX_portrait_gloves9.TabStop = false;
+            this.BOX_portrait_gloves9.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves9.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves6
+            // 
+            this.BOX_portrait_gloves6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves6.Location = new System.Drawing.Point(358, 308);
+            this.BOX_portrait_gloves6.Name = "BOX_portrait_gloves6";
+            this.BOX_portrait_gloves6.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves6.TabIndex = 295;
+            this.BOX_portrait_gloves6.TabStop = false;
+            this.BOX_portrait_gloves6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves5
+            // 
+            this.BOX_portrait_gloves5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves5.Location = new System.Drawing.Point(478, 278);
+            this.BOX_portrait_gloves5.Name = "BOX_portrait_gloves5";
+            this.BOX_portrait_gloves5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves5.TabIndex = 294;
+            this.BOX_portrait_gloves5.TabStop = false;
+            this.BOX_portrait_gloves5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves2
+            // 
+            this.BOX_portrait_gloves2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves2.Location = new System.Drawing.Point(388, 278);
+            this.BOX_portrait_gloves2.Name = "BOX_portrait_gloves2";
+            this.BOX_portrait_gloves2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves2.TabIndex = 291;
+            this.BOX_portrait_gloves2.TabStop = false;
+            this.BOX_portrait_gloves2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves3
+            // 
+            this.BOX_portrait_gloves3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves3.Location = new System.Drawing.Point(418, 278);
+            this.BOX_portrait_gloves3.Name = "BOX_portrait_gloves3";
+            this.BOX_portrait_gloves3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves3.TabIndex = 292;
+            this.BOX_portrait_gloves3.TabStop = false;
+            this.BOX_portrait_gloves3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves4
+            // 
+            this.BOX_portrait_gloves4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves4.Location = new System.Drawing.Point(448, 278);
+            this.BOX_portrait_gloves4.Name = "BOX_portrait_gloves4";
+            this.BOX_portrait_gloves4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves4.TabIndex = 293;
+            this.BOX_portrait_gloves4.TabStop = false;
+            this.BOX_portrait_gloves4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_gloves1
+            // 
+            this.BOX_portrait_gloves1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_gloves1.Location = new System.Drawing.Point(358, 278);
+            this.BOX_portrait_gloves1.Name = "BOX_portrait_gloves1";
+            this.BOX_portrait_gloves1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_gloves1.TabIndex = 290;
+            this.BOX_portrait_gloves1.TabStop = false;
+            this.BOX_portrait_gloves1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_gloves1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_teeth6
+            // 
+            this.BOX_portrait_teeth6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth6.Location = new System.Drawing.Point(508, 248);
+            this.BOX_portrait_teeth6.Name = "BOX_portrait_teeth6";
+            this.BOX_portrait_teeth6.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth6.TabIndex = 289;
+            this.BOX_portrait_teeth6.TabStop = false;
+            this.BOX_portrait_teeth6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_teeth6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_teeth5
+            // 
+            this.BOX_portrait_teeth5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth5.Location = new System.Drawing.Point(478, 248);
+            this.BOX_portrait_teeth5.Name = "BOX_portrait_teeth5";
+            this.BOX_portrait_teeth5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth5.TabIndex = 288;
+            this.BOX_portrait_teeth5.TabStop = false;
+            this.BOX_portrait_teeth5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_teeth5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_teeth2
+            // 
+            this.BOX_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth2.Location = new System.Drawing.Point(388, 248);
+            this.BOX_portrait_teeth2.Name = "BOX_portrait_teeth2";
+            this.BOX_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth2.TabIndex = 285;
+            this.BOX_portrait_teeth2.TabStop = false;
+            this.BOX_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_teeth3
+            // 
+            this.BOX_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth3.Location = new System.Drawing.Point(418, 248);
+            this.BOX_portrait_teeth3.Name = "BOX_portrait_teeth3";
+            this.BOX_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth3.TabIndex = 286;
+            this.BOX_portrait_teeth3.TabStop = false;
+            this.BOX_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_teeth4
+            // 
+            this.BOX_portrait_teeth4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth4.Location = new System.Drawing.Point(448, 248);
+            this.BOX_portrait_teeth4.Name = "BOX_portrait_teeth4";
+            this.BOX_portrait_teeth4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth4.TabIndex = 287;
+            this.BOX_portrait_teeth4.TabStop = false;
+            this.BOX_portrait_teeth4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_teeth4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(311, 259);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(31, 13);
+            this.label70.TabIndex = 284;
+            this.label70.Text = "teeth";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(311, 199);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(47, 13);
+            this.label67.TabIndex = 283;
+            this.label67.Text = "costume";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(311, 228);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(35, 13);
+            this.label68.TabIndex = 282;
+            this.label68.Text = "bruise";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(312, 169);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(26, 13);
+            this.label69.TabIndex = 281;
+            this.label69.Text = "skin";
+            // 
+            // BOX_portrait_bruise4
+            // 
+            this.BOX_portrait_bruise4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise4.Location = new System.Drawing.Point(448, 218);
+            this.BOX_portrait_bruise4.Name = "BOX_portrait_bruise4";
+            this.BOX_portrait_bruise4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise4.TabIndex = 279;
+            this.BOX_portrait_bruise4.TabStop = false;
+            this.BOX_portrait_bruise4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_bruise4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_costume3
+            // 
+            this.BOX_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume3.Location = new System.Drawing.Point(418, 188);
+            this.BOX_portrait_costume3.Name = "BOX_portrait_costume3";
+            this.BOX_portrait_costume3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume3.TabIndex = 280;
+            this.BOX_portrait_costume3.TabStop = false;
+            this.BOX_portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_bruise1
+            // 
+            this.BOX_portrait_bruise1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise1.Location = new System.Drawing.Point(358, 218);
+            this.BOX_portrait_bruise1.Name = "BOX_portrait_bruise1";
+            this.BOX_portrait_bruise1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise1.TabIndex = 273;
+            this.BOX_portrait_bruise1.TabStop = false;
+            this.BOX_portrait_bruise1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_bruise1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_bruise2
+            // 
+            this.BOX_portrait_bruise2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise2.Location = new System.Drawing.Point(388, 218);
+            this.BOX_portrait_bruise2.Name = "BOX_portrait_bruise2";
+            this.BOX_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise2.TabIndex = 274;
+            this.BOX_portrait_bruise2.TabStop = false;
+            this.BOX_portrait_bruise2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_bruise2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_bruise3
+            // 
+            this.BOX_portrait_bruise3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_bruise3.Location = new System.Drawing.Point(418, 218);
+            this.BOX_portrait_bruise3.Name = "BOX_portrait_bruise3";
+            this.BOX_portrait_bruise3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_bruise3.TabIndex = 275;
+            this.BOX_portrait_bruise3.TabStop = false;
+            this.BOX_portrait_bruise3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_bruise3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_teeth1
+            // 
+            this.BOX_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_teeth1.Location = new System.Drawing.Point(358, 248);
+            this.BOX_portrait_teeth1.Name = "BOX_portrait_teeth1";
+            this.BOX_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_teeth1.TabIndex = 276;
+            this.BOX_portrait_teeth1.TabStop = false;
+            this.BOX_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_costume4
+            // 
+            this.BOX_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume4.Location = new System.Drawing.Point(448, 188);
+            this.BOX_portrait_costume4.Name = "BOX_portrait_costume4";
+            this.BOX_portrait_costume4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume4.TabIndex = 277;
+            this.BOX_portrait_costume4.TabStop = false;
+            this.BOX_portrait_costume4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_skin6
+            // 
+            this.BOX_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin6.Location = new System.Drawing.Point(508, 158);
+            this.BOX_portrait_skin6.Name = "BOX_portrait_skin6";
+            this.BOX_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin6.TabIndex = 278;
+            this.BOX_portrait_skin6.TabStop = false;
+            this.BOX_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_skin5
+            // 
+            this.BOX_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin5.Location = new System.Drawing.Point(478, 158);
+            this.BOX_portrait_skin5.Name = "BOX_portrait_skin5";
+            this.BOX_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin5.TabIndex = 270;
+            this.BOX_portrait_skin5.TabStop = false;
+            this.BOX_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_costume1
+            // 
+            this.BOX_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume1.Location = new System.Drawing.Point(358, 188);
+            this.BOX_portrait_costume1.Name = "BOX_portrait_costume1";
+            this.BOX_portrait_costume1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume1.TabIndex = 271;
+            this.BOX_portrait_costume1.TabStop = false;
+            this.BOX_portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_costume2
+            // 
+            this.BOX_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_costume2.Location = new System.Drawing.Point(388, 188);
+            this.BOX_portrait_costume2.Name = "BOX_portrait_costume2";
+            this.BOX_portrait_costume2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_costume2.TabIndex = 272;
+            this.BOX_portrait_costume2.TabStop = false;
+            this.BOX_portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_skin1
+            // 
+            this.BOX_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin1.Location = new System.Drawing.Point(358, 158);
+            this.BOX_portrait_skin1.Name = "BOX_portrait_skin1";
+            this.BOX_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin1.TabIndex = 266;
+            this.BOX_portrait_skin1.TabStop = false;
+            this.BOX_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_skin2
+            // 
+            this.BOX_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin2.Location = new System.Drawing.Point(388, 158);
+            this.BOX_portrait_skin2.Name = "BOX_portrait_skin2";
+            this.BOX_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin2.TabIndex = 267;
+            this.BOX_portrait_skin2.TabStop = false;
+            this.BOX_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_skin3
+            // 
+            this.BOX_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin3.Location = new System.Drawing.Point(418, 158);
+            this.BOX_portrait_skin3.Name = "BOX_portrait_skin3";
+            this.BOX_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin3.TabIndex = 268;
+            this.BOX_portrait_skin3.TabStop = false;
+            this.BOX_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BOX_portrait_skin4
+            // 
+            this.BOX_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BOX_portrait_skin4.Location = new System.Drawing.Point(448, 158);
+            this.BOX_portrait_skin4.Name = "BOX_portrait_skin4";
+            this.BOX_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.BOX_portrait_skin4.TabIndex = 269;
+            this.BOX_portrait_skin4.TabStop = false;
+            this.BOX_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BOX_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(15, 259);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(32, 13);
+            this.label65.TabIndex = 265;
+            this.label65.Text = "shine";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(15, 199);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(47, 13);
+            this.label56.TabIndex = 264;
+            this.label56.Text = "costume";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(15, 228);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(38, 13);
+            this.label63.TabIndex = 263;
+            this.label63.Text = "gloves";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(16, 169);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(26, 13);
+            this.label64.TabIndex = 262;
+            this.label64.Text = "skin";
             // 
             // BOX_sprite_costume5
             // 
@@ -4895,459 +5350,6 @@
             this.COLlabel.Size = new System.Drawing.Size(90, 49);
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(15, 199);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(47, 13);
-            this.label56.TabIndex = 264;
-            this.label56.Text = "costume";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(15, 228);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(38, 13);
-            this.label63.TabIndex = 263;
-            this.label63.Text = "gloves";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(16, 169);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(26, 13);
-            this.label64.TabIndex = 262;
-            this.label64.Text = "skin";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(15, 259);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(32, 13);
-            this.label65.TabIndex = 265;
-            this.label65.Text = "shine";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(311, 259);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(31, 13);
-            this.label70.TabIndex = 284;
-            this.label70.Text = "teeth";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(311, 199);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(47, 13);
-            this.label67.TabIndex = 283;
-            this.label67.Text = "costume";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(311, 228);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(35, 13);
-            this.label68.TabIndex = 282;
-            this.label68.Text = "bruise";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(312, 169);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(26, 13);
-            this.label69.TabIndex = 281;
-            this.label69.Text = "skin";
-            // 
-            // BOX_portrait_bruise4
-            // 
-            this.BOX_portrait_bruise4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_bruise4.Location = new System.Drawing.Point(448, 218);
-            this.BOX_portrait_bruise4.Name = "BOX_portrait_bruise4";
-            this.BOX_portrait_bruise4.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_bruise4.TabIndex = 279;
-            this.BOX_portrait_bruise4.TabStop = false;
-            this.BOX_portrait_bruise4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_bruise4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_costume3
-            // 
-            this.BOX_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_costume3.Location = new System.Drawing.Point(418, 188);
-            this.BOX_portrait_costume3.Name = "BOX_portrait_costume3";
-            this.BOX_portrait_costume3.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_costume3.TabIndex = 280;
-            this.BOX_portrait_costume3.TabStop = false;
-            this.BOX_portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_bruise1
-            // 
-            this.BOX_portrait_bruise1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_bruise1.Location = new System.Drawing.Point(358, 218);
-            this.BOX_portrait_bruise1.Name = "BOX_portrait_bruise1";
-            this.BOX_portrait_bruise1.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_bruise1.TabIndex = 273;
-            this.BOX_portrait_bruise1.TabStop = false;
-            this.BOX_portrait_bruise1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_bruise1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_bruise2
-            // 
-            this.BOX_portrait_bruise2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_bruise2.Location = new System.Drawing.Point(388, 218);
-            this.BOX_portrait_bruise2.Name = "BOX_portrait_bruise2";
-            this.BOX_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_bruise2.TabIndex = 274;
-            this.BOX_portrait_bruise2.TabStop = false;
-            this.BOX_portrait_bruise2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_bruise2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_bruise3
-            // 
-            this.BOX_portrait_bruise3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_bruise3.Location = new System.Drawing.Point(418, 218);
-            this.BOX_portrait_bruise3.Name = "BOX_portrait_bruise3";
-            this.BOX_portrait_bruise3.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_bruise3.TabIndex = 275;
-            this.BOX_portrait_bruise3.TabStop = false;
-            this.BOX_portrait_bruise3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_bruise3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth1
-            // 
-            this.BOX_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth1.Location = new System.Drawing.Point(358, 248);
-            this.BOX_portrait_teeth1.Name = "BOX_portrait_teeth1";
-            this.BOX_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth1.TabIndex = 276;
-            this.BOX_portrait_teeth1.TabStop = false;
-            this.BOX_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_costume4
-            // 
-            this.BOX_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_costume4.Location = new System.Drawing.Point(448, 188);
-            this.BOX_portrait_costume4.Name = "BOX_portrait_costume4";
-            this.BOX_portrait_costume4.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_costume4.TabIndex = 277;
-            this.BOX_portrait_costume4.TabStop = false;
-            this.BOX_portrait_costume4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_costume4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_skin6
-            // 
-            this.BOX_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_skin6.Location = new System.Drawing.Point(508, 158);
-            this.BOX_portrait_skin6.Name = "BOX_portrait_skin6";
-            this.BOX_portrait_skin6.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_skin6.TabIndex = 278;
-            this.BOX_portrait_skin6.TabStop = false;
-            this.BOX_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_skin5
-            // 
-            this.BOX_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_skin5.Location = new System.Drawing.Point(478, 158);
-            this.BOX_portrait_skin5.Name = "BOX_portrait_skin5";
-            this.BOX_portrait_skin5.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_skin5.TabIndex = 270;
-            this.BOX_portrait_skin5.TabStop = false;
-            this.BOX_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_costume1
-            // 
-            this.BOX_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_costume1.Location = new System.Drawing.Point(358, 188);
-            this.BOX_portrait_costume1.Name = "BOX_portrait_costume1";
-            this.BOX_portrait_costume1.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_costume1.TabIndex = 271;
-            this.BOX_portrait_costume1.TabStop = false;
-            this.BOX_portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_costume2
-            // 
-            this.BOX_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_costume2.Location = new System.Drawing.Point(388, 188);
-            this.BOX_portrait_costume2.Name = "BOX_portrait_costume2";
-            this.BOX_portrait_costume2.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_costume2.TabIndex = 272;
-            this.BOX_portrait_costume2.TabStop = false;
-            this.BOX_portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_skin1
-            // 
-            this.BOX_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_skin1.Location = new System.Drawing.Point(358, 158);
-            this.BOX_portrait_skin1.Name = "BOX_portrait_skin1";
-            this.BOX_portrait_skin1.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_skin1.TabIndex = 266;
-            this.BOX_portrait_skin1.TabStop = false;
-            this.BOX_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_skin2
-            // 
-            this.BOX_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_skin2.Location = new System.Drawing.Point(388, 158);
-            this.BOX_portrait_skin2.Name = "BOX_portrait_skin2";
-            this.BOX_portrait_skin2.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_skin2.TabIndex = 267;
-            this.BOX_portrait_skin2.TabStop = false;
-            this.BOX_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_skin3
-            // 
-            this.BOX_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_skin3.Location = new System.Drawing.Point(418, 158);
-            this.BOX_portrait_skin3.Name = "BOX_portrait_skin3";
-            this.BOX_portrait_skin3.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_skin3.TabIndex = 268;
-            this.BOX_portrait_skin3.TabStop = false;
-            this.BOX_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_skin4
-            // 
-            this.BOX_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_skin4.Location = new System.Drawing.Point(448, 158);
-            this.BOX_portrait_skin4.Name = "BOX_portrait_skin4";
-            this.BOX_portrait_skin4.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_skin4.TabIndex = 269;
-            this.BOX_portrait_skin4.TabStop = false;
-            this.BOX_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth6
-            // 
-            this.BOX_portrait_teeth6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth6.Location = new System.Drawing.Point(508, 248);
-            this.BOX_portrait_teeth6.Name = "BOX_portrait_teeth6";
-            this.BOX_portrait_teeth6.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth6.TabIndex = 289;
-            this.BOX_portrait_teeth6.TabStop = false;
-            this.BOX_portrait_teeth6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth6.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth5
-            // 
-            this.BOX_portrait_teeth5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth5.Location = new System.Drawing.Point(478, 248);
-            this.BOX_portrait_teeth5.Name = "BOX_portrait_teeth5";
-            this.BOX_portrait_teeth5.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth5.TabIndex = 288;
-            this.BOX_portrait_teeth5.TabStop = false;
-            this.BOX_portrait_teeth5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth2
-            // 
-            this.BOX_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth2.Location = new System.Drawing.Point(388, 248);
-            this.BOX_portrait_teeth2.Name = "BOX_portrait_teeth2";
-            this.BOX_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth2.TabIndex = 285;
-            this.BOX_portrait_teeth2.TabStop = false;
-            this.BOX_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth3
-            // 
-            this.BOX_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth3.Location = new System.Drawing.Point(418, 248);
-            this.BOX_portrait_teeth3.Name = "BOX_portrait_teeth3";
-            this.BOX_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth3.TabIndex = 286;
-            this.BOX_portrait_teeth3.TabStop = false;
-            this.BOX_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth4
-            // 
-            this.BOX_portrait_teeth4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth4.Location = new System.Drawing.Point(448, 248);
-            this.BOX_portrait_teeth4.Name = "BOX_portrait_teeth4";
-            this.BOX_portrait_teeth4.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth4.TabIndex = 287;
-            this.BOX_portrait_teeth4.TabStop = false;
-            this.BOX_portrait_teeth4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves5
-            // 
-            this.BOX_portrait_gloves5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves5.Location = new System.Drawing.Point(478, 278);
-            this.BOX_portrait_gloves5.Name = "BOX_portrait_gloves5";
-            this.BOX_portrait_gloves5.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves5.TabIndex = 294;
-            this.BOX_portrait_gloves5.TabStop = false;
-            this.BOX_portrait_gloves5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves2
-            // 
-            this.BOX_portrait_gloves2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves2.Location = new System.Drawing.Point(388, 278);
-            this.BOX_portrait_gloves2.Name = "BOX_portrait_gloves2";
-            this.BOX_portrait_gloves2.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves2.TabIndex = 291;
-            this.BOX_portrait_gloves2.TabStop = false;
-            this.BOX_portrait_gloves2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves3
-            // 
-            this.BOX_portrait_gloves3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves3.Location = new System.Drawing.Point(418, 278);
-            this.BOX_portrait_gloves3.Name = "BOX_portrait_gloves3";
-            this.BOX_portrait_gloves3.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves3.TabIndex = 292;
-            this.BOX_portrait_gloves3.TabStop = false;
-            this.BOX_portrait_gloves3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves4
-            // 
-            this.BOX_portrait_gloves4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves4.Location = new System.Drawing.Point(448, 278);
-            this.BOX_portrait_gloves4.Name = "BOX_portrait_gloves4";
-            this.BOX_portrait_gloves4.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves4.TabIndex = 293;
-            this.BOX_portrait_gloves4.TabStop = false;
-            this.BOX_portrait_gloves4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves1
-            // 
-            this.BOX_portrait_gloves1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves1.Location = new System.Drawing.Point(358, 278);
-            this.BOX_portrait_gloves1.Name = "BOX_portrait_gloves1";
-            this.BOX_portrait_gloves1.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves1.TabIndex = 290;
-            this.BOX_portrait_gloves1.TabStop = false;
-            this.BOX_portrait_gloves1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves10
-            // 
-            this.BOX_portrait_gloves10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves10.Location = new System.Drawing.Point(478, 308);
-            this.BOX_portrait_gloves10.Name = "BOX_portrait_gloves10";
-            this.BOX_portrait_gloves10.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves10.TabIndex = 299;
-            this.BOX_portrait_gloves10.TabStop = false;
-            this.BOX_portrait_gloves10.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves10.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves7
-            // 
-            this.BOX_portrait_gloves7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves7.Location = new System.Drawing.Point(388, 308);
-            this.BOX_portrait_gloves7.Name = "BOX_portrait_gloves7";
-            this.BOX_portrait_gloves7.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves7.TabIndex = 296;
-            this.BOX_portrait_gloves7.TabStop = false;
-            this.BOX_portrait_gloves7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves7.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves8
-            // 
-            this.BOX_portrait_gloves8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves8.Location = new System.Drawing.Point(418, 308);
-            this.BOX_portrait_gloves8.Name = "BOX_portrait_gloves8";
-            this.BOX_portrait_gloves8.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves8.TabIndex = 297;
-            this.BOX_portrait_gloves8.TabStop = false;
-            this.BOX_portrait_gloves8.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves8.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves9
-            // 
-            this.BOX_portrait_gloves9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves9.Location = new System.Drawing.Point(448, 308);
-            this.BOX_portrait_gloves9.Name = "BOX_portrait_gloves9";
-            this.BOX_portrait_gloves9.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves9.TabIndex = 298;
-            this.BOX_portrait_gloves9.TabStop = false;
-            this.BOX_portrait_gloves9.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves9.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_gloves6
-            // 
-            this.BOX_portrait_gloves6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_gloves6.Location = new System.Drawing.Point(358, 308);
-            this.BOX_portrait_gloves6.Name = "BOX_portrait_gloves6";
-            this.BOX_portrait_gloves6.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_gloves6.TabIndex = 295;
-            this.BOX_portrait_gloves6.TabStop = false;
-            this.BOX_portrait_gloves6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_gloves6.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(312, 289);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(38, 13);
-            this.label66.TabIndex = 300;
-            this.label66.Text = "gloves";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(311, 348);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(33, 13);
-            this.label71.TabIndex = 304;
-            this.label71.Text = "blood";
-            // 
-            // BOX_portrait_blood1
-            // 
-            this.BOX_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_blood1.Location = new System.Drawing.Point(358, 338);
-            this.BOX_portrait_blood1.Name = "BOX_portrait_blood1";
-            this.BOX_portrait_blood1.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_blood1.TabIndex = 301;
-            this.BOX_portrait_blood1.TabStop = false;
-            this.BOX_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_blood2
-            // 
-            this.BOX_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_blood2.Location = new System.Drawing.Point(388, 338);
-            this.BOX_portrait_blood2.Name = "BOX_portrait_blood2";
-            this.BOX_portrait_blood2.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_blood2.TabIndex = 302;
-            this.BOX_portrait_blood2.TabStop = false;
-            this.BOX_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_blood3
-            // 
-            this.BOX_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_blood3.Location = new System.Drawing.Point(418, 338);
-            this.BOX_portrait_blood3.Name = "BOX_portrait_blood3";
-            this.BOX_portrait_blood3.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_blood3.TabIndex = 303;
-            this.BOX_portrait_blood3.TabStop = false;
-            this.BOX_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -5624,6 +5626,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHU_neutralStandBox)).EndInit();
             this.TabPageBoxer.ResumeLayout(false);
             this.TabPageBoxer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_costume3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_sprite_gloves1)).EndInit();
@@ -5642,39 +5677,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_bruise3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_costume2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_skin4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_blood3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
