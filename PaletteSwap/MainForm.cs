@@ -507,6 +507,46 @@ namespace PaletteSwap
                     CHU_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
                     CHU_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
                     break;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    BOX_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    BOX_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    BOX_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    BOX_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    BOX_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    BOX_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+
+                    BOX_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    BOX_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    BOX_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    BOX_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+
+                    BOX_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
+                    BOX_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
+                    BOX_portrait_bruise3.BackColor = currentCharacter.portrait.GetColor("bruise3");
+                    BOX_portrait_bruise4.BackColor = currentCharacter.portrait.GetColor("bruise4");
+
+                    BOX_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    BOX_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                    BOX_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+                    BOX_portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
+                    BOX_portrait_teeth5.BackColor = currentCharacter.portrait.GetColor("teeth5");
+                    BOX_portrait_teeth6.BackColor = currentCharacter.portrait.GetColor("teeth6");
+
+                    BOX_portrait_gloves1.BackColor = currentCharacter.portrait.GetColor("gloves1");
+                    BOX_portrait_gloves2.BackColor = currentCharacter.portrait.GetColor("gloves2");
+                    BOX_portrait_gloves3.BackColor = currentCharacter.portrait.GetColor("gloves3");
+                    BOX_portrait_gloves4.BackColor = currentCharacter.portrait.GetColor("gloves4");
+                    BOX_portrait_gloves5.BackColor = currentCharacter.portrait.GetColor("gloves5");
+                    BOX_portrait_gloves6.BackColor = currentCharacter.portrait.GetColor("gloves6");
+                    BOX_portrait_gloves7.BackColor = currentCharacter.portrait.GetColor("gloves7");
+                    BOX_portrait_gloves8.BackColor = currentCharacter.portrait.GetColor("gloves8");
+                    BOX_portrait_gloves9.BackColor = currentCharacter.portrait.GetColor("gloves9");
+                    BOX_portrait_gloves10.BackColor = currentCharacter.portrait.GetColor("gloves10");
+
+                    BOX_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    BOX_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    BOX_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+                    break;
             }
         }
 
