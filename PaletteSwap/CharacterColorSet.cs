@@ -402,6 +402,7 @@ namespace PaletteSwap
             gs.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Guile);
             gs.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Ryu);
             gs.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Boxer);
+            gs.characterDictionary[CharacterConfig.CHARACTERS.Chun] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Chun);
             return gs;
         }
     }
