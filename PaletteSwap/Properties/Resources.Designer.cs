@@ -1361,6 +1361,96 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F FF0F EE0D CC0B AA09 9908 8807 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken0portrait {
+            get {
+                return ResourceManager.GetString("ken0portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F 6806 5705 4604 3503 2402 1201 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken1portrait {
+            get {
+                return ResourceManager.GetString("ken1portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F 6F08 3F08 1C07 0B06 0805 0604 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken2portrait {
+            get {
+                return ResourceManager.GetString("ken2portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F F60A D409 B207 9005 7003 5001 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken3portrait {
+            get {
+                return ResourceManager.GetString("ken3portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F DD03 BB03 9902 7702 5501 3301 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken4portrait {
+            get {
+                return ResourceManager.GetString("ken4portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F FA0F D80D B60B 9409 7207 4006 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken5portrait {
+            get {
+                return ResourceManager.GetString("ken5portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F F60F E30F C20F 900E 700C 500A C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken6portrait {
+            get {
+                return ResourceManager.GetString("ken6portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F B60E 830B 6009 4006 2004 0002 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken7portrait {
+            get {
+                return ResourceManager.GetString("ken7portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F 600F 400F 000F 000C 0009 0006 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken8portrait {
+            get {
+                return ResourceManager.GetString("ken8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1101 FB0F D90F A70E 860D 650A 4306 E60F 570F 250F 000E 020C 0109 0006 C00F 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1B01 9B09 8B08 7B07 6B06 5B05 4B04 8B08 4B04 3B03 2B02 1B01 0B00 0B00 7B07 0000 1801 7807 6806 5805 4804 3803 2802 6806 2802 1801 0800 0800 0800 0800 5805 0000 1401 5605 4604 3603 2502 1501 0400 4604 0400 0400 0400 0400 0400 0400 3603 0000.
+        /// </summary>
+        public static string ken9portrait {
+            get {
+                return ResourceManager.GetString("ken9portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap RYU_neutral2 {
