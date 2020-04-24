@@ -1333,6 +1333,36 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap KEN_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("KEN_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KEN_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("KEN_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KEN_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("KEN_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap RYU_neutral2 {
             get {
                 object obj = ResourceManager.GetObject("RYU_neutral2", resourceCulture);

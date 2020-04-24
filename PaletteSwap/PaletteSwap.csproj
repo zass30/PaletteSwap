@@ -147,6 +147,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ken\KEN_portraitwin0.png" />
+    <None Include="Resources\ken\KEN_portraitloss0.png" />
+    <None Include="Resources\ken\KEN_neutral0.png" />
     <None Include="Resources\ryu\RYU_portraitwin2.png" />
     <None Include="Resources\ryu\RYU_portraitloss2.png" />
     <None Include="Resources\ryu\RYU_neutral2.png" />
