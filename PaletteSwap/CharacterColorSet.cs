@@ -388,14 +388,7 @@ namespace PaletteSwap
             foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
             {
                 gs.characterDictionary[character] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, character);
-            }/*
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Dictator);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Claw);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Guile);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Ryu);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Chun] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Chun);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, CharacterConfig.CHARACTERS.Boxer);
-            */
+            }
             return gs;
         }
 
@@ -406,14 +399,7 @@ namespace PaletteSwap
             {
                 gs.characterDictionary[character] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, character);
             }
-/*
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Dictator);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Claw);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Guile);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Ryu);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Boxer);
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Chun] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, CharacterConfig.CHARACTERS.Chun);*/
-            return gs;
+           return gs;
         }
     }
 }
