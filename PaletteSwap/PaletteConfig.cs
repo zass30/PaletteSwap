@@ -31,7 +31,7 @@ namespace PaletteSwap
         static public int bisonPunchesValue = 0x14;
 
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
-        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun, Boxer };
+        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun, Boxer, Ken };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
         {
@@ -264,6 +264,51 @@ namespace PaletteSwap
                             break;
                     }
                     break;
+                case CHARACTERS.Ken:
+                    switch (b)
+                    {
+                        case CharacterConfig.BUTTONS.lp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken0sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken0portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken1sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken1portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hp:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken2sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken2portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.lk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken3sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken3portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.mk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken4sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken4portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hk:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken5sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken5portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.start:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken6sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken6portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.hold:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken7sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken7portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old1:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken8sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken8portrait);
+                            break;
+                        case CharacterConfig.BUTTONS.old2:
+                            sprite_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken9sprite);
+                            portrait_bytestream = PaletteHelper.StringToByteStream(Properties.Resources.ken9portrait);
+                            break;
+                    }
+                    break;
                 case CHARACTERS.Chun:
                     switch (b)
                     {
@@ -329,6 +374,8 @@ namespace PaletteSwap
                     return "GUI";
                 case CHARACTERS.Ryu:
                     return "RYU";
+                case CHARACTERS.Ken:
+                    return "KEN";
                 case CHARACTERS.Chun:
                     return "CHU";
                 case CHARACTERS.Boxer:
@@ -347,6 +394,8 @@ namespace PaletteSwap
                     return CHARACTERS.Dictator;
                 case "GUI":
                     return CHARACTERS.Guile;
+                case "KEN":
+                    return CHARACTERS.Ken;
                 case "RYU":
                     return CHARACTERS.Ryu;
                 case "CHU":
@@ -365,6 +414,8 @@ namespace PaletteSwap
                     return 0;
                 case CHARACTERS.Guile:
                     return 3;
+                case CHARACTERS.Ken:
+                    return 4;
                 case CHARACTERS.Chun:
                     return 5;
                 case CHARACTERS.Dictator:
@@ -759,13 +810,102 @@ namespace PaletteSwap
                     defaultColorOffsets.Add(dco);
                 }
 
-                Dictionary<string, List<int>> guilePortraitOffsets = GenerateRyuPortraitOffsets();
+                Dictionary<string, List<int>> ryuPortraitOffsets = GenerateRyuPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
-                pc.labelOffsets = guilePortraitOffsets;
-                string defaults = "F00F F00F";//just a test to flush out unknown spot
-                int defaultsOffset = 20;
-                pc.createColorOffsets(defaults, defaultsOffset);
-                //                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.labelOffsets = ryuPortraitOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+        }
+
+        public struct KEN
+        {
+            public static Dictionary<string, List<int>> GenerateKenSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "belt", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "hair5", new List<int>() { 10 } },
+            { "costume6", new List<int>() { 12 } },
+            { "hair1", new List<int>() { 14} },
+            { "costume1", new List<int>() { 16 } },
+            { "costume2", new List<int>() { 18 } },
+            { "costume3", new List<int>() { 20 } },
+            { "costume4", new List<int>() { 22 } },
+            { "costume5", new List<int>() { 24 } },
+            { "costume6", new List<int>() { 26 } },
+            { "hair2", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateKenSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateKenSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateKenPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2, } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4, } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6, } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8, } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10, } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12, } },
+
+        { "costume1", new List<int>() { 14 } },
+        { "costume2", new List<int>() { 16 } },
+        { "costume3", new List<int>() { 18 } },
+        { "costume4", new List<int>() { 20 } },
+
+        { "hair1", new List<int>() { 22, ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
+        { "hair2", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 3 + 24 } },
+        { "hair3", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "hair4", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28, ROWLEN * 3 + 28 } },
+
+        { "teeth1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 2 + 14 } },
+        { "teeth2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 2 + 16 } },
+        { "teeth3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 18 } },
+
+        { "blood1", new List<int>() { ROWLEN * 2 + 20, ROWLEN * 3 + 14 } },
+        { "blood2", new List<int>() { ROWLEN * 2 + 22, ROWLEN * 3 + 16 } },
+        { "blood3", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 18 } },
+
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateKenPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("0A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> kenPortraitOffsets = GenerateKenPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = kenPortraitOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;
@@ -1107,6 +1247,9 @@ PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSp
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_neutral2),
     PaletteSwap.Properties.Resources.ryu2sprite, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Ken:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.KEN_neutral0),
+    PaletteSwap.Properties.Resources.ken0sprite, PaletteConfig.KEN.GenerateKenSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_neutral1),
     PaletteSwap.Properties.Resources.chu1sprite, PaletteConfig.CHUN.GenerateChunSpriteOffsets());
@@ -1132,6 +1275,9 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitwin2),
     PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Ken:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.KEN_portraitwin0),
+    PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitwin1),
     PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
@@ -1157,6 +1303,9 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitloss2),
 PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Ken:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.KEN_portraitloss0),
+PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitloss1),
     PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
