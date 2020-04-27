@@ -443,6 +443,10 @@
             this.BOX_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.BOX_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
+            this.TabPageKen = new System.Windows.Forms.TabPage();
+            this.KEN_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.KEN_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.KEN_neutralStandBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -735,6 +739,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).BeginInit();
+            this.TabPageKen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1085,7 +1093,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1098,7 +1106,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -1118,7 +1126,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -1126,7 +1134,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -1136,7 +1144,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -1156,7 +1164,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -1165,7 +1173,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -1174,14 +1182,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -1190,34 +1198,34 @@
             this.phoenixROMToolStripMenuItem,
             this.japaneseROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchToolStripMenuItem.Text = "Patch";
             // 
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2177,6 +2185,7 @@
             this.tabControl1.Controls.Add(this.TabPageRyu);
             this.tabControl1.Controls.Add(this.TabPageChun);
             this.tabControl1.Controls.Add(this.TabPageBoxer);
+            this.tabControl1.Controls.Add(this.TabPageKen);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -5350,6 +5359,45 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
+            // TabPageKen
+            // 
+            this.TabPageKen.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPageKen.Controls.Add(this.KEN_neutralStandBox);
+            this.TabPageKen.Controls.Add(this.KEN_portraitLossBox);
+            this.TabPageKen.Controls.Add(this.KEN_portraitVictoryBox);
+            this.TabPageKen.Location = new System.Drawing.Point(4, 22);
+            this.TabPageKen.Name = "TabPageKen";
+            this.TabPageKen.Size = new System.Drawing.Size(597, 559);
+            this.TabPageKen.TabIndex = 6;
+            this.TabPageKen.Text = "Ken";
+            // 
+            // KEN_portraitLossBox
+            // 
+            this.KEN_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.KEN_portraitLossBox.Location = new System.Drawing.Point(443, 16);
+            this.KEN_portraitLossBox.Name = "KEN_portraitLossBox";
+            this.KEN_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.KEN_portraitLossBox.TabIndex = 183;
+            this.KEN_portraitLossBox.TabStop = false;
+            // 
+            // KEN_portraitVictoryBox
+            // 
+            this.KEN_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.KEN_portraitVictoryBox.Location = new System.Drawing.Point(306, 16);
+            this.KEN_portraitVictoryBox.Name = "KEN_portraitVictoryBox";
+            this.KEN_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.KEN_portraitVictoryBox.TabIndex = 182;
+            this.KEN_portraitVictoryBox.TabStop = false;
+            // 
+            // KEN_neutralStandBox
+            // 
+            this.KEN_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.KEN_neutralStandBox.Location = new System.Drawing.Point(6, 18);
+            this.KEN_neutralStandBox.Name = "KEN_neutralStandBox";
+            this.KEN_neutralStandBox.Size = new System.Drawing.Size(57, 95);
+            this.KEN_neutralStandBox.TabIndex = 184;
+            this.KEN_neutralStandBox.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5676,6 +5724,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
+            this.TabPageKen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6096,6 +6148,10 @@
         private System.Windows.Forms.PictureBox BOX_portrait_blood1;
         private System.Windows.Forms.PictureBox BOX_portrait_blood2;
         private System.Windows.Forms.PictureBox BOX_portrait_blood3;
+        private System.Windows.Forms.TabPage TabPageKen;
+        private System.Windows.Forms.PictureBox KEN_neutralStandBox;
+        private System.Windows.Forms.PictureBox KEN_portraitLossBox;
+        private System.Windows.Forms.PictureBox KEN_portraitVictoryBox;
     }
 }
 

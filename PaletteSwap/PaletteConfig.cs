@@ -477,6 +477,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU.GenerateRyuSpriteConfig();
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN.GenerateKenSpriteConfig();
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHUN.GenerateChunSpriteConfig();
                 case CharacterConfig.CHARACTERS.Guile:
@@ -497,6 +499,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU.GenerateRyuPortraitConfig();
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN.GenerateKenPortraitConfig();
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHUN.GenerateChunPortraitConfig();
                 case CharacterConfig.CHARACTERS.Guile:
@@ -832,8 +836,8 @@ namespace PaletteSwap
             { "skin2", new List<int>() { 4 } },
             { "skin3", new List<int>() { 6 } },
             { "skin4", new List<int>() { 8 } },
-            { "hair5", new List<int>() { 10 } },
-            { "costume6", new List<int>() { 12 } },
+            { "skin5", new List<int>() { 10 } },
+            { "skin6", new List<int>() { 12 } },
             { "hair1", new List<int>() { 14} },
             { "costume1", new List<int>() { 16 } },
             { "costume2", new List<int>() { 18 } },

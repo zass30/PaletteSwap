@@ -37,13 +37,19 @@ namespace PaletteSwap
 
         public void CreateCharacterSet()
         {
-            currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
+/*            currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun] = new CharacterSet(CharacterConfig.CHARACTERS.Chun);
             gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = new CharacterSet(CharacterConfig.CHARACTERS.Boxer);
+*/
+            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            {
+                gameSet.characterDictionary[character] = new CharacterSet(character);
+            }
+            currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
             characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
 
@@ -140,6 +146,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Guile:
@@ -160,6 +168,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Guile:
@@ -180,6 +190,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Ryu:
                     return RYU_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Guile:
@@ -1094,6 +1106,14 @@ namespace PaletteSwap
             {
                 currentCharacterType = CharacterConfig.CHARACTERS.Ryu;
                 characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+            else if (selt.Name == "TabPageKen")
+            {
+                currentCharacterType = CharacterConfig.CHARACTERS.Ken;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ken];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();
