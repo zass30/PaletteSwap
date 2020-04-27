@@ -142,6 +142,7 @@ namespace PaletteSwap
 
         private PictureBox GetSpriteNeutralBox()
         {
+            // todo dynamic generation
             switch (currentCharacterType)
             {
                 case CharacterConfig.CHARACTERS.Ryu:
@@ -336,6 +337,27 @@ namespace PaletteSwap
 
                     RYU_sprite_headband1.BackColor = currentCharacter.sprite.GetColor("headband1");
                     RYU_sprite_headband2.BackColor = currentCharacter.sprite.GetColor("headband2");
+                    break;
+                case CharacterConfig.CHARACTERS.Ken:
+                    KEN_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    KEN_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    KEN_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    KEN_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    KEN_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin6");
+                    KEN_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin7");
+
+                    KEN_sprite_hair1.BackColor = currentCharacter.sprite.GetColor("hair1");
+                    KEN_sprite_hair2.BackColor = currentCharacter.sprite.GetColor("hair2");
+
+                    KEN_sprite_belt.BackColor = currentCharacter.sprite.GetColor("belt");
+
+                    KEN_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    KEN_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    KEN_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    KEN_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    KEN_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    KEN_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
+                    
                     break;
                 case CharacterConfig.CHARACTERS.Chun:
                     CHU_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
@@ -686,6 +708,7 @@ namespace PaletteSwap
                 case "CHU_neutralStandBox":
                 case "GUI_neutralStandBox":
                 case "RYU_neutralStandBox":
+                case "KEN_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -694,6 +717,7 @@ namespace PaletteSwap
                 case "CHU_portraitVictoryBox":
                 case "GUI_portraitVictoryBox":
                 case "RYU_portraitVictoryBox":
+                case "KEN_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -702,6 +726,7 @@ namespace PaletteSwap
                 case "CHU_portraitLossBox":
                 case "GUI_portraitLossBox":
                 case "RYU_portraitLossBox":
+                case "KEN_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }

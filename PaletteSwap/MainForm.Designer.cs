@@ -447,6 +447,25 @@
             this.KEN_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.KEN_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.KEN_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.KEN_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_belt = new System.Windows.Forms.PictureBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.KEN_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_costume6 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_hair1 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_hair2 = new System.Windows.Forms.PictureBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.KEN_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.KEN_sprite_skin4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -743,6 +762,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_belt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -5362,6 +5396,25 @@
             // TabPageKen
             // 
             this.TabPageKen.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPageKen.Controls.Add(this.label72);
+            this.TabPageKen.Controls.Add(this.label73);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_costume5);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_belt);
+            this.TabPageKen.Controls.Add(this.label75);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_costume1);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_costume2);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_costume3);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_costume4);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_skin5);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_skin6);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_costume6);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_hair1);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_hair2);
+            this.TabPageKen.Controls.Add(this.label76);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_skin1);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_skin2);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_skin3);
+            this.TabPageKen.Controls.Add(this.KEN_sprite_skin4);
             this.TabPageKen.Controls.Add(this.KEN_neutralStandBox);
             this.TabPageKen.Controls.Add(this.KEN_portraitLossBox);
             this.TabPageKen.Controls.Add(this.KEN_portraitVictoryBox);
@@ -5379,6 +5432,7 @@
             this.KEN_portraitLossBox.Size = new System.Drawing.Size(128, 112);
             this.KEN_portraitLossBox.TabIndex = 183;
             this.KEN_portraitLossBox.TabStop = false;
+            this.KEN_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // KEN_portraitVictoryBox
             // 
@@ -5388,6 +5442,7 @@
             this.KEN_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.KEN_portraitVictoryBox.TabIndex = 182;
             this.KEN_portraitVictoryBox.TabStop = false;
+            this.KEN_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // KEN_neutralStandBox
             // 
@@ -5397,6 +5452,208 @@
             this.KEN_neutralStandBox.Size = new System.Drawing.Size(57, 95);
             this.KEN_neutralStandBox.TabIndex = 184;
             this.KEN_neutralStandBox.TabStop = false;
+            this.KEN_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(7, 193);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(24, 13);
+            this.label72.TabIndex = 248;
+            this.label72.Text = "hair";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(7, 163);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(24, 13);
+            this.label73.TabIndex = 247;
+            this.label73.Text = "belt";
+            // 
+            // KEN_sprite_costume5
+            // 
+            this.KEN_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_costume5.Location = new System.Drawing.Point(195, 212);
+            this.KEN_sprite_costume5.Name = "KEN_sprite_costume5";
+            this.KEN_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_costume5.TabIndex = 245;
+            this.KEN_sprite_costume5.TabStop = false;
+            this.KEN_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_belt
+            // 
+            this.KEN_sprite_belt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_belt.Location = new System.Drawing.Point(75, 152);
+            this.KEN_sprite_belt.Name = "KEN_sprite_belt";
+            this.KEN_sprite_belt.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_belt.TabIndex = 246;
+            this.KEN_sprite_belt.TabStop = false;
+            this.KEN_sprite_belt.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_belt.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(7, 222);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(47, 13);
+            this.label75.TabIndex = 237;
+            this.label75.Text = "costume";
+            // 
+            // KEN_sprite_costume1
+            // 
+            this.KEN_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_costume1.Location = new System.Drawing.Point(75, 212);
+            this.KEN_sprite_costume1.Name = "KEN_sprite_costume1";
+            this.KEN_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_costume1.TabIndex = 238;
+            this.KEN_sprite_costume1.TabStop = false;
+            this.KEN_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_costume2
+            // 
+            this.KEN_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_costume2.Location = new System.Drawing.Point(105, 212);
+            this.KEN_sprite_costume2.Name = "KEN_sprite_costume2";
+            this.KEN_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_costume2.TabIndex = 239;
+            this.KEN_sprite_costume2.TabStop = false;
+            this.KEN_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_costume3
+            // 
+            this.KEN_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_costume3.Location = new System.Drawing.Point(135, 212);
+            this.KEN_sprite_costume3.Name = "KEN_sprite_costume3";
+            this.KEN_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_costume3.TabIndex = 240;
+            this.KEN_sprite_costume3.TabStop = false;
+            this.KEN_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_costume4
+            // 
+            this.KEN_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_costume4.Location = new System.Drawing.Point(165, 212);
+            this.KEN_sprite_costume4.Name = "KEN_sprite_costume4";
+            this.KEN_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_costume4.TabIndex = 241;
+            this.KEN_sprite_costume4.TabStop = false;
+            this.KEN_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_skin5
+            // 
+            this.KEN_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_skin5.Location = new System.Drawing.Point(195, 242);
+            this.KEN_sprite_skin5.Name = "KEN_sprite_skin5";
+            this.KEN_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_skin5.TabIndex = 242;
+            this.KEN_sprite_skin5.TabStop = false;
+            this.KEN_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_skin6
+            // 
+            this.KEN_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_skin6.Location = new System.Drawing.Point(225, 242);
+            this.KEN_sprite_skin6.Name = "KEN_sprite_skin6";
+            this.KEN_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_skin6.TabIndex = 243;
+            this.KEN_sprite_skin6.TabStop = false;
+            this.KEN_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_costume6
+            // 
+            this.KEN_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_costume6.Location = new System.Drawing.Point(225, 212);
+            this.KEN_sprite_costume6.Name = "KEN_sprite_costume6";
+            this.KEN_sprite_costume6.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_costume6.TabIndex = 234;
+            this.KEN_sprite_costume6.TabStop = false;
+            this.KEN_sprite_costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_costume6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_hair1
+            // 
+            this.KEN_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_hair1.Location = new System.Drawing.Point(75, 182);
+            this.KEN_sprite_hair1.Name = "KEN_sprite_hair1";
+            this.KEN_sprite_hair1.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_hair1.TabIndex = 235;
+            this.KEN_sprite_hair1.TabStop = false;
+            this.KEN_sprite_hair1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_hair2
+            // 
+            this.KEN_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_hair2.Location = new System.Drawing.Point(105, 182);
+            this.KEN_sprite_hair2.Name = "KEN_sprite_hair2";
+            this.KEN_sprite_hair2.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_hair2.TabIndex = 236;
+            this.KEN_sprite_hair2.TabStop = false;
+            this.KEN_sprite_hair2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(8, 253);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(26, 13);
+            this.label76.TabIndex = 229;
+            this.label76.Text = "skin";
+            // 
+            // KEN_sprite_skin1
+            // 
+            this.KEN_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_skin1.Location = new System.Drawing.Point(75, 242);
+            this.KEN_sprite_skin1.Name = "KEN_sprite_skin1";
+            this.KEN_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_skin1.TabIndex = 230;
+            this.KEN_sprite_skin1.TabStop = false;
+            this.KEN_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_skin2
+            // 
+            this.KEN_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_skin2.Location = new System.Drawing.Point(105, 242);
+            this.KEN_sprite_skin2.Name = "KEN_sprite_skin2";
+            this.KEN_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_skin2.TabIndex = 231;
+            this.KEN_sprite_skin2.TabStop = false;
+            this.KEN_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_skin3
+            // 
+            this.KEN_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_skin3.Location = new System.Drawing.Point(135, 242);
+            this.KEN_sprite_skin3.Name = "KEN_sprite_skin3";
+            this.KEN_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_skin3.TabIndex = 232;
+            this.KEN_sprite_skin3.TabStop = false;
+            this.KEN_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // KEN_sprite_skin4
+            // 
+            this.KEN_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.KEN_sprite_skin4.Location = new System.Drawing.Point(165, 242);
+            this.KEN_sprite_skin4.Name = "KEN_sprite_skin4";
+            this.KEN_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.KEN_sprite_skin4.TabIndex = 233;
+            this.KEN_sprite_skin4.TabStop = false;
+            this.KEN_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.KEN_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -5725,9 +5982,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_neutralStandBox)).EndInit();
             this.TabPageKen.ResumeLayout(false);
+            this.TabPageKen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_belt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_costume6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KEN_sprite_skin4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6152,6 +6425,25 @@
         private System.Windows.Forms.PictureBox KEN_neutralStandBox;
         private System.Windows.Forms.PictureBox KEN_portraitLossBox;
         private System.Windows.Forms.PictureBox KEN_portraitVictoryBox;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.PictureBox KEN_sprite_costume5;
+        private System.Windows.Forms.PictureBox KEN_sprite_belt;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.PictureBox KEN_sprite_costume1;
+        private System.Windows.Forms.PictureBox KEN_sprite_costume2;
+        private System.Windows.Forms.PictureBox KEN_sprite_costume3;
+        private System.Windows.Forms.PictureBox KEN_sprite_costume4;
+        private System.Windows.Forms.PictureBox KEN_sprite_skin5;
+        private System.Windows.Forms.PictureBox KEN_sprite_skin6;
+        private System.Windows.Forms.PictureBox KEN_sprite_costume6;
+        private System.Windows.Forms.PictureBox KEN_sprite_hair1;
+        private System.Windows.Forms.PictureBox KEN_sprite_hair2;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.PictureBox KEN_sprite_skin1;
+        private System.Windows.Forms.PictureBox KEN_sprite_skin2;
+        private System.Windows.Forms.PictureBox KEN_sprite_skin3;
+        private System.Windows.Forms.PictureBox KEN_sprite_skin4;
     }
 }
 
