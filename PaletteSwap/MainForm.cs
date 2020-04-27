@@ -343,8 +343,8 @@ namespace PaletteSwap
                     KEN_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
                     KEN_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
                     KEN_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
-                    KEN_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin6");
-                    KEN_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin7");
+                    KEN_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    KEN_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
 
                     KEN_sprite_hair1.BackColor = currentCharacter.sprite.GetColor("hair1");
                     KEN_sprite_hair2.BackColor = currentCharacter.sprite.GetColor("hair2");
@@ -580,6 +580,34 @@ namespace PaletteSwap
                     BOX_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
                     BOX_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
                     BOX_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+                    break;
+
+                case CharacterConfig.CHARACTERS.Ken:
+                    KEN_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    KEN_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    KEN_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    KEN_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    KEN_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    KEN_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    KEN_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    KEN_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    KEN_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    KEN_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    KEN_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+
+                    KEN_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
+                    KEN_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
+                    KEN_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
+                    KEN_portrait_hair4.BackColor = currentCharacter.portrait.GetColor("hair4");
+
+                    KEN_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    KEN_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    KEN_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
+                    KEN_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    KEN_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                    KEN_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
                     break;
             }
         }

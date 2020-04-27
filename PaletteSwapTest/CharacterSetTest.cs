@@ -89,9 +89,7 @@ namespace PaletteSwapTest
             var b = d.GetBitmap("neutral");
             var b_expected = d.sprite.GetBitmap("neutral");
             Assert.AreEqual(b_expected.Width, b.Width);
-
         }
-
 
         [TestMethod]
         public void GenerateSpriteKeyTest()
@@ -99,7 +97,6 @@ namespace PaletteSwapTest
             var r = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
             var b = r.GenerateSpriteKey();
            // b.Save(@"C:/temp/foo.png");
-
         }
     }
 }
