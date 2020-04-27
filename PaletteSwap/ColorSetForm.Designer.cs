@@ -28,35 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.portraitKeyBox = new System.Windows.Forms.PictureBox();
             this.spriteKeyBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.portraitKeyBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spriteKeyBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // portraitKeyBox
+            // 
+            this.portraitKeyBox.BackColor = System.Drawing.Color.Black;
+            this.portraitKeyBox.Location = new System.Drawing.Point(24, 17);
+            this.portraitKeyBox.Name = "portraitKeyBox";
+            this.portraitKeyBox.Size = new System.Drawing.Size(88, 234);
+            this.portraitKeyBox.TabIndex = 227;
+            this.portraitKeyBox.TabStop = false;
             // 
             // spriteKeyBox
             // 
             this.spriteKeyBox.BackColor = System.Drawing.Color.Black;
-            this.spriteKeyBox.Location = new System.Drawing.Point(49, 32);
-            this.spriteKeyBox.Margin = new System.Windows.Forms.Padding(6);
+            this.spriteKeyBox.Location = new System.Drawing.Point(24, 257);
             this.spriteKeyBox.Name = "spriteKeyBox";
-            this.spriteKeyBox.Size = new System.Drawing.Size(90, 87);
-            this.spriteKeyBox.TabIndex = 227;
+            this.spriteKeyBox.Size = new System.Drawing.Size(45, 45);
+            this.spriteKeyBox.TabIndex = 228;
             this.spriteKeyBox.TabStop = false;
             // 
             // ColorSetForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1768, 1377);
+            this.ClientSize = new System.Drawing.Size(842, 537);
             this.Controls.Add(this.spriteKeyBox);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Controls.Add(this.portraitKeyBox);
             this.Name = "ColorSetForm";
             this.Text = "ColorSetForm";
+            ((System.ComponentModel.ISupportInitialize)(this.portraitKeyBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spriteKeyBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private System.Windows.Forms.PictureBox portraitKeyBox;
         private System.Windows.Forms.PictureBox spriteKeyBox;
     }
 }

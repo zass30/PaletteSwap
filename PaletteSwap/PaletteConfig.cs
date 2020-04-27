@@ -813,6 +813,7 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> ryuPortraitOffsets = GenerateRyuPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = ryuPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;
@@ -906,6 +907,7 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> kenPortraitOffsets = GenerateKenPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = kenPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
                 return pc;
