@@ -1014,13 +1014,19 @@ namespace PaletteSwap
                     //Get the path of specified file
                     filePath = openFileDialog.FileName;
 
-                    //Read the contents of the file into a stream
-                    FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
-                    gameSet = GameSet.GameSetFromZipStream(fileStream);
-                    characterSet = gameSet.characterDictionary[currentCharacterType];
-                    resetCurrentCharacterColorFromDropDown();
-                    reload_everything();
-                    fileStream.Close();
+                    try
+                    {
+                        //Read the contents of the file into a stream
+                        FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
+                        gameSet = GameSet.GameSetFromZipStream(fileStream);
+                        characterSet = gameSet.characterDictionary[currentCharacterType];
+                        resetCurrentCharacterColorFromDropDown();
+                        reload_everything();
+                        fileStream.Close();
+                    }
+                    catch (Exception ex){
+                    }
+                    MessageBox.Show("Invalid ROM format");
                 }
             }
         }
@@ -1277,14 +1283,20 @@ namespace PaletteSwap
                 {
                     //Get the path of specified file
                     filePath = openFileDialog.FileName;
-
-                    //Read the contents of the file into a stream
-                    FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
-                    gameSet = GameSet.GameSetFromZipColorSet(fileStream);
-                    characterSet = gameSet.characterDictionary[currentCharacterType];
-                    resetCurrentCharacterColorFromDropDown();
-                    reload_everything();
-                    fileStream.Close();
+                    try
+                    {
+                        //Read the contents of the file into a stream
+                        FileStream fileStream = (System.IO.FileStream)openFileDialog.OpenFile();
+                        gameSet = GameSet.GameSetFromZipColorSet(fileStream);
+                        characterSet = gameSet.characterDictionary[currentCharacterType];
+                        resetCurrentCharacterColorFromDropDown();
+                        reload_everything();
+                        fileStream.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Invalid colorset format");
+                    }
                 }
             }
         }
