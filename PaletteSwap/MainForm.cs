@@ -5,6 +5,7 @@ using System.IO.Compression;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace PaletteSwap
 {
@@ -988,7 +989,14 @@ namespace PaletteSwap
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Palette Swapper, by Zass");
+
+            var version2 = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+           
+
+            //string version = System.Windows.Forms.Application.ProductVersion;
+            var t = String.Format("Palette Swapper Version {0}", version2);
+
+            MessageBox.Show(t + "\nby Zass, 2020");
         }
 
         private void openROMToolStripMenuItem_Click(object sender, EventArgs e)

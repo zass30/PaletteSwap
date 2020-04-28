@@ -788,8 +788,8 @@ namespace PaletteSwap
         { "headband2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 20 } },
         { "headband3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 2 + 22 } },
         { "costume1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
-        { "costume2", new List<int>() { 20, ROWLEN * 1 + 16, ROWLEN * 3 + 16 } },
-        { "costume3", new List<int>() { 22, ROWLEN * 1 + 18, ROWLEN * 3 + 18 } },
+        { "costume2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 3 + 16, 20 } }, // fix jab color encoding
+        { "costume3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 3 + 18, 22 } },
         { "costume4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 3 + 20 } },
         { "costume5", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
         { "blood1", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
