@@ -385,20 +385,36 @@ namespace PaletteSwap
         public static GameSet GameSetFromZipStream(Stream fileStream)
         {
             var gs = new GameSet();
-            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
+                CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken };
+
+            foreach (CharacterConfig.CHARACTERS character in supportedCharacters)
             {
                 gs.characterDictionary[character] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, character);
             }
+            /*
+            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            {
+                gs.characterDictionary[character] = CharacterSet.CharacterColorSetFromZipStreamChar(fileStream, character);
+            }*/
             return gs;
         }
 
         public static GameSet GameSetFromZipColorSet(Stream fileStream)
         {
             var gs = new GameSet();
-            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
+                CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken };
+
+            foreach (CharacterConfig.CHARACTERS character in supportedCharacters)
             {
                 gs.characterDictionary[character] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, character);
             }
+            /*
+            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            {
+                gs.characterDictionary[character] = CharacterSet.CharacterColorSetFromZipColorSetChar(fileStream, character);
+            }*/
            return gs;
         }
     }

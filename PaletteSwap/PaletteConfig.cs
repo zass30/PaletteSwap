@@ -31,7 +31,13 @@ namespace PaletteSwap
         static public int bisonPunchesValue = 0x14;
 
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
-        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun, Boxer, Ken };
+        //        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun, Boxer, Ken };
+        public enum CHARACTERS
+        {
+            Ryu, Ehonda, Blanka, Guile, Ken, Chun, Zangief, Dhalsim,
+            Dictator, Sagat, Boxer, Claw, Cammy, Thawk, Feilong, Deejay
+        };
+            //Dictator, Claw, Guile, Ryu, Chun, Boxer, Ken };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
         {
@@ -366,20 +372,38 @@ namespace PaletteSwap
         {
             switch (c)
             {
-                case CHARACTERS.Dictator:
-                    return "DIC";
-                case CHARACTERS.Claw:
-                    return "CLA";
-                case CHARACTERS.Guile:
-                    return "GUI";
                 case CHARACTERS.Ryu:
                     return "RYU";
+                case CHARACTERS.Ehonda:
+                    return "EHO";
+                case CHARACTERS.Blanka:
+                    return "BLA";
+                case CHARACTERS.Guile:
+                    return "GUI";
                 case CHARACTERS.Ken:
                     return "KEN";
                 case CHARACTERS.Chun:
                     return "CHU";
+                case CHARACTERS.Zangief:
+                    return "ZAN";
+                case CHARACTERS.Dhalsim:
+                    return "DHA";
+                case CHARACTERS.Dictator:
+                    return "DIC";
+                case CHARACTERS.Sagat:
+                    return "SAG";
                 case CHARACTERS.Boxer:
                     return "BOX";
+                case CHARACTERS.Claw:
+                    return "CLA";
+                case CHARACTERS.Cammy:
+                    return "CAM";
+                case CHARACTERS.Thawk:
+                    return "THA";
+                case CHARACTERS.Feilong:
+                    return "FEI";
+                case CHARACTERS.Deejay:
+                    return "DEE";
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -388,20 +412,38 @@ namespace PaletteSwap
         {
             switch (s)
             {
-                case "CLA":
-                    return CHARACTERS.Claw;
-                case "DIC":
-                    return CHARACTERS.Dictator;
+                case "RYU":
+                    return CHARACTERS.Ryu;
+                case "EHO":
+                    return CHARACTERS.Ehonda;
+                case "BLA":
+                    return CHARACTERS.Blanka;
                 case "GUI":
                     return CHARACTERS.Guile;
                 case "KEN":
                     return CHARACTERS.Ken;
-                case "RYU":
-                    return CHARACTERS.Ryu;
                 case "CHU":
                     return CHARACTERS.Chun;
+                case "ZAN":
+                    return CHARACTERS.Zangief;
+                case "DHA":
+                    return CHARACTERS.Dhalsim;
+                case "DIC":
+                    return CHARACTERS.Dictator;
+                case "SAG":
+                    return CHARACTERS.Sagat;
                 case "BOX":
                     return CHARACTERS.Boxer;
+                case "CLA":
+                    return CHARACTERS.Claw;
+                case "CAM":
+                    return CHARACTERS.Cammy;
+                case "THA":
+                    return CHARACTERS.Thawk;
+                case "FEI":
+                    return CHARACTERS.Feilong;
+                case "DEE":
+                    return CHARACTERS.Deejay;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -412,18 +454,36 @@ namespace PaletteSwap
             {
                 case CHARACTERS.Ryu:
                     return 0;
+                case CHARACTERS.Ehonda:
+                    return 1;
+                case CHARACTERS.Blanka:
+                    return 2;
                 case CHARACTERS.Guile:
                     return 3;
                 case CHARACTERS.Ken:
                     return 4;
                 case CHARACTERS.Chun:
                     return 5;
+                case CHARACTERS.Zangief:
+                    return 6;
+                case CHARACTERS.Dhalsim:
+                    return 7;
                 case CHARACTERS.Dictator:
                     return 8;
+                case CHARACTERS.Sagat:
+                    return 9;
                 case CHARACTERS.Boxer:
                     return 10;
                 case CHARACTERS.Claw:
                     return 11;
+                case CHARACTERS.Cammy:
+                    return 12;
+                case CHARACTERS.Thawk:
+                    return 13;
+                case CHARACTERS.Feilong:
+                    return 14;
+                case CHARACTERS.Deejay:
+                    return 15;
             }
             return 0;
         }

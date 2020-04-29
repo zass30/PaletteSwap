@@ -38,18 +38,27 @@ namespace PaletteSwap
 
         public void CreateCharacterSet()
         {
-/*            currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
-            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
-            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
-            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
-            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
-            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun] = new CharacterSet(CharacterConfig.CHARACTERS.Chun);
-            gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = new CharacterSet(CharacterConfig.CHARACTERS.Boxer);
-*/
-            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            /*            currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
+                        gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
+                        gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw] = CharacterSet.GenerateClawCharacterSet();
+                        gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile] = CharacterSet.GenerateGuileCharacterSet();
+                        gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu] = new CharacterSet(CharacterConfig.CHARACTERS.Ryu);
+                        gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun] = new CharacterSet(CharacterConfig.CHARACTERS.Chun);
+                        gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = new CharacterSet(CharacterConfig.CHARACTERS.Boxer);
+            */
+
+            CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
+                CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken };
+
+            foreach (CharacterConfig.CHARACTERS character in supportedCharacters)
             {
                 gameSet.characterDictionary[character] = new CharacterSet(character);
             }
+            /*
+            foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+            {
+                gameSet.characterDictionary[character] = new CharacterSet(character);
+            }*/
             currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
             characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
         }
