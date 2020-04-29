@@ -724,4 +724,13 @@
   <data name="zan9portrait" xml:space="preserve">
     <value>FD0F EB0F B80E 960C 740A 5308 4006 660F 000D 000B 0009 0008 600F 000C 0009 9A00 FD0F EB0F B80E 960C 740A 5308 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900</value>
   </data>
+  <data name="ZAN_neutral0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zangief\ZAN_neutral0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZAN_portraitloss0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zangief\ZAN_portraitloss0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZAN_portraitvictory0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zangief\ZAN_portraitvictory0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

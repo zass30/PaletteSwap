@@ -1841,6 +1841,36 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ZAN_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("ZAN_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ZAN_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("ZAN_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ZAN_portraitvictory0 {
+            get {
+                object obj = ResourceManager.GetObject("ZAN_portraitvictory0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FD0F EB0F B80E 960C 740A 5308 3106 950F 620D 400B 300A 2008 600F 000C 0009 0A00 FD0F EB0F B80E 960C 740A 5308 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 0A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C 0000 0000 0000 0A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C 0000 0000 0000 0A00.
         /// </summary>
         public static string zan0portrait {
