@@ -57,6 +57,23 @@ namespace PaletteSwapTest
             expected = Resources.gui8sprite;
             result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Guile, 8);
             Assert.AreEqual(expected, result);
+
+      /*      using (StreamWriter sw = new StreamWriter(@"c:\temp\res.txt"))
+            {
+
+                foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        var resourceName = CharacterConfig.CodeFromCharacterEnum(character).ToLower();
+                        string spriteString = resourceName + i.ToString() + "sprite: " + CharacterSet.GetSpriteResourceFromRom(character, i);
+                        sw.WriteLine(spriteString);
+                        string portraitString = resourceName + i.ToString() + "portrait: " + CharacterSet.GetPortraitResourceFromRom(character, i);
+                        sw.WriteLine(portraitString);
+                    }
+                }
+            }*/
+
         }
 
         [TestMethod]
