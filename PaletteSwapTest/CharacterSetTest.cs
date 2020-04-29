@@ -38,8 +38,24 @@ namespace PaletteSwapTest
             result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Chun, 3);
             Assert.AreEqual(expected, result);
 
-            expected = Resources.cla6sprite;
+            expected = Resources.cla6portrait;
             result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Claw, 6);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.zan2portrait;
+            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, 2);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.ryu1sprite;
+            result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ryu, 1);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.ken4sprite;
+            result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ken, 4);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.gui8sprite;
+            result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Guile, 8);
             Assert.AreEqual(expected, result);
         }
 

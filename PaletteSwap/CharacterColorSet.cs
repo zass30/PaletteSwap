@@ -52,12 +52,9 @@ namespace PaletteSwap
             byte[] sprite_bytes = new byte[sprite_length];
             byte[] portrait_bytes = new byte[portrait_length];
 
-            Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
             Array.Copy(portraits, portrait_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
 
             return PaletteHelper.ByteStreamToString(portrait_bytes);
-
-            return "";
         }
 
         public static string GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, int i)
@@ -75,10 +72,10 @@ namespace PaletteSwap
             byte[] portrait_bytes = new byte[portrait_length];
 
             Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
-            Array.Copy(portraits, portrait_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
-
+            byte[] final = new byte[sprite_length - 2];
+            Array.Copy(sprite_bytes, final, final.Length);
+            return PaletteHelper.ByteStreamToString(final);
             return PaletteHelper.ByteStreamToString(sprite_bytes);
-
         }
 
 
