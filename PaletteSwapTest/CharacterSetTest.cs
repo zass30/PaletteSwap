@@ -24,6 +24,12 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
+        public void PrintResourceStringsTest()
+        {
+            var ryu0expected = Resources.ryu0portrait;
+            var cs = CharacterSet.CharacterColorSetFromStreamsChar(Resources.sfxe04a, Resources.sfxe03c, CharacterConfig.CHARACTERS.Ryu);
+        }
+        [TestMethod]
         public void CharacterSetDefaultColorByteStreamTest()
         {
             var characterSet = CharacterSet.GenerateDictatorCharacterSet();

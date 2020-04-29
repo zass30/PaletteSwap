@@ -36,6 +36,19 @@ namespace PaletteSwap
             characterColors[9] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.old2);
         }
 
+
+        // todo complete
+        public string GetPortraitResourceFromRom(CharacterConfig.CHARACTERS character, CharacterConfig.BUTTONS button)
+        {
+            return "";
+        }
+
+        public string GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, CharacterConfig.BUTTONS button)
+        {
+            return "";
+        }
+
+
         public CharacterSet()
         {
 
