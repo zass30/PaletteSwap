@@ -1025,8 +1025,8 @@ namespace PaletteSwap
                         fileStream.Close();
                     }
                     catch (Exception ex){
+                        MessageBox.Show("Invalid ROM format");
                     }
-                    MessageBox.Show("Invalid ROM format");
                 }
             }
         }
