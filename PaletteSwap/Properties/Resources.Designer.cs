@@ -1839,5 +1839,32 @@ namespace PaletteSwap.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F EB0F B80E 960C 740A 5308 3106 950F 620D 400B 300A 2008 600F 000C 0009 0A00 FD0F EB0F B80E 960C 740A 5308 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 0A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C 0000 0000 0000 0A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C 0000 0000 0000 0A00.
+        /// </summary>
+        public static string zan0portrait {
+            get {
+                return ResourceManager.GetString("zan0portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F EC0F CA0E A80C 860A 6408 4006 AA08 9907 8806 7705 6604 600F 000C 0009 9A00 FD0F EC0F CA0E A80C 860A 6408 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900.
+        /// </summary>
+        public static string zan1portrait {
+            get {
+                return ResourceManager.GetString("zan1portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DD0F BA0F 980E 870D 650B 5008 4006 AA08 9907 8806 7705 6604 600F 000C 0009 9A00 DD0F BA0F 980E 870D 650B 5008 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900.
+        /// </summary>
+        public static string zan2portrait {
+            get {
+                return ResourceManager.GetString("zan2portrait", resourceCulture);
+            }
+        }
     }
 }
