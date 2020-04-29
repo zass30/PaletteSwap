@@ -1866,5 +1866,68 @@ namespace PaletteSwap.Properties {
                 return ResourceManager.GetString("zan2portrait", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C90E A80D 970C 750A 5308 4006 3004 EE0D CC0B AA09 9908 8807 600F 000C 0009 9A00 C90E A80D 970C 750A 5308 4006 3004 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900.
+        /// </summary>
+        public static string zan3portrait {
+            get {
+                return ResourceManager.GetString("zan3portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F DB0E B90D 970B 760A 5407 3005 E60F C50E A30C 920B 800A 600F 000C 0009 9A00 FE0F DB0E B90D 970B 760A 5407 3005 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900.
+        /// </summary>
+        public static string zan4portrait {
+            get {
+                return ResourceManager.GetString("zan4portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F DB0E B90D 970C 750A 5308 4006 C000 A000 8000 6000 4000 600F 000C 0009 9A00 FD0F DB0E B90D 970C 750A 5308 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 FD0F DB0E B90D 970C 750A 5308 4006 C000 A000 8000 6000 4000 600F 000C 0009 9A00 FD0F DB0E B90D 970C 750A 5308 4006 C000 A000 8000 6000 4000 600F 000C 0009 9A00.
+        /// </summary>
+        public static string zan5portrait {
+            get {
+                return ResourceManager.GetString("zan5portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FE0F DB0E B90D 970B 760A 5407 3005 9F06 8E05 6D03 5C02 4A00 600F 000C 0009 9A00 FE0F DB0E B90D 970B 760A 5407 3005 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 990.
+        /// </summary>
+        public static string zan6portrait {
+            get {
+                return ResourceManager.GetString("zan6portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ED0F CA0E A80C 970B 7509 5207 4006 7707 6606 4404 3303 2202 600F 000C 0009 9A00 ED0F CA0E A80C 970B 7509 5207 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 ED0F CA0E A80C 970B 7509 5207 4006 7707 6606 4404 3303 2202 600F 000C 0009 9A00 ED0F CA0E A80C 970B 7509 5207 4006 7707 6606 4404 3303 2202 600F 000C 0009 9A00.
+        /// </summary>
+        public static string zan7portrait {
+            get {
+                return ResourceManager.GetString("zan7portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F EB0F B80E 960C 740A 5308 4006 660F 000D 000B 0009 0008 600F 000C 0009 9A00 FD0F EB0F B80E 960C 740A 5308 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900.
+        /// </summary>
+        public static string zan8portrait {
+            get {
+                return ResourceManager.GetString("zan8portrait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FD0F EB0F B80E 960C 740A 5308 4006 660F 000D 000B 0009 0008 600F 000C 0009 9A00 FD0F EB0F B80E 960C 740A 5308 4006 FF0F DE0C BD09 9C06 0B00 600F 000C 0009 9A00 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900 1101 2202 3303 4404 5505 6606 7707 8808 9909 AA0A BB0B CC0C DD0D EE0E FF0F 9900.
+        /// </summary>
+        public static string zan9portrait {
+            get {
+                return ResourceManager.GetString("zan9portrait", resourceCulture);
+            }
+        }
     }
 }
