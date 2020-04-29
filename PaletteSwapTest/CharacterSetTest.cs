@@ -26,9 +26,23 @@ namespace PaletteSwapTest
         [TestMethod]
         public void PrintResourceStringsTest()
         {
-            var ryu0expected = Resources.ryu0portrait;
-            var cs = CharacterSet.CharacterColorSetFromStreamsChar(Resources.sfxe04a, Resources.sfxe03c, CharacterConfig.CHARACTERS.Ryu);
+            var expected = Resources.ryu0portrait;
+            var result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ryu, 0);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.ryu8portrait;
+            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ryu, 8);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.chu3portrait;
+            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Chun, 3);
+            Assert.AreEqual(expected, result);
+
+            expected = Resources.cla6sprite;
+            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Claw, 6);
+            Assert.AreEqual(expected, result);
         }
+
         [TestMethod]
         public void CharacterSetDefaultColorByteStreamTest()
         {

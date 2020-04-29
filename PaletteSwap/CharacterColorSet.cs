@@ -38,14 +38,47 @@ namespace PaletteSwap
 
 
         // todo complete
-        public string GetPortraitResourceFromRom(CharacterConfig.CHARACTERS character, CharacterConfig.BUTTONS button)
+        public static string GetPortraitResourceFromRom(CharacterConfig.CHARACTERS character, int i)
         {
+            var sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
+            var sprite_length = CharacterConfig.spriteColorLength;
+            var portrait_offset = CharacterConfig.GetPortrait1BeginOffset(character);
+            var portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
+            var portrait_length = CharacterConfig.portraitColorLength;
+
+            byte[] sprites = Resources.sfxe04a;
+            byte[] portraits = Resources.sfxe03c;
+
+            byte[] sprite_bytes = new byte[sprite_length];
+            byte[] portrait_bytes = new byte[portrait_length];
+
+            Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
+            Array.Copy(portraits, portrait_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
+
+            return PaletteHelper.ByteStreamToString(portrait_bytes);
+
             return "";
         }
 
-        public string GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, CharacterConfig.BUTTONS button)
+        public static string GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, int i)
         {
-            return "";
+            var sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
+            var sprite_length = CharacterConfig.spriteColorLength;
+            var portrait_offset = CharacterConfig.GetPortrait1BeginOffset(character);
+            var portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
+            var portrait_length = CharacterConfig.portraitColorLength;
+
+            byte[] sprites = Resources.sfxe04a;
+            byte[] portraits = Resources.sfxe03c;
+
+            byte[] sprite_bytes = new byte[sprite_length];
+            byte[] portrait_bytes = new byte[portrait_length];
+
+            Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
+            Array.Copy(portraits, portrait_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
+
+            return PaletteHelper.ByteStreamToString(sprite_bytes);
+
         }
 
 
