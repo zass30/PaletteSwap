@@ -36,49 +36,6 @@ namespace PaletteSwap
             characterColors[9] = Character.CreateDefaultCharacter(character, CharacterConfig.BUTTONS.old2);
         }
 
-
-        public static byte[] GetPortraitResourceFromRom(CharacterConfig.CHARACTERS character, int i)
-        {
-            var sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
-            var sprite_length = CharacterConfig.spriteColorLength;
-            var portrait_offset = CharacterConfig.GetPortrait1BeginOffset(character);
-            var portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
-            var portrait_length = CharacterConfig.portraitColorLength;
-
-            byte[] sprites = Resources.sfxe04a;
-            byte[] portraits = Resources.sfxe03c;
-
-            byte[] sprite_bytes = new byte[sprite_length];
-            byte[] portrait_bytes = new byte[portrait_length];
-
-            Array.Copy(portraits, portrait_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
-            return portrait_bytes;
-//            return PaletteHelper.ByteStreamToString(portrait_bytes);
-        }
-
-        public static byte[] GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, int i)
-        {
-            var sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
-            var sprite_length = CharacterConfig.spriteColorLength;
-            var portrait_offset = CharacterConfig.GetPortrait1BeginOffset(character);
-            var portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
-            var portrait_length = CharacterConfig.portraitColorLength;
-
-            byte[] sprites = Resources.sfxe04a;
-            byte[] portraits = Resources.sfxe03c;
-
-            byte[] sprite_bytes = new byte[sprite_length];
-            byte[] portrait_bytes = new byte[portrait_length];
-
-            Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
-            byte[] final = new byte[sprite_length - 2];
-            Array.Copy(sprite_bytes, final, final.Length);
-            return final;
-//            return PaletteHelper.ByteStreamToString(final);
-//            return PaletteHelper.ByteStreamToString(sprite_bytes);
-        }
-
-
         public CharacterSet()
         {
 

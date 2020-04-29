@@ -24,59 +24,6 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void PrintResourceStringsTest()
-        {
-            var expected = Resources.ryu0portrait;
-            var result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ryu, 0);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.ryu8portrait;
-            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ryu, 8);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.chu3portrait;
-            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Chun, 3);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.cla6portrait;
-            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Claw, 6);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.zan2portrait;
-            result = CharacterSet.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, 2);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.ryu1sprite;
-            result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ryu, 1);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.ken4sprite;
-            result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ken, 4);
-            Assert.AreEqual(expected, result);
-
-            expected = Resources.gui8sprite;
-            result = CharacterSet.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Guile, 8);
-            Assert.AreEqual(expected, result);
-
-      /*      using (StreamWriter sw = new StreamWriter(@"c:\temp\res.txt"))
-            {
-
-                foreach (CharacterConfig.CHARACTERS character in Enum.GetValues(typeof(CharacterConfig.CHARACTERS)))
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        var resourceName = CharacterConfig.CodeFromCharacterEnum(character).ToLower();
-                        string spriteString = resourceName + i.ToString() + "sprite: " + CharacterSet.GetSpriteResourceFromRom(character, i);
-                        sw.WriteLine(spriteString);
-                        string portraitString = resourceName + i.ToString() + "portrait: " + CharacterSet.GetPortraitResourceFromRom(character, i);
-                        sw.WriteLine(portraitString);
-                    }
-                }
-            }*/
-
-        }
-
-        [TestMethod]
         public void CharacterSetDefaultColorByteStreamTest()
         {
             var characterSet = CharacterSet.GenerateDictatorCharacterSet();
