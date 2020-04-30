@@ -31,13 +31,11 @@ namespace PaletteSwap
         static public int bisonPunchesValue = 0x14;
 
         public enum BUTTONS { lp, mp, hp, lk, mk, hk, start, hold, old1, old2 };
-        //        public enum CHARACTERS { Dictator, Claw, Guile, Ryu, Chun, Boxer, Ken };
         public enum CHARACTERS
         {
             Ryu, Ehonda, Blanka, Guile, Ken, Chun, Zangief, Dhalsim,
             Dictator, Sagat, Boxer, Claw, Cammy, Thawk, Feilong, Deejay
         };
-            //Dictator, Claw, Guile, Ryu, Chun, Boxer, Ken };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
         {
@@ -292,6 +290,8 @@ namespace PaletteSwap
                     return BOXER.GenerateBoxerSpriteConfig();
                 case CharacterConfig.CHARACTERS.Zangief:
                     return ZANGIEF.GenerateZangiefSpriteConfig();
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return HONDA.GenerateHondaSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -316,6 +316,8 @@ namespace PaletteSwap
                     return BOXER.GenerateBoxerPortraitConfig();
                 case CharacterConfig.CHARACTERS.Zangief:
                     return ZANGIEF.GenerateZangiefPortraitConfig();
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return HONDA.GenerateHondaPortraitConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -334,6 +336,99 @@ namespace PaletteSwap
                 cp.c = defaultcolor;
                 cp.position = offset + i;
                 this.defaultColorOffsets.Add(cp);
+            }
+        }
+
+        public struct HONDA
+        {
+            public static Dictionary<string, List<int>> GenerateHondaSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "hair2", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "skin5", new List<int>() { 10 } },
+            { "skin6", new List<int>() { 12 } },
+            { "skin7", new List<int>() { 14 } },
+            { "hair1", new List<int>() { 16 } },
+            { "costume1", new List<int>() { 18 } },
+            { "costume2", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume4", new List<int>() { 24 } },
+            { "costume5", new List<int>() { 26 } },
+            { "facepaint", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateHondaSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateHondaSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateHondaPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6 } },
+
+        { "hair1", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
+        { "hair2", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
+        { "hair3", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+
+        { "facepaint1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 2 + 14, ROWLEN * 3 + 14 } },
+        { "facepaint2", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 2 + 16, ROWLEN * 3 + 16, ROWLEN * 3 + 22 } },
+        { "facepaint3", new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
+
+        { "mouth1", new List<int>() { 20, ROWLEN * 3 + 20 } },
+        { "mouth2", new List<int>() { 22 } },
+
+        { "facepaintloss1", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "facepaintloss2", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+
+        { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28 } },
+
+        { "skin5", new List<int>() { ROWLEN * 2 + 28 } },
+
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateHondaPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> hondaPortraitOffsets = GenerateHondaPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = hondaPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
             }
         }
 
@@ -385,7 +480,8 @@ namespace PaletteSwap
 
         { "hair1", new List<int>() { 8, ROWLEN * 1 + 8 } },
         { "hair2", new List<int>() { 10, ROWLEN * 1 + 10 } },
-        { "hair3", new List<int>() { 12, ROWLEN * 1 + 12 } },
+        { "hair3", new List<int>() { ROWLEN * 1 + 12 } },
+        { "hair4", new List<int>() { 12 } },
 
         { "costume1", new List<int>() { 14 } },
         { "costume2", new List<int>() { 16 } },
@@ -1160,6 +1256,10 @@ PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSp
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_neutral0), 
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)), 
                         PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.HONDA.GenerateHondaSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1192,6 +1292,10 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.ZANGIEF.GenerateZangiefPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1224,6 +1328,10 @@ PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPort
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.ZANGIEF.GenerateZangiefPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_portraitloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }

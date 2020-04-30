@@ -68,5 +68,12 @@ namespace PaletteSwapTest
             var s_result = result.ToColFormat();
             Assert.AreEqual(s_expected, s_result);
         }
+
+        [TestMethod]
+        public void CharacterRemapTest()
+        {
+            var honda = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp);
+            var remapimg = honda.GetBitmap("neutral");
+        }
     }
 }
