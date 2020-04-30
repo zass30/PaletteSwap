@@ -151,6 +151,10 @@ namespace PaletteSwap
                     return 6;
                 case BUTTONS.hold:
                     return 7;
+                case BUTTONS.old1:
+                    return 8;
+                case BUTTONS.old2:
+                    return 9;
             }
             return 0;
         }
