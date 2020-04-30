@@ -139,7 +139,7 @@ namespace PaletteSwap
 
         private void load_portrait_victory()
         {
-            var v = currentCharacter.portrait.GetBitmap("victory");
+            var v = currentCharacter.GetBitmap("victory");
             var p = GetPortraitVictoryBox();
             p.BackgroundImage = v;
         }

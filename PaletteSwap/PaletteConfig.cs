@@ -1190,7 +1190,7 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
                 case CharacterConfig.CHARACTERS.Zangief:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
+                        PaletteConfig.ZANGIEF.GenerateZangiefPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1222,7 +1222,7 @@ PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPort
                 case CharacterConfig.CHARACTERS.Zangief:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
+                        PaletteConfig.ZANGIEF.GenerateZangiefPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
