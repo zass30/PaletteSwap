@@ -147,7 +147,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\zangief\ZAN_portraitvictory0.png" />
+    <None Include="Resources\zangief\ZAN_portraitwin0.png" />
     <None Include="Resources\zangief\ZAN_portraitloss0.png" />
     <None Include="Resources\zangief\ZAN_neutral0.png" />
     <None Include="Resources\ken\KEN_portraitwin0.png" />

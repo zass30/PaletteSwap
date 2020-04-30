@@ -25,6 +25,9 @@ namespace PaletteSwap
         int DEFAULT_DROPDOWN_INDEX = 0;
         enum ROMSTYLE { us, japanese, phoenix };
         Regex rx = new Regex(@"[^_]+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
+                CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
+                CharacterConfig.CHARACTERS.Zangief};
 
         public MainForm()
         {
@@ -47,8 +50,6 @@ namespace PaletteSwap
                         gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer] = new CharacterSet(CharacterConfig.CHARACTERS.Boxer);
             */
 
-            CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
-                CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken };
 
             foreach (CharacterConfig.CHARACTERS character in supportedCharacters)
             {
@@ -159,6 +160,8 @@ namespace PaletteSwap
                     return RYU_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Ken:
                     return KEN_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZAN_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Guile:
@@ -181,6 +184,8 @@ namespace PaletteSwap
                     return RYU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Ken:
                     return KEN_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZAN_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Guile:
@@ -203,6 +208,8 @@ namespace PaletteSwap
                     return RYU_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Ken:
                     return KEN_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZAN_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Chun:
                     return CHU_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Guile:
@@ -747,6 +754,7 @@ namespace PaletteSwap
                 case "GUI_neutralStandBox":
                 case "RYU_neutralStandBox":
                 case "KEN_neutralStandBox":
+                case "ZAN_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -756,6 +764,7 @@ namespace PaletteSwap
                 case "GUI_portraitVictoryBox":
                 case "RYU_portraitVictoryBox":
                 case "KEN_portraitVictoryBox":
+                case "ZAN_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -765,6 +774,7 @@ namespace PaletteSwap
                 case "GUI_portraitLossBox":
                 case "RYU_portraitLossBox":
                 case "KEN_portraitLossBox":
+                case "ZAN_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
@@ -1206,6 +1216,14 @@ namespace PaletteSwap
             {
                 currentCharacterType = CharacterConfig.CHARACTERS.Boxer;
                 characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer];
+                currentCharacter = characterSet.characterColors[0];
+                SetDefaultDropDown();
+                reload_everything();
+            }
+            else if (selt.Name == "TabPageZangief")
+            {
+                currentCharacterType = CharacterConfig.CHARACTERS.Zangief;
+                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Zangief];
                 currentCharacter = characterSet.characterColors[0];
                 SetDefaultDropDown();
                 reload_everything();

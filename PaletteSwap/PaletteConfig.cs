@@ -195,7 +195,6 @@ namespace PaletteSwap
             return 0;
         }
 
-
         public static byte[] GetPortraitResourceFromRom(CHARACTERS character, BUTTONS b)
         {
             int i = GetButtonIdFromButton(b);
@@ -287,6 +286,8 @@ namespace PaletteSwap
                     return DICTATOR.GenerateDictatorSpriteConfig();
                 case CharacterConfig.CHARACTERS.Boxer:
                     return BOXER.GenerateBoxerSpriteConfig();
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZANGIEF.GenerateZangiefSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -309,7 +310,8 @@ namespace PaletteSwap
                     return DICTATOR.GenerateDictatorPortraitConfig();
                 case CharacterConfig.CHARACTERS.Boxer:
                     return BOXER.GenerateBoxerPortraitConfig();
-
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZANGIEF.GenerateZangiefPortraitConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -1149,6 +1151,10 @@ PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSp
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_neutral1),
     PaletteSwap.Properties.Resources.chu1sprite, PaletteConfig.CHUN.GenerateChunSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_neutral0), 
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)), 
+                        PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1177,6 +1183,10 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitwin1),
     PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1205,6 +1215,10 @@ PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPort
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitloss1),
     PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }

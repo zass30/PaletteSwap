@@ -1863,9 +1863,9 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap ZAN_portraitvictory0 {
+        public static System.Drawing.Bitmap ZAN_portraitwin0 {
             get {
-                object obj = ResourceManager.GetObject("ZAN_portraitvictory0", resourceCulture);
+                object obj = ResourceManager.GetObject("ZAN_portraitwin0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
