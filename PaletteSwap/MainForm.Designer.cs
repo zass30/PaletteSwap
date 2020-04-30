@@ -491,11 +491,55 @@
             this.KEN_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.KEN_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.KEN_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.COLlabel = new System.Windows.Forms.Label();
             this.TabPageZangief = new System.Windows.Forms.TabPage();
+            this.ZAN_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.ZAN_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.ZAN_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.ZAN_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
+            this.ZAN_portrait_costume5 = new System.Windows.Forms.PictureBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.ZAN_portrait_eyes2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_eyes1 = new System.Windows.Forms.PictureBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.ZAN_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.label83 = new System.Windows.Forms.Label();
+            this.ZAN_portrait_hair3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_hair2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_hair1 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_eyes3 = new System.Windows.Forms.PictureBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.ZAN_portrait_costume4 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_costume3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_costume2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_costume1 = new System.Windows.Forms.PictureBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.ZAN_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_eyes4 = new System.Windows.Forms.PictureBox();
+            this.ZAN_portrait_eyes5 = new System.Windows.Forms.PictureBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.ZAN_sprite_belt1 = new System.Windows.Forms.PictureBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.ZAN_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_hair1 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_hair2 = new System.Windows.Forms.PictureBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.ZAN_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_hair3 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_belt2 = new System.Windows.Forms.PictureBox();
+            this.ZAN_sprite_belt3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -829,9 +873,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitVictoryBox)).BeginInit();
             this.TabPageZangief.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZAN_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZAN_portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZAN_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_belt1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_belt2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_belt3)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1182,7 +1261,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1195,7 +1274,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -1215,7 +1294,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -1223,7 +1302,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -1233,7 +1312,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -1253,7 +1332,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -1262,7 +1341,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -1271,14 +1350,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -1287,7 +1366,7 @@
             this.phoenixROMToolStripMenuItem,
             this.japaneseROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
             // 
             // standardROMToolStripMenuItem
@@ -1314,7 +1393,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -6003,18 +6082,52 @@
             this.KEN_portraitVictoryBox.TabStop = false;
             this.KEN_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
-            // COLlabel
-            // 
-            this.COLlabel.AllowDrop = true;
-            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.COLlabel.Location = new System.Drawing.Point(341, 663);
-            this.COLlabel.Name = "COLlabel";
-            this.COLlabel.Size = new System.Drawing.Size(90, 49);
-            this.COLlabel.TabIndex = 122;
-            this.COLlabel.Text = "Drag COL file";
-            // 
             // TabPageZangief
             // 
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_belt3);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_belt2);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_hair3);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_skin5);
+            this.TabPageZangief.Controls.Add(this.label86);
+            this.TabPageZangief.Controls.Add(this.label87);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_belt1);
+            this.TabPageZangief.Controls.Add(this.label89);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_costume1);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_costume2);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_costume3);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_costume4);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_hair1);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_hair2);
+            this.TabPageZangief.Controls.Add(this.label90);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_skin1);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_skin2);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_skin3);
+            this.TabPageZangief.Controls.Add(this.ZAN_sprite_skin4);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_eyes5);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_eyes4);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_costume5);
+            this.TabPageZangief.Controls.Add(this.label79);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_eyes2);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_eyes1);
+            this.TabPageZangief.Controls.Add(this.label82);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_blood3);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_blood2);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_blood1);
+            this.TabPageZangief.Controls.Add(this.label83);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_hair3);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_hair2);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_hair1);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_eyes3);
+            this.TabPageZangief.Controls.Add(this.label84);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_costume4);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_costume3);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_costume2);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_costume1);
+            this.TabPageZangief.Controls.Add(this.label85);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_skin4);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_skin3);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_skin2);
+            this.TabPageZangief.Controls.Add(this.ZAN_portrait_skin1);
             this.TabPageZangief.Controls.Add(this.ZAN_neutralStandBox);
             this.TabPageZangief.Controls.Add(this.ZAN_portraitLossBox);
             this.TabPageZangief.Controls.Add(this.ZAN_portraitVictoryBox);
@@ -6024,6 +6137,16 @@
             this.TabPageZangief.TabIndex = 7;
             this.TabPageZangief.Text = "Zangief";
             this.TabPageZangief.UseVisualStyleBackColor = true;
+            // 
+            // ZAN_neutralStandBox
+            // 
+            this.ZAN_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.ZAN_neutralStandBox.Location = new System.Drawing.Point(15, 20);
+            this.ZAN_neutralStandBox.Name = "ZAN_neutralStandBox";
+            this.ZAN_neutralStandBox.Size = new System.Drawing.Size(95, 111);
+            this.ZAN_neutralStandBox.TabIndex = 186;
+            this.ZAN_neutralStandBox.TabStop = false;
+            this.ZAN_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // ZAN_portraitLossBox
             // 
@@ -6045,15 +6168,481 @@
             this.ZAN_portraitVictoryBox.TabStop = false;
             this.ZAN_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
-            // ZAN_neutralStandBox
+            // COLlabel
             // 
-            this.ZAN_neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.ZAN_neutralStandBox.Location = new System.Drawing.Point(15, 20);
-            this.ZAN_neutralStandBox.Name = "ZAN_neutralStandBox";
-            this.ZAN_neutralStandBox.Size = new System.Drawing.Size(95, 111);
-            this.ZAN_neutralStandBox.TabIndex = 186;
-            this.ZAN_neutralStandBox.TabStop = false;
-            this.ZAN_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            this.COLlabel.AllowDrop = true;
+            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.COLlabel.Location = new System.Drawing.Point(341, 663);
+            this.COLlabel.Name = "COLlabel";
+            this.COLlabel.Size = new System.Drawing.Size(90, 49);
+            this.COLlabel.TabIndex = 122;
+            this.COLlabel.Text = "Drag COL file";
+            // 
+            // ZAN_portrait_costume5
+            // 
+            this.ZAN_portrait_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_costume5.Location = new System.Drawing.Point(442, 193);
+            this.ZAN_portrait_costume5.Name = "ZAN_portrait_costume5";
+            this.ZAN_portrait_costume5.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_costume5.TabIndex = 318;
+            this.ZAN_portrait_costume5.TabStop = false;
+            this.ZAN_portrait_costume5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(267, 294);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(29, 13);
+            this.label79.TabIndex = 317;
+            this.label79.Text = "eyes";
+            // 
+            // ZAN_portrait_eyes2
+            // 
+            this.ZAN_portrait_eyes2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_eyes2.Location = new System.Drawing.Point(352, 283);
+            this.ZAN_portrait_eyes2.Name = "ZAN_portrait_eyes2";
+            this.ZAN_portrait_eyes2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_eyes2.TabIndex = 316;
+            this.ZAN_portrait_eyes2.TabStop = false;
+            this.ZAN_portrait_eyes2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_eyes2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_eyes1
+            // 
+            this.ZAN_portrait_eyes1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_eyes1.Location = new System.Drawing.Point(322, 283);
+            this.ZAN_portrait_eyes1.Name = "ZAN_portrait_eyes1";
+            this.ZAN_portrait_eyes1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_eyes1.TabIndex = 315;
+            this.ZAN_portrait_eyes1.TabStop = false;
+            this.ZAN_portrait_eyes1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_eyes1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(267, 264);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(33, 13);
+            this.label82.TabIndex = 314;
+            this.label82.Text = "blood";
+            // 
+            // ZAN_portrait_blood3
+            // 
+            this.ZAN_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_blood3.Location = new System.Drawing.Point(382, 253);
+            this.ZAN_portrait_blood3.Name = "ZAN_portrait_blood3";
+            this.ZAN_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_blood3.TabIndex = 313;
+            this.ZAN_portrait_blood3.TabStop = false;
+            this.ZAN_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_blood2
+            // 
+            this.ZAN_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_blood2.Location = new System.Drawing.Point(352, 253);
+            this.ZAN_portrait_blood2.Name = "ZAN_portrait_blood2";
+            this.ZAN_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_blood2.TabIndex = 312;
+            this.ZAN_portrait_blood2.TabStop = false;
+            this.ZAN_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_blood1
+            // 
+            this.ZAN_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_blood1.Location = new System.Drawing.Point(322, 253);
+            this.ZAN_portrait_blood1.Name = "ZAN_portrait_blood1";
+            this.ZAN_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_blood1.TabIndex = 311;
+            this.ZAN_portrait_blood1.TabStop = false;
+            this.ZAN_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(267, 234);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(24, 13);
+            this.label83.TabIndex = 310;
+            this.label83.Text = "hair";
+            // 
+            // ZAN_portrait_hair3
+            // 
+            this.ZAN_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_hair3.Location = new System.Drawing.Point(382, 223);
+            this.ZAN_portrait_hair3.Name = "ZAN_portrait_hair3";
+            this.ZAN_portrait_hair3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_hair3.TabIndex = 309;
+            this.ZAN_portrait_hair3.TabStop = false;
+            this.ZAN_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_hair2
+            // 
+            this.ZAN_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_hair2.Location = new System.Drawing.Point(352, 223);
+            this.ZAN_portrait_hair2.Name = "ZAN_portrait_hair2";
+            this.ZAN_portrait_hair2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_hair2.TabIndex = 308;
+            this.ZAN_portrait_hair2.TabStop = false;
+            this.ZAN_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_hair1
+            // 
+            this.ZAN_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_hair1.Location = new System.Drawing.Point(322, 223);
+            this.ZAN_portrait_hair1.Name = "ZAN_portrait_hair1";
+            this.ZAN_portrait_hair1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_hair1.TabIndex = 307;
+            this.ZAN_portrait_hair1.TabStop = false;
+            this.ZAN_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_eyes3
+            // 
+            this.ZAN_portrait_eyes3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_eyes3.Location = new System.Drawing.Point(382, 283);
+            this.ZAN_portrait_eyes3.Name = "ZAN_portrait_eyes3";
+            this.ZAN_portrait_eyes3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_eyes3.TabIndex = 306;
+            this.ZAN_portrait_eyes3.TabStop = false;
+            this.ZAN_portrait_eyes3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_eyes3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(267, 204);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(47, 13);
+            this.label84.TabIndex = 305;
+            this.label84.Text = "costume";
+            // 
+            // ZAN_portrait_costume4
+            // 
+            this.ZAN_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_costume4.Location = new System.Drawing.Point(412, 193);
+            this.ZAN_portrait_costume4.Name = "ZAN_portrait_costume4";
+            this.ZAN_portrait_costume4.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_costume4.TabIndex = 304;
+            this.ZAN_portrait_costume4.TabStop = false;
+            this.ZAN_portrait_costume4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_costume3
+            // 
+            this.ZAN_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_costume3.Location = new System.Drawing.Point(382, 193);
+            this.ZAN_portrait_costume3.Name = "ZAN_portrait_costume3";
+            this.ZAN_portrait_costume3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_costume3.TabIndex = 303;
+            this.ZAN_portrait_costume3.TabStop = false;
+            this.ZAN_portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_costume2
+            // 
+            this.ZAN_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_costume2.Location = new System.Drawing.Point(352, 193);
+            this.ZAN_portrait_costume2.Name = "ZAN_portrait_costume2";
+            this.ZAN_portrait_costume2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_costume2.TabIndex = 302;
+            this.ZAN_portrait_costume2.TabStop = false;
+            this.ZAN_portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_costume1
+            // 
+            this.ZAN_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_costume1.Location = new System.Drawing.Point(322, 193);
+            this.ZAN_portrait_costume1.Name = "ZAN_portrait_costume1";
+            this.ZAN_portrait_costume1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_costume1.TabIndex = 301;
+            this.ZAN_portrait_costume1.TabStop = false;
+            this.ZAN_portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(267, 174);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(26, 13);
+            this.label85.TabIndex = 300;
+            this.label85.Text = "skin";
+            // 
+            // ZAN_portrait_skin4
+            // 
+            this.ZAN_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_skin4.Location = new System.Drawing.Point(412, 163);
+            this.ZAN_portrait_skin4.Name = "ZAN_portrait_skin4";
+            this.ZAN_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_skin4.TabIndex = 296;
+            this.ZAN_portrait_skin4.TabStop = false;
+            this.ZAN_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_skin3
+            // 
+            this.ZAN_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_skin3.Location = new System.Drawing.Point(382, 163);
+            this.ZAN_portrait_skin3.Name = "ZAN_portrait_skin3";
+            this.ZAN_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_skin3.TabIndex = 295;
+            this.ZAN_portrait_skin3.TabStop = false;
+            this.ZAN_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_skin2
+            // 
+            this.ZAN_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_skin2.Location = new System.Drawing.Point(352, 163);
+            this.ZAN_portrait_skin2.Name = "ZAN_portrait_skin2";
+            this.ZAN_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_skin2.TabIndex = 294;
+            this.ZAN_portrait_skin2.TabStop = false;
+            this.ZAN_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_skin1
+            // 
+            this.ZAN_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_skin1.Location = new System.Drawing.Point(322, 163);
+            this.ZAN_portrait_skin1.Name = "ZAN_portrait_skin1";
+            this.ZAN_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_skin1.TabIndex = 293;
+            this.ZAN_portrait_skin1.TabStop = false;
+            this.ZAN_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_eyes4
+            // 
+            this.ZAN_portrait_eyes4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_eyes4.Location = new System.Drawing.Point(412, 283);
+            this.ZAN_portrait_eyes4.Name = "ZAN_portrait_eyes4";
+            this.ZAN_portrait_eyes4.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_eyes4.TabIndex = 319;
+            this.ZAN_portrait_eyes4.TabStop = false;
+            this.ZAN_portrait_eyes4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_eyes4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_portrait_eyes5
+            // 
+            this.ZAN_portrait_eyes5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_portrait_eyes5.Location = new System.Drawing.Point(442, 283);
+            this.ZAN_portrait_eyes5.Name = "ZAN_portrait_eyes5";
+            this.ZAN_portrait_eyes5.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_portrait_eyes5.TabIndex = 320;
+            this.ZAN_portrait_eyes5.TabStop = false;
+            this.ZAN_portrait_eyes5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.ZAN_portrait_eyes5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(11, 204);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(24, 13);
+            this.label86.TabIndex = 338;
+            this.label86.Text = "hair";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(11, 234);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(24, 13);
+            this.label87.TabIndex = 337;
+            this.label87.Text = "belt";
+            // 
+            // ZAN_sprite_belt1
+            // 
+            this.ZAN_sprite_belt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_belt1.Location = new System.Drawing.Point(79, 223);
+            this.ZAN_sprite_belt1.Name = "ZAN_sprite_belt1";
+            this.ZAN_sprite_belt1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_belt1.TabIndex = 336;
+            this.ZAN_sprite_belt1.TabStop = false;
+            this.ZAN_sprite_belt1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_belt1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(11, 263);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(47, 13);
+            this.label89.TabIndex = 328;
+            this.label89.Text = "costume";
+            // 
+            // ZAN_sprite_costume1
+            // 
+            this.ZAN_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_costume1.Location = new System.Drawing.Point(79, 253);
+            this.ZAN_sprite_costume1.Name = "ZAN_sprite_costume1";
+            this.ZAN_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_costume1.TabIndex = 329;
+            this.ZAN_sprite_costume1.TabStop = false;
+            this.ZAN_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_costume2
+            // 
+            this.ZAN_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_costume2.Location = new System.Drawing.Point(109, 253);
+            this.ZAN_sprite_costume2.Name = "ZAN_sprite_costume2";
+            this.ZAN_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_costume2.TabIndex = 330;
+            this.ZAN_sprite_costume2.TabStop = false;
+            this.ZAN_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_costume3
+            // 
+            this.ZAN_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_costume3.Location = new System.Drawing.Point(139, 253);
+            this.ZAN_sprite_costume3.Name = "ZAN_sprite_costume3";
+            this.ZAN_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_costume3.TabIndex = 331;
+            this.ZAN_sprite_costume3.TabStop = false;
+            this.ZAN_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_costume4
+            // 
+            this.ZAN_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_costume4.Location = new System.Drawing.Point(169, 253);
+            this.ZAN_sprite_costume4.Name = "ZAN_sprite_costume4";
+            this.ZAN_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_costume4.TabIndex = 332;
+            this.ZAN_sprite_costume4.TabStop = false;
+            this.ZAN_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_hair1
+            // 
+            this.ZAN_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_hair1.Location = new System.Drawing.Point(79, 193);
+            this.ZAN_sprite_hair1.Name = "ZAN_sprite_hair1";
+            this.ZAN_sprite_hair1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_hair1.TabIndex = 326;
+            this.ZAN_sprite_hair1.TabStop = false;
+            this.ZAN_sprite_hair1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_hair2
+            // 
+            this.ZAN_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_hair2.Location = new System.Drawing.Point(109, 193);
+            this.ZAN_sprite_hair2.Name = "ZAN_sprite_hair2";
+            this.ZAN_sprite_hair2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_hair2.TabIndex = 327;
+            this.ZAN_sprite_hair2.TabStop = false;
+            this.ZAN_sprite_hair2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(12, 174);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(26, 13);
+            this.label90.TabIndex = 321;
+            this.label90.Text = "skin";
+            // 
+            // ZAN_sprite_skin1
+            // 
+            this.ZAN_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_skin1.Location = new System.Drawing.Point(79, 163);
+            this.ZAN_sprite_skin1.Name = "ZAN_sprite_skin1";
+            this.ZAN_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_skin1.TabIndex = 322;
+            this.ZAN_sprite_skin1.TabStop = false;
+            this.ZAN_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_skin2
+            // 
+            this.ZAN_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_skin2.Location = new System.Drawing.Point(109, 163);
+            this.ZAN_sprite_skin2.Name = "ZAN_sprite_skin2";
+            this.ZAN_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_skin2.TabIndex = 323;
+            this.ZAN_sprite_skin2.TabStop = false;
+            this.ZAN_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_skin3
+            // 
+            this.ZAN_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_skin3.Location = new System.Drawing.Point(139, 163);
+            this.ZAN_sprite_skin3.Name = "ZAN_sprite_skin3";
+            this.ZAN_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_skin3.TabIndex = 324;
+            this.ZAN_sprite_skin3.TabStop = false;
+            this.ZAN_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_skin4
+            // 
+            this.ZAN_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_skin4.Location = new System.Drawing.Point(169, 163);
+            this.ZAN_sprite_skin4.Name = "ZAN_sprite_skin4";
+            this.ZAN_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_skin4.TabIndex = 325;
+            this.ZAN_sprite_skin4.TabStop = false;
+            this.ZAN_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_skin5
+            // 
+            this.ZAN_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_skin5.Location = new System.Drawing.Point(199, 163);
+            this.ZAN_sprite_skin5.Name = "ZAN_sprite_skin5";
+            this.ZAN_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_skin5.TabIndex = 339;
+            this.ZAN_sprite_skin5.TabStop = false;
+            this.ZAN_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_hair3
+            // 
+            this.ZAN_sprite_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_hair3.Location = new System.Drawing.Point(139, 193);
+            this.ZAN_sprite_hair3.Name = "ZAN_sprite_hair3";
+            this.ZAN_sprite_hair3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_hair3.TabIndex = 340;
+            this.ZAN_sprite_hair3.TabStop = false;
+            this.ZAN_sprite_hair3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_belt2
+            // 
+            this.ZAN_sprite_belt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_belt2.Location = new System.Drawing.Point(109, 223);
+            this.ZAN_sprite_belt2.Name = "ZAN_sprite_belt2";
+            this.ZAN_sprite_belt2.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_belt2.TabIndex = 341;
+            this.ZAN_sprite_belt2.TabStop = false;
+            this.ZAN_sprite_belt2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_belt2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // ZAN_sprite_belt3
+            // 
+            this.ZAN_sprite_belt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZAN_sprite_belt3.Location = new System.Drawing.Point(139, 223);
+            this.ZAN_sprite_belt3.Name = "ZAN_sprite_belt3";
+            this.ZAN_sprite_belt3.Size = new System.Drawing.Size(24, 24);
+            this.ZAN_sprite_belt3.TabIndex = 342;
+            this.ZAN_sprite_belt3.TabStop = false;
+            this.ZAN_sprite_belt3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.ZAN_sprite_belt3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -6423,9 +7012,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KEN_portraitVictoryBox)).EndInit();
             this.TabPageZangief.ResumeLayout(false);
+            this.TabPageZangief.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZAN_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZAN_portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ZAN_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_portrait_eyes5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_belt1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_belt2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZAN_sprite_belt3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6899,6 +7524,50 @@
         private System.Windows.Forms.PictureBox ZAN_neutralStandBox;
         private System.Windows.Forms.PictureBox ZAN_portraitLossBox;
         private System.Windows.Forms.PictureBox ZAN_portraitVictoryBox;
+        private System.Windows.Forms.PictureBox ZAN_portrait_eyes5;
+        private System.Windows.Forms.PictureBox ZAN_portrait_eyes4;
+        private System.Windows.Forms.PictureBox ZAN_portrait_costume5;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.PictureBox ZAN_portrait_eyes2;
+        private System.Windows.Forms.PictureBox ZAN_portrait_eyes1;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.PictureBox ZAN_portrait_blood3;
+        private System.Windows.Forms.PictureBox ZAN_portrait_blood2;
+        private System.Windows.Forms.PictureBox ZAN_portrait_blood1;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.PictureBox ZAN_portrait_hair3;
+        private System.Windows.Forms.PictureBox ZAN_portrait_hair2;
+        private System.Windows.Forms.PictureBox ZAN_portrait_hair1;
+        private System.Windows.Forms.PictureBox ZAN_portrait_eyes3;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.PictureBox ZAN_portrait_costume4;
+        private System.Windows.Forms.PictureBox ZAN_portrait_costume3;
+        private System.Windows.Forms.PictureBox ZAN_portrait_costume2;
+        private System.Windows.Forms.PictureBox ZAN_portrait_costume1;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.PictureBox ZAN_portrait_skin4;
+        private System.Windows.Forms.PictureBox ZAN_portrait_skin3;
+        private System.Windows.Forms.PictureBox ZAN_portrait_skin2;
+        private System.Windows.Forms.PictureBox ZAN_portrait_skin1;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.PictureBox ZAN_sprite_belt1;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.PictureBox ZAN_sprite_costume1;
+        private System.Windows.Forms.PictureBox ZAN_sprite_costume2;
+        private System.Windows.Forms.PictureBox ZAN_sprite_costume3;
+        private System.Windows.Forms.PictureBox ZAN_sprite_costume4;
+        private System.Windows.Forms.PictureBox ZAN_sprite_hair1;
+        private System.Windows.Forms.PictureBox ZAN_sprite_hair2;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.PictureBox ZAN_sprite_skin1;
+        private System.Windows.Forms.PictureBox ZAN_sprite_skin2;
+        private System.Windows.Forms.PictureBox ZAN_sprite_skin3;
+        private System.Windows.Forms.PictureBox ZAN_sprite_skin4;
+        private System.Windows.Forms.PictureBox ZAN_sprite_skin5;
+        private System.Windows.Forms.PictureBox ZAN_sprite_hair3;
+        private System.Windows.Forms.PictureBox ZAN_sprite_belt3;
+        private System.Windows.Forms.PictureBox ZAN_sprite_belt2;
     }
 }
 

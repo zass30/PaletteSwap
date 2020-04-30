@@ -395,6 +395,26 @@ namespace PaletteSwap
                     CHU_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     CHU_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
                     break;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    ZAN_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    ZAN_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    ZAN_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    ZAN_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    ZAN_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+
+                    ZAN_sprite_hair1.BackColor = currentCharacter.sprite.GetColor("hair1");
+                    ZAN_sprite_hair2.BackColor = currentCharacter.sprite.GetColor("hair2");
+                    ZAN_sprite_hair3.BackColor = currentCharacter.sprite.GetColor("hair3");
+
+                    ZAN_sprite_belt1.BackColor = currentCharacter.sprite.GetColor("belt1");
+                    ZAN_sprite_belt2.BackColor = currentCharacter.sprite.GetColor("belt2");
+                    ZAN_sprite_belt3.BackColor = currentCharacter.sprite.GetColor("belt3");
+
+                    ZAN_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    ZAN_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    ZAN_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    ZAN_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    break;
             }
         }
 
@@ -625,6 +645,33 @@ namespace PaletteSwap
                     KEN_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
                     KEN_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
                     KEN_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+                    break;
+
+                case CharacterConfig.CHARACTERS.Zangief:
+                    ZAN_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    ZAN_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    ZAN_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    ZAN_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+
+                    ZAN_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    ZAN_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    ZAN_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    ZAN_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+                    ZAN_portrait_costume5.BackColor = currentCharacter.portrait.GetColor("costume5");
+
+                    ZAN_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
+                    ZAN_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
+                    ZAN_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
+
+                    ZAN_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    ZAN_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    ZAN_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
+                    ZAN_portrait_eyes1.BackColor = currentCharacter.portrait.GetColor("eyes1");
+                    ZAN_portrait_eyes2.BackColor = currentCharacter.portrait.GetColor("eyes2");
+                    ZAN_portrait_eyes3.BackColor = currentCharacter.portrait.GetColor("eyes3");
+                    ZAN_portrait_eyes4.BackColor = currentCharacter.portrait.GetColor("eyes4");
+                    ZAN_portrait_eyes5.BackColor = currentCharacter.portrait.GetColor("eyes5");
                     break;
             }
         }

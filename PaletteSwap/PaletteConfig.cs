@@ -391,10 +391,11 @@ namespace PaletteSwap
         { "costume2", new List<int>() { 16 } },
         { "costume3", new List<int>() { 18 } },
         { "costume4", new List<int>() { 20 } },
+        { "costume5", new List<int>() { 22 } },
 
-        { "blood1", new List<int>() { 22, ROWLEN * 1 + 22 } },
-        { "blood2", new List<int>() { 24, ROWLEN * 1 + 24 } },
-        { "blood3", new List<int>() { 26, ROWLEN * 1 + 26 } },
+        { "blood3", new List<int>() { 28, ROWLEN * 1 + 28 } },
+        { "blood1", new List<int>() { 24, ROWLEN * 1 + 24 } },
+        { "blood2", new List<int>() { 26, ROWLEN * 1 + 26 } },
 
         { "eyes1", new List<int>() { ROWLEN * 1 + 14 } },
         { "eyes2", new List<int>() { ROWLEN * 1 + 16 } },
