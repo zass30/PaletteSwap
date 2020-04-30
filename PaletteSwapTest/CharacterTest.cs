@@ -72,8 +72,14 @@ namespace PaletteSwapTest
         [TestMethod]
         public void CharacterRemapTest()
         {
-            var honda = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp);
+            var ryu = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.lp);
+            var ryu_remap = ryu.GetBitmap("neutral");
+
+            var honda = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.start);
             var remapimg = honda.GetBitmap("neutral");
+            remapimg.Save(@"C:\temp\hondan.png");
+
+            // check honda's byte stream? maybe that's wrong
         }
     }
 }
