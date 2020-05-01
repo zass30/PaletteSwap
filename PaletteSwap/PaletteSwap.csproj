@@ -147,6 +147,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\zangief\ZAN_neutral1.png" />
+    <None Include="Resources\zangief\ZAN_portraitwin1.png" />
+    <None Include="Resources\zangief\ZAN_portraitloss1.png" />
     <None Include="Resources\honda\EHO_portraitwin0.png" />
     <None Include="Resources\honda\EHO_portraitloss0.png" />
     <None Include="Resources\honda\EHO_neutral0.png" />

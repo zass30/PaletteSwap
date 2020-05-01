@@ -75,9 +75,12 @@ namespace PaletteSwapTest
             var ryu = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.lp);
             var ryu_remap = ryu.GetBitmap("neutral");
 
-            var honda = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.start);
-            var remapimg = honda.GetBitmap("neutral");
-            remapimg.Save(@"C:\temp\hondan.png");
+            var gief = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Zangief
+                , CharacterConfig.BUTTONS.mp);
+            var remapimg = gief.GetBitmap("victory");
+            remapimg.Save(@"C:\temp\giefv.png");
+             remapimg = gief.GetBitmap("loss");
+            remapimg.Save(@"C:\temp\giefl.png");
 
             // check honda's byte stream? maybe that's wrong
             var s = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp));

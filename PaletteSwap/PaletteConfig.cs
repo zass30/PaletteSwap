@@ -484,8 +484,9 @@ namespace PaletteSwap
 
         { "hair1", new List<int>() { 8, ROWLEN * 1 + 8 } },
         { "hair2", new List<int>() { 10, ROWLEN * 1 + 10 } },
-        { "hair3", new List<int>() { ROWLEN * 1 + 12 } },
-        { "hair4", new List<int>() { 12 } },
+        { "hair3", new List<int>() { ROWLEN * 1 + 12, 12 } }, // jab gief has diff values here, use strong as baseline and 
+        // reorder this to fix
+//        { "hair4", new List<int>() { 12 } },
 
         { "costume1", new List<int>() { 14 } },
         { "costume2", new List<int>() { 16 } },
@@ -1219,16 +1220,7 @@ namespace PaletteSwap
             }
         }
     }
-
-    // a character config has
-    // neutral sprite base image Properties.Resources.RYU_neutral2
-    // neutral sprite colors Properties.Resources.ryu2sprite
-    // list of keys from sprite
-    // victory base image
-    // victory sprite colors
-    // loss base image
-    // loss sprite colors
-    // list of keys from portrait
+ 
 
     public struct ImageConfig
     {
@@ -1257,8 +1249,8 @@ PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSp
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_neutral1),
     PaletteSwap.Properties.Resources.chu1sprite, PaletteConfig.CHUN.GenerateChunSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Zangief:
-                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_neutral0), 
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)), 
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_neutral1), 
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.mp)), 
                         PaletteConfig.ZANGIEF.GenerateZangiefSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Ehonda:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_neutral0),
@@ -1293,8 +1285,8 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitwin1),
     PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Zangief:
-                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitwin0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitwin1),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.mp)),
                         PaletteConfig.ZANGIEF.GenerateZangiefPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Ehonda:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_portraitwin0),
@@ -1329,8 +1321,8 @@ PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPort
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitloss1),
     PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Zangief:
-                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitloss0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.lp)),
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitloss1),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.mp)),
                         PaletteConfig.ZANGIEF.GenerateZangiefPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Ehonda:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_portraitloss0),
