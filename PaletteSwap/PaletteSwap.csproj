@@ -191,6 +191,12 @@
     <None Include="Resources\fei\FEI_portraitloss0.png" />
     <None Include="Resources\fei\FEI_portraitwin0.png" />
     <None Include="Resources\gouki\GOU_neutral0.png" />
+    <None Include="Resources\dictator\DIC_portraitwin5.png" />
+    <None Include="Resources\dictator\DIC_crusherbottom5.png" />
+    <None Include="Resources\dictator\DIC_crushertop5.png" />
+    <None Include="Resources\dictator\DIC_neutral1.png" />
+    <None Include="Resources\dictator\DIC_psychoprep5.png" />
+    <None Include="Resources\dictator\DIC_psychopunch1.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />

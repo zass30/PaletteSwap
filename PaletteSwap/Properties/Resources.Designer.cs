@@ -273,9 +273,69 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DIC_crusherbottom5 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_crusherbottom5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DIC_crushertop5 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_crushertop5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DIC_neutral1 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_neutral1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap DIC_portraitloss0 {
             get {
                 object obj = ResourceManager.GetObject("DIC_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DIC_portraitwin5 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_portraitwin5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DIC_psychoprep5 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_psychoprep5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DIC_psychopunch1 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_psychopunch1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -456,16 +516,6 @@ namespace PaletteSwap.Properties {
         public static System.Drawing.Bitmap dicportraitwin0 {
             get {
                 object obj = ResourceManager.GetObject("dicportraitwin0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap dicportraitwin5 {
-            get {
-                object obj = ResourceManager.GetObject("dicportraitwin5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

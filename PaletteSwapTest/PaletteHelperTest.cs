@@ -124,8 +124,8 @@ namespace PaletteSwapTest
         [TestMethod]
         public void AreBitmapsSameTest()
         {
-            Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
-            Bitmap b = new Bitmap(PaletteSwap.Properties.Resources.dicportraitwin5);
+            Bitmap a = new Bitmap(PaletteSwap.Properties.Resources.DIC_portraitwin5);
+            Bitmap b = new Bitmap(PaletteSwap.Properties.Resources.DIC_portraitwin5);
             Assert.IsTrue(PaletteHelper.areBitmapsSame(a,b));
             b.SetPixel(10, 10, Color.Chocolate);
             Assert.IsFalse(PaletteHelper.areBitmapsSame(a, b));

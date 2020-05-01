@@ -160,9 +160,6 @@
   <data name="dicportraitwin0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dicportraitwin0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dicportraitwin5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitwin5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="dicpsychoprep5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dicpsychoprep5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -336,6 +333,24 @@
   </data>
   <data name="DHA_portraitwin0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dhalsim\DHA_portraitwin0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_crusherbottom5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_crusherbottom5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_crushertop5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_crushertop5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_neutral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_neutral1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_portraitwin5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_portraitwin5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_psychoprep5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_psychoprep5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_psychopunch1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_psychopunch1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FEI_neutral0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fei\FEI_neutral0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

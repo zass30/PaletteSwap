@@ -1414,27 +1414,27 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
 
                 public static Bitmap DictatorStandNeutralBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.dicstand1);
+                    return new Bitmap(Properties.Resources.DIC_neutral1);
                 }
 
                 public static Bitmap DictatorPsychoPunchBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.dicmp1);
+                    return new Bitmap(Properties.Resources.DIC_psychopunch1);
                 }
 
                 public static Bitmap DictatorPsychoPrepBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.dicpsychoprep5);
+                    return new Bitmap(Properties.Resources.DIC_psychoprep5);
                 }
 
                 public static Bitmap DictatorCrusherTopBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.diccrusher1_5);
+                    return new Bitmap(Properties.Resources.DIC_crushertop5);
                 }
 
                 public static Bitmap DictatorCrusherBottomBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.diccrusher2_5);
+                    return new Bitmap(Properties.Resources.DIC_crusherbottom5);
                 }
 
                 public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
@@ -1501,7 +1501,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
 
                 public static Bitmap DictatorVictoryPortraitBaseImage()
                 {
-                    return new Bitmap(Properties.Resources.dicportraitwin5);
+                    return new Bitmap(Properties.Resources.DIC_portraitwin5);
                 }
 
                 public static Bitmap DictatorLossPortraitBaseImage()
