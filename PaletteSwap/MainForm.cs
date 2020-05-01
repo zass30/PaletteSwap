@@ -1132,7 +1132,7 @@ namespace PaletteSwap
                         reload_everything();
                         fileStream.Close();
                     }
-                    catch (Exception ex){
+                    catch (Exception){
                         MessageBox.Show("Invalid ROM format");
                     }
                 }
@@ -1417,7 +1417,7 @@ namespace PaletteSwap
                         reload_everything();
                         fileStream.Close();
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         MessageBox.Show("Invalid colorset format");
                     }
