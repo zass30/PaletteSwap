@@ -366,7 +366,7 @@ namespace PaletteSwap
                     KEN_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     KEN_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
                     KEN_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
-                    
+
                     break;
                 case CharacterConfig.CHARACTERS.Chun:
                     CHU_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
@@ -386,6 +386,27 @@ namespace PaletteSwap
                     CHU_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
                     CHU_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     CHU_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    break;
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    EHO_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    EHO_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    EHO_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    EHO_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    EHO_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    EHO_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+                    EHO_sprite_skin7.BackColor = currentCharacter.sprite.GetColor("skin7");
+
+                    EHO_sprite_hair1.BackColor = currentCharacter.sprite.GetColor("hair1");
+                    EHO_sprite_hair2.BackColor = currentCharacter.sprite.GetColor("hair2");
+
+                    EHO_sprite_facepaint.BackColor = currentCharacter.sprite.GetColor("facepaint");
+
+                    EHO_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    EHO_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    EHO_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    EHO_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    EHO_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+
                     break;
                 case CharacterConfig.CHARACTERS.Zangief:
                     ZAN_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
@@ -407,6 +428,7 @@ namespace PaletteSwap
                     ZAN_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
                     ZAN_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     break;
+
             }
         }
 

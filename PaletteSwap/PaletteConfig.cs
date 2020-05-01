@@ -251,7 +251,7 @@ namespace PaletteSwap
             if (c == CHARACTERS.Ryu)
                 return 0x3FB2E;
             else if (c == CHARACTERS.Ehonda)
-                return 0x4019C;
+                return 0x4019A;
             return spriteBeginOffset + GetCharIdFromCharacter(c) * spriteStep;
         }
 
