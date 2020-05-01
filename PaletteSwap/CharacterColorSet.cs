@@ -258,7 +258,7 @@ namespace PaletteSwap
 
         public static CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
-        CharacterConfig.CHARACTERS.Zangief};
+        CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda};
 
 
         public Bitmap GenerateNeutralKey()

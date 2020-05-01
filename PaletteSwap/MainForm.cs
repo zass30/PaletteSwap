@@ -676,7 +676,6 @@ namespace PaletteSwap
                     ZAN_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
                     ZAN_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
                     ZAN_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
-                    ZAN_portrait_hair4.BackColor = currentCharacter.portrait.GetColor("hair4");
 
                     ZAN_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
                     ZAN_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
