@@ -80,6 +80,9 @@ namespace PaletteSwapTest
             remapimg.Save(@"C:\temp\hondan.png");
 
             // check honda's byte stream? maybe that's wrong
+            var s = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp));
+            int x = 0;
+            x++;
         }
     }
 }

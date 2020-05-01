@@ -49,6 +49,8 @@ namespace PaletteSwap
             return p;       
         }
 
+        //0x4019c
+
         public static string CodeFromCharacterEnum(CHARACTERS c)
         {
             switch (c)
@@ -248,6 +250,8 @@ namespace PaletteSwap
         {
             if (c == CHARACTERS.Ryu)
                 return 0x3FB2E;
+            else if (c == CHARACTERS.Ehonda)
+                return 0x4019C;
             return spriteBeginOffset + GetCharIdFromCharacter(c) * spriteStep;
         }
 
