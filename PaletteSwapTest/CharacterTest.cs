@@ -30,12 +30,12 @@ namespace PaletteSwapTest
             var dic = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp);
             var s = dic.sprite;
             var remapped_img = s.GetBitmap("psychopunch");
-            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp1, remapped_img));
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.DIC_psychopunch1, remapped_img));
 
             dic = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk);
             s = dic.sprite;
             remapped_img = s.GetBitmap("psychopunch");
-            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicmp5, remapped_img));
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.DIC_psychopunch5, remapped_img));
         }
 
         [TestMethod]

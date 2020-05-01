@@ -197,6 +197,12 @@
     <None Include="Resources\dictator\DIC_neutral1.png" />
     <None Include="Resources\dictator\DIC_psychoprep5.png" />
     <None Include="Resources\dictator\DIC_psychopunch1.png" />
+    <None Include="Resources\diccrusher1-01.png" />
+    <None Include="Resources\diccrusher1-51.png" />
+    <None Include="Resources\diccrusher2-01.png" />
+    <None Include="Resources\diccrusher2-11.png" />
+    <None Include="Resources\diccrusher2-51.png" />
+    <None Include="Resources\dictator\DIC_psychopunch5.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />
