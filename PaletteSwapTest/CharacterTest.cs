@@ -13,15 +13,15 @@ namespace PaletteSwapTest
             var dic = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var s = dic.sprite;
             var pal = s.GetImage("neutral");
-            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand1, pal.baseImage));
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.DIC_neutral1, pal.baseImage));
 
             var remapped_img = s.GetBitmap("neutral");
-            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand0, remapped_img));
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.DIC_neutral0, remapped_img));
 
             dic = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp);
             s = dic.sprite;
             remapped_img = s.GetBitmap("neutral");
-            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.dicstand1, remapped_img));
+            Assert.IsTrue(PaletteHelper.areBitmapsSameSkipTransparencies(PaletteSwap.Properties.Resources.DIC_neutral1, remapped_img));
         }
 
         [TestMethod]

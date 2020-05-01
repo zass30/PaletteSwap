@@ -118,59 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dicportraitloss4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitloss4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportrait0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportrait0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportrait1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportrait1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportrait2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportrait2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportrait3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportrait3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportrait4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportrait4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicstand0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicstand0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicstand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicstand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportraitloss1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitloss1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportraitloss5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitloss5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportraitwin0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitwin0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicpsychoprep5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicpsychoprep5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportraitlossbottom5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitlossbottom5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicportraitlosstop5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicportraitlosstop5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sfxe03c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roms\sfxe.03c;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="sfxe04a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roms\sfxe.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dicpsychoprep0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicpsychoprep0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dicpsychoprep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dicpsychoprep1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sfxjd04a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roms\sfxjd.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -360,6 +312,9 @@
   </data>
   <data name="THA_portraitwin0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hawk\THA_portraitwin0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIC_neutral0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dictator\DIC_neutral0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DIC_psychopunch5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dictator\DIC_psychopunch5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -203,6 +203,7 @@
     <None Include="Resources\diccrusher2-11.png" />
     <None Include="Resources\diccrusher2-51.png" />
     <None Include="Resources\dictator\DIC_psychopunch5.png" />
+    <None Include="Resources\dictator\DIC_neutral0.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />
