@@ -121,7 +121,7 @@ namespace PaletteSwapTest
         {
             // test #1
             // check that a bis0sprite's byte representation is what we expect 
-            string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
+            string s_expected = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp));
             var data_expected = PaletteHelper.StringToByteStream(s_expected);
 
             var d = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
@@ -140,7 +140,7 @@ namespace PaletteSwapTest
         {
             var d = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var sprite = d.sprite;
-            string s_expected = PaletteSwap.Properties.Resources.bis0sprite;
+            string s_expected = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp));
             var data_expected = PaletteHelper.StringToByteStream(s_expected);
             // test #2
             // modify a few fields, check that results are what we expect 
@@ -248,7 +248,9 @@ namespace PaletteSwapTest
             Assert.AreEqual("4A00", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss3")));
             Assert.AreEqual("0900", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss4")));
 
-            var portrait_bytestream_expected = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis0portrait);
+            var portrait_bytestream_expected = PaletteHelper.StringToByteStream(
+                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp)));
+//                PaletteSwap.Properties.Resources.bis0portrait);
             var portrait_bytestream_result = p.ToByteStream();
             CollectionAssert.AreEqual(portrait_bytestream_expected, portrait_bytestream_result);
         /*    for (int i = 0; i < portrait_bytestream_expected.Length; i++)

@@ -60,7 +60,7 @@ namespace PaletteSwapTest
         {
             var stream_result = CharacterConfig.GetByteStreamPair(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var sprite_result = stream_result.spriteStream;
-            var sprite_expected = PaletteHelper.StringToByteStream(PaletteSwap.Properties.Resources.bis0sprite);
+            var sprite_expected = CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             CollectionAssert.AreEqual(sprite_expected, sprite_result);
         }
     }
