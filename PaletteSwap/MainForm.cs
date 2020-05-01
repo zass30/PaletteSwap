@@ -1249,81 +1249,54 @@ namespace PaletteSwap
             }
         }
 
+        private void ChangeIndexToCharacter(CharacterConfig.CHARACTERS character)
+        {
+            currentCharacterType = character;
+            characterSet = gameSet.characterDictionary[character];
+            currentCharacter = characterSet.characterColors[0];
+            SetDefaultDropDown();
+            reload_everything();
+        }
+
         private void tabSelectedIndexChanged(object sender, EventArgs e)
         {
             var tabControl = (TabControl)sender;
             var selt = tabControl.SelectedTab;
             if (selt.Name == "TabPageClaw")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Claw;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Claw];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Claw);
             }
             else if (selt.Name == "TabPageDictator")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Dictator;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Dictator];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Dictator);
             }
             else if (selt.Name == "TabPageGuile")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Guile;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Guile];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Guile);
             }
             else if (selt.Name == "TabPageRyu")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Ryu;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ryu];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Ryu);
             }
             else if (selt.Name == "TabPageKen")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Ken;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ken];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Ken);
             }
             else if (selt.Name == "TabPageChun")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Chun;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Chun];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Chun);
             }
             else if (selt.Name == "TabPageBoxer")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Boxer;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Boxer];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Boxer);
             }
             else if (selt.Name == "TabPageZangief")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Zangief;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Zangief];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Zangief);
             }
             else if (selt.Name == "TabPageHonda")
             {
-                currentCharacterType = CharacterConfig.CHARACTERS.Ehonda;
-                characterSet = gameSet.characterDictionary[CharacterConfig.CHARACTERS.Ehonda];
-                currentCharacter = characterSet.characterColors[0];
-                SetDefaultDropDown();
-                reload_everything();
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Ehonda);
             }
         }
 
