@@ -565,6 +565,31 @@
             this.EHO_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.EHO_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.EHO_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_facepaintloss3 = new System.Windows.Forms.PictureBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.EHO_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.EHO_portrait_mouth2 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_mouth1 = new System.Windows.Forms.PictureBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.EHO_portrait_hair3 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_hair2 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_hair1 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.EHO_portrait_facepaint3 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_facepaint2 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_facepaint1 = new System.Windows.Forms.PictureBox();
+            this.label98 = new System.Windows.Forms.Label();
+            this.EHO_portrait_facepaintloss2 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_facepaintloss1 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.EHO_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.label99 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -956,6 +981,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.EHO_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaintloss3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_mouth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_mouth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaint3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaint2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaint1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaintloss2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaintloss1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin1)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -6710,6 +6754,31 @@
             // 
             // TabPageHonda
             // 
+            this.TabPageHonda.Controls.Add(this.label99);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_facepaintloss3);
+            this.TabPageHonda.Controls.Add(this.label94);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_teeth2);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_teeth1);
+            this.TabPageHonda.Controls.Add(this.label95);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_mouth2);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_mouth1);
+            this.TabPageHonda.Controls.Add(this.label96);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_hair3);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_hair2);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_hair1);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_teeth3);
+            this.TabPageHonda.Controls.Add(this.label97);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_facepaint3);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_facepaint2);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_facepaint1);
+            this.TabPageHonda.Controls.Add(this.label98);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_facepaintloss2);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_facepaintloss1);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_skin5);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_skin4);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_skin3);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_skin2);
+            this.TabPageHonda.Controls.Add(this.EHO_portrait_skin1);
             this.TabPageHonda.Controls.Add(this.label88);
             this.TabPageHonda.Controls.Add(this.label91);
             this.TabPageHonda.Controls.Add(this.label92);
@@ -6979,6 +7048,269 @@
             this.EHO_sprite_skin4.TabStop = false;
             this.EHO_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.EHO_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_facepaintloss3
+            // 
+            this.EHO_portrait_facepaintloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_facepaintloss3.Location = new System.Drawing.Point(403, 315);
+            this.EHO_portrait_facepaintloss3.Name = "EHO_portrait_facepaintloss3";
+            this.EHO_portrait_facepaintloss3.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_facepaintloss3.TabIndex = 318;
+            this.EHO_portrait_facepaintloss3.TabStop = false;
+            this.EHO_portrait_facepaintloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_facepaintloss3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(288, 296);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(31, 13);
+            this.label94.TabIndex = 317;
+            this.label94.Text = "teeth";
+            // 
+            // EHO_portrait_teeth2
+            // 
+            this.EHO_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_teeth2.Location = new System.Drawing.Point(373, 285);
+            this.EHO_portrait_teeth2.Name = "EHO_portrait_teeth2";
+            this.EHO_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_teeth2.TabIndex = 316;
+            this.EHO_portrait_teeth2.TabStop = false;
+            this.EHO_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_teeth1
+            // 
+            this.EHO_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_teeth1.Location = new System.Drawing.Point(343, 285);
+            this.EHO_portrait_teeth1.Name = "EHO_portrait_teeth1";
+            this.EHO_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_teeth1.TabIndex = 315;
+            this.EHO_portrait_teeth1.TabStop = false;
+            this.EHO_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(288, 266);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(36, 13);
+            this.label95.TabIndex = 314;
+            this.label95.Text = "mouth";
+            // 
+            // EHO_portrait_mouth2
+            // 
+            this.EHO_portrait_mouth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_mouth2.Location = new System.Drawing.Point(373, 255);
+            this.EHO_portrait_mouth2.Name = "EHO_portrait_mouth2";
+            this.EHO_portrait_mouth2.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_mouth2.TabIndex = 312;
+            this.EHO_portrait_mouth2.TabStop = false;
+            this.EHO_portrait_mouth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_mouth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_mouth1
+            // 
+            this.EHO_portrait_mouth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_mouth1.Location = new System.Drawing.Point(343, 255);
+            this.EHO_portrait_mouth1.Name = "EHO_portrait_mouth1";
+            this.EHO_portrait_mouth1.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_mouth1.TabIndex = 311;
+            this.EHO_portrait_mouth1.TabStop = false;
+            this.EHO_portrait_mouth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_mouth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(288, 236);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(24, 13);
+            this.label96.TabIndex = 310;
+            this.label96.Text = "hair";
+            // 
+            // EHO_portrait_hair3
+            // 
+            this.EHO_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_hair3.Location = new System.Drawing.Point(403, 225);
+            this.EHO_portrait_hair3.Name = "EHO_portrait_hair3";
+            this.EHO_portrait_hair3.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_hair3.TabIndex = 309;
+            this.EHO_portrait_hair3.TabStop = false;
+            this.EHO_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_hair2
+            // 
+            this.EHO_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_hair2.Location = new System.Drawing.Point(373, 225);
+            this.EHO_portrait_hair2.Name = "EHO_portrait_hair2";
+            this.EHO_portrait_hair2.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_hair2.TabIndex = 308;
+            this.EHO_portrait_hair2.TabStop = false;
+            this.EHO_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_hair1
+            // 
+            this.EHO_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_hair1.Location = new System.Drawing.Point(343, 225);
+            this.EHO_portrait_hair1.Name = "EHO_portrait_hair1";
+            this.EHO_portrait_hair1.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_hair1.TabIndex = 307;
+            this.EHO_portrait_hair1.TabStop = false;
+            this.EHO_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_teeth3
+            // 
+            this.EHO_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_teeth3.Location = new System.Drawing.Point(403, 285);
+            this.EHO_portrait_teeth3.Name = "EHO_portrait_teeth3";
+            this.EHO_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_teeth3.TabIndex = 306;
+            this.EHO_portrait_teeth3.TabStop = false;
+            this.EHO_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(288, 206);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(51, 13);
+            this.label97.TabIndex = 305;
+            this.label97.Text = "facepaint";
+            // 
+            // EHO_portrait_facepaint3
+            // 
+            this.EHO_portrait_facepaint3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_facepaint3.Location = new System.Drawing.Point(403, 195);
+            this.EHO_portrait_facepaint3.Name = "EHO_portrait_facepaint3";
+            this.EHO_portrait_facepaint3.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_facepaint3.TabIndex = 303;
+            this.EHO_portrait_facepaint3.TabStop = false;
+            this.EHO_portrait_facepaint3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_facepaint3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_facepaint2
+            // 
+            this.EHO_portrait_facepaint2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_facepaint2.Location = new System.Drawing.Point(373, 195);
+            this.EHO_portrait_facepaint2.Name = "EHO_portrait_facepaint2";
+            this.EHO_portrait_facepaint2.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_facepaint2.TabIndex = 302;
+            this.EHO_portrait_facepaint2.TabStop = false;
+            this.EHO_portrait_facepaint2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_facepaint2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_facepaint1
+            // 
+            this.EHO_portrait_facepaint1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_facepaint1.Location = new System.Drawing.Point(343, 195);
+            this.EHO_portrait_facepaint1.Name = "EHO_portrait_facepaint1";
+            this.EHO_portrait_facepaint1.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_facepaint1.TabIndex = 301;
+            this.EHO_portrait_facepaint1.TabStop = false;
+            this.EHO_portrait_facepaint1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_facepaint1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(288, 176);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(26, 13);
+            this.label98.TabIndex = 300;
+            this.label98.Text = "skin";
+            // 
+            // EHO_portrait_facepaintloss2
+            // 
+            this.EHO_portrait_facepaintloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_facepaintloss2.Location = new System.Drawing.Point(373, 315);
+            this.EHO_portrait_facepaintloss2.Name = "EHO_portrait_facepaintloss2";
+            this.EHO_portrait_facepaintloss2.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_facepaintloss2.TabIndex = 299;
+            this.EHO_portrait_facepaintloss2.TabStop = false;
+            this.EHO_portrait_facepaintloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_facepaintloss2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_facepaintloss1
+            // 
+            this.EHO_portrait_facepaintloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_facepaintloss1.Location = new System.Drawing.Point(343, 315);
+            this.EHO_portrait_facepaintloss1.Name = "EHO_portrait_facepaintloss1";
+            this.EHO_portrait_facepaintloss1.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_facepaintloss1.TabIndex = 298;
+            this.EHO_portrait_facepaintloss1.TabStop = false;
+            this.EHO_portrait_facepaintloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_facepaintloss1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_skin5
+            // 
+            this.EHO_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_skin5.Location = new System.Drawing.Point(463, 165);
+            this.EHO_portrait_skin5.Name = "EHO_portrait_skin5";
+            this.EHO_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_skin5.TabIndex = 297;
+            this.EHO_portrait_skin5.TabStop = false;
+            this.EHO_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_skin4
+            // 
+            this.EHO_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_skin4.Location = new System.Drawing.Point(433, 165);
+            this.EHO_portrait_skin4.Name = "EHO_portrait_skin4";
+            this.EHO_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_skin4.TabIndex = 296;
+            this.EHO_portrait_skin4.TabStop = false;
+            this.EHO_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_skin3
+            // 
+            this.EHO_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_skin3.Location = new System.Drawing.Point(403, 165);
+            this.EHO_portrait_skin3.Name = "EHO_portrait_skin3";
+            this.EHO_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_skin3.TabIndex = 295;
+            this.EHO_portrait_skin3.TabStop = false;
+            this.EHO_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_skin2
+            // 
+            this.EHO_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_skin2.Location = new System.Drawing.Point(373, 165);
+            this.EHO_portrait_skin2.Name = "EHO_portrait_skin2";
+            this.EHO_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_skin2.TabIndex = 294;
+            this.EHO_portrait_skin2.TabStop = false;
+            this.EHO_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // EHO_portrait_skin1
+            // 
+            this.EHO_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EHO_portrait_skin1.Location = new System.Drawing.Point(343, 165);
+            this.EHO_portrait_skin1.Name = "EHO_portrait_skin1";
+            this.EHO_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.EHO_portrait_skin1.TabIndex = 293;
+            this.EHO_portrait_skin1.TabStop = false;
+            this.EHO_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.EHO_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(268, 326);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(72, 13);
+            this.label99.TabIndex = 319;
+            this.label99.Text = "facepaint loss";
             // 
             // MainForm
             // 
@@ -7408,6 +7740,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.EHO_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaintloss3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_mouth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_mouth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaint3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaint2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaint1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaintloss2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_facepaintloss1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EHO_portrait_skin1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7950,6 +8301,31 @@
         private System.Windows.Forms.PictureBox EHO_sprite_skin2;
         private System.Windows.Forms.PictureBox EHO_sprite_skin3;
         private System.Windows.Forms.PictureBox EHO_sprite_skin4;
+        private System.Windows.Forms.PictureBox EHO_portrait_facepaintloss3;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.PictureBox EHO_portrait_teeth2;
+        private System.Windows.Forms.PictureBox EHO_portrait_teeth1;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.PictureBox EHO_portrait_mouth2;
+        private System.Windows.Forms.PictureBox EHO_portrait_mouth1;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.PictureBox EHO_portrait_hair3;
+        private System.Windows.Forms.PictureBox EHO_portrait_hair2;
+        private System.Windows.Forms.PictureBox EHO_portrait_hair1;
+        private System.Windows.Forms.PictureBox EHO_portrait_teeth3;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.PictureBox EHO_portrait_facepaint3;
+        private System.Windows.Forms.PictureBox EHO_portrait_facepaint2;
+        private System.Windows.Forms.PictureBox EHO_portrait_facepaint1;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.PictureBox EHO_portrait_facepaintloss2;
+        private System.Windows.Forms.PictureBox EHO_portrait_facepaintloss1;
+        private System.Windows.Forms.PictureBox EHO_portrait_skin5;
+        private System.Windows.Forms.PictureBox EHO_portrait_skin4;
+        private System.Windows.Forms.PictureBox EHO_portrait_skin3;
+        private System.Windows.Forms.PictureBox EHO_portrait_skin2;
+        private System.Windows.Forms.PictureBox EHO_portrait_skin1;
+        private System.Windows.Forms.Label label99;
     }
 }
 
