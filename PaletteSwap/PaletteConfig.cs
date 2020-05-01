@@ -1230,24 +1230,31 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Guile:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_neutral2),
-PaletteSwap.Properties.Resources.gui2sprite, PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.hp)),
+PaletteConfig.GUILE.GenerateGuileSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_neutral7),
-PaletteSwap.Properties.Resources.cla7sprite, PaletteConfig.CLAW.GenerateClawSpriteOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold)),
+
+PaletteConfig.CLAW.GenerateClawSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Boxer:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_neutral0),
-PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSpriteOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Boxer, CharacterConfig.BUTTONS.lp)),
+PaletteConfig.BOXER.GenerateBoxerSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.SPRITE.GenerateDictatorStandingNeutralBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_neutral2),
-    PaletteSwap.Properties.Resources.ryu2sprite, PaletteConfig.RYU.GenerateRyuSpriteOffsets());
+    PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.hp)),
+PaletteConfig.RYU.GenerateRyuSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Ken:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.KEN_neutral0),
-    PaletteSwap.Properties.Resources.ken0sprite, PaletteConfig.KEN.GenerateKenSpriteOffsets());
+    PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ken, CharacterConfig.BUTTONS.lp)),
+PaletteConfig.KEN.GenerateKenSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_neutral1),
-    PaletteSwap.Properties.Resources.chu1sprite, PaletteConfig.CHUN.GenerateChunSpriteOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Chun, CharacterConfig.BUTTONS.mp)),
+    PaletteConfig.CHUN.GenerateChunSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Zangief:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_neutral1), 
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.mp)), 
@@ -1266,24 +1273,30 @@ PaletteSwap.Properties.Resources.box0sprite, PaletteConfig.BOXER.GenerateBoxerSp
             {
                 case CharacterConfig.CHARACTERS.Guile:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_portraitwin2),
-PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.hp)),
+PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitwin7),
-PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold)),
+PaletteConfig.CLAW.GenerateClawPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Boxer:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_portraitwin0),
-PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Boxer, CharacterConfig.BUTTONS.lp)),
+PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorVictoryBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitwin2),
-    PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.hp)),
+    PaletteConfig.RYU.GenerateRyuPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Ken:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.KEN_portraitwin0),
-    PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPortraitOffsets());
+    PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ken, CharacterConfig.BUTTONS.lp)),
+PaletteConfig.KEN.GenerateKenPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitwin1),
-    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Chun, CharacterConfig.BUTTONS.mp)),
+    PaletteConfig.CHUN.GenerateChunPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Zangief:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitwin1),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.mp)),
@@ -1302,24 +1315,30 @@ PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxer
             {
                 case CharacterConfig.CHARACTERS.Guile:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.GUI_portraitloss2),
-PaletteSwap.Properties.Resources.gui2portrait, PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Guile, CharacterConfig.BUTTONS.hp)),
+PaletteConfig.GUILE.GenerateGuilePortraitOffsets());
                 case CharacterConfig.CHARACTERS.Claw:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CLA_portraitloss7),
-PaletteSwap.Properties.Resources.cla7portrait, PaletteConfig.CLAW.GenerateClawPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Claw, CharacterConfig.BUTTONS.hold)),
+PaletteConfig.CLAW.GenerateClawPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Boxer:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.BOX_portraitloss0),
-PaletteSwap.Properties.Resources.box0portrait, PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Boxer, CharacterConfig.BUTTONS.lp)),
+PaletteConfig.BOXER.GenerateBoxerPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dictator:
                     return Dictator.PORTRAIT.GenerateDictatorLossBasePaletteImage();
                 case CharacterConfig.CHARACTERS.Ryu:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.RYU_portraitloss2),
-PaletteSwap.Properties.Resources.ryu2portrait, PaletteConfig.RYU.GenerateRyuPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.hp)),
+PaletteConfig.RYU.GenerateRyuPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Ken:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.KEN_portraitloss0),
-PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPortraitOffsets());
+    PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ken, CharacterConfig.BUTTONS.lp)),
+PaletteConfig.KEN.GenerateKenPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Chun:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.CHU_portraitloss1),
-    PaletteSwap.Properties.Resources.chu1portrait, PaletteConfig.CHUN.GenerateChunPortraitOffsets());
+PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Chun, CharacterConfig.BUTTONS.mp)),
+    PaletteConfig.CHUN.GenerateChunPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Zangief:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.ZAN_portraitloss1),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Zangief, CharacterConfig.BUTTONS.mp)),
@@ -1420,27 +1439,37 @@ PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPort
 
                 public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
                 {
-                    return GenerateDicatatorPaletteImage(DictatorStandNeutralBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorStandNeutralLabels());
+                    return GenerateDicatatorPaletteImage(DictatorStandNeutralBaseImage(), 
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp)), 
+                        DictatorStandNeutralLabels());
                 }
 
                 public static PaletteImage GenerateDictatorPsychoPunchBasePaletteImage()
                 {
-                    return GenerateDicatatorPaletteImage(DictatorPsychoPunchBaseImage(), PaletteSwap.Properties.Resources.bis1sprite, DictatorPsychoPunchLabels());
+                    return GenerateDicatatorPaletteImage(DictatorPsychoPunchBaseImage(),
+PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.mp)),
+                                                DictatorPsychoPunchLabels());
                 }
 
                 public static PaletteImage GenerateDictatorPsychoPrepBasePaletteImage()
                 {
-                    return GenerateDicatatorPaletteImage(DictatorPsychoPrepBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoPrepLabels());
+                    return GenerateDicatatorPaletteImage(DictatorPsychoPrepBaseImage(),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk)),
+                        DictatorPsychoPrepLabels());
                 }
 
                 public static PaletteImage GenerateDictatorCrusherTopBasePaletteImage()
                 {
-                    return GenerateDicatatorPaletteImage(DictatorCrusherTopBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
+                    return GenerateDicatatorPaletteImage(DictatorCrusherTopBaseImage(),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk)),
+                        DictatorPsychoCrusherLabels());
                 }
 
                 public static PaletteImage GenerateDictatorCrusherBottomBasePaletteImage()
                 {
-                    return GenerateDicatatorPaletteImage(DictatorCrusherBottomBaseImage(), PaletteSwap.Properties.Resources.bis5sprite, DictatorPsychoCrusherLabels());
+                    return GenerateDicatatorPaletteImage(DictatorCrusherBottomBaseImage(),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk)),
+                        DictatorPsychoCrusherLabels());
                 }
 
                 public static PaletteImage GenerateDicatatorPaletteImage(Bitmap base_image, string resource, List<string> labels)
@@ -1482,12 +1511,16 @@ PaletteSwap.Properties.Resources.ken0portrait, PaletteConfig.KEN.GenerateKenPort
 
                 public static PaletteImage GenerateDictatorVictoryBasePaletteImage()
                 {
-                    return GenerateDicatatorPortraitPaletteImage(DictatorVictoryPortraitBaseImage(), PaletteSwap.Properties.Resources.bis5portrait, DictatorVictoryPortraitLabels());
+                    return GenerateDicatatorPortraitPaletteImage(DictatorVictoryPortraitBaseImage(),
+                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk)),
+DictatorVictoryPortraitLabels());
                 }
 
                 public static PaletteImage GenerateDictatorLossBasePaletteImage()
                 {
-                    return GenerateDicatatorPortraitPaletteImage(DictatorLossPortraitBaseImage(), PaletteSwap.Properties.Resources.bis0portrait, DictatorLossPortraitLabels());
+                    return GenerateDicatatorPortraitPaletteImage(DictatorLossPortraitBaseImage(),
+                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp)),
+                        DictatorLossPortraitLabels());
                 }
 
                 public static PaletteImage GenerateDicatatorPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
