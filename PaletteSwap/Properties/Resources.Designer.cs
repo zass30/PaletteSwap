@@ -243,6 +243,36 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BLA_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("BLA_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BLA_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("BLA_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BLA_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("BLA_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BOX_neutral0 {
             get {
                 object obj = ResourceManager.GetObject("BOX_neutral0", resourceCulture);
@@ -447,6 +477,36 @@ namespace PaletteSwap.Properties {
         public static string box9sprite {
             get {
                 return ResourceManager.GetString("box9sprite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CAM_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("CAM_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CAM_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("CAM_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CAM_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("CAM_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -873,6 +933,66 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DEE_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("DEE_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DEE_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("DEE_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DEE_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("DEE_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DHA_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("DHA_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DHA_portraitsloss0 {
+            get {
+                object obj = ResourceManager.GetObject("DHA_portraitsloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DHA_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("DHA_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap DIC_portraitloss0 {
             get {
                 object obj = ResourceManager.GetObject("DIC_portraitloss0", resourceCulture);
@@ -1146,6 +1266,46 @@ namespace PaletteSwap.Properties {
         public static System.Drawing.Bitmap EHO_portraitwin0 {
             get {
                 object obj = ResourceManager.GetObject("EHO_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FEI_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("FEI_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FEI_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("FEI_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap FEI_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("FEI_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GOU_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("GOU_neutral0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1781,6 +1941,36 @@ namespace PaletteSwap.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SAG_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("SAG_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SAG_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("SAG_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SAG_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("SAG_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         public static byte[] sfxe03c {
@@ -1867,6 +2057,36 @@ namespace PaletteSwap.Properties {
             get {
                 object obj = ResourceManager.GetObject("sfxjd06a", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap THA_neutral0 {
+            get {
+                object obj = ResourceManager.GetObject("THA_neutral0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap THA_portraitloss0 {
+            get {
+                object obj = ResourceManager.GetObject("THA_portraitloss0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap THA_portraitwin0 {
+            get {
+                object obj = ResourceManager.GetObject("THA_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
