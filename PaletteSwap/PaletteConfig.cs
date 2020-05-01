@@ -400,14 +400,14 @@ namespace PaletteSwap
         { "mouth1", new List<int>() { 20, ROWLEN * 3 + 20 } },
         { "mouth2", new List<int>() { 22 } },
 
-        { "facepaintloss1", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
-        { "facepaintloss2", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "facepaintloss1", new List<int>() { ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
+        { "facepaintloss2", new List<int>() { ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
 
         { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
         { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
         { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28 } },
 
-        { "skin5", new List<int>() { ROWLEN * 2 + 28 } },
+        { "facepaintloss3", new List<int>() { ROWLEN * 1 + 28 } },
 
                 };
 

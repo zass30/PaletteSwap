@@ -693,7 +693,6 @@ namespace PaletteSwap
                     EHO_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
                     EHO_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
                     EHO_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
-                    EHO_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
 
                     EHO_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
                     EHO_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
@@ -705,9 +704,10 @@ namespace PaletteSwap
                     EHO_portrait_facepaint1.BackColor = currentCharacter.portrait.GetColor("facepaint1");
                     EHO_portrait_facepaint2.BackColor = currentCharacter.portrait.GetColor("facepaint2");
                     EHO_portrait_facepaint3.BackColor = currentCharacter.portrait.GetColor("facepaint3");
+
                     EHO_portrait_facepaintloss1.BackColor = currentCharacter.portrait.GetColor("facepaintloss1");
                     EHO_portrait_facepaintloss2.BackColor = currentCharacter.portrait.GetColor("facepaintloss2");
-
+                    EHO_portrait_facepaintloss3.BackColor = currentCharacter.portrait.GetColor("facepaintloss3");
 
                     EHO_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
                     EHO_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
