@@ -47,6 +47,7 @@ namespace PaletteSwap
 
             public Bitmap RemappedImageFromImage(Bitmap source)
         {
+          //  return source;
             var remap = palette.ColorsFromListOfLabels(labels);
             SetRemapColorArray(remap);
             Bitmap b = new Bitmap(source);

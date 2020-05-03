@@ -296,6 +296,8 @@ namespace PaletteSwap
                     return ZANGIEF.GenerateZangiefSpriteConfig();
                 case CharacterConfig.CHARACTERS.Ehonda:
                     return HONDA.GenerateHondaSpriteConfig();
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAGAT.GenerateSagatSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -322,6 +324,8 @@ namespace PaletteSwap
                     return ZANGIEF.GenerateZangiefPortraitConfig();
                 case CharacterConfig.CHARACTERS.Ehonda:
                     return HONDA.GenerateHondaPortraitConfig();
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAGAT.GenerateSagatPortraitConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -342,6 +346,102 @@ namespace PaletteSwap
                 this.defaultColorOffsets.Add(cp);
             }
         }
+
+
+        public struct SAGAT
+        {
+            public static Dictionary<string, List<int>> GenerateSagatSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "stripe1", new List<int>() { 0 } },
+            { "stripe2", new List<int>() { 2 } },
+            { "skin1", new List<int>() { 4 } },
+            { "skin2", new List<int>() { 6 } },
+            { "skin3", new List<int>() { 8 } },
+            { "skin4", new List<int>() { 10 } },
+            { "skin5", new List<int>() { 12 } },
+            { "skin6", new List<int>() { 14 } },
+            { "wraps1", new List<int>() { 16 } },
+            { "wraps2", new List<int>() { 18 } },
+            { "wraps3", new List<int>() { 20 } },
+            { "shorts1", new List<int>() { 22 } },
+            { "shorts2", new List<int>() { 24 } },
+            { "shorts3", new List<int>() { 26 } },
+            { "shorts4", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateSagatSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateSagatSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateSagatPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+
+        { "wraps1", new List<int>() { 14, ROWLEN * 1 + 14 } },
+        { "wraps2", new List<int>() { 16, ROWLEN * 1 + 16 } },
+        { "wraps3", new List<int>() { 18, ROWLEN * 1 + 18 } },
+
+        { "teeth1", new List<int>() { ROWLEN * 2 + 14 } },
+        { "teeth2", new List<int>() { ROWLEN * 2 + 16 } },
+        { "teeth3", new List<int>() { ROWLEN * 2 + 18 } },
+
+        { "blood1", new List<int>() { 20 } },
+        { "blood2", new List<int>() { 22 } },
+        { "blood3", new List<int>() { ROWLEN * 2 + 20, ROWLEN * 3 + 16 } },
+        { "blood4", new List<int>() { ROWLEN * 2 + 22, ROWLEN * 3 + 18 } },
+        { "blood5", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 3 + 14 } },
+        { "blood6", new List<int>() { ROWLEN * 1 + 28 } },
+
+        { "scars1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "scars2", new List<int>() { 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "scars3", new List<int>() { 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateSagatPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> sagatPortraitOffsets = GenerateSagatPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = sagatPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+        }
+
 
         public struct HONDA
         {
@@ -1263,6 +1363,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.HONDA.GenerateHondaSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.SAG_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.SAGAT.GenerateSagatSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1305,6 +1409,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.SAG_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1347,6 +1455,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.EHO_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.SAG_portraitloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }

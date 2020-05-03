@@ -27,7 +27,7 @@ namespace PaletteSwap
         Regex rx = new Regex(@"[^_]+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
-                CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda};
+                CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.CHARACTERS.Sagat};
 
         public MainForm()
         {
@@ -160,6 +160,8 @@ namespace PaletteSwap
                     return CLA_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DIC_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAG_neutralStandBox;
             }
             throw new Exception("Invalid character");
         }
@@ -184,6 +186,8 @@ namespace PaletteSwap
                     return BOX_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAG_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DIC_portraitLossBox;
             }
@@ -210,6 +214,8 @@ namespace PaletteSwap
                     return BOX_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLA_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAG_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DIC_portraitVictoryBox;
             }
@@ -428,7 +434,27 @@ namespace PaletteSwap
                     ZAN_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
                     ZAN_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
                     break;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    SAG_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    SAG_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    SAG_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    SAG_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    SAG_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    SAG_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
 
+                    SAG_sprite_shorts1.BackColor = currentCharacter.sprite.GetColor("shorts1");
+                    SAG_sprite_shorts2.BackColor = currentCharacter.sprite.GetColor("shorts2");
+                    SAG_sprite_shorts3.BackColor = currentCharacter.sprite.GetColor("shorts3");
+                    SAG_sprite_shorts4.BackColor = currentCharacter.sprite.GetColor("shorts4");
+
+                    SAG_sprite_wraps1.BackColor = currentCharacter.sprite.GetColor("wraps1");
+                    SAG_sprite_wraps2.BackColor = currentCharacter.sprite.GetColor("wraps2");
+                    SAG_sprite_wraps3.BackColor = currentCharacter.sprite.GetColor("wraps3");
+
+                    SAG_sprite_stripe1.BackColor = currentCharacter.sprite.GetColor("stripe1");
+                    SAG_sprite_stripe2.BackColor = currentCharacter.sprite.GetColor("stripe2");
+
+                    break;
             }
         }
 
@@ -1297,6 +1323,10 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageHonda")
             {
                 ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Ehonda);
+            }
+            else if (selt.Name == "TabPageSagat")
+            {
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Sagat);
             }
         }
 

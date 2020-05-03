@@ -589,6 +589,29 @@
             this.EHO_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.TabPageSagat = new System.Windows.Forms.TabPage();
+            this.SAG_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.SAG_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.SAG_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.SAG_sprite_wraps3 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_shorts3 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_wraps1 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_wraps2 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_stripe2 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_stripe1 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_shorts4 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_shorts1 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_shorts2 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.SAG_sprite_skin4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -997,6 +1020,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.EHO_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_portraitVictoryBox)).BeginInit();
+            this.TabPageSagat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_wraps3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_wraps1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_wraps2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_stripe2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_stripe1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1347,7 +1389,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1452,7 +1494,7 @@
             this.phoenixROMToolStripMenuItem,
             this.japaneseROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchToolStripMenuItem.Text = "Patch";
             // 
             // standardROMToolStripMenuItem
@@ -2457,6 +2499,7 @@
             this.tabControl1.Controls.Add(this.TabPageKen);
             this.tabControl1.Controls.Add(this.TabPageZangief);
             this.tabControl1.Controls.Add(this.TabPageHonda);
+            this.tabControl1.Controls.Add(this.TabPageSagat);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -7291,6 +7334,268 @@
             this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
             this.hScrollBar1.TabIndex = 124;
             // 
+            // TabPageSagat
+            // 
+            this.TabPageSagat.Controls.Add(this.label100);
+            this.TabPageSagat.Controls.Add(this.label101);
+            this.TabPageSagat.Controls.Add(this.label102);
+            this.TabPageSagat.Controls.Add(this.label103);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_wraps3);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_shorts3);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_wraps1);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_wraps2);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_stripe2);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_stripe1);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_shorts4);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_skin6);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_skin5);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_shorts1);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_shorts2);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_skin1);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_skin2);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_skin3);
+            this.TabPageSagat.Controls.Add(this.SAG_sprite_skin4);
+            this.TabPageSagat.Controls.Add(this.SAG_neutralStandBox);
+            this.TabPageSagat.Controls.Add(this.SAG_portraitLossBox);
+            this.TabPageSagat.Controls.Add(this.SAG_portraitVictoryBox);
+            this.TabPageSagat.Location = new System.Drawing.Point(4, 22);
+            this.TabPageSagat.Name = "TabPageSagat";
+            this.TabPageSagat.Size = new System.Drawing.Size(597, 559);
+            this.TabPageSagat.TabIndex = 9;
+            this.TabPageSagat.Text = "Sagat";
+            this.TabPageSagat.UseVisualStyleBackColor = true;
+            // 
+            // SAG_portraitLossBox
+            // 
+            this.SAG_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.SAG_portraitLossBox.Location = new System.Drawing.Point(442, 24);
+            this.SAG_portraitLossBox.Name = "SAG_portraitLossBox";
+            this.SAG_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.SAG_portraitLossBox.TabIndex = 189;
+            this.SAG_portraitLossBox.TabStop = false;
+            this.SAG_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // SAG_portraitVictoryBox
+            // 
+            this.SAG_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.SAG_portraitVictoryBox.Location = new System.Drawing.Point(305, 24);
+            this.SAG_portraitVictoryBox.Name = "SAG_portraitVictoryBox";
+            this.SAG_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.SAG_portraitVictoryBox.TabIndex = 188;
+            this.SAG_portraitVictoryBox.TabStop = false;
+            this.SAG_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // SAG_neutralStandBox
+            // 
+            this.SAG_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.SAG_neutralStandBox.Location = new System.Drawing.Point(26, 24);
+            this.SAG_neutralStandBox.Name = "SAG_neutralStandBox";
+            this.SAG_neutralStandBox.Size = new System.Drawing.Size(77, 117);
+            this.SAG_neutralStandBox.TabIndex = 190;
+            this.SAG_neutralStandBox.TabStop = false;
+            this.SAG_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(28, 277);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(32, 13);
+            this.label100.TabIndex = 303;
+            this.label100.Text = "stripe";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Location = new System.Drawing.Point(25, 217);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(35, 13);
+            this.label101.TabIndex = 302;
+            this.label101.Text = "shorts";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(25, 247);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(35, 13);
+            this.label102.TabIndex = 301;
+            this.label102.Text = "wraps";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Location = new System.Drawing.Point(34, 187);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(26, 13);
+            this.label103.TabIndex = 300;
+            this.label103.Text = "skin";
+            // 
+            // SAG_sprite_wraps3
+            // 
+            this.SAG_sprite_wraps3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_wraps3.Location = new System.Drawing.Point(126, 236);
+            this.SAG_sprite_wraps3.Name = "SAG_sprite_wraps3";
+            this.SAG_sprite_wraps3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_wraps3.TabIndex = 298;
+            this.SAG_sprite_wraps3.TabStop = false;
+            this.SAG_sprite_wraps3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_wraps3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_shorts3
+            // 
+            this.SAG_sprite_shorts3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_shorts3.Location = new System.Drawing.Point(126, 206);
+            this.SAG_sprite_shorts3.Name = "SAG_sprite_shorts3";
+            this.SAG_sprite_shorts3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_shorts3.TabIndex = 299;
+            this.SAG_sprite_shorts3.TabStop = false;
+            this.SAG_sprite_shorts3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_shorts3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_wraps1
+            // 
+            this.SAG_sprite_wraps1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_wraps1.Location = new System.Drawing.Point(66, 236);
+            this.SAG_sprite_wraps1.Name = "SAG_sprite_wraps1";
+            this.SAG_sprite_wraps1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_wraps1.TabIndex = 292;
+            this.SAG_sprite_wraps1.TabStop = false;
+            this.SAG_sprite_wraps1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_wraps1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_wraps2
+            // 
+            this.SAG_sprite_wraps2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_wraps2.Location = new System.Drawing.Point(96, 236);
+            this.SAG_sprite_wraps2.Name = "SAG_sprite_wraps2";
+            this.SAG_sprite_wraps2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_wraps2.TabIndex = 293;
+            this.SAG_sprite_wraps2.TabStop = false;
+            this.SAG_sprite_wraps2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_wraps2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_stripe2
+            // 
+            this.SAG_sprite_stripe2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_stripe2.Location = new System.Drawing.Point(96, 266);
+            this.SAG_sprite_stripe2.Name = "SAG_sprite_stripe2";
+            this.SAG_sprite_stripe2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_stripe2.TabIndex = 294;
+            this.SAG_sprite_stripe2.TabStop = false;
+            this.SAG_sprite_stripe2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_stripe2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_stripe1
+            // 
+            this.SAG_sprite_stripe1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_stripe1.Location = new System.Drawing.Point(66, 266);
+            this.SAG_sprite_stripe1.Name = "SAG_sprite_stripe1";
+            this.SAG_sprite_stripe1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_stripe1.TabIndex = 295;
+            this.SAG_sprite_stripe1.TabStop = false;
+            this.SAG_sprite_stripe1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_stripe1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_shorts4
+            // 
+            this.SAG_sprite_shorts4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_shorts4.Location = new System.Drawing.Point(156, 206);
+            this.SAG_sprite_shorts4.Name = "SAG_sprite_shorts4";
+            this.SAG_sprite_shorts4.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_shorts4.TabIndex = 296;
+            this.SAG_sprite_shorts4.TabStop = false;
+            this.SAG_sprite_shorts4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_shorts4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_skin6
+            // 
+            this.SAG_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_skin6.Location = new System.Drawing.Point(216, 176);
+            this.SAG_sprite_skin6.Name = "SAG_sprite_skin6";
+            this.SAG_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_skin6.TabIndex = 297;
+            this.SAG_sprite_skin6.TabStop = false;
+            this.SAG_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_skin5
+            // 
+            this.SAG_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_skin5.Location = new System.Drawing.Point(186, 176);
+            this.SAG_sprite_skin5.Name = "SAG_sprite_skin5";
+            this.SAG_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_skin5.TabIndex = 289;
+            this.SAG_sprite_skin5.TabStop = false;
+            this.SAG_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_shorts1
+            // 
+            this.SAG_sprite_shorts1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_shorts1.Location = new System.Drawing.Point(66, 206);
+            this.SAG_sprite_shorts1.Name = "SAG_sprite_shorts1";
+            this.SAG_sprite_shorts1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_shorts1.TabIndex = 290;
+            this.SAG_sprite_shorts1.TabStop = false;
+            this.SAG_sprite_shorts1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_shorts1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_shorts2
+            // 
+            this.SAG_sprite_shorts2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_shorts2.Location = new System.Drawing.Point(96, 206);
+            this.SAG_sprite_shorts2.Name = "SAG_sprite_shorts2";
+            this.SAG_sprite_shorts2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_shorts2.TabIndex = 291;
+            this.SAG_sprite_shorts2.TabStop = false;
+            this.SAG_sprite_shorts2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_shorts2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_skin1
+            // 
+            this.SAG_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_skin1.Location = new System.Drawing.Point(66, 176);
+            this.SAG_sprite_skin1.Name = "SAG_sprite_skin1";
+            this.SAG_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_skin1.TabIndex = 285;
+            this.SAG_sprite_skin1.TabStop = false;
+            this.SAG_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_skin2
+            // 
+            this.SAG_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_skin2.Location = new System.Drawing.Point(96, 176);
+            this.SAG_sprite_skin2.Name = "SAG_sprite_skin2";
+            this.SAG_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_skin2.TabIndex = 286;
+            this.SAG_sprite_skin2.TabStop = false;
+            this.SAG_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_skin3
+            // 
+            this.SAG_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_skin3.Location = new System.Drawing.Point(126, 176);
+            this.SAG_sprite_skin3.Name = "SAG_sprite_skin3";
+            this.SAG_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_skin3.TabIndex = 287;
+            this.SAG_sprite_skin3.TabStop = false;
+            this.SAG_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_sprite_skin4
+            // 
+            this.SAG_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_sprite_skin4.Location = new System.Drawing.Point(156, 176);
+            this.SAG_sprite_skin4.Name = "SAG_sprite_skin4";
+            this.SAG_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.SAG_sprite_skin4.TabIndex = 288;
+            this.SAG_sprite_skin4.TabStop = false;
+            this.SAG_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.SAG_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7738,6 +8043,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.EHO_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EHO_portraitVictoryBox)).EndInit();
+            this.TabPageSagat.ResumeLayout(false);
+            this.TabPageSagat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_wraps3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_wraps1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_wraps2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_stripe2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_stripe1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_shorts2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8304,6 +8629,29 @@
         private System.Windows.Forms.PictureBox EHO_portrait_skin1;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.TabPage TabPageSagat;
+        private System.Windows.Forms.PictureBox SAG_neutralStandBox;
+        private System.Windows.Forms.PictureBox SAG_portraitLossBox;
+        private System.Windows.Forms.PictureBox SAG_portraitVictoryBox;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.PictureBox SAG_sprite_wraps3;
+        private System.Windows.Forms.PictureBox SAG_sprite_shorts3;
+        private System.Windows.Forms.PictureBox SAG_sprite_wraps1;
+        private System.Windows.Forms.PictureBox SAG_sprite_wraps2;
+        private System.Windows.Forms.PictureBox SAG_sprite_stripe2;
+        private System.Windows.Forms.PictureBox SAG_sprite_stripe1;
+        private System.Windows.Forms.PictureBox SAG_sprite_shorts4;
+        private System.Windows.Forms.PictureBox SAG_sprite_skin6;
+        private System.Windows.Forms.PictureBox SAG_sprite_skin5;
+        private System.Windows.Forms.PictureBox SAG_sprite_shorts1;
+        private System.Windows.Forms.PictureBox SAG_sprite_shorts2;
+        private System.Windows.Forms.PictureBox SAG_sprite_skin1;
+        private System.Windows.Forms.PictureBox SAG_sprite_skin2;
+        private System.Windows.Forms.PictureBox SAG_sprite_skin3;
+        private System.Windows.Forms.PictureBox SAG_sprite_skin4;
     }
 }
 
