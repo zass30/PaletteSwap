@@ -588,6 +588,7 @@
             this.EHO_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.EHO_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1478,7 +1479,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -7283,11 +7284,20 @@
             this.COLlabel.TabIndex = 122;
             this.COLlabel.Text = "Drag COL file";
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(726, 534);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
+            this.hScrollBar1.TabIndex = 124;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(821, 768);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.COLlabel);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.colorCycleRBG);
@@ -8293,6 +8303,7 @@
         private System.Windows.Forms.PictureBox EHO_portrait_skin2;
         private System.Windows.Forms.PictureBox EHO_portrait_skin1;
         private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
     }
 }
 
