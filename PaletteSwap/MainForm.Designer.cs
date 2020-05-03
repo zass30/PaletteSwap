@@ -612,6 +612,33 @@
             this.SAG_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.SAG_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.SAG_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.SAG_portrait_scars2 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_scars1 = new System.Windows.Forms.PictureBox();
+            this.label107 = new System.Windows.Forms.Label();
+            this.SAG_portrait_wraps3 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_wraps2 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_wraps1 = new System.Windows.Forms.PictureBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.SAG_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.SAG_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_skin7 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_blood4 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_blood5 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_blood6 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_scars3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1039,6 +1066,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_wraps3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_wraps2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_wraps1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars3)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -7336,6 +7385,33 @@
             // 
             // TabPageSagat
             // 
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_scars3);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_blood6);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_blood5);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_blood4);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin7);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin6);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin5);
+            this.TabPageSagat.Controls.Add(this.label104);
+            this.TabPageSagat.Controls.Add(this.label106);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_scars2);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_scars1);
+            this.TabPageSagat.Controls.Add(this.label107);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_wraps3);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_wraps2);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_wraps1);
+            this.TabPageSagat.Controls.Add(this.label108);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_blood3);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_blood2);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_blood1);
+            this.TabPageSagat.Controls.Add(this.label109);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_teeth2);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_teeth1);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_teeth3);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin4);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin3);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin2);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_skin1);
             this.TabPageSagat.Controls.Add(this.label100);
             this.TabPageSagat.Controls.Add(this.label101);
             this.TabPageSagat.Controls.Add(this.label102);
@@ -7595,6 +7671,293 @@
             this.SAG_sprite_skin4.TabStop = false;
             this.SAG_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.SAG_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Location = new System.Drawing.Point(288, 247);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(31, 13);
+            this.label104.TabIndex = 343;
+            this.label104.Text = "teeth";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Location = new System.Drawing.Point(283, 307);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(32, 13);
+            this.label106.TabIndex = 339;
+            this.label106.Text = "scars";
+            // 
+            // SAG_portrait_scars2
+            // 
+            this.SAG_portrait_scars2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_scars2.Location = new System.Drawing.Point(355, 296);
+            this.SAG_portrait_scars2.Name = "SAG_portrait_scars2";
+            this.SAG_portrait_scars2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_scars2.TabIndex = 338;
+            this.SAG_portrait_scars2.TabStop = false;
+            this.SAG_portrait_scars2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_scars2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_scars1
+            // 
+            this.SAG_portrait_scars1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_scars1.Location = new System.Drawing.Point(325, 296);
+            this.SAG_portrait_scars1.Name = "SAG_portrait_scars1";
+            this.SAG_portrait_scars1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_scars1.TabIndex = 337;
+            this.SAG_portrait_scars1.TabStop = false;
+            this.SAG_portrait_scars1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_scars1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Location = new System.Drawing.Point(280, 277);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(35, 13);
+            this.label107.TabIndex = 336;
+            this.label107.Text = "wraps";
+            // 
+            // SAG_portrait_wraps3
+            // 
+            this.SAG_portrait_wraps3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_wraps3.Location = new System.Drawing.Point(385, 266);
+            this.SAG_portrait_wraps3.Name = "SAG_portrait_wraps3";
+            this.SAG_portrait_wraps3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_wraps3.TabIndex = 335;
+            this.SAG_portrait_wraps3.TabStop = false;
+            this.SAG_portrait_wraps3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_wraps3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_wraps2
+            // 
+            this.SAG_portrait_wraps2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_wraps2.Location = new System.Drawing.Point(355, 266);
+            this.SAG_portrait_wraps2.Name = "SAG_portrait_wraps2";
+            this.SAG_portrait_wraps2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_wraps2.TabIndex = 334;
+            this.SAG_portrait_wraps2.TabStop = false;
+            this.SAG_portrait_wraps2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_wraps2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_wraps1
+            // 
+            this.SAG_portrait_wraps1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_wraps1.Location = new System.Drawing.Point(325, 266);
+            this.SAG_portrait_wraps1.Name = "SAG_portrait_wraps1";
+            this.SAG_portrait_wraps1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_wraps1.TabIndex = 333;
+            this.SAG_portrait_wraps1.TabStop = false;
+            this.SAG_portrait_wraps1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_wraps1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(286, 217);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(33, 13);
+            this.label108.TabIndex = 331;
+            this.label108.Text = "blood";
+            // 
+            // SAG_portrait_blood3
+            // 
+            this.SAG_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_blood3.Location = new System.Drawing.Point(385, 206);
+            this.SAG_portrait_blood3.Name = "SAG_portrait_blood3";
+            this.SAG_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_blood3.TabIndex = 330;
+            this.SAG_portrait_blood3.TabStop = false;
+            this.SAG_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_blood2
+            // 
+            this.SAG_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_blood2.Location = new System.Drawing.Point(355, 206);
+            this.SAG_portrait_blood2.Name = "SAG_portrait_blood2";
+            this.SAG_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_blood2.TabIndex = 329;
+            this.SAG_portrait_blood2.TabStop = false;
+            this.SAG_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_blood1
+            // 
+            this.SAG_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_blood1.Location = new System.Drawing.Point(325, 206);
+            this.SAG_portrait_blood1.Name = "SAG_portrait_blood1";
+            this.SAG_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_blood1.TabIndex = 328;
+            this.SAG_portrait_blood1.TabStop = false;
+            this.SAG_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(294, 187);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(26, 13);
+            this.label109.TabIndex = 327;
+            this.label109.Text = "skin";
+            // 
+            // SAG_portrait_teeth2
+            // 
+            this.SAG_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_teeth2.Location = new System.Drawing.Point(355, 236);
+            this.SAG_portrait_teeth2.Name = "SAG_portrait_teeth2";
+            this.SAG_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_teeth2.TabIndex = 326;
+            this.SAG_portrait_teeth2.TabStop = false;
+            this.SAG_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_teeth1
+            // 
+            this.SAG_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_teeth1.Location = new System.Drawing.Point(325, 236);
+            this.SAG_portrait_teeth1.Name = "SAG_portrait_teeth1";
+            this.SAG_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_teeth1.TabIndex = 325;
+            this.SAG_portrait_teeth1.TabStop = false;
+            this.SAG_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_teeth3
+            // 
+            this.SAG_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_teeth3.Location = new System.Drawing.Point(385, 236);
+            this.SAG_portrait_teeth3.Name = "SAG_portrait_teeth3";
+            this.SAG_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_teeth3.TabIndex = 324;
+            this.SAG_portrait_teeth3.TabStop = false;
+            this.SAG_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin4
+            // 
+            this.SAG_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin4.Location = new System.Drawing.Point(415, 176);
+            this.SAG_portrait_skin4.Name = "SAG_portrait_skin4";
+            this.SAG_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin4.TabIndex = 323;
+            this.SAG_portrait_skin4.TabStop = false;
+            this.SAG_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin3
+            // 
+            this.SAG_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin3.Location = new System.Drawing.Point(385, 176);
+            this.SAG_portrait_skin3.Name = "SAG_portrait_skin3";
+            this.SAG_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin3.TabIndex = 322;
+            this.SAG_portrait_skin3.TabStop = false;
+            this.SAG_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin2
+            // 
+            this.SAG_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin2.Location = new System.Drawing.Point(355, 176);
+            this.SAG_portrait_skin2.Name = "SAG_portrait_skin2";
+            this.SAG_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin2.TabIndex = 321;
+            this.SAG_portrait_skin2.TabStop = false;
+            this.SAG_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin1
+            // 
+            this.SAG_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin1.Location = new System.Drawing.Point(325, 176);
+            this.SAG_portrait_skin1.Name = "SAG_portrait_skin1";
+            this.SAG_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin1.TabIndex = 320;
+            this.SAG_portrait_skin1.TabStop = false;
+            this.SAG_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin5
+            // 
+            this.SAG_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin5.Location = new System.Drawing.Point(445, 176);
+            this.SAG_portrait_skin5.Name = "SAG_portrait_skin5";
+            this.SAG_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin5.TabIndex = 344;
+            this.SAG_portrait_skin5.TabStop = false;
+            this.SAG_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin6
+            // 
+            this.SAG_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin6.Location = new System.Drawing.Point(475, 176);
+            this.SAG_portrait_skin6.Name = "SAG_portrait_skin6";
+            this.SAG_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin6.TabIndex = 345;
+            this.SAG_portrait_skin6.TabStop = false;
+            this.SAG_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_skin7
+            // 
+            this.SAG_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_skin7.Location = new System.Drawing.Point(505, 176);
+            this.SAG_portrait_skin7.Name = "SAG_portrait_skin7";
+            this.SAG_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_skin7.TabIndex = 346;
+            this.SAG_portrait_skin7.TabStop = false;
+            this.SAG_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_blood4
+            // 
+            this.SAG_portrait_blood4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_blood4.Location = new System.Drawing.Point(415, 206);
+            this.SAG_portrait_blood4.Name = "SAG_portrait_blood4";
+            this.SAG_portrait_blood4.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_blood4.TabIndex = 347;
+            this.SAG_portrait_blood4.TabStop = false;
+            this.SAG_portrait_blood4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_blood4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_blood5
+            // 
+            this.SAG_portrait_blood5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_blood5.Location = new System.Drawing.Point(445, 206);
+            this.SAG_portrait_blood5.Name = "SAG_portrait_blood5";
+            this.SAG_portrait_blood5.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_blood5.TabIndex = 348;
+            this.SAG_portrait_blood5.TabStop = false;
+            this.SAG_portrait_blood5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_blood5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_blood6
+            // 
+            this.SAG_portrait_blood6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_blood6.Location = new System.Drawing.Point(475, 206);
+            this.SAG_portrait_blood6.Name = "SAG_portrait_blood6";
+            this.SAG_portrait_blood6.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_blood6.TabIndex = 349;
+            this.SAG_portrait_blood6.TabStop = false;
+            this.SAG_portrait_blood6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_blood6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_scars3
+            // 
+            this.SAG_portrait_scars3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_scars3.Location = new System.Drawing.Point(385, 296);
+            this.SAG_portrait_scars3.Name = "SAG_portrait_scars3";
+            this.SAG_portrait_scars3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_scars3.TabIndex = 350;
+            this.SAG_portrait_scars3.TabStop = false;
+            this.SAG_portrait_scars3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_scars3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -8063,6 +8426,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_wraps3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_wraps2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_wraps1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8652,6 +9037,33 @@
         private System.Windows.Forms.PictureBox SAG_sprite_skin2;
         private System.Windows.Forms.PictureBox SAG_sprite_skin3;
         private System.Windows.Forms.PictureBox SAG_sprite_skin4;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.PictureBox SAG_portrait_scars2;
+        private System.Windows.Forms.PictureBox SAG_portrait_scars1;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.PictureBox SAG_portrait_wraps3;
+        private System.Windows.Forms.PictureBox SAG_portrait_wraps2;
+        private System.Windows.Forms.PictureBox SAG_portrait_wraps1;
+        private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.PictureBox SAG_portrait_blood3;
+        private System.Windows.Forms.PictureBox SAG_portrait_blood2;
+        private System.Windows.Forms.PictureBox SAG_portrait_blood1;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.PictureBox SAG_portrait_teeth2;
+        private System.Windows.Forms.PictureBox SAG_portrait_teeth1;
+        private System.Windows.Forms.PictureBox SAG_portrait_teeth3;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin4;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin3;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin2;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin1;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin7;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin6;
+        private System.Windows.Forms.PictureBox SAG_portrait_skin5;
+        private System.Windows.Forms.PictureBox SAG_portrait_blood6;
+        private System.Windows.Forms.PictureBox SAG_portrait_blood5;
+        private System.Windows.Forms.PictureBox SAG_portrait_blood4;
+        private System.Windows.Forms.PictureBox SAG_portrait_scars3;
     }
 }
 

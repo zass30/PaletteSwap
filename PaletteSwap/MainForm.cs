@@ -738,6 +738,36 @@ namespace PaletteSwap
                     EHO_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
                     EHO_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
                     break;
+
+                case CharacterConfig.CHARACTERS.Sagat:
+                    SAG_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    SAG_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    SAG_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    SAG_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    SAG_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    SAG_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    SAG_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    SAG_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    SAG_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    SAG_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+                    SAG_portrait_blood4.BackColor = currentCharacter.portrait.GetColor("blood4");
+                    SAG_portrait_blood5.BackColor = currentCharacter.portrait.GetColor("blood5");
+                    SAG_portrait_blood6.BackColor = currentCharacter.portrait.GetColor("blood6");
+
+                    SAG_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    SAG_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                    SAG_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+
+                    SAG_portrait_wraps1.BackColor = currentCharacter.portrait.GetColor("wraps1");
+                    SAG_portrait_wraps2.BackColor = currentCharacter.portrait.GetColor("wraps2");
+                    SAG_portrait_wraps3.BackColor = currentCharacter.portrait.GetColor("wraps3");
+
+                    SAG_portrait_scars1.BackColor = currentCharacter.portrait.GetColor("scars1");
+                    SAG_portrait_scars2.BackColor = currentCharacter.portrait.GetColor("scars2");
+                    SAG_portrait_scars3.BackColor = currentCharacter.portrait.GetColor("scars3");
+                    break;
+
             }
         }
 
@@ -868,6 +898,7 @@ namespace PaletteSwap
                 case "KEN_neutralStandBox":
                 case "ZAN_neutralStandBox":
                 case "EHO_neutralStandBox":
+                case "SAG_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -879,6 +910,7 @@ namespace PaletteSwap
                 case "KEN_portraitVictoryBox":
                 case "ZAN_portraitVictoryBox":
                 case "EHO_portraitVictoryBox":
+                case "SAG_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -890,6 +922,7 @@ namespace PaletteSwap
                 case "KEN_portraitLossBox":
                 case "ZAN_portraitLossBox":
                 case "EHO_portraitLossBox":
+                case "SAG_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
