@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Forms.ComponentModel.Com2Interop;
 
 namespace PaletteSwap
 {
@@ -298,6 +293,8 @@ namespace PaletteSwap
                     return HONDA.GenerateHondaSpriteConfig();
                 case CharacterConfig.CHARACTERS.Sagat:
                     return SAGAT.GenerateSagatSpriteConfig();
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI.GenerateFeiSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -326,6 +323,8 @@ namespace PaletteSwap
                     return HONDA.GenerateHondaPortraitConfig();
                 case CharacterConfig.CHARACTERS.Sagat:
                     return SAGAT.GenerateSagatPortraitConfig();
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI.GenerateFeiPortraitConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -439,6 +438,95 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> sagatPortraitOffsets = GenerateSagatPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = sagatPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+        }
+
+        public struct FEI
+        {
+            public static Dictionary<string, List<int>> GenerateFeiSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "shoes", new List<int>() { 0 } },
+            { "skin2", new List<int>() { 2 } },
+            { "skin3", new List<int>() { 4 } },
+            { "skin4", new List<int>() { 6 } },
+            { "skin5", new List<int>() { 8 } },
+            { "skin6", new List<int>() { 10 } },
+            { "skin7", new List<int>() { 12 } },
+            { "skin8", new List<int>() { 14 } },
+            { "costume6", new List<int>() { 16 } },
+            { "costume5", new List<int>() { 18 } },
+            { "costume4", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume2", new List<int>() { 24 } },
+            { "costume1", new List<int>() { 26 } },
+            { "skin1", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateFeiSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateFeiSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateFeiPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6 } },
+        { "hair1", new List<int>() { 8, ROWLEN * 1 + 8 } },
+        { "hair2", new List<int>() { 10, ROWLEN * 1 + 10 } },
+        { "hair3", new List<int>() { 12, ROWLEN * 1 + 12 } },
+
+        { "costume1", new List<int>() { 14 } },
+        { "costume2", new List<int>() { 16 } },
+        { "costume3", new List<int>() { 18 } },
+        { "costume4", new List<int>() { 20 } },
+        { "costume5", new List<int>() { 22, ROWLEN * 1 + 22 } },
+
+        { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24 } },
+        { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26 } },
+        { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 1 + 14 } },
+        { "blood2", new List<int>() { ROWLEN * 1 + 16 } },
+        { "blood3", new List<int>() { ROWLEN * 1 + 18 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateFeiPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> feiPortraitOffsets = GenerateFeiPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = feiPortraitOffsets;
                 pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
@@ -1371,6 +1459,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.SAG_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.SAGAT.GenerateSagatSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.FEI_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.FEI.GenerateFeiSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1417,6 +1509,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.SAG_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.FEI_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.FEI.GenerateFeiPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1463,6 +1559,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.SAG_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.FEI_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.FEI.GenerateFeiPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }

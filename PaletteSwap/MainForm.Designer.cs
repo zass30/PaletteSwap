@@ -643,6 +643,10 @@
             this.label105 = new System.Windows.Forms.Label();
             this.SAG_portrait_bruise2 = new System.Windows.Forms.PictureBox();
             this.SAG_portrait_bruise1 = new System.Windows.Forms.PictureBox();
+            this.TabPageFei = new System.Windows.Forms.TabPage();
+            this.FEI_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.FEI_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.FEI_neutralStandBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1095,6 +1099,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise1)).BeginInit();
+            this.TabPageFei.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2557,6 +2565,7 @@
             this.tabControl1.Controls.Add(this.TabPageZangief);
             this.tabControl1.Controls.Add(this.TabPageHonda);
             this.tabControl1.Controls.Add(this.TabPageSagat);
+            this.tabControl1.Controls.Add(this.TabPageFei);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -8013,6 +8022,45 @@
             this.SAG_portrait_bruise1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.SAG_portrait_bruise1.Click += new System.EventHandler(this.pal_square_click);
             // 
+            // TabPageFei
+            // 
+            this.TabPageFei.Controls.Add(this.FEI_neutralStandBox);
+            this.TabPageFei.Controls.Add(this.FEI_portraitLossBox);
+            this.TabPageFei.Controls.Add(this.FEI_portraitVictoryBox);
+            this.TabPageFei.Location = new System.Drawing.Point(4, 22);
+            this.TabPageFei.Name = "TabPageFei";
+            this.TabPageFei.Size = new System.Drawing.Size(597, 559);
+            this.TabPageFei.TabIndex = 10;
+            this.TabPageFei.Text = "Fei";
+            this.TabPageFei.UseVisualStyleBackColor = true;
+            // 
+            // FEI_portraitLossBox
+            // 
+            this.FEI_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.FEI_portraitLossBox.Location = new System.Drawing.Point(452, 26);
+            this.FEI_portraitLossBox.Name = "FEI_portraitLossBox";
+            this.FEI_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.FEI_portraitLossBox.TabIndex = 191;
+            this.FEI_portraitLossBox.TabStop = false;
+            // 
+            // FEI_portraitVictoryBox
+            // 
+            this.FEI_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.FEI_portraitVictoryBox.Location = new System.Drawing.Point(315, 26);
+            this.FEI_portraitVictoryBox.Name = "FEI_portraitVictoryBox";
+            this.FEI_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.FEI_portraitVictoryBox.TabIndex = 190;
+            this.FEI_portraitVictoryBox.TabStop = false;
+            // 
+            // FEI_neutralStandBox
+            // 
+            this.FEI_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.FEI_neutralStandBox.Location = new System.Drawing.Point(26, 21);
+            this.FEI_neutralStandBox.Name = "FEI_neutralStandBox";
+            this.FEI_neutralStandBox.Size = new System.Drawing.Size(89, 93);
+            this.FEI_neutralStandBox.TabIndex = 192;
+            this.FEI_neutralStandBox.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8505,6 +8553,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise1)).EndInit();
+            this.TabPageFei.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9125,6 +9177,10 @@
         private System.Windows.Forms.Label label105;
         private System.Windows.Forms.PictureBox SAG_portrait_bruise2;
         private System.Windows.Forms.PictureBox SAG_portrait_bruise1;
+        private System.Windows.Forms.TabPage TabPageFei;
+        private System.Windows.Forms.PictureBox FEI_neutralStandBox;
+        private System.Windows.Forms.PictureBox FEI_portraitLossBox;
+        private System.Windows.Forms.PictureBox FEI_portraitVictoryBox;
     }
 }
 

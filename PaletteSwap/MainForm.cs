@@ -27,7 +27,8 @@ namespace PaletteSwap
         Regex rx = new Regex(@"[^_]+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
-                CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.CHARACTERS.Sagat};
+                CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda,
+            CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong};
 
         public MainForm()
         {
@@ -162,6 +163,8 @@ namespace PaletteSwap
                     return DIC_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Sagat:
                     return SAG_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI_neutralStandBox;
             }
             throw new Exception("Invalid character");
         }
@@ -190,6 +193,8 @@ namespace PaletteSwap
                     return SAG_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DIC_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI_portraitLossBox;
             }
             throw new Exception("Invalid character");
         }
@@ -218,6 +223,8 @@ namespace PaletteSwap
                     return SAG_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DIC_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI_portraitVictoryBox;
             }
             throw new Exception("Invalid character");
         }
@@ -904,6 +911,7 @@ namespace PaletteSwap
                 case "ZAN_neutralStandBox":
                 case "EHO_neutralStandBox":
                 case "SAG_neutralStandBox":
+                case "FEI_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -916,6 +924,7 @@ namespace PaletteSwap
                 case "ZAN_portraitVictoryBox":
                 case "EHO_portraitVictoryBox":
                 case "SAG_portraitVictoryBox":
+                case "FEI_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -928,6 +937,7 @@ namespace PaletteSwap
                 case "ZAN_portraitLossBox":
                 case "EHO_portraitLossBox":
                 case "SAG_portraitLossBox":
+                case "FEI_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
@@ -1365,6 +1375,10 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageSagat")
             {
                 ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Sagat);
+            }
+            else if (selt.Name == "TabPageFei")
+            {
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Feilong);
             }
         }
 
