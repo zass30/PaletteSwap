@@ -28,7 +28,7 @@ namespace PaletteSwap
         CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
                 CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda,
-            CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong};
+            CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong, CharacterConfig.CHARACTERS.Deejay};
 
         public MainForm()
         {
@@ -1388,6 +1388,10 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageFei")
             {
                 ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Feilong);
+            }
+            else if (selt.Name == "TabPageDeejay")
+            {
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Deejay);
             }
         }
 

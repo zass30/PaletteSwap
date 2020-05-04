@@ -1611,7 +1611,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteConfig.FEI.GenerateFeiPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Deejay:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DEE_portraitwin0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejayPortraitOffsets());
             }
             throw new Exception("Invalid character");
@@ -1665,7 +1665,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteConfig.FEI.GenerateFeiPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Deejay:
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DEE_portraitloss0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejayPortraitOffsets());
             }
             throw new Exception("Invalid character");

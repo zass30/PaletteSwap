@@ -74,20 +74,20 @@ namespace PaletteSwapTest
         {
          //   var ryu = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.lp);
          //   var ryu_remap = ryu.GetBitmap("neutral");
-
-            var sag = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Sagat
+         /*
+            var dee = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Deejay
                 , CharacterConfig.BUTTONS.lp);
-            var remapimg = sag.GetBitmap("neutral");
-            remapimg.Save(@"C:\temp\sagneu.png");
-             remapimg = sag.GetBitmap("victory");
-            remapimg.Save(@"C:\temp\sagv.png");
-             remapimg = sag.GetBitmap("loss");
-            remapimg.Save(@"C:\temp\sagl.png");
+            var remapimg = dee.GetBitmap("neutral");
+            remapimg.Save(@"C:\temp\deen.png");
+             remapimg = dee.GetBitmap("victory");
+            remapimg.Save(@"C:\temp\deev.png");
+             remapimg = dee.GetBitmap("loss");
+            remapimg.Save(@"C:\temp\deel.png");
 
             // check honda's byte stream? maybe that's wrong
             var s = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp));
             int x = 0;
-            x++;
+            x++;*/
         }
     }
 }

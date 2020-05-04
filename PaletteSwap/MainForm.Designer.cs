@@ -8048,7 +8048,7 @@
             this.FEI_portraitLossBox.BackColor = System.Drawing.Color.Black;
             this.FEI_portraitLossBox.Location = new System.Drawing.Point(452, 26);
             this.FEI_portraitLossBox.Name = "FEI_portraitLossBox";
-            this.FEI_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.FEI_portraitLossBox.Size = new System.Drawing.Size(100, 112);
             this.FEI_portraitLossBox.TabIndex = 191;
             this.FEI_portraitLossBox.TabStop = false;
             this.FEI_portraitLossBox.Click += new System.EventHandler(this.zoom);
