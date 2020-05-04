@@ -468,6 +468,47 @@ namespace PaletteSwap
                     SAG_sprite_stripe2.BackColor = currentCharacter.sprite.GetColor("stripe2");
 
                     break;
+
+
+                case CharacterConfig.CHARACTERS.Feilong:
+                    FEI_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    FEI_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    FEI_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    FEI_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    FEI_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    FEI_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+                    FEI_sprite_skin7.BackColor = currentCharacter.sprite.GetColor("skin7");
+                    FEI_sprite_skin8.BackColor = currentCharacter.sprite.GetColor("skin8");
+
+                    FEI_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    FEI_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    FEI_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    FEI_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    FEI_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    FEI_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
+
+                    FEI_sprite_shoes.BackColor = currentCharacter.sprite.GetColor("shoes");
+
+                    break;
+
+                case CharacterConfig.CHARACTERS.Deejay:
+                    DEE_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    DEE_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    DEE_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    DEE_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    DEE_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    DEE_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+                    DEE_sprite_skin7.BackColor = currentCharacter.sprite.GetColor("skin7");
+                    DEE_sprite_skin8.BackColor = currentCharacter.sprite.GetColor("skin8");
+                    DEE_sprite_skin9.BackColor = currentCharacter.sprite.GetColor("skin9");
+
+                    DEE_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    DEE_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    DEE_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    DEE_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    DEE_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    DEE_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
+                    break;
             }
         }
 

@@ -1712,7 +1712,6 @@
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
             this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
-            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
