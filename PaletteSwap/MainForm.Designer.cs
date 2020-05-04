@@ -647,6 +647,10 @@
             this.FEI_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.FEI_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.FEI_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.TabPageDeejay = new System.Windows.Forms.TabPage();
+            this.DEE_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.DEE_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.DEE_neutralStandBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1103,6 +1107,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_neutralStandBox)).BeginInit();
+            this.TabPageDeejay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_neutralStandBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2566,6 +2574,7 @@
             this.tabControl1.Controls.Add(this.TabPageHonda);
             this.tabControl1.Controls.Add(this.TabPageSagat);
             this.tabControl1.Controls.Add(this.TabPageFei);
+            this.tabControl1.Controls.Add(this.TabPageDeejay);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -8042,6 +8051,7 @@
             this.FEI_portraitLossBox.Size = new System.Drawing.Size(128, 112);
             this.FEI_portraitLossBox.TabIndex = 191;
             this.FEI_portraitLossBox.TabStop = false;
+            this.FEI_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // FEI_portraitVictoryBox
             // 
@@ -8051,6 +8061,7 @@
             this.FEI_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.FEI_portraitVictoryBox.TabIndex = 190;
             this.FEI_portraitVictoryBox.TabStop = false;
+            this.FEI_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // FEI_neutralStandBox
             // 
@@ -8060,6 +8071,49 @@
             this.FEI_neutralStandBox.Size = new System.Drawing.Size(89, 93);
             this.FEI_neutralStandBox.TabIndex = 192;
             this.FEI_neutralStandBox.TabStop = false;
+            this.FEI_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // TabPageDeejay
+            // 
+            this.TabPageDeejay.Controls.Add(this.DEE_neutralStandBox);
+            this.TabPageDeejay.Controls.Add(this.DEE_portraitLossBox);
+            this.TabPageDeejay.Controls.Add(this.DEE_portraitVictoryBox);
+            this.TabPageDeejay.Location = new System.Drawing.Point(4, 22);
+            this.TabPageDeejay.Name = "TabPageDeejay";
+            this.TabPageDeejay.Size = new System.Drawing.Size(597, 559);
+            this.TabPageDeejay.TabIndex = 11;
+            this.TabPageDeejay.Text = "Deejay";
+            this.TabPageDeejay.UseVisualStyleBackColor = true;
+            // 
+            // DEE_portraitLossBox
+            // 
+            this.DEE_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.DEE_portraitLossBox.Location = new System.Drawing.Point(438, 28);
+            this.DEE_portraitLossBox.Name = "DEE_portraitLossBox";
+            this.DEE_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.DEE_portraitLossBox.TabIndex = 193;
+            this.DEE_portraitLossBox.TabStop = false;
+            this.DEE_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // DEE_portraitVictoryBox
+            // 
+            this.DEE_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.DEE_portraitVictoryBox.Location = new System.Drawing.Point(301, 28);
+            this.DEE_portraitVictoryBox.Name = "DEE_portraitVictoryBox";
+            this.DEE_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.DEE_portraitVictoryBox.TabIndex = 192;
+            this.DEE_portraitVictoryBox.TabStop = false;
+            this.DEE_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // DEE_neutralStandBox
+            // 
+            this.DEE_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.DEE_neutralStandBox.Location = new System.Drawing.Point(20, 28);
+            this.DEE_neutralStandBox.Name = "DEE_neutralStandBox";
+            this.DEE_neutralStandBox.Size = new System.Drawing.Size(74, 104);
+            this.DEE_neutralStandBox.TabIndex = 194;
+            this.DEE_neutralStandBox.TabStop = false;
+            this.DEE_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // MainForm
             // 
@@ -8557,6 +8611,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_neutralStandBox)).EndInit();
+            this.TabPageDeejay.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_neutralStandBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9181,6 +9239,10 @@
         private System.Windows.Forms.PictureBox FEI_neutralStandBox;
         private System.Windows.Forms.PictureBox FEI_portraitLossBox;
         private System.Windows.Forms.PictureBox FEI_portraitVictoryBox;
+        private System.Windows.Forms.TabPage TabPageDeejay;
+        private System.Windows.Forms.PictureBox DEE_neutralStandBox;
+        private System.Windows.Forms.PictureBox DEE_portraitLossBox;
+        private System.Windows.Forms.PictureBox DEE_portraitVictoryBox;
     }
 }
 

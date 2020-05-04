@@ -165,6 +165,8 @@ namespace PaletteSwap
                     return SAG_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Feilong:
                     return FEI_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Deejay:
+                    return DEE_neutralStandBox;
             }
             throw new Exception("Invalid character");
         }
@@ -195,6 +197,8 @@ namespace PaletteSwap
                     return DIC_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Feilong:
                     return FEI_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Deejay:
+                    return DEE_portraitLossBox;
             }
             throw new Exception("Invalid character");
         }
@@ -225,6 +229,8 @@ namespace PaletteSwap
                     return DIC_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Feilong:
                     return FEI_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Deejay:
+                    return DEE_portraitVictoryBox;
             }
             throw new Exception("Invalid character");
         }
@@ -912,6 +918,7 @@ namespace PaletteSwap
                 case "EHO_neutralStandBox":
                 case "SAG_neutralStandBox":
                 case "FEI_neutralStandBox":
+                case "DEE_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -925,6 +932,7 @@ namespace PaletteSwap
                 case "EHO_portraitVictoryBox":
                 case "SAG_portraitVictoryBox":
                 case "FEI_portraitVictoryBox":
+                case "DEE_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -938,6 +946,7 @@ namespace PaletteSwap
                 case "EHO_portraitLossBox":
                 case "SAG_portraitLossBox":
                 case "FEI_portraitLossBox":
+                case "DEE_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
