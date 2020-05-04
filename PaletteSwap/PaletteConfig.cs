@@ -583,6 +583,7 @@ namespace PaletteSwap
         { "skin2", new List<int>() { 2, ROWLEN * 1 + 2 } },
         { "skin3", new List<int>() { 4, ROWLEN * 1 + 4 } },
         { "skin4", new List<int>() { 6, ROWLEN * 1 + 6 } },
+
         { "hair1", new List<int>() { 8, ROWLEN * 1 + 8 } },
         { "hair2", new List<int>() { 10, ROWLEN * 1 + 10 } },
         { "hair3", new List<int>() { 12, ROWLEN * 1 + 12 } },

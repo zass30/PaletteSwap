@@ -651,6 +651,85 @@
             this.DEE_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.DEE_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.DEE_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.FEI_sprite_skin8 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_costume6 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin7 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_shoes = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.FEI_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.FEI_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.label113 = new System.Windows.Forms.Label();
+            this.FEI_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.label115 = new System.Windows.Forms.Label();
+            this.FEI_portrait_hair3 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_hair2 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_hair1 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.FEI_portrait_costume4 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_costume3 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_costume2 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_costume1 = new System.Windows.Forms.PictureBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.FEI_portrait_costume5 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.FEI_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.label118 = new System.Windows.Forms.Label();
+            this.DEE_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.DEE_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.label121 = new System.Windows.Forms.Label();
+            this.DEE_portrait_necklace4 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_necklace3 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_necklace2 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_necklace1 = new System.Windows.Forms.PictureBox();
+            this.label122 = new System.Windows.Forms.Label();
+            this.DEE_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label125 = new System.Windows.Forms.Label();
+            this.DEE_sprite_skin8 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_costume6 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin7 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin9 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.DEE_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_skin7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1111,6 +1190,71 @@
             ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DEE_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_shoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin7)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -8033,6 +8177,47 @@
             // 
             // TabPageFei
             // 
+            this.TabPageFei.Controls.Add(this.label110);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_teeth2);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_teeth1);
+            this.TabPageFei.Controls.Add(this.label113);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_blood3);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_blood2);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_blood1);
+            this.TabPageFei.Controls.Add(this.label115);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_hair3);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_hair2);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_hair1);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_teeth3);
+            this.TabPageFei.Controls.Add(this.label116);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_costume4);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_costume3);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_costume2);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_costume1);
+            this.TabPageFei.Controls.Add(this.label117);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_costume5);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_skin4);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_skin3);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_skin2);
+            this.TabPageFei.Controls.Add(this.FEI_portrait_skin1);
+            this.TabPageFei.Controls.Add(this.label111);
+            this.TabPageFei.Controls.Add(this.label112);
+            this.TabPageFei.Controls.Add(this.label114);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin8);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_costume3);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_costume6);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_costume5);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin7);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_shoes);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_costume4);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin6);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin5);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_costume1);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_costume2);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin1);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin2);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin3);
+            this.TabPageFei.Controls.Add(this.FEI_sprite_skin4);
             this.TabPageFei.Controls.Add(this.FEI_neutralStandBox);
             this.TabPageFei.Controls.Add(this.FEI_portraitLossBox);
             this.TabPageFei.Controls.Add(this.FEI_portraitVictoryBox);
@@ -8066,7 +8251,7 @@
             // FEI_neutralStandBox
             // 
             this.FEI_neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.FEI_neutralStandBox.Location = new System.Drawing.Point(26, 21);
+            this.FEI_neutralStandBox.Location = new System.Drawing.Point(29, 45);
             this.FEI_neutralStandBox.Name = "FEI_neutralStandBox";
             this.FEI_neutralStandBox.Size = new System.Drawing.Size(89, 93);
             this.FEI_neutralStandBox.TabIndex = 192;
@@ -8075,6 +8260,44 @@
             // 
             // TabPageDeejay
             // 
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin7);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin6);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin5);
+            this.TabPageDeejay.Controls.Add(this.label118);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_teeth2);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_teeth1);
+            this.TabPageDeejay.Controls.Add(this.label119);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_blood3);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_blood2);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_blood1);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_teeth3);
+            this.TabPageDeejay.Controls.Add(this.label121);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_necklace4);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_necklace3);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_necklace2);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_necklace1);
+            this.TabPageDeejay.Controls.Add(this.label122);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin4);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin3);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin2);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin1);
+            this.TabPageDeejay.Controls.Add(this.label124);
+            this.TabPageDeejay.Controls.Add(this.label125);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin8);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_costume3);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_costume6);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_costume5);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin7);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin9);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_costume4);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin6);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin5);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_costume1);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_costume2);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin1);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin2);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin3);
+            this.TabPageDeejay.Controls.Add(this.DEE_sprite_skin4);
             this.TabPageDeejay.Controls.Add(this.DEE_neutralStandBox);
             this.TabPageDeejay.Controls.Add(this.DEE_portraitLossBox);
             this.TabPageDeejay.Controls.Add(this.DEE_portraitVictoryBox);
@@ -8114,6 +8337,847 @@
             this.DEE_neutralStandBox.TabIndex = 194;
             this.DEE_neutralStandBox.TabStop = false;
             this.DEE_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(15, 233);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(35, 13);
+            this.label111.TabIndex = 338;
+            this.label111.Text = "shoes";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(3, 204);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(47, 13);
+            this.label112.TabIndex = 337;
+            this.label112.Text = "costume";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(24, 174);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(26, 13);
+            this.label114.TabIndex = 335;
+            this.label114.Text = "skin";
+            // 
+            // FEI_sprite_skin8
+            // 
+            this.FEI_sprite_skin8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin8.Location = new System.Drawing.Point(266, 163);
+            this.FEI_sprite_skin8.Name = "FEI_sprite_skin8";
+            this.FEI_sprite_skin8.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin8.TabIndex = 333;
+            this.FEI_sprite_skin8.TabStop = false;
+            this.FEI_sprite_skin8.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin8.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_costume3
+            // 
+            this.FEI_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_costume3.Location = new System.Drawing.Point(116, 193);
+            this.FEI_sprite_costume3.Name = "FEI_sprite_costume3";
+            this.FEI_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_costume3.TabIndex = 334;
+            this.FEI_sprite_costume3.TabStop = false;
+            this.FEI_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_costume6
+            // 
+            this.FEI_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_costume6.Location = new System.Drawing.Point(206, 193);
+            this.FEI_sprite_costume6.Name = "FEI_sprite_costume6";
+            this.FEI_sprite_costume6.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_costume6.TabIndex = 327;
+            this.FEI_sprite_costume6.TabStop = false;
+            this.FEI_sprite_costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_costume6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_costume5
+            // 
+            this.FEI_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_costume5.Location = new System.Drawing.Point(176, 193);
+            this.FEI_sprite_costume5.Name = "FEI_sprite_costume5";
+            this.FEI_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_costume5.TabIndex = 328;
+            this.FEI_sprite_costume5.TabStop = false;
+            this.FEI_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin7
+            // 
+            this.FEI_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin7.Location = new System.Drawing.Point(236, 163);
+            this.FEI_sprite_skin7.Name = "FEI_sprite_skin7";
+            this.FEI_sprite_skin7.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin7.TabIndex = 329;
+            this.FEI_sprite_skin7.TabStop = false;
+            this.FEI_sprite_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_shoes
+            // 
+            this.FEI_sprite_shoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_shoes.Location = new System.Drawing.Point(56, 223);
+            this.FEI_sprite_shoes.Name = "FEI_sprite_shoes";
+            this.FEI_sprite_shoes.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_shoes.TabIndex = 330;
+            this.FEI_sprite_shoes.TabStop = false;
+            this.FEI_sprite_shoes.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_shoes.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_costume4
+            // 
+            this.FEI_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_costume4.Location = new System.Drawing.Point(146, 193);
+            this.FEI_sprite_costume4.Name = "FEI_sprite_costume4";
+            this.FEI_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_costume4.TabIndex = 331;
+            this.FEI_sprite_costume4.TabStop = false;
+            this.FEI_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin6
+            // 
+            this.FEI_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin6.Location = new System.Drawing.Point(206, 163);
+            this.FEI_sprite_skin6.Name = "FEI_sprite_skin6";
+            this.FEI_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin6.TabIndex = 332;
+            this.FEI_sprite_skin6.TabStop = false;
+            this.FEI_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin5
+            // 
+            this.FEI_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin5.Location = new System.Drawing.Point(176, 163);
+            this.FEI_sprite_skin5.Name = "FEI_sprite_skin5";
+            this.FEI_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin5.TabIndex = 324;
+            this.FEI_sprite_skin5.TabStop = false;
+            this.FEI_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_costume1
+            // 
+            this.FEI_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_costume1.Location = new System.Drawing.Point(56, 193);
+            this.FEI_sprite_costume1.Name = "FEI_sprite_costume1";
+            this.FEI_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_costume1.TabIndex = 325;
+            this.FEI_sprite_costume1.TabStop = false;
+            this.FEI_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_costume2
+            // 
+            this.FEI_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_costume2.Location = new System.Drawing.Point(86, 193);
+            this.FEI_sprite_costume2.Name = "FEI_sprite_costume2";
+            this.FEI_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_costume2.TabIndex = 326;
+            this.FEI_sprite_costume2.TabStop = false;
+            this.FEI_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin1
+            // 
+            this.FEI_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin1.Location = new System.Drawing.Point(56, 163);
+            this.FEI_sprite_skin1.Name = "FEI_sprite_skin1";
+            this.FEI_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin1.TabIndex = 320;
+            this.FEI_sprite_skin1.TabStop = false;
+            this.FEI_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin2
+            // 
+            this.FEI_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin2.Location = new System.Drawing.Point(86, 163);
+            this.FEI_sprite_skin2.Name = "FEI_sprite_skin2";
+            this.FEI_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin2.TabIndex = 321;
+            this.FEI_sprite_skin2.TabStop = false;
+            this.FEI_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin3
+            // 
+            this.FEI_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin3.Location = new System.Drawing.Point(116, 163);
+            this.FEI_sprite_skin3.Name = "FEI_sprite_skin3";
+            this.FEI_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin3.TabIndex = 322;
+            this.FEI_sprite_skin3.TabStop = false;
+            this.FEI_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_sprite_skin4
+            // 
+            this.FEI_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_sprite_skin4.Location = new System.Drawing.Point(146, 163);
+            this.FEI_sprite_skin4.Name = "FEI_sprite_skin4";
+            this.FEI_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.FEI_sprite_skin4.TabIndex = 323;
+            this.FEI_sprite_skin4.TabStop = false;
+            this.FEI_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.FEI_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(305, 294);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(31, 13);
+            this.label110.TabIndex = 363;
+            this.label110.Text = "teeth";
+            // 
+            // FEI_portrait_teeth2
+            // 
+            this.FEI_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_teeth2.Location = new System.Drawing.Point(372, 283);
+            this.FEI_portrait_teeth2.Name = "FEI_portrait_teeth2";
+            this.FEI_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_teeth2.TabIndex = 362;
+            this.FEI_portrait_teeth2.TabStop = false;
+            this.FEI_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_teeth1
+            // 
+            this.FEI_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_teeth1.Location = new System.Drawing.Point(342, 283);
+            this.FEI_portrait_teeth1.Name = "FEI_portrait_teeth1";
+            this.FEI_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_teeth1.TabIndex = 361;
+            this.FEI_portrait_teeth1.TabStop = false;
+            this.FEI_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(303, 264);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(33, 13);
+            this.label113.TabIndex = 360;
+            this.label113.Text = "blood";
+            // 
+            // FEI_portrait_blood3
+            // 
+            this.FEI_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_blood3.Location = new System.Drawing.Point(402, 253);
+            this.FEI_portrait_blood3.Name = "FEI_portrait_blood3";
+            this.FEI_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_blood3.TabIndex = 359;
+            this.FEI_portrait_blood3.TabStop = false;
+            this.FEI_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_blood2
+            // 
+            this.FEI_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_blood2.Location = new System.Drawing.Point(372, 253);
+            this.FEI_portrait_blood2.Name = "FEI_portrait_blood2";
+            this.FEI_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_blood2.TabIndex = 358;
+            this.FEI_portrait_blood2.TabStop = false;
+            this.FEI_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_blood1
+            // 
+            this.FEI_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_blood1.Location = new System.Drawing.Point(342, 253);
+            this.FEI_portrait_blood1.Name = "FEI_portrait_blood1";
+            this.FEI_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_blood1.TabIndex = 357;
+            this.FEI_portrait_blood1.TabStop = false;
+            this.FEI_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(312, 233);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(24, 13);
+            this.label115.TabIndex = 356;
+            this.label115.Text = "hair";
+            // 
+            // FEI_portrait_hair3
+            // 
+            this.FEI_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_hair3.Location = new System.Drawing.Point(402, 223);
+            this.FEI_portrait_hair3.Name = "FEI_portrait_hair3";
+            this.FEI_portrait_hair3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_hair3.TabIndex = 355;
+            this.FEI_portrait_hair3.TabStop = false;
+            this.FEI_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_hair2
+            // 
+            this.FEI_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_hair2.Location = new System.Drawing.Point(372, 223);
+            this.FEI_portrait_hair2.Name = "FEI_portrait_hair2";
+            this.FEI_portrait_hair2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_hair2.TabIndex = 354;
+            this.FEI_portrait_hair2.TabStop = false;
+            this.FEI_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_hair1
+            // 
+            this.FEI_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_hair1.Location = new System.Drawing.Point(342, 223);
+            this.FEI_portrait_hair1.Name = "FEI_portrait_hair1";
+            this.FEI_portrait_hair1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_hair1.TabIndex = 353;
+            this.FEI_portrait_hair1.TabStop = false;
+            this.FEI_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_teeth3
+            // 
+            this.FEI_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_teeth3.Location = new System.Drawing.Point(402, 283);
+            this.FEI_portrait_teeth3.Name = "FEI_portrait_teeth3";
+            this.FEI_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_teeth3.TabIndex = 352;
+            this.FEI_portrait_teeth3.TabStop = false;
+            this.FEI_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(289, 204);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(47, 13);
+            this.label116.TabIndex = 351;
+            this.label116.Text = "costume";
+            // 
+            // FEI_portrait_costume4
+            // 
+            this.FEI_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_costume4.Location = new System.Drawing.Point(432, 193);
+            this.FEI_portrait_costume4.Name = "FEI_portrait_costume4";
+            this.FEI_portrait_costume4.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_costume4.TabIndex = 350;
+            this.FEI_portrait_costume4.TabStop = false;
+            this.FEI_portrait_costume4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_costume3
+            // 
+            this.FEI_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_costume3.Location = new System.Drawing.Point(402, 193);
+            this.FEI_portrait_costume3.Name = "FEI_portrait_costume3";
+            this.FEI_portrait_costume3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_costume3.TabIndex = 349;
+            this.FEI_portrait_costume3.TabStop = false;
+            this.FEI_portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_costume2
+            // 
+            this.FEI_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_costume2.Location = new System.Drawing.Point(372, 193);
+            this.FEI_portrait_costume2.Name = "FEI_portrait_costume2";
+            this.FEI_portrait_costume2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_costume2.TabIndex = 348;
+            this.FEI_portrait_costume2.TabStop = false;
+            this.FEI_portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_costume1
+            // 
+            this.FEI_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_costume1.Location = new System.Drawing.Point(342, 193);
+            this.FEI_portrait_costume1.Name = "FEI_portrait_costume1";
+            this.FEI_portrait_costume1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_costume1.TabIndex = 347;
+            this.FEI_portrait_costume1.TabStop = false;
+            this.FEI_portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(310, 174);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(26, 13);
+            this.label117.TabIndex = 346;
+            this.label117.Text = "skin";
+            // 
+            // FEI_portrait_costume5
+            // 
+            this.FEI_portrait_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_costume5.Location = new System.Drawing.Point(462, 193);
+            this.FEI_portrait_costume5.Name = "FEI_portrait_costume5";
+            this.FEI_portrait_costume5.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_costume5.TabIndex = 343;
+            this.FEI_portrait_costume5.TabStop = false;
+            this.FEI_portrait_costume5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_skin4
+            // 
+            this.FEI_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_skin4.Location = new System.Drawing.Point(432, 163);
+            this.FEI_portrait_skin4.Name = "FEI_portrait_skin4";
+            this.FEI_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_skin4.TabIndex = 342;
+            this.FEI_portrait_skin4.TabStop = false;
+            this.FEI_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_skin3
+            // 
+            this.FEI_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_skin3.Location = new System.Drawing.Point(402, 163);
+            this.FEI_portrait_skin3.Name = "FEI_portrait_skin3";
+            this.FEI_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_skin3.TabIndex = 341;
+            this.FEI_portrait_skin3.TabStop = false;
+            this.FEI_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_skin2
+            // 
+            this.FEI_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_skin2.Location = new System.Drawing.Point(372, 163);
+            this.FEI_portrait_skin2.Name = "FEI_portrait_skin2";
+            this.FEI_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_skin2.TabIndex = 340;
+            this.FEI_portrait_skin2.TabStop = false;
+            this.FEI_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // FEI_portrait_skin1
+            // 
+            this.FEI_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FEI_portrait_skin1.Location = new System.Drawing.Point(342, 163);
+            this.FEI_portrait_skin1.Name = "FEI_portrait_skin1";
+            this.FEI_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.FEI_portrait_skin1.TabIndex = 339;
+            this.FEI_portrait_skin1.TabStop = false;
+            this.FEI_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.FEI_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(305, 308);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(31, 13);
+            this.label118.TabIndex = 404;
+            this.label118.Text = "teeth";
+            // 
+            // DEE_portrait_teeth2
+            // 
+            this.DEE_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_teeth2.Location = new System.Drawing.Point(372, 297);
+            this.DEE_portrait_teeth2.Name = "DEE_portrait_teeth2";
+            this.DEE_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_teeth2.TabIndex = 403;
+            this.DEE_portrait_teeth2.TabStop = false;
+            this.DEE_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_teeth1
+            // 
+            this.DEE_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_teeth1.Location = new System.Drawing.Point(342, 297);
+            this.DEE_portrait_teeth1.Name = "DEE_portrait_teeth1";
+            this.DEE_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_teeth1.TabIndex = 402;
+            this.DEE_portrait_teeth1.TabStop = false;
+            this.DEE_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(303, 278);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(33, 13);
+            this.label119.TabIndex = 401;
+            this.label119.Text = "blood";
+            // 
+            // DEE_portrait_blood3
+            // 
+            this.DEE_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_blood3.Location = new System.Drawing.Point(402, 267);
+            this.DEE_portrait_blood3.Name = "DEE_portrait_blood3";
+            this.DEE_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_blood3.TabIndex = 400;
+            this.DEE_portrait_blood3.TabStop = false;
+            this.DEE_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_blood2
+            // 
+            this.DEE_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_blood2.Location = new System.Drawing.Point(372, 267);
+            this.DEE_portrait_blood2.Name = "DEE_portrait_blood2";
+            this.DEE_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_blood2.TabIndex = 399;
+            this.DEE_portrait_blood2.TabStop = false;
+            this.DEE_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_blood1
+            // 
+            this.DEE_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_blood1.Location = new System.Drawing.Point(342, 267);
+            this.DEE_portrait_blood1.Name = "DEE_portrait_blood1";
+            this.DEE_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_blood1.TabIndex = 398;
+            this.DEE_portrait_blood1.TabStop = false;
+            this.DEE_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_teeth3
+            // 
+            this.DEE_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_teeth3.Location = new System.Drawing.Point(402, 297);
+            this.DEE_portrait_teeth3.Name = "DEE_portrait_teeth3";
+            this.DEE_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_teeth3.TabIndex = 393;
+            this.DEE_portrait_teeth3.TabStop = false;
+            this.DEE_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(289, 248);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(51, 13);
+            this.label121.TabIndex = 392;
+            this.label121.Text = "necklace";
+            // 
+            // DEE_portrait_necklace4
+            // 
+            this.DEE_portrait_necklace4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_necklace4.Location = new System.Drawing.Point(432, 237);
+            this.DEE_portrait_necklace4.Name = "DEE_portrait_necklace4";
+            this.DEE_portrait_necklace4.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_necklace4.TabIndex = 391;
+            this.DEE_portrait_necklace4.TabStop = false;
+            this.DEE_portrait_necklace4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_necklace4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_necklace3
+            // 
+            this.DEE_portrait_necklace3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_necklace3.Location = new System.Drawing.Point(402, 237);
+            this.DEE_portrait_necklace3.Name = "DEE_portrait_necklace3";
+            this.DEE_portrait_necklace3.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_necklace3.TabIndex = 390;
+            this.DEE_portrait_necklace3.TabStop = false;
+            this.DEE_portrait_necklace3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_necklace3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_necklace2
+            // 
+            this.DEE_portrait_necklace2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_necklace2.Location = new System.Drawing.Point(372, 237);
+            this.DEE_portrait_necklace2.Name = "DEE_portrait_necklace2";
+            this.DEE_portrait_necklace2.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_necklace2.TabIndex = 389;
+            this.DEE_portrait_necklace2.TabStop = false;
+            this.DEE_portrait_necklace2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_necklace2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_necklace1
+            // 
+            this.DEE_portrait_necklace1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_necklace1.Location = new System.Drawing.Point(342, 237);
+            this.DEE_portrait_necklace1.Name = "DEE_portrait_necklace1";
+            this.DEE_portrait_necklace1.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_necklace1.TabIndex = 388;
+            this.DEE_portrait_necklace1.TabStop = false;
+            this.DEE_portrait_necklace1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_necklace1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(310, 188);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(26, 13);
+            this.label122.TabIndex = 387;
+            this.label122.Text = "skin";
+            // 
+            // DEE_portrait_skin4
+            // 
+            this.DEE_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin4.Location = new System.Drawing.Point(432, 177);
+            this.DEE_portrait_skin4.Name = "DEE_portrait_skin4";
+            this.DEE_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin4.TabIndex = 385;
+            this.DEE_portrait_skin4.TabStop = false;
+            this.DEE_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_skin3
+            // 
+            this.DEE_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin3.Location = new System.Drawing.Point(402, 177);
+            this.DEE_portrait_skin3.Name = "DEE_portrait_skin3";
+            this.DEE_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin3.TabIndex = 384;
+            this.DEE_portrait_skin3.TabStop = false;
+            this.DEE_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_skin2
+            // 
+            this.DEE_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin2.Location = new System.Drawing.Point(372, 177);
+            this.DEE_portrait_skin2.Name = "DEE_portrait_skin2";
+            this.DEE_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin2.TabIndex = 383;
+            this.DEE_portrait_skin2.TabStop = false;
+            this.DEE_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_skin1
+            // 
+            this.DEE_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin1.Location = new System.Drawing.Point(342, 177);
+            this.DEE_portrait_skin1.Name = "DEE_portrait_skin1";
+            this.DEE_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin1.TabIndex = 382;
+            this.DEE_portrait_skin1.TabStop = false;
+            this.DEE_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(3, 248);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(47, 13);
+            this.label124.TabIndex = 380;
+            this.label124.Text = "costume";
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(24, 188);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(26, 13);
+            this.label125.TabIndex = 379;
+            this.label125.Text = "skin";
+            // 
+            // DEE_sprite_skin8
+            // 
+            this.DEE_sprite_skin8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin8.Location = new System.Drawing.Point(116, 207);
+            this.DEE_sprite_skin8.Name = "DEE_sprite_skin8";
+            this.DEE_sprite_skin8.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin8.TabIndex = 377;
+            this.DEE_sprite_skin8.TabStop = false;
+            this.DEE_sprite_skin8.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin8.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_costume3
+            // 
+            this.DEE_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_costume3.Location = new System.Drawing.Point(116, 237);
+            this.DEE_sprite_costume3.Name = "DEE_sprite_costume3";
+            this.DEE_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_costume3.TabIndex = 378;
+            this.DEE_sprite_costume3.TabStop = false;
+            this.DEE_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_costume6
+            // 
+            this.DEE_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_costume6.Location = new System.Drawing.Point(206, 237);
+            this.DEE_sprite_costume6.Name = "DEE_sprite_costume6";
+            this.DEE_sprite_costume6.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_costume6.TabIndex = 371;
+            this.DEE_sprite_costume6.TabStop = false;
+            this.DEE_sprite_costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_costume6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_costume5
+            // 
+            this.DEE_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_costume5.Location = new System.Drawing.Point(176, 237);
+            this.DEE_sprite_costume5.Name = "DEE_sprite_costume5";
+            this.DEE_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_costume5.TabIndex = 372;
+            this.DEE_sprite_costume5.TabStop = false;
+            this.DEE_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin7
+            // 
+            this.DEE_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin7.Location = new System.Drawing.Point(86, 207);
+            this.DEE_sprite_skin7.Name = "DEE_sprite_skin7";
+            this.DEE_sprite_skin7.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin7.TabIndex = 373;
+            this.DEE_sprite_skin7.TabStop = false;
+            this.DEE_sprite_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin9
+            // 
+            this.DEE_sprite_skin9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin9.Location = new System.Drawing.Point(146, 207);
+            this.DEE_sprite_skin9.Name = "DEE_sprite_skin9";
+            this.DEE_sprite_skin9.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin9.TabIndex = 374;
+            this.DEE_sprite_skin9.TabStop = false;
+            this.DEE_sprite_skin9.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin9.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_costume4
+            // 
+            this.DEE_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_costume4.Location = new System.Drawing.Point(146, 237);
+            this.DEE_sprite_costume4.Name = "DEE_sprite_costume4";
+            this.DEE_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_costume4.TabIndex = 375;
+            this.DEE_sprite_costume4.TabStop = false;
+            this.DEE_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin6
+            // 
+            this.DEE_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin6.Location = new System.Drawing.Point(56, 207);
+            this.DEE_sprite_skin6.Name = "DEE_sprite_skin6";
+            this.DEE_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin6.TabIndex = 376;
+            this.DEE_sprite_skin6.TabStop = false;
+            this.DEE_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin5
+            // 
+            this.DEE_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin5.Location = new System.Drawing.Point(176, 177);
+            this.DEE_sprite_skin5.Name = "DEE_sprite_skin5";
+            this.DEE_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin5.TabIndex = 368;
+            this.DEE_sprite_skin5.TabStop = false;
+            this.DEE_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_costume1
+            // 
+            this.DEE_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_costume1.Location = new System.Drawing.Point(56, 237);
+            this.DEE_sprite_costume1.Name = "DEE_sprite_costume1";
+            this.DEE_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_costume1.TabIndex = 369;
+            this.DEE_sprite_costume1.TabStop = false;
+            this.DEE_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_costume2
+            // 
+            this.DEE_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_costume2.Location = new System.Drawing.Point(86, 237);
+            this.DEE_sprite_costume2.Name = "DEE_sprite_costume2";
+            this.DEE_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_costume2.TabIndex = 370;
+            this.DEE_sprite_costume2.TabStop = false;
+            this.DEE_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin1
+            // 
+            this.DEE_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin1.Location = new System.Drawing.Point(56, 177);
+            this.DEE_sprite_skin1.Name = "DEE_sprite_skin1";
+            this.DEE_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin1.TabIndex = 364;
+            this.DEE_sprite_skin1.TabStop = false;
+            this.DEE_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin2
+            // 
+            this.DEE_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin2.Location = new System.Drawing.Point(86, 177);
+            this.DEE_sprite_skin2.Name = "DEE_sprite_skin2";
+            this.DEE_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin2.TabIndex = 365;
+            this.DEE_sprite_skin2.TabStop = false;
+            this.DEE_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin3
+            // 
+            this.DEE_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin3.Location = new System.Drawing.Point(116, 177);
+            this.DEE_sprite_skin3.Name = "DEE_sprite_skin3";
+            this.DEE_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin3.TabIndex = 366;
+            this.DEE_sprite_skin3.TabStop = false;
+            this.DEE_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_sprite_skin4
+            // 
+            this.DEE_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_sprite_skin4.Location = new System.Drawing.Point(146, 177);
+            this.DEE_sprite_skin4.Name = "DEE_sprite_skin4";
+            this.DEE_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.DEE_sprite_skin4.TabIndex = 367;
+            this.DEE_sprite_skin4.TabStop = false;
+            this.DEE_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DEE_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_skin5
+            // 
+            this.DEE_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin5.Location = new System.Drawing.Point(342, 207);
+            this.DEE_portrait_skin5.Name = "DEE_portrait_skin5";
+            this.DEE_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin5.TabIndex = 405;
+            this.DEE_portrait_skin5.TabStop = false;
+            this.DEE_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_skin6
+            // 
+            this.DEE_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin6.Location = new System.Drawing.Point(372, 207);
+            this.DEE_portrait_skin6.Name = "DEE_portrait_skin6";
+            this.DEE_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin6.TabIndex = 406;
+            this.DEE_portrait_skin6.TabStop = false;
+            this.DEE_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DEE_portrait_skin7
+            // 
+            this.DEE_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_skin7.Location = new System.Drawing.Point(402, 207);
+            this.DEE_portrait_skin7.Name = "DEE_portrait_skin7";
+            this.DEE_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_skin7.TabIndex = 407;
+            this.DEE_portrait_skin7.TabStop = false;
+            this.DEE_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DEE_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -8608,13 +9672,80 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise1)).EndInit();
             this.TabPageFei.ResumeLayout(false);
+            this.TabPageFei.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FEI_neutralStandBox)).EndInit();
             this.TabPageDeejay.ResumeLayout(false);
+            this.TabPageDeejay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DEE_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_shoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FEI_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_necklace1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_skin7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9243,6 +10374,85 @@
         private System.Windows.Forms.PictureBox DEE_neutralStandBox;
         private System.Windows.Forms.PictureBox DEE_portraitLossBox;
         private System.Windows.Forms.PictureBox DEE_portraitVictoryBox;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin8;
+        private System.Windows.Forms.PictureBox FEI_sprite_costume3;
+        private System.Windows.Forms.PictureBox FEI_sprite_costume6;
+        private System.Windows.Forms.PictureBox FEI_sprite_costume5;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin7;
+        private System.Windows.Forms.PictureBox FEI_sprite_shoes;
+        private System.Windows.Forms.PictureBox FEI_sprite_costume4;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin6;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin5;
+        private System.Windows.Forms.PictureBox FEI_sprite_costume1;
+        private System.Windows.Forms.PictureBox FEI_sprite_costume2;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin1;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin2;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin3;
+        private System.Windows.Forms.PictureBox FEI_sprite_skin4;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.PictureBox FEI_portrait_teeth2;
+        private System.Windows.Forms.PictureBox FEI_portrait_teeth1;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.PictureBox FEI_portrait_blood3;
+        private System.Windows.Forms.PictureBox FEI_portrait_blood2;
+        private System.Windows.Forms.PictureBox FEI_portrait_blood1;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.PictureBox FEI_portrait_hair3;
+        private System.Windows.Forms.PictureBox FEI_portrait_hair2;
+        private System.Windows.Forms.PictureBox FEI_portrait_hair1;
+        private System.Windows.Forms.PictureBox FEI_portrait_teeth3;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.PictureBox FEI_portrait_costume4;
+        private System.Windows.Forms.PictureBox FEI_portrait_costume3;
+        private System.Windows.Forms.PictureBox FEI_portrait_costume2;
+        private System.Windows.Forms.PictureBox FEI_portrait_costume1;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.PictureBox FEI_portrait_costume5;
+        private System.Windows.Forms.PictureBox FEI_portrait_skin4;
+        private System.Windows.Forms.PictureBox FEI_portrait_skin3;
+        private System.Windows.Forms.PictureBox FEI_portrait_skin2;
+        private System.Windows.Forms.PictureBox FEI_portrait_skin1;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.PictureBox DEE_portrait_teeth2;
+        private System.Windows.Forms.PictureBox DEE_portrait_teeth1;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.PictureBox DEE_portrait_blood3;
+        private System.Windows.Forms.PictureBox DEE_portrait_blood2;
+        private System.Windows.Forms.PictureBox DEE_portrait_blood1;
+        private System.Windows.Forms.PictureBox DEE_portrait_teeth3;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.PictureBox DEE_portrait_necklace4;
+        private System.Windows.Forms.PictureBox DEE_portrait_necklace3;
+        private System.Windows.Forms.PictureBox DEE_portrait_necklace2;
+        private System.Windows.Forms.PictureBox DEE_portrait_necklace1;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin4;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin3;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin2;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin1;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin8;
+        private System.Windows.Forms.PictureBox DEE_sprite_costume3;
+        private System.Windows.Forms.PictureBox DEE_sprite_costume6;
+        private System.Windows.Forms.PictureBox DEE_sprite_costume5;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin7;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin9;
+        private System.Windows.Forms.PictureBox DEE_sprite_costume4;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin6;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin5;
+        private System.Windows.Forms.PictureBox DEE_sprite_costume1;
+        private System.Windows.Forms.PictureBox DEE_sprite_costume2;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin1;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin2;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin3;
+        private System.Windows.Forms.PictureBox DEE_sprite_skin4;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin7;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin6;
+        private System.Windows.Forms.PictureBox DEE_portrait_skin5;
     }
 }
 
