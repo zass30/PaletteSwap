@@ -412,6 +412,10 @@ namespace PaletteSwap
         { "blood3", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 3 + 14 } },
         { "blood5", new List<int>() { ROWLEN * 1 + 28 } },
 
+        { "bruise1", new List<int>() { ROWLEN * 1 + 20 } },
+        { "bruise2", new List<int>() { ROWLEN * 1 + 22 } },
+        { "bruise3", new List<int>() { ROWLEN * 1 + 24 } },
+
         { "scars1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
         { "scars2", new List<int>() { 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
         { "scars3", new List<int>() { 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },

@@ -639,6 +639,10 @@
             this.SAG_portrait_blood5 = new System.Windows.Forms.PictureBox();
             this.SAG_portrait_blood6 = new System.Windows.Forms.PictureBox();
             this.SAG_portrait_scars3 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_bruise3 = new System.Windows.Forms.PictureBox();
+            this.label105 = new System.Windows.Forms.Label();
+            this.SAG_portrait_bruise2 = new System.Windows.Forms.PictureBox();
+            this.SAG_portrait_bruise1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1088,6 +1092,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise1)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1438,7 +1445,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1451,7 +1458,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -1471,7 +1478,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -1479,7 +1486,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -1489,7 +1496,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -1509,7 +1516,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -1518,7 +1525,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -1527,14 +1534,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -1543,34 +1550,35 @@
             this.phoenixROMToolStripMenuItem,
             this.japaneseROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
+            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -7385,6 +7393,11 @@
             // 
             // TabPageSagat
             // 
+            this.TabPageSagat.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_bruise3);
+            this.TabPageSagat.Controls.Add(this.label105);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_bruise2);
+            this.TabPageSagat.Controls.Add(this.SAG_portrait_bruise1);
             this.TabPageSagat.Controls.Add(this.SAG_portrait_scars3);
             this.TabPageSagat.Controls.Add(this.SAG_portrait_blood6);
             this.TabPageSagat.Controls.Add(this.SAG_portrait_blood5);
@@ -7439,7 +7452,6 @@
             this.TabPageSagat.Size = new System.Drawing.Size(597, 559);
             this.TabPageSagat.TabIndex = 9;
             this.TabPageSagat.Text = "Sagat";
-            this.TabPageSagat.UseVisualStyleBackColor = true;
             // 
             // SAG_portraitLossBox
             // 
@@ -7675,7 +7687,7 @@
             // label104
             // 
             this.label104.AutoSize = true;
-            this.label104.Location = new System.Drawing.Point(288, 247);
+            this.label104.Location = new System.Drawing.Point(288, 307);
             this.label104.Name = "label104";
             this.label104.Size = new System.Drawing.Size(31, 13);
             this.label104.TabIndex = 343;
@@ -7684,7 +7696,7 @@
             // label106
             // 
             this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(283, 307);
+            this.label106.Location = new System.Drawing.Point(288, 247);
             this.label106.Name = "label106";
             this.label106.Size = new System.Drawing.Size(32, 13);
             this.label106.TabIndex = 339;
@@ -7693,7 +7705,7 @@
             // SAG_portrait_scars2
             // 
             this.SAG_portrait_scars2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_scars2.Location = new System.Drawing.Point(355, 296);
+            this.SAG_portrait_scars2.Location = new System.Drawing.Point(355, 236);
             this.SAG_portrait_scars2.Name = "SAG_portrait_scars2";
             this.SAG_portrait_scars2.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_scars2.TabIndex = 338;
@@ -7704,7 +7716,7 @@
             // SAG_portrait_scars1
             // 
             this.SAG_portrait_scars1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_scars1.Location = new System.Drawing.Point(325, 296);
+            this.SAG_portrait_scars1.Location = new System.Drawing.Point(325, 236);
             this.SAG_portrait_scars1.Name = "SAG_portrait_scars1";
             this.SAG_portrait_scars1.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_scars1.TabIndex = 337;
@@ -7715,7 +7727,7 @@
             // label107
             // 
             this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(280, 277);
+            this.label107.Location = new System.Drawing.Point(284, 337);
             this.label107.Name = "label107";
             this.label107.Size = new System.Drawing.Size(35, 13);
             this.label107.TabIndex = 336;
@@ -7724,7 +7736,7 @@
             // SAG_portrait_wraps3
             // 
             this.SAG_portrait_wraps3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_wraps3.Location = new System.Drawing.Point(385, 266);
+            this.SAG_portrait_wraps3.Location = new System.Drawing.Point(385, 326);
             this.SAG_portrait_wraps3.Name = "SAG_portrait_wraps3";
             this.SAG_portrait_wraps3.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_wraps3.TabIndex = 335;
@@ -7735,7 +7747,7 @@
             // SAG_portrait_wraps2
             // 
             this.SAG_portrait_wraps2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_wraps2.Location = new System.Drawing.Point(355, 266);
+            this.SAG_portrait_wraps2.Location = new System.Drawing.Point(355, 326);
             this.SAG_portrait_wraps2.Name = "SAG_portrait_wraps2";
             this.SAG_portrait_wraps2.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_wraps2.TabIndex = 334;
@@ -7746,7 +7758,7 @@
             // SAG_portrait_wraps1
             // 
             this.SAG_portrait_wraps1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_wraps1.Location = new System.Drawing.Point(325, 266);
+            this.SAG_portrait_wraps1.Location = new System.Drawing.Point(325, 326);
             this.SAG_portrait_wraps1.Name = "SAG_portrait_wraps1";
             this.SAG_portrait_wraps1.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_wraps1.TabIndex = 333;
@@ -7799,7 +7811,7 @@
             // label109
             // 
             this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(294, 187);
+            this.label109.Location = new System.Drawing.Point(293, 187);
             this.label109.Name = "label109";
             this.label109.Size = new System.Drawing.Size(26, 13);
             this.label109.TabIndex = 327;
@@ -7808,7 +7820,7 @@
             // SAG_portrait_teeth2
             // 
             this.SAG_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_teeth2.Location = new System.Drawing.Point(355, 236);
+            this.SAG_portrait_teeth2.Location = new System.Drawing.Point(355, 296);
             this.SAG_portrait_teeth2.Name = "SAG_portrait_teeth2";
             this.SAG_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_teeth2.TabIndex = 326;
@@ -7819,7 +7831,7 @@
             // SAG_portrait_teeth1
             // 
             this.SAG_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_teeth1.Location = new System.Drawing.Point(325, 236);
+            this.SAG_portrait_teeth1.Location = new System.Drawing.Point(325, 296);
             this.SAG_portrait_teeth1.Name = "SAG_portrait_teeth1";
             this.SAG_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_teeth1.TabIndex = 325;
@@ -7830,7 +7842,7 @@
             // SAG_portrait_teeth3
             // 
             this.SAG_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_teeth3.Location = new System.Drawing.Point(385, 236);
+            this.SAG_portrait_teeth3.Location = new System.Drawing.Point(385, 296);
             this.SAG_portrait_teeth3.Name = "SAG_portrait_teeth3";
             this.SAG_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_teeth3.TabIndex = 324;
@@ -7951,13 +7963,55 @@
             // SAG_portrait_scars3
             // 
             this.SAG_portrait_scars3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SAG_portrait_scars3.Location = new System.Drawing.Point(385, 296);
+            this.SAG_portrait_scars3.Location = new System.Drawing.Point(385, 236);
             this.SAG_portrait_scars3.Name = "SAG_portrait_scars3";
             this.SAG_portrait_scars3.Size = new System.Drawing.Size(24, 24);
             this.SAG_portrait_scars3.TabIndex = 350;
             this.SAG_portrait_scars3.TabStop = false;
             this.SAG_portrait_scars3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.SAG_portrait_scars3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_bruise3
+            // 
+            this.SAG_portrait_bruise3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_bruise3.Location = new System.Drawing.Point(385, 266);
+            this.SAG_portrait_bruise3.Name = "SAG_portrait_bruise3";
+            this.SAG_portrait_bruise3.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_bruise3.TabIndex = 354;
+            this.SAG_portrait_bruise3.TabStop = false;
+            this.SAG_portrait_bruise3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_bruise3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Location = new System.Drawing.Point(284, 277);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(35, 13);
+            this.label105.TabIndex = 353;
+            this.label105.Text = "bruise";
+            // 
+            // SAG_portrait_bruise2
+            // 
+            this.SAG_portrait_bruise2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_bruise2.Location = new System.Drawing.Point(355, 266);
+            this.SAG_portrait_bruise2.Name = "SAG_portrait_bruise2";
+            this.SAG_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_bruise2.TabIndex = 352;
+            this.SAG_portrait_bruise2.TabStop = false;
+            this.SAG_portrait_bruise2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_bruise2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // SAG_portrait_bruise1
+            // 
+            this.SAG_portrait_bruise1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SAG_portrait_bruise1.Location = new System.Drawing.Point(325, 266);
+            this.SAG_portrait_bruise1.Name = "SAG_portrait_bruise1";
+            this.SAG_portrait_bruise1.Size = new System.Drawing.Size(24, 24);
+            this.SAG_portrait_bruise1.TabIndex = 351;
+            this.SAG_portrait_bruise1.TabStop = false;
+            this.SAG_portrait_bruise1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.SAG_portrait_bruise1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -8448,6 +8502,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_blood6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_scars3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SAG_portrait_bruise1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9064,6 +9121,10 @@
         private System.Windows.Forms.PictureBox SAG_portrait_blood5;
         private System.Windows.Forms.PictureBox SAG_portrait_blood4;
         private System.Windows.Forms.PictureBox SAG_portrait_scars3;
+        private System.Windows.Forms.PictureBox SAG_portrait_bruise3;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.PictureBox SAG_portrait_bruise2;
+        private System.Windows.Forms.PictureBox SAG_portrait_bruise1;
     }
 }
 

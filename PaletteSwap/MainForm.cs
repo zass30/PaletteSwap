@@ -766,6 +766,11 @@ namespace PaletteSwap
                     SAG_portrait_scars1.BackColor = currentCharacter.portrait.GetColor("scars1");
                     SAG_portrait_scars2.BackColor = currentCharacter.portrait.GetColor("scars2");
                     SAG_portrait_scars3.BackColor = currentCharacter.portrait.GetColor("scars3");
+
+                    SAG_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
+                    SAG_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
+                    SAG_portrait_bruise3.BackColor = currentCharacter.portrait.GetColor("bruise3");
+
                     break;
 
             }
