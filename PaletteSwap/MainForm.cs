@@ -786,6 +786,57 @@ namespace PaletteSwap
 
                     break;
 
+                case CharacterConfig.CHARACTERS.Feilong:
+                    FEI_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    FEI_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    FEI_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    FEI_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+
+                    FEI_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    FEI_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    FEI_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    FEI_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+                    FEI_portrait_costume5.BackColor = currentCharacter.portrait.GetColor("costume5");
+
+                    FEI_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    FEI_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    FEI_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
+                    FEI_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    FEI_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                    FEI_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+
+                    FEI_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
+                    FEI_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
+                    FEI_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
+
+                    break;
+
+                case CharacterConfig.CHARACTERS.Deejay:
+                    DEE_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    DEE_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    DEE_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    DEE_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    DEE_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    DEE_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    DEE_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    DEE_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    DEE_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
+                    DEE_portrait_blood3.BackColor = currentCharacter.portrait.GetColor("blood3");
+
+
+                    DEE_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    DEE_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                    DEE_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+
+
+                    DEE_portrait_necklace1.BackColor = currentCharacter.portrait.GetColor("necklace1");
+                    DEE_portrait_necklace2.BackColor = currentCharacter.portrait.GetColor("necklace2");
+                    DEE_portrait_necklace3.BackColor = currentCharacter.portrait.GetColor("necklace3");
+                    DEE_portrait_necklace4.BackColor = currentCharacter.portrait.GetColor("necklace4");
+                  
+                    break;
             }
         }
 

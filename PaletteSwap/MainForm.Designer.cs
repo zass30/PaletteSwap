@@ -8341,7 +8341,7 @@
             // label111
             // 
             this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(15, 233);
+            this.label111.Location = new System.Drawing.Point(15, 263);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(35, 13);
             this.label111.TabIndex = 338;
@@ -8350,7 +8350,7 @@
             // label112
             // 
             this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(3, 204);
+            this.label112.Location = new System.Drawing.Point(3, 234);
             this.label112.Name = "label112";
             this.label112.Size = new System.Drawing.Size(47, 13);
             this.label112.TabIndex = 337;
@@ -8368,7 +8368,7 @@
             // FEI_sprite_skin8
             // 
             this.FEI_sprite_skin8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_skin8.Location = new System.Drawing.Point(266, 163);
+            this.FEI_sprite_skin8.Location = new System.Drawing.Point(146, 193);
             this.FEI_sprite_skin8.Name = "FEI_sprite_skin8";
             this.FEI_sprite_skin8.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_skin8.TabIndex = 333;
@@ -8379,7 +8379,7 @@
             // FEI_sprite_costume3
             // 
             this.FEI_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_costume3.Location = new System.Drawing.Point(116, 193);
+            this.FEI_sprite_costume3.Location = new System.Drawing.Point(116, 223);
             this.FEI_sprite_costume3.Name = "FEI_sprite_costume3";
             this.FEI_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_costume3.TabIndex = 334;
@@ -8390,7 +8390,7 @@
             // FEI_sprite_costume6
             // 
             this.FEI_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_costume6.Location = new System.Drawing.Point(206, 193);
+            this.FEI_sprite_costume6.Location = new System.Drawing.Point(206, 223);
             this.FEI_sprite_costume6.Name = "FEI_sprite_costume6";
             this.FEI_sprite_costume6.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_costume6.TabIndex = 327;
@@ -8401,7 +8401,7 @@
             // FEI_sprite_costume5
             // 
             this.FEI_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_costume5.Location = new System.Drawing.Point(176, 193);
+            this.FEI_sprite_costume5.Location = new System.Drawing.Point(176, 223);
             this.FEI_sprite_costume5.Name = "FEI_sprite_costume5";
             this.FEI_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_costume5.TabIndex = 328;
@@ -8412,7 +8412,7 @@
             // FEI_sprite_skin7
             // 
             this.FEI_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_skin7.Location = new System.Drawing.Point(236, 163);
+            this.FEI_sprite_skin7.Location = new System.Drawing.Point(116, 193);
             this.FEI_sprite_skin7.Name = "FEI_sprite_skin7";
             this.FEI_sprite_skin7.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_skin7.TabIndex = 329;
@@ -8423,7 +8423,7 @@
             // FEI_sprite_shoes
             // 
             this.FEI_sprite_shoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_shoes.Location = new System.Drawing.Point(56, 223);
+            this.FEI_sprite_shoes.Location = new System.Drawing.Point(56, 253);
             this.FEI_sprite_shoes.Name = "FEI_sprite_shoes";
             this.FEI_sprite_shoes.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_shoes.TabIndex = 330;
@@ -8434,7 +8434,7 @@
             // FEI_sprite_costume4
             // 
             this.FEI_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_costume4.Location = new System.Drawing.Point(146, 193);
+            this.FEI_sprite_costume4.Location = new System.Drawing.Point(146, 223);
             this.FEI_sprite_costume4.Name = "FEI_sprite_costume4";
             this.FEI_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_costume4.TabIndex = 331;
@@ -8445,7 +8445,7 @@
             // FEI_sprite_skin6
             // 
             this.FEI_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_skin6.Location = new System.Drawing.Point(206, 163);
+            this.FEI_sprite_skin6.Location = new System.Drawing.Point(86, 193);
             this.FEI_sprite_skin6.Name = "FEI_sprite_skin6";
             this.FEI_sprite_skin6.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_skin6.TabIndex = 332;
@@ -8456,7 +8456,7 @@
             // FEI_sprite_skin5
             // 
             this.FEI_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_skin5.Location = new System.Drawing.Point(176, 163);
+            this.FEI_sprite_skin5.Location = new System.Drawing.Point(56, 193);
             this.FEI_sprite_skin5.Name = "FEI_sprite_skin5";
             this.FEI_sprite_skin5.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_skin5.TabIndex = 324;
@@ -8467,7 +8467,7 @@
             // FEI_sprite_costume1
             // 
             this.FEI_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_costume1.Location = new System.Drawing.Point(56, 193);
+            this.FEI_sprite_costume1.Location = new System.Drawing.Point(56, 223);
             this.FEI_sprite_costume1.Name = "FEI_sprite_costume1";
             this.FEI_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_costume1.TabIndex = 325;
@@ -8478,7 +8478,7 @@
             // FEI_sprite_costume2
             // 
             this.FEI_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FEI_sprite_costume2.Location = new System.Drawing.Point(86, 193);
+            this.FEI_sprite_costume2.Location = new System.Drawing.Point(86, 223);
             this.FEI_sprite_costume2.Name = "FEI_sprite_costume2";
             this.FEI_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.FEI_sprite_costume2.TabIndex = 326;
