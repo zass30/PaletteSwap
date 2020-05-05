@@ -437,11 +437,11 @@ namespace PaletteSwap
         { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
         { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
 
-        { "skulls1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
-        { "skulls2", new List<int>() { ROWLEN * 1 + 16 } },
-        { "skulls3", new List<int>() { 16, ROWLEN * 1 + 18, ROWLEN * 3 + 16 } },
-        { "skulls4", new List<int>() { 18, ROWLEN * 1 + 20, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
-        { "skulls5", new List<int>() { ROWLEN * 1 + 22 } },
+        { "necklace1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
+        { "necklace2", new List<int>() { ROWLEN * 1 + 16 } },
+        { "necklace3", new List<int>() { 16, ROWLEN * 1 + 18, ROWLEN * 3 + 16 } },
+        { "necklace4", new List<int>() { 18, ROWLEN * 1 + 20, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
+        { "necklace5", new List<int>() { ROWLEN * 1 + 22 } },
 
         { "costume1", new List<int>() { ROWLEN * 1 + 24 } },
         { "costume2", new List<int>() { ROWLEN * 1 + 26 } },

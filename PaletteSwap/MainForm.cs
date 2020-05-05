@@ -906,6 +906,32 @@ namespace PaletteSwap
                     DEE_portrait_necklace4.BackColor = currentCharacter.portrait.GetColor("necklace4");
                   
                     break;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    DHA_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    DHA_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    DHA_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    DHA_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    DHA_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    DHA_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    DHA_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    DHA_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
+                    DHA_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
+                    DHA_portrait_bruise3.BackColor = currentCharacter.portrait.GetColor("bruise3");
+                    DHA_portrait_bruise4.BackColor = currentCharacter.portrait.GetColor("bruise4");
+                    DHA_portrait_bruise5.BackColor = currentCharacter.portrait.GetColor("bruise5");
+
+                    DHA_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    DHA_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    DHA_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+
+
+                    DHA_portrait_necklace1.BackColor = currentCharacter.portrait.GetColor("necklace1");
+                    DHA_portrait_necklace2.BackColor = currentCharacter.portrait.GetColor("necklace2");
+                    DHA_portrait_necklace3.BackColor = currentCharacter.portrait.GetColor("necklace3");
+                    DHA_portrait_necklace4.BackColor = currentCharacter.portrait.GetColor("necklace4");
+                    DHA_portrait_necklace5.BackColor = currentCharacter.portrait.GetColor("necklace5");
+                    break;
             }
         }
 
