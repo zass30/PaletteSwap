@@ -337,6 +337,30 @@ namespace PaletteSwap
 
         }
 
+
+        public byte[] sprites_stream04newlegacy()
+        {
+            byte[] b = Resources.sfxe04aNewLegacy;
+            foreach (var k in characterDictionary)
+            {
+                var character = k.Value;
+                b = character.patch_sprites_stream04(b);
+            }
+            return b;
+
+        }
+
+        public byte[] portraits_stream03newlegacy()
+        {
+            byte[] b = Resources.sfxe03cNewLegacy;
+            foreach (var k in characterDictionary)
+            {
+                var character = k.Value;
+                b = character.patch_portraits_stream03(b);
+            }
+            return b;
+        }
+
         public byte[] sprites_stream04japanese()
         {
             byte[] b = Resources.sfxj04a;
@@ -346,7 +370,6 @@ namespace PaletteSwap
                 b = character.patch_sprites_stream04(b);
             }
             return b;
-
         }
 
         public byte[] portraits_stream03japanese()

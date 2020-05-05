@@ -301,6 +301,39 @@ namespace PaletteSwap
             throw new Exception("Invalid character");
         }
 
+        // todo make this a general function to avoid duplication
+        public static Dictionary<string, List<int>> GetSpriteOffsets(CharacterConfig.CHARACTERS c)
+        {
+                       switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.GenerateRyuSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN.GenerateKenSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHUN.GenerateChunSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.GenerateGuileSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.GenerateClawSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return DICTATOR.GenerateDictatorSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOXER.GenerateBoxerSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZANGIEF.GenerateZangiefSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return HONDA.GenerateHondaSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAGAT.GenerateSagatSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI.GenerateFeiSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Deejay:
+                    return DEEJAY.GenerateDeejaySpriteOffsets();
+            }
+            throw new Exception("Invalid character");
+        }
+        
         public static PaletteConfig GeneratePortraitConfig(CharacterConfig.CHARACTERS c)
         {
             switch (c)
@@ -347,6 +380,95 @@ namespace PaletteSwap
                 cp.c = defaultcolor;
                 cp.position = offset + i;
                 this.defaultColorOffsets.Add(cp);
+            }
+        }
+        public struct DHALSIM
+        {
+            public static Dictionary<string, List<int>> GenerateDhalsimSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "necklace3", new List<int>() { 0 } },
+            { "skin6", new List<int>() { 2 } },
+            { "skin5", new List<int>() { 4 } },
+            { "skin4", new List<int>() { 6 } },
+            { "skin3", new List<int>() { 8 } },
+            { "skin2", new List<int>() { 10 } },
+            { "skin1", new List<int>() { 12 } },
+            { "necklace1", new List<int>() { 14 } },
+            { "necklace2", new List<int>() { 16 } },
+            { "costume5", new List<int>() { 18 } },
+            { "costume4", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume2", new List<int>() { 24 } },
+            { "costume1", new List<int>() { 26 } },
+            { "skin1", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateDeejaySpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateDhalsimSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateDeejayPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12 } },
+
+        { "teeth1", new List<int>() { 14, ROWLEN * 1 + 14 } },
+        { "teeth2", new List<int>() { 16, ROWLEN * 1 + 16 } },
+        { "teeth3", new List<int>() { 18, ROWLEN * 1 + 18 } },
+        { "teeth4", new List<int>() { 20, ROWLEN * 1 + 20 } },
+
+        { "necklace1", new List<int>() { 22 } },
+        { "necklace2", new List<int>() { 24 } },
+        { "necklace3", new List<int>() { 26 } },
+        { "necklace4", new List<int>() { 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 1 + 22 } },
+        { "blood2", new List<int>() { ROWLEN * 1 + 24 } },
+        { "blood3", new List<int>() { ROWLEN * 1 + 26 } },
+        { "blood4", new List<int>() { ROWLEN * 1 + 28 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateDeejayPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> deejayPortraitOffsets = GenerateDeejayPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = deejayPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
             }
         }
 
@@ -439,7 +561,7 @@ namespace PaletteSwap
                 return pc;
             }
         }
-
+        
         public struct SAGAT
         {
             public static Dictionary<string, List<int>> GenerateSagatSpriteOffsets()
@@ -912,11 +1034,6 @@ namespace PaletteSwap
                     defaultColorOffsets.Add(dco);
                 }
 
-                /*    ColorOffset dco1 = new ColorOffset();
-                    dco1.c = PaletteHelper.MemFormatToColor("FF00");
-                    dco1.position = 10;
-                    defaultColorOffsets.Add(dco1);
-                    */
                 Dictionary<string, List<int>> boxerPortraitOffsets = GenerateBoxerPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = boxerPortraitOffsets;
