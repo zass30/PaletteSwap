@@ -297,6 +297,8 @@ namespace PaletteSwap
                     return FEI.GenerateFeiSpriteConfig();
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEEJAY.GenerateDeejaySpriteConfig();
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHALSIM.GenerateDhalsimSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -330,6 +332,8 @@ namespace PaletteSwap
                     return FEI.GenerateFeiSpriteOffsets();
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEEJAY.GenerateDeejaySpriteOffsets();
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHALSIM.GenerateDhalsimSpriteOffsets();
             }
             throw new Exception("Invalid character");
         }
@@ -362,6 +366,8 @@ namespace PaletteSwap
                     return FEI.GenerateFeiPortraitConfig();
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEEJAY.GenerateDeejayPortraitConfig();
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHALSIM.GenerateDhalsimPortraitConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -398,17 +404,17 @@ namespace PaletteSwap
             { "skin1", new List<int>() { 12 } },
             { "necklace1", new List<int>() { 14 } },
             { "necklace2", new List<int>() { 16 } },
-            { "costume5", new List<int>() { 18 } },
-            { "costume4", new List<int>() { 20 } },
-            { "costume3", new List<int>() { 22 } },
-            { "costume2", new List<int>() { 24 } },
-            { "costume1", new List<int>() { 26 } },
-            { "skin1", new List<int>() { 28 } },
+            { "paint", new List<int>() { 18 } },
+            { "costume5", new List<int>() { 20 } },
+            { "costume4", new List<int>() { 22 } },
+            { "costume3", new List<int>() { 24 } },
+            { "costume2", new List<int>() { 26 } },
+            { "costume1", new List<int>() { 28 } },
            };
                 return spriteOffsets;
             }
 
-            public static PaletteConfig GenerateDeejaySpriteConfig()
+            public static PaletteConfig GenerateDhalsimSpriteConfig()
             {
                 int MEMLEN = 30;
                 PaletteConfig pc = new PaletteConfig();
@@ -419,38 +425,39 @@ namespace PaletteSwap
                 return pc;
             }
 
-            public static Dictionary<string, List<int>> GenerateDeejayPortraitOffsets()
+            public static Dictionary<string, List<int>> GenerateDhalsimPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
-        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0 } },
-        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2 } },
-        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4 } },
-        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6 } },
-        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8 } },
-        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10 } },
-        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12 } },
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
 
-        { "teeth1", new List<int>() { 14, ROWLEN * 1 + 14 } },
-        { "teeth2", new List<int>() { 16, ROWLEN * 1 + 16 } },
-        { "teeth3", new List<int>() { 18, ROWLEN * 1 + 18 } },
-        { "teeth4", new List<int>() { 20, ROWLEN * 1 + 20 } },
+        { "skulls1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
+        { "skulls2", new List<int>() { ROWLEN * 1 + 16 } },
+        { "skulls3", new List<int>() { 16, ROWLEN * 1 + 18, ROWLEN * 3 + 16 } },
+        { "skulls4", new List<int>() { 18, ROWLEN * 1 + 20, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
+        { "skulls5", new List<int>() { ROWLEN * 1 + 22 } },
 
-        { "necklace1", new List<int>() { 22 } },
-        { "necklace2", new List<int>() { 24 } },
-        { "necklace3", new List<int>() { 26 } },
-        { "necklace4", new List<int>() { 28 } },
+        { "costume1", new List<int>() { ROWLEN * 1 + 24 } },
+        { "costume2", new List<int>() { ROWLEN * 1 + 26 } },
+        { "costume3", new List<int>() { ROWLEN * 1 + 28 } },
 
-        { "blood1", new List<int>() { ROWLEN * 1 + 22 } },
-        { "blood2", new List<int>() { ROWLEN * 1 + 24 } },
-        { "blood3", new List<int>() { ROWLEN * 1 + 26 } },
-        { "blood4", new List<int>() { ROWLEN * 1 + 28 } },
+        { "bruise1", new List<int>() { 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
+        { "bruise2", new List<int>() { 22, ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
+        { "bruise3", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "bruise4", new List<int>() { 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "bruise5", new List<int>() { 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
                 };
 
                 return portraitOffsets;
             }
 
-            public static PaletteConfig GenerateDeejayPortraitConfig()
+            public static PaletteConfig GenerateDhalsimPortraitConfig()
             {
                 int MEMLEN = ROWLEN * 4;
                 List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
@@ -462,9 +469,9 @@ namespace PaletteSwap
                     defaultColorOffsets.Add(dco);
                 }
 
-                Dictionary<string, List<int>> deejayPortraitOffsets = GenerateDeejayPortraitOffsets();
+                Dictionary<string, List<int>> dhalsimPortraitOffsets = GenerateDhalsimPortraitOffsets();
                 PaletteConfig pc = new PaletteConfig();
-                pc.labelOffsets = deejayPortraitOffsets;
+                pc.labelOffsets = dhalsimPortraitOffsets;
                 pc.defaultColorOffsets = defaultColorOffsets;
                 pc.unusedOffsets = new List<int>() { };
                 pc.streamLength = MEMLEN;
@@ -1677,6 +1684,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DEE_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejaySpriteOffsets());
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.DHA_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.DHALSIM.GenerateDhalsimSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1731,6 +1742,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DEE_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejayPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.DHA_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1785,6 +1800,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DEE_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejayPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.DHA_portraitsloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }

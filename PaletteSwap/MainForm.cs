@@ -28,7 +28,8 @@ namespace PaletteSwap
         CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
                 CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda,
-            CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong, CharacterConfig.CHARACTERS.Deejay};
+            CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong, CharacterConfig.CHARACTERS.Deejay,
+        CharacterConfig.CHARACTERS.Dhalsim};
 
         public MainForm()
         {
@@ -167,6 +168,8 @@ namespace PaletteSwap
                     return FEI_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEE_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHA_neutralStandBox;
             }
             throw new Exception("Invalid character");
         }
@@ -199,6 +202,8 @@ namespace PaletteSwap
                     return FEI_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEE_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHA_portraitLossBox;
             }
             throw new Exception("Invalid character");
         }
@@ -231,6 +236,8 @@ namespace PaletteSwap
                     return FEI_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEE_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHA_portraitVictoryBox;
             }
             throw new Exception("Invalid character");
         }
@@ -1011,6 +1018,7 @@ namespace PaletteSwap
                 case "SAG_neutralStandBox":
                 case "FEI_neutralStandBox":
                 case "DEE_neutralStandBox":
+                case "DHA_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -1025,6 +1033,7 @@ namespace PaletteSwap
                 case "SAG_portraitVictoryBox":
                 case "FEI_portraitVictoryBox":
                 case "DEE_portraitVictoryBox":
+                case "DHA_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -1039,6 +1048,7 @@ namespace PaletteSwap
                 case "SAG_portraitLossBox":
                 case "FEI_portraitLossBox":
                 case "DEE_portraitLossBox":
+                case "DHA_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
@@ -1502,6 +1512,10 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageDeejay")
             {
                 ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Deejay);
+            }
+            else if (selt.Name == "TabPageDhalsim")
+            {
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Dhalsim);
             }
         }
 
