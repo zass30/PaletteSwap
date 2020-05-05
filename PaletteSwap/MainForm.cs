@@ -23,7 +23,7 @@ namespace PaletteSwap
         public Character currentCharacter;
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
-        enum ROMSTYLE { us, japanese, phoenix };
+        enum ROMSTYLE { us, japanese, phoenix, newlegacy };
         Regex rx = new Regex(@"[^_]+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
@@ -1329,6 +1329,12 @@ namespace PaletteSwap
             savePatchedRom(sender, e, ROMSTYLE.japanese);
         }
 
+
+        private void newLegacyROMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            savePatchedRom(sender, e, ROMSTYLE.newlegacy);
+        }
+
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (c.IsDisposed)
@@ -1384,6 +1390,15 @@ namespace PaletteSwap
                                 s_stream = gameSet.sprites_stream04phoenix();
                                 oldbisonpunches_stream = gameSet.PatchOldBisonPunches06phoenix();
                                 break;
+                            case ROMSTYLE.newlegacy:
+                                _03filename = "sfxe.03c";
+                                _04filename = "sfxe.04a";
+                                _06filename = "sfxe.06a";
+
+                                p_stream = gameSet.portraits_stream03newlegacy();
+                                s_stream = gameSet.sprites_stream04newlegacy();
+                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06();
+                                break;
                             default:
                             case ROMSTYLE.us:
                                 _03filename = "sfxe.03c";
@@ -1412,12 +1427,15 @@ namespace PaletteSwap
                             entryStream.Write(s_stream, 0, s_stream.Length);
                         }
 
-                        var _06file = archive.CreateEntry(_06filename);
-                        using (var entryStream = _06file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
+                        if (r != ROMSTYLE.newlegacy)
                         {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(oldbisonpunches_stream, 0, oldbisonpunches_stream.Length);
+                            var _06file = archive.CreateEntry(_06filename);
+                            using (var entryStream = _06file.Open())
+                            using (var streamWriter = new StreamWriter(entryStream))
+                            {
+                                var c = entryStream.CanSeek;
+                                entryStream.Write(oldbisonpunches_stream, 0, oldbisonpunches_stream.Length);
+                            }
                         }
                     }
                 }
@@ -1597,5 +1615,6 @@ namespace PaletteSwap
             resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
+
     }
 }

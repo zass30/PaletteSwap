@@ -135,6 +135,8 @@
     </Compile>
     <EmbeddedResource Include="Resources\roms\sfxe.03c" />
     <EmbeddedResource Include="Resources\roms\sfxe.04a" />
+    <None Include="Resources\roms\new_legacy\sfxe.03c" />
+    <None Include="Resources\roms\new_legacy\sfxe.04a" />
     <None Include="Resources\roms\sfxe.06a" />
     <None Include="Resources\roms\sfxj.03c" />
     <None Include="Resources\roms\sfxj.04a" />
