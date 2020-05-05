@@ -899,8 +899,6 @@ namespace PaletteSwap
         { "hair1", new List<int>() { 8, ROWLEN * 1 + 8 } },
         { "hair2", new List<int>() { 10, ROWLEN * 1 + 10 } },
         { "hair3", new List<int>() { ROWLEN * 1 + 12, 12 } }, // jab gief has diff values here, use strong as baseline and 
-        // reorder this to fix
-//        { "hair4", new List<int>() { 12 } },
 
         { "costume1", new List<int>() { 14 } },
         { "costume2", new List<int>() { 16 } },

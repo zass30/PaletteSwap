@@ -735,6 +735,46 @@
             this.DHA_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.DHA_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.DHA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label126 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label127 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label129 = new System.Windows.Forms.Label();
+            this.DHA_sprite_necklace2 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_necklace1 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_necklace3 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_paint = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.DHA_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.label130 = new System.Windows.Forms.Label();
+            this.label131 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1264,6 +1304,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.DHA_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DHA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DHA_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_necklace2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_necklace1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_necklace3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_paint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -9198,6 +9270,46 @@
             // 
             // TabPageDhalsim
             // 
+            this.TabPageDhalsim.Controls.Add(this.label131);
+            this.TabPageDhalsim.Controls.Add(this.label130);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox1);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox2);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox3);
+            this.TabPageDhalsim.Controls.Add(this.label120);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox4);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox5);
+            this.TabPageDhalsim.Controls.Add(this.label123);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox6);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox7);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox8);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox9);
+            this.TabPageDhalsim.Controls.Add(this.label126);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox10);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox11);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox12);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox13);
+            this.TabPageDhalsim.Controls.Add(this.label127);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox14);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox15);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox16);
+            this.TabPageDhalsim.Controls.Add(this.pictureBox17);
+            this.TabPageDhalsim.Controls.Add(this.label128);
+            this.TabPageDhalsim.Controls.Add(this.label129);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_necklace2);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_costume3);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_skin6);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_costume5);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_necklace1);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_necklace3);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_costume4);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_paint);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_skin5);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_costume1);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_costume2);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_skin1);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_skin2);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_skin3);
+            this.TabPageDhalsim.Controls.Add(this.DHA_sprite_skin4);
             this.TabPageDhalsim.Controls.Add(this.DHA_neutralStandBox);
             this.TabPageDhalsim.Controls.Add(this.DHA_portraitLossBox);
             this.TabPageDhalsim.Controls.Add(this.DHA_portraitVictoryBox);
@@ -9237,6 +9349,396 @@
             this.DHA_portraitVictoryBox.TabIndex = 195;
             this.DHA_portraitVictoryBox.TabStop = false;
             this.DHA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(402, 209);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 445;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(372, 209);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 444;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(342, 209);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.TabIndex = 443;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(305, 310);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(31, 13);
+            this.label120.TabIndex = 442;
+            this.label120.Text = "teeth";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(372, 299);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.TabIndex = 441;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(342, 299);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox5.TabIndex = 440;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(303, 280);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(33, 13);
+            this.label123.TabIndex = 439;
+            this.label123.Text = "blood";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Location = new System.Drawing.Point(402, 269);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox6.TabIndex = 438;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Location = new System.Drawing.Point(372, 269);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox7.TabIndex = 437;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Location = new System.Drawing.Point(342, 269);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox8.TabIndex = 436;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.Location = new System.Drawing.Point(402, 299);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox9.TabIndex = 435;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(289, 250);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(51, 13);
+            this.label126.TabIndex = 434;
+            this.label126.Text = "necklace";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.Location = new System.Drawing.Point(432, 239);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox10.TabIndex = 433;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox11.Location = new System.Drawing.Point(402, 239);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox11.TabIndex = 432;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox12.Location = new System.Drawing.Point(372, 239);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox12.TabIndex = 431;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox13.Location = new System.Drawing.Point(342, 239);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox13.TabIndex = 430;
+            this.pictureBox13.TabStop = false;
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(310, 190);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(26, 13);
+            this.label127.TabIndex = 429;
+            this.label127.Text = "skin";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox14.Location = new System.Drawing.Point(432, 179);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox14.TabIndex = 428;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox15.Location = new System.Drawing.Point(402, 179);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox15.TabIndex = 427;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox16.Location = new System.Drawing.Point(372, 179);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox16.TabIndex = 426;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox17.Location = new System.Drawing.Point(342, 179);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox17.TabIndex = 425;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Location = new System.Drawing.Point(3, 220);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(47, 13);
+            this.label128.TabIndex = 424;
+            this.label128.Text = "costume";
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(24, 190);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(26, 13);
+            this.label129.TabIndex = 423;
+            this.label129.Text = "skin";
+            // 
+            // DHA_sprite_necklace2
+            // 
+            this.DHA_sprite_necklace2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_necklace2.Location = new System.Drawing.Point(86, 239);
+            this.DHA_sprite_necklace2.Name = "DHA_sprite_necklace2";
+            this.DHA_sprite_necklace2.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_necklace2.TabIndex = 421;
+            this.DHA_sprite_necklace2.TabStop = false;
+            this.DHA_sprite_necklace2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_necklace2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_costume3
+            // 
+            this.DHA_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_costume3.Location = new System.Drawing.Point(116, 209);
+            this.DHA_sprite_costume3.Name = "DHA_sprite_costume3";
+            this.DHA_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_costume3.TabIndex = 422;
+            this.DHA_sprite_costume3.TabStop = false;
+            this.DHA_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_skin6
+            // 
+            this.DHA_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_skin6.Location = new System.Drawing.Point(206, 179);
+            this.DHA_sprite_skin6.Name = "DHA_sprite_skin6";
+            this.DHA_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_skin6.TabIndex = 415;
+            this.DHA_sprite_skin6.TabStop = false;
+            this.DHA_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_costume5
+            // 
+            this.DHA_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_costume5.Location = new System.Drawing.Point(176, 209);
+            this.DHA_sprite_costume5.Name = "DHA_sprite_costume5";
+            this.DHA_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_costume5.TabIndex = 416;
+            this.DHA_sprite_costume5.TabStop = false;
+            this.DHA_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_necklace1
+            // 
+            this.DHA_sprite_necklace1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_necklace1.Location = new System.Drawing.Point(56, 239);
+            this.DHA_sprite_necklace1.Name = "DHA_sprite_necklace1";
+            this.DHA_sprite_necklace1.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_necklace1.TabIndex = 417;
+            this.DHA_sprite_necklace1.TabStop = false;
+            this.DHA_sprite_necklace1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_necklace1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_necklace3
+            // 
+            this.DHA_sprite_necklace3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_necklace3.Location = new System.Drawing.Point(116, 239);
+            this.DHA_sprite_necklace3.Name = "DHA_sprite_necklace3";
+            this.DHA_sprite_necklace3.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_necklace3.TabIndex = 418;
+            this.DHA_sprite_necklace3.TabStop = false;
+            this.DHA_sprite_necklace3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_necklace3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_costume4
+            // 
+            this.DHA_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_costume4.Location = new System.Drawing.Point(146, 209);
+            this.DHA_sprite_costume4.Name = "DHA_sprite_costume4";
+            this.DHA_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_costume4.TabIndex = 419;
+            this.DHA_sprite_costume4.TabStop = false;
+            this.DHA_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_paint
+            // 
+            this.DHA_sprite_paint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_paint.Location = new System.Drawing.Point(56, 269);
+            this.DHA_sprite_paint.Name = "DHA_sprite_paint";
+            this.DHA_sprite_paint.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_paint.TabIndex = 420;
+            this.DHA_sprite_paint.TabStop = false;
+            this.DHA_sprite_paint.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_paint.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_skin5
+            // 
+            this.DHA_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_skin5.Location = new System.Drawing.Point(176, 179);
+            this.DHA_sprite_skin5.Name = "DHA_sprite_skin5";
+            this.DHA_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_skin5.TabIndex = 412;
+            this.DHA_sprite_skin5.TabStop = false;
+            this.DHA_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_costume1
+            // 
+            this.DHA_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_costume1.Location = new System.Drawing.Point(56, 209);
+            this.DHA_sprite_costume1.Name = "DHA_sprite_costume1";
+            this.DHA_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_costume1.TabIndex = 413;
+            this.DHA_sprite_costume1.TabStop = false;
+            this.DHA_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_costume2
+            // 
+            this.DHA_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_costume2.Location = new System.Drawing.Point(86, 209);
+            this.DHA_sprite_costume2.Name = "DHA_sprite_costume2";
+            this.DHA_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_costume2.TabIndex = 414;
+            this.DHA_sprite_costume2.TabStop = false;
+            this.DHA_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_skin1
+            // 
+            this.DHA_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_skin1.Location = new System.Drawing.Point(56, 179);
+            this.DHA_sprite_skin1.Name = "DHA_sprite_skin1";
+            this.DHA_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_skin1.TabIndex = 408;
+            this.DHA_sprite_skin1.TabStop = false;
+            this.DHA_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_skin2
+            // 
+            this.DHA_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_skin2.Location = new System.Drawing.Point(86, 179);
+            this.DHA_sprite_skin2.Name = "DHA_sprite_skin2";
+            this.DHA_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_skin2.TabIndex = 409;
+            this.DHA_sprite_skin2.TabStop = false;
+            this.DHA_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_skin3
+            // 
+            this.DHA_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_skin3.Location = new System.Drawing.Point(116, 179);
+            this.DHA_sprite_skin3.Name = "DHA_sprite_skin3";
+            this.DHA_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_skin3.TabIndex = 410;
+            this.DHA_sprite_skin3.TabStop = false;
+            this.DHA_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // DHA_sprite_skin4
+            // 
+            this.DHA_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DHA_sprite_skin4.Location = new System.Drawing.Point(146, 179);
+            this.DHA_sprite_skin4.Name = "DHA_sprite_skin4";
+            this.DHA_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.DHA_sprite_skin4.TabIndex = 411;
+            this.DHA_sprite_skin4.TabStop = false;
+            this.DHA_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.DHA_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(2, 250);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(51, 13);
+            this.label130.TabIndex = 446;
+            this.label130.Text = "necklace";
+            // 
+            // label131
+            // 
+            this.label131.AutoSize = true;
+            this.label131.Location = new System.Drawing.Point(20, 280);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(30, 13);
+            this.label131.TabIndex = 447;
+            this.label131.Text = "paint";
             // 
             // MainForm
             // 
@@ -9806,9 +10308,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DEE_portraitVictoryBox)).EndInit();
             this.TabPageDhalsim.ResumeLayout(false);
+            this.TabPageDhalsim.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DHA_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DHA_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DHA_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_necklace2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_necklace1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_necklace3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_paint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DHA_sprite_skin4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -10521,6 +11056,46 @@
         private System.Windows.Forms.PictureBox DHA_neutralStandBox;
         private System.Windows.Forms.PictureBox DHA_portraitLossBox;
         private System.Windows.Forms.PictureBox DHA_portraitVictoryBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label label127;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Label label128;
+        private System.Windows.Forms.Label label129;
+        private System.Windows.Forms.PictureBox DHA_sprite_necklace2;
+        private System.Windows.Forms.PictureBox DHA_sprite_costume3;
+        private System.Windows.Forms.PictureBox DHA_sprite_skin6;
+        private System.Windows.Forms.PictureBox DHA_sprite_costume5;
+        private System.Windows.Forms.PictureBox DHA_sprite_necklace1;
+        private System.Windows.Forms.PictureBox DHA_sprite_necklace3;
+        private System.Windows.Forms.PictureBox DHA_sprite_costume4;
+        private System.Windows.Forms.PictureBox DHA_sprite_paint;
+        private System.Windows.Forms.PictureBox DHA_sprite_skin5;
+        private System.Windows.Forms.PictureBox DHA_sprite_costume1;
+        private System.Windows.Forms.PictureBox DHA_sprite_costume2;
+        private System.Windows.Forms.PictureBox DHA_sprite_skin1;
+        private System.Windows.Forms.PictureBox DHA_sprite_skin2;
+        private System.Windows.Forms.PictureBox DHA_sprite_skin3;
+        private System.Windows.Forms.PictureBox DHA_sprite_skin4;
+        private System.Windows.Forms.Label label131;
+        private System.Windows.Forms.Label label130;
     }
 }
 

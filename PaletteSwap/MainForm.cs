@@ -516,6 +516,27 @@ namespace PaletteSwap
                     DEE_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
                     DEE_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
                     break;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    DHA_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    DHA_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    DHA_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    DHA_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    DHA_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    DHA_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+
+                    DHA_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    DHA_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    DHA_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    DHA_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    DHA_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+
+
+                    DHA_sprite_necklace1.BackColor = currentCharacter.sprite.GetColor("necklace1");
+                    DHA_sprite_necklace2.BackColor = currentCharacter.sprite.GetColor("necklace2");
+                    DHA_sprite_necklace3.BackColor = currentCharacter.sprite.GetColor("necklace3");
+
+                    DHA_sprite_paint.BackColor = currentCharacter.sprite.GetColor("paint");
+                    break;
             }
         }
 
