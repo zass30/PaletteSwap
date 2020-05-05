@@ -1518,6 +1518,8 @@ namespace PaletteSwap
                             using (var entryStream = keyentry.Open())
                             {
                                 var b = gameSet.characterDictionary[charType].GenerateSpriteKey();
+                                if (charType == CharacterConfig.CHARACTERS.Dictator)
+                                    b = gameSet.characterDictionary[charType].GenerateKey("psychopunch");
                                 b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
                             }
 

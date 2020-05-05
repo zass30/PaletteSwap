@@ -46,7 +46,7 @@ namespace PaletteSwap
             return GenerateKey("neutral");
         }
 
-        private Bitmap GenerateKey(String s)
+        public Bitmap GenerateKey(String s)
         {
             int buffer = 10;
             var sample = characterColors[0].GetBitmap(s);

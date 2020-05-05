@@ -85,6 +85,8 @@ namespace PaletteSwap
                     return portrait.GetBitmap("victory");
                 case "loss":
                     return portrait.GetBitmap("loss");
+                case "psychopunch":
+                    return sprite.GetBitmap("psychopunch");
             }
             throw new Exception("invalid bitmap");
         }
