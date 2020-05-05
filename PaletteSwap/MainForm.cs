@@ -1306,7 +1306,7 @@ namespace PaletteSwap
                         resetCurrentCharacterColorFromDropDown();
                         reload_everything();
                         fileStream.Close();
-                    }
+                   }
                     catch (Exception){
                         MessageBox.Show("Invalid ROM format");
                     }
