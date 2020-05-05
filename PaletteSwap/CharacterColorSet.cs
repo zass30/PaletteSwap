@@ -315,6 +315,12 @@ namespace PaletteSwap
             return PatchOldBisonPunchesStream(b);
         }
 
+        public byte[] PatchOldBisonPunches06redggpo()
+        {
+            byte[] b = Resources.sfxo06a;
+            return PatchOldBisonPunchesStream(b);
+        }
+
         public byte[] sprites_stream04phoenix()
         {
             byte[] b = Resources.sfxjd04a;
@@ -377,6 +383,28 @@ namespace PaletteSwap
         public byte[] portraits_stream03japanese()
         {
             byte[] b = Resources.sfxj03c;
+            foreach (var k in characterDictionary)
+            {
+                var character = k.Value;
+                b = character.patch_portraits_stream03(b);
+            }
+            return b;
+        }
+
+        public byte[] sprites_stream04redggpo()
+        {
+            byte[] b = Resources.sfxo04a;
+            foreach (var k in characterDictionary)
+            {
+                var character = k.Value;
+                b = character.patch_sprites_stream04(b);
+            }
+            return b;
+        }
+
+        public byte[] portraits_stream03redggpo()
+        {
+            byte[] b = Resources.sfxo03c;
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;

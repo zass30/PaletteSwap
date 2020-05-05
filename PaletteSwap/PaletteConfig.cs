@@ -447,11 +447,16 @@ namespace PaletteSwap
         { "costume2", new List<int>() { ROWLEN * 1 + 26 } },
         { "costume3", new List<int>() { ROWLEN * 1 + 28 } },
 
+        { "paint1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "paint2", new List<int>() { 26 } },
+        { "paint3", new List<int>() { 28 } },
+
+
         { "bruise1", new List<int>() { 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
         { "bruise2", new List<int>() { 22, ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
-        { "bruise3", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
-        { "bruise4", new List<int>() { 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
-        { "bruise5", new List<int>() { 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "blood2", new List<int>() { ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
                 };
 
                 return portraitOffsets;

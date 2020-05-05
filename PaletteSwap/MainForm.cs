@@ -23,7 +23,7 @@ namespace PaletteSwap
         public Character currentCharacter;
         bool skip_image_recolors = false;
         int DEFAULT_DROPDOWN_INDEX = 0;
-        enum ROMSTYLE { us, japanese, phoenix, newlegacy };
+        enum ROMSTYLE { us, japanese, phoenix, newlegacy, redggpo };
         Regex rx = new Regex(@"[^_]+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
@@ -917,15 +917,18 @@ namespace PaletteSwap
 
                     DHA_portrait_bruise1.BackColor = currentCharacter.portrait.GetColor("bruise1");
                     DHA_portrait_bruise2.BackColor = currentCharacter.portrait.GetColor("bruise2");
-                    DHA_portrait_bruise3.BackColor = currentCharacter.portrait.GetColor("bruise3");
-                    DHA_portrait_bruise4.BackColor = currentCharacter.portrait.GetColor("bruise4");
-                    DHA_portrait_bruise5.BackColor = currentCharacter.portrait.GetColor("bruise5");
+
+                    DHA_portrait_blood1.BackColor = currentCharacter.portrait.GetColor("blood1");
+                    DHA_portrait_blood2.BackColor = currentCharacter.portrait.GetColor("blood2");
 
                     DHA_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
                     DHA_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
                     DHA_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
 
-
+                    DHA_portrait_paint1.BackColor = currentCharacter.portrait.GetColor("paint1");
+                    DHA_portrait_paint2.BackColor = currentCharacter.portrait.GetColor("paint2");
+                    DHA_portrait_paint3.BackColor = currentCharacter.portrait.GetColor("paint3");
+                    
                     DHA_portrait_necklace1.BackColor = currentCharacter.portrait.GetColor("necklace1");
                     DHA_portrait_necklace2.BackColor = currentCharacter.portrait.GetColor("necklace2");
                     DHA_portrait_necklace3.BackColor = currentCharacter.portrait.GetColor("necklace3");
@@ -1386,10 +1389,15 @@ namespace PaletteSwap
             savePatchedRom(sender, e, ROMSTYLE.japanese);
         }
 
-
         private void newLegacyROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             savePatchedRom(sender, e, ROMSTYLE.newlegacy);
+        }
+
+
+        private void redggpoROMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            savePatchedRom(sender, e, ROMSTYLE.redggpo);
         }
 
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1433,6 +1441,15 @@ namespace PaletteSwap
                                 _03filename = "sfxj.03c";
                                 _04filename = "sfxj.04a";
                                 _06filename = "sfxj.06a";
+
+                                p_stream = gameSet.portraits_stream03japanese();
+                                s_stream = gameSet.sprites_stream04japanese();
+                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06japanese();
+                                break;
+                            case ROMSTYLE.redggpo:
+                                _03filename = "sfxo.03c";
+                                _04filename = "sfxo.04a";
+                                _06filename = "sfxo.06a";
 
                                 p_stream = gameSet.portraits_stream03japanese();
                                 s_stream = gameSet.sprites_stream04japanese();

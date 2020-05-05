@@ -149,6 +149,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\roms\sfxo.03c" />
+    <None Include="Resources\roms\sfxo.04a" />
+    <None Include="Resources\roms\sfxo.06a" />
     <None Include="Resources\sagat\SAG_portraitwin0.png" />
     <None Include="Resources\sagat\SAG_portraitloss0.png" />
     <None Include="Resources\sagat\SAG_neutral0.png" />
