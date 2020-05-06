@@ -168,6 +168,8 @@ namespace PaletteSwap
                     return FEI_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEE_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAM_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHA_neutralStandBox;
             }
@@ -202,6 +204,8 @@ namespace PaletteSwap
                     return FEI_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEE_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAM_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHA_portraitLossBox;
             }
@@ -236,6 +240,8 @@ namespace PaletteSwap
                     return FEI_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEE_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAM_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHA_portraitVictoryBox;
             }
