@@ -543,6 +543,27 @@ namespace PaletteSwap
 
                     DHA_sprite_paint.BackColor = currentCharacter.sprite.GetColor("paint");
                     break;
+
+                case CharacterConfig.CHARACTERS.Cammy:
+                    CAM_sprite_skin1.BackColor = currentCharacter.sprite.GetColor("skin1");
+                    CAM_sprite_skin2.BackColor = currentCharacter.sprite.GetColor("skin2");
+                    CAM_sprite_skin3.BackColor = currentCharacter.sprite.GetColor("skin3");
+                    CAM_sprite_skin4.BackColor = currentCharacter.sprite.GetColor("skin4");
+                    CAM_sprite_skin5.BackColor = currentCharacter.sprite.GetColor("skin5");
+                    CAM_sprite_skin6.BackColor = currentCharacter.sprite.GetColor("skin6");
+                    CAM_sprite_skin7.BackColor = currentCharacter.sprite.GetColor("skin7");
+
+                    CAM_sprite_costume1.BackColor = currentCharacter.sprite.GetColor("costume1");
+                    CAM_sprite_costume2.BackColor = currentCharacter.sprite.GetColor("costume2");
+                    CAM_sprite_costume3.BackColor = currentCharacter.sprite.GetColor("costume3");
+                    CAM_sprite_costume4.BackColor = currentCharacter.sprite.GetColor("costume4");
+                    CAM_sprite_costume5.BackColor = currentCharacter.sprite.GetColor("costume5");
+                    CAM_sprite_costume6.BackColor = currentCharacter.sprite.GetColor("costume6");
+
+                    CAM_sprite_beret.BackColor = currentCharacter.sprite.GetColor("beret");
+                    CAM_sprite_hair.BackColor = currentCharacter.sprite.GetColor("hair");
+                    
+                    break;
             }
         }
 
@@ -940,6 +961,38 @@ namespace PaletteSwap
                     DHA_portrait_necklace3.BackColor = currentCharacter.portrait.GetColor("necklace3");
                     DHA_portrait_necklace4.BackColor = currentCharacter.portrait.GetColor("necklace4");
                     DHA_portrait_necklace5.BackColor = currentCharacter.portrait.GetColor("necklace5");
+                    break;
+
+                case CharacterConfig.CHARACTERS.Cammy:
+                    CAM_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    CAM_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    CAM_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    CAM_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    CAM_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    CAM_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    CAM_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+
+                    CAM_portrait_hair1.BackColor = currentCharacter.portrait.GetColor("hair1");
+                    CAM_portrait_hair2.BackColor = currentCharacter.portrait.GetColor("hair2");
+                    CAM_portrait_hair3.BackColor = currentCharacter.portrait.GetColor("hair3");
+                    CAM_portrait_hair4.BackColor = currentCharacter.portrait.GetColor("hair4");
+
+
+                    CAM_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    CAM_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    CAM_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    CAM_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+
+                    CAM_portrait_beret1.BackColor = currentCharacter.portrait.GetColor("beret1");
+                    CAM_portrait_beret2.BackColor = currentCharacter.portrait.GetColor("beret2");
+                    CAM_portrait_beret3.BackColor = currentCharacter.portrait.GetColor("beret3");
+                    CAM_portrait_beret4.BackColor = currentCharacter.portrait.GetColor("beret4");
+
+                    CAM_portrait_eyes1.BackColor = currentCharacter.portrait.GetColor("eyes1");
+                    CAM_portrait_eyes2.BackColor = currentCharacter.portrait.GetColor("eyes2");
+                    CAM_portrait_eyes3.BackColor = currentCharacter.portrait.GetColor("eyes3");
+                    CAM_portrait_eyes4.BackColor = currentCharacter.portrait.GetColor("eyes4");
+                    
                     break;
             }
         }
@@ -1706,6 +1759,5 @@ namespace PaletteSwap
             resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
-
     }
 }

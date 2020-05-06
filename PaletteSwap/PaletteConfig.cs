@@ -402,21 +402,21 @@ namespace PaletteSwap
                 Dictionary<string, List<int>> spriteOffsets =
                    new Dictionary<string, List<int>>
            {
-            { "necklace3", new List<int>() { 0 } },
-            { "skin6", new List<int>() { 2 } },
-            { "skin5", new List<int>() { 4 } },
+            { "costume6", new List<int>() { 0 } },
+            { "skin2", new List<int>() { 2 } },
+            { "skin3", new List<int>() { 4 } },
             { "skin4", new List<int>() { 6 } },
-            { "skin3", new List<int>() { 8 } },
-            { "skin2", new List<int>() { 10 } },
-            { "skin1", new List<int>() { 12 } },
-            { "necklace1", new List<int>() { 14 } },
-            { "necklace2", new List<int>() { 16 } },
-            { "paint", new List<int>() { 18 } },
-            { "costume5", new List<int>() { 20 } },
-            { "costume4", new List<int>() { 22 } },
-            { "costume3", new List<int>() { 24 } },
-            { "costume2", new List<int>() { 26 } },
-            { "costume1", new List<int>() { 28 } },
+            { "skin5", new List<int>() { 8 } },
+            { "skin6", new List<int>() { 10 } },
+            { "skin7", new List<int>() { 12 } },
+            { "costume5", new List<int>() { 14 } },
+            { "costume4", new List<int>() { 16 } },
+            { "costume3", new List<int>() { 18 } },
+            { "costume2", new List<int>() { 20 } },
+            { "costume1", new List<int>() { 22 } },
+            { "beret", new List<int>() { 24 } },
+            { "hair", new List<int>() { 26 } },
+            { "skin1", new List<int>() { 28 } },
            };
                 return spriteOffsets;
             }
@@ -436,34 +436,33 @@ namespace PaletteSwap
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
-        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
-        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2 } },
-        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4 } },
-        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6 } },
-        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
-        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
-        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12 } },
 
-        { "necklace1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
-        { "necklace2", new List<int>() { ROWLEN * 1 + 16 } },
-        { "necklace3", new List<int>() { 16, ROWLEN * 1 + 18, ROWLEN * 3 + 16 } },
-        { "necklace4", new List<int>() { 18, ROWLEN * 1 + 20, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
-        { "necklace5", new List<int>() { ROWLEN * 1 + 22 } },
+        { "hair1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 2 + 14 } },
+        { "hair2", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 2 + 16 } },
+        { "hair3", new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 2 + 18 } },
+        { "hair4", new List<int>() { 20, ROWLEN * 1 + 20, ROWLEN * 2 + 20 } },
 
-        { "costume1", new List<int>() { ROWLEN * 1 + 24 } },
-        { "costume2", new List<int>() { ROWLEN * 1 + 26 } },
-        { "costume3", new List<int>() { ROWLEN * 1 + 28 } },
+        { "beret1", new List<int>() { 22 } },
+        { "beret2", new List<int>() { 24 } },
+        { "beret3", new List<int>() { 26 } },
+        { "beret4", new List<int>() { 28 } },
 
-        { "paint1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
-        { "paint2", new List<int>() { 26 } },
-        { "paint3", new List<int>() { 28 } },
+        { "costume1", new List<int>() { ROWLEN * 1 + 22 } },
+        { "costume2", new List<int>() { ROWLEN * 1 + 24 } },
+        { "costume3", new List<int>() { ROWLEN * 1 + 26 } },
+        { "costume4", new List<int>() { ROWLEN * 1 + 28 } },
 
-
-        { "bruise1", new List<int>() { 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
-        { "bruise2", new List<int>() { 22, ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
-
-        { "blood1", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
-        { "blood2", new List<int>() { ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+        { "eyes1", new List<int>() { ROWLEN * 2 + 22 } },
+        { "eyes2", new List<int>() { ROWLEN * 2 + 24 } },
+        { "eyes3", new List<int>() { ROWLEN * 2 + 26 } },
+        { "eyes4", new List<int>() { ROWLEN * 2 + 28 } },
                 };
 
                 return portraitOffsets;

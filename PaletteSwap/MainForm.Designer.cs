@@ -787,6 +787,54 @@
             this.CAM_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.label134 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.label136 = new System.Windows.Forms.Label();
+            this.label137 = new System.Windows.Forms.Label();
+            this.CAM_sprite_costume6 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_beret = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin7 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_hair = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.CAM_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_beret4 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_eyes2 = new System.Windows.Forms.PictureBox();
+            this.label139 = new System.Windows.Forms.Label();
+            this.CAM_portrait_beret3 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_beret2 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_costume4 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_skin7 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.label140 = new System.Windows.Forms.Label();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_eyes1 = new System.Windows.Forms.PictureBox();
+            this.label141 = new System.Windows.Forms.Label();
+            this.CAM_portrait_costume3 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_costume2 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_costume1 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_beret1 = new System.Windows.Forms.PictureBox();
+            this.label142 = new System.Windows.Forms.Label();
+            this.CAM_portrait_hair4 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_hair3 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_hair2 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_hair1 = new System.Windows.Forms.PictureBox();
+            this.label143 = new System.Windows.Forms.Label();
+            this.CAM_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_eyes3 = new System.Windows.Forms.PictureBox();
+            this.CAM_portrait_eyes4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1357,6 +1405,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.CAM_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CAM_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CAM_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_beret)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_hair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1707,7 +1794,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -1720,7 +1807,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -1740,7 +1827,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -1748,7 +1835,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -1758,7 +1845,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -1778,7 +1865,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -1787,7 +1874,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -1796,14 +1883,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -1814,49 +1901,49 @@
             this.newLegacyROMToolStripMenuItem,
             this.redggpoROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchToolStripMenuItem.Text = "Patch";
             this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // newLegacyROMToolStripMenuItem
             // 
             this.newLegacyROMToolStripMenuItem.Name = "newLegacyROMToolStripMenuItem";
-            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.newLegacyROMToolStripMenuItem.Text = "New Legacy ROM";
             this.newLegacyROMToolStripMenuItem.Click += new System.EventHandler(this.newLegacyROMToolStripMenuItem_Click);
             // 
             // redggpoROMToolStripMenuItem
             // 
             this.redggpoROMToolStripMenuItem.Name = "redggpoROMToolStripMenuItem";
-            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.redggpoROMToolStripMenuItem.Text = "Redggpo ROM";
             this.redggpoROMToolStripMenuItem.Click += new System.EventHandler(this.redggpoROMToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2166,7 +2253,7 @@
             this.TabPageDictator.Controls.Add(this.pal_sprite_psychopunch2);
             this.TabPageDictator.Location = new System.Drawing.Point(4, 22);
             this.TabPageDictator.Name = "TabPageDictator";
-            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageDictator.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageDictator.Size = new System.Drawing.Size(597, 559);
             this.TabPageDictator.TabIndex = 0;
             this.TabPageDictator.Text = "Dictator";
@@ -2998,7 +3085,7 @@
             this.TabPageClaw.Controls.Add(this.CLA_neutralStandBox);
             this.TabPageClaw.Location = new System.Drawing.Point(4, 22);
             this.TabPageClaw.Name = "TabPageClaw";
-            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabPageClaw.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageClaw.Size = new System.Drawing.Size(597, 559);
             this.TabPageClaw.TabIndex = 1;
             this.TabPageClaw.Text = "Claw";
@@ -4829,7 +4916,7 @@
             this.TabPageChun.Controls.Add(this.CHU_portraitVictoryBox);
             this.TabPageChun.Controls.Add(this.CHU_neutralStandBox);
             this.TabPageChun.Location = new System.Drawing.Point(4, 22);
-            this.TabPageChun.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TabPageChun.Margin = new System.Windows.Forms.Padding(2);
             this.TabPageChun.Name = "TabPageChun";
             this.TabPageChun.Size = new System.Drawing.Size(597, 559);
             this.TabPageChun.TabIndex = 4;
@@ -9871,11 +9958,59 @@
             // 
             // TabPageCammy
             // 
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_eyes4);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_eyes3);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_beret4);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_eyes2);
+            this.TabPageCammy.Controls.Add(this.label139);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_beret3);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_beret2);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_costume4);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin7);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin6);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin5);
+            this.TabPageCammy.Controls.Add(this.label140);
+            this.TabPageCammy.Controls.Add(this.pictureBox24);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_eyes1);
+            this.TabPageCammy.Controls.Add(this.label141);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_costume3);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_costume2);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_costume1);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_beret1);
+            this.TabPageCammy.Controls.Add(this.label142);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_hair4);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_hair3);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_hair2);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_hair1);
+            this.TabPageCammy.Controls.Add(this.label143);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin4);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin3);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin2);
+            this.TabPageCammy.Controls.Add(this.CAM_portrait_skin1);
+            this.TabPageCammy.Controls.Add(this.label134);
+            this.TabPageCammy.Controls.Add(this.label135);
+            this.TabPageCammy.Controls.Add(this.label136);
+            this.TabPageCammy.Controls.Add(this.label137);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_costume6);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_costume3);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin6);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_costume5);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_beret);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin7);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_costume4);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_hair);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin5);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_costume1);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_costume2);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin1);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin2);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin3);
+            this.TabPageCammy.Controls.Add(this.CAM_sprite_skin4);
             this.TabPageCammy.Controls.Add(this.CAM_neutralStandBox);
             this.TabPageCammy.Controls.Add(this.CAM_portraitLossBox);
             this.TabPageCammy.Controls.Add(this.CAM_portraitVictoryBox);
             this.TabPageCammy.Location = new System.Drawing.Point(4, 22);
-            this.TabPageCammy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TabPageCammy.Margin = new System.Windows.Forms.Padding(2);
             this.TabPageCammy.Name = "TabPageCammy";
             this.TabPageCammy.Size = new System.Drawing.Size(597, 559);
             this.TabPageCammy.TabIndex = 13;
@@ -9890,6 +10025,7 @@
             this.CAM_neutralStandBox.Size = new System.Drawing.Size(74, 95);
             this.CAM_neutralStandBox.TabIndex = 193;
             this.CAM_neutralStandBox.TabStop = false;
+            this.CAM_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // CAM_portraitLossBox
             // 
@@ -9899,6 +10035,7 @@
             this.CAM_portraitLossBox.Size = new System.Drawing.Size(107, 113);
             this.CAM_portraitLossBox.TabIndex = 192;
             this.CAM_portraitLossBox.TabStop = false;
+            this.CAM_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
             // CAM_portraitVictoryBox
             // 
@@ -9908,6 +10045,7 @@
             this.CAM_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.CAM_portraitVictoryBox.TabIndex = 191;
             this.CAM_portraitVictoryBox.TabStop = false;
+            this.CAM_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // COLlabel
             // 
@@ -9925,6 +10063,516 @@
             this.hScrollBar1.Name = "hScrollBar1";
             this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
             this.hScrollBar1.TabIndex = 124;
+            // 
+            // label134
+            // 
+            this.label134.AutoSize = true;
+            this.label134.Location = new System.Drawing.Point(26, 296);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(24, 13);
+            this.label134.TabIndex = 466;
+            this.label134.Text = "hair";
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Location = new System.Drawing.Point(19, 266);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(31, 13);
+            this.label135.TabIndex = 465;
+            this.label135.Text = "beret";
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Location = new System.Drawing.Point(3, 236);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(47, 13);
+            this.label136.TabIndex = 464;
+            this.label136.Text = "costume";
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Location = new System.Drawing.Point(24, 176);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(26, 13);
+            this.label137.TabIndex = 463;
+            this.label137.Text = "skin";
+            // 
+            // CAM_sprite_costume6
+            // 
+            this.CAM_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_costume6.Location = new System.Drawing.Point(206, 225);
+            this.CAM_sprite_costume6.Name = "CAM_sprite_costume6";
+            this.CAM_sprite_costume6.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_costume6.TabIndex = 461;
+            this.CAM_sprite_costume6.TabStop = false;
+            this.CAM_sprite_costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_costume6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_costume3
+            // 
+            this.CAM_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_costume3.Location = new System.Drawing.Point(116, 225);
+            this.CAM_sprite_costume3.Name = "CAM_sprite_costume3";
+            this.CAM_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_costume3.TabIndex = 462;
+            this.CAM_sprite_costume3.TabStop = false;
+            this.CAM_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin6
+            // 
+            this.CAM_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin6.Location = new System.Drawing.Point(86, 195);
+            this.CAM_sprite_skin6.Name = "CAM_sprite_skin6";
+            this.CAM_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin6.TabIndex = 455;
+            this.CAM_sprite_skin6.TabStop = false;
+            this.CAM_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_costume5
+            // 
+            this.CAM_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_costume5.Location = new System.Drawing.Point(176, 225);
+            this.CAM_sprite_costume5.Name = "CAM_sprite_costume5";
+            this.CAM_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_costume5.TabIndex = 456;
+            this.CAM_sprite_costume5.TabStop = false;
+            this.CAM_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_beret
+            // 
+            this.CAM_sprite_beret.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_beret.Location = new System.Drawing.Point(56, 255);
+            this.CAM_sprite_beret.Name = "CAM_sprite_beret";
+            this.CAM_sprite_beret.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_beret.TabIndex = 457;
+            this.CAM_sprite_beret.TabStop = false;
+            this.CAM_sprite_beret.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_beret.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin7
+            // 
+            this.CAM_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin7.Location = new System.Drawing.Point(117, 195);
+            this.CAM_sprite_skin7.Name = "CAM_sprite_skin7";
+            this.CAM_sprite_skin7.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin7.TabIndex = 458;
+            this.CAM_sprite_skin7.TabStop = false;
+            this.CAM_sprite_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_costume4
+            // 
+            this.CAM_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_costume4.Location = new System.Drawing.Point(146, 225);
+            this.CAM_sprite_costume4.Name = "CAM_sprite_costume4";
+            this.CAM_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_costume4.TabIndex = 459;
+            this.CAM_sprite_costume4.TabStop = false;
+            this.CAM_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_hair
+            // 
+            this.CAM_sprite_hair.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_hair.Location = new System.Drawing.Point(56, 285);
+            this.CAM_sprite_hair.Name = "CAM_sprite_hair";
+            this.CAM_sprite_hair.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_hair.TabIndex = 460;
+            this.CAM_sprite_hair.TabStop = false;
+            this.CAM_sprite_hair.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_hair.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin5
+            // 
+            this.CAM_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin5.Location = new System.Drawing.Point(56, 195);
+            this.CAM_sprite_skin5.Name = "CAM_sprite_skin5";
+            this.CAM_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin5.TabIndex = 452;
+            this.CAM_sprite_skin5.TabStop = false;
+            this.CAM_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_costume1
+            // 
+            this.CAM_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_costume1.Location = new System.Drawing.Point(56, 225);
+            this.CAM_sprite_costume1.Name = "CAM_sprite_costume1";
+            this.CAM_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_costume1.TabIndex = 453;
+            this.CAM_sprite_costume1.TabStop = false;
+            this.CAM_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_costume2
+            // 
+            this.CAM_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_costume2.Location = new System.Drawing.Point(86, 225);
+            this.CAM_sprite_costume2.Name = "CAM_sprite_costume2";
+            this.CAM_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_costume2.TabIndex = 454;
+            this.CAM_sprite_costume2.TabStop = false;
+            this.CAM_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin1
+            // 
+            this.CAM_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin1.Location = new System.Drawing.Point(56, 165);
+            this.CAM_sprite_skin1.Name = "CAM_sprite_skin1";
+            this.CAM_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin1.TabIndex = 448;
+            this.CAM_sprite_skin1.TabStop = false;
+            this.CAM_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin2
+            // 
+            this.CAM_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin2.Location = new System.Drawing.Point(86, 165);
+            this.CAM_sprite_skin2.Name = "CAM_sprite_skin2";
+            this.CAM_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin2.TabIndex = 449;
+            this.CAM_sprite_skin2.TabStop = false;
+            this.CAM_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin3
+            // 
+            this.CAM_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin3.Location = new System.Drawing.Point(116, 165);
+            this.CAM_sprite_skin3.Name = "CAM_sprite_skin3";
+            this.CAM_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin3.TabIndex = 450;
+            this.CAM_sprite_skin3.TabStop = false;
+            this.CAM_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_sprite_skin4
+            // 
+            this.CAM_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_sprite_skin4.Location = new System.Drawing.Point(146, 165);
+            this.CAM_sprite_skin4.Name = "CAM_sprite_skin4";
+            this.CAM_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_sprite_skin4.TabIndex = 451;
+            this.CAM_sprite_skin4.TabStop = false;
+            this.CAM_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.CAM_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_beret4
+            // 
+            this.CAM_portrait_beret4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_beret4.Location = new System.Drawing.Point(396, 285);
+            this.CAM_portrait_beret4.Name = "CAM_portrait_beret4";
+            this.CAM_portrait_beret4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_beret4.TabIndex = 493;
+            this.CAM_portrait_beret4.TabStop = false;
+            this.CAM_portrait_beret4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_beret4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_eyes2
+            // 
+            this.CAM_portrait_eyes2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_eyes2.Location = new System.Drawing.Point(338, 315);
+            this.CAM_portrait_eyes2.Name = "CAM_portrait_eyes2";
+            this.CAM_portrait_eyes2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_eyes2.TabIndex = 492;
+            this.CAM_portrait_eyes2.TabStop = false;
+            this.CAM_portrait_eyes2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_eyes2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Location = new System.Drawing.Point(271, 296);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(31, 13);
+            this.label139.TabIndex = 491;
+            this.label139.Text = "beret";
+            // 
+            // CAM_portrait_beret3
+            // 
+            this.CAM_portrait_beret3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_beret3.Location = new System.Drawing.Point(368, 285);
+            this.CAM_portrait_beret3.Name = "CAM_portrait_beret3";
+            this.CAM_portrait_beret3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_beret3.TabIndex = 490;
+            this.CAM_portrait_beret3.TabStop = false;
+            this.CAM_portrait_beret3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_beret3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_beret2
+            // 
+            this.CAM_portrait_beret2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_beret2.Location = new System.Drawing.Point(338, 285);
+            this.CAM_portrait_beret2.Name = "CAM_portrait_beret2";
+            this.CAM_portrait_beret2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_beret2.TabIndex = 489;
+            this.CAM_portrait_beret2.TabStop = false;
+            this.CAM_portrait_beret2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_beret2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_costume4
+            // 
+            this.CAM_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_costume4.Location = new System.Drawing.Point(398, 255);
+            this.CAM_portrait_costume4.Name = "CAM_portrait_costume4";
+            this.CAM_portrait_costume4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_costume4.TabIndex = 488;
+            this.CAM_portrait_costume4.TabStop = false;
+            this.CAM_portrait_costume4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_skin7
+            // 
+            this.CAM_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin7.Location = new System.Drawing.Point(368, 195);
+            this.CAM_portrait_skin7.Name = "CAM_portrait_skin7";
+            this.CAM_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin7.TabIndex = 487;
+            this.CAM_portrait_skin7.TabStop = false;
+            this.CAM_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_skin6
+            // 
+            this.CAM_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin6.Location = new System.Drawing.Point(338, 195);
+            this.CAM_portrait_skin6.Name = "CAM_portrait_skin6";
+            this.CAM_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin6.TabIndex = 486;
+            this.CAM_portrait_skin6.TabStop = false;
+            this.CAM_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_skin5
+            // 
+            this.CAM_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin5.Location = new System.Drawing.Point(308, 195);
+            this.CAM_portrait_skin5.Name = "CAM_portrait_skin5";
+            this.CAM_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin5.TabIndex = 485;
+            this.CAM_portrait_skin5.TabStop = false;
+            this.CAM_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Location = new System.Drawing.Point(273, 326);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(29, 13);
+            this.label140.TabIndex = 484;
+            this.label140.Text = "eyes";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox24.Location = new System.Drawing.Point(368, 285);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox24.TabIndex = 483;
+            this.pictureBox24.TabStop = false;
+            this.pictureBox24.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.pictureBox24.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_eyes1
+            // 
+            this.CAM_portrait_eyes1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_eyes1.Location = new System.Drawing.Point(308, 315);
+            this.CAM_portrait_eyes1.Name = "CAM_portrait_eyes1";
+            this.CAM_portrait_eyes1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_eyes1.TabIndex = 482;
+            this.CAM_portrait_eyes1.TabStop = false;
+            this.CAM_portrait_eyes1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_eyes1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.Location = new System.Drawing.Point(255, 266);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(47, 13);
+            this.label141.TabIndex = 481;
+            this.label141.Text = "costume";
+            // 
+            // CAM_portrait_costume3
+            // 
+            this.CAM_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_costume3.Location = new System.Drawing.Point(368, 255);
+            this.CAM_portrait_costume3.Name = "CAM_portrait_costume3";
+            this.CAM_portrait_costume3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_costume3.TabIndex = 480;
+            this.CAM_portrait_costume3.TabStop = false;
+            this.CAM_portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_costume2
+            // 
+            this.CAM_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_costume2.Location = new System.Drawing.Point(338, 255);
+            this.CAM_portrait_costume2.Name = "CAM_portrait_costume2";
+            this.CAM_portrait_costume2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_costume2.TabIndex = 479;
+            this.CAM_portrait_costume2.TabStop = false;
+            this.CAM_portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_costume1
+            // 
+            this.CAM_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_costume1.Location = new System.Drawing.Point(308, 255);
+            this.CAM_portrait_costume1.Name = "CAM_portrait_costume1";
+            this.CAM_portrait_costume1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_costume1.TabIndex = 478;
+            this.CAM_portrait_costume1.TabStop = false;
+            this.CAM_portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_beret1
+            // 
+            this.CAM_portrait_beret1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_beret1.Location = new System.Drawing.Point(308, 285);
+            this.CAM_portrait_beret1.Name = "CAM_portrait_beret1";
+            this.CAM_portrait_beret1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_beret1.TabIndex = 477;
+            this.CAM_portrait_beret1.TabStop = false;
+            this.CAM_portrait_beret1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_beret1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.Location = new System.Drawing.Point(278, 236);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(24, 13);
+            this.label142.TabIndex = 476;
+            this.label142.Text = "hair";
+            // 
+            // CAM_portrait_hair4
+            // 
+            this.CAM_portrait_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_hair4.Location = new System.Drawing.Point(398, 225);
+            this.CAM_portrait_hair4.Name = "CAM_portrait_hair4";
+            this.CAM_portrait_hair4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_hair4.TabIndex = 475;
+            this.CAM_portrait_hair4.TabStop = false;
+            this.CAM_portrait_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_hair4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_hair3
+            // 
+            this.CAM_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_hair3.Location = new System.Drawing.Point(368, 225);
+            this.CAM_portrait_hair3.Name = "CAM_portrait_hair3";
+            this.CAM_portrait_hair3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_hair3.TabIndex = 474;
+            this.CAM_portrait_hair3.TabStop = false;
+            this.CAM_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_hair2
+            // 
+            this.CAM_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_hair2.Location = new System.Drawing.Point(338, 225);
+            this.CAM_portrait_hair2.Name = "CAM_portrait_hair2";
+            this.CAM_portrait_hair2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_hair2.TabIndex = 473;
+            this.CAM_portrait_hair2.TabStop = false;
+            this.CAM_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_hair1
+            // 
+            this.CAM_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_hair1.Location = new System.Drawing.Point(308, 225);
+            this.CAM_portrait_hair1.Name = "CAM_portrait_hair1";
+            this.CAM_portrait_hair1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_hair1.TabIndex = 472;
+            this.CAM_portrait_hair1.TabStop = false;
+            this.CAM_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label143
+            // 
+            this.label143.AutoSize = true;
+            this.label143.Location = new System.Drawing.Point(276, 176);
+            this.label143.Name = "label143";
+            this.label143.Size = new System.Drawing.Size(26, 13);
+            this.label143.TabIndex = 471;
+            this.label143.Text = "skin";
+            // 
+            // CAM_portrait_skin4
+            // 
+            this.CAM_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin4.Location = new System.Drawing.Point(398, 165);
+            this.CAM_portrait_skin4.Name = "CAM_portrait_skin4";
+            this.CAM_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin4.TabIndex = 470;
+            this.CAM_portrait_skin4.TabStop = false;
+            this.CAM_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_skin3
+            // 
+            this.CAM_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin3.Location = new System.Drawing.Point(368, 165);
+            this.CAM_portrait_skin3.Name = "CAM_portrait_skin3";
+            this.CAM_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin3.TabIndex = 469;
+            this.CAM_portrait_skin3.TabStop = false;
+            this.CAM_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_skin2
+            // 
+            this.CAM_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin2.Location = new System.Drawing.Point(338, 165);
+            this.CAM_portrait_skin2.Name = "CAM_portrait_skin2";
+            this.CAM_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin2.TabIndex = 468;
+            this.CAM_portrait_skin2.TabStop = false;
+            this.CAM_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_skin1
+            // 
+            this.CAM_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_skin1.Location = new System.Drawing.Point(308, 165);
+            this.CAM_portrait_skin1.Name = "CAM_portrait_skin1";
+            this.CAM_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_skin1.TabIndex = 467;
+            this.CAM_portrait_skin1.TabStop = false;
+            this.CAM_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_eyes3
+            // 
+            this.CAM_portrait_eyes3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_eyes3.Location = new System.Drawing.Point(368, 315);
+            this.CAM_portrait_eyes3.Name = "CAM_portrait_eyes3";
+            this.CAM_portrait_eyes3.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_eyes3.TabIndex = 495;
+            this.CAM_portrait_eyes3.TabStop = false;
+            this.CAM_portrait_eyes3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_eyes3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // CAM_portrait_eyes4
+            // 
+            this.CAM_portrait_eyes4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CAM_portrait_eyes4.Location = new System.Drawing.Point(396, 315);
+            this.CAM_portrait_eyes4.Name = "CAM_portrait_eyes4";
+            this.CAM_portrait_eyes4.Size = new System.Drawing.Size(24, 24);
+            this.CAM_portrait_eyes4.TabIndex = 496;
+            this.CAM_portrait_eyes4.TabStop = false;
+            this.CAM_portrait_eyes4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CAM_portrait_eyes4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -10536,9 +11184,49 @@
             ((System.ComponentModel.ISupportInitialize)(this.DHA_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DHA_portraitVictoryBox)).EndInit();
             this.TabPageCammy.ResumeLayout(false);
+            this.TabPageCammy.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CAM_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CAM_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CAM_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_beret)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_hair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_beret1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CAM_portrait_eyes4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -11303,6 +11991,54 @@
         private System.Windows.Forms.PictureBox CAM_neutralStandBox;
         private System.Windows.Forms.PictureBox CAM_portraitLossBox;
         private System.Windows.Forms.PictureBox CAM_portraitVictoryBox;
+        private System.Windows.Forms.PictureBox CAM_portrait_beret4;
+        private System.Windows.Forms.PictureBox CAM_portrait_eyes2;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.PictureBox CAM_portrait_beret3;
+        private System.Windows.Forms.PictureBox CAM_portrait_beret2;
+        private System.Windows.Forms.PictureBox CAM_portrait_costume4;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin7;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin6;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin5;
+        private System.Windows.Forms.Label label140;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox CAM_portrait_eyes1;
+        private System.Windows.Forms.Label label141;
+        private System.Windows.Forms.PictureBox CAM_portrait_costume3;
+        private System.Windows.Forms.PictureBox CAM_portrait_costume2;
+        private System.Windows.Forms.PictureBox CAM_portrait_costume1;
+        private System.Windows.Forms.PictureBox CAM_portrait_beret1;
+        private System.Windows.Forms.Label label142;
+        private System.Windows.Forms.PictureBox CAM_portrait_hair4;
+        private System.Windows.Forms.PictureBox CAM_portrait_hair3;
+        private System.Windows.Forms.PictureBox CAM_portrait_hair2;
+        private System.Windows.Forms.PictureBox CAM_portrait_hair1;
+        private System.Windows.Forms.Label label143;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin4;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin3;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin2;
+        private System.Windows.Forms.PictureBox CAM_portrait_skin1;
+        private System.Windows.Forms.Label label134;
+        private System.Windows.Forms.Label label135;
+        private System.Windows.Forms.Label label136;
+        private System.Windows.Forms.Label label137;
+        private System.Windows.Forms.PictureBox CAM_sprite_costume6;
+        private System.Windows.Forms.PictureBox CAM_sprite_costume3;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin6;
+        private System.Windows.Forms.PictureBox CAM_sprite_costume5;
+        private System.Windows.Forms.PictureBox CAM_sprite_beret;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin7;
+        private System.Windows.Forms.PictureBox CAM_sprite_costume4;
+        private System.Windows.Forms.PictureBox CAM_sprite_hair;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin5;
+        private System.Windows.Forms.PictureBox CAM_sprite_costume1;
+        private System.Windows.Forms.PictureBox CAM_sprite_costume2;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin1;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin2;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin3;
+        private System.Windows.Forms.PictureBox CAM_sprite_skin4;
+        private System.Windows.Forms.PictureBox CAM_portrait_eyes4;
+        private System.Windows.Forms.PictureBox CAM_portrait_eyes3;
     }
 }
 
