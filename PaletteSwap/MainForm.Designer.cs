@@ -1743,6 +1743,7 @@
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
             this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
+            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
@@ -5937,6 +5938,7 @@
             this.CHU_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
             this.CHU_portrait_bruise2.TabIndex = 291;
             this.CHU_portrait_bruise2.TabStop = false;
+            this.CHU_portrait_bruise2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.CHU_portrait_bruise2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CHU_portrait_hair3
@@ -5947,6 +5949,7 @@
             this.CHU_portrait_hair3.Size = new System.Drawing.Size(24, 24);
             this.CHU_portrait_hair3.TabIndex = 289;
             this.CHU_portrait_hair3.TabStop = false;
+            this.CHU_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.CHU_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CHU_portrait_hair2
@@ -5957,6 +5960,7 @@
             this.CHU_portrait_hair2.Size = new System.Drawing.Size(24, 24);
             this.CHU_portrait_hair2.TabIndex = 288;
             this.CHU_portrait_hair2.TabStop = false;
+            this.CHU_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.CHU_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CHU_portrait_hair1
@@ -5967,6 +5971,7 @@
             this.CHU_portrait_hair1.Size = new System.Drawing.Size(24, 24);
             this.CHU_portrait_hair1.TabIndex = 287;
             this.CHU_portrait_hair1.TabStop = false;
+            this.CHU_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.CHU_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CHU_portrait_hair4
@@ -5977,6 +5982,7 @@
             this.CHU_portrait_hair4.Size = new System.Drawing.Size(24, 24);
             this.CHU_portrait_hair4.TabIndex = 286;
             this.CHU_portrait_hair4.TabStop = false;
+            this.CHU_portrait_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.CHU_portrait_hair4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CHU_portrait_lips3
