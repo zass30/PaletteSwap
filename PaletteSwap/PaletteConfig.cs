@@ -297,6 +297,8 @@ namespace PaletteSwap
                     return FEI.GenerateFeiSpriteConfig();
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEEJAY.GenerateDeejaySpriteConfig();
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAMMY.GenerateCammySpriteConfig();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteConfig();
             }
@@ -332,6 +334,8 @@ namespace PaletteSwap
                     return FEI.GenerateFeiSpriteOffsets();
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEEJAY.GenerateDeejaySpriteOffsets();
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAMMY.GenerateCammySpriteOffsets();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteOffsets();
             }
@@ -366,6 +370,8 @@ namespace PaletteSwap
                     return FEI.GenerateFeiPortraitConfig();
                 case CharacterConfig.CHARACTERS.Deejay:
                     return DEEJAY.GenerateDeejayPortraitConfig();
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAMMY.GenerateCammyPortraitConfig();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimPortraitConfig();
             }
