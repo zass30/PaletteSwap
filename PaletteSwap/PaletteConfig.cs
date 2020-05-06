@@ -388,6 +388,103 @@ namespace PaletteSwap
                 this.defaultColorOffsets.Add(cp);
             }
         }
+
+        public struct CAMMY
+        {
+            public static Dictionary<string, List<int>> GenerateCammySpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "necklace3", new List<int>() { 0 } },
+            { "skin6", new List<int>() { 2 } },
+            { "skin5", new List<int>() { 4 } },
+            { "skin4", new List<int>() { 6 } },
+            { "skin3", new List<int>() { 8 } },
+            { "skin2", new List<int>() { 10 } },
+            { "skin1", new List<int>() { 12 } },
+            { "necklace1", new List<int>() { 14 } },
+            { "necklace2", new List<int>() { 16 } },
+            { "paint", new List<int>() { 18 } },
+            { "costume5", new List<int>() { 20 } },
+            { "costume4", new List<int>() { 22 } },
+            { "costume3", new List<int>() { 24 } },
+            { "costume2", new List<int>() { 26 } },
+            { "costume1", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateCammySpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateCammySpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateCammyPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+
+        { "necklace1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 3 + 14 } },
+        { "necklace2", new List<int>() { ROWLEN * 1 + 16 } },
+        { "necklace3", new List<int>() { 16, ROWLEN * 1 + 18, ROWLEN * 3 + 16 } },
+        { "necklace4", new List<int>() { 18, ROWLEN * 1 + 20, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
+        { "necklace5", new List<int>() { ROWLEN * 1 + 22 } },
+
+        { "costume1", new List<int>() { ROWLEN * 1 + 24 } },
+        { "costume2", new List<int>() { ROWLEN * 1 + 26 } },
+        { "costume3", new List<int>() { ROWLEN * 1 + 28 } },
+
+        { "paint1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+        { "paint2", new List<int>() { 26 } },
+        { "paint3", new List<int>() { 28 } },
+
+
+        { "bruise1", new List<int>() { 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
+        { "bruise2", new List<int>() { 22, ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
+
+        { "blood1", new List<int>() { ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
+        { "blood2", new List<int>() { ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
+                };
+
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateCammyPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> cammyPortraitOffsets = GenerateCammyPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = cammyPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+        }
+
         public struct DHALSIM
         {
             public static Dictionary<string, List<int>> GenerateDhalsimSpriteOffsets()
@@ -1691,6 +1788,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DHA_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DHALSIM.GenerateDhalsimSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CAM_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.CAMMY.GenerateCammySpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1749,6 +1850,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DHA_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CAM_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1807,6 +1912,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImage2(new Bitmap(Properties.Resources.DHA_portraitsloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return GeneratePaletteImage2(new Bitmap(Properties.Resources.CAM_portraitloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
