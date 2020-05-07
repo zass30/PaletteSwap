@@ -141,24 +141,23 @@ namespace PaletteSwap
 
         private PictureBox GetSpriteNeutralBox()
         {
-            var shortcut = CharacterConfig.CodeFromCharacterEnum(currentCharacterType);
-            var s = shortcut + "_neutralStandBox";
-            PictureBox mybox = (PictureBox)this.Controls.Find(s, true)[0];
-            return mybox;
+            return GetBoxByName("_neutralStandBox");
         }
 
         private PictureBox GetPortraitLossBox()
         {
-            var shortcut = CharacterConfig.CodeFromCharacterEnum(currentCharacterType);
-            var s = shortcut + "_portraitLossBox";
-            PictureBox mybox = (PictureBox)this.Controls.Find(s, true)[0];
-            return mybox;
+            return GetBoxByName("_portraitLossBox");
         }
 
         private PictureBox GetPortraitVictoryBox()
         {
+            return GetBoxByName("_portraitVictoryBox");
+        }
+
+        private PictureBox GetBoxByName(string boxName)
+        {
             var shortcut = CharacterConfig.CodeFromCharacterEnum(currentCharacterType);
-            var s = shortcut + "_portraitVictoryBox";
+            var s = shortcut + boxName;
             PictureBox mybox = (PictureBox)this.Controls.Find(s, true)[0];
             return mybox;
         }
