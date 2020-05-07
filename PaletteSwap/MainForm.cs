@@ -1104,8 +1104,8 @@ namespace PaletteSwap
             if (z.IsDisposed)
                 z = new ZoomForm(this);
             z.Show();
-            // todo replace this with a regex
-            switch (p.Name)
+            var l = extractLabel(p.Name);
+            switch (l)
             {
                 case "psychopunchBox":
                     currentlyZoomedLabel = "psychopunch";
@@ -1119,55 +1119,13 @@ namespace PaletteSwap
                 case "crusherbottomBox":
                     currentlyZoomedLabel = "crusherbottom";
                     break;
-                case "BOX_neutralStandBox":
-                case "DIC_neutralStandBox":
-                case "CLA_neutralStandBox":
-                case "CHU_neutralStandBox":
-                case "GUI_neutralStandBox":
-                case "RYU_neutralStandBox":
-                case "KEN_neutralStandBox":
-                case "ZAN_neutralStandBox":
-                case "EHO_neutralStandBox":
-                case "SAG_neutralStandBox":
-                case "FEI_neutralStandBox":
-                case "DEE_neutralStandBox":
-                case "DHA_neutralStandBox":
-                case "CAM_neutralStandBox":
-                case "THA_neutralStandBox":
+                case "neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
-                case "BOX_portraitVictoryBox":
-                case "DIC_portraitVictoryBox":
-                case "CLA_portraitVictoryBox":
-                case "CHU_portraitVictoryBox":
-                case "GUI_portraitVictoryBox":
-                case "RYU_portraitVictoryBox":
-                case "KEN_portraitVictoryBox":
-                case "ZAN_portraitVictoryBox":
-                case "EHO_portraitVictoryBox":
-                case "SAG_portraitVictoryBox":
-                case "FEI_portraitVictoryBox":
-                case "DEE_portraitVictoryBox":
-                case "DHA_portraitVictoryBox":
-                case "CAM_portraitVictoryBox":
-                case "THA_portraitVictoryBox":
+                case "portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
-                case "BOX_portraitLossBox":
-                case "DIC_portraitLossBox":
-                case "CLA_portraitLossBox":
-                case "CHU_portraitLossBox":
-                case "GUI_portraitLossBox":
-                case "RYU_portraitLossBox":
-                case "KEN_portraitLossBox":
-                case "ZAN_portraitLossBox":
-                case "EHO_portraitLossBox":
-                case "SAG_portraitLossBox":
-                case "FEI_portraitLossBox":
-                case "DEE_portraitLossBox":
-                case "DHA_portraitLossBox":
-                case "CAM_portraitLossBox":
-                case "THA_portraitLossBox":
+                case "portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
