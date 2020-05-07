@@ -1840,9 +1840,6 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Sagat:
                     return Sagat.PORTRAIT.GenerateSagatVictoryBasePaletteImage();
-/*                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.SAG_portraitwin0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());*/
                 case CharacterConfig.CHARACTERS.Feilong:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.FEI_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
@@ -1903,9 +1900,6 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Sagat:
                     return Sagat.PORTRAIT.GenerateSagatLossBasePaletteImage();
-/*                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.SAG_portraitloss0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());*/
                 case CharacterConfig.CHARACTERS.Feilong:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.FEI_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
@@ -2141,6 +2135,19 @@ DictatorVictoryPortraitLabels());
                 public static PaletteImage GenerateSagatPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
                     return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
+                }
+            }
+        }
+
+        public struct Cammy
+        {
+            public struct PORTRAIT
+            {
+                // Cammy's portrait has two dinstinct whites: her hair and her eyes.
+                // We create a custom portrait from her jab where the eyes are FF00FF
+                public static string GenerateCammyCustomXColor()
+                {
+                   return PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp);
                 }
             }
         }
