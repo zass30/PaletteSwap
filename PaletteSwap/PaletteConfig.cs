@@ -1091,7 +1091,7 @@ namespace PaletteSwap
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
-        { "teeth1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "teeth1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0, 14 } },
         { "skin1", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 3 + 2 } },
         { "skin2", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 3 + 4 } },
         { "skin3", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 3 + 6 } },
@@ -1099,10 +1099,9 @@ namespace PaletteSwap
         { "skin5", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 3 + 10 } },
         { "skin6", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 3 + 12 } },
 
-        { "teeth2", new List<int>() { 14 } },
-        { "teeth3", new List<int>() { 16 } },
-        { "teeth4", new List<int>() { 18 } },
-        { "teeth5", new List<int>() { 20, ROWLEN * 3 + 22 } },
+        { "teeth2", new List<int>() { 16 } },
+        { "teeth3", new List<int>() { 18 } },
+        { "teeth4", new List<int>() { 20, ROWLEN * 3 + 22 } },
 
         { "bruise1", new List<int>() { 22 } },
         { "bruise2", new List<int>() { 24 } },

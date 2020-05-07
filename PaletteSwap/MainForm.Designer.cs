@@ -407,8 +407,6 @@
             this.BOX_portrait_gloves3 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_gloves4 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_gloves1 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth6 = new System.Windows.Forms.PictureBox();
-            this.BOX_portrait_teeth5 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_teeth2 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_teeth3 = new System.Windows.Forms.PictureBox();
             this.BOX_portrait_teeth4 = new System.Windows.Forms.PictureBox();
@@ -1089,8 +1087,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).BeginInit();
@@ -1794,7 +1790,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -5402,8 +5398,6 @@
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves3);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves4);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_gloves1);
-            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth6);
-            this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth5);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth2);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth3);
             this.TabPageBoxer.Controls.Add(this.BOX_portrait_teeth4);
@@ -5678,28 +5672,6 @@
             this.BOX_portrait_gloves1.TabStop = false;
             this.BOX_portrait_gloves1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.BOX_portrait_gloves1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth6
-            // 
-            this.BOX_portrait_teeth6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth6.Location = new System.Drawing.Point(508, 248);
-            this.BOX_portrait_teeth6.Name = "BOX_portrait_teeth6";
-            this.BOX_portrait_teeth6.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth6.TabIndex = 289;
-            this.BOX_portrait_teeth6.TabStop = false;
-            this.BOX_portrait_teeth6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth6.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BOX_portrait_teeth5
-            // 
-            this.BOX_portrait_teeth5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BOX_portrait_teeth5.Location = new System.Drawing.Point(478, 248);
-            this.BOX_portrait_teeth5.Name = "BOX_portrait_teeth5";
-            this.BOX_portrait_teeth5.Size = new System.Drawing.Size(24, 24);
-            this.BOX_portrait_teeth5.TabIndex = 288;
-            this.BOX_portrait_teeth5.TabStop = false;
-            this.BOX_portrait_teeth5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BOX_portrait_teeth5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // BOX_portrait_teeth2
             // 
@@ -10864,8 +10836,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_gloves1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BOX_portrait_teeth4)).EndInit();
@@ -11627,8 +11597,6 @@
         private System.Windows.Forms.PictureBox BOX_portrait_skin2;
         private System.Windows.Forms.PictureBox BOX_portrait_skin3;
         private System.Windows.Forms.PictureBox BOX_portrait_skin4;
-        private System.Windows.Forms.PictureBox BOX_portrait_teeth6;
-        private System.Windows.Forms.PictureBox BOX_portrait_teeth5;
         private System.Windows.Forms.PictureBox BOX_portrait_teeth2;
         private System.Windows.Forms.PictureBox BOX_portrait_teeth3;
         private System.Windows.Forms.PictureBox BOX_portrait_teeth4;

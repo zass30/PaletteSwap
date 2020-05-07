@@ -749,8 +749,6 @@ namespace PaletteSwap
                     BOX_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
                     BOX_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
                     BOX_portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
-                    BOX_portrait_teeth5.BackColor = currentCharacter.portrait.GetColor("teeth5");
-                    BOX_portrait_teeth6.BackColor = currentCharacter.portrait.GetColor("teeth6");
 
                     BOX_portrait_gloves1.BackColor = currentCharacter.portrait.GetColor("gloves1");
                     BOX_portrait_gloves2.BackColor = currentCharacter.portrait.GetColor("gloves2");
