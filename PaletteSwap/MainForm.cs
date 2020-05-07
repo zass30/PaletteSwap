@@ -165,25 +165,25 @@ namespace PaletteSwap
         private void load_sprite_buttons()
         {
             var f = currentCharacter.sprite;
-            var labels = f.labelsToColors;
-            foreach (var l in labels)
-            {
-                var s = "_sprite_" + l.Key;
-                var mybox = GetBoxByName(s);
-                mybox.BackColor = currentCharacter.sprite.GetColor(l.Key);
-            }
+            load_buttons(f, "_sprite_");
             return;
         }
 
         private void load_portrait_buttons()
         {
             var f = currentCharacter.portrait;
-            var labels = f.labelsToColors;
+            load_buttons(f, "_portrait_");
+            return;
+        }
+
+        private void load_buttons(Palette p, string boxName)
+        {
+            var labels = p.labelsToColors;
             foreach (var l in labels)
             {
-                var s = "_portrait_" + l.Key;
+                var s = boxName + l.Key;
                 var mybox = GetBoxByName(s);
-                mybox.BackColor = currentCharacter.portrait.GetColor(l.Key);
+                mybox.BackColor = p.GetColor(l.Key);
             }
             return;
         }
