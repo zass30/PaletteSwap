@@ -243,32 +243,32 @@
             this.psychoprepBox = new System.Windows.Forms.PictureBox();
             this.crusherbottomBox = new System.Windows.Forms.PictureBox();
             this.crushertopBox = new System.Windows.Forms.PictureBox();
-            this.portrait_blood3 = new System.Windows.Forms.PictureBox();
-            this.portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_blood2 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crusherhands2 = new System.Windows.Forms.PictureBox();
-            this.portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_blood1 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crusherhands1 = new System.Windows.Forms.PictureBox();
-            this.portrait_pipingloss4 = new System.Windows.Forms.PictureBox();
-            this.portrait_pipingloss3 = new System.Windows.Forms.PictureBox();
-            this.portrait_pipingloss2 = new System.Windows.Forms.PictureBox();
-            this.portrait_pipingloss1 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_pipingloss4 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_pipingloss3 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_pipingloss2 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_pipingloss1 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crusherflame2 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_skin1 = new System.Windows.Forms.PictureBox();
-            this.portrait_piping4 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_piping4 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crusherflame1 = new System.Windows.Forms.PictureBox();
-            this.portrait_piping3 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_piping3 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_skin2 = new System.Windows.Forms.PictureBox();
-            this.portrait_piping2 = new System.Windows.Forms.PictureBox();
-            this.portrait_piping1 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_piping2 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_piping1 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crushercostume4 = new System.Windows.Forms.PictureBox();
-            this.portrait_costumeloss4 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_costumeloss4 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_skin4 = new System.Windows.Forms.PictureBox();
-            this.portrait_costumeloss3 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_costumeloss3 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crushercostume3 = new System.Windows.Forms.PictureBox();
-            this.portrait_costumeloss2 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_costumeloss2 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_pads1 = new System.Windows.Forms.PictureBox();
-            this.portrait_costumeloss1 = new System.Windows.Forms.PictureBox();
+            this.DIC_portrait_costumeloss1 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_crushercostume2 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_pads2 = new System.Windows.Forms.PictureBox();
             this.DIC_portrait_costume4 = new System.Windows.Forms.PictureBox();
@@ -308,25 +308,25 @@
             this.DIC_sprite_psychopunch1 = new System.Windows.Forms.PictureBox();
             this.DIC_sprite_psychopunch2 = new System.Windows.Forms.PictureBox();
             this.CLA_portraitLossBox = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_blood3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_blood2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_blood1 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal5 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_iris = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_costume3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_costume2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_costume1 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal4 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_metal1 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair4 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_hair1 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_skin3 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_skin2 = new System.Windows.Forms.PictureBox();
-            this.portrait_claw_skin1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_metal5 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_iris = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_costume3 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_costume2 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_costume1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_metal4 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_metal3 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_metal2 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_metal1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_hair4 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_hair3 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_hair2 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_hair1 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.CLA_portrait_skin1 = new System.Windows.Forms.PictureBox();
             this.CLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.CLA_sprite_stripe = new System.Windows.Forms.PictureBox();
             this.CLA_sprite_outline = new System.Windows.Forms.PictureBox();
@@ -837,6 +837,8 @@
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DEE_portrait_teeth4 = new System.Windows.Forms.PictureBox();
+            this.DEE_portrait_blood4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -864,32 +866,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crushertopBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_blood3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_blood2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_blood1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherflame2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherflame1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crushercostume4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crushercostume3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_pads1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crushercostume2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_pads2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costume4)).BeginInit();
@@ -929,25 +931,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_psychopunch1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_psychopunch2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_iris)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitVictoryBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_sprite_stripe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_sprite_outline)).BeginInit();
@@ -1448,6 +1450,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.THA_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2082,42 +2086,42 @@
             this.TabPageDictator.Controls.Add(this.crushertopBox);
             this.TabPageDictator.Controls.Add(this.label15);
             this.TabPageDictator.Controls.Add(this.label21);
-            this.TabPageDictator.Controls.Add(this.portrait_blood3);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_blood3);
             this.TabPageDictator.Controls.Add(this.label2);
-            this.TabPageDictator.Controls.Add(this.portrait_blood2);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_blood2);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherhands2);
-            this.TabPageDictator.Controls.Add(this.portrait_blood1);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_blood1);
             this.TabPageDictator.Controls.Add(this.label3);
             this.TabPageDictator.Controls.Add(this.label1);
             this.TabPageDictator.Controls.Add(this.label14);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherhands1);
-            this.TabPageDictator.Controls.Add(this.portrait_pipingloss4);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_pipingloss4);
             this.TabPageDictator.Controls.Add(this.label4);
-            this.TabPageDictator.Controls.Add(this.portrait_pipingloss3);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_pipingloss3);
             this.TabPageDictator.Controls.Add(this.label20);
-            this.TabPageDictator.Controls.Add(this.portrait_pipingloss2);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_pipingloss2);
             this.TabPageDictator.Controls.Add(this.label5);
-            this.TabPageDictator.Controls.Add(this.portrait_pipingloss1);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_pipingloss1);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherflame2);
             this.TabPageDictator.Controls.Add(this.label13);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_skin1);
-            this.TabPageDictator.Controls.Add(this.portrait_piping4);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_piping4);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherflame1);
-            this.TabPageDictator.Controls.Add(this.portrait_piping3);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_piping3);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_skin2);
-            this.TabPageDictator.Controls.Add(this.portrait_piping2);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_piping2);
             this.TabPageDictator.Controls.Add(this.label19);
-            this.TabPageDictator.Controls.Add(this.portrait_piping1);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_piping1);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_skin3);
             this.TabPageDictator.Controls.Add(this.label12);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crushercostume4);
-            this.TabPageDictator.Controls.Add(this.portrait_costumeloss4);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_costumeloss4);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_skin4);
-            this.TabPageDictator.Controls.Add(this.portrait_costumeloss3);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_costumeloss3);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crushercostume3);
-            this.TabPageDictator.Controls.Add(this.portrait_costumeloss2);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_costumeloss2);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_pads1);
-            this.TabPageDictator.Controls.Add(this.portrait_costumeloss1);
+            this.TabPageDictator.Controls.Add(this.DIC_portrait_costumeloss1);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crushercostume2);
             this.TabPageDictator.Controls.Add(this.label11);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_pads2);
@@ -2183,25 +2187,25 @@
             this.TabPageClaw.Controls.Add(this.label23);
             this.TabPageClaw.Controls.Add(this.label22);
             this.TabPageClaw.Controls.Add(this.label16);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_blood3);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_blood2);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_blood1);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_metal5);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_iris);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_costume3);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_costume2);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_costume1);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_metal4);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_metal3);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_metal2);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_metal1);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_hair4);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_hair3);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_hair2);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_hair1);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_skin3);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_skin2);
-            this.TabPageClaw.Controls.Add(this.portrait_claw_skin1);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_blood3);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_blood2);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_blood1);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_metal5);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_iris);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_costume3);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_costume2);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_costume1);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_metal4);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_metal3);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_metal2);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_metal1);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_hair4);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_hair3);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_hair2);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_hair1);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_skin3);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_skin2);
+            this.TabPageClaw.Controls.Add(this.CLA_portrait_skin1);
             this.TabPageClaw.Controls.Add(this.CLA_portraitVictoryBox);
             this.TabPageClaw.Controls.Add(this.CLA_sprite_stripe);
             this.TabPageClaw.Controls.Add(this.CLA_sprite_outline);
@@ -3632,6 +3636,8 @@
             // 
             // TabPageDeejay
             // 
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_blood4);
+            this.TabPageDeejay.Controls.Add(this.DEE_portrait_teeth4);
             this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin7);
             this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin6);
             this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin5);
@@ -4124,27 +4130,27 @@
             this.crushertopBox.TabStop = false;
             this.crushertopBox.Click += new System.EventHandler(this.zoom);
             // 
-            // portrait_blood3
+            // DIC_portrait_blood3
             // 
-            this.portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_blood3.Location = new System.Drawing.Point(429, 418);
-            this.portrait_blood3.Name = "portrait_blood3";
-            this.portrait_blood3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_blood3.TabIndex = 77;
-            this.portrait_blood3.TabStop = false;
-            this.portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_blood3.Location = new System.Drawing.Point(429, 418);
+            this.DIC_portrait_blood3.Name = "DIC_portrait_blood3";
+            this.DIC_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_blood3.TabIndex = 77;
+            this.DIC_portrait_blood3.TabStop = false;
+            this.DIC_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_blood2
+            // DIC_portrait_blood2
             // 
-            this.portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_blood2.Location = new System.Drawing.Point(399, 418);
-            this.portrait_blood2.Name = "portrait_blood2";
-            this.portrait_blood2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_blood2.TabIndex = 76;
-            this.portrait_blood2.TabStop = false;
-            this.portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_blood2.Location = new System.Drawing.Point(399, 418);
+            this.DIC_portrait_blood2.Name = "DIC_portrait_blood2";
+            this.DIC_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_blood2.TabIndex = 76;
+            this.DIC_portrait_blood2.TabStop = false;
+            this.DIC_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_crusherhands2
             // 
@@ -4157,16 +4163,16 @@
             this.DIC_sprite_crusherhands2.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.DIC_sprite_crusherhands2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_blood1
+            // DIC_portrait_blood1
             // 
-            this.portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_blood1.Location = new System.Drawing.Point(369, 418);
-            this.portrait_blood1.Name = "portrait_blood1";
-            this.portrait_blood1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_blood1.TabIndex = 75;
-            this.portrait_blood1.TabStop = false;
-            this.portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_blood1.Location = new System.Drawing.Point(369, 418);
+            this.DIC_portrait_blood1.Name = "DIC_portrait_blood1";
+            this.DIC_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_blood1.TabIndex = 75;
+            this.DIC_portrait_blood1.TabStop = false;
+            this.DIC_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_crusherhands1
             // 
@@ -4179,49 +4185,49 @@
             this.DIC_sprite_crusherhands1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.DIC_sprite_crusherhands1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_pipingloss4
+            // DIC_portrait_pipingloss4
             // 
-            this.portrait_pipingloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss4.Location = new System.Drawing.Point(459, 388);
-            this.portrait_pipingloss4.Name = "portrait_pipingloss4";
-            this.portrait_pipingloss4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_pipingloss4.TabIndex = 73;
-            this.portrait_pipingloss4.TabStop = false;
-            this.portrait_pipingloss4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_pipingloss4.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_pipingloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_pipingloss4.Location = new System.Drawing.Point(459, 388);
+            this.DIC_portrait_pipingloss4.Name = "DIC_portrait_pipingloss4";
+            this.DIC_portrait_pipingloss4.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_pipingloss4.TabIndex = 73;
+            this.DIC_portrait_pipingloss4.TabStop = false;
+            this.DIC_portrait_pipingloss4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_pipingloss4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_pipingloss3
+            // DIC_portrait_pipingloss3
             // 
-            this.portrait_pipingloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss3.Location = new System.Drawing.Point(429, 388);
-            this.portrait_pipingloss3.Name = "portrait_pipingloss3";
-            this.portrait_pipingloss3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_pipingloss3.TabIndex = 72;
-            this.portrait_pipingloss3.TabStop = false;
-            this.portrait_pipingloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_pipingloss3.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_pipingloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_pipingloss3.Location = new System.Drawing.Point(429, 388);
+            this.DIC_portrait_pipingloss3.Name = "DIC_portrait_pipingloss3";
+            this.DIC_portrait_pipingloss3.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_pipingloss3.TabIndex = 72;
+            this.DIC_portrait_pipingloss3.TabStop = false;
+            this.DIC_portrait_pipingloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_pipingloss3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_pipingloss2
+            // DIC_portrait_pipingloss2
             // 
-            this.portrait_pipingloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss2.Location = new System.Drawing.Point(399, 388);
-            this.portrait_pipingloss2.Name = "portrait_pipingloss2";
-            this.portrait_pipingloss2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_pipingloss2.TabIndex = 71;
-            this.portrait_pipingloss2.TabStop = false;
-            this.portrait_pipingloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_pipingloss2.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_pipingloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_pipingloss2.Location = new System.Drawing.Point(399, 388);
+            this.DIC_portrait_pipingloss2.Name = "DIC_portrait_pipingloss2";
+            this.DIC_portrait_pipingloss2.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_pipingloss2.TabIndex = 71;
+            this.DIC_portrait_pipingloss2.TabStop = false;
+            this.DIC_portrait_pipingloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_pipingloss2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_pipingloss1
+            // DIC_portrait_pipingloss1
             // 
-            this.portrait_pipingloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_pipingloss1.Location = new System.Drawing.Point(369, 388);
-            this.portrait_pipingloss1.Name = "portrait_pipingloss1";
-            this.portrait_pipingloss1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_pipingloss1.TabIndex = 70;
-            this.portrait_pipingloss1.TabStop = false;
-            this.portrait_pipingloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_pipingloss1.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_pipingloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_pipingloss1.Location = new System.Drawing.Point(369, 388);
+            this.DIC_portrait_pipingloss1.Name = "DIC_portrait_pipingloss1";
+            this.DIC_portrait_pipingloss1.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_pipingloss1.TabIndex = 70;
+            this.DIC_portrait_pipingloss1.TabStop = false;
+            this.DIC_portrait_pipingloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_pipingloss1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_crusherflame2
             // 
@@ -4245,16 +4251,16 @@
             this.DIC_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.DIC_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_piping4
+            // DIC_portrait_piping4
             // 
-            this.portrait_piping4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping4.Location = new System.Drawing.Point(459, 358);
-            this.portrait_piping4.Name = "portrait_piping4";
-            this.portrait_piping4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_piping4.TabIndex = 68;
-            this.portrait_piping4.TabStop = false;
-            this.portrait_piping4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_piping4.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_piping4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_piping4.Location = new System.Drawing.Point(459, 358);
+            this.DIC_portrait_piping4.Name = "DIC_portrait_piping4";
+            this.DIC_portrait_piping4.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_piping4.TabIndex = 68;
+            this.DIC_portrait_piping4.TabStop = false;
+            this.DIC_portrait_piping4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_piping4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_crusherflame1
             // 
@@ -4267,16 +4273,16 @@
             this.DIC_sprite_crusherflame1.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.DIC_sprite_crusherflame1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_piping3
+            // DIC_portrait_piping3
             // 
-            this.portrait_piping3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping3.Location = new System.Drawing.Point(429, 358);
-            this.portrait_piping3.Name = "portrait_piping3";
-            this.portrait_piping3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_piping3.TabIndex = 67;
-            this.portrait_piping3.TabStop = false;
-            this.portrait_piping3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_piping3.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_piping3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_piping3.Location = new System.Drawing.Point(429, 358);
+            this.DIC_portrait_piping3.Name = "DIC_portrait_piping3";
+            this.DIC_portrait_piping3.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_piping3.TabIndex = 67;
+            this.DIC_portrait_piping3.TabStop = false;
+            this.DIC_portrait_piping3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_piping3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_skin2
             // 
@@ -4289,27 +4295,27 @@
             this.DIC_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.DIC_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_piping2
+            // DIC_portrait_piping2
             // 
-            this.portrait_piping2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping2.Location = new System.Drawing.Point(399, 358);
-            this.portrait_piping2.Name = "portrait_piping2";
-            this.portrait_piping2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_piping2.TabIndex = 66;
-            this.portrait_piping2.TabStop = false;
-            this.portrait_piping2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_piping2.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_piping2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_piping2.Location = new System.Drawing.Point(399, 358);
+            this.DIC_portrait_piping2.Name = "DIC_portrait_piping2";
+            this.DIC_portrait_piping2.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_piping2.TabIndex = 66;
+            this.DIC_portrait_piping2.TabStop = false;
+            this.DIC_portrait_piping2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_piping2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_piping1
+            // DIC_portrait_piping1
             // 
-            this.portrait_piping1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_piping1.Location = new System.Drawing.Point(369, 358);
-            this.portrait_piping1.Name = "portrait_piping1";
-            this.portrait_piping1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_piping1.TabIndex = 65;
-            this.portrait_piping1.TabStop = false;
-            this.portrait_piping1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_piping1.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_piping1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_piping1.Location = new System.Drawing.Point(369, 358);
+            this.DIC_portrait_piping1.Name = "DIC_portrait_piping1";
+            this.DIC_portrait_piping1.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_piping1.TabIndex = 65;
+            this.DIC_portrait_piping1.TabStop = false;
+            this.DIC_portrait_piping1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_piping1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_skin3
             // 
@@ -4333,16 +4339,16 @@
             this.DIC_sprite_crushercostume4.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.DIC_sprite_crushercostume4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_costumeloss4
+            // DIC_portrait_costumeloss4
             // 
-            this.portrait_costumeloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss4.Location = new System.Drawing.Point(459, 328);
-            this.portrait_costumeloss4.Name = "portrait_costumeloss4";
-            this.portrait_costumeloss4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_costumeloss4.TabIndex = 63;
-            this.portrait_costumeloss4.TabStop = false;
-            this.portrait_costumeloss4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_costumeloss4.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_costumeloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_costumeloss4.Location = new System.Drawing.Point(459, 328);
+            this.DIC_portrait_costumeloss4.Name = "DIC_portrait_costumeloss4";
+            this.DIC_portrait_costumeloss4.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_costumeloss4.TabIndex = 63;
+            this.DIC_portrait_costumeloss4.TabStop = false;
+            this.DIC_portrait_costumeloss4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_costumeloss4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_skin4
             // 
@@ -4355,16 +4361,16 @@
             this.DIC_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.DIC_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_costumeloss3
+            // DIC_portrait_costumeloss3
             // 
-            this.portrait_costumeloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss3.Location = new System.Drawing.Point(429, 328);
-            this.portrait_costumeloss3.Name = "portrait_costumeloss3";
-            this.portrait_costumeloss3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_costumeloss3.TabIndex = 62;
-            this.portrait_costumeloss3.TabStop = false;
-            this.portrait_costumeloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_costumeloss3.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_costumeloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_costumeloss3.Location = new System.Drawing.Point(429, 328);
+            this.DIC_portrait_costumeloss3.Name = "DIC_portrait_costumeloss3";
+            this.DIC_portrait_costumeloss3.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_costumeloss3.TabIndex = 62;
+            this.DIC_portrait_costumeloss3.TabStop = false;
+            this.DIC_portrait_costumeloss3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_costumeloss3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_crushercostume3
             // 
@@ -4377,16 +4383,16 @@
             this.DIC_sprite_crushercostume3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
             this.DIC_sprite_crushercostume3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_costumeloss2
+            // DIC_portrait_costumeloss2
             // 
-            this.portrait_costumeloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss2.Location = new System.Drawing.Point(399, 328);
-            this.portrait_costumeloss2.Name = "portrait_costumeloss2";
-            this.portrait_costumeloss2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_costumeloss2.TabIndex = 61;
-            this.portrait_costumeloss2.TabStop = false;
-            this.portrait_costumeloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_costumeloss2.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_costumeloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_costumeloss2.Location = new System.Drawing.Point(399, 328);
+            this.DIC_portrait_costumeloss2.Name = "DIC_portrait_costumeloss2";
+            this.DIC_portrait_costumeloss2.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_costumeloss2.TabIndex = 61;
+            this.DIC_portrait_costumeloss2.TabStop = false;
+            this.DIC_portrait_costumeloss2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_costumeloss2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_pads1
             // 
@@ -4399,16 +4405,16 @@
             this.DIC_sprite_pads1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.DIC_sprite_pads1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_costumeloss1
+            // DIC_portrait_costumeloss1
             // 
-            this.portrait_costumeloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_costumeloss1.Location = new System.Drawing.Point(369, 328);
-            this.portrait_costumeloss1.Name = "portrait_costumeloss1";
-            this.portrait_costumeloss1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_costumeloss1.TabIndex = 60;
-            this.portrait_costumeloss1.TabStop = false;
-            this.portrait_costumeloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_costumeloss1.Click += new System.EventHandler(this.pal_square_click);
+            this.DIC_portrait_costumeloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_portrait_costumeloss1.Location = new System.Drawing.Point(369, 328);
+            this.DIC_portrait_costumeloss1.Name = "DIC_portrait_costumeloss1";
+            this.DIC_portrait_costumeloss1.Size = new System.Drawing.Size(24, 24);
+            this.DIC_portrait_costumeloss1.TabIndex = 60;
+            this.DIC_portrait_costumeloss1.TabStop = false;
+            this.DIC_portrait_costumeloss1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.DIC_portrait_costumeloss1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DIC_sprite_crushercostume2
             // 
@@ -4838,214 +4844,214 @@
             this.CLA_portraitLossBox.TabStop = false;
             this.CLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
             // 
-            // portrait_claw_blood3
+            // CLA_portrait_blood3
             // 
-            this.portrait_claw_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood3.Location = new System.Drawing.Point(391, 277);
-            this.portrait_claw_blood3.Name = "portrait_claw_blood3";
-            this.portrait_claw_blood3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_blood3.TabIndex = 169;
-            this.portrait_claw_blood3.TabStop = false;
-            this.portrait_claw_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_blood3.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_blood3.Location = new System.Drawing.Point(391, 277);
+            this.CLA_portrait_blood3.Name = "CLA_portrait_blood3";
+            this.CLA_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_blood3.TabIndex = 169;
+            this.CLA_portrait_blood3.TabStop = false;
+            this.CLA_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_blood2
+            // CLA_portrait_blood2
             // 
-            this.portrait_claw_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood2.Location = new System.Drawing.Point(361, 277);
-            this.portrait_claw_blood2.Name = "portrait_claw_blood2";
-            this.portrait_claw_blood2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_blood2.TabIndex = 168;
-            this.portrait_claw_blood2.TabStop = false;
-            this.portrait_claw_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_blood2.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_blood2.Location = new System.Drawing.Point(361, 277);
+            this.CLA_portrait_blood2.Name = "CLA_portrait_blood2";
+            this.CLA_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_blood2.TabIndex = 168;
+            this.CLA_portrait_blood2.TabStop = false;
+            this.CLA_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_blood1
+            // CLA_portrait_blood1
             // 
-            this.portrait_claw_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_blood1.Location = new System.Drawing.Point(331, 277);
-            this.portrait_claw_blood1.Name = "portrait_claw_blood1";
-            this.portrait_claw_blood1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_blood1.TabIndex = 167;
-            this.portrait_claw_blood1.TabStop = false;
-            this.portrait_claw_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_blood1.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_blood1.Location = new System.Drawing.Point(331, 277);
+            this.CLA_portrait_blood1.Name = "CLA_portrait_blood1";
+            this.CLA_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_blood1.TabIndex = 167;
+            this.CLA_portrait_blood1.TabStop = false;
+            this.CLA_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_metal5
+            // CLA_portrait_metal5
             // 
-            this.portrait_claw_metal5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal5.Location = new System.Drawing.Point(451, 247);
-            this.portrait_claw_metal5.Name = "portrait_claw_metal5";
-            this.portrait_claw_metal5.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal5.TabIndex = 166;
-            this.portrait_claw_metal5.TabStop = false;
-            this.portrait_claw_metal5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal5.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_metal5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_metal5.Location = new System.Drawing.Point(451, 247);
+            this.CLA_portrait_metal5.Name = "CLA_portrait_metal5";
+            this.CLA_portrait_metal5.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_metal5.TabIndex = 166;
+            this.CLA_portrait_metal5.TabStop = false;
+            this.CLA_portrait_metal5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_metal5.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_iris
+            // CLA_portrait_iris
             // 
-            this.portrait_claw_iris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_iris.Location = new System.Drawing.Point(331, 307);
-            this.portrait_claw_iris.Name = "portrait_claw_iris";
-            this.portrait_claw_iris.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_iris.TabIndex = 164;
-            this.portrait_claw_iris.TabStop = false;
-            this.portrait_claw_iris.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_iris.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_iris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_iris.Location = new System.Drawing.Point(331, 307);
+            this.CLA_portrait_iris.Name = "CLA_portrait_iris";
+            this.CLA_portrait_iris.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_iris.TabIndex = 164;
+            this.CLA_portrait_iris.TabStop = false;
+            this.CLA_portrait_iris.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_iris.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_costume3
+            // CLA_portrait_costume3
             // 
-            this.portrait_claw_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume3.Location = new System.Drawing.Point(391, 217);
-            this.portrait_claw_costume3.Name = "portrait_claw_costume3";
-            this.portrait_claw_costume3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_costume3.TabIndex = 161;
-            this.portrait_claw_costume3.TabStop = false;
-            this.portrait_claw_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_costume3.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_costume3.Location = new System.Drawing.Point(391, 217);
+            this.CLA_portrait_costume3.Name = "CLA_portrait_costume3";
+            this.CLA_portrait_costume3.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_costume3.TabIndex = 161;
+            this.CLA_portrait_costume3.TabStop = false;
+            this.CLA_portrait_costume3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_costume2
+            // CLA_portrait_costume2
             // 
-            this.portrait_claw_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume2.Location = new System.Drawing.Point(361, 217);
-            this.portrait_claw_costume2.Name = "portrait_claw_costume2";
-            this.portrait_claw_costume2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_costume2.TabIndex = 160;
-            this.portrait_claw_costume2.TabStop = false;
-            this.portrait_claw_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_costume2.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_costume2.Location = new System.Drawing.Point(361, 217);
+            this.CLA_portrait_costume2.Name = "CLA_portrait_costume2";
+            this.CLA_portrait_costume2.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_costume2.TabIndex = 160;
+            this.CLA_portrait_costume2.TabStop = false;
+            this.CLA_portrait_costume2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_costume1
+            // CLA_portrait_costume1
             // 
-            this.portrait_claw_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_costume1.Location = new System.Drawing.Point(331, 217);
-            this.portrait_claw_costume1.Name = "portrait_claw_costume1";
-            this.portrait_claw_costume1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_costume1.TabIndex = 159;
-            this.portrait_claw_costume1.TabStop = false;
-            this.portrait_claw_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_costume1.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_costume1.Location = new System.Drawing.Point(331, 217);
+            this.CLA_portrait_costume1.Name = "CLA_portrait_costume1";
+            this.CLA_portrait_costume1.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_costume1.TabIndex = 159;
+            this.CLA_portrait_costume1.TabStop = false;
+            this.CLA_portrait_costume1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_metal4
+            // CLA_portrait_metal4
             // 
-            this.portrait_claw_metal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal4.Location = new System.Drawing.Point(421, 247);
-            this.portrait_claw_metal4.Name = "portrait_claw_metal4";
-            this.portrait_claw_metal4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal4.TabIndex = 157;
-            this.portrait_claw_metal4.TabStop = false;
-            this.portrait_claw_metal4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal4.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_metal4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_metal4.Location = new System.Drawing.Point(421, 247);
+            this.CLA_portrait_metal4.Name = "CLA_portrait_metal4";
+            this.CLA_portrait_metal4.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_metal4.TabIndex = 157;
+            this.CLA_portrait_metal4.TabStop = false;
+            this.CLA_portrait_metal4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_metal4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_metal3
+            // CLA_portrait_metal3
             // 
-            this.portrait_claw_metal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal3.Location = new System.Drawing.Point(391, 247);
-            this.portrait_claw_metal3.Name = "portrait_claw_metal3";
-            this.portrait_claw_metal3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal3.TabIndex = 156;
-            this.portrait_claw_metal3.TabStop = false;
-            this.portrait_claw_metal3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal3.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_metal3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_metal3.Location = new System.Drawing.Point(391, 247);
+            this.CLA_portrait_metal3.Name = "CLA_portrait_metal3";
+            this.CLA_portrait_metal3.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_metal3.TabIndex = 156;
+            this.CLA_portrait_metal3.TabStop = false;
+            this.CLA_portrait_metal3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_metal3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_metal2
+            // CLA_portrait_metal2
             // 
-            this.portrait_claw_metal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal2.Location = new System.Drawing.Point(361, 247);
-            this.portrait_claw_metal2.Name = "portrait_claw_metal2";
-            this.portrait_claw_metal2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal2.TabIndex = 155;
-            this.portrait_claw_metal2.TabStop = false;
-            this.portrait_claw_metal2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal2.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_metal2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_metal2.Location = new System.Drawing.Point(361, 247);
+            this.CLA_portrait_metal2.Name = "CLA_portrait_metal2";
+            this.CLA_portrait_metal2.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_metal2.TabIndex = 155;
+            this.CLA_portrait_metal2.TabStop = false;
+            this.CLA_portrait_metal2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_metal2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_metal1
+            // CLA_portrait_metal1
             // 
-            this.portrait_claw_metal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_metal1.Location = new System.Drawing.Point(331, 247);
-            this.portrait_claw_metal1.Name = "portrait_claw_metal1";
-            this.portrait_claw_metal1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_metal1.TabIndex = 154;
-            this.portrait_claw_metal1.TabStop = false;
-            this.portrait_claw_metal1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_metal1.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_metal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_metal1.Location = new System.Drawing.Point(331, 247);
+            this.CLA_portrait_metal1.Name = "CLA_portrait_metal1";
+            this.CLA_portrait_metal1.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_metal1.TabIndex = 154;
+            this.CLA_portrait_metal1.TabStop = false;
+            this.CLA_portrait_metal1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_metal1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_hair4
+            // CLA_portrait_hair4
             // 
-            this.portrait_claw_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair4.Location = new System.Drawing.Point(421, 187);
-            this.portrait_claw_hair4.Name = "portrait_claw_hair4";
-            this.portrait_claw_hair4.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair4.TabIndex = 152;
-            this.portrait_claw_hair4.TabStop = false;
-            this.portrait_claw_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair4.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_hair4.Location = new System.Drawing.Point(421, 187);
+            this.CLA_portrait_hair4.Name = "CLA_portrait_hair4";
+            this.CLA_portrait_hair4.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_hair4.TabIndex = 152;
+            this.CLA_portrait_hair4.TabStop = false;
+            this.CLA_portrait_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_hair4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_hair3
+            // CLA_portrait_hair3
             // 
-            this.portrait_claw_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair3.Location = new System.Drawing.Point(391, 187);
-            this.portrait_claw_hair3.Name = "portrait_claw_hair3";
-            this.portrait_claw_hair3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair3.TabIndex = 151;
-            this.portrait_claw_hair3.TabStop = false;
-            this.portrait_claw_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair3.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_hair3.Location = new System.Drawing.Point(391, 187);
+            this.CLA_portrait_hair3.Name = "CLA_portrait_hair3";
+            this.CLA_portrait_hair3.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_hair3.TabIndex = 151;
+            this.CLA_portrait_hair3.TabStop = false;
+            this.CLA_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_hair2
+            // CLA_portrait_hair2
             // 
-            this.portrait_claw_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair2.Location = new System.Drawing.Point(361, 187);
-            this.portrait_claw_hair2.Name = "portrait_claw_hair2";
-            this.portrait_claw_hair2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair2.TabIndex = 150;
-            this.portrait_claw_hair2.TabStop = false;
-            this.portrait_claw_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair2.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_hair2.Location = new System.Drawing.Point(361, 187);
+            this.CLA_portrait_hair2.Name = "CLA_portrait_hair2";
+            this.CLA_portrait_hair2.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_hair2.TabIndex = 150;
+            this.CLA_portrait_hair2.TabStop = false;
+            this.CLA_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_hair1
+            // CLA_portrait_hair1
             // 
-            this.portrait_claw_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_hair1.Location = new System.Drawing.Point(331, 187);
-            this.portrait_claw_hair1.Name = "portrait_claw_hair1";
-            this.portrait_claw_hair1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_hair1.TabIndex = 149;
-            this.portrait_claw_hair1.TabStop = false;
-            this.portrait_claw_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_hair1.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_hair1.Location = new System.Drawing.Point(331, 187);
+            this.CLA_portrait_hair1.Name = "CLA_portrait_hair1";
+            this.CLA_portrait_hair1.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_hair1.TabIndex = 149;
+            this.CLA_portrait_hair1.TabStop = false;
+            this.CLA_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_skin3
+            // CLA_portrait_skin3
             // 
-            this.portrait_claw_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin3.Location = new System.Drawing.Point(391, 157);
-            this.portrait_claw_skin3.Name = "portrait_claw_skin3";
-            this.portrait_claw_skin3.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_skin3.TabIndex = 147;
-            this.portrait_claw_skin3.TabStop = false;
-            this.portrait_claw_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_skin3.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_skin3.Location = new System.Drawing.Point(391, 157);
+            this.CLA_portrait_skin3.Name = "CLA_portrait_skin3";
+            this.CLA_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_skin3.TabIndex = 147;
+            this.CLA_portrait_skin3.TabStop = false;
+            this.CLA_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_skin2
+            // CLA_portrait_skin2
             // 
-            this.portrait_claw_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin2.Location = new System.Drawing.Point(361, 157);
-            this.portrait_claw_skin2.Name = "portrait_claw_skin2";
-            this.portrait_claw_skin2.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_skin2.TabIndex = 146;
-            this.portrait_claw_skin2.TabStop = false;
-            this.portrait_claw_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_skin2.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_skin2.Location = new System.Drawing.Point(361, 157);
+            this.CLA_portrait_skin2.Name = "CLA_portrait_skin2";
+            this.CLA_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_skin2.TabIndex = 146;
+            this.CLA_portrait_skin2.TabStop = false;
+            this.CLA_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // portrait_claw_skin1
+            // CLA_portrait_skin1
             // 
-            this.portrait_claw_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.portrait_claw_skin1.Location = new System.Drawing.Point(331, 157);
-            this.portrait_claw_skin1.Name = "portrait_claw_skin1";
-            this.portrait_claw_skin1.Size = new System.Drawing.Size(24, 24);
-            this.portrait_claw_skin1.TabIndex = 145;
-            this.portrait_claw_skin1.TabStop = false;
-            this.portrait_claw_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.portrait_claw_skin1.Click += new System.EventHandler(this.pal_square_click);
+            this.CLA_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CLA_portrait_skin1.Location = new System.Drawing.Point(331, 157);
+            this.CLA_portrait_skin1.Name = "CLA_portrait_skin1";
+            this.CLA_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.CLA_portrait_skin1.TabIndex = 145;
+            this.CLA_portrait_skin1.TabStop = false;
+            this.CLA_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.CLA_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // CLA_portraitVictoryBox
             // 
@@ -10594,6 +10600,24 @@
             this.pasteToolStripMenuItem.Text = "&Paste";
             this.pasteToolStripMenuItem.Visible = false;
             // 
+            // DEE_portrait_teeth4
+            // 
+            this.DEE_portrait_teeth4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_teeth4.Location = new System.Drawing.Point(432, 297);
+            this.DEE_portrait_teeth4.Name = "DEE_portrait_teeth4";
+            this.DEE_portrait_teeth4.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_teeth4.TabIndex = 408;
+            this.DEE_portrait_teeth4.TabStop = false;
+            // 
+            // DEE_portrait_blood4
+            // 
+            this.DEE_portrait_blood4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DEE_portrait_blood4.Location = new System.Drawing.Point(432, 267);
+            this.DEE_portrait_blood4.Name = "DEE_portrait_blood4";
+            this.DEE_portrait_blood4.Size = new System.Drawing.Size(24, 24);
+            this.DEE_portrait_blood4.TabIndex = 409;
+            this.DEE_portrait_blood4.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10665,32 +10689,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.psychoprepBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crusherbottomBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crushertopBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_blood3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_blood2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_blood1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_pipingloss1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_pipingloss1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherflame2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherflame1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_piping1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_piping1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crushercostume4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_skin4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crushercostume3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_pads1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_costumeloss1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costumeloss1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crushercostume2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_pads2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_portrait_costume4)).EndInit();
@@ -10730,25 +10754,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_psychopunch1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_psychopunch2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitLossBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_blood1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_iris)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_costume1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_metal1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_hair1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.portrait_claw_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_iris)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_metal1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CLA_portrait_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_portraitVictoryBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_sprite_stripe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CLA_sprite_outline)).EndInit();
@@ -11249,6 +11273,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.THA_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_teeth4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DEE_portrait_blood4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -11305,23 +11331,23 @@
         private System.Windows.Forms.PictureBox DIC_portrait_costume4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox portrait_costumeloss4;
-        private System.Windows.Forms.PictureBox portrait_costumeloss3;
-        private System.Windows.Forms.PictureBox portrait_costumeloss2;
-        private System.Windows.Forms.PictureBox portrait_costumeloss1;
-        private System.Windows.Forms.PictureBox portrait_piping1;
-        private System.Windows.Forms.PictureBox portrait_piping2;
-        private System.Windows.Forms.PictureBox portrait_piping3;
-        private System.Windows.Forms.PictureBox portrait_piping4;
+        private System.Windows.Forms.PictureBox DIC_portrait_costumeloss4;
+        private System.Windows.Forms.PictureBox DIC_portrait_costumeloss3;
+        private System.Windows.Forms.PictureBox DIC_portrait_costumeloss2;
+        private System.Windows.Forms.PictureBox DIC_portrait_costumeloss1;
+        private System.Windows.Forms.PictureBox DIC_portrait_piping1;
+        private System.Windows.Forms.PictureBox DIC_portrait_piping2;
+        private System.Windows.Forms.PictureBox DIC_portrait_piping3;
+        private System.Windows.Forms.PictureBox DIC_portrait_piping4;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox portrait_pipingloss1;
-        private System.Windows.Forms.PictureBox portrait_pipingloss2;
-        private System.Windows.Forms.PictureBox portrait_pipingloss3;
-        private System.Windows.Forms.PictureBox portrait_pipingloss4;
+        private System.Windows.Forms.PictureBox DIC_portrait_pipingloss1;
+        private System.Windows.Forms.PictureBox DIC_portrait_pipingloss2;
+        private System.Windows.Forms.PictureBox DIC_portrait_pipingloss3;
+        private System.Windows.Forms.PictureBox DIC_portrait_pipingloss4;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox portrait_blood1;
-        private System.Windows.Forms.PictureBox portrait_blood2;
-        private System.Windows.Forms.PictureBox portrait_blood3;
+        private System.Windows.Forms.PictureBox DIC_portrait_blood1;
+        private System.Windows.Forms.PictureBox DIC_portrait_blood2;
+        private System.Windows.Forms.PictureBox DIC_portrait_blood3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox DIC_sprite_psychoglow;
         private System.Windows.Forms.PictureBox DIC_sprite_psychopunch1;
@@ -11416,33 +11442,33 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox CLA_sprite_stripe;
         private System.Windows.Forms.PictureBox CLA_sprite_outline;
-        private System.Windows.Forms.PictureBox portrait_claw_skin1;
+        private System.Windows.Forms.PictureBox CLA_portrait_skin1;
         private System.Windows.Forms.PictureBox CLA_portraitVictoryBox;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.PictureBox portrait_claw_skin3;
-        private System.Windows.Forms.PictureBox portrait_claw_skin2;
+        private System.Windows.Forms.PictureBox CLA_portrait_skin3;
+        private System.Windows.Forms.PictureBox CLA_portrait_skin2;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.PictureBox portrait_claw_metal4;
-        private System.Windows.Forms.PictureBox portrait_claw_metal3;
-        private System.Windows.Forms.PictureBox portrait_claw_metal2;
-        private System.Windows.Forms.PictureBox portrait_claw_metal1;
+        private System.Windows.Forms.PictureBox CLA_portrait_metal4;
+        private System.Windows.Forms.PictureBox CLA_portrait_metal3;
+        private System.Windows.Forms.PictureBox CLA_portrait_metal2;
+        private System.Windows.Forms.PictureBox CLA_portrait_metal1;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.PictureBox portrait_claw_hair4;
-        private System.Windows.Forms.PictureBox portrait_claw_hair3;
-        private System.Windows.Forms.PictureBox portrait_claw_hair2;
-        private System.Windows.Forms.PictureBox portrait_claw_hair1;
+        private System.Windows.Forms.PictureBox CLA_portrait_hair4;
+        private System.Windows.Forms.PictureBox CLA_portrait_hair3;
+        private System.Windows.Forms.PictureBox CLA_portrait_hair2;
+        private System.Windows.Forms.PictureBox CLA_portrait_hair1;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.PictureBox portrait_claw_costume3;
-        private System.Windows.Forms.PictureBox portrait_claw_costume2;
-        private System.Windows.Forms.PictureBox portrait_claw_costume1;
+        private System.Windows.Forms.PictureBox CLA_portrait_costume3;
+        private System.Windows.Forms.PictureBox CLA_portrait_costume2;
+        private System.Windows.Forms.PictureBox CLA_portrait_costume1;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.PictureBox portrait_claw_iris;
-        private System.Windows.Forms.PictureBox portrait_claw_metal5;
+        private System.Windows.Forms.PictureBox CLA_portrait_iris;
+        private System.Windows.Forms.PictureBox CLA_portrait_metal5;
         private System.Windows.Forms.PictureBox CLA_portraitLossBox;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.PictureBox portrait_claw_blood3;
-        private System.Windows.Forms.PictureBox portrait_claw_blood2;
-        private System.Windows.Forms.PictureBox portrait_claw_blood1;
+        private System.Windows.Forms.PictureBox CLA_portrait_blood3;
+        private System.Windows.Forms.PictureBox CLA_portrait_blood2;
+        private System.Windows.Forms.PictureBox CLA_portrait_blood1;
         private System.Windows.Forms.Label COLlabel;
         private System.Windows.Forms.TabPage TabPageGuile;
         private System.Windows.Forms.PictureBox GUI_neutralStandBox;
@@ -12063,6 +12089,8 @@
         private System.Windows.Forms.PictureBox THA_neutralStandBox;
         private System.Windows.Forms.PictureBox THA_portraitLossBox;
         private System.Windows.Forms.PictureBox THA_portraitVictoryBox;
+        private System.Windows.Forms.PictureBox DEE_portrait_teeth4;
+        private System.Windows.Forms.PictureBox DEE_portrait_blood4;
     }
 }
 
