@@ -180,23 +180,23 @@ namespace PaletteSwap
             switch (currentCharacterType)
             {
                 case CharacterConfig.CHARACTERS.Dictator:
-                    portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
-                    portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
-                    portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
-                    portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
-                    portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
-                    portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
-                    portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
+                    DIC_portrait_skin1.BackColor = currentCharacter.portrait.GetColor("skin1");
+                    DIC_portrait_skin2.BackColor = currentCharacter.portrait.GetColor("skin2");
+                    DIC_portrait_skin3.BackColor = currentCharacter.portrait.GetColor("skin3");
+                    DIC_portrait_skin4.BackColor = currentCharacter.portrait.GetColor("skin4");
+                    DIC_portrait_skin5.BackColor = currentCharacter.portrait.GetColor("skin5");
+                    DIC_portrait_skin6.BackColor = currentCharacter.portrait.GetColor("skin6");
+                    DIC_portrait_skin7.BackColor = currentCharacter.portrait.GetColor("skin7");
 
-                    portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
-                    portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
-                    portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
-                    portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
+                    DIC_portrait_teeth1.BackColor = currentCharacter.portrait.GetColor("teeth1");
+                    DIC_portrait_teeth2.BackColor = currentCharacter.portrait.GetColor("teeth2");
+                    DIC_portrait_teeth3.BackColor = currentCharacter.portrait.GetColor("teeth3");
+                    DIC_portrait_teeth4.BackColor = currentCharacter.portrait.GetColor("teeth4");
 
-                    portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
-                    portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
-                    portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
-                    portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
+                    DIC_portrait_costume1.BackColor = currentCharacter.portrait.GetColor("costume1");
+                    DIC_portrait_costume2.BackColor = currentCharacter.portrait.GetColor("costume2");
+                    DIC_portrait_costume3.BackColor = currentCharacter.portrait.GetColor("costume3");
+                    DIC_portrait_costume4.BackColor = currentCharacter.portrait.GetColor("costume4");
 
                     portrait_costumeloss1.BackColor = currentCharacter.portrait.GetColor("costumeloss1");
                     portrait_costumeloss2.BackColor = currentCharacter.portrait.GetColor("costumeloss2");
