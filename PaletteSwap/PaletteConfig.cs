@@ -299,6 +299,8 @@ namespace PaletteSwap
                     return DEEJAY.GenerateDeejaySpriteConfig();
                 case CharacterConfig.CHARACTERS.Cammy:
                     return CAMMY.GenerateCammySpriteConfig();
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return HAWK.GenerateHawkSpriteConfig();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteConfig();
             }
@@ -336,6 +338,8 @@ namespace PaletteSwap
                     return DEEJAY.GenerateDeejaySpriteOffsets();
                 case CharacterConfig.CHARACTERS.Cammy:
                     return CAMMY.GenerateCammySpriteOffsets();
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return HAWK.GenerateHawkSpriteOffsets();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteOffsets();
             }
@@ -372,6 +376,8 @@ namespace PaletteSwap
                     return DEEJAY.GenerateDeejayPortraitConfig();
                 case CharacterConfig.CHARACTERS.Cammy:
                     return CAMMY.GenerateCammyPortraitConfig();
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return HAWK.GenerateHawkPortraitConfig();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimPortraitConfig();
             }
@@ -392,6 +398,98 @@ namespace PaletteSwap
                 cp.c = defaultcolor;
                 cp.position = offset + i;
                 this.defaultColorOffsets.Add(cp);
+            }
+        }
+
+
+        public struct HAWK
+        {
+            public static Dictionary<string, List<int>> GenerateHawkSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "hair", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "skin5", new List<int>() { 10 } },
+            { "skin6", new List<int>() { 12 } },
+            { "skin7", new List<int>() { 14 } },
+            { "costume6", new List<int>() { 16 } },
+            { "costume5", new List<int>() { 18 } },
+            { "costume4", new List<int>() { 20 } },
+            { "costume3", new List<int>() { 22 } },
+            { "costume2", new List<int>() { 24 } },
+            { "costume1", new List<int>() { 26 } },
+            { "feathers", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateHawkSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateHawkSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateHawkPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0, ROWLEN * 3 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2, ROWLEN * 3 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4, ROWLEN * 3 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6, ROWLEN * 3 + 6 } },
+
+        { "hair1", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
+        { "hair2", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
+        { "hair3", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+
+        { "costume1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 2 + 14, ROWLEN * 3 + 14 } },
+        { "costume2", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
+        { "costume3", new List<int>() { 18, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
+        { "costume4", new List<int>() { 20, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+        { "costume5", new List<int>() { 22, ROWLEN * 1 + 22 } },
+        { "costume6", new List<int>() { 24, ROWLEN * 1 + 24 } },
+
+        { "teeth1", new List<int>() { ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
+        { "teeth2", new List<int>() { ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
+
+        { "bruise1", new List<int>() { 26, ROWLEN * 2 + 26 } },
+        { "bruise2", new List<int>() { 28, ROWLEN * 2 + 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 1 + 26, ROWLEN * 3 + 26 } },
+        { "blood2", new List<int>() { ROWLEN * 1 + 28, ROWLEN * 3 + 28 } },
+                };
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateHawkPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> hawkPortraitOffsets = GenerateHawkPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = hawkPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
             }
         }
 
@@ -1796,6 +1894,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.CAMMY.GenerateCammySpriteOffsets());
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.THA_neutral2),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Thawk, CharacterConfig.BUTTONS.hp)),
+                        PaletteConfig.HAWK.GenerateHawkSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1856,9 +1958,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitwinX),
                        Cammy.PORTRAIT.GenerateCammyCustomXColor(),
                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
-                    /*return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitwin0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());*/
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.THA_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Thawk, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.HAWK.GenerateHawkPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1919,9 +2022,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitlossX),
                        Cammy.PORTRAIT.GenerateCammyCustomXColor(),
                         PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
-/*                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitloss0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());*/
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.THA_portraitlossX),
+                       Hawk.PORTRAIT.GenerateHawkCustomXColor(),
+                        PaletteConfig.HAWK.GenerateHawkPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -2158,6 +2262,25 @@ DictatorVictoryPortraitLabels());
                     Palette p = Palette.PaletteFromConfig(portraitConfig);
                     p.LoadStream(stream);
                     p.SetColor("eyes1", Color.FromArgb(255, 255, 0, 255));
+                    var stream2 = p.ToByteStream();
+                    return PaletteHelper.ByteStreamToString(stream2);
+                }
+            }
+        }
+
+        public struct Hawk
+        {
+            public struct PORTRAIT
+            {
+                // Hawk's portrait has two dinstinct whites: his paint and his teeth.
+                // We create a custom portrait from her jab where the teeth are FF00FF
+                public static string GenerateHawkCustomXColor()
+                {
+                    byte[] stream = CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Thawk, CharacterConfig.BUTTONS.lp);
+                    PaletteConfig portraitConfig = PaletteConfig.GeneratePortraitConfig(CharacterConfig.CHARACTERS.Thawk);
+                    Palette p = Palette.PaletteFromConfig(portraitConfig);
+                    p.LoadStream(stream);
+                    p.SetColor("teeth1", Color.FromArgb(255, 255, 0, 255));
                     var stream2 = p.ToByteStream();
                     return PaletteHelper.ByteStreamToString(stream2);
                 }

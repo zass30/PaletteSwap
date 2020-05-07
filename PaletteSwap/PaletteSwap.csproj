@@ -149,6 +149,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\hawk\THA_neutral2.png" />
+    <None Include="Resources\hawk\THA_portraitlossX.png" />
     <None Include="Resources\roms\sfxo.03c" />
     <None Include="Resources\roms\sfxo.04a" />
     <None Include="Resources\roms\sfxo.06a" />

@@ -29,7 +29,7 @@ namespace PaletteSwap
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
                 CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda,
             CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong, CharacterConfig.CHARACTERS.Deejay,
-        CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.CHARACTERS.Cammy};
+        CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.CHARACTERS.Cammy, CharacterConfig.CHARACTERS.Thawk};
 
         public MainForm()
         {
@@ -172,6 +172,8 @@ namespace PaletteSwap
                     return CAM_neutralStandBox;
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHA_neutralStandBox;
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return THA_neutralStandBox;
             }
             throw new Exception("Invalid character");
         }
@@ -208,6 +210,8 @@ namespace PaletteSwap
                     return CAM_portraitLossBox;
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHA_portraitLossBox;
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return THA_portraitLossBox;
             }
             throw new Exception("Invalid character");
         }
@@ -244,6 +248,8 @@ namespace PaletteSwap
                     return CAM_portraitVictoryBox;
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHA_portraitVictoryBox;
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return THA_portraitVictoryBox;
             }
             throw new Exception("Invalid character");
         }
@@ -1127,6 +1133,7 @@ namespace PaletteSwap
                 case "DEE_neutralStandBox":
                 case "DHA_neutralStandBox":
                 case "CAM_neutralStandBox":
+                case "THA_neutralStandBox":
                     currentlyZoomedLabel = "neutral";
                     break;
                 case "BOX_portraitVictoryBox":
@@ -1143,6 +1150,7 @@ namespace PaletteSwap
                 case "DEE_portraitVictoryBox":
                 case "DHA_portraitVictoryBox":
                 case "CAM_portraitVictoryBox":
+                case "THA_portraitVictoryBox":
                     currentlyZoomedLabel = "victory";
                     break;
                 case "BOX_portraitLossBox":
@@ -1159,6 +1167,7 @@ namespace PaletteSwap
                 case "DEE_portraitLossBox":
                 case "DHA_portraitLossBox":
                 case "CAM_portraitLossBox":
+                case "THA_portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
             }
@@ -1644,6 +1653,10 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageCammy")
             {
                 ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Cammy);
+            }
+            else if (selt.Name == "TabPageHawk")
+            {
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Thawk);
             }
         }
 
