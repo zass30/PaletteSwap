@@ -141,117 +141,26 @@ namespace PaletteSwap
 
         private PictureBox GetSpriteNeutralBox()
         {
-            // todo dynamic generation
-            switch (currentCharacterType)
-            {
-                case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Ken:
-                    return KEN_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Ehonda:
-                    return EHO_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Zangief:
-                    return ZAN_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Chun:
-                    return CHU_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Guile:
-                    return GUI_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Boxer:
-                    return BOX_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Claw:
-                    return CLA_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Dictator:
-                    return DIC_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Sagat:
-                    return SAG_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Feilong:
-                    return FEI_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Deejay:
-                    return DEE_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Cammy:
-                    return CAM_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Dhalsim:
-                    return DHA_neutralStandBox;
-                case CharacterConfig.CHARACTERS.Thawk:
-                    return THA_neutralStandBox;
-            }
-            throw new Exception("Invalid character");
+            var shortcut = CharacterConfig.CodeFromCharacterEnum(currentCharacterType);
+            var s = shortcut + "_neutralStandBox";
+            PictureBox mybox = (PictureBox)this.Controls.Find(s, true)[0];
+            return mybox;
         }
 
         private PictureBox GetPortraitLossBox()
         {
-            switch (currentCharacterType)
-            {
-                case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Ken:
-                    return KEN_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Ehonda:
-                    return EHO_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Zangief:
-                    return ZAN_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Chun:
-                    return CHU_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Guile:
-                    return GUI_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Boxer:
-                    return BOX_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Claw:
-                    return CLA_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Sagat:
-                    return SAG_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Dictator:
-                    return DIC_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Feilong:
-                    return FEI_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Deejay:
-                    return DEE_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Cammy:
-                    return CAM_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Dhalsim:
-                    return DHA_portraitLossBox;
-                case CharacterConfig.CHARACTERS.Thawk:
-                    return THA_portraitLossBox;
-            }
-            throw new Exception("Invalid character");
+            var shortcut = CharacterConfig.CodeFromCharacterEnum(currentCharacterType);
+            var s = shortcut + "_portraitLossBox";
+            PictureBox mybox = (PictureBox)this.Controls.Find(s, true)[0];
+            return mybox;
         }
 
         private PictureBox GetPortraitVictoryBox()
         {
-            switch (currentCharacterType)
-            {
-                case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Ken:
-                    return KEN_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Ehonda:
-                    return EHO_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Zangief:
-                    return ZAN_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Chun:
-                    return CHU_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Guile:
-                    return GUI_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Boxer:
-                    return BOX_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Claw:
-                    return CLA_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Sagat:
-                    return SAG_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Dictator:
-                    return DIC_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Feilong:
-                    return FEI_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Deejay:
-                    return DEE_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Cammy:
-                    return CAM_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Dhalsim:
-                    return DHA_portraitVictoryBox;
-                case CharacterConfig.CHARACTERS.Thawk:
-                    return THA_portraitVictoryBox;
-            }
-            throw new Exception("Invalid character");
+            var shortcut = CharacterConfig.CodeFromCharacterEnum(currentCharacterType);
+            var s = shortcut + "_portraitVictoryBox";
+            PictureBox mybox = (PictureBox)this.Controls.Find(s, true)[0];
+            return mybox;
         }
 
         private void load_sprite_buttons()
