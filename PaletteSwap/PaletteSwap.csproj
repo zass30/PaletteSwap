@@ -204,6 +204,8 @@
     <None Include="Resources\dictator\DIC_psychopunch1.png" />
     <None Include="Resources\dictator\DIC_psychopunch5.png" />
     <None Include="Resources\dictator\DIC_neutral0.png" />
+    <None Include="Resources\cammy\CAM_portraitlossX.png" />
+    <None Include="Resources\cammy\CAM_portraitwinX.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />

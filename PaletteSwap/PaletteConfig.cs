@@ -1853,9 +1853,12 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Cammy:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitwin0),
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitwinX),
+                       Cammy.PORTRAIT.GenerateCammyCustomXColor(),
+                       PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
+                    /*return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
+                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());*/
             }
             throw new Exception("Invalid character");
         }
@@ -1913,9 +1916,12 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Cammy:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitloss0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitlossX),
+                       Cammy.PORTRAIT.GenerateCammyCustomXColor(),
                         PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());
+/*                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.CAMMY.GenerateCammyPortraitOffsets());*/
             }
             throw new Exception("Invalid character");
         }
@@ -2147,7 +2153,13 @@ DictatorVictoryPortraitLabels());
                 // We create a custom portrait from her jab where the eyes are FF00FF
                 public static string GenerateCammyCustomXColor()
                 {
-                   return PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp);
+                    byte[] stream = CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Cammy, CharacterConfig.BUTTONS.lp);
+                    PaletteConfig portraitConfig = PaletteConfig.GeneratePortraitConfig(CharacterConfig.CHARACTERS.Cammy);
+                    Palette p = Palette.PaletteFromConfig(portraitConfig);
+                    p.LoadStream(stream);
+                    p.SetColor("eyes1", Color.FromArgb(255, 255, 0, 255));
+                    var stream2 = p.ToByteStream();
+                    return PaletteHelper.ByteStreamToString(stream2);
                 }
             }
         }

@@ -143,9 +143,29 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap CAM_portraitlossX {
+            get {
+                object obj = ResourceManager.GetObject("CAM_portraitlossX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap CAM_portraitwin0 {
             get {
                 object obj = ResourceManager.GetObject("CAM_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CAM_portraitwinX {
+            get {
+                object obj = ResourceManager.GetObject("CAM_portraitwinX", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
