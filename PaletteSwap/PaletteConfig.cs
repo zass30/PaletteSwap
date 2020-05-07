@@ -1839,9 +1839,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Sagat:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.SAG_portraitwin0),
+                    return Sagat.PORTRAIT.GenerateSagatVictoryBasePaletteImage();
+/*                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.SAG_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
+                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());*/
                 case CharacterConfig.CHARACTERS.Feilong:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.FEI_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
@@ -1901,9 +1902,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.HONDA.GenerateHondaPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Sagat:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.SAG_portraitloss0),
+                    return Sagat.PORTRAIT.GenerateSagatLossBasePaletteImage();
+/*                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.SAG_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
+                        PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());*/
                 case CharacterConfig.CHARACTERS.Feilong:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.FEI_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Feilong, CharacterConfig.BUTTONS.lp)),
@@ -2094,6 +2096,51 @@ DictatorVictoryPortraitLabels());
                 public static PaletteImage GenerateDicatatorPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
                 {
                     return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.DICTATOR.GenerateDictatorPortraitOffsets());
+                }
+            }
+        }
+
+        public struct Sagat
+        {
+            public struct PORTRAIT
+            {
+                public static List<string> SagatVictoryPortraitLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
+                "wraps1", "wraps2", "wraps3",
+                "blood1", "blood2", "blood3", "blood4", "blood5", "blood6",
+                "bruise1", "bruise2", "bruise3",
+                "scars1", "scars2", "scars3",
+                };
+                }
+
+                public static List<string> SagatLossPortraitLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4", "skin5", "skin6", "skin7",
+                "teeth1", "teeth2", "teeth3",
+                "blood1", "blood2", "blood3", "blood4", "blood5", "blood6",
+                "bruise1", "bruise2", "bruise3",
+                "scars1", "scars2", "scars3",
+                };
+                }
+
+                public static PaletteImage GenerateSagatVictoryBasePaletteImage()
+                {
+                    return GenerateSagatPortraitPaletteImage(Properties.Resources.SAG_portraitwin0,
+                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+    SagatVictoryPortraitLabels());
+                }
+
+                public static PaletteImage GenerateSagatLossBasePaletteImage()
+                {
+                    return GenerateSagatPortraitPaletteImage(Properties.Resources.SAG_portraitloss0,
+                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+    SagatLossPortraitLabels());
+                }
+
+                public static PaletteImage GenerateSagatPortraitPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.SAGAT.GenerateSagatPortraitOffsets());
                 }
             }
         }
