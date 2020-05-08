@@ -244,6 +244,7 @@ namespace PaletteSwap
             var v = colstr.Split(':');
             currentCharacter.loadFromColFormat(colstr);
             reload_everything();
+            saveCharacterColorToSet();
         }
 
         private void COLlabel_DragDrop(object sender, DragEventArgs e)
@@ -256,6 +257,7 @@ namespace PaletteSwap
             {
                 currentCharacter = Character.CharacterFromColFormat(colstr);
                 reload_everything();
+                saveCharacterColorToSet();
             }
             else
                 MessageBox.Show("Incorrect character type");
