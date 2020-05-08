@@ -1019,8 +1019,8 @@ namespace PaletteSwap
         { "mouth1", new List<int>() { 20, ROWLEN * 3 + 20 } },
         { "mouth2", new List<int>() { 22 } },
 
-        { "facepaintloss1", new List<int>() { ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
-        { "facepaintloss2", new List<int>() { ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
+        { "facepaintloss1", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 20 } },
+        { "facepaintloss2", new List<int>() { ROWLEN * 1 + 22, ROWLEN * 2 + 22 } },
 
         { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24,  ROWLEN * 3 + 24 } },
         { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
@@ -1490,7 +1490,7 @@ namespace PaletteSwap
         { "hair1", new List<int>() { 22, ROWLEN * 1 + 22, ROWLEN * 3 + 22 } },
         { "hair2", new List<int>() { 24, ROWLEN * 1 + 24, ROWLEN * 3 + 24 } },
         { "hair3", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
-        { "hair4", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28, ROWLEN * 3 + 28 } },
+        { "hair4", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
 
         { "teeth1", new List<int>() { ROWLEN * 1 + 14, ROWLEN * 2 + 14 } },
         { "teeth2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 2 + 16 } },

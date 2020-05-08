@@ -883,6 +883,8 @@
             this.THA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.resetCharacterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetThisColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1611,7 +1613,7 @@
             // 
             // trackBarR
             // 
-            this.trackBarR.LargeChange = 2;
+            this.trackBarR.LargeChange = 1;
             this.trackBarR.Location = new System.Drawing.Point(149, 616);
             this.trackBarR.Maximum = 15;
             this.trackBarR.Name = "trackBarR";
@@ -1621,7 +1623,7 @@
             // 
             // trackBarG
             // 
-            this.trackBarG.LargeChange = 2;
+            this.trackBarG.LargeChange = 1;
             this.trackBarG.Location = new System.Drawing.Point(149, 667);
             this.trackBarG.Maximum = 15;
             this.trackBarG.Name = "trackBarG";
@@ -1631,7 +1633,7 @@
             // 
             // trackBarB
             // 
-            this.trackBarB.LargeChange = 2;
+            this.trackBarB.LargeChange = 1;
             this.trackBarB.Location = new System.Drawing.Point(149, 719);
             this.trackBarB.Maximum = 15;
             this.trackBarB.Name = "trackBarB";
@@ -1923,6 +1925,7 @@
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
@@ -1989,7 +1992,6 @@
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
             this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
-            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
@@ -2058,6 +2060,8 @@
             this.pasteToolStripMenuItem,
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem,
+            this.resetThisColorToolStripMenuItem,
+            this.resetCharacterToolStripMenuItem,
             this.resetColorsToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 22);
@@ -2131,8 +2135,8 @@
             // resetColorsToolStripMenuItem
             // 
             this.resetColorsToolStripMenuItem.Name = "resetColorsToolStripMenuItem";
-            this.resetColorsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.resetColorsToolStripMenuItem.Text = "Reset Colors";
+            this.resetColorsToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.resetColorsToolStripMenuItem.Text = "Reset whole game colors";
             this.resetColorsToolStripMenuItem.Click += new System.EventHandler(this.resetColorsToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
@@ -11207,6 +11211,20 @@
             this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
             this.hScrollBar1.TabIndex = 124;
             // 
+            // resetCharacterToolStripMenuItem
+            // 
+            this.resetCharacterToolStripMenuItem.Name = "resetCharacterToolStripMenuItem";
+            this.resetCharacterToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.resetCharacterToolStripMenuItem.Text = "Reset this character colors";
+            this.resetCharacterToolStripMenuItem.Click += new System.EventHandler(this.resetCharacterToolStripMenuItem_Click);
+            // 
+            // resetThisColorToolStripMenuItem
+            // 
+            this.resetThisColorToolStripMenuItem.Name = "resetThisColorToolStripMenuItem";
+            this.resetThisColorToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.resetThisColorToolStripMenuItem.Text = "Reset this color";
+            this.resetThisColorToolStripMenuItem.Click += new System.EventHandler(this.resetThisColorToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -12759,6 +12777,8 @@
         private System.Windows.Forms.PictureBox THA_portrait_skin2;
         private System.Windows.Forms.PictureBox THA_portrait_skin1;
         private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.ToolStripMenuItem resetCharacterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resetThisColorToolStripMenuItem;
     }
 }
 

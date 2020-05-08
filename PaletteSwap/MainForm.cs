@@ -917,5 +917,22 @@ namespace PaletteSwap
             resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
+
+        private void resetCharacterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gameSet.characterDictionary[currentCharacterType] = new CharacterSet(currentCharacterType);
+            characterSet = gameSet.characterDictionary[currentCharacterType];
+            resetCurrentCharacterColorFromDropDown();
+            reload_everything();
+        }
+
+        private void resetThisColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gameSet.characterDictionary[currentCharacterType].characterColors[colorSelectorBox.SelectedIndex] =
+                Character.CreateDefaultCharacter(currentCharacterType, (CharacterConfig.BUTTONS)colorSelectorBox.SelectedIndex);
+            characterSet = gameSet.characterDictionary[currentCharacterType];
+            resetCurrentCharacterColorFromDropDown();
+            reload_everything();
+        }
     }
 }
