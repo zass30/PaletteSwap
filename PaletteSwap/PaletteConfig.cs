@@ -648,8 +648,8 @@ namespace PaletteSwap
         { "costume3", new List<int>() { ROWLEN * 1 + 28 } },
 
         { "paint1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
-        { "paint2", new List<int>() { 26 } },
-        { "paint3", new List<int>() { 28 } },
+        { "paint2", new List<int>() { 26, ROWLEN * 2 + 14 } },
+        { "paint3", new List<int>() { 28, ROWLEN * 2 + 16 } },
 
 
         { "bruise1", new List<int>() { 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
