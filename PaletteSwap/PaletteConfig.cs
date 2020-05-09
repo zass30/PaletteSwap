@@ -453,9 +453,9 @@ namespace PaletteSwap
         { "hair3", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
 
         { "costume1", new List<int>() { 14, ROWLEN * 1 + 14, ROWLEN * 2 + 14, ROWLEN * 3 + 14 } },
-        { "costume2", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 2 + 8, ROWLEN * 3 + 8 } },
-        { "costume3", new List<int>() { 18, ROWLEN * 1 + 10, ROWLEN * 2 + 10, ROWLEN * 3 + 10 } },
-        { "costume4", new List<int>() { 20, ROWLEN * 1 + 12, ROWLEN * 2 + 12, ROWLEN * 3 + 12 } },
+        { "costume2", new List<int>() { 16, ROWLEN * 1 + 16, ROWLEN * 2 + 16, ROWLEN * 3 + 16 } },
+        { "costume3", new List<int>() { 18, ROWLEN * 1 + 18, ROWLEN * 2 + 18, ROWLEN * 3 + 18 } },
+        { "costume4", new List<int>() { 20, ROWLEN * 1 + 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
         { "costume5", new List<int>() { 22, ROWLEN * 1 + 22 } },
         { "costume6", new List<int>() { 24, ROWLEN * 1 + 24 } },
 
