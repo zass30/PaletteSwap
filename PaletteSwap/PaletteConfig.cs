@@ -44,8 +44,6 @@ namespace PaletteSwap
             return p;       
         }
 
-        //0x4019c
-
         public static string CodeFromCharacterEnum(CHARACTERS c)
         {
             switch (c)
@@ -303,6 +301,8 @@ namespace PaletteSwap
                     return HAWK.GenerateHawkSpriteConfig();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteConfig();
+                case CharacterConfig.CHARACTERS.Blanka:
+                    return BLANKA.GenerateBlankaSpriteConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -342,6 +342,8 @@ namespace PaletteSwap
                     return HAWK.GenerateHawkSpriteOffsets();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Blanka:
+                    return BLANKA.GenerateBlankaSpriteOffsets();
             }
             throw new Exception("Invalid character");
         }
@@ -380,6 +382,8 @@ namespace PaletteSwap
                     return HAWK.GenerateHawkPortraitConfig();
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimPortraitConfig();
+                case CharacterConfig.CHARACTERS.Blanka:
+                    return BLANKA.GenerateBlankaPortraitConfig();
             }
             throw new Exception("Invalid character");
         }
@@ -401,6 +405,95 @@ namespace PaletteSwap
             }
         }
 
+        public struct BLANKA
+        {
+            public static Dictionary<string, List<int>> GenerateBlankaSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "outline", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "skin5", new List<int>() { 10 } },
+            { "skin6", new List<int>() { 12 } },
+            { "skin7", new List<int>() { 14 } },
+            { "costume1", new List<int>() { 16 } },
+            { "costume2", new List<int>() { 18 } },
+            { "costume3", new List<int>() { 20 } },
+            { "costume4", new List<int>() { 22 } },
+            { "costume5", new List<int>() { 24 } },
+            { "lining1", new List<int>() { 26 } },
+            { "lining2", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static PaletteConfig GenerateBlankaSpriteConfig()
+            {
+                int MEMLEN = 30;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateBlankaSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
+            public static Dictionary<string, List<int>> GenerateBlankaPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12 } },
+
+        { "hair1", new List<int>() { 14, ROWLEN * 2 + 14 } },
+        { "hair2", new List<int>() { 16, ROWLEN * 2 + 16 } },
+        { "hair3", new List<int>() { 18, ROWLEN * 2 + 18 } },
+        { "hair4", new List<int>() { 20, ROWLEN * 2 + 20 } },
+        { "hair5", new List<int>() { 22, ROWLEN * 2 + 22 } },
+            
+        { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24 } },
+        { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26 } },
+        { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 1 + 14} },
+        { "blood2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 2 + 24 } },
+        { "blood3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 26 } },
+        { "blood4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 28 } },
+        { "blood5", new List<int>() { ROWLEN * 1 + 22 } },
+                };
+                return portraitOffsets;
+            }
+
+            public static PaletteConfig GenerateBlankaPortraitConfig()
+            {
+                int MEMLEN = ROWLEN * 4;
+                List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+                for (int i = 0; i < 4; i++)
+                {
+                    ColorOffset dco = new ColorOffset();
+                    dco.c = PaletteHelper.MemFormatToColor("9A00");
+                    dco.position = 30 + ROWLEN * i;
+                    defaultColorOffsets.Add(dco);
+                }
+
+                Dictionary<string, List<int>> blankaPortraitOffsets = GenerateBlankaPortraitOffsets();
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = blankaPortraitOffsets;
+                pc.defaultColorOffsets = defaultColorOffsets;
+                pc.unusedOffsets = new List<int>() { };
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+        }
 
         public struct HAWK
         {
@@ -1898,6 +1991,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.THA_neutral2),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Thawk, CharacterConfig.BUTTONS.hp)),
                         PaletteConfig.HAWK.GenerateHawkSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Blanka:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.BLANKA.GenerateBlankaSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1962,6 +2059,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.THA_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Thawk, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.HAWK.GenerateHawkPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Blanka:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_portraitwin0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.BLANKA.GenerateBlankaPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -2026,6 +2127,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.THA_portraitlossX),
                        Hawk.PORTRAIT.GenerateHawkCustomXColor(),
                         PaletteConfig.HAWK.GenerateHawkPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Blanka:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_portraitloss0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.BLANKA.GenerateBlankaPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
