@@ -192,9 +192,9 @@ namespace PaletteSwap
             return 0;
         }
 
-        public static byte[] GetPortraitResourceFromRom(CHARACTERS character, BUTTONS b)
+        public static byte[] GetPortraitResourceFromRom(CHARACTERS character, BUTTONS button)
         {
-            int i = GetButtonIdFromButton(b);
+            int i = GetButtonIdFromButton(button);
             var portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
             var portrait_length = CharacterConfig.portraitColorLength;
 
@@ -205,11 +205,15 @@ namespace PaletteSwap
             return portrait_bytes;
         }
 
-        public static byte[] GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, BUTTONS b)
+        public static byte[] GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, BUTTONS button)
         {
-            int i = GetButtonIdFromButton(b);
+            int i = GetButtonIdFromButton(button);
             var sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
+            if (character == CharacterConfig.CHARACTERS.Blanka && button == BUTTONS.old2)
+                sprite_offset = sprite_offset + 0x02;
             var sprite_length = CharacterConfig.spriteColorLength;
+            if (character == CharacterConfig.CHARACTERS.Blanka)
+                sprite_length = sprite_length - 0x02;
 
             byte[] sprites = Properties.Resources.sfxe04a;
 
@@ -245,6 +249,8 @@ namespace PaletteSwap
                 return 0x3FB2E;
             else if (c == CHARACTERS.Ehonda)
                 return 0x4019A;
+            else if (c == CHARACTERS.Blanka)
+                return 0x40806;
             return spriteBeginOffset + GetCharIdFromCharacter(c) * spriteStep;
         }
 

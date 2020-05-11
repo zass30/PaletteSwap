@@ -20,6 +20,8 @@ namespace PaletteSwap
         {
             this.sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
             this.sprite_length = CharacterConfig.spriteColorLength;
+            if (character == CharacterConfig.CHARACTERS.Blanka)
+                this.sprite_length = this.sprite_length - 0x02;
             this.portrait_offset = CharacterConfig.GetPortrait1BeginOffset(character);
             this.portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
             this.portrait_length = CharacterConfig.portraitColorLength;
