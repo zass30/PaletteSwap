@@ -15,9 +15,11 @@ namespace PaletteSwap
         public int portrait_offset;
         public int portrait2_offset;
         public int portrait_length;
+        public CharacterConfig.CHARACTERS character;
 
         public CharacterSet(CharacterConfig.CHARACTERS character)
         {
+            this.character = character;
             this.sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
             this.sprite_length = CharacterConfig.spriteColorLength;
             if (character == CharacterConfig.CHARACTERS.Blanka)
@@ -99,9 +101,12 @@ namespace PaletteSwap
 
             byte[] sprite_bytes = new byte[cs.sprite_length];
             byte[] portrait_bytes = new byte[cs.portrait_length];
+            int blanka_offset = 0;
             for (int i = 0; i < 10; i++)
             {
-                Array.Copy(sprites, cs.sprite_offset + i * cs.sprite_length, sprite_bytes, 0, cs.sprite_length);
+                if (characterType == CharacterConfig.CHARACTERS.Blanka && i == 9)
+                    blanka_offset = 0x02;
+                Array.Copy(sprites, cs.sprite_offset + i * cs.sprite_length + blanka_offset, sprite_bytes, 0, cs.sprite_length);
                 Array.Copy(portraits, cs.portrait_offset + i * cs.portrait_length, portrait_bytes, 0, cs.portrait_length);
                 cs.characterColors[i].sprite.LoadStream(sprite_bytes);
                 cs.characterColors[i].portrait.LoadStream(portrait_bytes);
@@ -212,6 +217,8 @@ namespace PaletteSwap
                     continue;
                 var s = characterColors[i].sprite;
                 byte[] color_bytes = s.ToByteStream();
+                if (this.character == CharacterConfig.CHARACTERS.Blanka && i == 9)
+                    sprite_offset += 0x02;
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
                     b[sprite_offset + i * sprite_length + j] = color_bytes[j];
@@ -234,7 +241,7 @@ namespace PaletteSwap
         public static CharacterConfig.CHARACTERS[] supportedCharacters = new CharacterConfig.CHARACTERS[] { CharacterConfig.CHARACTERS.Dictator, CharacterConfig.CHARACTERS.Claw,
                 CharacterConfig.CHARACTERS.Guile, CharacterConfig.CHARACTERS.Ryu, CharacterConfig.CHARACTERS.Chun, CharacterConfig.CHARACTERS.Boxer, CharacterConfig.CHARACTERS.Ken,
         CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong, CharacterConfig.CHARACTERS.Deejay,
-        CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.CHARACTERS.Cammy, CharacterConfig.CHARACTERS.Thawk
+        CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.CHARACTERS.Cammy, CharacterConfig.CHARACTERS.Thawk, CharacterConfig.CHARACTERS.Blanka
         };
 
 
