@@ -886,6 +886,52 @@
             this.COLlabel = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.TabPageBlanka = new System.Windows.Forms.TabPage();
+            this.BLA_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.BLA_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.BLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.label151 = new System.Windows.Forms.Label();
+            this.label154 = new System.Windows.Forms.Label();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.BLA_sprite_lining2 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_lining1 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin7 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_outline = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.label157 = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
+            this.label159 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.BLA_portrait_blood2 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood1 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_teeth2 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_hair3 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_hair2 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_hair1 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_hair5 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_hair4 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_teeth1 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin7 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_teeth3 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood5 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1533,6 +1579,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.THA_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitVictoryBox)).BeginInit();
+            this.TabPageBlanka.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_outline)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood4)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -11229,12 +11314,545 @@
             // 
             // TabPageBlanka
             // 
+            this.TabPageBlanka.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_blood3);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_blood5);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_blood4);
+            this.TabPageBlanka.Controls.Add(this.label157);
+            this.TabPageBlanka.Controls.Add(this.label158);
+            this.TabPageBlanka.Controls.Add(this.label159);
+            this.TabPageBlanka.Controls.Add(this.label162);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_blood2);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_blood1);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_teeth2);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin5);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_hair3);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_hair2);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_hair1);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_hair5);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_hair4);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_teeth1);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin7);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin6);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_teeth3);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin4);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin3);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin2);
+            this.TabPageBlanka.Controls.Add(this.BLA_portrait_skin1);
+            this.TabPageBlanka.Controls.Add(this.label151);
+            this.TabPageBlanka.Controls.Add(this.label154);
+            this.TabPageBlanka.Controls.Add(this.label155);
+            this.TabPageBlanka.Controls.Add(this.label156);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_lining2);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_costume3);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin6);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_costume5);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_lining1);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin7);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_costume4);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_outline);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin5);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_costume1);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_costume2);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin1);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin2);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin3);
+            this.TabPageBlanka.Controls.Add(this.BLA_sprite_skin4);
+            this.TabPageBlanka.Controls.Add(this.BLA_neutralStandBox);
+            this.TabPageBlanka.Controls.Add(this.BLA_portraitLossBox);
+            this.TabPageBlanka.Controls.Add(this.BLA_portraitVictoryBox);
             this.TabPageBlanka.Location = new System.Drawing.Point(4, 22);
             this.TabPageBlanka.Name = "TabPageBlanka";
             this.TabPageBlanka.Size = new System.Drawing.Size(597, 559);
             this.TabPageBlanka.TabIndex = 15;
             this.TabPageBlanka.Text = "Blanka";
-            this.TabPageBlanka.UseVisualStyleBackColor = true;
+            // 
+            // BLA_neutralStandBox
+            // 
+            this.BLA_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.BLA_neutralStandBox.Location = new System.Drawing.Point(16, 25);
+            this.BLA_neutralStandBox.Name = "BLA_neutralStandBox";
+            this.BLA_neutralStandBox.Size = new System.Drawing.Size(98, 100);
+            this.BLA_neutralStandBox.TabIndex = 192;
+            this.BLA_neutralStandBox.TabStop = false;
+            this.BLA_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // BLA_portraitLossBox
+            // 
+            this.BLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.BLA_portraitLossBox.Location = new System.Drawing.Point(453, 25);
+            this.BLA_portraitLossBox.Name = "BLA_portraitLossBox";
+            this.BLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.BLA_portraitLossBox.TabIndex = 191;
+            this.BLA_portraitLossBox.TabStop = false;
+            this.BLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // BLA_portraitVictoryBox
+            // 
+            this.BLA_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.BLA_portraitVictoryBox.Location = new System.Drawing.Point(316, 25);
+            this.BLA_portraitVictoryBox.Name = "BLA_portraitVictoryBox";
+            this.BLA_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.BLA_portraitVictoryBox.TabIndex = 190;
+            this.BLA_portraitVictoryBox.TabStop = false;
+            this.BLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Location = new System.Drawing.Point(22, 320);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(38, 13);
+            this.label151.TabIndex = 504;
+            this.label151.Text = "outline";
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Location = new System.Drawing.Point(29, 290);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(31, 13);
+            this.label154.TabIndex = 503;
+            this.label154.Text = "lining";
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Location = new System.Drawing.Point(13, 260);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(47, 13);
+            this.label155.TabIndex = 502;
+            this.label155.Text = "costume";
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Location = new System.Drawing.Point(34, 200);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(26, 13);
+            this.label156.TabIndex = 501;
+            this.label156.Text = "skin";
+            // 
+            // BLA_sprite_lining2
+            // 
+            this.BLA_sprite_lining2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_lining2.Location = new System.Drawing.Point(96, 279);
+            this.BLA_sprite_lining2.Name = "BLA_sprite_lining2";
+            this.BLA_sprite_lining2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_lining2.TabIndex = 499;
+            this.BLA_sprite_lining2.TabStop = false;
+            this.BLA_sprite_lining2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_lining2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume3
+            // 
+            this.BLA_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume3.Location = new System.Drawing.Point(126, 249);
+            this.BLA_sprite_costume3.Name = "BLA_sprite_costume3";
+            this.BLA_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume3.TabIndex = 500;
+            this.BLA_sprite_costume3.TabStop = false;
+            this.BLA_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin6
+            // 
+            this.BLA_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin6.Location = new System.Drawing.Point(96, 219);
+            this.BLA_sprite_skin6.Name = "BLA_sprite_skin6";
+            this.BLA_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin6.TabIndex = 493;
+            this.BLA_sprite_skin6.TabStop = false;
+            this.BLA_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume5
+            // 
+            this.BLA_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume5.Location = new System.Drawing.Point(186, 249);
+            this.BLA_sprite_costume5.Name = "BLA_sprite_costume5";
+            this.BLA_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume5.TabIndex = 494;
+            this.BLA_sprite_costume5.TabStop = false;
+            this.BLA_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_lining1
+            // 
+            this.BLA_sprite_lining1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_lining1.Location = new System.Drawing.Point(66, 279);
+            this.BLA_sprite_lining1.Name = "BLA_sprite_lining1";
+            this.BLA_sprite_lining1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_lining1.TabIndex = 495;
+            this.BLA_sprite_lining1.TabStop = false;
+            this.BLA_sprite_lining1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_lining1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin7
+            // 
+            this.BLA_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin7.Location = new System.Drawing.Point(127, 219);
+            this.BLA_sprite_skin7.Name = "BLA_sprite_skin7";
+            this.BLA_sprite_skin7.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin7.TabIndex = 496;
+            this.BLA_sprite_skin7.TabStop = false;
+            this.BLA_sprite_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume4
+            // 
+            this.BLA_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume4.Location = new System.Drawing.Point(156, 249);
+            this.BLA_sprite_costume4.Name = "BLA_sprite_costume4";
+            this.BLA_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume4.TabIndex = 497;
+            this.BLA_sprite_costume4.TabStop = false;
+            this.BLA_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_outline
+            // 
+            this.BLA_sprite_outline.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_outline.Location = new System.Drawing.Point(66, 309);
+            this.BLA_sprite_outline.Name = "BLA_sprite_outline";
+            this.BLA_sprite_outline.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_outline.TabIndex = 498;
+            this.BLA_sprite_outline.TabStop = false;
+            this.BLA_sprite_outline.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_outline.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin5
+            // 
+            this.BLA_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin5.Location = new System.Drawing.Point(66, 219);
+            this.BLA_sprite_skin5.Name = "BLA_sprite_skin5";
+            this.BLA_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin5.TabIndex = 490;
+            this.BLA_sprite_skin5.TabStop = false;
+            this.BLA_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume1
+            // 
+            this.BLA_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume1.Location = new System.Drawing.Point(66, 249);
+            this.BLA_sprite_costume1.Name = "BLA_sprite_costume1";
+            this.BLA_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume1.TabIndex = 491;
+            this.BLA_sprite_costume1.TabStop = false;
+            this.BLA_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume2
+            // 
+            this.BLA_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume2.Location = new System.Drawing.Point(96, 249);
+            this.BLA_sprite_costume2.Name = "BLA_sprite_costume2";
+            this.BLA_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume2.TabIndex = 492;
+            this.BLA_sprite_costume2.TabStop = false;
+            this.BLA_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin1
+            // 
+            this.BLA_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin1.Location = new System.Drawing.Point(66, 189);
+            this.BLA_sprite_skin1.Name = "BLA_sprite_skin1";
+            this.BLA_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin1.TabIndex = 486;
+            this.BLA_sprite_skin1.TabStop = false;
+            this.BLA_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin2
+            // 
+            this.BLA_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin2.Location = new System.Drawing.Point(96, 189);
+            this.BLA_sprite_skin2.Name = "BLA_sprite_skin2";
+            this.BLA_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin2.TabIndex = 487;
+            this.BLA_sprite_skin2.TabStop = false;
+            this.BLA_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin3
+            // 
+            this.BLA_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin3.Location = new System.Drawing.Point(126, 189);
+            this.BLA_sprite_skin3.Name = "BLA_sprite_skin3";
+            this.BLA_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin3.TabIndex = 488;
+            this.BLA_sprite_skin3.TabStop = false;
+            this.BLA_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin4
+            // 
+            this.BLA_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin4.Location = new System.Drawing.Point(156, 189);
+            this.BLA_sprite_skin4.Name = "BLA_sprite_skin4";
+            this.BLA_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin4.TabIndex = 489;
+            this.BLA_sprite_skin4.TabStop = false;
+            this.BLA_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label157
+            // 
+            this.label157.AutoSize = true;
+            this.label157.Location = new System.Drawing.Point(295, 229);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(24, 13);
+            this.label157.TabIndex = 539;
+            this.label157.Text = "hair";
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Location = new System.Drawing.Point(283, 260);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(33, 13);
+            this.label158.TabIndex = 538;
+            this.label158.Text = "blood";
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Location = new System.Drawing.Point(283, 289);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(31, 13);
+            this.label159.TabIndex = 535;
+            this.label159.Text = "teeth";
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Location = new System.Drawing.Point(293, 200);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(26, 13);
+            this.label162.TabIndex = 519;
+            this.label162.Text = "skin";
+            // 
+            // BLA_portrait_blood2
+            // 
+            this.BLA_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood2.Location = new System.Drawing.Point(355, 249);
+            this.BLA_portrait_blood2.Name = "BLA_portrait_blood2";
+            this.BLA_portrait_blood2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood2.TabIndex = 537;
+            this.BLA_portrait_blood2.TabStop = false;
+            this.BLA_portrait_blood2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_blood1
+            // 
+            this.BLA_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood1.Location = new System.Drawing.Point(325, 249);
+            this.BLA_portrait_blood1.Name = "BLA_portrait_blood1";
+            this.BLA_portrait_blood1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood1.TabIndex = 536;
+            this.BLA_portrait_blood1.TabStop = false;
+            this.BLA_portrait_blood1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_teeth2
+            // 
+            this.BLA_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_teeth2.Location = new System.Drawing.Point(355, 279);
+            this.BLA_portrait_teeth2.Name = "BLA_portrait_teeth2";
+            this.BLA_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_teeth2.TabIndex = 533;
+            this.BLA_portrait_teeth2.TabStop = false;
+            this.BLA_portrait_teeth2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_teeth2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin5
+            // 
+            this.BLA_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin5.Location = new System.Drawing.Point(445, 189);
+            this.BLA_portrait_skin5.Name = "BLA_portrait_skin5";
+            this.BLA_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin5.TabIndex = 532;
+            this.BLA_portrait_skin5.TabStop = false;
+            this.BLA_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_hair3
+            // 
+            this.BLA_portrait_hair3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_hair3.Location = new System.Drawing.Point(385, 219);
+            this.BLA_portrait_hair3.Name = "BLA_portrait_hair3";
+            this.BLA_portrait_hair3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_hair3.TabIndex = 531;
+            this.BLA_portrait_hair3.TabStop = false;
+            this.BLA_portrait_hair3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_hair3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_hair2
+            // 
+            this.BLA_portrait_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_hair2.Location = new System.Drawing.Point(355, 219);
+            this.BLA_portrait_hair2.Name = "BLA_portrait_hair2";
+            this.BLA_portrait_hair2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_hair2.TabIndex = 530;
+            this.BLA_portrait_hair2.TabStop = false;
+            this.BLA_portrait_hair2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_hair1
+            // 
+            this.BLA_portrait_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_hair1.Location = new System.Drawing.Point(325, 219);
+            this.BLA_portrait_hair1.Name = "BLA_portrait_hair1";
+            this.BLA_portrait_hair1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_hair1.TabIndex = 529;
+            this.BLA_portrait_hair1.TabStop = false;
+            this.BLA_portrait_hair1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_hair5
+            // 
+            this.BLA_portrait_hair5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_hair5.Location = new System.Drawing.Point(445, 219);
+            this.BLA_portrait_hair5.Name = "BLA_portrait_hair5";
+            this.BLA_portrait_hair5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_hair5.TabIndex = 527;
+            this.BLA_portrait_hair5.TabStop = false;
+            this.BLA_portrait_hair5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_hair5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_hair4
+            // 
+            this.BLA_portrait_hair4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_hair4.Location = new System.Drawing.Point(415, 219);
+            this.BLA_portrait_hair4.Name = "BLA_portrait_hair4";
+            this.BLA_portrait_hair4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_hair4.TabIndex = 526;
+            this.BLA_portrait_hair4.TabStop = false;
+            this.BLA_portrait_hair4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_hair4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_teeth1
+            // 
+            this.BLA_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_teeth1.Location = new System.Drawing.Point(325, 279);
+            this.BLA_portrait_teeth1.Name = "BLA_portrait_teeth1";
+            this.BLA_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_teeth1.TabIndex = 524;
+            this.BLA_portrait_teeth1.TabStop = false;
+            this.BLA_portrait_teeth1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_teeth1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin7
+            // 
+            this.BLA_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin7.Location = new System.Drawing.Point(505, 189);
+            this.BLA_portrait_skin7.Name = "BLA_portrait_skin7";
+            this.BLA_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin7.TabIndex = 522;
+            this.BLA_portrait_skin7.TabStop = false;
+            this.BLA_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin6
+            // 
+            this.BLA_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin6.Location = new System.Drawing.Point(475, 189);
+            this.BLA_portrait_skin6.Name = "BLA_portrait_skin6";
+            this.BLA_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin6.TabIndex = 521;
+            this.BLA_portrait_skin6.TabStop = false;
+            this.BLA_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_teeth3
+            // 
+            this.BLA_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_teeth3.Location = new System.Drawing.Point(385, 279);
+            this.BLA_portrait_teeth3.Name = "BLA_portrait_teeth3";
+            this.BLA_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_teeth3.TabIndex = 520;
+            this.BLA_portrait_teeth3.TabStop = false;
+            this.BLA_portrait_teeth3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_teeth3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin4
+            // 
+            this.BLA_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin4.Location = new System.Drawing.Point(415, 189);
+            this.BLA_portrait_skin4.Name = "BLA_portrait_skin4";
+            this.BLA_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin4.TabIndex = 518;
+            this.BLA_portrait_skin4.TabStop = false;
+            this.BLA_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin3
+            // 
+            this.BLA_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin3.Location = new System.Drawing.Point(385, 189);
+            this.BLA_portrait_skin3.Name = "BLA_portrait_skin3";
+            this.BLA_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin3.TabIndex = 517;
+            this.BLA_portrait_skin3.TabStop = false;
+            this.BLA_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin2
+            // 
+            this.BLA_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin2.Location = new System.Drawing.Point(355, 189);
+            this.BLA_portrait_skin2.Name = "BLA_portrait_skin2";
+            this.BLA_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin2.TabIndex = 516;
+            this.BLA_portrait_skin2.TabStop = false;
+            this.BLA_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_skin1
+            // 
+            this.BLA_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_skin1.Location = new System.Drawing.Point(325, 189);
+            this.BLA_portrait_skin1.Name = "BLA_portrait_skin1";
+            this.BLA_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_skin1.TabIndex = 515;
+            this.BLA_portrait_skin1.TabStop = false;
+            this.BLA_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_blood3
+            // 
+            this.BLA_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood3.Location = new System.Drawing.Point(385, 249);
+            this.BLA_portrait_blood3.Name = "BLA_portrait_blood3";
+            this.BLA_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood3.TabIndex = 542;
+            this.BLA_portrait_blood3.TabStop = false;
+            this.BLA_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_blood5
+            // 
+            this.BLA_portrait_blood5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood5.Location = new System.Drawing.Point(445, 249);
+            this.BLA_portrait_blood5.Name = "BLA_portrait_blood5";
+            this.BLA_portrait_blood5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood5.TabIndex = 541;
+            this.BLA_portrait_blood5.TabStop = false;
+            this.BLA_portrait_blood5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_portrait_blood4
+            // 
+            this.BLA_portrait_blood4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood4.Location = new System.Drawing.Point(415, 249);
+            this.BLA_portrait_blood4.Name = "BLA_portrait_blood4";
+            this.BLA_portrait_blood4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood4.TabIndex = 540;
+            this.BLA_portrait_blood4.TabStop = false;
+            this.BLA_portrait_blood4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -11928,6 +12546,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.THA_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitVictoryBox)).EndInit();
+            this.TabPageBlanka.ResumeLayout(false);
+            this.TabPageBlanka.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_outline)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_hair4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -12791,6 +13449,52 @@
         private System.Windows.Forms.ToolStripMenuItem resetCharacterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetThisColorToolStripMenuItem;
         private System.Windows.Forms.TabPage TabPageBlanka;
+        private System.Windows.Forms.PictureBox BLA_neutralStandBox;
+        private System.Windows.Forms.PictureBox BLA_portraitLossBox;
+        private System.Windows.Forms.PictureBox BLA_portraitVictoryBox;
+        private System.Windows.Forms.Label label151;
+        private System.Windows.Forms.Label label154;
+        private System.Windows.Forms.Label label155;
+        private System.Windows.Forms.Label label156;
+        private System.Windows.Forms.PictureBox BLA_sprite_lining2;
+        private System.Windows.Forms.PictureBox BLA_sprite_costume3;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin6;
+        private System.Windows.Forms.PictureBox BLA_sprite_costume5;
+        private System.Windows.Forms.PictureBox BLA_sprite_lining1;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin7;
+        private System.Windows.Forms.PictureBox BLA_sprite_costume4;
+        private System.Windows.Forms.PictureBox BLA_sprite_outline;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin5;
+        private System.Windows.Forms.PictureBox BLA_sprite_costume1;
+        private System.Windows.Forms.PictureBox BLA_sprite_costume2;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin1;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin2;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin3;
+        private System.Windows.Forms.PictureBox BLA_sprite_skin4;
+        private System.Windows.Forms.Label label157;
+        private System.Windows.Forms.Label label158;
+        private System.Windows.Forms.Label label159;
+        private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.PictureBox BLA_portrait_blood2;
+        private System.Windows.Forms.PictureBox BLA_portrait_blood1;
+        private System.Windows.Forms.PictureBox BLA_portrait_teeth2;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin5;
+        private System.Windows.Forms.PictureBox BLA_portrait_hair3;
+        private System.Windows.Forms.PictureBox BLA_portrait_hair2;
+        private System.Windows.Forms.PictureBox BLA_portrait_hair1;
+        private System.Windows.Forms.PictureBox BLA_portrait_hair5;
+        private System.Windows.Forms.PictureBox BLA_portrait_hair4;
+        private System.Windows.Forms.PictureBox BLA_portrait_teeth1;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin7;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin6;
+        private System.Windows.Forms.PictureBox BLA_portrait_teeth3;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin4;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin3;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin2;
+        private System.Windows.Forms.PictureBox BLA_portrait_skin1;
+        private System.Windows.Forms.PictureBox BLA_portrait_blood3;
+        private System.Windows.Forms.PictureBox BLA_portrait_blood5;
+        private System.Windows.Forms.PictureBox BLA_portrait_blood4;
     }
 }
 
