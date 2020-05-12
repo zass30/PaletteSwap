@@ -277,7 +277,11 @@ namespace PaletteSwap
         {
             switch (c)
             {
-                case CharacterConfig.CHARACTERS.Ryu:
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return DICTATOR.GenerateDictatorSpriteConfig();
+                default:
+                    return GenerateSpriteConfigGeneric(c);
+               /* case CharacterConfig.CHARACTERS.Ryu:
                     return RYU.GenerateRyuSpriteConfig();
                 case CharacterConfig.CHARACTERS.Ken:
                     return KEN.GenerateKenSpriteConfig();
@@ -287,8 +291,6 @@ namespace PaletteSwap
                     return GUILE.GenerateGuileSpriteConfig();
                 case CharacterConfig.CHARACTERS.Claw:
                     return CLAW.GenerateClawSpriteConfig();
-                case CharacterConfig.CHARACTERS.Dictator:
-                    return DICTATOR.GenerateDictatorSpriteConfig();
                 case CharacterConfig.CHARACTERS.Boxer:
                     return BOXER.GenerateBoxerSpriteConfig();
                 case CharacterConfig.CHARACTERS.Zangief:
@@ -308,7 +310,8 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Dhalsim:
                     return DHALSIM.GenerateDhalsimSpriteConfig();
                 case CharacterConfig.CHARACTERS.Blanka:
-                    return BLANKA.GenerateBlankaSpriteConfig();
+                    //return BLANKA.GenerateBlankaSpriteConfig();
+                    return GenerateSpriteConfigGeneric(c);*/
             }
             throw new Exception("Invalid character");
         }
@@ -409,6 +412,86 @@ namespace PaletteSwap
                 cp.position = offset + i;
                 this.defaultColorOffsets.Add(cp);
             }
+        }
+
+        public static PaletteConfig GenerateSpriteConfigGeneric(CharacterConfig.CHARACTERS c)
+        {
+            Dictionary<string, List<int>> labeloffsets;
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    labeloffsets = RYU.GenerateRyuSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    labeloffsets = HONDA.GenerateHondaSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Blanka:
+                    labeloffsets = BLANKA.GenerateBlankaSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Guile:
+                    labeloffsets = GUILE.GenerateGuileSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Ken:
+                    labeloffsets = KEN.GenerateKenSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Chun:
+                    labeloffsets = CHUN.GenerateChunSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    labeloffsets = ZANGIEF.GenerateZangiefSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    labeloffsets = DHALSIM.GenerateDhalsimSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    labeloffsets = SAGAT.GenerateSagatSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    labeloffsets = BOXER.GenerateBoxerSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Claw:
+                    labeloffsets = CLAW.GenerateClawSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Cammy:
+                    labeloffsets = CAMMY.GenerateCammySpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Thawk:
+                    labeloffsets = HAWK.GenerateHawkSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Feilong:
+                    labeloffsets = FEI.GenerateFeiSpriteOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Deejay:
+                    labeloffsets = DEEJAY.GenerateDeejaySpriteOffsets();
+                    break;
+                default:
+                    throw new Exception("Invalid character");
+            }
+
+
+            // ryu 0
+            // eho 1
+            // bla 2
+            // gui 3
+            // ken 4
+            // chu 5
+            // zan 6
+            // dha 7
+            // dic 8
+            // sag 9
+            // box A
+            // cla B
+            // cam c
+            // tha d
+            // fei e
+            // dee f
+            int MEMLEN = 30;
+            PaletteConfig pc = new PaletteConfig();
+            pc.labelOffsets = labeloffsets;
+            pc.unusedOffsets = new List<int>();
+            pc.defaultColorOffsets = new List<ColorOffset>();
+            pc.streamLength = MEMLEN;
+            return pc;
         }
 
         public struct BLANKA
