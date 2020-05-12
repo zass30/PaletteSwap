@@ -1281,7 +1281,7 @@ namespace PaletteSwap
 
         { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24,  ROWLEN * 3 + 24 } },
         { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26, ROWLEN * 2 + 26, ROWLEN * 3 + 26 } },
-        { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28, ROWLEN * 3 + 28 } },
+        { "teeth3", new List<int>() { 28, ROWLEN * 2 + 28, ROWLEN * 3 + 28 } },
 
         { "facepaintloss3", new List<int>() { ROWLEN * 1 + 28 } },
 
