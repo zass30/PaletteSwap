@@ -287,7 +287,76 @@ namespace PaletteSwap
 
         public static PaletteConfig GeneratePortraitConfig(CharacterConfig.CHARACTERS c)
         {
-            return GeneratePortraitConfigGeneric(c);
+            Dictionary<string, List<int>> labeloffsets;
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    labeloffsets = RYU.GenerateRyuPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    labeloffsets = HONDA.GenerateHondaPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Blanka:
+                    labeloffsets = BLANKA.GenerateBlankaPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Guile:
+                    labeloffsets = GUILE.GenerateGuilePortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Ken:
+                    labeloffsets = KEN.GenerateKenPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Chun:
+                    labeloffsets = CHUN.GenerateChunPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    labeloffsets = ZANGIEF.GenerateZangiefPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    labeloffsets = DHALSIM.GenerateDhalsimPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Dictator:
+                    labeloffsets = DICTATOR.GenerateDictatorPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    labeloffsets = SAGAT.GenerateSagatPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    labeloffsets = BOXER.GenerateBoxerPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Claw:
+                    labeloffsets = CLAW.GenerateClawPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Cammy:
+                    labeloffsets = CAMMY.GenerateCammyPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Thawk:
+                    labeloffsets = HAWK.GenerateHawkPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Feilong:
+                    labeloffsets = FEI.GenerateFeiPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Deejay:
+                    labeloffsets = DEEJAY.GenerateDeejayPortraitOffsets();
+                    break;
+                default:
+                    throw new Exception("Invalid character");
+            }
+            int MEMLEN = ROWLEN * 4;
+            List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+            for (int i = 0; i < 4; i++)
+            {
+                ColorOffset dco = new ColorOffset();
+                dco.c = PaletteHelper.MemFormatToColor("9A00");
+                dco.position = 30 + ROWLEN * i;
+                defaultColorOffsets.Add(dco);
+            }
+
+            PaletteConfig pc = new PaletteConfig();
+            pc.labelOffsets = labeloffsets;
+            pc.defaultColorOffsets = defaultColorOffsets;
+            pc.unusedOffsets = new List<int>() { };
+            pc.streamLength = MEMLEN;
+            return pc;
         }
         // todo make this a general function to avoid duplication
         public static Dictionary<string, List<int>> GetSpriteOffsets(CharacterConfig.CHARACTERS c)
@@ -427,79 +496,10 @@ namespace PaletteSwap
             return pc;
         }
 
-        public static PaletteConfig GeneratePortraitConfigGeneric(CharacterConfig.CHARACTERS c)
+      /*  public static PaletteConfig GeneratePortraitConfigGeneric(CharacterConfig.CHARACTERS c)
         {
-            Dictionary<string, List<int>> labeloffsets;
-            switch (c)
-            {
-                case CharacterConfig.CHARACTERS.Ryu:
-                    labeloffsets = RYU.GenerateRyuPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Ehonda:
-                    labeloffsets = HONDA.GenerateHondaPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Blanka:
-                    labeloffsets = BLANKA.GenerateBlankaPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Guile:
-                    labeloffsets = GUILE.GenerateGuilePortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Ken:
-                    labeloffsets = KEN.GenerateKenPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Chun:
-                    labeloffsets = CHUN.GenerateChunPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Zangief:
-                    labeloffsets = ZANGIEF.GenerateZangiefPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Dhalsim:
-                    labeloffsets = DHALSIM.GenerateDhalsimPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Dictator:
-                    labeloffsets = DICTATOR.GenerateDictatorPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Sagat:
-                    labeloffsets = SAGAT.GenerateSagatPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Boxer:
-                    labeloffsets = BOXER.GenerateBoxerPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Claw:
-                    labeloffsets = CLAW.GenerateClawPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Cammy:
-                    labeloffsets = CAMMY.GenerateCammyPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Thawk:
-                    labeloffsets = HAWK.GenerateHawkPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Feilong:
-                    labeloffsets = FEI.GenerateFeiPortraitOffsets();
-                    break;
-                case CharacterConfig.CHARACTERS.Deejay:
-                    labeloffsets = DEEJAY.GenerateDeejayPortraitOffsets();
-                    break;
-                default:
-                    throw new Exception("Invalid character");
-            }
-            int MEMLEN = ROWLEN * 4;
-            List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
-            for (int i = 0; i < 4; i++)
-            {
-                ColorOffset dco = new ColorOffset();
-                dco.c = PaletteHelper.MemFormatToColor("9A00");
-                dco.position = 30 + ROWLEN * i;
-                defaultColorOffsets.Add(dco);
-            }
-
-            PaletteConfig pc = new PaletteConfig();
-            pc.labelOffsets = labeloffsets;
-            pc.defaultColorOffsets = defaultColorOffsets;
-            pc.unusedOffsets = new List<int>() { };
-            pc.streamLength = MEMLEN;
-            return pc;
-        }
+  
+        }*/
 
         public struct BLANKA
         {
