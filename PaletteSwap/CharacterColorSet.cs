@@ -209,6 +209,7 @@ namespace PaletteSwap
 
         public byte[] patch_sprites_stream04(byte[] b)
         {
+            var blanka_offset = 0;
             for (int i = 0; i < 10; i++)
             {
                 if (characterColors[i] == null)
@@ -218,10 +219,10 @@ namespace PaletteSwap
                 var s = characterColors[i].sprite;
                 byte[] color_bytes = s.ToByteStream();
                 if (this.character == CharacterConfig.CHARACTERS.Blanka && i == 9)
-                    sprite_offset += 0x02;
+                    blanka_offset = 0x02;
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
-                    b[sprite_offset + i * sprite_length + j] = color_bytes[j];
+                    b[sprite_offset + i * sprite_length + j + blanka_offset] = color_bytes[j];
                 }
             }
             return b;
