@@ -883,31 +883,10 @@
             this.THA_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.THA_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.THA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.COLlabel = new System.Windows.Forms.Label();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.TabPageBlanka = new System.Windows.Forms.TabPage();
-            this.BLA_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.BLA_portraitLossBox = new System.Windows.Forms.PictureBox();
-            this.BLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.label151 = new System.Windows.Forms.Label();
-            this.label154 = new System.Windows.Forms.Label();
-            this.label155 = new System.Windows.Forms.Label();
-            this.label156 = new System.Windows.Forms.Label();
-            this.BLA_sprite_lining2 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_costume3 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin6 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_costume5 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_lining1 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin7 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_costume4 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_outline = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin5 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_costume1 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_costume2 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin1 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin2 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin3 = new System.Windows.Forms.PictureBox();
-            this.BLA_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood3 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood5 = new System.Windows.Forms.PictureBox();
+            this.BLA_portrait_blood4 = new System.Windows.Forms.PictureBox();
             this.label157 = new System.Windows.Forms.Label();
             this.label158 = new System.Windows.Forms.Label();
             this.label159 = new System.Windows.Forms.Label();
@@ -929,9 +908,30 @@
             this.BLA_portrait_skin3 = new System.Windows.Forms.PictureBox();
             this.BLA_portrait_skin2 = new System.Windows.Forms.PictureBox();
             this.BLA_portrait_skin1 = new System.Windows.Forms.PictureBox();
-            this.BLA_portrait_blood3 = new System.Windows.Forms.PictureBox();
-            this.BLA_portrait_blood5 = new System.Windows.Forms.PictureBox();
-            this.BLA_portrait_blood4 = new System.Windows.Forms.PictureBox();
+            this.label151 = new System.Windows.Forms.Label();
+            this.label154 = new System.Windows.Forms.Label();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.BLA_sprite_lining2 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_lining1 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin7 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_outline = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.BLA_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.BLA_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.BLA_portraitLossBox = new System.Windows.Forms.PictureBox();
+            this.BLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1580,24 +1580,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitVictoryBox)).BeginInit();
             this.TabPageBlanka.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_outline)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth2)).BeginInit();
@@ -1615,9 +1600,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_outline)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1981,7 +1981,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2001,7 +2001,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -2009,7 +2009,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2020,7 +2020,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2040,7 +2040,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -2049,7 +2049,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -2058,14 +2058,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -2082,42 +2082,42 @@
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // newLegacyROMToolStripMenuItem
             // 
             this.newLegacyROMToolStripMenuItem.Name = "newLegacyROMToolStripMenuItem";
-            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newLegacyROMToolStripMenuItem.Text = "New Legacy ROM";
             this.newLegacyROMToolStripMenuItem.Click += new System.EventHandler(this.newLegacyROMToolStripMenuItem_Click);
             // 
             // redggpoROMToolStripMenuItem
             // 
             this.redggpoROMToolStripMenuItem.Name = "redggpoROMToolStripMenuItem";
-            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.redggpoROMToolStripMenuItem.Text = "Redggpo ROM";
             this.redggpoROMToolStripMenuItem.Click += new System.EventHandler(this.redggpoROMToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -11295,23 +11295,6 @@
             this.THA_portraitVictoryBox.TabStop = false;
             this.THA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
-            // COLlabel
-            // 
-            this.COLlabel.AllowDrop = true;
-            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.COLlabel.Location = new System.Drawing.Point(341, 663);
-            this.COLlabel.Name = "COLlabel";
-            this.COLlabel.Size = new System.Drawing.Size(90, 49);
-            this.COLlabel.TabIndex = 122;
-            this.COLlabel.Text = "Drag COL file";
-            // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.Location = new System.Drawing.Point(726, 534);
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
-            this.hScrollBar1.TabIndex = 124;
-            // 
             // TabPageBlanka
             // 
             this.TabPageBlanka.BackColor = System.Drawing.SystemColors.Control;
@@ -11367,236 +11350,38 @@
             this.TabPageBlanka.TabIndex = 15;
             this.TabPageBlanka.Text = "Blanka";
             // 
-            // BLA_neutralStandBox
+            // BLA_portrait_blood3
             // 
-            this.BLA_neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.BLA_neutralStandBox.Location = new System.Drawing.Point(16, 25);
-            this.BLA_neutralStandBox.Name = "BLA_neutralStandBox";
-            this.BLA_neutralStandBox.Size = new System.Drawing.Size(98, 100);
-            this.BLA_neutralStandBox.TabIndex = 192;
-            this.BLA_neutralStandBox.TabStop = false;
-            this.BLA_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            this.BLA_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood3.Location = new System.Drawing.Point(385, 249);
+            this.BLA_portrait_blood3.Name = "BLA_portrait_blood3";
+            this.BLA_portrait_blood3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood3.TabIndex = 542;
+            this.BLA_portrait_blood3.TabStop = false;
+            this.BLA_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // BLA_portraitLossBox
+            // BLA_portrait_blood5
             // 
-            this.BLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
-            this.BLA_portraitLossBox.Location = new System.Drawing.Point(453, 25);
-            this.BLA_portraitLossBox.Name = "BLA_portraitLossBox";
-            this.BLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
-            this.BLA_portraitLossBox.TabIndex = 191;
-            this.BLA_portraitLossBox.TabStop = false;
-            this.BLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            this.BLA_portrait_blood5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood5.Location = new System.Drawing.Point(445, 249);
+            this.BLA_portrait_blood5.Name = "BLA_portrait_blood5";
+            this.BLA_portrait_blood5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood5.TabIndex = 541;
+            this.BLA_portrait_blood5.TabStop = false;
+            this.BLA_portrait_blood5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood5.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // BLA_portraitVictoryBox
+            // BLA_portrait_blood4
             // 
-            this.BLA_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.BLA_portraitVictoryBox.Location = new System.Drawing.Point(316, 25);
-            this.BLA_portraitVictoryBox.Name = "BLA_portraitVictoryBox";
-            this.BLA_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
-            this.BLA_portraitVictoryBox.TabIndex = 190;
-            this.BLA_portraitVictoryBox.TabStop = false;
-            this.BLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Location = new System.Drawing.Point(22, 320);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(38, 13);
-            this.label151.TabIndex = 504;
-            this.label151.Text = "outline";
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Location = new System.Drawing.Point(29, 290);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(31, 13);
-            this.label154.TabIndex = 503;
-            this.label154.Text = "lining";
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Location = new System.Drawing.Point(13, 260);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(47, 13);
-            this.label155.TabIndex = 502;
-            this.label155.Text = "costume";
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Location = new System.Drawing.Point(34, 200);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(26, 13);
-            this.label156.TabIndex = 501;
-            this.label156.Text = "skin";
-            // 
-            // BLA_sprite_lining2
-            // 
-            this.BLA_sprite_lining2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_lining2.Location = new System.Drawing.Point(96, 279);
-            this.BLA_sprite_lining2.Name = "BLA_sprite_lining2";
-            this.BLA_sprite_lining2.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_lining2.TabIndex = 499;
-            this.BLA_sprite_lining2.TabStop = false;
-            this.BLA_sprite_lining2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_lining2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_costume3
-            // 
-            this.BLA_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_costume3.Location = new System.Drawing.Point(126, 249);
-            this.BLA_sprite_costume3.Name = "BLA_sprite_costume3";
-            this.BLA_sprite_costume3.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_costume3.TabIndex = 500;
-            this.BLA_sprite_costume3.TabStop = false;
-            this.BLA_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin6
-            // 
-            this.BLA_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin6.Location = new System.Drawing.Point(96, 219);
-            this.BLA_sprite_skin6.Name = "BLA_sprite_skin6";
-            this.BLA_sprite_skin6.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin6.TabIndex = 493;
-            this.BLA_sprite_skin6.TabStop = false;
-            this.BLA_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_costume5
-            // 
-            this.BLA_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_costume5.Location = new System.Drawing.Point(186, 249);
-            this.BLA_sprite_costume5.Name = "BLA_sprite_costume5";
-            this.BLA_sprite_costume5.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_costume5.TabIndex = 494;
-            this.BLA_sprite_costume5.TabStop = false;
-            this.BLA_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_lining1
-            // 
-            this.BLA_sprite_lining1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_lining1.Location = new System.Drawing.Point(66, 279);
-            this.BLA_sprite_lining1.Name = "BLA_sprite_lining1";
-            this.BLA_sprite_lining1.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_lining1.TabIndex = 495;
-            this.BLA_sprite_lining1.TabStop = false;
-            this.BLA_sprite_lining1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_lining1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin7
-            // 
-            this.BLA_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin7.Location = new System.Drawing.Point(127, 219);
-            this.BLA_sprite_skin7.Name = "BLA_sprite_skin7";
-            this.BLA_sprite_skin7.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin7.TabIndex = 496;
-            this.BLA_sprite_skin7.TabStop = false;
-            this.BLA_sprite_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin7.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_costume4
-            // 
-            this.BLA_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_costume4.Location = new System.Drawing.Point(156, 249);
-            this.BLA_sprite_costume4.Name = "BLA_sprite_costume4";
-            this.BLA_sprite_costume4.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_costume4.TabIndex = 497;
-            this.BLA_sprite_costume4.TabStop = false;
-            this.BLA_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_outline
-            // 
-            this.BLA_sprite_outline.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_outline.Location = new System.Drawing.Point(66, 309);
-            this.BLA_sprite_outline.Name = "BLA_sprite_outline";
-            this.BLA_sprite_outline.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_outline.TabIndex = 498;
-            this.BLA_sprite_outline.TabStop = false;
-            this.BLA_sprite_outline.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_outline.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin5
-            // 
-            this.BLA_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin5.Location = new System.Drawing.Point(66, 219);
-            this.BLA_sprite_skin5.Name = "BLA_sprite_skin5";
-            this.BLA_sprite_skin5.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin5.TabIndex = 490;
-            this.BLA_sprite_skin5.TabStop = false;
-            this.BLA_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_costume1
-            // 
-            this.BLA_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_costume1.Location = new System.Drawing.Point(66, 249);
-            this.BLA_sprite_costume1.Name = "BLA_sprite_costume1";
-            this.BLA_sprite_costume1.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_costume1.TabIndex = 491;
-            this.BLA_sprite_costume1.TabStop = false;
-            this.BLA_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_costume2
-            // 
-            this.BLA_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_costume2.Location = new System.Drawing.Point(96, 249);
-            this.BLA_sprite_costume2.Name = "BLA_sprite_costume2";
-            this.BLA_sprite_costume2.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_costume2.TabIndex = 492;
-            this.BLA_sprite_costume2.TabStop = false;
-            this.BLA_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin1
-            // 
-            this.BLA_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin1.Location = new System.Drawing.Point(66, 189);
-            this.BLA_sprite_skin1.Name = "BLA_sprite_skin1";
-            this.BLA_sprite_skin1.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin1.TabIndex = 486;
-            this.BLA_sprite_skin1.TabStop = false;
-            this.BLA_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin2
-            // 
-            this.BLA_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin2.Location = new System.Drawing.Point(96, 189);
-            this.BLA_sprite_skin2.Name = "BLA_sprite_skin2";
-            this.BLA_sprite_skin2.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin2.TabIndex = 487;
-            this.BLA_sprite_skin2.TabStop = false;
-            this.BLA_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin3
-            // 
-            this.BLA_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin3.Location = new System.Drawing.Point(126, 189);
-            this.BLA_sprite_skin3.Name = "BLA_sprite_skin3";
-            this.BLA_sprite_skin3.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin3.TabIndex = 488;
-            this.BLA_sprite_skin3.TabStop = false;
-            this.BLA_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // BLA_sprite_skin4
-            // 
-            this.BLA_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_sprite_skin4.Location = new System.Drawing.Point(156, 189);
-            this.BLA_sprite_skin4.Name = "BLA_sprite_skin4";
-            this.BLA_sprite_skin4.Size = new System.Drawing.Size(24, 24);
-            this.BLA_sprite_skin4.TabIndex = 489;
-            this.BLA_sprite_skin4.TabStop = false;
-            this.BLA_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
-            this.BLA_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            this.BLA_portrait_blood4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_portrait_blood4.Location = new System.Drawing.Point(415, 249);
+            this.BLA_portrait_blood4.Name = "BLA_portrait_blood4";
+            this.BLA_portrait_blood4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_portrait_blood4.TabIndex = 540;
+            this.BLA_portrait_blood4.TabStop = false;
+            this.BLA_portrait_blood4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.BLA_portrait_blood4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label157
             // 
@@ -11821,38 +11606,253 @@
             this.BLA_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.BLA_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // BLA_portrait_blood3
+            // label151
             // 
-            this.BLA_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_portrait_blood3.Location = new System.Drawing.Point(385, 249);
-            this.BLA_portrait_blood3.Name = "BLA_portrait_blood3";
-            this.BLA_portrait_blood3.Size = new System.Drawing.Size(24, 24);
-            this.BLA_portrait_blood3.TabIndex = 542;
-            this.BLA_portrait_blood3.TabStop = false;
-            this.BLA_portrait_blood3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BLA_portrait_blood3.Click += new System.EventHandler(this.pal_square_click);
+            this.label151.AutoSize = true;
+            this.label151.Location = new System.Drawing.Point(22, 320);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(38, 13);
+            this.label151.TabIndex = 504;
+            this.label151.Text = "outline";
             // 
-            // BLA_portrait_blood5
+            // label154
             // 
-            this.BLA_portrait_blood5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_portrait_blood5.Location = new System.Drawing.Point(445, 249);
-            this.BLA_portrait_blood5.Name = "BLA_portrait_blood5";
-            this.BLA_portrait_blood5.Size = new System.Drawing.Size(24, 24);
-            this.BLA_portrait_blood5.TabIndex = 541;
-            this.BLA_portrait_blood5.TabStop = false;
-            this.BLA_portrait_blood5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BLA_portrait_blood5.Click += new System.EventHandler(this.pal_square_click);
+            this.label154.AutoSize = true;
+            this.label154.Location = new System.Drawing.Point(29, 290);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(31, 13);
+            this.label154.TabIndex = 503;
+            this.label154.Text = "lining";
             // 
-            // BLA_portrait_blood4
+            // label155
             // 
-            this.BLA_portrait_blood4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BLA_portrait_blood4.Location = new System.Drawing.Point(415, 249);
-            this.BLA_portrait_blood4.Name = "BLA_portrait_blood4";
-            this.BLA_portrait_blood4.Size = new System.Drawing.Size(24, 24);
-            this.BLA_portrait_blood4.TabIndex = 540;
-            this.BLA_portrait_blood4.TabStop = false;
-            this.BLA_portrait_blood4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.BLA_portrait_blood4.Click += new System.EventHandler(this.pal_square_click);
+            this.label155.AutoSize = true;
+            this.label155.Location = new System.Drawing.Point(13, 260);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(47, 13);
+            this.label155.TabIndex = 502;
+            this.label155.Text = "costume";
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Location = new System.Drawing.Point(34, 200);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(26, 13);
+            this.label156.TabIndex = 501;
+            this.label156.Text = "skin";
+            // 
+            // BLA_sprite_lining2
+            // 
+            this.BLA_sprite_lining2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_lining2.Location = new System.Drawing.Point(96, 279);
+            this.BLA_sprite_lining2.Name = "BLA_sprite_lining2";
+            this.BLA_sprite_lining2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_lining2.TabIndex = 499;
+            this.BLA_sprite_lining2.TabStop = false;
+            this.BLA_sprite_lining2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_lining2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume3
+            // 
+            this.BLA_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume3.Location = new System.Drawing.Point(126, 249);
+            this.BLA_sprite_costume3.Name = "BLA_sprite_costume3";
+            this.BLA_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume3.TabIndex = 500;
+            this.BLA_sprite_costume3.TabStop = false;
+            this.BLA_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin6
+            // 
+            this.BLA_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin6.Location = new System.Drawing.Point(96, 219);
+            this.BLA_sprite_skin6.Name = "BLA_sprite_skin6";
+            this.BLA_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin6.TabIndex = 493;
+            this.BLA_sprite_skin6.TabStop = false;
+            this.BLA_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume5
+            // 
+            this.BLA_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume5.Location = new System.Drawing.Point(186, 249);
+            this.BLA_sprite_costume5.Name = "BLA_sprite_costume5";
+            this.BLA_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume5.TabIndex = 494;
+            this.BLA_sprite_costume5.TabStop = false;
+            this.BLA_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_lining1
+            // 
+            this.BLA_sprite_lining1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_lining1.Location = new System.Drawing.Point(66, 279);
+            this.BLA_sprite_lining1.Name = "BLA_sprite_lining1";
+            this.BLA_sprite_lining1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_lining1.TabIndex = 495;
+            this.BLA_sprite_lining1.TabStop = false;
+            this.BLA_sprite_lining1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_lining1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin7
+            // 
+            this.BLA_sprite_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin7.Location = new System.Drawing.Point(127, 219);
+            this.BLA_sprite_skin7.Name = "BLA_sprite_skin7";
+            this.BLA_sprite_skin7.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin7.TabIndex = 496;
+            this.BLA_sprite_skin7.TabStop = false;
+            this.BLA_sprite_skin7.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume4
+            // 
+            this.BLA_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume4.Location = new System.Drawing.Point(156, 249);
+            this.BLA_sprite_costume4.Name = "BLA_sprite_costume4";
+            this.BLA_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume4.TabIndex = 497;
+            this.BLA_sprite_costume4.TabStop = false;
+            this.BLA_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_outline
+            // 
+            this.BLA_sprite_outline.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_outline.Location = new System.Drawing.Point(66, 309);
+            this.BLA_sprite_outline.Name = "BLA_sprite_outline";
+            this.BLA_sprite_outline.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_outline.TabIndex = 498;
+            this.BLA_sprite_outline.TabStop = false;
+            this.BLA_sprite_outline.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_outline.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin5
+            // 
+            this.BLA_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin5.Location = new System.Drawing.Point(66, 219);
+            this.BLA_sprite_skin5.Name = "BLA_sprite_skin5";
+            this.BLA_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin5.TabIndex = 490;
+            this.BLA_sprite_skin5.TabStop = false;
+            this.BLA_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume1
+            // 
+            this.BLA_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume1.Location = new System.Drawing.Point(66, 249);
+            this.BLA_sprite_costume1.Name = "BLA_sprite_costume1";
+            this.BLA_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume1.TabIndex = 491;
+            this.BLA_sprite_costume1.TabStop = false;
+            this.BLA_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_costume2
+            // 
+            this.BLA_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_costume2.Location = new System.Drawing.Point(96, 249);
+            this.BLA_sprite_costume2.Name = "BLA_sprite_costume2";
+            this.BLA_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_costume2.TabIndex = 492;
+            this.BLA_sprite_costume2.TabStop = false;
+            this.BLA_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin1
+            // 
+            this.BLA_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin1.Location = new System.Drawing.Point(66, 189);
+            this.BLA_sprite_skin1.Name = "BLA_sprite_skin1";
+            this.BLA_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin1.TabIndex = 486;
+            this.BLA_sprite_skin1.TabStop = false;
+            this.BLA_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin2
+            // 
+            this.BLA_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin2.Location = new System.Drawing.Point(96, 189);
+            this.BLA_sprite_skin2.Name = "BLA_sprite_skin2";
+            this.BLA_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin2.TabIndex = 487;
+            this.BLA_sprite_skin2.TabStop = false;
+            this.BLA_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin3
+            // 
+            this.BLA_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin3.Location = new System.Drawing.Point(126, 189);
+            this.BLA_sprite_skin3.Name = "BLA_sprite_skin3";
+            this.BLA_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin3.TabIndex = 488;
+            this.BLA_sprite_skin3.TabStop = false;
+            this.BLA_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_sprite_skin4
+            // 
+            this.BLA_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BLA_sprite_skin4.Location = new System.Drawing.Point(156, 189);
+            this.BLA_sprite_skin4.Name = "BLA_sprite_skin4";
+            this.BLA_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.BLA_sprite_skin4.TabIndex = 489;
+            this.BLA_sprite_skin4.TabStop = false;
+            this.BLA_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.BLA_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // BLA_neutralStandBox
+            // 
+            this.BLA_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.BLA_neutralStandBox.Location = new System.Drawing.Point(16, 25);
+            this.BLA_neutralStandBox.Name = "BLA_neutralStandBox";
+            this.BLA_neutralStandBox.Size = new System.Drawing.Size(98, 100);
+            this.BLA_neutralStandBox.TabIndex = 192;
+            this.BLA_neutralStandBox.TabStop = false;
+            this.BLA_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // BLA_portraitLossBox
+            // 
+            this.BLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
+            this.BLA_portraitLossBox.Location = new System.Drawing.Point(453, 25);
+            this.BLA_portraitLossBox.Name = "BLA_portraitLossBox";
+            this.BLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.BLA_portraitLossBox.TabIndex = 191;
+            this.BLA_portraitLossBox.TabStop = false;
+            this.BLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // BLA_portraitVictoryBox
+            // 
+            this.BLA_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.BLA_portraitVictoryBox.Location = new System.Drawing.Point(316, 25);
+            this.BLA_portraitVictoryBox.Name = "BLA_portraitVictoryBox";
+            this.BLA_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.BLA_portraitVictoryBox.TabIndex = 190;
+            this.BLA_portraitVictoryBox.TabStop = false;
+            this.BLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            // 
+            // COLlabel
+            // 
+            this.COLlabel.AllowDrop = true;
+            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.COLlabel.Location = new System.Drawing.Point(341, 663);
+            this.COLlabel.Name = "COLlabel";
+            this.COLlabel.Size = new System.Drawing.Size(90, 49);
+            this.COLlabel.TabIndex = 122;
+            this.COLlabel.Text = "Drag COL file";
+            // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(726, 534);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
+            this.hScrollBar1.TabIndex = 124;
             // 
             // MainForm
             // 
@@ -12548,24 +12548,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.THA_portraitVictoryBox)).EndInit();
             this.TabPageBlanka.ResumeLayout(false);
             this.TabPageBlanka.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_outline)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_teeth2)).EndInit();
@@ -12583,9 +12568,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BLA_portrait_blood4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_lining1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_outline)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

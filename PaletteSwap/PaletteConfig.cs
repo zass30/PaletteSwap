@@ -316,6 +316,47 @@ namespace PaletteSwap
             throw new Exception("Invalid character");
         }
 
+        public static PaletteConfig GeneratePortraitConfig(CharacterConfig.CHARACTERS c)
+        {
+            return GeneratePortraitConfigGeneric(c);
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    return RYU.GenerateRyuPortraitConfig();
+                case CharacterConfig.CHARACTERS.Ken:
+                    return KEN.GenerateKenPortraitConfig();
+                case CharacterConfig.CHARACTERS.Chun:
+                    return CHUN.GenerateChunPortraitConfig();
+                case CharacterConfig.CHARACTERS.Guile:
+                    return GUILE.GenerateGuilePortraitConfig();
+                case CharacterConfig.CHARACTERS.Claw:
+                    return CLAW.GenerateClawPortraitConfig();
+                case CharacterConfig.CHARACTERS.Dictator:
+                    return DICTATOR.GenerateDictatorPortraitConfig();
+                case CharacterConfig.CHARACTERS.Boxer:
+                    return BOXER.GenerateBoxerPortraitConfig();
+                case CharacterConfig.CHARACTERS.Zangief:
+                    return ZANGIEF.GenerateZangiefPortraitConfig();
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    return HONDA.GenerateHondaPortraitConfig();
+                case CharacterConfig.CHARACTERS.Sagat:
+                    return SAGAT.GenerateSagatPortraitConfig();
+                case CharacterConfig.CHARACTERS.Feilong:
+                    return FEI.GenerateFeiPortraitConfig();
+                case CharacterConfig.CHARACTERS.Deejay:
+                    return DEEJAY.GenerateDeejayPortraitConfig();
+                case CharacterConfig.CHARACTERS.Cammy:
+                    return CAMMY.GenerateCammyPortraitConfig();
+                case CharacterConfig.CHARACTERS.Thawk:
+                    return HAWK.GenerateHawkPortraitConfig();
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    return DHALSIM.GenerateDhalsimPortraitConfig();
+                case CharacterConfig.CHARACTERS.Blanka:
+//                    return BLANKA.GenerateBlankaPortraitConfig();
+                    return GeneratePortraitConfigGeneric(c);
+            }
+            throw new Exception("Invalid character");
+        }
         // todo make this a general function to avoid duplication
         public static Dictionary<string, List<int>> GetSpriteOffsets(CharacterConfig.CHARACTERS c)
         {
@@ -356,47 +397,7 @@ namespace PaletteSwap
             }
             throw new Exception("Invalid character");
         }
-        
-        public static PaletteConfig GeneratePortraitConfig(CharacterConfig.CHARACTERS c)
-        {
-            switch (c)
-            {
-                case CharacterConfig.CHARACTERS.Ryu:
-                    return RYU.GenerateRyuPortraitConfig();
-                case CharacterConfig.CHARACTERS.Ken:
-                    return KEN.GenerateKenPortraitConfig();
-                case CharacterConfig.CHARACTERS.Chun:
-                    return CHUN.GenerateChunPortraitConfig();
-                case CharacterConfig.CHARACTERS.Guile:
-                    return GUILE.GenerateGuilePortraitConfig();
-                case CharacterConfig.CHARACTERS.Claw:
-                    return CLAW.GenerateClawPortraitConfig();
-                case CharacterConfig.CHARACTERS.Dictator:
-                    return DICTATOR.GenerateDictatorPortraitConfig();
-                case CharacterConfig.CHARACTERS.Boxer:
-                    return BOXER.GenerateBoxerPortraitConfig();
-                case CharacterConfig.CHARACTERS.Zangief:
-                    return ZANGIEF.GenerateZangiefPortraitConfig();
-                case CharacterConfig.CHARACTERS.Ehonda:
-                    return HONDA.GenerateHondaPortraitConfig();
-                case CharacterConfig.CHARACTERS.Sagat:
-                    return SAGAT.GenerateSagatPortraitConfig();
-                case CharacterConfig.CHARACTERS.Feilong:
-                    return FEI.GenerateFeiPortraitConfig();
-                case CharacterConfig.CHARACTERS.Deejay:
-                    return DEEJAY.GenerateDeejayPortraitConfig();
-                case CharacterConfig.CHARACTERS.Cammy:
-                    return CAMMY.GenerateCammyPortraitConfig();
-                case CharacterConfig.CHARACTERS.Thawk:
-                    return HAWK.GenerateHawkPortraitConfig();
-                case CharacterConfig.CHARACTERS.Dhalsim:
-                    return DHALSIM.GenerateDhalsimPortraitConfig();
-                case CharacterConfig.CHARACTERS.Blanka:
-                    return BLANKA.GenerateBlankaPortraitConfig();
-            }
-            throw new Exception("Invalid character");
-        }
-
+       
         public void createColorOffsets(string defaults, int offset)
         {
             byte[] colordefaults = PaletteHelper.StringToByteStream(defaults);
@@ -494,6 +495,80 @@ namespace PaletteSwap
             return pc;
         }
 
+        public static PaletteConfig GeneratePortraitConfigGeneric(CharacterConfig.CHARACTERS c)
+        {
+            Dictionary<string, List<int>> labeloffsets;
+            switch (c)
+            {
+                case CharacterConfig.CHARACTERS.Ryu:
+                    labeloffsets = RYU.GenerateRyuPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Ehonda:
+                    labeloffsets = HONDA.GenerateHondaPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Blanka:
+                    labeloffsets = BLANKA.GenerateBlankaPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Guile:
+                    labeloffsets = GUILE.GenerateGuilePortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Ken:
+                    labeloffsets = KEN.GenerateKenPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Chun:
+                    labeloffsets = CHUN.GenerateChunPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Zangief:
+                    labeloffsets = ZANGIEF.GenerateZangiefPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Dhalsim:
+                    labeloffsets = DHALSIM.GenerateDhalsimPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Dictator:
+                    labeloffsets = DICTATOR.GenerateDictatorPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Sagat:
+                    labeloffsets = SAGAT.GenerateSagatPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Boxer:
+                    labeloffsets = BOXER.GenerateBoxerPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Claw:
+                    labeloffsets = CLAW.GenerateClawPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Cammy:
+                    labeloffsets = CAMMY.GenerateCammyPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Thawk:
+                    labeloffsets = HAWK.GenerateHawkPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Feilong:
+                    labeloffsets = FEI.GenerateFeiPortraitOffsets();
+                    break;
+                case CharacterConfig.CHARACTERS.Deejay:
+                    labeloffsets = DEEJAY.GenerateDeejayPortraitOffsets();
+                    break;
+                default:
+                    throw new Exception("Invalid character");
+            }
+            int MEMLEN = ROWLEN * 4;
+            List<ColorOffset> defaultColorOffsets = new List<ColorOffset>();
+            for (int i = 0; i < 4; i++)
+            {
+                ColorOffset dco = new ColorOffset();
+                dco.c = PaletteHelper.MemFormatToColor("9A00");
+                dco.position = 30 + ROWLEN * i;
+                defaultColorOffsets.Add(dco);
+            }
+
+            PaletteConfig pc = new PaletteConfig();
+            pc.labelOffsets = labeloffsets;
+            pc.defaultColorOffsets = defaultColorOffsets;
+            pc.unusedOffsets = new List<int>() { };
+            pc.streamLength = MEMLEN;
+            return pc;
+        }
+
         public struct BLANKA
         {
             public static Dictionary<string, List<int>> GenerateBlankaSpriteOffsets()
@@ -520,7 +595,7 @@ namespace PaletteSwap
                 return spriteOffsets;
             }
 
-            public static PaletteConfig GenerateBlankaSpriteConfig()
+            /*public static PaletteConfig GenerateBlankaSpriteConfig()
             {
                 int MEMLEN = 30;
                 PaletteConfig pc = new PaletteConfig();
@@ -530,7 +605,7 @@ namespace PaletteSwap
                 pc.streamLength = MEMLEN;
                 return pc;
             }
-
+            */
             public static Dictionary<string, List<int>> GenerateBlankaPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
@@ -609,8 +684,8 @@ namespace PaletteSwap
            };
                 return spriteOffsets;
             }
-
-            public static PaletteConfig GenerateHawkSpriteConfig()
+            
+           /* public static PaletteConfig GenerateHawkSpriteConfig()
             {
                 int MEMLEN = 30;
                 PaletteConfig pc = new PaletteConfig();
@@ -619,7 +694,7 @@ namespace PaletteSwap
                 pc.defaultColorOffsets = new List<ColorOffset>();
                 pc.streamLength = MEMLEN;
                 return pc;
-            }
+            }*/
 
             public static Dictionary<string, List<int>> GenerateHawkPortraitOffsets()
             {
