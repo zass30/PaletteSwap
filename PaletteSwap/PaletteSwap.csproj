@@ -192,7 +192,7 @@
     <None Include="Resources\deejay\DEE_portraitloss0.png" />
     <None Include="Resources\deejay\DEE_portraitwin0.png" />
     <None Include="Resources\dhalsim\DHA_neutral0.png" />
-    <None Include="Resources\dhalsim\DHA_portraitsloss0.png" />
+    <None Include="Resources\dhalsim\DHA_portraitloss0.png" />
     <None Include="Resources\dhalsim\DHA_portraitwin0.png" />
     <None Include="Resources\fei\FEI_neutral0.png" />
     <None Include="Resources\fei\FEI_portraitloss0.png" />

@@ -1702,7 +1702,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejayPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dhalsim:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.DHA_portraitsloss0),
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.DHA_portraitloss0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Cammy:
