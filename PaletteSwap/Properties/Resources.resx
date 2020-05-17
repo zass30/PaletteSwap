@@ -316,9 +316,6 @@
   <data name="DIC_psychopunch5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dictator\DIC_psychopunch5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sfxe03cNewLegacy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\roms\new_legacy\sfxe.03c;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="sfxe04aNewLegacy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roms\new_legacy\sfxe.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -345,5 +342,11 @@
   </data>
   <data name="DHA_portraitloss0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dhalsim\DHA_portraitloss0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sfxe03cNLv02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roms\new_legacy\v02\sfxe03cNLv02.03c;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sfxe04aNLv02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roms\new_legacy\v02\sfxe04aNLv02.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -137,6 +137,11 @@
     <EmbeddedResource Include="Resources\roms\sfxe.04a" />
     <None Include="Resources\roms\new_legacy\sfxe.03c" />
     <None Include="Resources\roms\new_legacy\sfxe.04a" />
+    <None Include="Resources\roms\new_legacy\v02\sfxe.03cv02" />
+    <None Include="Resources\roms\new_legacy\v02\sfxe.04av02" />
+    <None Include="Resources\roms\new_legacy\v02\sfxe03cNLv02.03c" />
+    <None Include="Resources\roms\new_legacy\v02\sfxe04aNLv02.04a" />
+    <None Include="Resources\roms\new_legacy\v02\sfxe04cNLv02.03c" />
     <None Include="Resources\roms\sfxe.06a" />
     <None Include="Resources\roms\sfxj.03c" />
     <None Include="Resources\roms\sfxj.04a" />
