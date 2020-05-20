@@ -593,6 +593,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] sfxe03cNLv03 {
+            get {
+                object obj = ResourceManager.GetObject("sfxe03cNLv03", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] sfxe04a {
             get {
                 object obj = ResourceManager.GetObject("sfxe04a", resourceCulture);
@@ -616,6 +626,16 @@ namespace PaletteSwap.Properties {
         public static byte[] sfxe04aNLv02 {
             get {
                 object obj = ResourceManager.GetObject("sfxe04aNLv02", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] sfxe04aNLv03 {
+            get {
+                object obj = ResourceManager.GetObject("sfxe04aNLv03", resourceCulture);
                 return ((byte[])(obj));
             }
         }

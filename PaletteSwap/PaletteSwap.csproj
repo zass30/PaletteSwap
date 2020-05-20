@@ -142,6 +142,8 @@
     <None Include="Resources\roms\new_legacy\v02\sfxe03cNLv02.03c" />
     <None Include="Resources\roms\new_legacy\v02\sfxe04aNLv02.04a" />
     <None Include="Resources\roms\new_legacy\v02\sfxe04cNLv02.03c" />
+    <None Include="Resources\roms\new_legacy\v03\sfxe03cNLv03.03c" />
+    <None Include="Resources\roms\new_legacy\v03\sfxe04aNLv03.04a" />
     <None Include="Resources\roms\sfxe.06a" />
     <None Include="Resources\roms\sfxj.03c" />
     <None Include="Resources\roms\sfxj.04a" />

@@ -359,7 +359,7 @@ namespace PaletteSwap
         public byte[] sprites_stream04newlegacy()
         {
             //byte[] b = Resources.sfxe04aNewLegacy;
-            byte[] b = Resources.sfxe04aNLv02;
+            byte[] b = Resources.sfxe04aNLv03;
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
@@ -372,7 +372,7 @@ namespace PaletteSwap
         public byte[] portraits_stream03newlegacy()
         {
            // byte[] b = Resources.sfxe03cNewLegacy;
-            byte[] b = Resources.sfxe03cNLv02;
+            byte[] b = Resources.sfxe03cNLv03;
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;

@@ -349,4 +349,10 @@
   <data name="sfxe04aNLv02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roms\new_legacy\v02\sfxe04aNLv02.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="sfxe03cNLv03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roms\new_legacy\v03\sfxe03cNLv03.03c;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sfxe04aNLv03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roms\new_legacy\v03\sfxe04aNLv03.04a;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
