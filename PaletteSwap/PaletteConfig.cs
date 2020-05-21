@@ -527,34 +527,26 @@ namespace PaletteSwap
            };
                 return spriteOffsets;
             }
-
+            /*
+             *                             16   18   20   22   24   26   28
+ * A101 A202 A303 A404 A505 A606 A707 A808 1502 3704 4805 6907 9B0A CD0C 0F0F 000F 
+ * 110A 220A 330A 440A 550A 660A 770A 880A 990A AA0A BB0A CC0A DD0A EE0A FF0A FB00 
+ * 1A01 2A02 3A03 4A04 5A05 6A06 7A07 8A08 9A09 AC0A BA0B CA0C DA0D EA0D 5842 5C00 
+ * 5101 5201 5301 5401 5501 5601 5701 5801 5901 5A01 5B01 5C01 5D01 5E01 CC0C 1501 
+ * E359 AD33 6A2C 62D9 6786 FC7A 5122 EA84 FC8D 4C88 2F68 8B5A 7011 A64A CCD9 4F71
+ */
             public static Dictionary<string, List<int>> GenerateBlankaPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
-        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0 } },
-        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2 } },
-        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4 } },
-        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6 } },
-        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8 } },
-        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10 } },
-        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12 } },
-
-        { "hair1", new List<int>() { 14, ROWLEN * 2 + 14 } },
-        { "hair2", new List<int>() { 16, ROWLEN * 2 + 16 } },
-        { "hair3", new List<int>() { 18, ROWLEN * 2 + 18 } },
-        { "hair4", new List<int>() { 20, ROWLEN * 2 + 20 } },
-        { "hair5", new List<int>() { 22, ROWLEN * 2 + 22 } },
-
-        { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24 } },
-        { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26 } },
-        { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28 } },
-
-        { "blood1", new List<int>() { ROWLEN * 1 + 14} },
-        { "blood2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 2 + 24 } },
-        { "blood3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 26 } },
-        { "blood4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 28 } },
-        { "blood5", new List<int>() { ROWLEN * 1 + 22 } },
+        { "shadow", new List<int>() { 0 } },
+        { "skin1", new List<int>() { 28 } },
+        { "skin2", new List<int>() { 26 } },
+        { "skin3", new List<int>() { 24 } },
+        { "skin4", new List<int>() { 22 } },
+        { "skin5", new List<int>() { 20 } },
+        { "skin6", new List<int>() { 18 } },
+        { "skin7", new List<int>() { 16 } },
                 };
                 return portraitOffsets;
             }
@@ -2034,6 +2026,30 @@ DictatorVictoryPortraitLabels());
                     var stream2 = p.ToByteStream();
                     return PaletteHelper.ByteStreamToString(stream2);
                 }
+            }
+        }
+
+        public struct GOUKI
+        {
+            public struct PORTRAIT
+            {
+                // Gouki's portrait in rom is just all 0's. We need to create a default.
+                public static string GenerateGoukiCustomXColor()
+                {
+                    //                    byte[] stream = CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp);
+                    string s = "A101 A202 A303 A404 A505 A606 A707 A808 1502 3704 4805 6907 9B0A CD0C 0F0F 000F " +
+                               "110A 220A 330A 440A 550A 660A 770A 880A 990A AA0A BB0A CC0A DD0A EE0A FF0A FB00 " +
+                               "1A01 2A02 3A03 4A04 5A05 6A06 7A07 8A08 9A09 AC0A BA0B CA0C DA0D EA0D 5842 5C00 " +
+                               "5101 5201 5301 5401 5501 5601 5701 5801 5901 5A01 5B01 5C01 5D01 5E01 CC0C 1501 " +
+                               "E359 AD33 6A2C 62D9 6786 FC7A 5122 EA84 FC8D 4C88 2F68 8B5A 7011 A64A CCD9 4F71";
+                    byte[] stream = PaletteHelper.StringToByteStream(s);
+                    PaletteConfig portraitConfig = PaletteConfig.GeneratePortraitConfig(CharacterConfig.CHARACTERS.Gouki);
+                    Palette p = Palette.PaletteFromConfig(portraitConfig);
+                    p.LoadStream(stream);
+                    var stream2 = p.ToByteStream();
+                    return PaletteHelper.ByteStreamToString(stream2);
+                }
+
             }
         }
     }
