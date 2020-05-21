@@ -29,7 +29,7 @@ namespace PaletteSwap
         public enum CHARACTERS
         {
             Ryu, Ehonda, Blanka, Guile, Ken, Chun, Zangief, Dhalsim,
-            Dictator, Sagat, Boxer, Claw, Cammy, Thawk, Feilong, Deejay
+            Dictator, Sagat, Boxer, Claw, Cammy, Thawk, Feilong, Deejay, Gouki
         };
 
         public static ByteStreamPair GetByteStreamPair(CHARACTERS c, BUTTONS b)
@@ -80,6 +80,8 @@ namespace PaletteSwap
                     return "FEI";
                 case CHARACTERS.Deejay:
                     return "DEE";
+                case CHARACTERS.Gouki:
+                    return "GOU";
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -120,6 +122,8 @@ namespace PaletteSwap
                     return CHARACTERS.Feilong;
                 case "DEE":
                     return CHARACTERS.Deejay;
+                case "GOU":
+                    return CHARACTERS.Gouki;
             }
             throw new ArgumentException("Invalid Character type");
         }
@@ -188,6 +192,8 @@ namespace PaletteSwap
                     return 14;
                 case CHARACTERS.Deejay:
                     return 15;
+                case CHARACTERS.Gouki:
+                    return 16;
             }
             return 0;
         }
@@ -496,10 +502,63 @@ namespace PaletteSwap
             return pc;
         }
 
-      /*  public static PaletteConfig GeneratePortraitConfigGeneric(CharacterConfig.CHARACTERS c)
+        public struct GOUKI
         {
-  
-        }*/
+            public static Dictionary<string, List<int>> GenerateBlankaSpriteOffsets()
+            {
+                Dictionary<string, List<int>> spriteOffsets =
+                   new Dictionary<string, List<int>>
+           {
+            { "belt", new List<int>() { 0 } },
+            { "skin1", new List<int>() { 2 } },
+            { "skin2", new List<int>() { 4 } },
+            { "skin3", new List<int>() { 6 } },
+            { "skin4", new List<int>() { 8 } },
+            { "skin5", new List<int>() { 10 } },
+            { "skin6", new List<int>() { 12 } },
+            { "hair2", new List<int>() { 14 } },
+            { "costume1", new List<int>() { 16 } },
+            { "costume2", new List<int>() { 18 } },
+            { "costume3", new List<int>() { 20 } },
+            { "costume4", new List<int>() { 22 } },
+            { "costume5", new List<int>() { 24 } },
+            { "costume6", new List<int>() { 26 } },
+            { "hair1", new List<int>() { 28 } },
+           };
+                return spriteOffsets;
+            }
+
+            public static Dictionary<string, List<int>> GenerateBlankaPortraitOffsets()
+            {
+                Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
+                {
+        { "skin1", new List<int>() { 0, ROWLEN * 1 + 0, ROWLEN * 2 + 0 } },
+        { "skin2", new List<int>() { 2, ROWLEN * 1 + 2, ROWLEN * 2 + 2 } },
+        { "skin3", new List<int>() { 4, ROWLEN * 1 + 4, ROWLEN * 2 + 4 } },
+        { "skin4", new List<int>() { 6, ROWLEN * 1 + 6, ROWLEN * 2 + 6 } },
+        { "skin5", new List<int>() { 8, ROWLEN * 1 + 8, ROWLEN * 2 + 8 } },
+        { "skin6", new List<int>() { 10, ROWLEN * 1 + 10, ROWLEN * 2 + 10 } },
+        { "skin7", new List<int>() { 12, ROWLEN * 1 + 12, ROWLEN * 2 + 12 } },
+
+        { "hair1", new List<int>() { 14, ROWLEN * 2 + 14 } },
+        { "hair2", new List<int>() { 16, ROWLEN * 2 + 16 } },
+        { "hair3", new List<int>() { 18, ROWLEN * 2 + 18 } },
+        { "hair4", new List<int>() { 20, ROWLEN * 2 + 20 } },
+        { "hair5", new List<int>() { 22, ROWLEN * 2 + 22 } },
+
+        { "teeth1", new List<int>() { 24, ROWLEN * 1 + 24 } },
+        { "teeth2", new List<int>() { 26, ROWLEN * 1 + 26 } },
+        { "teeth3", new List<int>() { 28, ROWLEN * 1 + 28 } },
+
+        { "blood1", new List<int>() { ROWLEN * 1 + 14} },
+        { "blood2", new List<int>() { ROWLEN * 1 + 16, ROWLEN * 2 + 24 } },
+        { "blood3", new List<int>() { ROWLEN * 1 + 18, ROWLEN * 2 + 26 } },
+        { "blood4", new List<int>() { ROWLEN * 1 + 20, ROWLEN * 2 + 28 } },
+        { "blood5", new List<int>() { ROWLEN * 1 + 22 } },
+                };
+                return portraitOffsets;
+            }
+        }
 
         public struct BLANKA
         {

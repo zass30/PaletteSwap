@@ -738,7 +738,6 @@ namespace PaletteSwap
             currentCharacterType = character;
             characterSet = gameSet.characterDictionary[character];
             currentCharacter = characterSet.characterColors[0];
-            SetDefaultDropDown();
             reload_everything();
         }
 
