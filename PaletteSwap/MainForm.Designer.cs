@@ -932,6 +932,10 @@
             this.BLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
             this.COLlabel = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.TabPageGouki = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1618,6 +1622,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).BeginInit();
+            this.TabPageGouki.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2344,6 +2352,7 @@
             this.tabControl1.Controls.Add(this.TabPageCammy);
             this.tabControl1.Controls.Add(this.TabPageHawk);
             this.tabControl1.Controls.Add(this.TabPageBlanka);
+            this.tabControl1.Controls.Add(this.TabPageGouki);
             this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -11854,6 +11863,45 @@
             this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
             this.hScrollBar1.TabIndex = 124;
             // 
+            // TabPageGouki
+            // 
+            this.TabPageGouki.Controls.Add(this.pictureBox1);
+            this.TabPageGouki.Controls.Add(this.pictureBox2);
+            this.TabPageGouki.Controls.Add(this.pictureBox3);
+            this.TabPageGouki.Location = new System.Drawing.Point(4, 22);
+            this.TabPageGouki.Name = "TabPageGouki";
+            this.TabPageGouki.Size = new System.Drawing.Size(597, 559);
+            this.TabPageGouki.TabIndex = 16;
+            this.TabPageGouki.Text = "Gouki";
+            this.TabPageGouki.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 100);
+            this.pictureBox1.TabIndex = 195;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(452, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(128, 112);
+            this.pictureBox2.TabIndex = 194;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Location = new System.Drawing.Point(315, 21);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(128, 112);
+            this.pictureBox3.TabIndex = 193;
+            this.pictureBox3.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -12586,6 +12634,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).EndInit();
+            this.TabPageGouki.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -13495,6 +13547,10 @@
         private System.Windows.Forms.PictureBox BLA_portrait_blood3;
         private System.Windows.Forms.PictureBox BLA_portrait_blood5;
         private System.Windows.Forms.PictureBox BLA_portrait_blood4;
+        private System.Windows.Forms.TabPage TabPageGouki;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
