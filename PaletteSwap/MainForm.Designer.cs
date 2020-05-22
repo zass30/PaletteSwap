@@ -933,9 +933,37 @@
             this.COLlabel = new System.Windows.Forms.Label();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.TabPageGouki = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.GOU_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.GOU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.label160 = new System.Windows.Forms.Label();
+            this.hair = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.GOU_sprite_hair2 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_costume3 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_skin5 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_costume5 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_hair1 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_skin6 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_costume4 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_belt = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_costume6 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_costume1 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_costume2 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_skin1 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_skin2 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_skin3 = new System.Windows.Forms.PictureBox();
+            this.GOU_sprite_skin4 = new System.Windows.Forms.PictureBox();
+            this.label161 = new System.Windows.Forms.Label();
+            this.GOU_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin7 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin1 = new System.Windows.Forms.PictureBox();
+            this.label165 = new System.Windows.Forms.Label();
+            this.GOU_portrait_shadow = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1623,9 +1651,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).BeginInit();
             this.TabPageGouki.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_hair2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_hair1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_belt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_shadow)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -11865,9 +11915,37 @@
             // 
             // TabPageGouki
             // 
-            this.TabPageGouki.Controls.Add(this.pictureBox1);
-            this.TabPageGouki.Controls.Add(this.pictureBox2);
-            this.TabPageGouki.Controls.Add(this.pictureBox3);
+            this.TabPageGouki.Controls.Add(this.label165);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_shadow);
+            this.TabPageGouki.Controls.Add(this.label161);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin5);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin7);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin6);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin4);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin3);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin2);
+            this.TabPageGouki.Controls.Add(this.GOU_portrait_skin1);
+            this.TabPageGouki.Controls.Add(this.label160);
+            this.TabPageGouki.Controls.Add(this.hair);
+            this.TabPageGouki.Controls.Add(this.label163);
+            this.TabPageGouki.Controls.Add(this.label164);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_hair2);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_costume3);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_skin5);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_costume5);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_hair1);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_skin6);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_costume4);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_belt);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_costume6);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_costume1);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_costume2);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_skin1);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_skin2);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_skin3);
+            this.TabPageGouki.Controls.Add(this.GOU_sprite_skin4);
+            this.TabPageGouki.Controls.Add(this.GOU_neutralStandBox);
+            this.TabPageGouki.Controls.Add(this.GOU_portraitVictoryBox);
             this.TabPageGouki.Location = new System.Drawing.Point(4, 22);
             this.TabPageGouki.Name = "TabPageGouki";
             this.TabPageGouki.Size = new System.Drawing.Size(597, 559);
@@ -11875,32 +11953,330 @@
             this.TabPageGouki.Text = "Gouki";
             this.TabPageGouki.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // GOU_neutralStandBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 100);
-            this.pictureBox1.TabIndex = 195;
-            this.pictureBox1.TabStop = false;
+            this.GOU_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.GOU_neutralStandBox.Location = new System.Drawing.Point(15, 21);
+            this.GOU_neutralStandBox.Name = "GOU_neutralStandBox";
+            this.GOU_neutralStandBox.Size = new System.Drawing.Size(62, 100);
+            this.GOU_neutralStandBox.TabIndex = 195;
+            this.GOU_neutralStandBox.TabStop = false;
             // 
-            // pictureBox2
+            // GOU_portraitVictoryBox
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(452, 21);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 112);
-            this.pictureBox2.TabIndex = 194;
-            this.pictureBox2.TabStop = false;
+            this.GOU_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.GOU_portraitVictoryBox.Location = new System.Drawing.Point(400, 21);
+            this.GOU_portraitVictoryBox.Name = "GOU_portraitVictoryBox";
+            this.GOU_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.GOU_portraitVictoryBox.TabIndex = 193;
+            this.GOU_portraitVictoryBox.TabStop = false;
             // 
-            // pictureBox3
+            // label160
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(315, 21);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(128, 112);
-            this.pictureBox3.TabIndex = 193;
-            this.pictureBox3.TabStop = false;
+            this.label160.AutoSize = true;
+            this.label160.Location = new System.Drawing.Point(26, 257);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(24, 13);
+            this.label160.TabIndex = 523;
+            this.label160.Text = "belt";
+            // 
+            // hair
+            // 
+            this.hair.AutoSize = true;
+            this.hair.Location = new System.Drawing.Point(19, 227);
+            this.hair.Name = "hair";
+            this.hair.Size = new System.Drawing.Size(31, 13);
+            this.hair.TabIndex = 522;
+            this.hair.Text = "lining";
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Location = new System.Drawing.Point(3, 197);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(47, 13);
+            this.label163.TabIndex = 521;
+            this.label163.Text = "costume";
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Location = new System.Drawing.Point(24, 167);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(26, 13);
+            this.label164.TabIndex = 520;
+            this.label164.Text = "skin";
+            // 
+            // GOU_sprite_hair2
+            // 
+            this.GOU_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_hair2.Location = new System.Drawing.Point(86, 216);
+            this.GOU_sprite_hair2.Name = "GOU_sprite_hair2";
+            this.GOU_sprite_hair2.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_hair2.TabIndex = 518;
+            this.GOU_sprite_hair2.TabStop = false;
+            this.GOU_sprite_hair2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_hair2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_costume3
+            // 
+            this.GOU_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_costume3.Location = new System.Drawing.Point(116, 186);
+            this.GOU_sprite_costume3.Name = "GOU_sprite_costume3";
+            this.GOU_sprite_costume3.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_costume3.TabIndex = 519;
+            this.GOU_sprite_costume3.TabStop = false;
+            this.GOU_sprite_costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_costume3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_skin5
+            // 
+            this.GOU_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_skin5.Location = new System.Drawing.Point(176, 156);
+            this.GOU_sprite_skin5.Name = "GOU_sprite_skin5";
+            this.GOU_sprite_skin5.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_skin5.TabIndex = 512;
+            this.GOU_sprite_skin5.TabStop = false;
+            this.GOU_sprite_skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_costume5
+            // 
+            this.GOU_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_costume5.Location = new System.Drawing.Point(176, 186);
+            this.GOU_sprite_costume5.Name = "GOU_sprite_costume5";
+            this.GOU_sprite_costume5.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_costume5.TabIndex = 513;
+            this.GOU_sprite_costume5.TabStop = false;
+            this.GOU_sprite_costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_costume5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_hair1
+            // 
+            this.GOU_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_hair1.Location = new System.Drawing.Point(56, 216);
+            this.GOU_sprite_hair1.Name = "GOU_sprite_hair1";
+            this.GOU_sprite_hair1.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_hair1.TabIndex = 514;
+            this.GOU_sprite_hair1.TabStop = false;
+            this.GOU_sprite_hair1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_hair1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_skin6
+            // 
+            this.GOU_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_skin6.Location = new System.Drawing.Point(207, 156);
+            this.GOU_sprite_skin6.Name = "GOU_sprite_skin6";
+            this.GOU_sprite_skin6.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_skin6.TabIndex = 515;
+            this.GOU_sprite_skin6.TabStop = false;
+            this.GOU_sprite_skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_costume4
+            // 
+            this.GOU_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_costume4.Location = new System.Drawing.Point(146, 186);
+            this.GOU_sprite_costume4.Name = "GOU_sprite_costume4";
+            this.GOU_sprite_costume4.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_costume4.TabIndex = 516;
+            this.GOU_sprite_costume4.TabStop = false;
+            this.GOU_sprite_costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_costume4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_belt
+            // 
+            this.GOU_sprite_belt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_belt.Location = new System.Drawing.Point(56, 246);
+            this.GOU_sprite_belt.Name = "GOU_sprite_belt";
+            this.GOU_sprite_belt.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_belt.TabIndex = 517;
+            this.GOU_sprite_belt.TabStop = false;
+            this.GOU_sprite_belt.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_belt.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_costume6
+            // 
+            this.GOU_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_costume6.Location = new System.Drawing.Point(207, 186);
+            this.GOU_sprite_costume6.Name = "GOU_sprite_costume6";
+            this.GOU_sprite_costume6.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_costume6.TabIndex = 509;
+            this.GOU_sprite_costume6.TabStop = false;
+            this.GOU_sprite_costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_costume6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_costume1
+            // 
+            this.GOU_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_costume1.Location = new System.Drawing.Point(56, 186);
+            this.GOU_sprite_costume1.Name = "GOU_sprite_costume1";
+            this.GOU_sprite_costume1.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_costume1.TabIndex = 510;
+            this.GOU_sprite_costume1.TabStop = false;
+            this.GOU_sprite_costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_costume1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_costume2
+            // 
+            this.GOU_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_costume2.Location = new System.Drawing.Point(86, 186);
+            this.GOU_sprite_costume2.Name = "GOU_sprite_costume2";
+            this.GOU_sprite_costume2.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_costume2.TabIndex = 511;
+            this.GOU_sprite_costume2.TabStop = false;
+            this.GOU_sprite_costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_costume2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_skin1
+            // 
+            this.GOU_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_skin1.Location = new System.Drawing.Point(56, 156);
+            this.GOU_sprite_skin1.Name = "GOU_sprite_skin1";
+            this.GOU_sprite_skin1.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_skin1.TabIndex = 505;
+            this.GOU_sprite_skin1.TabStop = false;
+            this.GOU_sprite_skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_skin2
+            // 
+            this.GOU_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_skin2.Location = new System.Drawing.Point(86, 156);
+            this.GOU_sprite_skin2.Name = "GOU_sprite_skin2";
+            this.GOU_sprite_skin2.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_skin2.TabIndex = 506;
+            this.GOU_sprite_skin2.TabStop = false;
+            this.GOU_sprite_skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_skin3
+            // 
+            this.GOU_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_skin3.Location = new System.Drawing.Point(116, 156);
+            this.GOU_sprite_skin3.Name = "GOU_sprite_skin3";
+            this.GOU_sprite_skin3.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_skin3.TabIndex = 507;
+            this.GOU_sprite_skin3.TabStop = false;
+            this.GOU_sprite_skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_sprite_skin4
+            // 
+            this.GOU_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_sprite_skin4.Location = new System.Drawing.Point(146, 156);
+            this.GOU_sprite_skin4.Name = "GOU_sprite_skin4";
+            this.GOU_sprite_skin4.Size = new System.Drawing.Size(24, 24);
+            this.GOU_sprite_skin4.TabIndex = 508;
+            this.GOU_sprite_skin4.TabStop = false;
+            this.GOU_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Location = new System.Drawing.Point(314, 167);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(26, 13);
+            this.label161.TabIndex = 537;
+            this.label161.Text = "skin";
+            // 
+            // GOU_portrait_skin5
+            // 
+            this.GOU_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin5.Location = new System.Drawing.Point(466, 156);
+            this.GOU_portrait_skin5.Name = "GOU_portrait_skin5";
+            this.GOU_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin5.TabIndex = 540;
+            this.GOU_portrait_skin5.TabStop = false;
+            this.GOU_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin7
+            // 
+            this.GOU_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin7.Location = new System.Drawing.Point(526, 156);
+            this.GOU_portrait_skin7.Name = "GOU_portrait_skin7";
+            this.GOU_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin7.TabIndex = 539;
+            this.GOU_portrait_skin7.TabStop = false;
+            this.GOU_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin6
+            // 
+            this.GOU_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin6.Location = new System.Drawing.Point(496, 156);
+            this.GOU_portrait_skin6.Name = "GOU_portrait_skin6";
+            this.GOU_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin6.TabIndex = 538;
+            this.GOU_portrait_skin6.TabStop = false;
+            this.GOU_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin4
+            // 
+            this.GOU_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin4.Location = new System.Drawing.Point(436, 156);
+            this.GOU_portrait_skin4.Name = "GOU_portrait_skin4";
+            this.GOU_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin4.TabIndex = 536;
+            this.GOU_portrait_skin4.TabStop = false;
+            this.GOU_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin3
+            // 
+            this.GOU_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin3.Location = new System.Drawing.Point(406, 156);
+            this.GOU_portrait_skin3.Name = "GOU_portrait_skin3";
+            this.GOU_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin3.TabIndex = 535;
+            this.GOU_portrait_skin3.TabStop = false;
+            this.GOU_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin2
+            // 
+            this.GOU_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin2.Location = new System.Drawing.Point(376, 156);
+            this.GOU_portrait_skin2.Name = "GOU_portrait_skin2";
+            this.GOU_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin2.TabIndex = 534;
+            this.GOU_portrait_skin2.TabStop = false;
+            this.GOU_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin1
+            // 
+            this.GOU_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin1.Location = new System.Drawing.Point(346, 156);
+            this.GOU_portrait_skin1.Name = "GOU_portrait_skin1";
+            this.GOU_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin1.TabIndex = 533;
+            this.GOU_portrait_skin1.TabStop = false;
+            this.GOU_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Location = new System.Drawing.Point(296, 197);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(44, 13);
+            this.label165.TabIndex = 542;
+            this.label165.Text = "shadow";
+            // 
+            // GOU_portrait_shadow
+            // 
+            this.GOU_portrait_shadow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_shadow.Location = new System.Drawing.Point(346, 186);
+            this.GOU_portrait_shadow.Name = "GOU_portrait_shadow";
+            this.GOU_portrait_shadow.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_shadow.TabIndex = 541;
+            this.GOU_portrait_shadow.TabStop = false;
+            this.GOU_portrait_shadow.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_shadow.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -12635,9 +13011,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).EndInit();
             this.TabPageGouki.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.TabPageGouki.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_hair2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_hair1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_belt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_shadow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -13548,9 +13947,37 @@
         private System.Windows.Forms.PictureBox BLA_portrait_blood5;
         private System.Windows.Forms.PictureBox BLA_portrait_blood4;
         private System.Windows.Forms.TabPage TabPageGouki;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox GOU_neutralStandBox;
+        private System.Windows.Forms.PictureBox GOU_portraitVictoryBox;
+        private System.Windows.Forms.Label label160;
+        private System.Windows.Forms.Label hair;
+        private System.Windows.Forms.Label label163;
+        private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.PictureBox GOU_sprite_hair2;
+        private System.Windows.Forms.PictureBox GOU_sprite_costume3;
+        private System.Windows.Forms.PictureBox GOU_sprite_skin5;
+        private System.Windows.Forms.PictureBox GOU_sprite_costume5;
+        private System.Windows.Forms.PictureBox GOU_sprite_hair1;
+        private System.Windows.Forms.PictureBox GOU_sprite_skin6;
+        private System.Windows.Forms.PictureBox GOU_sprite_costume4;
+        private System.Windows.Forms.PictureBox GOU_sprite_belt;
+        private System.Windows.Forms.PictureBox GOU_sprite_costume6;
+        private System.Windows.Forms.PictureBox GOU_sprite_costume1;
+        private System.Windows.Forms.PictureBox GOU_sprite_costume2;
+        private System.Windows.Forms.PictureBox GOU_sprite_skin1;
+        private System.Windows.Forms.PictureBox GOU_sprite_skin2;
+        private System.Windows.Forms.PictureBox GOU_sprite_skin3;
+        private System.Windows.Forms.PictureBox GOU_sprite_skin4;
+        private System.Windows.Forms.Label label165;
+        private System.Windows.Forms.PictureBox GOU_portrait_shadow;
+        private System.Windows.Forms.Label label161;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin5;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin7;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin6;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin4;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin3;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin2;
+        private System.Windows.Forms.PictureBox GOU_portrait_skin1;
     }
 }
 

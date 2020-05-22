@@ -59,6 +59,7 @@ namespace PaletteSwap
             p.LoadStream(bsp.portraitStream);
             AssignImage(s, ImageConfig.GenerateNeutralBasePalette(character), "neutral");
             AssignImage(p, ImageConfig.GenerateVictoryBasePalette(character), "victory");
+            if (character != CharacterConfig.CHARACTERS.Gouki)
             AssignImage(p, ImageConfig.GenerateLossBasePalette(character), "loss");
 
             if (character == CharacterConfig.CHARACTERS.Dictator)

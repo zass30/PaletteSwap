@@ -30,7 +30,7 @@ namespace PaletteSwap
                 CharacterConfig.CHARACTERS.Zangief, CharacterConfig.CHARACTERS.Ehonda,
             CharacterConfig.CHARACTERS.Sagat, CharacterConfig.CHARACTERS.Feilong, CharacterConfig.CHARACTERS.Deejay,
         CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.CHARACTERS.Cammy, CharacterConfig.CHARACTERS.Thawk,
-        CharacterConfig.CHARACTERS.Blanka};
+        CharacterConfig.CHARACTERS.Blanka, CharacterConfig.CHARACTERS.Gouki};
 
         public MainForm()
         {
@@ -87,7 +87,8 @@ namespace PaletteSwap
             load_sprite_buttons();
             load_sprite_neutralstand();
             load_portrait_victory();
-            load_portrait_loss();
+            if (currentCharacterType != CharacterConfig.CHARACTERS.Gouki)
+                load_portrait_loss();
             if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
                 load_sprite_load_sprite_psychopunch();
@@ -808,6 +809,10 @@ namespace PaletteSwap
             else if (selt.Name == "TabPageBlanka")
             {
                 ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Blanka);
+            }
+            else if (selt.Name == "TabPageGouki")
+            {
+                ChangeIndexToCharacter(CharacterConfig.CHARACTERS.Gouki);
             }
         }
 

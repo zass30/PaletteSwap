@@ -344,6 +344,9 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Deejay:
                     labeloffsets = DEEJAY.GenerateDeejayPortraitOffsets();
                     break;
+                case CharacterConfig.CHARACTERS.Gouki:
+                    labeloffsets = GOUKI.GenerateGoukiPortraitOffsets();
+                    break;
                 default:
                     throw new Exception("Invalid character");
             }
@@ -401,6 +404,8 @@ namespace PaletteSwap
                     return DHALSIM.GenerateDhalsimSpriteOffsets();
                 case CharacterConfig.CHARACTERS.Blanka:
                     return BLANKA.GenerateBlankaSpriteOffsets();
+                case CharacterConfig.CHARACTERS.Gouki:
+                    return GOUKI.GenerateGoukiSpriteOffsets();
             }
             throw new Exception("Invalid character");
         }
@@ -472,6 +477,9 @@ namespace PaletteSwap
                 case CharacterConfig.CHARACTERS.Deejay:
                     labeloffsets = DEEJAY.GenerateDeejaySpriteOffsets();
                     break;
+                case CharacterConfig.CHARACTERS.Gouki:
+                    labeloffsets = GOUKI.GenerateGoukiSpriteOffsets();
+                    break;
                 default:
                     throw new Exception("Invalid character");
             }
@@ -504,7 +512,7 @@ namespace PaletteSwap
 
         public struct GOUKI
         {
-            public static Dictionary<string, List<int>> GenerateBlankaSpriteOffsets()
+            public static Dictionary<string, List<int>> GenerateGoukiSpriteOffsets()
             {
                 Dictionary<string, List<int>> spriteOffsets =
                    new Dictionary<string, List<int>>
@@ -535,7 +543,7 @@ namespace PaletteSwap
  * 5101 5201 5301 5401 5501 5601 5701 5801 5901 5A01 5B01 5C01 5D01 5E01 CC0C 1501 
  * E359 AD33 6A2C 62D9 6786 FC7A 5122 EA84 FC8D 4C88 2F68 8B5A 7011 A64A CCD9 4F71
  */
-            public static Dictionary<string, List<int>> GenerateBlankaPortraitOffsets()
+            public static Dictionary<string, List<int>> GenerateGoukiPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
                 {
@@ -1632,6 +1640,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.BLANKA.GenerateBlankaSpriteOffsets());
+                case CharacterConfig.CHARACTERS.Gouki:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.GOU_neutral0),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp)),
+                        PaletteConfig.GOUKI.GenerateGoukiSpriteOffsets());
             }
             throw new Exception("Invalid character");
         }
@@ -1700,6 +1712,10 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_portraitwin0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.BLANKA.GenerateBlankaPortraitOffsets());
+                case CharacterConfig.CHARACTERS.Gouki:
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.GOU_portraitwinX),
+                        GOUKI.PORTRAIT.GenerateGoukiCustomXColor(),
+                        PaletteConfig.GOUKI.GenerateGoukiPortraitOffsets());
             }
             throw new Exception("Invalid character");
         }
