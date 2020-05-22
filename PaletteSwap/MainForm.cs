@@ -391,6 +391,7 @@ namespace PaletteSwap
             currentCharacter.portrait.SetColor(label, c);
 
             load_portrait_victory();
+            if (currentCharacterType != CharacterConfig.CHARACTERS.Gouki)
             load_portrait_loss();
         }
 
@@ -862,8 +863,11 @@ namespace PaletteSwap
                             keyentry = archive.CreateEntry(charCode + @"/" + "LossKey.png");
                             using (var entryStream = keyentry.Open())
                             {
-                                var b = gameSet.characterDictionary[charType].GenerateLossKey();
-                                b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
+                                if (charType != CharacterConfig.CHARACTERS.Gouki)
+                                {
+                                    var b = gameSet.characterDictionary[charType].GenerateLossKey();
+                                    b.Save(entryStream, System.Drawing.Imaging.ImageFormat.Png);
+                                }
                             }
 
                             for (int i = 0; i < 10; i++)

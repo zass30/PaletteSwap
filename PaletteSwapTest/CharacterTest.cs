@@ -72,22 +72,25 @@ namespace PaletteSwapTest
         [TestMethod]
         public void CharacterRemapTest()
         {
-         //   var ryu = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.lp);
-         //   var ryu_remap = ryu.GetBitmap("neutral");
-         /*
-            var dee = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Deejay
-                , CharacterConfig.BUTTONS.lp);
-            var remapimg = dee.GetBitmap("neutral");
-            remapimg.Save(@"C:\temp\deen.png");
-             remapimg = dee.GetBitmap("victory");
-            remapimg.Save(@"C:\temp\deev.png");
-             remapimg = dee.GetBitmap("loss");
-            remapimg.Save(@"C:\temp\deel.png");
-
-            // check honda's byte stream? maybe that's wrong
-            var s = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp));
+            var gou = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp);
+            var gou_remap = gou.GetBitmap("victory");
             int x = 0;
-            x++;*/
+            //   var ryu = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Ryu, CharacterConfig.BUTTONS.lp);
+            //   var ryu_remap = ryu.GetBitmap("neutral");
+            /*
+               var dee = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Deejay
+                   , CharacterConfig.BUTTONS.lp);
+               var remapimg = dee.GetBitmap("neutral");
+               remapimg.Save(@"C:\temp\deen.png");
+                remapimg = dee.GetBitmap("victory");
+               remapimg.Save(@"C:\temp\deev.png");
+                remapimg = dee.GetBitmap("loss");
+               remapimg.Save(@"C:\temp\deel.png");
+
+               // check honda's byte stream? maybe that's wrong
+               var s = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp));
+               int x = 0;
+               x++;*/
         }
     }
 }
