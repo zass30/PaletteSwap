@@ -207,7 +207,7 @@ namespace PaletteSwap
             byte[] portraits = Properties.Resources.sfxe03c;
             byte[] portrait_bytes = new byte[portrait_length];
 
-            if (character == CHARACTERS.Gouki)
+/*            if (character == CHARACTERS.Gouki)
             {
                 string s = "A101 A202 A303 A404 A505 A606 A707 A808 1502 3704 4805 6907 9B0A CD0C 0F0F 000F " +
            "110A 220A 330A 440A 550A 660A 770A 880A 990A AA0A BB0A CC0A DD0A EE0A FF0A FB00 " +
@@ -217,7 +217,7 @@ namespace PaletteSwap
                 byte[] stream = PaletteHelper.StringToByteStream(s);
                 return stream;
             }
-
+            */
             Array.Copy(portraits, portrait2_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
             return portrait_bytes;
         }

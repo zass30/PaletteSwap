@@ -2136,7 +2136,6 @@
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
             this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
-            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
@@ -11916,6 +11915,7 @@
             // 
             // TabPageGouki
             // 
+            this.TabPageGouki.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageGouki.Controls.Add(this.label165);
             this.TabPageGouki.Controls.Add(this.GOU_portrait_shadow);
             this.TabPageGouki.Controls.Add(this.label161);
@@ -11952,7 +11952,6 @@
             this.TabPageGouki.Size = new System.Drawing.Size(597, 559);
             this.TabPageGouki.TabIndex = 16;
             this.TabPageGouki.Text = "Gouki";
-            this.TabPageGouki.UseVisualStyleBackColor = true;
             // 
             // GOU_neutralStandBox
             // 
@@ -11962,6 +11961,7 @@
             this.GOU_neutralStandBox.Size = new System.Drawing.Size(62, 100);
             this.GOU_neutralStandBox.TabIndex = 195;
             this.GOU_neutralStandBox.TabStop = false;
+            this.GOU_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
             // GOU_portraitVictoryBox
             // 
@@ -11971,6 +11971,7 @@
             this.GOU_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
             this.GOU_portraitVictoryBox.TabIndex = 193;
             this.GOU_portraitVictoryBox.TabStop = false;
+            this.GOU_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
             // label160
             // 
@@ -11984,11 +11985,11 @@
             // hair
             // 
             this.hair.AutoSize = true;
-            this.hair.Location = new System.Drawing.Point(19, 227);
+            this.hair.Location = new System.Drawing.Point(26, 227);
             this.hair.Name = "hair";
-            this.hair.Size = new System.Drawing.Size(31, 13);
+            this.hair.Size = new System.Drawing.Size(24, 13);
             this.hair.TabIndex = 522;
-            this.hair.Text = "lining";
+            this.hair.Text = "hair";
             // 
             // label163
             // 

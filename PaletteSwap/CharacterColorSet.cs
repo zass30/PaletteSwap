@@ -191,6 +191,8 @@ namespace PaletteSwap
                     continue;
                 var p = characterColors[i].portrait;
                 byte[] color_bytes = p.ToByteStream();
+                if (this.character == CharacterConfig.CHARACTERS.Gouki && i > 0)
+                    continue;
                 for (int j = 0; j < color_bytes.Length; j++)
                 {
                     b[portrait_offset + i * portrait_length + j] = color_bytes[j];
@@ -218,6 +220,8 @@ namespace PaletteSwap
                     continue;
                 var s = characterColors[i].sprite;
                 byte[] color_bytes = s.ToByteStream();
+                if (this.character == CharacterConfig.CHARACTERS.Gouki && i > 1)
+                    continue;
                 if (this.character == CharacterConfig.CHARACTERS.Blanka && i == 9)
                     blanka_offset = 0x02;
                 for (int j = 0; j < color_bytes.Length; j++)
@@ -358,7 +362,6 @@ namespace PaletteSwap
 
         public byte[] sprites_stream04newlegacy()
         {
-            //byte[] b = Resources.sfxe04aNewLegacy;
             byte[] b = Resources.sfxe04aNLv03;
             foreach (var k in characterDictionary)
             {
@@ -371,7 +374,6 @@ namespace PaletteSwap
 
         public byte[] portraits_stream03newlegacy()
         {
-           // byte[] b = Resources.sfxe03cNewLegacy;
             byte[] b = Resources.sfxe03cNLv03;
             foreach (var k in characterDictionary)
             {
