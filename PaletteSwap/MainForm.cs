@@ -34,6 +34,7 @@ namespace PaletteSwap
 
         public MainForm()
         {
+            KeyPreview = true;
             InitializeComponent();
             CreateCharacterSet();
             EnableDragAndDrop();
@@ -952,21 +953,24 @@ namespace PaletteSwap
         {
             if (e.Control && e.KeyCode == Keys.C)
             {
-                MessageBox.Show("copy");
+                MessageBox.Show("keyup");
             }
         }
 
         private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = true;
-                MessageBox.Show("adsf");
+            //e.Handled = true;
+             //   MessageBox.Show("press");
             
         }
 
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
-
-            MessageBox.Show("down");
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                //...
+                MessageBox.Show("down");
+            }
         }
     }
 }
