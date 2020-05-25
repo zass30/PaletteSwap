@@ -947,5 +947,26 @@ namespace PaletteSwap
             resetCurrentCharacterColorFromDropDown();
             reload_everything();
         }
+
+        private void MainForm_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                MessageBox.Show("copy");
+            }
+        }
+
+        private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+                MessageBox.Show("adsf");
+            
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            MessageBox.Show("down");
+        }
     }
 }

@@ -930,11 +930,17 @@
             this.BLA_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.BLA_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.BLA_portraitVictoryBox = new System.Windows.Forms.PictureBox();
-            this.COLlabel = new System.Windows.Forms.Label();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.TabPageGouki = new System.Windows.Forms.TabPage();
-            this.GOU_neutralStandBox = new System.Windows.Forms.PictureBox();
-            this.GOU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.label165 = new System.Windows.Forms.Label();
+            this.GOU_portrait_shadow = new System.Windows.Forms.PictureBox();
+            this.label161 = new System.Windows.Forms.Label();
+            this.GOU_portrait_skin5 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin7 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin6 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin4 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin3 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin2 = new System.Windows.Forms.PictureBox();
+            this.GOU_portrait_skin1 = new System.Windows.Forms.PictureBox();
             this.label160 = new System.Windows.Forms.Label();
             this.hair = new System.Windows.Forms.Label();
             this.label163 = new System.Windows.Forms.Label();
@@ -954,16 +960,10 @@
             this.GOU_sprite_skin2 = new System.Windows.Forms.PictureBox();
             this.GOU_sprite_skin3 = new System.Windows.Forms.PictureBox();
             this.GOU_sprite_skin4 = new System.Windows.Forms.PictureBox();
-            this.label161 = new System.Windows.Forms.Label();
-            this.GOU_portrait_skin5 = new System.Windows.Forms.PictureBox();
-            this.GOU_portrait_skin7 = new System.Windows.Forms.PictureBox();
-            this.GOU_portrait_skin6 = new System.Windows.Forms.PictureBox();
-            this.GOU_portrait_skin4 = new System.Windows.Forms.PictureBox();
-            this.GOU_portrait_skin3 = new System.Windows.Forms.PictureBox();
-            this.GOU_portrait_skin2 = new System.Windows.Forms.PictureBox();
-            this.GOU_portrait_skin1 = new System.Windows.Forms.PictureBox();
-            this.label165 = new System.Windows.Forms.Label();
-            this.GOU_portrait_shadow = new System.Windows.Forms.PictureBox();
+            this.GOU_neutralStandBox = new System.Windows.Forms.PictureBox();
+            this.GOU_portraitVictoryBox = new System.Windows.Forms.PictureBox();
+            this.COLlabel = new System.Windows.Forms.Label();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1651,8 +1651,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).BeginInit();
             this.TabPageGouki.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_shadow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_hair2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin5)).BeginInit();
@@ -1668,14 +1674,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_shadow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2026,7 +2026,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -2039,7 +2039,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2059,7 +2059,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -2067,7 +2067,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2078,7 +2078,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2098,7 +2098,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -2107,7 +2107,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -2116,14 +2116,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -2134,48 +2134,48 @@
             this.newLegacyROMToolStripMenuItem,
             this.redggpoROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchToolStripMenuItem.Text = "Patch";
             // 
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // newLegacyROMToolStripMenuItem
             // 
             this.newLegacyROMToolStripMenuItem.Name = "newLegacyROMToolStripMenuItem";
-            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.newLegacyROMToolStripMenuItem.Text = "New Legacy ROM";
             this.newLegacyROMToolStripMenuItem.Click += new System.EventHandler(this.newLegacyROMToolStripMenuItem_Click);
             // 
             // redggpoROMToolStripMenuItem
             // 
             this.redggpoROMToolStripMenuItem.Name = "redggpoROMToolStripMenuItem";
-            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.redggpoROMToolStripMenuItem.Text = "Redggpo ROM";
             this.redggpoROMToolStripMenuItem.Click += new System.EventHandler(this.redggpoROMToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -11896,23 +11896,6 @@
             this.BLA_portraitVictoryBox.TabStop = false;
             this.BLA_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
-            // COLlabel
-            // 
-            this.COLlabel.AllowDrop = true;
-            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.COLlabel.Location = new System.Drawing.Point(341, 663);
-            this.COLlabel.Name = "COLlabel";
-            this.COLlabel.Size = new System.Drawing.Size(90, 49);
-            this.COLlabel.TabIndex = 122;
-            this.COLlabel.Text = "Drag COL file";
-            // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.Location = new System.Drawing.Point(726, 534);
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
-            this.hScrollBar1.TabIndex = 124;
-            // 
             // TabPageGouki
             // 
             this.TabPageGouki.BackColor = System.Drawing.SystemColors.Control;
@@ -11953,25 +11936,111 @@
             this.TabPageGouki.TabIndex = 16;
             this.TabPageGouki.Text = "Gouki";
             // 
-            // GOU_neutralStandBox
+            // label165
             // 
-            this.GOU_neutralStandBox.BackColor = System.Drawing.Color.Black;
-            this.GOU_neutralStandBox.Location = new System.Drawing.Point(15, 21);
-            this.GOU_neutralStandBox.Name = "GOU_neutralStandBox";
-            this.GOU_neutralStandBox.Size = new System.Drawing.Size(62, 100);
-            this.GOU_neutralStandBox.TabIndex = 195;
-            this.GOU_neutralStandBox.TabStop = false;
-            this.GOU_neutralStandBox.Click += new System.EventHandler(this.zoom);
+            this.label165.AutoSize = true;
+            this.label165.Location = new System.Drawing.Point(296, 197);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(44, 13);
+            this.label165.TabIndex = 542;
+            this.label165.Text = "shadow";
             // 
-            // GOU_portraitVictoryBox
+            // GOU_portrait_shadow
             // 
-            this.GOU_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
-            this.GOU_portraitVictoryBox.Location = new System.Drawing.Point(400, 21);
-            this.GOU_portraitVictoryBox.Name = "GOU_portraitVictoryBox";
-            this.GOU_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
-            this.GOU_portraitVictoryBox.TabIndex = 193;
-            this.GOU_portraitVictoryBox.TabStop = false;
-            this.GOU_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
+            this.GOU_portrait_shadow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_shadow.Location = new System.Drawing.Point(346, 186);
+            this.GOU_portrait_shadow.Name = "GOU_portrait_shadow";
+            this.GOU_portrait_shadow.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_shadow.TabIndex = 541;
+            this.GOU_portrait_shadow.TabStop = false;
+            this.GOU_portrait_shadow.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_shadow.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Location = new System.Drawing.Point(314, 167);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(26, 13);
+            this.label161.TabIndex = 537;
+            this.label161.Text = "skin";
+            // 
+            // GOU_portrait_skin5
+            // 
+            this.GOU_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin5.Location = new System.Drawing.Point(466, 156);
+            this.GOU_portrait_skin5.Name = "GOU_portrait_skin5";
+            this.GOU_portrait_skin5.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin5.TabIndex = 540;
+            this.GOU_portrait_skin5.TabStop = false;
+            this.GOU_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin7
+            // 
+            this.GOU_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin7.Location = new System.Drawing.Point(526, 156);
+            this.GOU_portrait_skin7.Name = "GOU_portrait_skin7";
+            this.GOU_portrait_skin7.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin7.TabIndex = 539;
+            this.GOU_portrait_skin7.TabStop = false;
+            this.GOU_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin6
+            // 
+            this.GOU_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin6.Location = new System.Drawing.Point(496, 156);
+            this.GOU_portrait_skin6.Name = "GOU_portrait_skin6";
+            this.GOU_portrait_skin6.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin6.TabIndex = 538;
+            this.GOU_portrait_skin6.TabStop = false;
+            this.GOU_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin4
+            // 
+            this.GOU_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin4.Location = new System.Drawing.Point(436, 156);
+            this.GOU_portrait_skin4.Name = "GOU_portrait_skin4";
+            this.GOU_portrait_skin4.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin4.TabIndex = 536;
+            this.GOU_portrait_skin4.TabStop = false;
+            this.GOU_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin3
+            // 
+            this.GOU_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin3.Location = new System.Drawing.Point(406, 156);
+            this.GOU_portrait_skin3.Name = "GOU_portrait_skin3";
+            this.GOU_portrait_skin3.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin3.TabIndex = 535;
+            this.GOU_portrait_skin3.TabStop = false;
+            this.GOU_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin2
+            // 
+            this.GOU_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin2.Location = new System.Drawing.Point(376, 156);
+            this.GOU_portrait_skin2.Name = "GOU_portrait_skin2";
+            this.GOU_portrait_skin2.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin2.TabIndex = 534;
+            this.GOU_portrait_skin2.TabStop = false;
+            this.GOU_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // GOU_portrait_skin1
+            // 
+            this.GOU_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GOU_portrait_skin1.Location = new System.Drawing.Point(346, 156);
+            this.GOU_portrait_skin1.Name = "GOU_portrait_skin1";
+            this.GOU_portrait_skin1.Size = new System.Drawing.Size(24, 24);
+            this.GOU_portrait_skin1.TabIndex = 533;
+            this.GOU_portrait_skin1.TabStop = false;
+            this.GOU_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
+            this.GOU_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label160
             // 
@@ -12174,111 +12243,42 @@
             this.GOU_sprite_skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
             this.GOU_sprite_skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
-            // label161
+            // GOU_neutralStandBox
             // 
-            this.label161.AutoSize = true;
-            this.label161.Location = new System.Drawing.Point(314, 167);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(26, 13);
-            this.label161.TabIndex = 537;
-            this.label161.Text = "skin";
+            this.GOU_neutralStandBox.BackColor = System.Drawing.Color.Black;
+            this.GOU_neutralStandBox.Location = new System.Drawing.Point(15, 21);
+            this.GOU_neutralStandBox.Name = "GOU_neutralStandBox";
+            this.GOU_neutralStandBox.Size = new System.Drawing.Size(62, 100);
+            this.GOU_neutralStandBox.TabIndex = 195;
+            this.GOU_neutralStandBox.TabStop = false;
+            this.GOU_neutralStandBox.Click += new System.EventHandler(this.zoom);
             // 
-            // GOU_portrait_skin5
+            // GOU_portraitVictoryBox
             // 
-            this.GOU_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin5.Location = new System.Drawing.Point(466, 156);
-            this.GOU_portrait_skin5.Name = "GOU_portrait_skin5";
-            this.GOU_portrait_skin5.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin5.TabIndex = 540;
-            this.GOU_portrait_skin5.TabStop = false;
-            this.GOU_portrait_skin5.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin5.Click += new System.EventHandler(this.pal_square_click);
+            this.GOU_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
+            this.GOU_portraitVictoryBox.Location = new System.Drawing.Point(400, 21);
+            this.GOU_portraitVictoryBox.Name = "GOU_portraitVictoryBox";
+            this.GOU_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.GOU_portraitVictoryBox.TabIndex = 193;
+            this.GOU_portraitVictoryBox.TabStop = false;
+            this.GOU_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
             // 
-            // GOU_portrait_skin7
+            // COLlabel
             // 
-            this.GOU_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin7.Location = new System.Drawing.Point(526, 156);
-            this.GOU_portrait_skin7.Name = "GOU_portrait_skin7";
-            this.GOU_portrait_skin7.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin7.TabIndex = 539;
-            this.GOU_portrait_skin7.TabStop = false;
-            this.GOU_portrait_skin7.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin7.Click += new System.EventHandler(this.pal_square_click);
+            this.COLlabel.AllowDrop = true;
+            this.COLlabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.COLlabel.Location = new System.Drawing.Point(341, 663);
+            this.COLlabel.Name = "COLlabel";
+            this.COLlabel.Size = new System.Drawing.Size(90, 49);
+            this.COLlabel.TabIndex = 122;
+            this.COLlabel.Text = "Drag COL file";
             // 
-            // GOU_portrait_skin6
+            // hScrollBar1
             // 
-            this.GOU_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin6.Location = new System.Drawing.Point(496, 156);
-            this.GOU_portrait_skin6.Name = "GOU_portrait_skin6";
-            this.GOU_portrait_skin6.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin6.TabIndex = 538;
-            this.GOU_portrait_skin6.TabStop = false;
-            this.GOU_portrait_skin6.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin6.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // GOU_portrait_skin4
-            // 
-            this.GOU_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin4.Location = new System.Drawing.Point(436, 156);
-            this.GOU_portrait_skin4.Name = "GOU_portrait_skin4";
-            this.GOU_portrait_skin4.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin4.TabIndex = 536;
-            this.GOU_portrait_skin4.TabStop = false;
-            this.GOU_portrait_skin4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin4.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // GOU_portrait_skin3
-            // 
-            this.GOU_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin3.Location = new System.Drawing.Point(406, 156);
-            this.GOU_portrait_skin3.Name = "GOU_portrait_skin3";
-            this.GOU_portrait_skin3.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin3.TabIndex = 535;
-            this.GOU_portrait_skin3.TabStop = false;
-            this.GOU_portrait_skin3.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin3.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // GOU_portrait_skin2
-            // 
-            this.GOU_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin2.Location = new System.Drawing.Point(376, 156);
-            this.GOU_portrait_skin2.Name = "GOU_portrait_skin2";
-            this.GOU_portrait_skin2.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin2.TabIndex = 534;
-            this.GOU_portrait_skin2.TabStop = false;
-            this.GOU_portrait_skin2.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin2.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // GOU_portrait_skin1
-            // 
-            this.GOU_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_skin1.Location = new System.Drawing.Point(346, 156);
-            this.GOU_portrait_skin1.Name = "GOU_portrait_skin1";
-            this.GOU_portrait_skin1.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_skin1.TabIndex = 533;
-            this.GOU_portrait_skin1.TabStop = false;
-            this.GOU_portrait_skin1.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_skin1.Click += new System.EventHandler(this.pal_square_click);
-            // 
-            // label165
-            // 
-            this.label165.AutoSize = true;
-            this.label165.Location = new System.Drawing.Point(296, 197);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(44, 13);
-            this.label165.TabIndex = 542;
-            this.label165.Text = "shadow";
-            // 
-            // GOU_portrait_shadow
-            // 
-            this.GOU_portrait_shadow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GOU_portrait_shadow.Location = new System.Drawing.Point(346, 186);
-            this.GOU_portrait_shadow.Name = "GOU_portrait_shadow";
-            this.GOU_portrait_shadow.Size = new System.Drawing.Size(24, 24);
-            this.GOU_portrait_shadow.TabIndex = 541;
-            this.GOU_portrait_shadow.TabStop = false;
-            this.GOU_portrait_shadow.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
-            this.GOU_portrait_shadow.Click += new System.EventHandler(this.pal_square_click);
+            this.hScrollBar1.Location = new System.Drawing.Point(726, 534);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
+            this.hScrollBar1.TabIndex = 124;
             // 
             // MainForm
             // 
@@ -12309,6 +12309,9 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(651, 446);
             this.Name = "MainForm";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainForm_KeyPress);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
@@ -13014,8 +13017,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.BLA_portraitVictoryBox)).EndInit();
             this.TabPageGouki.ResumeLayout(false);
             this.TabPageGouki.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_shadow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_hair2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_costume3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin5)).EndInit();
@@ -13031,14 +13040,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_skin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GOU_portrait_shadow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
