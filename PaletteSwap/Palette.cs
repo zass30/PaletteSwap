@@ -143,6 +143,7 @@ namespace PaletteSwap
             {
                 var label = k.Key;
                 var c = k.Value;
+                // todo use palettehelper here
                 s.Append(label + ":" + c.R.ToString() + " " + c.G.ToString() + " " + c.B.ToString() + System.Environment.NewLine);
             }
             return s.ToString().Trim();

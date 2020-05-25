@@ -953,8 +953,23 @@ namespace PaletteSwap
         {
             if (e.Control && e.KeyCode == Keys.C)
             {
-                MessageBox.Show("keyup");
+                if (currentlySelectedColor == null)
+                    return;
+                var c = currentlySelectedColor.BackColor;
+                var s = PaletteHelper.ColorFormatToRGB(c);
+                Clipboard.SetText(s);
+                return;
             }
+            if (e.Control && e.KeyCode == Keys.V)
+            {
+                if (currentlySelectedColor == null)
+                    return;
+                var s = Clipboard.GetText();
+                var c = PaletteHelper.RGBFormatToColor(s);
+                currentlySelectedColor.BackColor = c;
+                return;
+            }
+
         }
 
         private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
@@ -969,7 +984,7 @@ namespace PaletteSwap
             if (e.Control && e.KeyCode == Keys.C)
             {
                 //...
-                MessageBox.Show("down");
+                //MessageBox.Show("keydown");
             }
         }
     }
