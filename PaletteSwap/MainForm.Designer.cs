@@ -2039,7 +2039,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2059,7 +2059,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -2067,7 +2067,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2078,7 +2078,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2098,7 +2098,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -2107,7 +2107,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -2116,14 +2116,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -2134,49 +2134,49 @@
             this.newLegacyROMToolStripMenuItem,
             this.redggpoROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
             this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // newLegacyROMToolStripMenuItem
             // 
             this.newLegacyROMToolStripMenuItem.Name = "newLegacyROMToolStripMenuItem";
-            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newLegacyROMToolStripMenuItem.Text = "New Legacy ROM";
             this.newLegacyROMToolStripMenuItem.Click += new System.EventHandler(this.newLegacyROMToolStripMenuItem_Click);
             // 
             // redggpoROMToolStripMenuItem
             // 
             this.redggpoROMToolStripMenuItem.Name = "redggpoROMToolStripMenuItem";
-            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.redggpoROMToolStripMenuItem.Text = "Redggpo ROM";
             this.redggpoROMToolStripMenuItem.Click += new System.EventHandler(this.redggpoROMToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2190,7 +2190,7 @@
             // colorSetToolStripMenuItem
             // 
             this.colorSetToolStripMenuItem.Name = "colorSetToolStripMenuItem";
-            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorSetToolStripMenuItem.Text = "Color Set";
             this.colorSetToolStripMenuItem.Click += new System.EventHandler(this.colorSetToolStripMenuItem_Click);
             // 
@@ -2216,7 +2216,7 @@
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.undoToolStripMenuItem.Text = "&Undo";
             this.undoToolStripMenuItem.Visible = false;
             // 
@@ -2224,14 +2224,14 @@
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.redoToolStripMenuItem.Text = "&Redo";
             this.redoToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(224, 6);
             this.toolStripSeparator3.Visible = false;
             // 
             // cutToolStripMenuItem
@@ -2240,7 +2240,7 @@
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.cutToolStripMenuItem.Text = "Cu&t";
             this.cutToolStripMenuItem.Visible = false;
             // 
@@ -2252,7 +2252,6 @@
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.copyToolStripMenuItem.Text = "&Copy";
-            this.copyToolStripMenuItem.Visible = false;
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
@@ -2263,40 +2262,38 @@
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.pasteToolStripMenuItem.Text = "&Paste";
-            this.pasteToolStripMenuItem.Visible = false;
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(208, 6);
-            this.toolStripSeparator4.Visible = false;
+            this.toolStripSeparator4.Size = new System.Drawing.Size(224, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             this.selectAllToolStripMenuItem.Visible = false;
             // 
             // resetThisColorToolStripMenuItem
             // 
             this.resetThisColorToolStripMenuItem.Name = "resetThisColorToolStripMenuItem";
-            this.resetThisColorToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.resetThisColorToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.resetThisColorToolStripMenuItem.Text = "Reset this color";
             this.resetThisColorToolStripMenuItem.Click += new System.EventHandler(this.resetThisColorToolStripMenuItem_Click);
             // 
             // resetCharacterToolStripMenuItem
             // 
             this.resetCharacterToolStripMenuItem.Name = "resetCharacterToolStripMenuItem";
-            this.resetCharacterToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.resetCharacterToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.resetCharacterToolStripMenuItem.Text = "Reset this character colors";
             this.resetCharacterToolStripMenuItem.Click += new System.EventHandler(this.resetCharacterToolStripMenuItem_Click);
             // 
             // resetColorsToolStripMenuItem
             // 
             this.resetColorsToolStripMenuItem.Name = "resetColorsToolStripMenuItem";
-            this.resetColorsToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.resetColorsToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
             this.resetColorsToolStripMenuItem.Text = "Reset whole game colors";
             this.resetColorsToolStripMenuItem.Click += new System.EventHandler(this.resetColorsToolStripMenuItem_Click);
             // 
@@ -2313,13 +2310,13 @@
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -6440,7 +6437,7 @@
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(45, 193);
+            this.label72.Location = new System.Drawing.Point(26, 223);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(24, 13);
             this.label72.TabIndex = 248;
@@ -6449,7 +6446,7 @@
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(45, 163);
+            this.label73.Location = new System.Drawing.Point(26, 253);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(24, 13);
             this.label73.TabIndex = 247;
@@ -6458,7 +6455,7 @@
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(22, 222);
+            this.label75.Location = new System.Drawing.Point(3, 162);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(47, 13);
             this.label75.TabIndex = 237;
@@ -6467,7 +6464,7 @@
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(43, 253);
+            this.label76.Location = new System.Drawing.Point(24, 193);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(26, 13);
             this.label76.TabIndex = 229;
@@ -6696,7 +6693,7 @@
             // KEN_sprite_costume5
             // 
             this.KEN_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_costume5.Location = new System.Drawing.Point(195, 212);
+            this.KEN_sprite_costume5.Location = new System.Drawing.Point(176, 152);
             this.KEN_sprite_costume5.Name = "KEN_sprite_costume5";
             this.KEN_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_costume5.TabIndex = 245;
@@ -6707,7 +6704,7 @@
             // KEN_sprite_belt
             // 
             this.KEN_sprite_belt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_belt.Location = new System.Drawing.Point(75, 152);
+            this.KEN_sprite_belt.Location = new System.Drawing.Point(56, 242);
             this.KEN_sprite_belt.Name = "KEN_sprite_belt";
             this.KEN_sprite_belt.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_belt.TabIndex = 246;
@@ -6718,7 +6715,7 @@
             // KEN_sprite_costume1
             // 
             this.KEN_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_costume1.Location = new System.Drawing.Point(75, 212);
+            this.KEN_sprite_costume1.Location = new System.Drawing.Point(56, 152);
             this.KEN_sprite_costume1.Name = "KEN_sprite_costume1";
             this.KEN_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_costume1.TabIndex = 238;
@@ -6729,7 +6726,7 @@
             // KEN_sprite_costume2
             // 
             this.KEN_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_costume2.Location = new System.Drawing.Point(105, 212);
+            this.KEN_sprite_costume2.Location = new System.Drawing.Point(86, 152);
             this.KEN_sprite_costume2.Name = "KEN_sprite_costume2";
             this.KEN_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_costume2.TabIndex = 239;
@@ -6740,7 +6737,7 @@
             // KEN_sprite_costume3
             // 
             this.KEN_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_costume3.Location = new System.Drawing.Point(135, 212);
+            this.KEN_sprite_costume3.Location = new System.Drawing.Point(116, 152);
             this.KEN_sprite_costume3.Name = "KEN_sprite_costume3";
             this.KEN_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_costume3.TabIndex = 240;
@@ -6751,7 +6748,7 @@
             // KEN_sprite_costume4
             // 
             this.KEN_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_costume4.Location = new System.Drawing.Point(165, 212);
+            this.KEN_sprite_costume4.Location = new System.Drawing.Point(146, 152);
             this.KEN_sprite_costume4.Name = "KEN_sprite_costume4";
             this.KEN_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_costume4.TabIndex = 241;
@@ -6762,7 +6759,7 @@
             // KEN_sprite_skin5
             // 
             this.KEN_sprite_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_skin5.Location = new System.Drawing.Point(195, 242);
+            this.KEN_sprite_skin5.Location = new System.Drawing.Point(176, 182);
             this.KEN_sprite_skin5.Name = "KEN_sprite_skin5";
             this.KEN_sprite_skin5.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_skin5.TabIndex = 242;
@@ -6773,7 +6770,7 @@
             // KEN_sprite_skin6
             // 
             this.KEN_sprite_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_skin6.Location = new System.Drawing.Point(225, 242);
+            this.KEN_sprite_skin6.Location = new System.Drawing.Point(206, 182);
             this.KEN_sprite_skin6.Name = "KEN_sprite_skin6";
             this.KEN_sprite_skin6.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_skin6.TabIndex = 243;
@@ -6784,7 +6781,7 @@
             // KEN_sprite_costume6
             // 
             this.KEN_sprite_costume6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_costume6.Location = new System.Drawing.Point(225, 212);
+            this.KEN_sprite_costume6.Location = new System.Drawing.Point(206, 152);
             this.KEN_sprite_costume6.Name = "KEN_sprite_costume6";
             this.KEN_sprite_costume6.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_costume6.TabIndex = 234;
@@ -6795,7 +6792,7 @@
             // KEN_sprite_hair1
             // 
             this.KEN_sprite_hair1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_hair1.Location = new System.Drawing.Point(75, 182);
+            this.KEN_sprite_hair1.Location = new System.Drawing.Point(56, 212);
             this.KEN_sprite_hair1.Name = "KEN_sprite_hair1";
             this.KEN_sprite_hair1.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_hair1.TabIndex = 235;
@@ -6806,7 +6803,7 @@
             // KEN_sprite_hair2
             // 
             this.KEN_sprite_hair2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_hair2.Location = new System.Drawing.Point(105, 182);
+            this.KEN_sprite_hair2.Location = new System.Drawing.Point(86, 212);
             this.KEN_sprite_hair2.Name = "KEN_sprite_hair2";
             this.KEN_sprite_hair2.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_hair2.TabIndex = 236;
@@ -6817,7 +6814,7 @@
             // KEN_sprite_skin1
             // 
             this.KEN_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_skin1.Location = new System.Drawing.Point(75, 242);
+            this.KEN_sprite_skin1.Location = new System.Drawing.Point(56, 182);
             this.KEN_sprite_skin1.Name = "KEN_sprite_skin1";
             this.KEN_sprite_skin1.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_skin1.TabIndex = 230;
@@ -6828,7 +6825,7 @@
             // KEN_sprite_skin2
             // 
             this.KEN_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_skin2.Location = new System.Drawing.Point(105, 242);
+            this.KEN_sprite_skin2.Location = new System.Drawing.Point(86, 182);
             this.KEN_sprite_skin2.Name = "KEN_sprite_skin2";
             this.KEN_sprite_skin2.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_skin2.TabIndex = 231;
@@ -6839,7 +6836,7 @@
             // KEN_sprite_skin3
             // 
             this.KEN_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_skin3.Location = new System.Drawing.Point(135, 242);
+            this.KEN_sprite_skin3.Location = new System.Drawing.Point(116, 182);
             this.KEN_sprite_skin3.Name = "KEN_sprite_skin3";
             this.KEN_sprite_skin3.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_skin3.TabIndex = 232;
@@ -6850,7 +6847,7 @@
             // KEN_sprite_skin4
             // 
             this.KEN_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.KEN_sprite_skin4.Location = new System.Drawing.Point(165, 242);
+            this.KEN_sprite_skin4.Location = new System.Drawing.Point(146, 182);
             this.KEN_sprite_skin4.Name = "KEN_sprite_skin4";
             this.KEN_sprite_skin4.Size = new System.Drawing.Size(24, 24);
             this.KEN_sprite_skin4.TabIndex = 233;
