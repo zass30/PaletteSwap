@@ -34,7 +34,6 @@ namespace PaletteSwap
 
         public MainForm()
         {
-            KeyPreview = true;
             InitializeComponent();
             CreateCharacterSet();
             EnableDragAndDrop();
@@ -949,43 +948,24 @@ namespace PaletteSwap
             reload_everything();
         }
 
-        private void MainForm_KeyUp(object sender, KeyEventArgs e)
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (e.Control && e.KeyCode == Keys.C)
-            {
-                if (currentlySelectedColor == null)
-                    return;
-                var c = currentlySelectedColor.BackColor;
-                var s = PaletteHelper.ColorFormatToRGB(c);
-                Clipboard.SetText(s);
+            if (currentlySelectedColor == null)
                 return;
-            }
-            if (e.Control && e.KeyCode == Keys.V)
-            {
-                if (currentlySelectedColor == null)
-                    return;
-                var s = Clipboard.GetText();
-                var c = PaletteHelper.RGBFormatToColor(s);
-                currentlySelectedColor.BackColor = c;
-                return;
-            }
-
+            var c = currentlySelectedColor.BackColor;
+            var s = PaletteHelper.ColorFormatToRGB(c);
+            Clipboard.SetText(s);
+            return;
         }
 
-        private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //e.Handled = true;
-             //   MessageBox.Show("press");
-            
-        }
-
-        private void MainForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Control && e.KeyCode == Keys.C)
-            {
-                //...
-                //MessageBox.Show("keydown");
-            }
+            if (currentlySelectedColor == null)
+                return;
+            var s = Clipboard.GetText();
+            var c = PaletteHelper.RGBFormatToColor(s);
+            currentlySelectedColor.BackColor = c;
+            return;
         }
     }
 }
