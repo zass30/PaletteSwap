@@ -50,6 +50,7 @@ namespace PaletteSwap
 
         public void displayZoomImage()
         {
+            // first, make sure we aren't trying to display a dictator special image on non dictators
             var scaledImg = getZoomedImage();
             zoomBox.Height = scaledImg.Height;
             zoomBox.Width = scaledImg.Width;

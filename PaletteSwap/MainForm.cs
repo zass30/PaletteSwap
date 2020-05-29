@@ -219,7 +219,16 @@ namespace PaletteSwap
         {
             loadSpritesAndPalettesFromDropDown();
             if (currentlyZoomedLabel != null)
-                z.displayZoomImage();
+            {
+                if ((currentlyZoomedLabel == "crusherbottom" ||
+                    currentlyZoomedLabel == "crushertop" ||
+                    currentlyZoomedLabel == "psychoprep" ||
+                    currentlyZoomedLabel == "psychopunch") &&
+                    currentCharacterType != CharacterConfig.CHARACTERS.Dictator
+                                        )
+                        return;
+                    z.displayZoomImage();
+            }
         }
 
         private void label1_DragEnter(object sender, DragEventArgs e)
@@ -966,6 +975,11 @@ namespace PaletteSwap
             var c = PaletteHelper.RGBFormatToColor(s);
             currentlySelectedColor.BackColor = c;
             return;
+        }
+
+        private void TabPageDictator_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
