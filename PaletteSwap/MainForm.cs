@@ -218,16 +218,26 @@ namespace PaletteSwap
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadSpritesAndPalettesFromDropDown();
+            closeZoomIfNotRelevant();
+
+        }
+
+        private void closeZoomIfNotRelevant()
+        {
             if (currentlyZoomedLabel != null)
             {
-                if ((currentlyZoomedLabel == "crusherbottom" ||
+                if (((currentlyZoomedLabel == "crusherbottom" ||
                     currentlyZoomedLabel == "crushertop" ||
                     currentlyZoomedLabel == "psychoprep" ||
                     currentlyZoomedLabel == "psychopunch") &&
-                    currentCharacterType != CharacterConfig.CHARACTERS.Dictator
+                    currentCharacterType != CharacterConfig.CHARACTERS.Dictator) ||
+                    (currentlyZoomedLabel == "loss" &&
+                    currentCharacterType == CharacterConfig.CHARACTERS.Gouki
+                    )
                                         )
-                        return;
-                    z.displayZoomImage();
+                    z.Close();
+                else
+                z.displayZoomImage();
             }
         }
 
@@ -749,6 +759,7 @@ namespace PaletteSwap
             currentCharacterType = character;
             characterSet = gameSet.characterDictionary[character];
             currentCharacter = characterSet.characterColors[0];
+            closeZoomIfNotRelevant();
             reload_everything();
         }
 
