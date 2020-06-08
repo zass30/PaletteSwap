@@ -529,6 +529,26 @@ namespace PaletteSwap
             pal_val_B.Text = (17 - b).ToString();
         }
 
+        private void incrementColorsButton_Click(object sender, EventArgs e)
+        {
+            var g = trackBarG.Value;
+            var r = trackBarR.Value;
+            var b = trackBarB.Value;
+            pal_val_G.Text = Math.Min((g + 1), 15).ToString();
+            pal_val_R.Text = Math.Min((r + 1), 15).ToString();
+            pal_val_B.Text = Math.Min((b + 1), 15).ToString();
+        }
+
+        private void decrementColorsButton_Click(object sender, EventArgs e)
+        {
+            var g = trackBarG.Value;
+            var r = trackBarR.Value;
+            var b = trackBarB.Value;
+            pal_val_G.Text = Math.Max((g - 1), 0).ToString();
+            pal_val_R.Text = Math.Max((r - 1), 0).ToString();
+            pal_val_B.Text = Math.Max((b - 1), 0).ToString();
+        }
+
         // todo fix this for new col format
         private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
