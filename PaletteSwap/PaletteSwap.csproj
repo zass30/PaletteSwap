@@ -79,7 +79,6 @@
   <ItemGroup>
     <Compile Include="Character.cs" />
     <Compile Include="CharacterColorSet.cs" />
-    <Compile Include="CharacterLegacy.cs" />
     <Compile Include="ColorSetForm.cs">
       <SubType>Form</SubType>
     </Compile>

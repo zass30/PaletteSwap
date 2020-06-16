@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.colorSwapBG = new System.Windows.Forms.Button();
             this.colorSelectorBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -1710,17 +1709,6 @@
             this.colorSelectorBox.TabIndex = 5;
             this.colorSelectorBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label1
-            // 
-            this.label1.AllowDrop = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(265, 479);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 49);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Drag COL file (legacy)";
-            this.label1.Visible = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -2028,7 +2016,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -2136,7 +2124,7 @@
             this.newLegacyROMToolStripMenuItem,
             this.redggpoROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchToolStripMenuItem.Text = "Patch";
             this.patchToolStripMenuItem.Visible = false;
             // 
@@ -2431,7 +2419,6 @@
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherhands2);
             this.TabPageDictator.Controls.Add(this.DIC_portrait_blood1);
             this.TabPageDictator.Controls.Add(this.label3);
-            this.TabPageDictator.Controls.Add(this.label1);
             this.TabPageDictator.Controls.Add(this.label14);
             this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherhands1);
             this.TabPageDictator.Controls.Add(this.DIC_portrait_pipingloss4);
@@ -13072,7 +13059,6 @@
         #endregion
         private System.Windows.Forms.Button colorSwapBG;
         private System.Windows.Forms.ComboBox colorSelectorBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
