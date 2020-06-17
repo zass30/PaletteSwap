@@ -34,12 +34,11 @@ namespace PaletteSwap
             Character character = CreateDefaultCharacter(characterType, CharacterConfig.BUTTONS.lp);
             var sprite = sr.ReadLine(); // SPRITE
             var rest = sr.ReadToEnd();
-            var v = rest.Split(new string[] { "PORTRAIT" + System.Environment.NewLine }, StringSplitOptions.None);
+            var v = rest.Split(new string[] { "PORTRAIT" + System.Environment.NewLine, "PORTRAIT" + "\r", "PORTRAIT" + "\n", "PORTRAIT" + "\r\n" }, StringSplitOptions.None);
             var sprites = v[0];
             var portraits = v[1];
             character.sprite.LoadColFormat(sprites);
             character.portrait.LoadColFormat(portraits);
-
             return character;
         }
 

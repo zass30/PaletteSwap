@@ -152,7 +152,8 @@ namespace PaletteSwap
         public void LoadColFormat(string s)
         {
             s = s.Trim();
-            var v = s.Split(new string[] { System.Environment.NewLine }, StringSplitOptions.None);
+            var v = s.Split(new string[] { System.Environment.NewLine, "\r\n", "\r", "\n" }, StringSplitOptions.None);
+
             foreach (var line in v)
             {
                 var s1 = line.Split(':');

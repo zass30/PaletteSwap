@@ -757,7 +757,7 @@ namespace PaletteSwap
         {
             currentCharacterType = character;
             characterSet = gameSet.characterDictionary[character];
-            currentCharacter = characterSet.characterColors[0];
+            currentCharacter = characterSet.characterColors[colorSelectorBox.SelectedIndex];
             closeZoomIfNotRelevant();
             reload_everything();
         }
