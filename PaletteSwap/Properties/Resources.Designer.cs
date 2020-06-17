@@ -283,6 +283,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DHA_portraitlossX {
+            get {
+                object obj = ResourceManager.GetObject("DHA_portraitlossX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap DHA_portraitwin0 {
             get {
                 object obj = ResourceManager.GetObject("DHA_portraitwin0", resourceCulture);

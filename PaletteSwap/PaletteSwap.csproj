@@ -215,6 +215,7 @@
     <None Include="Resources\cammy\CAM_portraitlossX.png" />
     <None Include="Resources\cammy\CAM_portraitwinX.png" />
     <None Include="Resources\gouki\GOU_portraitwinX.png" />
+    <None Include="Resources\dhalsim\DHA_portraitlossX.png" />
     <Content Include="Resources\guile\GUI_neutral2.png" />
     <Content Include="Resources\guile\GUI_portraitloss2.png" />
     <Content Include="Resources\guile\GUI_portraitwin2.png" />

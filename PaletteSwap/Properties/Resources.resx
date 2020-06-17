@@ -361,4 +361,7 @@
   <data name="GOU_portraitwinX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gouki\GOU_portraitwinX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DHA_portraitlossX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dhalsim\DHA_portraitlossX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
