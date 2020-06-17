@@ -2015,7 +2015,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // saveAsToolStripMenuItem
             // 
@@ -2023,7 +2023,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2043,13 +2043,13 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -2066,42 +2066,42 @@
             // standardROMToolStripMenuItem
             // 
             this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardROMToolStripMenuItem.Text = "Standard ROM";
             this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
             // 
             // phoenixROMToolStripMenuItem
             // 
             this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
             this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
             // 
             // japaneseROMToolStripMenuItem
             // 
             this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
             this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
             // 
             // newLegacyROMToolStripMenuItem
             // 
             this.newLegacyROMToolStripMenuItem.Name = "newLegacyROMToolStripMenuItem";
-            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newLegacyROMToolStripMenuItem.Text = "New Legacy ROM";
             this.newLegacyROMToolStripMenuItem.Click += new System.EventHandler(this.newLegacyROMToolStripMenuItem_Click);
             // 
             // redggpoROMToolStripMenuItem
             // 
             this.redggpoROMToolStripMenuItem.Name = "redggpoROMToolStripMenuItem";
-            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.redggpoROMToolStripMenuItem.Text = "Redggpo ROM";
             this.redggpoROMToolStripMenuItem.Click += new System.EventHandler(this.redggpoROMToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -9820,6 +9820,7 @@
             this.DEE_portrait_blood4.Size = new System.Drawing.Size(24, 24);
             this.DEE_portrait_blood4.TabIndex = 409;
             this.DEE_portrait_blood4.TabStop = false;
+            this.DEE_portrait_blood4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.DEE_portrait_blood4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DEE_portrait_teeth4
@@ -9830,6 +9831,7 @@
             this.DEE_portrait_teeth4.Size = new System.Drawing.Size(24, 24);
             this.DEE_portrait_teeth4.TabIndex = 408;
             this.DEE_portrait_teeth4.TabStop = false;
+            this.DEE_portrait_teeth4.BackColorChanged += new System.EventHandler(this.portrait_BackColorChanged);
             this.DEE_portrait_teeth4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // DEE_portrait_skin7
@@ -12221,7 +12223,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -12244,7 +12246,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -12255,7 +12257,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -12264,7 +12266,7 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
