@@ -841,7 +841,7 @@ namespace PaletteSwap
             // Displays a SaveFileDialog so the user can save the Image
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-            saveFileDialog1.Title = "Save a rom";
+            saveFileDialog1.Title = "Save a colorset";
             saveFileDialog1.ShowDialog();
 
             // If the file name is not an empty string open it for saving.
