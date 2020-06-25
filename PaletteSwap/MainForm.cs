@@ -983,7 +983,13 @@ namespace PaletteSwap
                 return;
             var s = Clipboard.GetText();
             var c = PaletteHelper.RGBFormatToColor(s);
-            currentlySelectedColor.BackColor = c;
+            var r = ((c.R) / 17).ToString();
+            var g = ((c.G) / 17).ToString();
+            var b = ((c.B) / 17).ToString();
+            pal_val_R.Text = r;
+            pal_val_G.Text = g;
+            pal_val_B.Text = b;
+//            currentlySelectedColor.BackColor = c;
             return;
         }
 
