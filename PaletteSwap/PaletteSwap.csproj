@@ -155,6 +155,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sagat\SAG_portraitwin8.png" />
+    <None Include="Resources\sagat\SAG_portraitloss8.png" />
     <None Include="Resources\hawk\THA_neutral2.png" />
     <None Include="Resources\hawk\THA_portraitlossX.png" />
     <None Include="Resources\roms\sfxo.03c" />

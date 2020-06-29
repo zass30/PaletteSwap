@@ -546,14 +546,7 @@ namespace PaletteSwap
            };
                 return spriteOffsets;
             }
-            /*
-             *                             16   18   20   22   24   26   28
- * A101 A202 A303 A404 A505 A606 A707 A808 1502 3704 4805 6907 9B0A CD0C 0F0F 000F 
- * 110A 220A 330A 440A 550A 660A 770A 880A 990A AA0A BB0A CC0A DD0A EE0A FF0A FB00 
- * 1A01 2A02 3A03 4A04 5A05 6A06 7A07 8A08 9A09 AC0A BA0B CA0C DA0D EA0D 5842 5C00 
- * 5101 5201 5301 5401 5501 5601 5701 5801 5901 5A01 5B01 5C01 5D01 5E01 CC0C 1501 
- * E359 AD33 6A2C 62D9 6786 FC7A 5122 EA84 FC8D 4C88 2F68 8B5A 7011 A64A CCD9 4F71
- */
+
             public static Dictionary<string, List<int>> GenerateGoukiPortraitOffsets()
             {
                 Dictionary<string, List<int>> portraitOffsets = new Dictionary<string, List<int>>
@@ -1100,7 +1093,7 @@ namespace PaletteSwap
 
         { "hair1", new List<int>() { 8, ROWLEN * 1 + 8 } },
         { "hair2", new List<int>() { 10, ROWLEN * 1 + 10 } },
-        { "hair3", new List<int>() { ROWLEN * 1 + 12, 12 } }, // jab gief has diff values here, use strong as baseline and 
+        { "hair3", new List<int>() { ROWLEN * 1 + 12, 12 } }, // jab gief has diff values here, use strong as baseline  
 
         { "costume1", new List<int>() { 14 } },
         { "costume2", new List<int>() { 16 } },
@@ -2004,15 +1997,15 @@ DictatorVictoryPortraitLabels());
 
                 public static PaletteImage GenerateSagatVictoryBasePaletteImage()
                 {
-                    return GenerateSagatPortraitPaletteImage(Properties.Resources.SAG_portraitwin0,
-                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+                    return GenerateSagatPortraitPaletteImage(Properties.Resources.SAG_portraitwin8,
+                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.old1)),
     SagatVictoryPortraitLabels());
                 }
 
                 public static PaletteImage GenerateSagatLossBasePaletteImage()
                 {
-                    return GenerateSagatPortraitPaletteImage(Properties.Resources.SAG_portraitloss0,
-                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.lp)),
+                    return GenerateSagatPortraitPaletteImage(Properties.Resources.SAG_portraitloss8,
+                                                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Sagat, CharacterConfig.BUTTONS.old1)),
     SagatLossPortraitLabels());
                 }
 

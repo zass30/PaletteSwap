@@ -593,9 +593,29 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap SAG_portraitloss8 {
+            get {
+                object obj = ResourceManager.GetObject("SAG_portraitloss8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap SAG_portraitwin0 {
             get {
                 object obj = ResourceManager.GetObject("SAG_portraitwin0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SAG_portraitwin8 {
+            get {
+                object obj = ResourceManager.GetObject("SAG_portraitwin8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
