@@ -791,15 +791,10 @@ namespace PaletteSwap
         { "costume1", new List<int>() { ROWLEN * 1 + 24 } },
         { "costume2", new List<int>() { ROWLEN * 1 + 26 } },
         { "costume3", new List<int>() { ROWLEN * 1 + 28 } },
-/*
-        { "paint1", new List<int>() { 24, ROWLEN * 2 + 24, ROWLEN * 3 + 24 } },
-        { "paint2", new List<int>() { 26, ROWLEN * 2 + 14 } },
-        { "paint3", new List<int>() { 28, ROWLEN * 2 + 16 } },
-*/
+
         { "paint1", new List<int>() { 24, ROWLEN * 2 + 14 } },
         { "paint2", new List<int>() { 26, ROWLEN * 2 + 16 } },
         { "paint3", new List<int>() { 28 } },
-
 
         { "bruise1", new List<int>() { 20, ROWLEN * 2 + 20, ROWLEN * 3 + 20 } },
         { "bruise2", new List<int>() { 22, ROWLEN * 2 + 22, ROWLEN * 3 + 22 } },
@@ -1706,8 +1701,8 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Deejay, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.DEEJAY.GenerateDeejayPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Dhalsim:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.DHA_portraitwin0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp)),
+                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.DHA_portraitwinX),
+                       Dhalsim.PORTRAIT.GenerateDhalsimCustomXColor(),
                         PaletteConfig.DHALSIM.GenerateDhalsimPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Cammy:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.CAM_portraitwinX),
@@ -2058,15 +2053,17 @@ DictatorVictoryPortraitLabels());
         {
             public struct PORTRAIT
             {
-                // Dhalsim's portrait has two dinstinct reds: his paint and his blood.
-                // We create a custom portrait from his jab where the blood is are 0006FF
+                // Dhalsim's portrait has two dinstinct reds: his paint1 and his blood1.
+                // Dhalsim's skin4 and paint2 are also the the same. we create custom portrait where 
+                // We create a custom portrait from his jab where the paint1 is green and paint2 is blue
                 public static string GenerateDhalsimCustomXColor()
                 {
                     byte[] stream = CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dhalsim, CharacterConfig.BUTTONS.lp);
                     PaletteConfig portraitConfig = PaletteConfig.GeneratePortraitConfig(CharacterConfig.CHARACTERS.Dhalsim);
                     Palette p = Palette.PaletteFromConfig(portraitConfig);
                     p.LoadStream(stream);
-                    p.SetColor("blood1", Color.FromArgb(255, 0, 102, 255));
+                    p.SetColor("paint1", Color.FromArgb(255, 0, 255, 0));
+                    p.SetColor("paint2", Color.FromArgb(255, 0, 0, 255));
                     var stream2 = p.ToByteStream();
                     return PaletteHelper.ByteStreamToString(stream2);
                 }
