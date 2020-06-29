@@ -2062,6 +2062,7 @@
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
             this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
+            this.patchToolStripMenuItem.Visible = false;
             // 
             // standardROMToolStripMenuItem
             // 
@@ -5841,7 +5842,7 @@
             this.CLA_neutralStandBox.BackColor = System.Drawing.Color.Black;
             this.CLA_neutralStandBox.Location = new System.Drawing.Point(11, 12);
             this.CLA_neutralStandBox.Name = "CLA_neutralStandBox";
-            this.CLA_neutralStandBox.Size = new System.Drawing.Size(75, 113);
+            this.CLA_neutralStandBox.Size = new System.Drawing.Size(75, 111);
             this.CLA_neutralStandBox.TabIndex = 122;
             this.CLA_neutralStandBox.TabStop = false;
             this.CLA_neutralStandBox.Click += new System.EventHandler(this.zoom);
@@ -6772,7 +6773,7 @@
             this.RYU_neutralStandBox.BackColor = System.Drawing.Color.Black;
             this.RYU_neutralStandBox.Location = new System.Drawing.Point(15, 25);
             this.RYU_neutralStandBox.Name = "RYU_neutralStandBox";
-            this.RYU_neutralStandBox.Size = new System.Drawing.Size(59, 90);
+            this.RYU_neutralStandBox.Size = new System.Drawing.Size(57, 95);
             this.RYU_neutralStandBox.TabIndex = 176;
             this.RYU_neutralStandBox.TabStop = false;
             this.RYU_neutralStandBox.Click += new System.EventHandler(this.zoom);
