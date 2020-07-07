@@ -981,6 +981,7 @@ namespace PaletteSwap
         {
             if (currentlySelectedColor == null)
                 return;
+            var name = currentlySelectedColor.Name;
             var s = Clipboard.GetText();
             var c = PaletteHelper.RGBFormatToColor(s);
             var r = ((c.R) / 17).ToString();
@@ -989,13 +990,7 @@ namespace PaletteSwap
             pal_val_R.Text = r;
             pal_val_G.Text = g;
             pal_val_B.Text = b;
-//            currentlySelectedColor.BackColor = c;
             return;
-        }
-
-        private void TabPageDictator_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
