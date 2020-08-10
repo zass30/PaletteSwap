@@ -285,6 +285,8 @@ namespace PaletteSwap
             {
                 case CharacterConfig.CHARACTERS.Dictator:
                     return DICTATOR.GenerateDictatorSpriteConfig();
+                case CharacterConfig.CHARACTERS.Gouki:
+                    return GOUKI.GenerateGoukiSpriteConfig();
                 default:
                     return GenerateSpriteConfigGeneric(c);
             }
@@ -523,6 +525,17 @@ namespace PaletteSwap
 
         public struct GOUKI
         {
+            public static PaletteConfig GenerateGoukiSpriteConfig()
+            {
+                int MEMLEN = 160;
+                PaletteConfig pc = new PaletteConfig();
+                pc.labelOffsets = GenerateGoukiSpriteOffsets();
+                pc.unusedOffsets = new List<int>();
+                pc.defaultColorOffsets = new List<ColorOffset>();
+                pc.streamLength = MEMLEN;
+                return pc;
+            }
+
             public static Dictionary<string, List<int>> GenerateGoukiSpriteOffsets()
             {
                 Dictionary<string, List<int>> spriteOffsets =
@@ -543,6 +556,23 @@ namespace PaletteSwap
             { "costume5", new List<int>() { 24 } },
             { "costume6", new List<int>() { 26 } },
             { "hair1", new List<int>() { 28 } },
+
+            { "t1belt", new List<int>() { ROWLEN * 2 + 26 } },
+            { "t1skin1", new List<int>() { ROWLEN * 2 + 28 } },
+            { "t1skin2", new List<int>() { ROWLEN * 2 + 0 } },
+            { "t1skin3", new List<int>() { ROWLEN * 2 + 2 } },
+            { "t1skin4", new List<int>() { ROWLEN * 2 + 4 } },
+            { "t1skin5", new List<int>() { ROWLEN * 2 + 6 } },
+            { "t1skin6", new List<int>() { ROWLEN * 2 + 8 } },
+            { "t1hair2", new List<int>() { ROWLEN * 2 + 10 } },
+            { "t1costume1", new List<int>() { ROWLEN * 2 + 12 } },
+            { "t1costume2", new List<int>() { ROWLEN * 2 + 14 } },
+            { "t1costume3", new List<int>() { ROWLEN * 2 + 16 } },
+            { "t1costume4", new List<int>() {  ROWLEN * 2 + 18 } },
+            { "t1costume5", new List<int>() {  ROWLEN * 2 + 20 } },
+            { "t1costume6", new List<int>() {  ROWLEN * 2 + 22 } },
+            { "t1hair1", new List<int>() {  ROWLEN * 2 + 24 } },
+
            };
                 return spriteOffsets;
             }
@@ -1644,10 +1674,6 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.BLANKA.GenerateBlankaSpriteOffsets());
-             /*   case CharacterConfig.CHARACTERS.Gouki:
-                    return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.GOU_neutral0),
-                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.GOUKI.GenerateGoukiSpriteOffsets());*/
                 case CharacterConfig.CHARACTERS.Gouki:
                     return GOUKI.SPRITE.GenerateGoukiStandingNeutralBasePaletteImage();
             }
@@ -2085,17 +2111,23 @@ DictatorVictoryPortraitLabels());
 
                 public static List<string> GoukiTeleportLabels1()
                 {
-                    return GoukiStandNeutralLabels();
+                    return new List<string> { "t1skin1", "t1skin2", "t1skin3", "t1skin4","t1skin5","t1skin6",
+                "t1hair1", "t1hair2", "t1belt",
+                "t1costume1", "t1costume2", "t1costume3", "t1costume4", "t1costume5", "t1costume6"};
                 }
 
                 public static List<string> GoukiTeleportLabels2()
                 {
-                    return GoukiStandNeutralLabels();
+                    return new List<string> { "t2skin1", "t2skin2", "t2skin3", "t2skin4","t2skin5","t2skin6",
+                "t2hair1", "t2hair2", "t2belt",
+                "t2costume1", "t2costume2", "t2costume3", "t2costume4", "t2costume5", "t2costume6"};
                 }
 
                 public static List<string> GoukiTeleportLabels3()
                 {
-                    return GoukiStandNeutralLabels();
+                    return new List<string> { "t3skin1", "t3skin2", "t3skin3", "t3skin4","t3skin5","t3skin6",
+                "t3hair1", "t3hair2", "t3belt",
+                "t3costume1", "t3costume2", "t3costume3", "t3costume4", "t3costume5", "t3costume6"};
                 }
 
                 public static Bitmap GoukiStandNeutralBaseImage()

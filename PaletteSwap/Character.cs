@@ -63,7 +63,9 @@ namespace PaletteSwap
 
             if (character == CharacterConfig.CHARACTERS.Dictator)
                 AssignDicatatorSpriteImages(s);
-            
+            if (character == CharacterConfig.CHARACTERS.Gouki)
+                AssignGoukiSpriteImages(s);
+
             return c;
         }
 
@@ -76,11 +78,11 @@ namespace PaletteSwap
         }
 
         private static void AssignGoukiSpriteImages(Palette s)
-        {/*
-            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleport1BasePaletteImage(), "teleport1");
-            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleport2BasePaletteImage(), "teleport2");
-            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleport3BasePaletteImage(), "teleport3");
-*/        }
+        {
+            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport1");
+//            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport2");
+//            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport3");
+        }
 
         public Bitmap GetBitmap(string s)
         {

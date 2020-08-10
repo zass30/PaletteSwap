@@ -125,6 +125,11 @@ namespace PaletteSwap
             crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
         }
 
+        private void load_sprite_teleport1()
+        {
+            GOU_teleportBox1.BackgroundImage = currentCharacter.sprite.GetBitmap("teleport1");
+        }
+
         private void load_portrait_victory()
         {
             var v = currentCharacter.GetBitmap("victory");
@@ -416,6 +421,10 @@ namespace PaletteSwap
                 load_sprite_load_sprite_psychopunch();
                 load_sprite_load_sprite_psychoprep();
                 load_sprite_load_sprite_crushertop();
+            }
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Gouki)
+            {
+                load_sprite_teleport1();
             }
         }
 
