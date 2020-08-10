@@ -248,15 +248,14 @@ namespace PaletteSwapTest
             Assert.AreEqual("4A00", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss3")));
             Assert.AreEqual("0900", PaletteHelper.ColorToMemFormat(p.GetColor("costumeloss4")));
 
-            var portrait_bytestream_expected = PaletteHelper.StringToByteStream(
-                PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp)));
-//                PaletteSwap.Properties.Resources.bis0portrait);
+            var portrait_bytestream_expected = CharacterConfig.GetPortraitResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.lp);
             var portrait_bytestream_result = p.ToByteStream();
-            CollectionAssert.AreEqual(portrait_bytestream_expected, portrait_bytestream_result);
-        /*    for (int i = 0; i < portrait_bytestream_expected.Length; i++)
+            for (int i = 0; i < portrait_bytestream_expected.Length; i++)
             {
+                if (i % 32 == 31 || i % 32 == 30 || i == 85) // end of line chars and unused color
+                    continue;
                 Assert.AreEqual(portrait_bytestream_expected[i], portrait_bytestream_result[i]);
-            }*/
+            }
         }
 
         [TestMethod]

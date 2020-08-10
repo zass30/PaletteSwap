@@ -992,5 +992,10 @@ namespace PaletteSwap
             pal_val_B.Text = b;
             return;
         }
+
+        private void extendedColorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            extendedColorsToolStripMenuItem.Checked = !extendedColorsToolStripMenuItem.Checked;
+        }
     }
 }
