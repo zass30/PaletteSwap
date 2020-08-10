@@ -493,6 +493,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap GOU_teleport0 {
+            get {
+                object obj = ResourceManager.GetObject("GOU_teleport0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap GUI_neutral2 {
             get {
                 object obj = ResourceManager.GetObject("GUI_neutral2", resourceCulture);

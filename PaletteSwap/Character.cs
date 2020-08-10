@@ -75,6 +75,13 @@ namespace PaletteSwap
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
         }
 
+        private static void AssignGoukiSpriteImages(Palette s)
+        {/*
+            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleport1BasePaletteImage(), "teleport1");
+            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleport2BasePaletteImage(), "teleport2");
+            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleport3BasePaletteImage(), "teleport3");
+*/        }
+
         public Bitmap GetBitmap(string s)
         {
             switch (s)

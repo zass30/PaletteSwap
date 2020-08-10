@@ -2072,6 +2072,32 @@ DictatorVictoryPortraitLabels());
 
         public struct GOUKI
         {
+            public struct SPRITE
+            {
+                public static List<string> GoukiStandNeutralLabels()
+                {
+                    return new List<string> { "skin1", "skin2", "skin3", "skin4","skin5","skin6",
+                "hair1", "hair2", "belt",
+                "costume1", "costume2", "costume3", "costume4", "costume5", "costume6"};
+                }
+
+                public static List<string> GoukiTeleportLabels1()
+                {
+                    return GoukiStandNeutralLabels();
+                }
+
+                public static List<string> GoukiTeleportLabels2()
+                {
+                    return GoukiStandNeutralLabels();
+                }
+
+                public static List<string> GoukiTeleportLabels3()
+                {
+                    return GoukiStandNeutralLabels();
+                }
+
+            }
+
             public struct PORTRAIT
             {
                 // Gouki's portrait in rom is just all 0's. We need to create a default.

@@ -367,4 +367,7 @@
   <data name="SAG_portraitwin8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sagat\SAG_portraitwin8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GOU_teleport0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gouki\GOU_teleport0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
