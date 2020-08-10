@@ -1644,10 +1644,12 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.BLA_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.BLANKA.GenerateBlankaSpriteOffsets());
-                case CharacterConfig.CHARACTERS.Gouki:
+             /*   case CharacterConfig.CHARACTERS.Gouki:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.GOU_neutral0),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp)),
-                        PaletteConfig.GOUKI.GenerateGoukiSpriteOffsets());
+                        PaletteConfig.GOUKI.GenerateGoukiSpriteOffsets());*/
+                case CharacterConfig.CHARACTERS.Gouki:
+                    return GOUKI.SPRITE.GenerateGoukiStandingNeutralBasePaletteImage();
             }
             throw new Exception("Invalid character");
         }
@@ -2096,6 +2098,34 @@ DictatorVictoryPortraitLabels());
                     return GoukiStandNeutralLabels();
                 }
 
+                public static Bitmap GoukiStandNeutralBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.GOU_neutral0);
+                }
+
+                public static Bitmap GoukiTeleportBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.GOU_teleport0);
+                }
+
+                public static PaletteImage GenerateGoukiStandingNeutralBasePaletteImage()
+                {
+                    return GenerateGoukiPaletteImage(GoukiStandNeutralBaseImage(),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp)),
+                        GoukiStandNeutralLabels());
+                }
+
+                public static PaletteImage GenerateGoukiTeleportBasePaletteImage()
+                {
+                    return GenerateGoukiPaletteImage(GoukiTeleportBaseImage(),
+PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp)),
+                    GoukiTeleportLabels1());
+                }
+
+                public static PaletteImage GenerateGoukiPaletteImage(Bitmap base_image, string resource, List<string> labels)
+                {
+                    return GeneratePaletteImage(base_image, resource, labels, PaletteConfig.GOUKI.GenerateGoukiSpriteOffsets());
+                }
             }
 
             public struct PORTRAIT
