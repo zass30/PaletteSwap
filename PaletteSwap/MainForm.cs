@@ -86,7 +86,13 @@ namespace PaletteSwap
             load_sprite_neutralstand();
             load_portrait_victory();
             if (currentCharacterType != CharacterConfig.CHARACTERS.Gouki)
+            {
                 load_portrait_loss();
+            }
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Gouki)
+            {
+                load_sprite_teleport1();
+            }
             if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
                 load_sprite_load_sprite_psychopunch();
