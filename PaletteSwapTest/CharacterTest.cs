@@ -72,7 +72,7 @@ namespace PaletteSwapTest
 
         [TestMethod]
         public void CharacterRemapTest()
-        {
+        {/*
             var gou = Character.CreateDefaultCharacter(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp);
             var gou_remap = gou.sprite.GetBitmap("teleport1");
             int x = 0;
@@ -89,7 +89,7 @@ namespace PaletteSwapTest
                 remapimg = dee.GetBitmap("victory");
                remapimg.Save(@"C:\temp\deev.png");
                 remapimg = dee.GetBitmap("loss");
-               remapimg.Save(@"C:\temp\deel.png");
+               remapimg.Save(@"C:\temp\deel.png"); */
 /*
                // check honda's byte stream? maybe that's wrong
                var s = PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Ehonda, CharacterConfig.BUTTONS.lp));
