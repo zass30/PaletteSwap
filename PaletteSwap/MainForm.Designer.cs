@@ -12463,6 +12463,8 @@
             this.GOU_sprite_t1hair2.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1hair2.TabIndex = 559;
             this.GOU_sprite_t1hair2.TabStop = false;
+            this.GOU_sprite_t1hair2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1hair2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1costume3
             // 
@@ -12472,6 +12474,8 @@
             this.GOU_sprite_t1costume3.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1costume3.TabIndex = 560;
             this.GOU_sprite_t1costume3.TabStop = false;
+            this.GOU_sprite_t1costume3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1costume3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1skin5
             // 
@@ -12481,6 +12485,8 @@
             this.GOU_sprite_t1skin5.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1skin5.TabIndex = 553;
             this.GOU_sprite_t1skin5.TabStop = false;
+            this.GOU_sprite_t1skin5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1skin5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1costume5
             // 
@@ -12490,6 +12496,8 @@
             this.GOU_sprite_t1costume5.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1costume5.TabIndex = 554;
             this.GOU_sprite_t1costume5.TabStop = false;
+            this.GOU_sprite_t1costume5.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1costume5.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1hair1
             // 
@@ -12499,6 +12507,8 @@
             this.GOU_sprite_t1hair1.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1hair1.TabIndex = 555;
             this.GOU_sprite_t1hair1.TabStop = false;
+            this.GOU_sprite_t1hair1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1hair1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1skin6
             // 
@@ -12508,6 +12518,8 @@
             this.GOU_sprite_t1skin6.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1skin6.TabIndex = 556;
             this.GOU_sprite_t1skin6.TabStop = false;
+            this.GOU_sprite_t1skin6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1skin6.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1costume4
             // 
@@ -12517,6 +12529,8 @@
             this.GOU_sprite_t1costume4.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1costume4.TabIndex = 557;
             this.GOU_sprite_t1costume4.TabStop = false;
+            this.GOU_sprite_t1costume4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1costume4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1belt
             // 
@@ -12526,6 +12540,8 @@
             this.GOU_sprite_t1belt.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1belt.TabIndex = 558;
             this.GOU_sprite_t1belt.TabStop = false;
+            this.GOU_sprite_t1belt.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1belt.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1costume6
             // 
@@ -12535,6 +12551,8 @@
             this.GOU_sprite_t1costume6.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1costume6.TabIndex = 550;
             this.GOU_sprite_t1costume6.TabStop = false;
+            this.GOU_sprite_t1costume6.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1costume6.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1costume1
             // 
@@ -12544,6 +12562,8 @@
             this.GOU_sprite_t1costume1.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1costume1.TabIndex = 551;
             this.GOU_sprite_t1costume1.TabStop = false;
+            this.GOU_sprite_t1costume1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1costume1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1costume2
             // 
@@ -12553,6 +12573,8 @@
             this.GOU_sprite_t1costume2.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1costume2.TabIndex = 552;
             this.GOU_sprite_t1costume2.TabStop = false;
+            this.GOU_sprite_t1costume2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1costume2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1skin1
             // 
@@ -12562,6 +12584,8 @@
             this.GOU_sprite_t1skin1.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1skin1.TabIndex = 546;
             this.GOU_sprite_t1skin1.TabStop = false;
+            this.GOU_sprite_t1skin1.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1skin1.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1skin2
             // 
@@ -12571,6 +12595,8 @@
             this.GOU_sprite_t1skin2.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1skin2.TabIndex = 547;
             this.GOU_sprite_t1skin2.TabStop = false;
+            this.GOU_sprite_t1skin2.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1skin2.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1skin3
             // 
@@ -12580,6 +12606,8 @@
             this.GOU_sprite_t1skin3.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1skin3.TabIndex = 548;
             this.GOU_sprite_t1skin3.TabStop = false;
+            this.GOU_sprite_t1skin3.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1skin3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // GOU_sprite_t1skin4
             // 
@@ -12589,6 +12617,8 @@
             this.GOU_sprite_t1skin4.Size = new System.Drawing.Size(24, 24);
             this.GOU_sprite_t1skin4.TabIndex = 549;
             this.GOU_sprite_t1skin4.TabStop = false;
+            this.GOU_sprite_t1skin4.BackColorChanged += new System.EventHandler(this.sprite_BackColorChanged);
+            this.GOU_sprite_t1skin4.Click += new System.EventHandler(this.pal_square_click);
             // 
             // label169
             // 

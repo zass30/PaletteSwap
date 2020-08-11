@@ -1675,7 +1675,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Blanka, CharacterConfig.BUTTONS.lp)),
                         PaletteConfig.BLANKA.GenerateBlankaSpriteOffsets());
                 case CharacterConfig.CHARACTERS.Gouki:
-                    return GOUKI.SPRITE.GenerateGoukiStandingNeutralBasePaletteImage();
+                    return Gouki.SPRITE.GenerateGoukiStandingNeutralBasePaletteImage();
             }
             throw new Exception("Invalid character");
         }
@@ -1746,7 +1746,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                         PaletteConfig.BLANKA.GenerateBlankaPortraitOffsets());
                 case CharacterConfig.CHARACTERS.Gouki:
                     return GeneratePaletteImageFromOffsets(new Bitmap(Properties.Resources.GOU_portraitwinX),
-                        GOUKI.PORTRAIT.GenerateGoukiCustomXColor(),
+                        Gouki.PORTRAIT.GenerateGoukiCustomXColor(),
                         PaletteConfig.GOUKI.GenerateGoukiPortraitOffsets());
             }
             throw new Exception("Invalid character");
@@ -2098,7 +2098,7 @@ DictatorVictoryPortraitLabels());
             }
         }
 
-        public struct GOUKI
+        public struct Gouki
         {
             public struct SPRITE
             {
@@ -2149,8 +2149,12 @@ DictatorVictoryPortraitLabels());
 
                 public static PaletteImage GenerateGoukiTeleportBasePaletteImage()
                 {
+                    // we are using the gouki lp neutral sprite base colors for the base teleport image. 
+                    // so we create a 
+                    var a = CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp);
+                    Array.Copy(a, 0, a, 64, 30); // copy pal 1 to pal 3
                     return GenerateGoukiPaletteImage(GoukiTeleportBaseImage(),
-PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp)),
+PaletteHelper.ByteStreamToString(a),
                     GoukiTeleportLabels1());
                 }
 

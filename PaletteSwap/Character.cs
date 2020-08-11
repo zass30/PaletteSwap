@@ -79,7 +79,7 @@ namespace PaletteSwap
 
         private static void AssignGoukiSpriteImages(Palette s)
         {
-            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport1");
+            AssignImage(s, ImageConfig.Gouki.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport1");
 //            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport2");
 //            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport3");
         }
