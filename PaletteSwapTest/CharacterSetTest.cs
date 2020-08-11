@@ -10,7 +10,6 @@ namespace PaletteSwapTest
     [TestClass]
     public class CharacterSetTest
     {
-
         [TestMethod]
         public void CharacterSetDefaultColorByteStreamTest()
         {
