@@ -8,20 +8,6 @@ namespace PaletteSwap
 {
     public class PaletteHelper
     {
-        /*
-        public static Portrait original_portrait = new Portrait(Portrait.bis5portrait);
-        public static Color[] orig_victory_colors = original_portrait.VictoryColorsArray();
-        public static Color[] orig_losstop_colors = original_portrait.LossTopColorsArray();
-        public static Color[] orig_lossbottom_colors = original_portrait.LossBottomColorsArray();
-
-        public static Sprite sprite1 = new Sprite(Sprite.bis1sprite);
-        public static Sprite sprite5 = new Sprite(Sprite.bis5sprite);
-        public static Color[] standing_sprite_colors1 = sprite1.StandingSpriteColorsArray();
-        public static Color[] psychopunch_sprite_colors5 = sprite5.PsychoPunchSpriteColorsArray();
-        public static Color[] psychoprep_sprite_colors5 = sprite5.PsychoPrepSpriteColorsArray();
-        public static Color[] crusher_sprite_colors5 = sprite5.CrusherSpriteColorsArray();
-        */
-
         // function that takes byte stream, dictionary, and list of labels
         // outputs an array of colors for those labels
         public static Color[] ColorsFromLabelsAndStream(byte[] b, 
@@ -38,6 +24,13 @@ namespace PaletteSwap
                 colors.Add(col);
             }
             return colors.ToArray();
+        }
+
+        public static byte[] patch_memory(byte[] b, int address, string s)
+        {
+            byte[] p = StringToByteStream(s);
+            Array.Copy(p, 0, b, address, p.Length);
+            return b;
         }
 
         public static ColorMap[] GenerateColorMap(Color[] oldcolors, Color[] newcolors)

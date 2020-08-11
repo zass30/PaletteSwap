@@ -10,18 +10,6 @@ namespace PaletteSwapTest
     [TestClass]
     public class CharacterSetTest
     {
-        [TestMethod]
-        public void CharacterSetGenericByteStreamTest()
-        {
-            var characterSet = new CharacterSet();
-            byte[] b = characterSet.sprites_stream04();
-            byte[] b_expected = Resources.sfxe04a;
-            CollectionAssert.AreEqual(b_expected, b);
-
-            b = characterSet.portraits_stream03();
-            b_expected = Resources.sfxe03c;
-            CollectionAssert.AreEqual(b_expected, b);
-        }
 
         [TestMethod]
         public void CharacterSetDefaultColorByteStreamTest()

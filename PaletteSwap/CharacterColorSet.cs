@@ -229,10 +229,61 @@ namespace PaletteSwap
                     b[sprite_offset + i * sprite_length + j + blanka_offset] = color_bytes[j];
                 }
             }
+            PatchCammySuperStream04(b);
+            PatchHondaSuperStream04(b);
+            PatchBlankaSuperStream04(b);
             return b;
         }        
 
-            public byte[] sprites_stream04()
+        public byte[] PatchCammySuperStream04(byte[] b)
+        {
+            PaletteHelper.patch_memory(b, 0x448B0, "6606");
+            PaletteHelper.patch_memory(b, 0x44952, "6606");
+            PaletteHelper.patch_memory(b, 0x449F4, "6606");
+            PaletteHelper.patch_memory(b, 0x44A96, "6606");
+            PaletteHelper.patch_memory(b, 0x44B38, "6606");
+            PaletteHelper.patch_memory(b, 0x44BDA, "6606");
+            PaletteHelper.patch_memory(b, 0x44C7C, "6606");
+            PaletteHelper.patch_memory(b, 0x44BDA, "6606");
+            PaletteHelper.patch_memory(b, 0x44D1E, "6606");
+            PaletteHelper.patch_memory(b, 0x44BDA, "6606");
+            PaletteHelper.patch_memory(b, 0x44DC0, "6606");
+            PaletteHelper.patch_memory(b, 0x44E62, "6606");
+            return b;
+        }
+
+        public byte[] PatchHondaSuperStream04(byte[] b)
+        {
+            string patch = "8B08 7B07";
+            PaletteHelper.patch_memory(b, 0x401DC, patch);
+            PaletteHelper.patch_memory(b, 0x4027E, patch);
+            PaletteHelper.patch_memory(b, 0x40320, patch);
+            PaletteHelper.patch_memory(b, 0x403C2, patch);
+            PaletteHelper.patch_memory(b, 0x40464, patch);
+            PaletteHelper.patch_memory(b, 0x40506, patch);
+            PaletteHelper.patch_memory(b, 0x405A8, patch);
+            PaletteHelper.patch_memory(b, 0x4064A, patch);
+            PaletteHelper.patch_memory(b, 0x406EC, patch);
+            PaletteHelper.patch_memory(b, 0x4078E, patch);
+            return b;
+        }
+
+        public byte[] PatchBlankaSuperStream04(byte[] b)
+        {
+            string patch = "0000 1801 7807 6806 5805 4804 3803 2802 0800 5805 4804 2802 0800 0800 4804 2802 0000 1601 4604 4604 3603 2600 0600 0600 0600 3603 2602 0600 0600 0600 2602 0600";
+            PaletteHelper.patch_memory(b, 0x40864, patch);
+            PaletteHelper.patch_memory(b, 0x40904, patch);
+            PaletteHelper.patch_memory(b, 0x409A4, patch);
+            PaletteHelper.patch_memory(b, 0x40A44, patch);
+            PaletteHelper.patch_memory(b, 0x40AE4, patch);
+            PaletteHelper.patch_memory(b, 0x40B84, patch);
+            PaletteHelper.patch_memory(b, 0x40C24, patch);
+            PaletteHelper.patch_memory(b, 0x40CC4, patch);
+            PaletteHelper.patch_memory(b, 0x40D64, patch);
+            return b;
+        }
+
+        public byte[] sprites_stream04()
         {
             byte[] b = Resources.sfxe04a;
             return patch_sprites_stream04(b);

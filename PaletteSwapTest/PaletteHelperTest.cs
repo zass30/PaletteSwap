@@ -220,6 +220,38 @@ namespace PaletteSwapTest
             result = PaletteHelper.ByteToColor(b);
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void PatchMemoryTest()
+        {
+            byte[] b = new byte[10];
+            PaletteHelper.patch_memory(b, 0, "1234");
+            Assert.AreEqual(b[0], 0x12);
+            Assert.AreEqual(b[1], 0x34);
+
+            b = new byte[10];
+            PaletteHelper.patch_memory(b, 2, "1234");
+            Assert.AreEqual(b[2], 0x12);
+            Assert.AreEqual(b[3], 0x34);
+
+            b = new byte[10];
+            PaletteHelper.patch_memory(b, 4, "1234 5678");
+            Assert.AreEqual(b[4], 0x12);
+            Assert.AreEqual(b[5], 0x34);
+            Assert.AreEqual(b[6], 0x56);
+            Assert.AreEqual(b[7], 0x78);
+
+
+            byte[] r1 = PaletteSwap.Properties.Resources.sfxe04a;
+            byte[] r2 = PaletteSwap.Properties.Resources.sfxe04a;
+
+            r1[0x448B0] = 0x55;
+           r1[0x448B1] = 0x05;
+
+            PaletteHelper.patch_memory(r2, 0x448B0, "5505");
+
+            CollectionAssert.AreEqual(r1, r2);
+        }
     }
 }
 
