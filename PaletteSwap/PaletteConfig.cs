@@ -357,7 +357,7 @@ namespace PaletteSwap
             for (int i = 0; i < 4; i++)
             {
                 ColorOffset dco = new ColorOffset();
-                dco.c = PaletteHelper.MemFormatToColor("9A00");
+                dco.c = PaletteHelper.MemFormatToColor("0A00");
                 dco.position = 30 + ROWLEN * i;
                 if (c == CharacterConfig.CHARACTERS.Gouki && i > 1)
                 {

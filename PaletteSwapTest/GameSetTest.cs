@@ -67,29 +67,6 @@ namespace PaletteSwapTest
         }
 
         [TestMethod]
-        public void SpritesDictatorStream04Test()
-        {
-            var gs = new GameSet();
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator] = CharacterSet.GenerateDictatorCharacterSet();
-            gs.characterDictionary[CharacterConfig.CHARACTERS.Dictator].characterColors[0].sprite.SetColor("pads5", Color.FromArgb(0,17,17,17));
-            var bytes_expected = PaletteSwap.Properties.Resources.sfxe03c;
-            var bytes_result = gs.portraits_stream03();
-            for (int i = 0; i < 0x00042E7E; i++)
-            {
-                Assert.AreEqual(bytes_expected[i], bytes_result[i]);
-            }
-            byte[] a = new byte[0xF];
-            byte[] b = new byte[0xF];
-            Array.Copy(bytes_expected, 0x00042E7E, a, 0, 0xF);
-            Array.Copy(bytes_result, 0x00042E7E, b, 0, 0xF);
-
-
-            // this should fail dunno why its not. TODO look at
-           // Assert.AreNotEqual(bytes_expected[0x00042E7E], bytes_result[0x00042E7E]);
-
-        }
-
-        [TestMethod]
         public void PortraitsStream04PhoenixTest()
         {
             var gs = new GameSet();
