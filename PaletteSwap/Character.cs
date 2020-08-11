@@ -79,9 +79,9 @@ namespace PaletteSwap
 
         private static void AssignGoukiSpriteImages(Palette s)
         {
-            AssignImage(s, ImageConfig.Gouki.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport1");
-//            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport2");
-//            AssignImage(s, ImageConfig.GOUKI.SPRITE.GenerateGoukiTeleportBasePaletteImage(), "teleport3");
+            AssignImage(s, ImageConfig.Gouki.SPRITE.GenerateGoukiTeleport1BasePaletteImage(), "teleport1");
+            AssignImage(s, ImageConfig.Gouki.SPRITE.GenerateGoukiTeleport2BasePaletteImage(), "teleport2");
+            AssignImage(s, ImageConfig.Gouki.SPRITE.GenerateGoukiTeleport3BasePaletteImage(), "teleport3");
         }
 
         public Bitmap GetBitmap(string s)

@@ -91,14 +91,14 @@ namespace PaletteSwap
             }
             if (currentCharacterType == CharacterConfig.CHARACTERS.Gouki)
             {
-                load_sprite_teleport1();
+                load_sprite_teleports();
             }
             if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
-                load_sprite_load_sprite_psychopunch();
-                load_sprite_load_sprite_psychoprep();
-                load_sprite_load_sprite_crushertop();
-                load_sprite_load_sprite_crusherbottom();
+                load_sprite_psychopunch();
+                load_sprite_psychoprep();
+                load_sprite_crushertop();
+                load_sprite_crusherbottom();
             }
 
             skip_image_recolors = false;
@@ -111,29 +111,47 @@ namespace PaletteSwap
             p.BackgroundImage = n;
         }
 
-        private void load_sprite_load_sprite_psychopunch()
+        private void load_sprite_psychopunch()
         {
             psychopunchBox.BackgroundImage = currentCharacter.sprite.GetBitmap("psychopunch");
         }
 
-        private void load_sprite_load_sprite_psychoprep()
+        private void load_sprite_psychoprep()
         {
             psychoprepBox.BackgroundImage = currentCharacter.sprite.GetBitmap("psychoprep");
         }
 
-        private void load_sprite_load_sprite_crushertop()
+        private void load_sprite_crushertop()
         {
             crushertopBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crushertop");
         }
 
-        private void load_sprite_load_sprite_crusherbottom()
+        private void load_sprite_crusherbottom()
         {
             crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
+        }
+
+
+        private void load_sprite_teleports()
+        {
+            load_sprite_teleport1();
+            load_sprite_teleport2();
+            load_sprite_teleport3();
         }
 
         private void load_sprite_teleport1()
         {
             GOU_teleportBox1.BackgroundImage = currentCharacter.sprite.GetBitmap("teleport1");
+        }
+
+        private void load_sprite_teleport2()
+        {
+            GOU_teleportBox2.BackgroundImage = currentCharacter.sprite.GetBitmap("teleport2");
+        }
+
+        private void load_sprite_teleport3()
+        {
+            GOU_teleportBox3.BackgroundImage = currentCharacter.sprite.GetBitmap("teleport3");
         }
 
         private void load_portrait_victory()
@@ -424,13 +442,13 @@ namespace PaletteSwap
             load_sprite_neutralstand();
             if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
-                load_sprite_load_sprite_psychopunch();
-                load_sprite_load_sprite_psychoprep();
-                load_sprite_load_sprite_crushertop();
+                load_sprite_psychopunch();
+                load_sprite_psychoprep();
+                load_sprite_crushertop();
             }
             if (currentCharacterType == CharacterConfig.CHARACTERS.Gouki)
             {
-                load_sprite_teleport1();
+                load_sprite_teleports();
             }
         }
 
@@ -440,8 +458,8 @@ namespace PaletteSwap
             string label = extractLabel(p.Name);
             currentCharacter.sprite.SetColor(label, c);
 
-            load_sprite_load_sprite_crushertop();
-            load_sprite_load_sprite_crusherbottom();
+            load_sprite_crushertop();
+            load_sprite_crusherbottom();
         }
 
         private void portrait_BackColorChanged(object sender, EventArgs e)

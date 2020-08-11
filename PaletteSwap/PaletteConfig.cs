@@ -573,6 +573,38 @@ namespace PaletteSwap
             { "t1costume6", new List<int>() {  ROWLEN * 2 + 26 } },
             { "t1hair1", new List<int>() {  ROWLEN * 2 + 28 } },
 
+            { "t2belt", new List<int>() { ROWLEN * 3 + 0 } },
+            { "t2skin1", new List<int>() { ROWLEN * 3 + 2 } },
+            { "t2skin2", new List<int>() { ROWLEN * 3 + 4 } },
+            { "t2skin3", new List<int>() { ROWLEN * 3 + 6 } },
+            { "t2skin4", new List<int>() { ROWLEN * 3 + 8 } },
+            { "t2skin5", new List<int>() { ROWLEN * 3 + 10 } },
+            { "t2skin6", new List<int>() { ROWLEN * 3 + 12 } },
+            { "t2hair2", new List<int>() { ROWLEN * 3 + 14 } },
+            { "t2costume1", new List<int>() { ROWLEN * 3 + 16 } },
+            { "t2costume2", new List<int>() { ROWLEN * 3 + 18 } },
+            { "t2costume3", new List<int>() { ROWLEN * 3 + 20 } },
+            { "t2costume4", new List<int>() {  ROWLEN * 3 + 22 } },
+            { "t2costume5", new List<int>() {  ROWLEN * 3 + 24 } },
+            { "t2costume6", new List<int>() {  ROWLEN * 3 + 26 } },
+            { "t2hair1", new List<int>() {  ROWLEN * 3 + 28 } },
+
+            { "t3belt", new List<int>() { ROWLEN * 4 + 0 } },
+            { "t3skin1", new List<int>() { ROWLEN * 4 + 2 } },
+            { "t3skin2", new List<int>() { ROWLEN * 4 + 4 } },
+            { "t3skin3", new List<int>() { ROWLEN * 4 + 6 } },
+            { "t3skin4", new List<int>() { ROWLEN * 4 + 8 } },
+            { "t3skin5", new List<int>() { ROWLEN * 4 + 10 } },
+            { "t3skin6", new List<int>() { ROWLEN * 4 + 12 } },
+            { "t3hair2", new List<int>() { ROWLEN * 4 + 14 } },
+            { "t3costume1", new List<int>() { ROWLEN * 4 + 16 } },
+            { "t3costume2", new List<int>() { ROWLEN * 4 + 18 } },
+            { "t3costume3", new List<int>() { ROWLEN * 4 + 20 } },
+            { "t3costume4", new List<int>() {  ROWLEN * 4 + 22 } },
+            { "t3costume5", new List<int>() {  ROWLEN * 4 + 24 } },
+            { "t3costume6", new List<int>() {  ROWLEN * 4 + 26 } },
+            { "t3hair1", new List<int>() {  ROWLEN * 4 + 28 } },
+
            };
                 return spriteOffsets;
             }
@@ -2147,15 +2179,29 @@ DictatorVictoryPortraitLabels());
                         GoukiStandNeutralLabels());
                 }
 
-                public static PaletteImage GenerateGoukiTeleportBasePaletteImage()
+                public static PaletteImage GenerateGoukiTeleport1BasePaletteImage()
+                {
+                    return GenerateGoukiTeleportBasePaletteImage(2, GoukiTeleportLabels1());
+                }
+
+                public static PaletteImage GenerateGoukiTeleport2BasePaletteImage()
+                {
+                    return GenerateGoukiTeleportBasePaletteImage(3, GoukiTeleportLabels2());
+                }
+                public static PaletteImage GenerateGoukiTeleport3BasePaletteImage()
+                {
+                    return GenerateGoukiTeleportBasePaletteImage(4, GoukiTeleportLabels3());
+                }
+
+                public static PaletteImage GenerateGoukiTeleportBasePaletteImage(int rownumber, List<string> labels)
                 {
                     // we are using the gouki lp neutral sprite base colors for the base teleport image. 
-                    // so we create a 
+                    // so we copy the first palette
                     var a = CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Gouki, CharacterConfig.BUTTONS.lp);
-                    Array.Copy(a, 0, a, 64, 30); // copy pal 1 to pal 3
+                    Array.Copy(a, 0, a, 32*rownumber, 30); // copy pal 1 to pal 3
                     return GenerateGoukiPaletteImage(GoukiTeleportBaseImage(),
 PaletteHelper.ByteStreamToString(a),
-                    GoukiTeleportLabels1());
+                    labels);
                 }
 
                 public static PaletteImage GenerateGoukiPaletteImage(Bitmap base_image, string resource, List<string> labels)
