@@ -63,7 +63,6 @@ namespace PaletteSwap
         public void setBackColor()
         {
             zoomBox.BackColor = mainform.backgroundcolor;
-
         }
     }
 }

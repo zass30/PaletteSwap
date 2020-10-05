@@ -36,6 +36,13 @@ namespace PaletteSwap
             portraitKeyBox.Height = victoryKey.Height;
             portraitKeyBox.Width = victoryKey.Width;
             portraitKeyBox.BackgroundImage = victoryKey;
+            setBackColor();
+        }
+
+        public void setBackColor()
+        {
+            portraitKeyBox.BackColor = mainform.backgroundcolor;
+            spriteKeyBox.BackColor = mainform.backgroundcolor;
         }
     }
 }

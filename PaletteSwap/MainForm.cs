@@ -1104,7 +1104,10 @@ namespace PaletteSwap
             }
 
             if (z != null)
-            z.setBackColor();
+                z.setBackColor();
+
+            if (c != null)
+                c.setBackColor();
         }
     }
 }
