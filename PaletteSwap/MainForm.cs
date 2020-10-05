@@ -136,7 +136,7 @@ namespace PaletteSwap
 
         private void load_sprite_crusherback()
         {
-            crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherback");
+            crusherbackBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherback");
         }
 
 
