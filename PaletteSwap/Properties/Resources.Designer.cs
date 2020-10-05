@@ -313,6 +313,16 @@ namespace PaletteSwap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DIC_crusherback5 {
+            get {
+                object obj = ResourceManager.GetObject("DIC_crusherback5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap DIC_crusherbottom5 {
             get {
                 object obj = ResourceManager.GetObject("DIC_crusherbottom5", resourceCulture);
