@@ -13208,6 +13208,7 @@
             this.crusherbackBox.Size = new System.Drawing.Size(170, 44);
             this.crusherbackBox.TabIndex = 121;
             this.crusherbackBox.TabStop = false;
+            this.crusherbackBox.Click += new System.EventHandler(this.zoom);
             // 
             // DIC_sprite_crusherhands3
             // 
