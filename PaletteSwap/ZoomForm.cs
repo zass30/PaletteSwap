@@ -57,6 +57,7 @@ namespace PaletteSwap
             this.Height = (int)(zoomBox.Height * factor);
             this.Width = (int)(zoomBox.Width * factor);
             zoomBox.BackgroundImage = scaledImg;
+            zoomBox.BackColor = mainform.backgroundcolor;
         }
     }
 }

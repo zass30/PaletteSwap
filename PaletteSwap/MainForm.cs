@@ -14,7 +14,7 @@ namespace PaletteSwap
         bool DISABLE_PATCHING = false;
         ZoomForm z;
         ColorSetForm c;
-        Color backgroundcolor = Color.Black;
+        public Color backgroundcolor = Color.Black;
         public string currentlyZoomedLabel;
         public CharacterConfig.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
