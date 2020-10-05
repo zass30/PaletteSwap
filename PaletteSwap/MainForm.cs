@@ -1049,6 +1049,7 @@ namespace PaletteSwap
         {
             this.magentaToolStripMenuItem.Checked = true;
             this.blackToolStripMenuItem.Checked = false;
+            this.cyanToolStripMenuItem.Checked = false;
             backgroundcolor = Color.Magenta;
             setBackColor();
         }
@@ -1057,7 +1058,17 @@ namespace PaletteSwap
         {
             this.magentaToolStripMenuItem.Checked = false;
             this.blackToolStripMenuItem.Checked = true;
+            this.cyanToolStripMenuItem.Checked = false;
             backgroundcolor = Color.Black;
+            setBackColor();
+        }
+
+        private void cyanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.cyanToolStripMenuItem.Checked = true;
+            this.magentaToolStripMenuItem.Checked = false;
+            this.blackToolStripMenuItem.Checked = false;
+            backgroundcolor = Color.Cyan;
             setBackColor();
         }
 

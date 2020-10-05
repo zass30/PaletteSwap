@@ -114,6 +114,8 @@
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TabPageDictator = new System.Windows.Forms.TabPage();
+            this.DIC_sprite_crusherhands3 = new System.Windows.Forms.PictureBox();
+            this.crusherbackBox = new System.Windows.Forms.PictureBox();
             this.DIC_neutralStandBox = new System.Windows.Forms.PictureBox();
             this.DIC_portraitLossBox = new System.Windows.Forms.PictureBox();
             this.psychopunchBox = new System.Windows.Forms.PictureBox();
@@ -1034,14 +1036,15 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.incrementColorsButton = new System.Windows.Forms.Button();
             this.decrementColorsButton = new System.Windows.Forms.Button();
-            this.crusherbackBox = new System.Windows.Forms.PictureBox();
-            this.DIC_sprite_crusherhands3 = new System.Windows.Forms.PictureBox();
+            this.cyanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TabPageDictator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherbackBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_portraitLossBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).BeginInit();
@@ -1797,8 +1800,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crusherbackBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands3)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -2139,7 +2140,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -2152,7 +2153,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2172,7 +2173,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -2180,7 +2181,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2191,7 +2192,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2211,7 +2212,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -2220,7 +2221,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -2229,14 +2230,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -2247,7 +2248,7 @@
             this.newLegacyROMToolStripMenuItem,
             this.redggpoROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchToolStripMenuItem.Text = "Patch";
             this.patchToolStripMenuItem.Visible = false;
             // 
@@ -2290,7 +2291,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2304,7 +2305,7 @@
             // colorSetToolStripMenuItem
             // 
             this.colorSetToolStripMenuItem.Name = "colorSetToolStripMenuItem";
-            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.colorSetToolStripMenuItem.Text = "Color Set";
             this.colorSetToolStripMenuItem.Click += new System.EventHandler(this.colorSetToolStripMenuItem_Click);
             // 
@@ -2417,7 +2418,7 @@
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
             this.toolsToolStripMenuItem.Text = "&Tools";
             this.toolsToolStripMenuItem.Visible = false;
             // 
@@ -2500,7 +2501,8 @@
             // 
             this.backgroundToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.blackToolStripMenuItem,
-            this.magentaToolStripMenuItem});
+            this.magentaToolStripMenuItem,
+            this.cyanToolStripMenuItem});
             this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
             this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.backgroundToolStripMenuItem.Text = "Background";
@@ -2668,6 +2670,27 @@
             this.TabPageDictator.Size = new System.Drawing.Size(597, 559);
             this.TabPageDictator.TabIndex = 0;
             this.TabPageDictator.Text = "Dictator";
+            // 
+            // DIC_sprite_crusherhands3
+            // 
+            this.DIC_sprite_crusherhands3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_crusherhands3.Location = new System.Drawing.Point(165, 495);
+            this.DIC_sprite_crusherhands3.Name = "DIC_sprite_crusherhands3";
+            this.DIC_sprite_crusherhands3.Size = new System.Drawing.Size(24, 24);
+            this.DIC_sprite_crusherhands3.TabIndex = 122;
+            this.DIC_sprite_crusherhands3.TabStop = false;
+            this.DIC_sprite_crusherhands3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.DIC_sprite_crusherhands3.Click += new System.EventHandler(this.pal_square_click);
+            // 
+            // crusherbackBox
+            // 
+            this.crusherbackBox.BackColor = System.Drawing.Color.Black;
+            this.crusherbackBox.Location = new System.Drawing.Point(115, 192);
+            this.crusherbackBox.Name = "crusherbackBox";
+            this.crusherbackBox.Size = new System.Drawing.Size(170, 44);
+            this.crusherbackBox.TabIndex = 121;
+            this.crusherbackBox.TabStop = false;
+            this.crusherbackBox.Click += new System.EventHandler(this.zoom);
             // 
             // DIC_neutralStandBox
             // 
@@ -13200,26 +13223,13 @@
             this.decrementColorsButton.UseVisualStyleBackColor = true;
             this.decrementColorsButton.Click += new System.EventHandler(this.decrementColorsButton_Click);
             // 
-            // crusherbackBox
+            // cyanToolStripMenuItem
             // 
-            this.crusherbackBox.BackColor = System.Drawing.Color.Black;
-            this.crusherbackBox.Location = new System.Drawing.Point(115, 192);
-            this.crusherbackBox.Name = "crusherbackBox";
-            this.crusherbackBox.Size = new System.Drawing.Size(170, 44);
-            this.crusherbackBox.TabIndex = 121;
-            this.crusherbackBox.TabStop = false;
-            this.crusherbackBox.Click += new System.EventHandler(this.zoom);
-            // 
-            // DIC_sprite_crusherhands3
-            // 
-            this.DIC_sprite_crusherhands3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherhands3.Location = new System.Drawing.Point(165, 495);
-            this.DIC_sprite_crusherhands3.Name = "DIC_sprite_crusherhands3";
-            this.DIC_sprite_crusherhands3.Size = new System.Drawing.Size(24, 24);
-            this.DIC_sprite_crusherhands3.TabIndex = 122;
-            this.DIC_sprite_crusherhands3.TabStop = false;
-            this.DIC_sprite_crusherhands3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
-            this.DIC_sprite_crusherhands3.Click += new System.EventHandler(this.pal_square_click);
+            this.cyanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cyanToolStripMenuItem.Name = "cyanToolStripMenuItem";
+            this.cyanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cyanToolStripMenuItem.Text = "Cyan";
+            this.cyanToolStripMenuItem.Click += new System.EventHandler(this.cyanToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -13260,6 +13270,8 @@
             this.tabControl1.ResumeLayout(false);
             this.TabPageDictator.ResumeLayout(false);
             this.TabPageDictator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherbackBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DIC_portraitLossBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psychopunchBox)).EndInit();
@@ -14031,8 +14043,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crusherbackBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -15046,6 +15056,7 @@
         private System.Windows.Forms.ToolStripMenuItem magentaToolStripMenuItem;
         private System.Windows.Forms.PictureBox crusherbackBox;
         private System.Windows.Forms.PictureBox DIC_sprite_crusherhands3;
+        private System.Windows.Forms.ToolStripMenuItem cyanToolStripMenuItem;
     }
 }
 
