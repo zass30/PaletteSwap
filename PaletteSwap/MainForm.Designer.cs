@@ -110,6 +110,7 @@
             this.backgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.magentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cyanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorCycleRGB = new System.Windows.Forms.Button();
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -1036,7 +1037,6 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.incrementColorsButton = new System.Windows.Forms.Button();
             this.decrementColorsButton = new System.Windows.Forms.Button();
-            this.cyanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -2418,7 +2418,7 @@
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
             this.toolsToolStripMenuItem.Text = "&Tools";
             this.toolsToolStripMenuItem.Visible = false;
             // 
@@ -2492,7 +2492,7 @@
             // extendedColorsToolStripMenuItem
             // 
             this.extendedColorsToolStripMenuItem.Name = "extendedColorsToolStripMenuItem";
-            this.extendedColorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.extendedColorsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.extendedColorsToolStripMenuItem.Text = "Extended Colors";
             this.extendedColorsToolStripMenuItem.Visible = false;
             this.extendedColorsToolStripMenuItem.Click += new System.EventHandler(this.extendedColorsToolStripMenuItem_Click);
@@ -2504,7 +2504,7 @@
             this.magentaToolStripMenuItem,
             this.cyanToolStripMenuItem});
             this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
-            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.backgroundToolStripMenuItem.Text = "Background";
             // 
             // blackToolStripMenuItem
@@ -2513,7 +2513,7 @@
             this.blackToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.blackToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-            this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blackToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.blackToolStripMenuItem.Text = "Black";
             this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
             // 
@@ -2521,9 +2521,17 @@
             // 
             this.magentaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.magentaToolStripMenuItem.Name = "magentaToolStripMenuItem";
-            this.magentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.magentaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.magentaToolStripMenuItem.Text = "Magenta";
             this.magentaToolStripMenuItem.Click += new System.EventHandler(this.magentaToolStripMenuItem_Click);
+            // 
+            // cyanToolStripMenuItem
+            // 
+            this.cyanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cyanToolStripMenuItem.Name = "cyanToolStripMenuItem";
+            this.cyanToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.cyanToolStripMenuItem.Text = "Cyan";
+            this.cyanToolStripMenuItem.Click += new System.EventHandler(this.cyanToolStripMenuItem_Click);
             // 
             // colorCycleRGB
             // 
@@ -12840,6 +12848,7 @@
             this.GOU_teleportBox3.Size = new System.Drawing.Size(56, 109);
             this.GOU_teleportBox3.TabIndex = 545;
             this.GOU_teleportBox3.TabStop = false;
+            this.GOU_teleportBox3.Click += new System.EventHandler(this.zoom);
             // 
             // GOU_teleportBox2
             // 
@@ -12849,6 +12858,7 @@
             this.GOU_teleportBox2.Size = new System.Drawing.Size(56, 109);
             this.GOU_teleportBox2.TabIndex = 544;
             this.GOU_teleportBox2.TabStop = false;
+            this.GOU_teleportBox2.Click += new System.EventHandler(this.zoom);
             // 
             // GOU_teleportBox1
             // 
@@ -12858,6 +12868,7 @@
             this.GOU_teleportBox1.Size = new System.Drawing.Size(56, 109);
             this.GOU_teleportBox1.TabIndex = 543;
             this.GOU_teleportBox1.TabStop = false;
+            this.GOU_teleportBox1.Click += new System.EventHandler(this.zoom);
             // 
             // label165
             // 
@@ -13222,14 +13233,6 @@
             this.decrementColorsButton.Text = "-1";
             this.decrementColorsButton.UseVisualStyleBackColor = true;
             this.decrementColorsButton.Click += new System.EventHandler(this.decrementColorsButton_Click);
-            // 
-            // cyanToolStripMenuItem
-            // 
-            this.cyanToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cyanToolStripMenuItem.Name = "cyanToolStripMenuItem";
-            this.cyanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cyanToolStripMenuItem.Text = "Cyan";
-            this.cyanToolStripMenuItem.Click += new System.EventHandler(this.cyanToolStripMenuItem_Click);
             // 
             // MainForm
             // 

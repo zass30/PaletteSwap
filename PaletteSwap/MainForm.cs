@@ -358,6 +358,15 @@ namespace PaletteSwap
                 case "portraitLossBox":
                     currentlyZoomedLabel = "loss";
                     break;
+                case "teleportBox1":
+                    currentlyZoomedLabel = "teleport1";
+                    break;
+                case "teleportBox2":
+                    currentlyZoomedLabel = "teleport2";
+                    break;
+                case "teleportBox3":
+                    currentlyZoomedLabel = "teleport3";
+                    break;
             }
             z.displayZoomImage();
         }
