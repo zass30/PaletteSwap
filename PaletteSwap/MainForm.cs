@@ -1093,6 +1093,9 @@ namespace PaletteSwap
                 crusherbottomBox.BackColor = backgroundcolor;
                 crusherbackBox.BackColor = backgroundcolor;
             }
+
+            if (z != null)
+            z.setBackColor();
         }
     }
 }

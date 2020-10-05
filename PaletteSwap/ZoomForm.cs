@@ -59,5 +59,11 @@ namespace PaletteSwap
             zoomBox.BackgroundImage = scaledImg;
             zoomBox.BackColor = mainform.backgroundcolor;
         }
+
+        public void setBackColor()
+        {
+            zoomBox.BackColor = mainform.backgroundcolor;
+
+        }
     }
 }
