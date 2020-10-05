@@ -107,6 +107,9 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.extendedColorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.magentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorCycleRGB = new System.Windows.Forms.Button();
             this.colorCycleRBG = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -1031,9 +1034,8 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.incrementColorsButton = new System.Windows.Forms.Button();
             this.decrementColorsButton = new System.Windows.Forms.Button();
-            this.backgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.magentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crusherbackBox = new System.Windows.Forms.PictureBox();
+            this.DIC_sprite_crusherhands3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -1795,6 +1797,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherbackBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands3)).BeginInit();
             this.SuspendLayout();
             // 
             // colorSwapBG
@@ -1830,7 +1834,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 249);
+            this.label2.Location = new System.Drawing.Point(73, 266);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 9;
@@ -1839,7 +1843,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(71, 279);
+            this.label3.Location = new System.Drawing.Point(69, 296);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 10;
@@ -1848,7 +1852,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 309);
+            this.label4.Location = new System.Drawing.Point(52, 326);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 11;
@@ -1857,7 +1861,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(36, 339);
+            this.label5.Location = new System.Drawing.Point(34, 356);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 12;
@@ -1947,7 +1951,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(337, 249);
+            this.label9.Location = new System.Drawing.Point(335, 266);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 13);
             this.label9.TabIndex = 42;
@@ -1956,7 +1960,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(332, 279);
+            this.label10.Location = new System.Drawing.Point(330, 296);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 50;
@@ -1965,7 +1969,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(316, 309);
+            this.label11.Location = new System.Drawing.Point(314, 326);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(47, 13);
             this.label11.TabIndex = 59;
@@ -1974,7 +1978,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(295, 339);
+            this.label12.Location = new System.Drawing.Point(293, 356);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 13);
             this.label12.TabIndex = 64;
@@ -1983,7 +1987,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(328, 369);
+            this.label13.Location = new System.Drawing.Point(326, 386);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 69;
@@ -1992,7 +1996,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(307, 399);
+            this.label14.Location = new System.Drawing.Point(305, 416);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 13);
             this.label14.TabIndex = 74;
@@ -2001,7 +2005,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(330, 429);
+            this.label15.Location = new System.Drawing.Point(328, 446);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(33, 13);
             this.label15.TabIndex = 78;
@@ -2010,7 +2014,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(30, 369);
+            this.label17.Location = new System.Drawing.Point(28, 386);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 13);
             this.label17.TabIndex = 86;
@@ -2019,7 +2023,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(33, 399);
+            this.label18.Location = new System.Drawing.Point(31, 416);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(68, 13);
             this.label18.TabIndex = 92;
@@ -2028,7 +2032,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(16, 429);
+            this.label19.Location = new System.Drawing.Point(14, 446);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 13);
             this.label19.TabIndex = 98;
@@ -2037,7 +2041,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(26, 459);
+            this.label20.Location = new System.Drawing.Point(24, 476);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(75, 13);
             this.label20.TabIndex = 103;
@@ -2046,7 +2050,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(27, 489);
+            this.label21.Location = new System.Drawing.Point(25, 506);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(74, 13);
             this.label21.TabIndex = 106;
@@ -2148,7 +2152,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2168,7 +2172,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -2176,7 +2180,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2187,7 +2191,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2207,7 +2211,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -2216,7 +2220,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -2225,14 +2229,14 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // patchToolStripMenuItem
             // 
@@ -2243,7 +2247,7 @@
             this.newLegacyROMToolStripMenuItem,
             this.redggpoROMToolStripMenuItem});
             this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.patchToolStripMenuItem.Text = "Patch";
             this.patchToolStripMenuItem.Visible = false;
             // 
@@ -2286,7 +2290,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // viewToolStripMenuItem
@@ -2326,7 +2330,7 @@
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.undoToolStripMenuItem.Text = "&Undo";
             this.undoToolStripMenuItem.Visible = false;
             // 
@@ -2334,14 +2338,14 @@
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.redoToolStripMenuItem.Text = "&Redo";
             this.redoToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(224, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(208, 6);
             this.toolStripSeparator3.Visible = false;
             // 
             // cutToolStripMenuItem
@@ -2350,7 +2354,7 @@
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.cutToolStripMenuItem.Text = "Cu&t";
             this.cutToolStripMenuItem.Visible = false;
             // 
@@ -2360,7 +2364,7 @@
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.copyToolStripMenuItem.Text = "&Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
@@ -2370,40 +2374,40 @@
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.pasteToolStripMenuItem.Text = "&Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(224, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(208, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             this.selectAllToolStripMenuItem.Visible = false;
             // 
             // resetThisColorToolStripMenuItem
             // 
             this.resetThisColorToolStripMenuItem.Name = "resetThisColorToolStripMenuItem";
-            this.resetThisColorToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.resetThisColorToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.resetThisColorToolStripMenuItem.Text = "Reset this color";
             this.resetThisColorToolStripMenuItem.Click += new System.EventHandler(this.resetThisColorToolStripMenuItem_Click);
             // 
             // resetCharacterToolStripMenuItem
             // 
             this.resetCharacterToolStripMenuItem.Name = "resetCharacterToolStripMenuItem";
-            this.resetCharacterToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.resetCharacterToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.resetCharacterToolStripMenuItem.Text = "Reset this character colors";
             this.resetCharacterToolStripMenuItem.Click += new System.EventHandler(this.resetCharacterToolStripMenuItem_Click);
             // 
             // resetColorsToolStripMenuItem
             // 
             this.resetColorsToolStripMenuItem.Name = "resetColorsToolStripMenuItem";
-            this.resetColorsToolStripMenuItem.Size = new System.Drawing.Size(227, 38);
+            this.resetColorsToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.resetColorsToolStripMenuItem.Text = "Reset whole game colors";
             this.resetColorsToolStripMenuItem.Click += new System.EventHandler(this.resetColorsToolStripMenuItem_Click);
             // 
@@ -2420,13 +2424,13 @@
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -2444,33 +2448,33 @@
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.contentsToolStripMenuItem.Text = "&Contents";
             this.contentsToolStripMenuItem.Visible = false;
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.indexToolStripMenuItem.Text = "&Index";
             this.indexToolStripMenuItem.Visible = false;
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.searchToolStripMenuItem.Text = "&Search";
             this.searchToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -2491,6 +2495,33 @@
             this.extendedColorsToolStripMenuItem.Text = "Extended Colors";
             this.extendedColorsToolStripMenuItem.Visible = false;
             this.extendedColorsToolStripMenuItem.Click += new System.EventHandler(this.extendedColorsToolStripMenuItem_Click);
+            // 
+            // backgroundToolStripMenuItem
+            // 
+            this.backgroundToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.blackToolStripMenuItem,
+            this.magentaToolStripMenuItem});
+            this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
+            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backgroundToolStripMenuItem.Text = "Background";
+            // 
+            // blackToolStripMenuItem
+            // 
+            this.blackToolStripMenuItem.Checked = true;
+            this.blackToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.blackToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
+            this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blackToolStripMenuItem.Text = "Black";
+            this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
+            // 
+            // magentaToolStripMenuItem
+            // 
+            this.magentaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.magentaToolStripMenuItem.Name = "magentaToolStripMenuItem";
+            this.magentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.magentaToolStripMenuItem.Text = "Magenta";
+            this.magentaToolStripMenuItem.Click += new System.EventHandler(this.magentaToolStripMenuItem_Click);
             // 
             // colorCycleRGB
             // 
@@ -2541,6 +2572,8 @@
             // TabPageDictator
             // 
             this.TabPageDictator.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPageDictator.Controls.Add(this.DIC_sprite_crusherhands3);
+            this.TabPageDictator.Controls.Add(this.crusherbackBox);
             this.TabPageDictator.Controls.Add(this.DIC_neutralStandBox);
             this.TabPageDictator.Controls.Add(this.DIC_portraitLossBox);
             this.TabPageDictator.Controls.Add(this.psychopunchBox);
@@ -2689,7 +2722,7 @@
             // crusherbottomBox
             // 
             this.crusherbottomBox.BackColor = System.Drawing.Color.Black;
-            this.crusherbottomBox.Location = new System.Drawing.Point(115, 157);
+            this.crusherbottomBox.Location = new System.Drawing.Point(115, 140);
             this.crusherbottomBox.Name = "crusherbottomBox";
             this.crusherbottomBox.Size = new System.Drawing.Size(170, 46);
             this.crusherbottomBox.TabIndex = 118;
@@ -2699,7 +2732,7 @@
             // crushertopBox
             // 
             this.crushertopBox.BackColor = System.Drawing.Color.Black;
-            this.crushertopBox.Location = new System.Drawing.Point(115, 96);
+            this.crushertopBox.Location = new System.Drawing.Point(115, 87);
             this.crushertopBox.Name = "crushertopBox";
             this.crushertopBox.Size = new System.Drawing.Size(168, 47);
             this.crushertopBox.TabIndex = 117;
@@ -2709,7 +2742,7 @@
             // DIC_portrait_blood3
             // 
             this.DIC_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_blood3.Location = new System.Drawing.Point(429, 418);
+            this.DIC_portrait_blood3.Location = new System.Drawing.Point(427, 435);
             this.DIC_portrait_blood3.Name = "DIC_portrait_blood3";
             this.DIC_portrait_blood3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_blood3.TabIndex = 77;
@@ -2720,7 +2753,7 @@
             // DIC_portrait_blood2
             // 
             this.DIC_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_blood2.Location = new System.Drawing.Point(399, 418);
+            this.DIC_portrait_blood2.Location = new System.Drawing.Point(397, 435);
             this.DIC_portrait_blood2.Name = "DIC_portrait_blood2";
             this.DIC_portrait_blood2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_blood2.TabIndex = 76;
@@ -2731,7 +2764,7 @@
             // DIC_sprite_crusherhands2
             // 
             this.DIC_sprite_crusherhands2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherhands2.Location = new System.Drawing.Point(137, 478);
+            this.DIC_sprite_crusherhands2.Location = new System.Drawing.Point(135, 495);
             this.DIC_sprite_crusherhands2.Name = "DIC_sprite_crusherhands2";
             this.DIC_sprite_crusherhands2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherhands2.TabIndex = 105;
@@ -2742,7 +2775,7 @@
             // DIC_portrait_blood1
             // 
             this.DIC_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_blood1.Location = new System.Drawing.Point(369, 418);
+            this.DIC_portrait_blood1.Location = new System.Drawing.Point(367, 435);
             this.DIC_portrait_blood1.Name = "DIC_portrait_blood1";
             this.DIC_portrait_blood1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_blood1.TabIndex = 75;
@@ -2753,7 +2786,7 @@
             // DIC_sprite_crusherhands1
             // 
             this.DIC_sprite_crusherhands1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherhands1.Location = new System.Drawing.Point(107, 478);
+            this.DIC_sprite_crusherhands1.Location = new System.Drawing.Point(105, 495);
             this.DIC_sprite_crusherhands1.Name = "DIC_sprite_crusherhands1";
             this.DIC_sprite_crusherhands1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherhands1.TabIndex = 104;
@@ -2764,7 +2797,7 @@
             // DIC_portrait_pipingloss4
             // 
             this.DIC_portrait_pipingloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_pipingloss4.Location = new System.Drawing.Point(459, 388);
+            this.DIC_portrait_pipingloss4.Location = new System.Drawing.Point(457, 405);
             this.DIC_portrait_pipingloss4.Name = "DIC_portrait_pipingloss4";
             this.DIC_portrait_pipingloss4.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_pipingloss4.TabIndex = 73;
@@ -2775,7 +2808,7 @@
             // DIC_portrait_pipingloss3
             // 
             this.DIC_portrait_pipingloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_pipingloss3.Location = new System.Drawing.Point(429, 388);
+            this.DIC_portrait_pipingloss3.Location = new System.Drawing.Point(427, 405);
             this.DIC_portrait_pipingloss3.Name = "DIC_portrait_pipingloss3";
             this.DIC_portrait_pipingloss3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_pipingloss3.TabIndex = 72;
@@ -2786,7 +2819,7 @@
             // DIC_portrait_pipingloss2
             // 
             this.DIC_portrait_pipingloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_pipingloss2.Location = new System.Drawing.Point(399, 388);
+            this.DIC_portrait_pipingloss2.Location = new System.Drawing.Point(397, 405);
             this.DIC_portrait_pipingloss2.Name = "DIC_portrait_pipingloss2";
             this.DIC_portrait_pipingloss2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_pipingloss2.TabIndex = 71;
@@ -2797,7 +2830,7 @@
             // DIC_portrait_pipingloss1
             // 
             this.DIC_portrait_pipingloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_pipingloss1.Location = new System.Drawing.Point(369, 388);
+            this.DIC_portrait_pipingloss1.Location = new System.Drawing.Point(367, 405);
             this.DIC_portrait_pipingloss1.Name = "DIC_portrait_pipingloss1";
             this.DIC_portrait_pipingloss1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_pipingloss1.TabIndex = 70;
@@ -2808,7 +2841,7 @@
             // DIC_sprite_crusherflame2
             // 
             this.DIC_sprite_crusherflame2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherflame2.Location = new System.Drawing.Point(137, 448);
+            this.DIC_sprite_crusherflame2.Location = new System.Drawing.Point(135, 465);
             this.DIC_sprite_crusherflame2.Name = "DIC_sprite_crusherflame2";
             this.DIC_sprite_crusherflame2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherflame2.TabIndex = 100;
@@ -2819,7 +2852,7 @@
             // DIC_sprite_skin1
             // 
             this.DIC_sprite_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin1.Location = new System.Drawing.Point(107, 238);
+            this.DIC_sprite_skin1.Location = new System.Drawing.Point(105, 255);
             this.DIC_sprite_skin1.Name = "DIC_sprite_skin1";
             this.DIC_sprite_skin1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin1.TabIndex = 13;
@@ -2830,7 +2863,7 @@
             // DIC_portrait_piping4
             // 
             this.DIC_portrait_piping4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_piping4.Location = new System.Drawing.Point(459, 358);
+            this.DIC_portrait_piping4.Location = new System.Drawing.Point(457, 375);
             this.DIC_portrait_piping4.Name = "DIC_portrait_piping4";
             this.DIC_portrait_piping4.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_piping4.TabIndex = 68;
@@ -2841,7 +2874,7 @@
             // DIC_sprite_crusherflame1
             // 
             this.DIC_sprite_crusherflame1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherflame1.Location = new System.Drawing.Point(107, 448);
+            this.DIC_sprite_crusherflame1.Location = new System.Drawing.Point(105, 465);
             this.DIC_sprite_crusherflame1.Name = "DIC_sprite_crusherflame1";
             this.DIC_sprite_crusherflame1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherflame1.TabIndex = 99;
@@ -2852,7 +2885,7 @@
             // DIC_portrait_piping3
             // 
             this.DIC_portrait_piping3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_piping3.Location = new System.Drawing.Point(429, 358);
+            this.DIC_portrait_piping3.Location = new System.Drawing.Point(427, 375);
             this.DIC_portrait_piping3.Name = "DIC_portrait_piping3";
             this.DIC_portrait_piping3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_piping3.TabIndex = 67;
@@ -2863,7 +2896,7 @@
             // DIC_sprite_skin2
             // 
             this.DIC_sprite_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin2.Location = new System.Drawing.Point(137, 238);
+            this.DIC_sprite_skin2.Location = new System.Drawing.Point(135, 255);
             this.DIC_sprite_skin2.Name = "DIC_sprite_skin2";
             this.DIC_sprite_skin2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin2.TabIndex = 14;
@@ -2874,7 +2907,7 @@
             // DIC_portrait_piping2
             // 
             this.DIC_portrait_piping2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_piping2.Location = new System.Drawing.Point(399, 358);
+            this.DIC_portrait_piping2.Location = new System.Drawing.Point(397, 375);
             this.DIC_portrait_piping2.Name = "DIC_portrait_piping2";
             this.DIC_portrait_piping2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_piping2.TabIndex = 66;
@@ -2885,7 +2918,7 @@
             // DIC_portrait_piping1
             // 
             this.DIC_portrait_piping1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_piping1.Location = new System.Drawing.Point(369, 358);
+            this.DIC_portrait_piping1.Location = new System.Drawing.Point(367, 375);
             this.DIC_portrait_piping1.Name = "DIC_portrait_piping1";
             this.DIC_portrait_piping1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_piping1.TabIndex = 65;
@@ -2896,7 +2929,7 @@
             // DIC_sprite_skin3
             // 
             this.DIC_sprite_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin3.Location = new System.Drawing.Point(167, 238);
+            this.DIC_sprite_skin3.Location = new System.Drawing.Point(165, 255);
             this.DIC_sprite_skin3.Name = "DIC_sprite_skin3";
             this.DIC_sprite_skin3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin3.TabIndex = 15;
@@ -2907,7 +2940,7 @@
             // DIC_sprite_crushercostume4
             // 
             this.DIC_sprite_crushercostume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crushercostume4.Location = new System.Drawing.Point(197, 418);
+            this.DIC_sprite_crushercostume4.Location = new System.Drawing.Point(195, 435);
             this.DIC_sprite_crushercostume4.Name = "DIC_sprite_crushercostume4";
             this.DIC_sprite_crushercostume4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crushercostume4.TabIndex = 96;
@@ -2918,7 +2951,7 @@
             // DIC_portrait_costumeloss4
             // 
             this.DIC_portrait_costumeloss4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costumeloss4.Location = new System.Drawing.Point(459, 328);
+            this.DIC_portrait_costumeloss4.Location = new System.Drawing.Point(457, 345);
             this.DIC_portrait_costumeloss4.Name = "DIC_portrait_costumeloss4";
             this.DIC_portrait_costumeloss4.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costumeloss4.TabIndex = 63;
@@ -2929,7 +2962,7 @@
             // DIC_sprite_skin4
             // 
             this.DIC_sprite_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_skin4.Location = new System.Drawing.Point(197, 238);
+            this.DIC_sprite_skin4.Location = new System.Drawing.Point(195, 255);
             this.DIC_sprite_skin4.Name = "DIC_sprite_skin4";
             this.DIC_sprite_skin4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_skin4.TabIndex = 16;
@@ -2940,7 +2973,7 @@
             // DIC_portrait_costumeloss3
             // 
             this.DIC_portrait_costumeloss3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costumeloss3.Location = new System.Drawing.Point(429, 328);
+            this.DIC_portrait_costumeloss3.Location = new System.Drawing.Point(427, 345);
             this.DIC_portrait_costumeloss3.Name = "DIC_portrait_costumeloss3";
             this.DIC_portrait_costumeloss3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costumeloss3.TabIndex = 62;
@@ -2951,7 +2984,7 @@
             // DIC_sprite_crushercostume3
             // 
             this.DIC_sprite_crushercostume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crushercostume3.Location = new System.Drawing.Point(167, 418);
+            this.DIC_sprite_crushercostume3.Location = new System.Drawing.Point(165, 435);
             this.DIC_sprite_crushercostume3.Name = "DIC_sprite_crushercostume3";
             this.DIC_sprite_crushercostume3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crushercostume3.TabIndex = 95;
@@ -2962,7 +2995,7 @@
             // DIC_portrait_costumeloss2
             // 
             this.DIC_portrait_costumeloss2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costumeloss2.Location = new System.Drawing.Point(399, 328);
+            this.DIC_portrait_costumeloss2.Location = new System.Drawing.Point(397, 345);
             this.DIC_portrait_costumeloss2.Name = "DIC_portrait_costumeloss2";
             this.DIC_portrait_costumeloss2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costumeloss2.TabIndex = 61;
@@ -2973,7 +3006,7 @@
             // DIC_sprite_pads1
             // 
             this.DIC_sprite_pads1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_pads1.Location = new System.Drawing.Point(107, 268);
+            this.DIC_sprite_pads1.Location = new System.Drawing.Point(105, 285);
             this.DIC_sprite_pads1.Name = "DIC_sprite_pads1";
             this.DIC_sprite_pads1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_pads1.TabIndex = 17;
@@ -2984,7 +3017,7 @@
             // DIC_portrait_costumeloss1
             // 
             this.DIC_portrait_costumeloss1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costumeloss1.Location = new System.Drawing.Point(369, 328);
+            this.DIC_portrait_costumeloss1.Location = new System.Drawing.Point(367, 345);
             this.DIC_portrait_costumeloss1.Name = "DIC_portrait_costumeloss1";
             this.DIC_portrait_costumeloss1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costumeloss1.TabIndex = 60;
@@ -2995,7 +3028,7 @@
             // DIC_sprite_crushercostume2
             // 
             this.DIC_sprite_crushercostume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crushercostume2.Location = new System.Drawing.Point(137, 418);
+            this.DIC_sprite_crushercostume2.Location = new System.Drawing.Point(135, 435);
             this.DIC_sprite_crushercostume2.Name = "DIC_sprite_crushercostume2";
             this.DIC_sprite_crushercostume2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crushercostume2.TabIndex = 94;
@@ -3006,7 +3039,7 @@
             // DIC_sprite_pads2
             // 
             this.DIC_sprite_pads2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_pads2.Location = new System.Drawing.Point(137, 268);
+            this.DIC_sprite_pads2.Location = new System.Drawing.Point(135, 285);
             this.DIC_sprite_pads2.Name = "DIC_sprite_pads2";
             this.DIC_sprite_pads2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_pads2.TabIndex = 18;
@@ -3017,7 +3050,7 @@
             // DIC_portrait_costume4
             // 
             this.DIC_portrait_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costume4.Location = new System.Drawing.Point(459, 298);
+            this.DIC_portrait_costume4.Location = new System.Drawing.Point(457, 315);
             this.DIC_portrait_costume4.Name = "DIC_portrait_costume4";
             this.DIC_portrait_costume4.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costume4.TabIndex = 58;
@@ -3028,7 +3061,7 @@
             // DIC_sprite_crushercostume1
             // 
             this.DIC_sprite_crushercostume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crushercostume1.Location = new System.Drawing.Point(107, 418);
+            this.DIC_sprite_crushercostume1.Location = new System.Drawing.Point(105, 435);
             this.DIC_sprite_crushercostume1.Name = "DIC_sprite_crushercostume1";
             this.DIC_sprite_crushercostume1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crushercostume1.TabIndex = 93;
@@ -3039,7 +3072,7 @@
             // DIC_portrait_costume3
             // 
             this.DIC_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costume3.Location = new System.Drawing.Point(429, 298);
+            this.DIC_portrait_costume3.Location = new System.Drawing.Point(427, 315);
             this.DIC_portrait_costume3.Name = "DIC_portrait_costume3";
             this.DIC_portrait_costume3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costume3.TabIndex = 57;
@@ -3050,7 +3083,7 @@
             // DIC_sprite_pads3
             // 
             this.DIC_sprite_pads3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_pads3.Location = new System.Drawing.Point(167, 268);
+            this.DIC_sprite_pads3.Location = new System.Drawing.Point(165, 285);
             this.DIC_sprite_pads3.Name = "DIC_sprite_pads3";
             this.DIC_sprite_pads3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_pads3.TabIndex = 19;
@@ -3061,7 +3094,7 @@
             // DIC_portrait_costume2
             // 
             this.DIC_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costume2.Location = new System.Drawing.Point(399, 298);
+            this.DIC_portrait_costume2.Location = new System.Drawing.Point(397, 315);
             this.DIC_portrait_costume2.Name = "DIC_portrait_costume2";
             this.DIC_portrait_costume2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costume2.TabIndex = 56;
@@ -3072,7 +3105,7 @@
             // DIC_portrait_costume1
             // 
             this.DIC_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_costume1.Location = new System.Drawing.Point(369, 298);
+            this.DIC_portrait_costume1.Location = new System.Drawing.Point(367, 315);
             this.DIC_portrait_costume1.Name = "DIC_portrait_costume1";
             this.DIC_portrait_costume1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_costume1.TabIndex = 55;
@@ -3083,7 +3116,7 @@
             // DIC_sprite_pads4
             // 
             this.DIC_sprite_pads4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_pads4.Location = new System.Drawing.Point(197, 268);
+            this.DIC_sprite_pads4.Location = new System.Drawing.Point(195, 285);
             this.DIC_sprite_pads4.Name = "DIC_sprite_pads4";
             this.DIC_sprite_pads4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_pads4.TabIndex = 20;
@@ -3094,7 +3127,7 @@
             // DIC_portrait_teeth4
             // 
             this.DIC_portrait_teeth4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_teeth4.Location = new System.Drawing.Point(459, 268);
+            this.DIC_portrait_teeth4.Location = new System.Drawing.Point(457, 285);
             this.DIC_portrait_teeth4.Name = "DIC_portrait_teeth4";
             this.DIC_portrait_teeth4.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_teeth4.TabIndex = 54;
@@ -3105,7 +3138,7 @@
             // DIC_sprite_crusherpads5
             // 
             this.DIC_sprite_crusherpads5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherpads5.Location = new System.Drawing.Point(227, 388);
+            this.DIC_sprite_crusherpads5.Location = new System.Drawing.Point(225, 405);
             this.DIC_sprite_crusherpads5.Name = "DIC_sprite_crusherpads5";
             this.DIC_sprite_crusherpads5.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherpads5.TabIndex = 91;
@@ -3116,7 +3149,7 @@
             // DIC_portrait_teeth3
             // 
             this.DIC_portrait_teeth3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_teeth3.Location = new System.Drawing.Point(429, 268);
+            this.DIC_portrait_teeth3.Location = new System.Drawing.Point(427, 285);
             this.DIC_portrait_teeth3.Name = "DIC_portrait_teeth3";
             this.DIC_portrait_teeth3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_teeth3.TabIndex = 53;
@@ -3127,7 +3160,7 @@
             // DIC_sprite_pads5
             // 
             this.DIC_sprite_pads5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_pads5.Location = new System.Drawing.Point(227, 268);
+            this.DIC_sprite_pads5.Location = new System.Drawing.Point(225, 285);
             this.DIC_sprite_pads5.Name = "DIC_sprite_pads5";
             this.DIC_sprite_pads5.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_pads5.TabIndex = 21;
@@ -3138,7 +3171,7 @@
             // DIC_portrait_teeth2
             // 
             this.DIC_portrait_teeth2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_teeth2.Location = new System.Drawing.Point(399, 268);
+            this.DIC_portrait_teeth2.Location = new System.Drawing.Point(397, 285);
             this.DIC_portrait_teeth2.Name = "DIC_portrait_teeth2";
             this.DIC_portrait_teeth2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_teeth2.TabIndex = 52;
@@ -3149,7 +3182,7 @@
             // DIC_sprite_crusherpads4
             // 
             this.DIC_sprite_crusherpads4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherpads4.Location = new System.Drawing.Point(197, 388);
+            this.DIC_sprite_crusherpads4.Location = new System.Drawing.Point(195, 405);
             this.DIC_sprite_crusherpads4.Name = "DIC_sprite_crusherpads4";
             this.DIC_sprite_crusherpads4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherpads4.TabIndex = 90;
@@ -3160,7 +3193,7 @@
             // DIC_portrait_teeth1
             // 
             this.DIC_portrait_teeth1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_teeth1.Location = new System.Drawing.Point(369, 268);
+            this.DIC_portrait_teeth1.Location = new System.Drawing.Point(367, 285);
             this.DIC_portrait_teeth1.Name = "DIC_portrait_teeth1";
             this.DIC_portrait_teeth1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_teeth1.TabIndex = 51;
@@ -3171,7 +3204,7 @@
             // DIC_sprite_costume1
             // 
             this.DIC_sprite_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_costume1.Location = new System.Drawing.Point(107, 298);
+            this.DIC_sprite_costume1.Location = new System.Drawing.Point(105, 315);
             this.DIC_sprite_costume1.Name = "DIC_sprite_costume1";
             this.DIC_sprite_costume1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_costume1.TabIndex = 22;
@@ -3182,7 +3215,7 @@
             // DIC_sprite_crusherpads3
             // 
             this.DIC_sprite_crusherpads3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherpads3.Location = new System.Drawing.Point(167, 388);
+            this.DIC_sprite_crusherpads3.Location = new System.Drawing.Point(165, 405);
             this.DIC_sprite_crusherpads3.Name = "DIC_sprite_crusherpads3";
             this.DIC_sprite_crusherpads3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherpads3.TabIndex = 89;
@@ -3193,7 +3226,7 @@
             // DIC_portrait_skin7
             // 
             this.DIC_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin7.Location = new System.Drawing.Point(549, 238);
+            this.DIC_portrait_skin7.Location = new System.Drawing.Point(547, 255);
             this.DIC_portrait_skin7.Name = "DIC_portrait_skin7";
             this.DIC_portrait_skin7.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin7.TabIndex = 49;
@@ -3204,7 +3237,7 @@
             // DIC_sprite_costume2
             // 
             this.DIC_sprite_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_costume2.Location = new System.Drawing.Point(137, 298);
+            this.DIC_sprite_costume2.Location = new System.Drawing.Point(135, 315);
             this.DIC_sprite_costume2.Name = "DIC_sprite_costume2";
             this.DIC_sprite_costume2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_costume2.TabIndex = 23;
@@ -3215,7 +3248,7 @@
             // DIC_portrait_skin6
             // 
             this.DIC_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin6.Location = new System.Drawing.Point(519, 238);
+            this.DIC_portrait_skin6.Location = new System.Drawing.Point(517, 255);
             this.DIC_portrait_skin6.Name = "DIC_portrait_skin6";
             this.DIC_portrait_skin6.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin6.TabIndex = 48;
@@ -3226,7 +3259,7 @@
             // DIC_sprite_crusherpads2
             // 
             this.DIC_sprite_crusherpads2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherpads2.Location = new System.Drawing.Point(137, 388);
+            this.DIC_sprite_crusherpads2.Location = new System.Drawing.Point(135, 405);
             this.DIC_sprite_crusherpads2.Name = "DIC_sprite_crusherpads2";
             this.DIC_sprite_crusherpads2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherpads2.TabIndex = 88;
@@ -3237,7 +3270,7 @@
             // DIC_portrait_skin5
             // 
             this.DIC_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin5.Location = new System.Drawing.Point(489, 238);
+            this.DIC_portrait_skin5.Location = new System.Drawing.Point(487, 255);
             this.DIC_portrait_skin5.Name = "DIC_portrait_skin5";
             this.DIC_portrait_skin5.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin5.TabIndex = 47;
@@ -3248,7 +3281,7 @@
             // DIC_sprite_costume3
             // 
             this.DIC_sprite_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_costume3.Location = new System.Drawing.Point(167, 298);
+            this.DIC_sprite_costume3.Location = new System.Drawing.Point(165, 315);
             this.DIC_sprite_costume3.Name = "DIC_sprite_costume3";
             this.DIC_sprite_costume3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_costume3.TabIndex = 24;
@@ -3259,7 +3292,7 @@
             // DIC_portrait_skin4
             // 
             this.DIC_portrait_skin4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin4.Location = new System.Drawing.Point(459, 238);
+            this.DIC_portrait_skin4.Location = new System.Drawing.Point(457, 255);
             this.DIC_portrait_skin4.Name = "DIC_portrait_skin4";
             this.DIC_portrait_skin4.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin4.TabIndex = 46;
@@ -3270,7 +3303,7 @@
             // DIC_sprite_crusherpads1
             // 
             this.DIC_sprite_crusherpads1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_crusherpads1.Location = new System.Drawing.Point(107, 388);
+            this.DIC_sprite_crusherpads1.Location = new System.Drawing.Point(105, 405);
             this.DIC_sprite_crusherpads1.Name = "DIC_sprite_crusherpads1";
             this.DIC_sprite_crusherpads1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_crusherpads1.TabIndex = 87;
@@ -3281,7 +3314,7 @@
             // DIC_portrait_skin3
             // 
             this.DIC_portrait_skin3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin3.Location = new System.Drawing.Point(429, 238);
+            this.DIC_portrait_skin3.Location = new System.Drawing.Point(427, 255);
             this.DIC_portrait_skin3.Name = "DIC_portrait_skin3";
             this.DIC_portrait_skin3.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin3.TabIndex = 45;
@@ -3292,7 +3325,7 @@
             // DIC_sprite_costume4
             // 
             this.DIC_sprite_costume4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_costume4.Location = new System.Drawing.Point(197, 298);
+            this.DIC_sprite_costume4.Location = new System.Drawing.Point(195, 315);
             this.DIC_sprite_costume4.Name = "DIC_sprite_costume4";
             this.DIC_sprite_costume4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_costume4.TabIndex = 25;
@@ -3303,7 +3336,7 @@
             // DIC_portrait_skin2
             // 
             this.DIC_portrait_skin2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin2.Location = new System.Drawing.Point(399, 238);
+            this.DIC_portrait_skin2.Location = new System.Drawing.Point(397, 255);
             this.DIC_portrait_skin2.Name = "DIC_portrait_skin2";
             this.DIC_portrait_skin2.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin2.TabIndex = 44;
@@ -3314,7 +3347,7 @@
             // DIC_portrait_skin1
             // 
             this.DIC_portrait_skin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_portrait_skin1.Location = new System.Drawing.Point(369, 238);
+            this.DIC_portrait_skin1.Location = new System.Drawing.Point(367, 255);
             this.DIC_portrait_skin1.Name = "DIC_portrait_skin1";
             this.DIC_portrait_skin1.Size = new System.Drawing.Size(24, 24);
             this.DIC_portrait_skin1.TabIndex = 43;
@@ -3325,7 +3358,7 @@
             // DIC_sprite_costume5
             // 
             this.DIC_sprite_costume5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_costume5.Location = new System.Drawing.Point(227, 298);
+            this.DIC_sprite_costume5.Location = new System.Drawing.Point(225, 315);
             this.DIC_sprite_costume5.Name = "DIC_sprite_costume5";
             this.DIC_sprite_costume5.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_costume5.TabIndex = 26;
@@ -3336,7 +3369,7 @@
             // DIC_sprite_psychopunch5
             // 
             this.DIC_sprite_psychopunch5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_psychopunch5.Location = new System.Drawing.Point(227, 358);
+            this.DIC_sprite_psychopunch5.Location = new System.Drawing.Point(225, 375);
             this.DIC_sprite_psychopunch5.Name = "DIC_sprite_psychopunch5";
             this.DIC_sprite_psychopunch5.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_psychopunch5.TabIndex = 85;
@@ -3347,7 +3380,7 @@
             // DIC_sprite_stripe
             // 
             this.DIC_sprite_stripe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_stripe.Location = new System.Drawing.Point(107, 328);
+            this.DIC_sprite_stripe.Location = new System.Drawing.Point(105, 345);
             this.DIC_sprite_stripe.Name = "DIC_sprite_stripe";
             this.DIC_sprite_stripe.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_stripe.TabIndex = 27;
@@ -3358,7 +3391,7 @@
             // DIC_sprite_psychopunch4
             // 
             this.DIC_sprite_psychopunch4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_psychopunch4.Location = new System.Drawing.Point(197, 358);
+            this.DIC_sprite_psychopunch4.Location = new System.Drawing.Point(195, 375);
             this.DIC_sprite_psychopunch4.Name = "DIC_sprite_psychopunch4";
             this.DIC_sprite_psychopunch4.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_psychopunch4.TabIndex = 84;
@@ -3369,7 +3402,7 @@
             // DIC_sprite_psychoglow
             // 
             this.DIC_sprite_psychoglow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_psychoglow.Location = new System.Drawing.Point(137, 328);
+            this.DIC_sprite_psychoglow.Location = new System.Drawing.Point(135, 345);
             this.DIC_sprite_psychoglow.Name = "DIC_sprite_psychoglow";
             this.DIC_sprite_psychoglow.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_psychoglow.TabIndex = 79;
@@ -3380,7 +3413,7 @@
             // DIC_sprite_psychopunch3
             // 
             this.DIC_sprite_psychopunch3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_psychopunch3.Location = new System.Drawing.Point(167, 358);
+            this.DIC_sprite_psychopunch3.Location = new System.Drawing.Point(165, 375);
             this.DIC_sprite_psychopunch3.Name = "DIC_sprite_psychopunch3";
             this.DIC_sprite_psychopunch3.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_psychopunch3.TabIndex = 83;
@@ -3391,7 +3424,7 @@
             // DIC_sprite_psychopunch1
             // 
             this.DIC_sprite_psychopunch1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_psychopunch1.Location = new System.Drawing.Point(107, 358);
+            this.DIC_sprite_psychopunch1.Location = new System.Drawing.Point(105, 375);
             this.DIC_sprite_psychopunch1.Name = "DIC_sprite_psychopunch1";
             this.DIC_sprite_psychopunch1.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_psychopunch1.TabIndex = 81;
@@ -3402,7 +3435,7 @@
             // DIC_sprite_psychopunch2
             // 
             this.DIC_sprite_psychopunch2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DIC_sprite_psychopunch2.Location = new System.Drawing.Point(137, 358);
+            this.DIC_sprite_psychopunch2.Location = new System.Drawing.Point(135, 375);
             this.DIC_sprite_psychopunch2.Name = "DIC_sprite_psychopunch2";
             this.DIC_sprite_psychopunch2.Size = new System.Drawing.Size(24, 24);
             this.DIC_sprite_psychopunch2.TabIndex = 82;
@@ -13167,32 +13200,25 @@
             this.decrementColorsButton.UseVisualStyleBackColor = true;
             this.decrementColorsButton.Click += new System.EventHandler(this.decrementColorsButton_Click);
             // 
-            // backgroundToolStripMenuItem
+            // crusherbackBox
             // 
-            this.backgroundToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.blackToolStripMenuItem,
-            this.magentaToolStripMenuItem});
-            this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
-            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.backgroundToolStripMenuItem.Text = "Background";
+            this.crusherbackBox.BackColor = System.Drawing.Color.Black;
+            this.crusherbackBox.Location = new System.Drawing.Point(115, 192);
+            this.crusherbackBox.Name = "crusherbackBox";
+            this.crusherbackBox.Size = new System.Drawing.Size(170, 44);
+            this.crusherbackBox.TabIndex = 121;
+            this.crusherbackBox.TabStop = false;
             // 
-            // blackToolStripMenuItem
+            // DIC_sprite_crusherhands3
             // 
-            this.blackToolStripMenuItem.Checked = true;
-            this.blackToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.blackToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-            this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blackToolStripMenuItem.Text = "Black";
-            this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
-            // 
-            // magentaToolStripMenuItem
-            // 
-            this.magentaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.magentaToolStripMenuItem.Name = "magentaToolStripMenuItem";
-            this.magentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.magentaToolStripMenuItem.Text = "Magenta";
-            this.magentaToolStripMenuItem.Click += new System.EventHandler(this.magentaToolStripMenuItem_Click);
+            this.DIC_sprite_crusherhands3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DIC_sprite_crusherhands3.Location = new System.Drawing.Point(165, 495);
+            this.DIC_sprite_crusherhands3.Name = "DIC_sprite_crusherhands3";
+            this.DIC_sprite_crusherhands3.Size = new System.Drawing.Size(24, 24);
+            this.DIC_sprite_crusherhands3.TabIndex = 122;
+            this.DIC_sprite_crusherhands3.TabStop = false;
+            this.DIC_sprite_crusherhands3.BackColorChanged += new System.EventHandler(this.spriteCrusher_BackColorChanged);
+            this.DIC_sprite_crusherhands3.Click += new System.EventHandler(this.pal_square_click);
             // 
             // MainForm
             // 
@@ -14004,6 +14030,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GOU_sprite_skin4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_neutralStandBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GOU_portraitVictoryBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crusherbackBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DIC_sprite_crusherhands3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -15015,6 +15043,8 @@
         private System.Windows.Forms.ToolStripMenuItem backgroundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem magentaToolStripMenuItem;
+        private System.Windows.Forms.PictureBox crusherbackBox;
+        private System.Windows.Forms.PictureBox DIC_sprite_crusherhands3;
     }
 }
 

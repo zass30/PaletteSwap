@@ -101,6 +101,7 @@ namespace PaletteSwap
                 load_sprite_psychoprep();
                 load_sprite_crushertop();
                 load_sprite_crusherbottom();
+                load_sprite_crusherback();
             }
 
             skip_image_recolors = false;
@@ -131,6 +132,11 @@ namespace PaletteSwap
         private void load_sprite_crusherbottom()
         {
             crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherbottom");
+        }
+
+        private void load_sprite_crusherback()
+        {
+            crusherbottomBox.BackgroundImage = currentCharacter.sprite.GetBitmap("crusherback");
         }
 
 
@@ -257,6 +263,7 @@ namespace PaletteSwap
             {
                 if (((currentlyZoomedLabel == "crusherbottom" ||
                     currentlyZoomedLabel == "crushertop" ||
+                    currentlyZoomedLabel == "crusherback" ||
                     currentlyZoomedLabel == "psychoprep" ||
                     currentlyZoomedLabel == "psychopunch") &&
                     currentCharacterType != CharacterConfig.CHARACTERS.Dictator) ||
@@ -338,6 +345,9 @@ namespace PaletteSwap
                     break;
                 case "crusherbottomBox":
                     currentlyZoomedLabel = "crusherbottom";
+                    break;
+                case "crusherbackBox":
+                    currentlyZoomedLabel = "crusherback";
                     break;
                 case "neutralStandBox":
                     currentlyZoomedLabel = "neutral";
@@ -447,6 +457,7 @@ namespace PaletteSwap
                 load_sprite_psychopunch();
                 load_sprite_psychoprep();
                 load_sprite_crushertop();
+                load_sprite_crusherback();
             }
             if (currentCharacterType == CharacterConfig.CHARACTERS.Gouki)
             {
@@ -462,6 +473,7 @@ namespace PaletteSwap
 
             load_sprite_crushertop();
             load_sprite_crusherbottom();
+            load_sprite_crusherback();
         }
 
         private void portrait_BackColorChanged(object sender, EventArgs e)
@@ -1068,6 +1080,7 @@ namespace PaletteSwap
                 psychoprepBox.BackColor = backgroundcolor;
                 crushertopBox.BackColor = backgroundcolor;
                 crusherbottomBox.BackColor = backgroundcolor;
+                crusherbackBox.BackColor = backgroundcolor;
             }
         }
     }

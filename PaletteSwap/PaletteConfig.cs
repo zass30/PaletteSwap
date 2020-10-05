@@ -1545,7 +1545,7 @@ namespace PaletteSwap
                 var dictatorSpriteOffsets = GenerateDictatorSpriteOffsets();
                 PaletteConfig pc = new PaletteConfig();
                 pc.labelOffsets = dictatorSpriteOffsets;
-                pc.unusedOffsets = new List<int>() { 66, 67, 92, 93 };
+                pc.unusedOffsets = new List<int>() { 66, 67 }; //, 92, 93 };
                 string defaults = "0007 2302 3403 5605 6706 7807 8A08 9B09";
                 int defaultsOffset = 32;
                 pc.createColorOffsets(defaults, defaultsOffset);
@@ -1587,6 +1587,7 @@ namespace PaletteSwap
             { "crusherflame2", new List<int>() { ROWLEN * 2 + 22 } },
             { "crusherhands1", new List<int>() { ROWLEN * 2 + 24 } },
             { "crusherhands2", new List<int>() { ROWLEN * 2 + 26 } },
+            { "crusherhands3", new List<int>() { ROWLEN * 2 + 28 } },
             { "psychoglow", new List<int>() { ROWLEN * 3 + 12 } },
             { "psychopunch1", new List<int>() { ROWLEN * 4 + 12 } },
             { "psychopunch2", new List<int>() { ROWLEN * 4 + 14 } },
@@ -1904,7 +1905,7 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                 public static List<string> DictatorPsychoCrusherLabels()
                 {
                     return new List<string> { "crushercostume1", "crushercostume2", "crushercostume3", "crushercostume4",
-                "crusherflame1", "crusherflame2", "crusherhands1", "crusherhands2",
+                "crusherflame1", "crusherflame2", "crusherhands1", "crusherhands2", "crusherhands3",
                 "crusherpads1", "crusherpads2", "crusherpads3", "crusherpads4", "crusherpads5" };
                 }
 
@@ -1931,6 +1932,11 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetPortraitResourceFromRom(Char
                 public static Bitmap DictatorCrusherBottomBaseImage()
                 {
                     return new Bitmap(Properties.Resources.DIC_crusherbottom5);
+                }
+
+                public static Bitmap DictatorCrusherBackBaseImage()
+                {
+                    return new Bitmap(Properties.Resources.DIC_crusherback5);
                 }
 
                 public static PaletteImage GenerateDictatorStandingNeutralBasePaletteImage()
@@ -1964,6 +1970,13 @@ PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(Charac
                 public static PaletteImage GenerateDictatorCrusherBottomBasePaletteImage()
                 {
                     return GenerateDicatatorPaletteImage(DictatorCrusherBottomBaseImage(),
+                        PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk)),
+                        DictatorPsychoCrusherLabels());
+                }
+
+                public static PaletteImage GenerateDictatorCrusherBackBasePaletteImage()
+                {
+                    return GenerateDicatatorPaletteImage(DictatorCrusherBackBaseImage(),
                         PaletteHelper.ByteStreamToString(CharacterConfig.GetSpriteResourceFromRom(CharacterConfig.CHARACTERS.Dictator, CharacterConfig.BUTTONS.hk)),
                         DictatorPsychoCrusherLabels());
                 }

@@ -75,6 +75,7 @@ namespace PaletteSwap
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorPsychoPrepBasePaletteImage(), "psychoprep");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherTopBasePaletteImage(), "crushertop");
             AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBottomBasePaletteImage(), "crusherbottom");
+            AssignImage(s, ImageConfig.Dictator.SPRITE.GenerateDictatorCrusherBackBasePaletteImage(), "crusherback");
         }
 
         private static void AssignGoukiSpriteImages(Palette s)
