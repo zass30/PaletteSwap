@@ -14,6 +14,7 @@ namespace PaletteSwap
         bool DISABLE_PATCHING = false;
         ZoomForm z;
         ColorSetForm c;
+        Color backgroundcolor = Color.Black;
         public string currentlyZoomedLabel;
         public CharacterConfig.CHARACTERS currentCharacterType;
         PictureBox previouslySelectedSquare;
@@ -81,6 +82,7 @@ namespace PaletteSwap
         private void reload_everything()
         {
             skip_image_recolors = true;
+            setBackColor();
             load_portrait_buttons();
             load_sprite_buttons();
             load_sprite_neutralstand();
@@ -637,8 +639,8 @@ namespace PaletteSwap
                         reload_everything();
                         fileStream.Close();
                    }
-                    catch (Exception){
-                        MessageBox.Show("Invalid ROM format");
+                    catch (Exception ex){
+                        MessageBox.Show(ex.Message);
                     }
                 }
             }
@@ -1029,6 +1031,44 @@ namespace PaletteSwap
         private void extendedColorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             extendedColorsToolStripMenuItem.Checked = !extendedColorsToolStripMenuItem.Checked;
+        }
+
+        private void magentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.magentaToolStripMenuItem.Checked = true;
+            this.blackToolStripMenuItem.Checked = false;
+            backgroundcolor = Color.Magenta;
+            setBackColor();
+        }
+
+        private void blackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.magentaToolStripMenuItem.Checked = false;
+            this.blackToolStripMenuItem.Checked = true;
+            backgroundcolor = Color.Black;
+            setBackColor();
+        }
+
+        private void setBackColor()
+        {
+            GetSpriteNeutralBox().BackColor = backgroundcolor;
+            if (currentCharacterType != CharacterConfig.CHARACTERS.Gouki)
+                GetPortraitLossBox().BackColor = backgroundcolor;
+            GetPortraitVictoryBox().BackColor = backgroundcolor;
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Gouki)
+            {
+                GOU_teleportBox1.BackColor = backgroundcolor;
+                GOU_teleportBox2.BackColor = backgroundcolor;
+                GOU_teleportBox3.BackColor = backgroundcolor;
+                load_sprite_teleports();
+            }
+            if (currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
+            {
+                psychopunchBox.BackColor = backgroundcolor;
+                psychoprepBox.BackColor = backgroundcolor;
+                crushertopBox.BackColor = backgroundcolor;
+                crusherbottomBox.BackColor = backgroundcolor;
+            }
         }
     }
 }
