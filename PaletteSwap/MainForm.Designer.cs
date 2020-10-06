@@ -56,7 +56,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.dictatorOldPunchesCheckBox = new System.Windows.Forms.CheckBox();
             this.colorSwapRB = new System.Windows.Forms.Button();
             this.colorSwapGR = new System.Windows.Forms.Button();
             this.invertColorsButton = new System.Windows.Forms.Button();
@@ -75,12 +75,7 @@
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.patchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phoenixROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.japaneseROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newLegacyROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redggpoROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.patchRomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1037,7 +1032,6 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.incrementColorsButton = new System.Windows.Forms.Button();
             this.decrementColorsButton = new System.Windows.Forms.Button();
-            this.romToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -2058,17 +2052,18 @@
             this.label21.TabIndex = 106;
             this.label21.Text = "crusher hands";
             // 
-            // checkBox1
+            // dictatorOldPunchesCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(440, 521);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(122, 17);
-            this.checkBox1.TabIndex = 107;
-            this.checkBox1.Text = "Fix old punch sprites";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.dictatorOldPunchesCheckBox.AutoSize = true;
+            this.dictatorOldPunchesCheckBox.Checked = true;
+            this.dictatorOldPunchesCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.dictatorOldPunchesCheckBox.Location = new System.Drawing.Point(440, 521);
+            this.dictatorOldPunchesCheckBox.Name = "dictatorOldPunchesCheckBox";
+            this.dictatorOldPunchesCheckBox.Size = new System.Drawing.Size(122, 17);
+            this.dictatorOldPunchesCheckBox.TabIndex = 107;
+            this.dictatorOldPunchesCheckBox.Text = "Fix old punch sprites";
+            this.dictatorOldPunchesCheckBox.UseVisualStyleBackColor = true;
+            this.dictatorOldPunchesCheckBox.CheckedChanged += new System.EventHandler(this.dictatorOldPunchesCheckBox_CheckedChanged);
             // 
             // colorSwapRB
             // 
@@ -2129,7 +2124,7 @@
             this.printToolStripMenuItem,
             this.printPreviewToolStripMenuItem,
             this.toolStripSeparator2,
-            this.patchToolStripMenuItem,
+            this.patchRomToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
@@ -2160,14 +2155,14 @@
             // rOMToolStripMenuItem
             // 
             this.rOMToolStripMenuItem.Name = "rOMToolStripMenuItem";
-            this.rOMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rOMToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.rOMToolStripMenuItem.Text = "ROM";
             this.rOMToolStripMenuItem.Click += new System.EventHandler(this.openROMToolStripMenuItem_Click);
             // 
             // colorSetToolStripMenuItem1
             // 
             this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
-            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.colorSetToolStripMenuItem1.Text = "ColorSet";
             this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
             // 
@@ -2240,60 +2235,19 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
-            // patchToolStripMenuItem
+            // patchRomToolStripMenuItem
             // 
-            this.patchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.standardROMToolStripMenuItem,
-            this.phoenixROMToolStripMenuItem,
-            this.japaneseROMToolStripMenuItem,
-            this.newLegacyROMToolStripMenuItem,
-            this.redggpoROMToolStripMenuItem,
-            this.romToolStripMenuItem1});
-            this.patchToolStripMenuItem.Name = "patchToolStripMenuItem";
-            this.patchToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.patchToolStripMenuItem.Text = "Patch";
-            // 
-            // standardROMToolStripMenuItem
-            // 
-            this.standardROMToolStripMenuItem.Name = "standardROMToolStripMenuItem";
-            this.standardROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.standardROMToolStripMenuItem.Text = "Standard ROM";
-            this.standardROMToolStripMenuItem.Click += new System.EventHandler(this.savePatchedRomToolStripMenuItem1_Click);
-            // 
-            // phoenixROMToolStripMenuItem
-            // 
-            this.phoenixROMToolStripMenuItem.Name = "phoenixROMToolStripMenuItem";
-            this.phoenixROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.phoenixROMToolStripMenuItem.Text = "Phoenix ROM";
-            this.phoenixROMToolStripMenuItem.Click += new System.EventHandler(this.savePhoenixRomToolStripMenuItem1_Click);
-            // 
-            // japaneseROMToolStripMenuItem
-            // 
-            this.japaneseROMToolStripMenuItem.Name = "japaneseROMToolStripMenuItem";
-            this.japaneseROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.japaneseROMToolStripMenuItem.Text = "Japanese ROM";
-            this.japaneseROMToolStripMenuItem.Click += new System.EventHandler(this.saveJapaneseRomToolStripMenuItem_Click);
-            // 
-            // newLegacyROMToolStripMenuItem
-            // 
-            this.newLegacyROMToolStripMenuItem.Name = "newLegacyROMToolStripMenuItem";
-            this.newLegacyROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newLegacyROMToolStripMenuItem.Text = "New Legacy ROM";
-            this.newLegacyROMToolStripMenuItem.Click += new System.EventHandler(this.newLegacyROMToolStripMenuItem_Click);
-            // 
-            // redggpoROMToolStripMenuItem
-            // 
-            this.redggpoROMToolStripMenuItem.Name = "redggpoROMToolStripMenuItem";
-            this.redggpoROMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.redggpoROMToolStripMenuItem.Text = "Redggpo ROM";
-            this.redggpoROMToolStripMenuItem.Visible = false;
-            this.redggpoROMToolStripMenuItem.Click += new System.EventHandler(this.redggpoROMToolStripMenuItem_Click);
+            this.patchRomToolStripMenuItem.Name = "patchRomToolStripMenuItem";
+            this.patchRomToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchRomToolStripMenuItem.Text = "Patch Rom...";
+            this.patchRomToolStripMenuItem.Click += new System.EventHandler(this.patchRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -2591,7 +2545,7 @@
             this.TabPageDictator.Controls.Add(this.DIC_portraitVictoryBox);
             this.TabPageDictator.Controls.Add(this.psychoprepBox);
             this.TabPageDictator.Controls.Add(this.crusherbottomBox);
-            this.TabPageDictator.Controls.Add(this.checkBox1);
+            this.TabPageDictator.Controls.Add(this.dictatorOldPunchesCheckBox);
             this.TabPageDictator.Controls.Add(this.crushertopBox);
             this.TabPageDictator.Controls.Add(this.label15);
             this.TabPageDictator.Controls.Add(this.label21);
@@ -13235,13 +13189,6 @@
             this.decrementColorsButton.UseVisualStyleBackColor = true;
             this.decrementColorsButton.Click += new System.EventHandler(this.decrementColorsButton_Click);
             // 
-            // romToolStripMenuItem1
-            // 
-            this.romToolStripMenuItem1.Name = "romToolStripMenuItem1";
-            this.romToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.romToolStripMenuItem1.Text = "Rom...";
-            this.romToolStripMenuItem1.Click += new System.EventHandler(this.romToolStripMenuItem1_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -14151,7 +14098,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox DIC_sprite_crusherhands2;
         private System.Windows.Forms.PictureBox DIC_sprite_crusherhands1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox dictatorOldPunchesCheckBox;
         private System.Windows.Forms.Button colorSwapRB;
         private System.Windows.Forms.Button colorSwapGR;
         private System.Windows.Forms.Button invertColorsButton;
@@ -14407,10 +14354,6 @@
         private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorSetToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem patchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem standardROMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phoenixROMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem japaneseROMToolStripMenuItem;
         private System.Windows.Forms.TabPage TabPageBoxer;
         private System.Windows.Forms.PictureBox BOX_portraitLossBox;
         private System.Windows.Forms.PictureBox BOX_portraitVictoryBox;
@@ -14758,7 +14701,6 @@
         private System.Windows.Forms.PictureBox DEE_portrait_skin7;
         private System.Windows.Forms.PictureBox DEE_portrait_skin6;
         private System.Windows.Forms.PictureBox DEE_portrait_skin5;
-        private System.Windows.Forms.ToolStripMenuItem newLegacyROMToolStripMenuItem;
         private System.Windows.Forms.TabPage TabPageDhalsim;
         private System.Windows.Forms.PictureBox DHA_neutralStandBox;
         private System.Windows.Forms.PictureBox DHA_portraitLossBox;
@@ -14810,7 +14752,6 @@
         private System.Windows.Forms.Label label133;
         private System.Windows.Forms.PictureBox DHA_portrait_blood2;
         private System.Windows.Forms.PictureBox DHA_portrait_blood1;
-        private System.Windows.Forms.ToolStripMenuItem redggpoROMToolStripMenuItem;
         private System.Windows.Forms.TabPage TabPageCammy;
         private System.Windows.Forms.PictureBox CAM_neutralStandBox;
         private System.Windows.Forms.PictureBox CAM_portraitLossBox;
@@ -15068,7 +15009,7 @@
         private System.Windows.Forms.PictureBox crusherbackBox;
         private System.Windows.Forms.PictureBox DIC_sprite_crusherhands3;
         private System.Windows.Forms.ToolStripMenuItem cyanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem romToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem patchRomToolStripMenuItem;
     }
 }
 

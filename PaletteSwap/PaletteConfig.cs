@@ -208,6 +208,8 @@ namespace PaletteSwap
             byte[] portrait_bytes = new byte[portrait_length];
 
             Array.Copy(portraits, portrait2_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
+            string path = @"C:\temp\PORTRAIT-" + character.ToString() + "-" + button.ToString();
+            System.IO.File.WriteAllBytes(path, portrait_bytes);
             return portrait_bytes;
         }
 
@@ -228,6 +230,8 @@ namespace PaletteSwap
             Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
             byte[] final = new byte[sprite_length - 2];
             Array.Copy(sprite_bytes, final, final.Length);
+            string path = @"C:\temp\SPRITE-" + character.ToString() + "-" + button.ToString();
+            System.IO.File.WriteAllBytes(path, final);
             return final;
         }
 

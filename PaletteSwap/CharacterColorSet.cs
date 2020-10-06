@@ -468,5 +468,63 @@ namespace PaletteSwap
             }
            return gs;
         }
+
+        public void PatchZippedRom(Stream fileStream, bool fixOldDictatorPunches)
+        {
+
+            using (var zip = new ZipArchive(fileStream, ZipArchiveMode.Update))
+            {
+                foreach (var entry in zip.Entries)
+                {
+                    using (var stream = entry.Open())
+                    {
+                        byte[] patched_b;
+
+                        if (entry.Name == "sfxe.03c" ||
+                            entry.Name == "sfxjd.03c" ||
+                            entry.Name == "sfxj.03c" )
+                        {
+                            using (var memorySubStream = new MemoryStream())
+                            {
+                                stream.CopyTo(memorySubStream);
+                                var b = memorySubStream.ToArray();
+                                patched_b = patch_portraits_stream03(b);
+                            }
+                            var c = stream.CanSeek;
+                            stream.Position = 0;
+                            stream.Write(patched_b, 0, patched_b.Length);
+                        }
+                        else if (entry.Name == "sfxe.04a" ||
+                            entry.Name == "sfxjd.04a" ||
+                            entry.Name == "sfxj.04a")
+                        {
+                            using (var memorySubStream = new MemoryStream())
+                            {
+                                stream.CopyTo(memorySubStream);
+                                var b = memorySubStream.ToArray();
+                                patched_b = patch_sprites_stream04(b);
+                            }
+                            var c = stream.CanSeek;
+                            stream.Position = 0;
+                            stream.Write(patched_b, 0, patched_b.Length);
+                        }
+                        else if ((entry.Name == "sfxe.06a" ||
+                            entry.Name == "sfxjd.06a" ||
+                            entry.Name == "sfxj.06a") && fixOldDictatorPunches)
+                        {
+                            using (var memorySubStream = new MemoryStream())
+                            {
+                                stream.CopyTo(memorySubStream);
+                                var b = memorySubStream.ToArray();
+                                patched_b = PatchOldBisonPunchesStream(b);
+                            }
+                            var c = stream.CanSeek;
+                            stream.Position = 0;
+                            stream.Write(patched_b, 0, patched_b.Length);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

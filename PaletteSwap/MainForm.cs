@@ -11,9 +11,9 @@ namespace PaletteSwap
 {
     public partial class MainForm : Form
     {
-        bool DISABLE_PATCHING = false;
         ZoomForm z;
         ColorSetForm c;
+        bool fixDicatorOldPunches = true;
         public Color backgroundcolor = Color.Black;
         public string currentlyZoomedLabel;
         public CharacterConfig.CHARACTERS currentCharacterType;
@@ -666,7 +666,7 @@ namespace PaletteSwap
                 }
             }
         }
-
+        /*
         private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             savePatchedRom(sender, e, ROMSTYLE.us);
@@ -692,11 +692,38 @@ namespace PaletteSwap
         {
             savePatchedRom(sender, e, ROMSTYLE.redggpo);
         }
-
-
         private void romToolStripMenuItem1_Click(object sender, EventArgs e)
+        { 
+        
+        }*/
+            private void patchRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
 
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    try
+                    {
+                        using (FileStream fs = new FileStream(filePath, FileMode.Open))
+                        {
+                            gameSet.PatchZippedRom(fs, fixDicatorOldPunches);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
         }
 
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -706,7 +733,7 @@ namespace PaletteSwap
             c.Reload();
             c.Show();
         }
-
+        /*
         private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
         {
             if (DISABLE_PATCHING == true)
@@ -813,7 +840,7 @@ namespace PaletteSwap
                     }
                 }
             }
-        }
+        }*/
 
         private void ChangeIndexToCharacter(CharacterConfig.CHARACTERS character)
         {
@@ -1114,6 +1141,16 @@ namespace PaletteSwap
 
             if (c != null)
                 c.setBackColor();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dictatorOldPunchesCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            fixDicatorOldPunches = !fixDicatorOldPunches;
         }
     }
 }
