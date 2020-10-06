@@ -693,6 +693,12 @@ namespace PaletteSwap
             savePatchedRom(sender, e, ROMSTYLE.redggpo);
         }
 
+
+        private void romToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void colorSetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (c.IsDisposed)

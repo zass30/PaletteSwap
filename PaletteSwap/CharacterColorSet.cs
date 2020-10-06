@@ -331,9 +331,8 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] sprites_stream04()
+        public byte[] patch_sprites_stream04(byte[] b)
         {
-            byte[] b = Resources.sfxe04a;
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
@@ -342,9 +341,8 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] portraits_stream03()
+        public byte[] patch_portraits_stream03(byte[] b)
         {
-            byte[] b = Resources.sfxe03c;
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
@@ -352,6 +350,68 @@ namespace PaletteSwap
             }
             return b;
         }
+
+        public byte[] sprites_stream04()
+        {
+            byte[] b = Resources.sfxe04a;
+            return patch_sprites_stream04(b);
+        }
+
+        public byte[] sprites_stream04phoenix()
+        {
+            byte[] b = Resources.sfxjd04a;
+            return patch_sprites_stream04(b);
+        }
+
+        public byte[] sprites_stream04newlegacy()
+        {
+            byte[] b = Resources.sfxe04aNLv03;
+            return patch_sprites_stream04(b);
+        }
+
+
+        public byte[] sprites_stream04japanese()
+        {
+            byte[] b = Resources.sfxj04a;
+            return patch_sprites_stream04(b);
+        }
+
+        public byte[] sprites_stream04redggpo()
+        {
+            byte[] b = Resources.sfxo04a;
+            return patch_sprites_stream04(b);
+        }
+
+        public byte[] portraits_stream03()
+        {
+            byte[] b = Resources.sfxe03c;
+            return patch_portraits_stream03(b);
+        }
+
+        public byte[] portraits_stream03phoenix()
+        {
+            byte[] b = Resources.sfxjd03c;
+            return patch_portraits_stream03(b);
+        }
+
+        public byte[] portraits_stream03newlegacy()
+        {
+            byte[] b = Resources.sfxe03cNLv03;
+            return patch_portraits_stream03(b);
+        }
+
+        public byte[] portraits_stream03japanese()
+        {
+            byte[] b = Resources.sfxj03c;
+            return patch_portraits_stream03(b);
+        }
+
+        public byte[] portraits_stream03redggpo()
+        {
+            byte[] b = Resources.sfxo03c;
+            return patch_portraits_stream03(b);
+        }
+
 
         private byte[] PatchOldBisonPunchesStream(byte[] b)
         {
@@ -386,97 +446,6 @@ namespace PaletteSwap
             return PatchOldBisonPunchesStream(b);
         }
 
-        public byte[] sprites_stream04phoenix()
-        {
-            byte[] b = Resources.sfxjd04a;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_sprites_stream04(b);
-            }
-            return b;
-
-        }
-
-        public byte[] portraits_stream03phoenix()
-        {
-            byte[] b = Resources.sfxjd03c;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_portraits_stream03(b);
-            }
-            return b;
-
-        }
-
-
-        public byte[] sprites_stream04newlegacy()
-        {
-            byte[] b = Resources.sfxe04aNLv03;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_sprites_stream04(b);
-            }
-            return b;
-
-        }
-
-        public byte[] portraits_stream03newlegacy()
-        {
-            byte[] b = Resources.sfxe03cNLv03;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_portraits_stream03(b);
-            }
-            return b;
-        }
-
-        public byte[] sprites_stream04japanese()
-        {
-            byte[] b = Resources.sfxj04a;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_sprites_stream04(b);
-            }
-            return b;
-        }
-
-        public byte[] portraits_stream03japanese()
-        {
-            byte[] b = Resources.sfxj03c;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_portraits_stream03(b);
-            }
-            return b;
-        }
-
-        public byte[] sprites_stream04redggpo()
-        {
-            byte[] b = Resources.sfxo04a;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_sprites_stream04(b);
-            }
-            return b;
-        }
-
-        public byte[] portraits_stream03redggpo()
-        {
-            byte[] b = Resources.sfxo03c;
-            foreach (var k in characterDictionary)
-            {
-                var character = k.Value;
-                b = character.patch_portraits_stream03(b);
-            }
-            return b;
-        }
 
         public static GameSet GameSetFromZipStream(Stream fileStream)
         {
