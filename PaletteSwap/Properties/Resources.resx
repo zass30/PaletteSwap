@@ -373,4 +373,1024 @@
   <data name="DIC_crusherback5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dictator\DIC_crusherback5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PORTRAIT_Blanka_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Blanka_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Blanka-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Boxer_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Boxer-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Cammy_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Cammy-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Chun_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Chun-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Claw_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Claw-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Deejay_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Deejay-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dhalsim_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dhalsim-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Dictator_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Dictator-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ehonda_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ehonda-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Feilong_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Feilong-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Gouki_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Gouki-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Guile_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Guile-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ken_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ken-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Ryu_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Ryu-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Sagat_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Sagat-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Thawk_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Thawk-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PORTRAIT_Zangief_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\PORTRAIT-Zangief-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Blanka_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Blanka-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Boxer_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Boxer-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Cammy_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Cammy-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Chun_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Chun-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Claw_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Claw-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Deejay_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Deejay-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dhalsim_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dhalsim-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Dictator_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Dictator-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ehonda_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ehonda-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Feilong_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Feilong-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Gouki_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Gouki-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Guile_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Guile-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ken_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ken-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Ryu_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Ryu-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Sagat_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Sagat-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Thawk_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Thawk-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-hk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_hold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-hold;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_hp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-hp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-lk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_lp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-lp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-mk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-mp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_old1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-old1;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_old2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-old2;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SPRITE_Zangief_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data\SPRITE-Zangief-start;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

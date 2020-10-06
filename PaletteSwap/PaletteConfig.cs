@@ -200,39 +200,16 @@ namespace PaletteSwap
 
         public static byte[] GetPortraitResourceFromRom(CHARACTERS character, BUTTONS button)
         {
-            int i = GetButtonIdFromButton(button);
-            var portrait2_offset = CharacterConfig.GetPortrait2BeginOffset(character);
-            var portrait_length = CharacterConfig.portraitColorLength;
-
-            byte[] portraits = Properties.Resources.sfxe03c;
-            byte[] portrait_bytes = new byte[portrait_length];
-
-            Array.Copy(portraits, portrait2_offset + i * portrait_length, portrait_bytes, 0, portrait_length);
-            string path = @"C:\temp\PORTRAIT-" + character.ToString() + "-" + button.ToString();
-            System.IO.File.WriteAllBytes(path, portrait_bytes);
-            return portrait_bytes;
+            string resource = "PORTRAIT_" + character.ToString() + "_" + button.ToString();
+            var value = (byte[]) Properties.Resources.ResourceManager.GetObject(resource, Properties.Resources.Culture);
+            return value;
         }
 
         public static byte[] GetSpriteResourceFromRom(CharacterConfig.CHARACTERS character, BUTTONS button)
         {
-            int i = GetButtonIdFromButton(button);
-            var sprite_offset = CharacterConfig.GetSpriteBeginOffset(character);
-            if (character == CharacterConfig.CHARACTERS.Blanka && button == BUTTONS.old2)
-                sprite_offset = sprite_offset + 0x02;
-            var sprite_length = CharacterConfig.spriteColorLength;
-            if (character == CharacterConfig.CHARACTERS.Blanka)
-                sprite_length = sprite_length - 0x02;
-
-            byte[] sprites = Properties.Resources.sfxe04a;
-
-            byte[] sprite_bytes = new byte[sprite_length];
-
-            Array.Copy(sprites, sprite_offset + i * sprite_length, sprite_bytes, 0, sprite_length);
-            byte[] final = new byte[sprite_length - 2];
-            Array.Copy(sprite_bytes, final, final.Length);
-            string path = @"C:\temp\SPRITE-" + character.ToString() + "-" + button.ToString();
-            System.IO.File.WriteAllBytes(path, final);
-            return final;
+            string resource = "SPRITE_" + character.ToString() + "_" + button.ToString();
+            var value = (byte[])Properties.Resources.ResourceManager.GetObject(resource);
+            return value;
         }
 
 
