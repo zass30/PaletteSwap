@@ -2136,7 +2136,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -2149,7 +2149,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2169,7 +2169,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -2177,7 +2177,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
@@ -2188,7 +2188,7 @@
             this.colorToolStripMenuItem,
             this.colorSetToolStripMenuItem2});
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // colorToolStripMenuItem
@@ -2208,7 +2208,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             this.toolStripSeparator1.Visible = false;
             // 
             // printToolStripMenuItem
@@ -2217,7 +2217,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Visible = false;
             // 
@@ -2226,26 +2226,26 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // patchRomToolStripMenuItem
             // 
             this.patchRomToolStripMenuItem.Name = "patchRomToolStripMenuItem";
-            this.patchRomToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchRomToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.patchRomToolStripMenuItem.Text = "Patch Rom...";
             this.patchRomToolStripMenuItem.Click += new System.EventHandler(this.patchRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -2373,7 +2373,7 @@
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
             this.toolsToolStripMenuItem.Text = "&Tools";
             this.toolsToolStripMenuItem.Visible = false;
             // 
@@ -2447,7 +2447,7 @@
             // extendedColorsToolStripMenuItem
             // 
             this.extendedColorsToolStripMenuItem.Name = "extendedColorsToolStripMenuItem";
-            this.extendedColorsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.extendedColorsToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.extendedColorsToolStripMenuItem.Text = "Extended Colors";
             this.extendedColorsToolStripMenuItem.Visible = false;
             this.extendedColorsToolStripMenuItem.Click += new System.EventHandler(this.extendedColorsToolStripMenuItem_Click);
@@ -2459,7 +2459,7 @@
             this.magentaToolStripMenuItem,
             this.cyanToolStripMenuItem});
             this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
-            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.backgroundToolStripMenuItem.Text = "Background";
             // 
             // blackToolStripMenuItem
@@ -9256,7 +9256,7 @@
             this.FEI_portraitVictoryBox.BackColor = System.Drawing.Color.Black;
             this.FEI_portraitVictoryBox.Location = new System.Drawing.Point(315, 26);
             this.FEI_portraitVictoryBox.Name = "FEI_portraitVictoryBox";
-            this.FEI_portraitVictoryBox.Size = new System.Drawing.Size(128, 112);
+            this.FEI_portraitVictoryBox.Size = new System.Drawing.Size(126, 111);
             this.FEI_portraitVictoryBox.TabIndex = 190;
             this.FEI_portraitVictoryBox.TabStop = false;
             this.FEI_portraitVictoryBox.Click += new System.EventHandler(this.zoom);
