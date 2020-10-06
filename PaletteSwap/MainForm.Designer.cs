@@ -10955,7 +10955,7 @@
             this.CAM_portraitLossBox.BackColor = System.Drawing.Color.Black;
             this.CAM_portraitLossBox.Location = new System.Drawing.Point(429, 25);
             this.CAM_portraitLossBox.Name = "CAM_portraitLossBox";
-            this.CAM_portraitLossBox.Size = new System.Drawing.Size(107, 113);
+            this.CAM_portraitLossBox.Size = new System.Drawing.Size(106, 113);
             this.CAM_portraitLossBox.TabIndex = 192;
             this.CAM_portraitLossBox.TabStop = false;
             this.CAM_portraitLossBox.Click += new System.EventHandler(this.zoom);
