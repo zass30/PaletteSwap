@@ -12047,7 +12047,7 @@
             this.BLA_portraitLossBox.BackColor = System.Drawing.Color.Black;
             this.BLA_portraitLossBox.Location = new System.Drawing.Point(453, 25);
             this.BLA_portraitLossBox.Name = "BLA_portraitLossBox";
-            this.BLA_portraitLossBox.Size = new System.Drawing.Size(128, 112);
+            this.BLA_portraitLossBox.Size = new System.Drawing.Size(125, 113);
             this.BLA_portraitLossBox.TabIndex = 191;
             this.BLA_portraitLossBox.TabStop = false;
             this.BLA_portraitLossBox.Click += new System.EventHandler(this.zoom);
