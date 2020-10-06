@@ -132,8 +132,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Resources\roms\sfxe.03c" />
-    <EmbeddedResource Include="Resources\roms\sfxe.04a" />
     <None Include="Resources\data\PORTRAIT-Blanka-hk" />
     <None Include="Resources\data\PORTRAIT-Blanka-hold" />
     <None Include="Resources\data\PORTRAIT-Blanka-hp" />
@@ -474,22 +472,6 @@
     <None Include="Resources\data\SPRITE-Zangief-old1" />
     <None Include="Resources\data\SPRITE-Zangief-old2" />
     <None Include="Resources\data\SPRITE-Zangief-start" />
-    <None Include="Resources\roms\new_legacy\sfxe.03c" />
-    <None Include="Resources\roms\new_legacy\sfxe.04a" />
-    <None Include="Resources\roms\new_legacy\v02\sfxe.03cv02" />
-    <None Include="Resources\roms\new_legacy\v02\sfxe.04av02" />
-    <None Include="Resources\roms\new_legacy\v02\sfxe03cNLv02.03c" />
-    <None Include="Resources\roms\new_legacy\v02\sfxe04aNLv02.04a" />
-    <None Include="Resources\roms\new_legacy\v02\sfxe04cNLv02.03c" />
-    <None Include="Resources\roms\new_legacy\v03\sfxe03cNLv03.03c" />
-    <None Include="Resources\roms\new_legacy\v03\sfxe04aNLv03.04a" />
-    <None Include="Resources\roms\sfxe.06a" />
-    <None Include="Resources\roms\sfxj.03c" />
-    <None Include="Resources\roms\sfxj.04a" />
-    <None Include="Resources\roms\sfxj.06a" />
-    <None Include="Resources\roms\sfxjd.04a" />
-    <None Include="Resources\roms\sfxjd.03c" />
-    <None Include="Resources\roms\sfxjd.06a" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -499,9 +481,6 @@
     <None Include="Resources\sagat\SAG_portraitloss8.png" />
     <None Include="Resources\hawk\THA_neutral2.png" />
     <None Include="Resources\hawk\THA_portraitlossX.png" />
-    <None Include="Resources\roms\sfxo.03c" />
-    <None Include="Resources\roms\sfxo.04a" />
-    <None Include="Resources\roms\sfxo.06a" />
     <None Include="Resources\sagat\SAG_portraitwin0.png" />
     <None Include="Resources\sagat\SAG_portraitloss0.png" />
     <None Include="Resources\sagat\SAG_neutral0.png" />
@@ -567,6 +546,9 @@
     <None Include="Resources\claw\CLA_neutral7.png" />
     <None Include="Resources\claw\CLA_portraitwin7.png" />
     <None Include="Resources\claw\CLA_portraitloss7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\roms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

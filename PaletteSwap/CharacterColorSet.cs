@@ -202,12 +202,12 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] portraits_stream03()
+       /* public byte[] portraits_stream03()
         {
             byte[] b = Resources.sfxe03c;
 
             return patch_portraits_stream03(b);
-        }
+        }*/
 
         public byte[] patch_sprites_stream04(byte[] b)
         {
@@ -283,11 +283,11 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] sprites_stream04()
+/*        public byte[] sprites_stream04()
         {
             byte[] b = Resources.sfxe04a;
             return patch_sprites_stream04(b);
-        }
+        }*/
     }
 
     public class GameSet
@@ -350,7 +350,7 @@ namespace PaletteSwap
             }
             return b;
         }
-
+        /*
         public byte[] sprites_stream04()
         {
             byte[] b = Resources.sfxe04a;
@@ -411,7 +411,7 @@ namespace PaletteSwap
             byte[] b = Resources.sfxo03c;
             return patch_portraits_stream03(b);
         }
-
+        */
 
         private byte[] PatchOldBisonPunchesStream(byte[] b)
         {
@@ -422,7 +422,8 @@ namespace PaletteSwap
             return b;
         }
 
-        public byte[] PatchOldBisonPunches06()
+        /*
+         * public byte[] PatchOldBisonPunches06()
         {
             byte[] b = Resources.sfxe06a;
             return PatchOldBisonPunchesStream(b);
@@ -444,7 +445,7 @@ namespace PaletteSwap
         {
             byte[] b = Resources.sfxo06a;
             return PatchOldBisonPunchesStream(b);
-        }
+        }*/
 
 
         public static GameSet GameSetFromZipStream(Stream fileStream)
@@ -471,7 +472,6 @@ namespace PaletteSwap
 
         public void PatchZippedRom(Stream fileStream, bool fixOldDictatorPunches)
         {
-
             using (var zip = new ZipArchive(fileStream, ZipArchiveMode.Update))
             {
                 foreach (var entry in zip.Entries)
