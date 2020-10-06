@@ -547,8 +547,6 @@
     <None Include="Resources\claw\CLA_portraitwin7.png" />
     <None Include="Resources\claw\CLA_portraitloss7.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\roms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
