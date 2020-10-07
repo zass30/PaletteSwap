@@ -584,7 +584,6 @@ namespace PaletteSwap
             pal_val_B.Text = Math.Max((b - 1), 0).ToString();
         }
 
-        // todo fix this for new col format
         private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Displays a SaveFileDialog so the user can save the Image
@@ -626,12 +625,8 @@ namespace PaletteSwap
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            var version2 = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
-           
-
-            //string version = System.Windows.Forms.Application.ProductVersion;
-            var t = String.Format("Palette Swapper Version {0}", version2);
-
+            var version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;          
+            var t = String.Format("Palette Swapper Version {0}", version);
             MessageBox.Show(t + "\nby Zass");
         }
 
