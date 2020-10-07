@@ -91,7 +91,6 @@
     <Compile Include="PaletteTest.cs" />
     <Compile Include="PaletteImageTest.cs" />
     <Compile Include="CharacterTest.cs" />
-    <Compile Include="GameSetTest.cs" />
     <Compile Include="ConfigTest.cs" />
   </ItemGroup>
   <ItemGroup>

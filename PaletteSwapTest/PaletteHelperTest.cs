@@ -240,17 +240,6 @@ namespace PaletteSwapTest
             Assert.AreEqual(b[5], 0x34);
             Assert.AreEqual(b[6], 0x56);
             Assert.AreEqual(b[7], 0x78);
-
-
-            byte[] r1 = PaletteSwap.Properties.Resources.sfxe04a;
-            byte[] r2 = PaletteSwap.Properties.Resources.sfxe04a;
-
-            r1[0x448B0] = 0x55;
-           r1[0x448B1] = 0x05;
-
-            PaletteHelper.patch_memory(r2, 0x448B0, "5505");
-
-            CollectionAssert.AreEqual(r1, r2);
         }
     }
 }

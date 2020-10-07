@@ -659,44 +659,17 @@ namespace PaletteSwap
                         resetCurrentCharacterColorFromDropDown();
                         reload_everything();
                         fileStream.Close();
-                   }
-                    catch (Exception ex){
+                    }
+                    catch (Exception ex)
+                    {
                         MessageBox.Show(ex.Message);
                     }
                 }
             }
         }
-        /*
-        private void savePatchedRomToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            savePatchedRom(sender, e, ROMSTYLE.us);
-        }
-
-        private void savePhoenixRomToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            savePatchedRom(sender, e, ROMSTYLE.phoenix);
-        }
-
-        private void saveJapaneseRomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            savePatchedRom(sender, e, ROMSTYLE.japanese);
-        }
-
-        private void newLegacyROMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            savePatchedRom(sender, e, ROMSTYLE.newlegacy);
-        }
 
 
-        private void redggpoROMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            savePatchedRom(sender, e, ROMSTYLE.redggpo);
-        }
-        private void romToolStripMenuItem1_Click(object sender, EventArgs e)
-        { 
-        
-        }*/
-            private void patchRomToolStripMenuItem_Click(object sender, EventArgs e)
+        private void patchRomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
             var filePath = string.Empty;
@@ -733,114 +706,6 @@ namespace PaletteSwap
             c.Reload();
             c.Show();
         }
-        /*
-        private void savePatchedRom(object sender, EventArgs e, ROMSTYLE r)
-        {
-            if (DISABLE_PATCHING == true)
-                return;
-            // Displays a SaveFileDialog so the user can save the Image
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-            saveFileDialog1.Title = "Save a rom";
-            saveFileDialog1.ShowDialog();
-
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
-            {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                using (System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile())
-                {
-                    using (var archive = new ZipArchive(fs, ZipArchiveMode.Create, true))
-                    {
-                        string _03filename;
-                        string _04filename;
-                        string _06filename;
-
-                        byte[] p_stream;
-                        byte[] s_stream;
-                        byte[] oldbisonpunches_stream;
-
-                        switch (r)
-                        {
-                            case ROMSTYLE.japanese:
-                                _03filename = "sfxj.03c";
-                                _04filename = "sfxj.04a";
-                                _06filename = "sfxj.06a";
-
-                                p_stream = gameSet.portraits_stream03japanese();
-                                s_stream = gameSet.sprites_stream04japanese();
-                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06japanese();
-                                break;
-                            case ROMSTYLE.redggpo:
-                                _03filename = "sfxo.03c";
-                                _04filename = "sfxo.04a";
-                                _06filename = "sfxo.06a";
-
-                                p_stream = gameSet.portraits_stream03japanese();
-                                s_stream = gameSet.sprites_stream04japanese();
-                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06japanese();
-                                break;
-                            case ROMSTYLE.phoenix:
-                                _03filename = "sfxjd.03c";
-                                _04filename = "sfxjd.04a";
-                                _06filename = "sfxjd.06a";
-
-                                p_stream = gameSet.portraits_stream03phoenix();
-                                s_stream = gameSet.sprites_stream04phoenix();
-                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06phoenix();
-                                break;
-                            case ROMSTYLE.newlegacy:
-                                _03filename = "sfxe.03c";
-                                _04filename = "sfxe.04a";
-                                _06filename = "sfxe.06a";
-
-                                p_stream = gameSet.portraits_stream03newlegacy();
-                                s_stream = gameSet.sprites_stream04newlegacy();
-                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06();
-                                break;
-                            default:
-                            case ROMSTYLE.us:
-                                _03filename = "sfxe.03c";
-                                _04filename = "sfxe.04a";
-                                _06filename = "sfxe.06a";
-
-                                p_stream = gameSet.portraits_stream03();
-                                s_stream = gameSet.sprites_stream04();
-                                oldbisonpunches_stream = gameSet.PatchOldBisonPunches06();
-                                break;
-                        }
-
-                        var _03file = archive.CreateEntry(_03filename);
-                        using (var entryStream = _03file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(p_stream, 0, p_stream.Length);
-                        }
-
-                        var _04file = archive.CreateEntry(_04filename);
-                        using (var entryStream = _04file.Open())
-                        using (var streamWriter = new StreamWriter(entryStream))
-                        {
-                            var c = entryStream.CanSeek;
-                            entryStream.Write(s_stream, 0, s_stream.Length);
-                        }
-
-                        if (r != ROMSTYLE.newlegacy)
-                        {
-                            var _06file = archive.CreateEntry(_06filename);
-                            using (var entryStream = _06file.Open())
-                            using (var streamWriter = new StreamWriter(entryStream))
-                            {
-                                var c = entryStream.CanSeek;
-                                entryStream.Write(oldbisonpunches_stream, 0, oldbisonpunches_stream.Length);
-                            }
-                        }
-                    }
-                }
-            }
-        }*/
 
         private void ChangeIndexToCharacter(CharacterConfig.CHARACTERS character)
         {
