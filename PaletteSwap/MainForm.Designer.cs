@@ -8745,6 +8745,7 @@
             // 
             // TabPageFei
             // 
+            this.TabPageFei.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageFei.Controls.Add(this.label110);
             this.TabPageFei.Controls.Add(this.label113);
             this.TabPageFei.Controls.Add(this.label115);
@@ -8794,7 +8795,6 @@
             this.TabPageFei.Size = new System.Drawing.Size(597, 559);
             this.TabPageFei.TabIndex = 10;
             this.TabPageFei.Text = "Fei";
-            this.TabPageFei.UseVisualStyleBackColor = true;
             // 
             // label110
             // 
@@ -9263,6 +9263,7 @@
             // 
             // TabPageDeejay
             // 
+            this.TabPageDeejay.BackColor = System.Drawing.SystemColors.Control;
             this.TabPageDeejay.Controls.Add(this.DEE_portrait_blood4);
             this.TabPageDeejay.Controls.Add(this.DEE_portrait_teeth4);
             this.TabPageDeejay.Controls.Add(this.DEE_portrait_skin7);
@@ -9311,7 +9312,6 @@
             this.TabPageDeejay.Size = new System.Drawing.Size(597, 559);
             this.TabPageDeejay.TabIndex = 11;
             this.TabPageDeejay.Text = "Deejay";
-            this.TabPageDeejay.UseVisualStyleBackColor = true;
             // 
             // DEE_portrait_blood4
             // 
