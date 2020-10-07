@@ -4,7 +4,8 @@
 https://github.com/zass30/PaletteSwap/releases/download/1.0/PaletteSwap.exe
 
 ## Dependencies
-.NET 4.8 https://dotnet.microsoft.com/download/dotnet-framework/net48
+### .NET 4.8
+https://dotnet.microsoft.com/download/dotnet-framework/net48
 
 ## Instructions
 https://www.youtube.com/watch?v=nqUb7IVuZ58
