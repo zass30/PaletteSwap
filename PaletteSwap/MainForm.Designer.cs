@@ -2136,7 +2136,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(162, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Visible = false;
             // 
@@ -2149,7 +2149,7 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(162, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // rOMToolStripMenuItem
@@ -2162,8 +2162,8 @@
             // colorSetToolStripMenuItem1
             // 
             this.colorSetToolStripMenuItem1.Name = "colorSetToolStripMenuItem1";
-            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
-            this.colorSetToolStripMenuItem1.Text = "ColorSet";
+            this.colorSetToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.colorSetToolStripMenuItem1.Text = "Color Set";
             this.colorSetToolStripMenuItem1.Click += new System.EventHandler(this.colorSetToolStripMenuItem1_Click);
             // 
             // toolStripSeparator
@@ -2238,8 +2238,8 @@
             // patchRomToolStripMenuItem
             // 
             this.patchRomToolStripMenuItem.Name = "patchRomToolStripMenuItem";
-            this.patchRomToolStripMenuItem.Size = new System.Drawing.Size(162, 38);
-            this.patchRomToolStripMenuItem.Text = "Patch Rom...";
+            this.patchRomToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.patchRomToolStripMenuItem.Text = "Patch ROM...";
             this.patchRomToolStripMenuItem.Click += new System.EventHandler(this.patchRomToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
