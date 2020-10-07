@@ -669,15 +669,15 @@ namespace PaletteSwap
             var fileContent = string.Empty;
             var filePath = string.Empty;
 
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                openFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
-                openFileDialog.RestoreDirectory = true;
+                saveFileDialog.Filter = "zip files (*.zip)|*.zip|All files (*.*)|*.*";
+                saveFileDialog.RestoreDirectory = true;
 
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file
-                    filePath = openFileDialog.FileName;
+                    filePath = saveFileDialog.FileName;
 
                     try
                     {
