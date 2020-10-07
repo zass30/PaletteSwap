@@ -632,7 +632,7 @@ namespace PaletteSwap
             //string version = System.Windows.Forms.Application.ProductVersion;
             var t = String.Format("Palette Swapper Version {0}", version2);
 
-            MessageBox.Show(t + "\nby Zass, 2020");
+            MessageBox.Show(t + "\nby Zass");
         }
 
         private void openROMToolStripMenuItem_Click(object sender, EventArgs e)
