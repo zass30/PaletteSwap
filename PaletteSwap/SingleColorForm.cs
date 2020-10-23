@@ -40,7 +40,6 @@ namespace PaletteSwap
         {
             if (e.KeyCode == Keys.C && e.Modifiers == Keys.Control)
             {
-
                 Bitmap bmp = new Bitmap(singleColorBox.BackgroundImage);
                 Clipboard.SetData(System.Windows.Forms.DataFormats.Bitmap, bmp);
             }

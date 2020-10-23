@@ -79,6 +79,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.singleColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1032,7 +1033,6 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.incrementColorsButton = new System.Windows.Forms.Button();
             this.decrementColorsButton = new System.Windows.Forms.Button();
-            this.singleColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
@@ -2195,14 +2195,14 @@
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.colorToolStripMenuItem.Text = "Single Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // colorSetToolStripMenuItem2
             // 
             this.colorSetToolStripMenuItem2.Name = "colorSetToolStripMenuItem2";
-            this.colorSetToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.colorSetToolStripMenuItem2.Size = new System.Drawing.Size(138, 22);
             this.colorSetToolStripMenuItem2.Text = "Color Set";
             this.colorSetToolStripMenuItem2.Click += new System.EventHandler(this.saveGameColorSetAsToolStripMenuItem_Click);
             // 
@@ -2265,6 +2265,13 @@
             this.colorSetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorSetToolStripMenuItem.Text = "Color Set";
             this.colorSetToolStripMenuItem.Click += new System.EventHandler(this.colorSetToolStripMenuItem_Click);
+            // 
+            // singleColorToolStripMenuItem
+            // 
+            this.singleColorToolStripMenuItem.Name = "singleColorToolStripMenuItem";
+            this.singleColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.singleColorToolStripMenuItem.Text = "Single Color";
+            this.singleColorToolStripMenuItem.Click += new System.EventHandler(this.singleColorToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -9836,7 +9843,7 @@
             // DHA_portrait_blood3
             // 
             this.DHA_portrait_blood3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_blood3.Location = new System.Drawing.Point(402, 359);
+            this.DHA_portrait_blood3.Location = new System.Drawing.Point(402, 329);
             this.DHA_portrait_blood3.Name = "DHA_portrait_blood3";
             this.DHA_portrait_blood3.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_blood3.TabIndex = 455;
@@ -9847,7 +9854,7 @@
             // label133
             // 
             this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(301, 370);
+            this.label133.Location = new System.Drawing.Point(301, 340);
             this.label133.Name = "label133";
             this.label133.Size = new System.Drawing.Size(33, 13);
             this.label133.TabIndex = 454;
@@ -9856,7 +9863,7 @@
             // label132
             // 
             this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(301, 309);
+            this.label132.Location = new System.Drawing.Point(301, 279);
             this.label132.Name = "label132";
             this.label132.Size = new System.Drawing.Size(30, 13);
             this.label132.TabIndex = 451;
@@ -9883,7 +9890,7 @@
             // label120
             // 
             this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(301, 340);
+            this.label120.Location = new System.Drawing.Point(301, 310);
             this.label120.Name = "label120";
             this.label120.Size = new System.Drawing.Size(35, 13);
             this.label120.TabIndex = 442;
@@ -9892,7 +9899,7 @@
             // label123
             // 
             this.label123.AutoSize = true;
-            this.label123.Location = new System.Drawing.Point(289, 280);
+            this.label123.Location = new System.Drawing.Point(289, 250);
             this.label123.Name = "label123";
             this.label123.Size = new System.Drawing.Size(47, 13);
             this.label123.TabIndex = 439;
@@ -9901,7 +9908,7 @@
             // label126
             // 
             this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(289, 250);
+            this.label126.Location = new System.Drawing.Point(289, 220);
             this.label126.Name = "label126";
             this.label126.Size = new System.Drawing.Size(51, 13);
             this.label126.TabIndex = 434;
@@ -9937,7 +9944,7 @@
             // DHA_portrait_blood2
             // 
             this.DHA_portrait_blood2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_blood2.Location = new System.Drawing.Point(372, 359);
+            this.DHA_portrait_blood2.Location = new System.Drawing.Point(372, 329);
             this.DHA_portrait_blood2.Name = "DHA_portrait_blood2";
             this.DHA_portrait_blood2.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_blood2.TabIndex = 453;
@@ -9948,7 +9955,7 @@
             // DHA_portrait_blood1
             // 
             this.DHA_portrait_blood1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_blood1.Location = new System.Drawing.Point(342, 359);
+            this.DHA_portrait_blood1.Location = new System.Drawing.Point(342, 329);
             this.DHA_portrait_blood1.Name = "DHA_portrait_blood1";
             this.DHA_portrait_blood1.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_blood1.TabIndex = 452;
@@ -9959,7 +9966,7 @@
             // DHA_portrait_paint3
             // 
             this.DHA_portrait_paint3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_paint3.Location = new System.Drawing.Point(402, 299);
+            this.DHA_portrait_paint3.Location = new System.Drawing.Point(402, 269);
             this.DHA_portrait_paint3.Name = "DHA_portrait_paint3";
             this.DHA_portrait_paint3.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_paint3.TabIndex = 450;
@@ -9970,7 +9977,7 @@
             // DHA_portrait_paint2
             // 
             this.DHA_portrait_paint2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_paint2.Location = new System.Drawing.Point(372, 299);
+            this.DHA_portrait_paint2.Location = new System.Drawing.Point(372, 269);
             this.DHA_portrait_paint2.Name = "DHA_portrait_paint2";
             this.DHA_portrait_paint2.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_paint2.TabIndex = 449;
@@ -9981,7 +9988,7 @@
             // DHA_portrait_necklace5
             // 
             this.DHA_portrait_necklace5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_necklace5.Location = new System.Drawing.Point(462, 239);
+            this.DHA_portrait_necklace5.Location = new System.Drawing.Point(462, 209);
             this.DHA_portrait_necklace5.Name = "DHA_portrait_necklace5";
             this.DHA_portrait_necklace5.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_necklace5.TabIndex = 448;
@@ -9992,7 +9999,7 @@
             // DHA_portrait_skin7
             // 
             this.DHA_portrait_skin7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_skin7.Location = new System.Drawing.Point(402, 209);
+            this.DHA_portrait_skin7.Location = new System.Drawing.Point(522, 179);
             this.DHA_portrait_skin7.Name = "DHA_portrait_skin7";
             this.DHA_portrait_skin7.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_skin7.TabIndex = 445;
@@ -10003,7 +10010,7 @@
             // DHA_portrait_skin6
             // 
             this.DHA_portrait_skin6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_skin6.Location = new System.Drawing.Point(372, 209);
+            this.DHA_portrait_skin6.Location = new System.Drawing.Point(492, 179);
             this.DHA_portrait_skin6.Name = "DHA_portrait_skin6";
             this.DHA_portrait_skin6.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_skin6.TabIndex = 444;
@@ -10014,7 +10021,7 @@
             // DHA_portrait_skin5
             // 
             this.DHA_portrait_skin5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_skin5.Location = new System.Drawing.Point(342, 209);
+            this.DHA_portrait_skin5.Location = new System.Drawing.Point(462, 179);
             this.DHA_portrait_skin5.Name = "DHA_portrait_skin5";
             this.DHA_portrait_skin5.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_skin5.TabIndex = 443;
@@ -10025,7 +10032,7 @@
             // DHA_portrait_bruise2
             // 
             this.DHA_portrait_bruise2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_bruise2.Location = new System.Drawing.Point(372, 329);
+            this.DHA_portrait_bruise2.Location = new System.Drawing.Point(372, 299);
             this.DHA_portrait_bruise2.Name = "DHA_portrait_bruise2";
             this.DHA_portrait_bruise2.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_bruise2.TabIndex = 441;
@@ -10036,7 +10043,7 @@
             // DHA_portrait_bruise1
             // 
             this.DHA_portrait_bruise1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_bruise1.Location = new System.Drawing.Point(342, 329);
+            this.DHA_portrait_bruise1.Location = new System.Drawing.Point(342, 299);
             this.DHA_portrait_bruise1.Name = "DHA_portrait_bruise1";
             this.DHA_portrait_bruise1.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_bruise1.TabIndex = 440;
@@ -10047,7 +10054,7 @@
             // DHA_portrait_costume3
             // 
             this.DHA_portrait_costume3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_costume3.Location = new System.Drawing.Point(402, 269);
+            this.DHA_portrait_costume3.Location = new System.Drawing.Point(402, 239);
             this.DHA_portrait_costume3.Name = "DHA_portrait_costume3";
             this.DHA_portrait_costume3.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_costume3.TabIndex = 438;
@@ -10058,7 +10065,7 @@
             // DHA_portrait_costume2
             // 
             this.DHA_portrait_costume2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_costume2.Location = new System.Drawing.Point(372, 269);
+            this.DHA_portrait_costume2.Location = new System.Drawing.Point(372, 239);
             this.DHA_portrait_costume2.Name = "DHA_portrait_costume2";
             this.DHA_portrait_costume2.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_costume2.TabIndex = 437;
@@ -10069,7 +10076,7 @@
             // DHA_portrait_costume1
             // 
             this.DHA_portrait_costume1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_costume1.Location = new System.Drawing.Point(342, 269);
+            this.DHA_portrait_costume1.Location = new System.Drawing.Point(342, 239);
             this.DHA_portrait_costume1.Name = "DHA_portrait_costume1";
             this.DHA_portrait_costume1.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_costume1.TabIndex = 436;
@@ -10080,7 +10087,7 @@
             // DHA_portrait_paint1
             // 
             this.DHA_portrait_paint1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_paint1.Location = new System.Drawing.Point(342, 299);
+            this.DHA_portrait_paint1.Location = new System.Drawing.Point(342, 269);
             this.DHA_portrait_paint1.Name = "DHA_portrait_paint1";
             this.DHA_portrait_paint1.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_paint1.TabIndex = 435;
@@ -10091,7 +10098,7 @@
             // DHA_portrait_necklace4
             // 
             this.DHA_portrait_necklace4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_necklace4.Location = new System.Drawing.Point(432, 239);
+            this.DHA_portrait_necklace4.Location = new System.Drawing.Point(432, 209);
             this.DHA_portrait_necklace4.Name = "DHA_portrait_necklace4";
             this.DHA_portrait_necklace4.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_necklace4.TabIndex = 433;
@@ -10102,7 +10109,7 @@
             // DHA_portrait_necklace3
             // 
             this.DHA_portrait_necklace3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_necklace3.Location = new System.Drawing.Point(402, 239);
+            this.DHA_portrait_necklace3.Location = new System.Drawing.Point(402, 209);
             this.DHA_portrait_necklace3.Name = "DHA_portrait_necklace3";
             this.DHA_portrait_necklace3.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_necklace3.TabIndex = 432;
@@ -10113,7 +10120,7 @@
             // DHA_portrait_necklace2
             // 
             this.DHA_portrait_necklace2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_necklace2.Location = new System.Drawing.Point(372, 239);
+            this.DHA_portrait_necklace2.Location = new System.Drawing.Point(372, 209);
             this.DHA_portrait_necklace2.Name = "DHA_portrait_necklace2";
             this.DHA_portrait_necklace2.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_necklace2.TabIndex = 431;
@@ -10124,7 +10131,7 @@
             // DHA_portrait_necklace1
             // 
             this.DHA_portrait_necklace1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DHA_portrait_necklace1.Location = new System.Drawing.Point(342, 239);
+            this.DHA_portrait_necklace1.Location = new System.Drawing.Point(342, 209);
             this.DHA_portrait_necklace1.Name = "DHA_portrait_necklace1";
             this.DHA_portrait_necklace1.Size = new System.Drawing.Size(24, 24);
             this.DHA_portrait_necklace1.TabIndex = 430;
@@ -13190,13 +13197,6 @@
             this.decrementColorsButton.Text = "-1";
             this.decrementColorsButton.UseVisualStyleBackColor = true;
             this.decrementColorsButton.Click += new System.EventHandler(this.decrementColorsButton_Click);
-            // 
-            // singleColorToolStripMenuItem
-            // 
-            this.singleColorToolStripMenuItem.Name = "singleColorToolStripMenuItem";
-            this.singleColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.singleColorToolStripMenuItem.Text = "Single Color";
-            this.singleColorToolStripMenuItem.Click += new System.EventHandler(this.singleColorToolStripMenuItem_Click);
             // 
             // MainForm
             // 
