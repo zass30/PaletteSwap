@@ -47,8 +47,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 174);
             this.Controls.Add(this.singleColorBox);
+            this.KeyPreview = true;
             this.Name = "SingleColorForm";
             this.Text = "SingleColorForm";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SingleColorForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.singleColorBox)).EndInit();
             this.ResumeLayout(false);
 
