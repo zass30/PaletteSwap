@@ -35,17 +35,7 @@ namespace PaletteSwap
             combinedKeyBox.Height = combinedKey.Height;
             combinedKeyBox.Width = combinedKey.Width;
             combinedKeyBox.BackgroundImage = combinedKey;
-            //            int maxwidth = Math.Max(neutralKey.Width, victoryKey.Width);
-            /*            spriteKeyBox.BackgroundImageLayout = ImageLayout.None;
-                        spriteKeyBox.Height = neutralKey.Height;
-                        spriteKeyBox.Width = maxwidth;
-                        spriteKeyBox.BackgroundImage = neutralKey;
-            */
-            /*        portraitKeyBox.BackgroundImageLayout = ImageLayout.None;
-                    portraitKeyBox.Height = victoryKey.Height + neutralKey.Height;
-                    portraitKeyBox.Width = maxwidth;
-                    portraitKeyBox.BackgroundImage = victoryKey;
-            */
+
             setBackColor();
         }
 

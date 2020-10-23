@@ -74,15 +74,18 @@ namespace PaletteSwap
         public Bitmap GenerateColorSetKey()
         {
             Bitmap portraits = GeneratePortraitKey();
-            Bitmap sprites = GenerateSpriteKey();
+            Bitmap sprites;
+            if (character == CharacterConfig.CHARACTERS.Dictator)
+                sprites = this.GenerateKey("psychopunch");
+            else 
+                sprites = GenerateSpriteKey();
+            int buffer = 10;
             int w = Math.Max(portraits.Width, sprites.Width);
-            int h = portraits.Height + sprites.Height;
+            int h = portraits.Height + sprites.Height + buffer;
             Bitmap b = new Bitmap(w, h);
             Graphics gfb = Graphics.FromImage(b);
             gfb.DrawImage(portraits, new Point(0, 0));
-            gfb.DrawImage(sprites, new Point(0, portraits.Height));
-
-
+            gfb.DrawImage(sprites, new Point(0, portraits.Height + buffer));
             return b;
         }
 
