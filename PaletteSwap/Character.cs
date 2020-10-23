@@ -109,8 +109,11 @@ namespace PaletteSwap
             else
                 n = this.GetBitmap("psychopunch");
             var v = this.GetBitmap("victory");
-            var l = this.GetBitmap("loss");
-
+            Bitmap l;
+            if (this.characterType != CharacterConfig.CHARACTERS.Gouki)
+                l = this.GetBitmap("loss");
+            else
+                l = new Bitmap(1, 1);
             int buffer = 10;
             var w = n.Width + buffer + v.Width + buffer + l.Width;
             var h = Math.Max(n.Height, Math.Max(v.Height, l.Height));
