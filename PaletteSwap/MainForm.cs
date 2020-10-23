@@ -1003,6 +1003,9 @@ namespace PaletteSwap
 
             if (c != null)
                 c.setBackColor();
+
+            if (s != null)
+                s.setBackColor();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

@@ -29,11 +29,17 @@ namespace PaletteSwap
             singleColorBox.Width = b.Width;
             singleColorBox.BackgroundImage = b;
 
+            setBackColor();
         }
 
         public SingleColorForm()
         {
             InitializeComponent();
+        }
+
+        public void setBackColor()
+        {
+            singleColorBox.BackColor = mainform.backgroundcolor;
         }
 
         private void SingleColorForm_KeyDown(object sender, KeyEventArgs e)
