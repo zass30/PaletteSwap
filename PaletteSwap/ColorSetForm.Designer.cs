@@ -28,47 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.portraitKeyBox = new System.Windows.Forms.PictureBox();
-            this.spriteKeyBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.portraitKeyBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spriteKeyBox)).BeginInit();
+            this.combinedKeyBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.combinedKeyBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // portraitKeyBox
+            // combinedKeyBox
             // 
-            this.portraitKeyBox.BackColor = System.Drawing.Color.Black;
-            this.portraitKeyBox.Location = new System.Drawing.Point(24, 17);
-            this.portraitKeyBox.Name = "portraitKeyBox";
-            this.portraitKeyBox.Size = new System.Drawing.Size(88, 234);
-            this.portraitKeyBox.TabIndex = 227;
-            this.portraitKeyBox.TabStop = false;
-            // 
-            // spriteKeyBox
-            // 
-            this.spriteKeyBox.BackColor = System.Drawing.Color.Black;
-            this.spriteKeyBox.Location = new System.Drawing.Point(24, 257);
-            this.spriteKeyBox.Name = "spriteKeyBox";
-            this.spriteKeyBox.Size = new System.Drawing.Size(45, 45);
-            this.spriteKeyBox.TabIndex = 228;
-            this.spriteKeyBox.TabStop = false;
+            this.combinedKeyBox.BackColor = System.Drawing.Color.Black;
+            this.combinedKeyBox.Location = new System.Drawing.Point(24, 17);
+            this.combinedKeyBox.Name = "combinedKeyBox";
+            this.combinedKeyBox.Size = new System.Drawing.Size(88, 234);
+            this.combinedKeyBox.TabIndex = 227;
+            this.combinedKeyBox.TabStop = false;
             // 
             // ColorSetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 537);
-            this.Controls.Add(this.spriteKeyBox);
-            this.Controls.Add(this.portraitKeyBox);
+            this.Controls.Add(this.combinedKeyBox);
+            this.KeyPreview = true;
             this.Name = "ColorSetForm";
             this.Text = "ColorSetForm";
-            ((System.ComponentModel.ISupportInitialize)(this.portraitKeyBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spriteKeyBox)).EndInit();
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ColorSetForm_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.combinedKeyBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox portraitKeyBox;
-        private System.Windows.Forms.PictureBox spriteKeyBox;
+        private System.Windows.Forms.PictureBox combinedKeyBox;
     }
 }

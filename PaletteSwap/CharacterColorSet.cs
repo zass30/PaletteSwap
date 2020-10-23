@@ -4,6 +4,7 @@ using System.IO.Compression;
 using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 
 namespace PaletteSwap
 {
@@ -66,6 +67,21 @@ namespace PaletteSwap
             gfb.DrawImage(characterColors[7].GetBitmap(s), new Point(sample.Width * 3 + 3 * buffer, sample.Height + buffer));
             gfb.DrawImage(characterColors[8].GetBitmap(s), new Point(sample.Width * 4 + 4 * buffer, 0));
             gfb.DrawImage(characterColors[9].GetBitmap(s), new Point(sample.Width * 4 + 4 * buffer, sample.Height + buffer));
+
+            return b;
+        }
+
+        public Bitmap GenerateColorSetKey()
+        {
+            Bitmap portraits = GeneratePortraitKey();
+            Bitmap sprites = GenerateSpriteKey();
+            int w = Math.Max(portraits.Width, sprites.Width);
+            int h = portraits.Height + sprites.Height;
+            Bitmap b = new Bitmap(w, h);
+            Graphics gfb = Graphics.FromImage(b);
+            gfb.DrawImage(portraits, new Point(0, 0));
+            gfb.DrawImage(sprites, new Point(0, portraits.Height));
+
 
             return b;
         }

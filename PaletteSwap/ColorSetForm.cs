@@ -24,25 +24,43 @@ namespace PaletteSwap
         public void Reload()
         {
             var neutralKey = mainform.gameSet.characterDictionary[mainform.currentCharacterType].GenerateSpriteKey();
+            var victoryKey = mainform.gameSet.characterDictionary[mainform.currentCharacterType].GeneratePortraitKey();
             if (mainform.currentCharacterType == CharacterConfig.CHARACTERS.Dictator)
             {
                 neutralKey = mainform.gameSet.characterDictionary[mainform.currentCharacterType].GenerateKey("psychopunch");
             }
-            spriteKeyBox.Height = neutralKey.Height;
-            spriteKeyBox.Width = neutralKey.Width;
-            spriteKeyBox.BackgroundImage = neutralKey;
 
-            var victoryKey = mainform.gameSet.characterDictionary[mainform.currentCharacterType].GeneratePortraitKey();
-            portraitKeyBox.Height = victoryKey.Height;
-            portraitKeyBox.Width = victoryKey.Width;
-            portraitKeyBox.BackgroundImage = victoryKey;
+            var combinedKey = mainform.gameSet.characterDictionary[mainform.currentCharacterType].GenerateColorSetKey();
+            combinedKeyBox.BackgroundImageLayout = ImageLayout.None;
+            combinedKeyBox.Height = combinedKey.Height;
+            combinedKeyBox.Width = combinedKey.Width;
+            combinedKeyBox.BackgroundImage = combinedKey;
+            //            int maxwidth = Math.Max(neutralKey.Width, victoryKey.Width);
+            /*            spriteKeyBox.BackgroundImageLayout = ImageLayout.None;
+                        spriteKeyBox.Height = neutralKey.Height;
+                        spriteKeyBox.Width = maxwidth;
+                        spriteKeyBox.BackgroundImage = neutralKey;
+            */
+            /*        portraitKeyBox.BackgroundImageLayout = ImageLayout.None;
+                    portraitKeyBox.Height = victoryKey.Height + neutralKey.Height;
+                    portraitKeyBox.Width = maxwidth;
+                    portraitKeyBox.BackgroundImage = victoryKey;
+            */
             setBackColor();
         }
 
         public void setBackColor()
         {
-            portraitKeyBox.BackColor = mainform.backgroundcolor;
-            spriteKeyBox.BackColor = mainform.backgroundcolor;
+            combinedKeyBox.BackColor = mainform.backgroundcolor;
+        }
+
+        private void ColorSetForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.C && e.Modifiers == Keys.Control)
+            {
+                Bitmap bmp = new Bitmap(combinedKeyBox.BackgroundImage);
+                Clipboard.SetData(System.Windows.Forms.DataFormats.Bitmap, bmp);
+            }
         }
     }
 }
