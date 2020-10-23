@@ -101,6 +101,22 @@ namespace PaletteSwap
             throw new Exception("invalid bitmap");
         }
 
+        public Bitmap GetPreviewBitmap()
+        {
+            var n = this.GetBitmap("neutral");
+            var v = this.GetBitmap("victory");
+            var l = this.GetBitmap("loss");
+            int buffer = 10;
+            var w = n.Width + buffer + v.Width + buffer + l.Width;
+            var h = Math.Max(n.Height, Math.Max(v.Height, l.Height));
+            Bitmap b = new Bitmap(w, h);
+            Graphics gfb = Graphics.FromImage(b);
+            gfb.DrawImage(n, new Point(0, h - n.Height));
+            gfb.DrawImage(v, new Point(n.Width + buffer, 0));
+            gfb.DrawImage(l, new Point(n.Width + buffer + v.Width + buffer, 0));
+            return b;
+        }
+
         private static void AssignImage(Palette palette, PaletteImage paletteImage, string label)
         {
             paletteImage.palette = palette;

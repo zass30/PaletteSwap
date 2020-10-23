@@ -13,6 +13,7 @@ namespace PaletteSwap
     {
         ZoomForm z;
         ColorSetForm c;
+        SingleColorForm s;
         bool fixDicatorOldPunches = true;
         public Color backgroundcolor = Color.Black;
         public string currentlyZoomedLabel;
@@ -64,6 +65,7 @@ namespace PaletteSwap
         {
             z = new ZoomForm(this);
             c = new ColorSetForm(this);
+            s = new SingleColorForm(this);
         }
 
         private void EnableDragAndDrop()
@@ -1011,6 +1013,16 @@ namespace PaletteSwap
         private void dictatorOldPunchesCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             fixDicatorOldPunches = !fixDicatorOldPunches;
+        }
+
+        private void singleColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+                if (s.IsDisposed)
+                    s = new SingleColorForm(this);
+                s.Reload();
+                s.Show();
+
         }
     }
 }

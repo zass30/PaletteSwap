@@ -94,6 +94,12 @@
     <Compile Include="Palette.cs" />
     <Compile Include="PaletteConfig.cs" />
     <Compile Include="PaletteImage.cs" />
+    <Compile Include="SingleColorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleColorForm.Designer.cs">
+      <DependentUpon>SingleColorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZoomForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleColorForm.resx">
+      <DependentUpon>SingleColorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ZoomForm.resx">
       <DependentUpon>ZoomForm.cs</DependentUpon>
