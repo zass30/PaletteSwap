@@ -103,9 +103,14 @@ namespace PaletteSwap
 
         public Bitmap GetPreviewBitmap()
         {
-            var n = this.GetBitmap("neutral");
+            Bitmap n;
+            if (this.characterType != CharacterConfig.CHARACTERS.Dictator)
+                n = this.GetBitmap("neutral");
+            else
+                n = this.GetBitmap("psychopunch");
             var v = this.GetBitmap("victory");
             var l = this.GetBitmap("loss");
+
             int buffer = 10;
             var w = n.Width + buffer + v.Width + buffer + l.Width;
             var h = Math.Max(n.Height, Math.Max(v.Height, l.Height));
