@@ -35,22 +35,22 @@
             // zoomBox
             // 
             this.zoomBox.BackColor = System.Drawing.Color.Black;
-            this.zoomBox.Location = new System.Drawing.Point(24, 23);
-            this.zoomBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.zoomBox.Location = new System.Drawing.Point(12, 12);
             this.zoomBox.Name = "zoomBox";
-            this.zoomBox.Size = new System.Drawing.Size(786, 665);
+            this.zoomBox.Size = new System.Drawing.Size(393, 346);
             this.zoomBox.TabIndex = 0;
             this.zoomBox.TabStop = false;
             // 
             // ZoomForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.zoomBox);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.KeyPreview = true;
             this.Name = "ZoomForm";
             this.Text = "ZoomForm";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ZoomForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.zoomBox)).EndInit();
             this.ResumeLayout(false);
 

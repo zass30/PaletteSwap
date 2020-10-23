@@ -64,5 +64,15 @@ namespace PaletteSwap
         {
             zoomBox.BackColor = mainform.backgroundcolor;
         }
+
+        private void ZoomForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.C && e.Modifiers == Keys.Control)
+            {
+
+                Bitmap bmp = new Bitmap(zoomBox.BackgroundImage);
+                Clipboard.SetData(System.Windows.Forms.DataFormats.Bitmap, bmp);
+            }
+        }
     }
 }
