@@ -628,7 +628,8 @@ namespace PaletteSwap
         {
 
             var version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;          
-            var t = String.Format("Palette Swapper Version {0}", version);
+//            var t = String.Format("Palette Swapper Version {0}", version);
+            var t = String.Format("Palette Swapper Version 1.0.1");
             MessageBox.Show(t + "\nby Zass");
         }
 
