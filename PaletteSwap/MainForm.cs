@@ -1039,15 +1039,9 @@ namespace PaletteSwap
             // If the file name is not an empty string open it for saving.
             if (saveFileDialog1.FileName != "")
             {
-                Bitmap b = new Bitmap(1, 1);
+//                Bitmap b = new Bitmap(1, 1);
+                Bitmap b = gameSet.GenerateColorSheet();
                 b.Save(saveFileDialog1.FileName);
-/*                using (System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile())
-                {
-                    string s = currentCharacter.ToColFormat();
-                    var b = Encoding.ASCII.GetBytes(s); // todo can we replace the palettehelper method with this?
-                    fs.Seek(0, SeekOrigin.End);
-                    await fs.WriteAsync(b, 0, b.Length);
-                }*/
             }
         }
     }

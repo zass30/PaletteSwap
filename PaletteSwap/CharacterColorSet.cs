@@ -48,7 +48,19 @@ namespace PaletteSwap
 
         public Bitmap GenerateSpriteKey()
         {
-            return GenerateKey("neutral");
+            if (character == CharacterConfig.CHARACTERS.Gouki)
+            {
+                int buffer = 10;
+                var b0 = characterColors[0].GetBitmap("neutral");
+                var b1 = characterColors[1].GetBitmap("neutral");
+                Bitmap b = new Bitmap(b0.Width * 2 + buffer, b0.Height);
+                Graphics gfb = Graphics.FromImage(b);
+                gfb.DrawImage(b0, new Point(0, 0));
+                gfb.DrawImage(b1, new Point(b0.Width + buffer, 0));
+                return b;
+            }
+            else
+                return GenerateKey("neutral");
         }
 
         public Bitmap GenerateKey(String s)
@@ -91,7 +103,10 @@ namespace PaletteSwap
 
         public Bitmap GeneratePortraitKey()
         {
-            return GenerateKey("victory");
+            if (character == CharacterConfig.CHARACTERS.Gouki)
+                return characterColors[0].GetBitmap("victory");
+            else
+                return GenerateKey("victory");
         }
 
         public Bitmap GenerateLossKey()
@@ -314,32 +329,38 @@ namespace PaletteSwap
         };
 
 
-        public Bitmap GenerateNeutralKey()
+        public Bitmap GenerateColorSheet()
         {
             int buffer = 10;
             int h = 0;
             int w = 0;
-            List<Bitmap> spriteKeyList = new List<Bitmap>();
+            List<Bitmap> colorSetKey = new List<Bitmap>();
+
             foreach (var k in characterDictionary)
             {
-                var spriteKey = k.Value.GenerateSpriteKey();
+                var character = k.Value;
+                Bitmap key = character.GenerateColorSetKey();
+                colorSetKey.Add(key);
+                w = Math.Max(w, key.Width);
+                h = h + buffer + key.Height;
+
+/*                var spriteKey = k.Value.GenerateSpriteKey();
                 h = h + spriteKey.Height + buffer;
                 if (w < spriteKey.Width)
                     w = spriteKey.Width + buffer * 2;
                 spriteKeyList.Add(spriteKey);
+*/
             }
-            Bitmap b = new Bitmap(w * 2 + buffer, h );
+            Bitmap b = new Bitmap(w, h);
             Graphics gfb = Graphics.FromImage(b);
 
             int x = 0;
             int y = 0;
-            for (int i = 0; i < spriteKeyList.Count; i = i+2)
+            for (int i = 0; i < colorSetKey.Count; i++)
             {
-
-                gfb.DrawImage(spriteKeyList[i], new Point(x, y));
-                gfb.DrawImage(spriteKeyList[i+1], new Point(spriteKeyList[i].Width + buffer, y));
-                y += Math.Max(spriteKeyList[i].Height, spriteKeyList[i+1].Height) + buffer;
-
+                Bitmap key = colorSetKey[i];
+                gfb.DrawImage(key, new Point(x, y));
+                y = y + key.Height + buffer;
             }
             return b;
         }
