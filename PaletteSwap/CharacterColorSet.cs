@@ -103,6 +103,24 @@ namespace PaletteSwap
             return b;
         }
 
+        public Bitmap GenerateColorSetKeyAligned()
+        {
+            Bitmap portraits = GeneratePortraitKey();
+            Bitmap sprites;
+            if (character == CharacterConfig.CHARACTERS.Dictator)
+                sprites = this.GenerateKey("psychopunch");
+            else
+                sprites = GenerateSpriteKey();
+            int buffer = 10;
+            int w = portraits.Width + buffer + sprites.Width;
+            int h = Math.Max(portraits.Height, sprites.Height);
+            Bitmap b = new Bitmap(w, h);
+            Graphics gfb = Graphics.FromImage(b);
+            gfb.DrawImage(portraits, new Point(0, 0));
+            gfb.DrawImage(sprites, new Point(portraits.Width + buffer));
+            return b;
+        }
+
         public Bitmap GeneratePortraitKey()
         {
             if (character == CharacterConfig.CHARACTERS.Gouki)
@@ -331,19 +349,6 @@ namespace PaletteSwap
             int w = 0;
             List<Bitmap> colorSetKey = new List<Bitmap>();
 
-            int textheight = 80;
-            Bitmap bmp = new Bitmap(500, textheight);
-
-            Graphics g = Graphics.FromImage(bmp);
-
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
-            g.DrawString("lp, mp, hp, start, old1", new Font("Courier New", 12), Brushes.Black, 0, 0);
-            g.DrawString("lk, mk, hk, hold,  old2", new Font("Courier New", 12), Brushes.Black, 0, 15);
-            g.Flush();
-
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
@@ -353,20 +358,51 @@ namespace PaletteSwap
                 h = h + buffer + key.Height;
             }
 
-            Bitmap b = new Bitmap(w, h + textheight);
+            Bitmap b = new Bitmap(w, h );
             Graphics gfb = Graphics.FromImage(b);
-            gfb.DrawImage(bmp, 0, 0);
 
             int x = 0;
             int y = 0;
             for (int i = 0; i < colorSetKey.Count; i++)
             {
                 Bitmap key = colorSetKey[i];
-                gfb.DrawImage(key, new Point(x, y + textheight));
+                gfb.DrawImage(key, new Point(x, y));
                 y = y + key.Height + buffer;
             }
             return b;
         }
+
+
+        public Bitmap GenerateColorSheetAligned()
+        {
+            int buffer = 10;
+            int h = 0;
+            int w = 0;
+            List<Bitmap> colorSetKey = new List<Bitmap>();
+
+            foreach (var k in characterDictionary)
+            {
+                var character = k.Value;
+                Bitmap key = character.GenerateColorSetKeyAligned();
+                colorSetKey.Add(key);
+                w = Math.Max(w, key.Width);
+                h = h + buffer + key.Height;
+            }
+
+            Bitmap b = new Bitmap(w, h);
+            Graphics gfb = Graphics.FromImage(b);
+
+            int x = 0;
+            int y = 0;
+            for (int i = 0; i < colorSetKey.Count; i++)
+            {
+                Bitmap key = colorSetKey[i];
+                gfb.DrawImage(key, new Point(x, y));
+                y = y + key.Height + buffer;
+            }
+            return b;
+        }
+
 
         public byte[] patch_sprites_stream04(byte[] b)
         {

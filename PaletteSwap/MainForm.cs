@@ -1040,8 +1040,7 @@ namespace PaletteSwap
             // If the file name is not an empty string open it for saving.
             if (saveFileDialog1.FileName != "")
             {
-//                Bitmap b = new Bitmap(1, 1);
-                Bitmap b = gameSet.GenerateColorSheet();
+                Bitmap b = gameSet.GenerateColorSheetAligned();
                 b.Save(saveFileDialog1.FileName);
             }
         }
