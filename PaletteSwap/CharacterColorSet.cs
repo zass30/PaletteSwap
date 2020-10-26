@@ -5,6 +5,8 @@ using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 
 namespace PaletteSwap
 {
@@ -236,13 +238,6 @@ namespace PaletteSwap
             return b;
         }
 
-       /* public byte[] portraits_stream03()
-        {
-            byte[] b = Resources.sfxe03c;
-
-            return patch_portraits_stream03(b);
-        }*/
-
         public byte[] patch_sprites_stream04(byte[] b)
         {
             var blanka_offset = 0;
@@ -336,6 +331,19 @@ namespace PaletteSwap
             int w = 0;
             List<Bitmap> colorSetKey = new List<Bitmap>();
 
+            int textheight = 80;
+            Bitmap bmp = new Bitmap(500, textheight);
+
+            Graphics g = Graphics.FromImage(bmp);
+
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
+            g.DrawString("lp, mp, hp, start, old1", new Font("Courier New", 12), Brushes.Black, 0, 0);
+            g.DrawString("lk, mk, hk, hold,  old2", new Font("Courier New", 12), Brushes.Black, 0, 15);
+            g.Flush();
+
             foreach (var k in characterDictionary)
             {
                 var character = k.Value;
@@ -343,23 +351,18 @@ namespace PaletteSwap
                 colorSetKey.Add(key);
                 w = Math.Max(w, key.Width);
                 h = h + buffer + key.Height;
-
-/*                var spriteKey = k.Value.GenerateSpriteKey();
-                h = h + spriteKey.Height + buffer;
-                if (w < spriteKey.Width)
-                    w = spriteKey.Width + buffer * 2;
-                spriteKeyList.Add(spriteKey);
-*/
             }
-            Bitmap b = new Bitmap(w, h);
+
+            Bitmap b = new Bitmap(w, h + textheight);
             Graphics gfb = Graphics.FromImage(b);
+            gfb.DrawImage(bmp, 0, 0);
 
             int x = 0;
             int y = 0;
             for (int i = 0; i < colorSetKey.Count; i++)
             {
                 Bitmap key = colorSetKey[i];
-                gfb.DrawImage(key, new Point(x, y));
+                gfb.DrawImage(key, new Point(x, y + textheight));
                 y = y + key.Height + buffer;
             }
             return b;
