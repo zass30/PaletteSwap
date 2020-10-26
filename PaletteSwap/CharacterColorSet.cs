@@ -301,12 +301,6 @@ namespace PaletteSwap
             PaletteHelper.patch_memory(b, 0x40D64, patch);
             return b;
         }
-
-/*        public byte[] sprites_stream04()
-        {
-            byte[] b = Resources.sfxe04a;
-            return patch_sprites_stream04(b);
-        }*/
     }
 
     public class GameSet
@@ -369,68 +363,6 @@ namespace PaletteSwap
             }
             return b;
         }
-        /*
-        public byte[] sprites_stream04()
-        {
-            byte[] b = Resources.sfxe04a;
-            return patch_sprites_stream04(b);
-        }
-
-        public byte[] sprites_stream04phoenix()
-        {
-            byte[] b = Resources.sfxjd04a;
-            return patch_sprites_stream04(b);
-        }
-
-        public byte[] sprites_stream04newlegacy()
-        {
-            byte[] b = Resources.sfxe04aNLv03;
-            return patch_sprites_stream04(b);
-        }
-
-
-        public byte[] sprites_stream04japanese()
-        {
-            byte[] b = Resources.sfxj04a;
-            return patch_sprites_stream04(b);
-        }
-
-        public byte[] sprites_stream04redggpo()
-        {
-            byte[] b = Resources.sfxo04a;
-            return patch_sprites_stream04(b);
-        }
-
-        public byte[] portraits_stream03()
-        {
-            byte[] b = Resources.sfxe03c;
-            return patch_portraits_stream03(b);
-        }
-
-        public byte[] portraits_stream03phoenix()
-        {
-            byte[] b = Resources.sfxjd03c;
-            return patch_portraits_stream03(b);
-        }
-
-        public byte[] portraits_stream03newlegacy()
-        {
-            byte[] b = Resources.sfxe03cNLv03;
-            return patch_portraits_stream03(b);
-        }
-
-        public byte[] portraits_stream03japanese()
-        {
-            byte[] b = Resources.sfxj03c;
-            return patch_portraits_stream03(b);
-        }
-
-        public byte[] portraits_stream03redggpo()
-        {
-            byte[] b = Resources.sfxo03c;
-            return patch_portraits_stream03(b);
-        }
-        */
 
         private byte[] PatchOldBisonPunchesStream(byte[] b)
         {
@@ -440,32 +372,6 @@ namespace PaletteSwap
             }
             return b;
         }
-
-        /*
-         * public byte[] PatchOldBisonPunches06()
-        {
-            byte[] b = Resources.sfxe06a;
-            return PatchOldBisonPunchesStream(b);
-        }
-
-        public byte[] PatchOldBisonPunches06phoenix()
-        {
-            byte[] b = Resources.sfxjd06a;
-            return PatchOldBisonPunchesStream(b);
-        }
-
-        public byte[] PatchOldBisonPunches06japanese()
-        {
-            byte[] b = Resources.sfxj06a;
-            return PatchOldBisonPunchesStream(b);
-        }
-
-        public byte[] PatchOldBisonPunches06redggpo()
-        {
-            byte[] b = Resources.sfxo06a;
-            return PatchOldBisonPunchesStream(b);
-        }*/
-
 
         public static GameSet GameSetFromZipStream(Stream fileStream)
         {

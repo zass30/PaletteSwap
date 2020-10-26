@@ -1027,5 +1027,28 @@ namespace PaletteSwap
                 s.Show();
 
         }
+
+        private void exportColorSheetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Displays a SaveFileDialog so the user can save the Image
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "PNG (*.png)|*.png";
+            saveFileDialog1.Title = "Save a color sheet";
+            saveFileDialog1.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog1.FileName != "")
+            {
+                Bitmap b = new Bitmap(1, 1);
+                b.Save(saveFileDialog1.FileName);
+/*                using (System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile())
+                {
+                    string s = currentCharacter.ToColFormat();
+                    var b = Encoding.ASCII.GetBytes(s); // todo can we replace the palettehelper method with this?
+                    fs.Seek(0, SeekOrigin.End);
+                    await fs.WriteAsync(b, 0, b.Length);
+                }*/
+            }
+        }
     }
 }
