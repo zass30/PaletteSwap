@@ -320,6 +320,7 @@ namespace PaletteSwap
             pal_val_R.Text = r.ToString();
             pal_val_G.Text = g.ToString();
             pal_val_B.Text = b.ToString();
+            HexLabel.Text = ColorTranslator.ToHtml(c);
 
             trackBarR.Value = r;
             trackBarG.Value = g;
@@ -629,7 +630,7 @@ namespace PaletteSwap
 
             var version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;          
 //            var t = String.Format("Palette Swapper Version {0}", version);
-            var t = String.Format("Palette Swapper Version 1.0.1");
+            var t = String.Format("Palette Swapper Version 1.0.2");
             MessageBox.Show(t + "\nby Zass");
         }
 
@@ -924,7 +925,7 @@ namespace PaletteSwap
             if (currentlySelectedColor == null)
                 return;
             var c = currentlySelectedColor.BackColor;
-            var s = PaletteHelper.ColorFormatToRGB(c);
+            var s = ColorTranslator.ToHtml(c);
             Clipboard.SetText(s);
             return;
         }
@@ -935,7 +936,7 @@ namespace PaletteSwap
                 return;
             var name = currentlySelectedColor.Name;
             var s = Clipboard.GetText();
-            var c = PaletteHelper.RGBFormatToColor(s);
+            var c = ColorTranslator.FromHtml(s);
             var r = ((c.R) / 17).ToString();
             var g = ((c.G) / 17).ToString();
             var b = ((c.B) / 17).ToString();
