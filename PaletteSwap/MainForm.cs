@@ -1045,5 +1045,29 @@ namespace PaletteSwap
                 b.Save(saveFileDialog1.FileName);
             }
         }
+
+        private void colorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var transform = new TransformConfig();
+            var cammymap = transform.transformmap[CharacterConfig.CHARACTERS.Cammy];
+
+            foreach (var thing in gameSet.characterDictionary)
+            {
+                var currentchar = thing.Key;
+                if (transform.transformmap.ContainsKey(currentchar))
+                {
+                    var currentchartransform = transform.transformmap[currentchar];
+                    foreach (var charact in thing.Value.characterColors)
+                    {
+                        foreach (var item in currentchartransform.Keys)
+                        {
+                            charact.sprite.SetColor(item, charact.sprite.GetColor(currentchartransform[item]));
+                        }
+                    }
+                }
+            }
+            resetCurrentCharacterColorFromDropDown();
+            reload_everything();
+        }
     }
 }

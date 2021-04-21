@@ -2223,4 +2223,338 @@ PaletteHelper.ByteStreamToString(a),
             }
         }
     }
+
+    public class TransformConfig
+    {
+        public Dictionary<CharacterConfig.CHARACTERS, Dictionary<string, string>> transformmap;
+        public TransformConfig()
+        {
+            var cammymap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin2"},
+    {"skin5", "skin6"},
+    {"skin6", "skin6"},
+    {"skin7", "skin6"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"costume6", "costume4"},
+    {"beret", "costume1"},
+    {"hair", "costume4"},
+};
+
+            var blankamap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin2"},
+    {"skin5", "skin6"},
+    {"skin6", "skin6"},
+    {"skin7", "skin6"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume3"},
+    {"costume4", "costume3"},
+    {"costume5", "costume3"},
+    {"lining1", "costume1"},
+    {"lining2", "costume3"},
+    {"outline", "costume3"},
+};
+
+            var hawkamap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin1"},
+    {"skin2", "skin1"},
+    {"skin3", "skin1"},
+    {"skin4", "skin1"},
+    {"skin5", "skin5"},
+    {"skin6", "skin5"},
+    {"skin7", "skin5"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"costume6", "costume4"},
+    {"feathers", "costume1"},
+    {"hair", "costume4"},
+};
+
+            var simmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin1"},
+    {"skin2", "skin1"},
+    {"skin3", "skin1"},
+    {"skin4", "skin4"},
+    {"skin5", "skin4"},
+    {"skin6", "skin4"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"necklace1", "skin1"},
+    {"necklace2", "skin4"},
+    {"necklace3", "skin4"},
+    {"paint", "costume1"},
+};
+
+
+            var deejaymap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin2"},
+    {"skin5", "skin2"},
+    {"skin6", "skin7"},
+    {"skin7", "skin7"},
+    {"skin8", "skin7"},
+    {"skin9", "skin7"},
+    {"costume1", "costume2"},
+    {"costume2", "costume2"},
+    {"costume3", "costume2"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"costume6", "costume4"},
+};
+            var feimap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin2"},
+    {"skin5", "skin6"},
+    {"skin6", "skin6"},
+    {"skin7", "skin6"},
+    {"skin8", "skin6"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume5"},
+    {"costume5", "costume5"},
+    {"costume6", "costume5"},
+    {"shoes", "skin6"},
+};
+
+            var sagatmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin1"},
+    {"skin2", "skin1"},
+    {"skin3", "skin1"},
+    {"skin4", "skin5"},
+    {"skin5", "skin5"},
+    {"skin6", "skin5"},
+    {"shorts1", "shorts1"},
+    {"shorts2", "shorts1"},
+    {"shorts3", "shorts1"},
+    {"shorts4", "stripe1"},
+    {"wraps1", "skin1"},
+    {"wraps2", "skin5"},
+    {"wraps3", "skin5"},
+    {"stripe1", "stripe1"},
+    {"stripe2", "stripe1"},
+};
+
+
+            var hondamap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin5"},
+    {"skin5", "skin5"},
+    {"skin6", "skin5"},
+    {"skin7", "skin5"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"hair1", "skin5"},
+    {"hair2", "skin5"},
+    {"facepaint", "costume1"},
+};
+
+
+            var giefmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin2"},
+    {"skin5", "hair2"},
+    {"hair1", "hair2"},
+    {"hair2", "hair2"},
+    {"hair3", "hair2"},
+    {"belt1", "skin2"},
+    {"belt2", "skin2"},
+    {"belt3", "hair2"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume3"},
+    {"costume4", "costume3"},
+};
+
+            var kenmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin5"},
+    {"skin5", "skin5"},
+    {"skin6", "skin5"},
+    {"hair1", "skin2"},
+    {"hair2", "skin2"},
+    {"belt", "costume5"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume5"},
+    {"costume5", "costume5"},
+    {"costume6", "costume5"},
+};
+
+            var boxermap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin5"},
+    {"skin5", "skin5"},
+    {"skin6", "skin5"},
+    {"costume1", "costume2"},
+    {"costume2", "costume2"},
+    {"costume3", "costume2"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"gloves1", "skin2"},
+    {"gloves2", "skin5"},
+    {"gloves3", "skin5"},
+    {"shine", "skin2"},
+};
+
+            var chunmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin4"},
+    {"skin5", "skin4"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume1"},
+    {"costume5", "costume1"},
+    {"hair1", "hair2"},
+    {"hair2", "hair2"},
+    {"hair3", "hair2"},
+    {"hair4", "hair2"},
+    {"hair5", "hair2"},
+};
+            var ryumap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "hair1"},
+    {"hair1", "hair1"},
+    {"hair2", "hair1"},
+    {"belt", "hair1"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"costume6", "costume4"},
+    {"headband1", "costume4"},
+    {"headband2", "costume4"},
+};
+
+
+            var guilemap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "darkcamo1"},
+    {"skin5", "darkcamo1"},
+    {"darkcamo1", "darkcamo1"},
+    {"darkcamo2", "darkcamo1"},
+    {"hair", "skin2"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume1"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"flag1", "costume1"},
+    {"flag2", "costume1"},
+};
+
+            var clawmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin2"},
+    {"skin4", "skin2"},
+    {"skin5", "skin5"},
+    {"skin6", "skin5"},
+    {"skin7", "skin5"},
+    {"outline", "skin5"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume3"},
+    {"costume4", "costume3"},
+    {"sash1", "skin2"},
+    {"sash2", "skin5"},
+    {"stripe", "skin2"},
+};
+            var dicmap = new System.Collections.Generic.Dictionary<string, string>(){
+    {"skin1", "skin2"},
+    {"skin2", "skin2"},
+    {"skin3", "skin4"},
+    {"skin4", "skin4"},
+    {"pads1", "skin2"},
+    {"pads2", "skin2"},
+    {"pads3", "skin4"},
+    {"pads4", "skin4"},
+    {"pads5", "skin4"},
+    {"costume1", "costume1"},
+    {"costume2", "costume1"},
+    {"costume3", "costume4"},
+    {"costume4", "costume4"},
+    {"costume5", "costume4"},
+    {"stripe", "skin2"},
+
+    {"psychoglow", "crusherpads2"},
+    {"psychopunch1", "psychopunch2"},
+    {"psychopunch2", "psychopunch2"},
+    {"psychopunch3", "psychopunch4"},
+    {"psychopunch4", "psychopunch4"},
+    {"psychopunch5", "psychopunch4"},
+    {"crusherpads1", "crusherpads2"},
+    {"crusherpads2", "crusherpads2"},
+    {"crusherpads3", "crusherpads2"},
+    {"crusherpads4", "crusherpads4"},
+    {"crusherpads5", "crusherpads4"},
+    {"crushercostume1", "crushercostume1"},
+    {"crushercostume2", "crushercostume1"},
+    {"crushercostume3", "crushercostume3"},
+    {"crushercostume4", "crushercostume3"},
+    {"crusherflame1", "crusherpads2"},
+    {"crusherflame2", "crusherflame2"},
+    {"crusherhands1", "crusherflame2"},
+    {"crusherhands2", "crusherflame2"},
+    {"crusherhands3", "crusherflame2"},
+};
+            transformmap = new Dictionary<CharacterConfig.CHARACTERS, Dictionary<string, string>>();
+            transformmap[CharacterConfig.CHARACTERS.Cammy] = cammymap;
+            transformmap[CharacterConfig.CHARACTERS.Blanka] = blankamap;
+            transformmap[CharacterConfig.CHARACTERS.Thawk] = hawkamap;
+            transformmap[CharacterConfig.CHARACTERS.Dhalsim] = simmap;
+            transformmap[CharacterConfig.CHARACTERS.Deejay] = deejaymap;
+            transformmap[CharacterConfig.CHARACTERS.Feilong] = feimap;
+            transformmap[CharacterConfig.CHARACTERS.Sagat] = sagatmap;
+            transformmap[CharacterConfig.CHARACTERS.Ehonda] = hondamap;
+            transformmap[CharacterConfig.CHARACTERS.Zangief] = giefmap;
+            transformmap[CharacterConfig.CHARACTERS.Ken] = kenmap;
+            transformmap[CharacterConfig.CHARACTERS.Boxer] = boxermap;
+            transformmap[CharacterConfig.CHARACTERS.Chun] = chunmap;
+            transformmap[CharacterConfig.CHARACTERS.Ryu] = ryumap;
+            transformmap[CharacterConfig.CHARACTERS.Guile] = guilemap;
+            transformmap[CharacterConfig.CHARACTERS.Claw] = clawmap;
+            transformmap[CharacterConfig.CHARACTERS.Dictator] = dicmap;
+        }
+    }
 }
